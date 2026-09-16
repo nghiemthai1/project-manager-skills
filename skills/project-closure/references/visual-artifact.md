@@ -8,11 +8,9 @@ Capture: **obligation ID; current owner; accepted receiver; due/trigger; funding
 
 A closure checklist needs evidence states, not a completion percentage. If visualized, separate delivery, financial reconciliation, residual acceptance and later benefits review. Do not hide open obligations in a green project tile.
 
-## Worked visual decision
+## Interpretation
 
-Priya’s 4 December benefit review remains a post-closure obligation after 10 November closure. Accepted transfer is the closure evidence, not a fabricated earlier benefit result.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Show post-closure obligations with owners and review dates. Accepted transfer can support closure; it does not establish that future benefits have already occurred.
 
 ## Delivery standard
 

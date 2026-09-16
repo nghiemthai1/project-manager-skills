@@ -96,6 +96,8 @@ Tailor the selected option into a practice table: workstream, planning horizon, 
 
 ## Examples
 
+Optional worked applications:
+
 - [Relay tailored delivery](examples/software.md): iterative integration inside defined pilot scope and independent acceptance.
 - [Northstar rehearsal-led hybrid](examples/migration.md): uncertain data quality with controlled cutover and service transfer.
 

@@ -1,7 +1,7 @@
 {
   "title": "Relay · observed handling time",
   "scope": "Fictional additional teaching dataset · 4 December 2026 review · comparable-ticket assumption",
-  "source": "../examples/software.md",
+  "source": "../software.md",
   "data": {
     "labels": [
       "Baseline · 40 tickets / 600 minutes",

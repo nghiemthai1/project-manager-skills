@@ -10,10 +10,10 @@ Fictional capacity exercise for 19–30 October 2026. Hours are instructional in
 
 Omar's modeled load is 64/56 ≈ 114.3%; Lena's is 20/32 = 62.5%. The aggregate 84/88 ≈ 95.5% does not establish feasibility. Lena's security expertise is not evidence of integration-engineering capacity. In a real record, an absent support assignment would remain unknown; this exercise explicitly supplies no additional Lena demand.
 
-Run [the example input](../assets/software-capacity.json):
+Run [the example input](assets/software-capacity.json):
 
 ```sh
-python scripts/capacity.py --input assets/software-capacity.json --format markdown
+python scripts/capacity.py --input examples/assets/software-capacity.json --format markdown
 ```
 
 ## Decision options
@@ -31,6 +31,6 @@ These are what-if scenarios, not decisions. Mina must resolve the actual constra
 
 ## Graphical companion
 
-![Worked visual](../assets/software-visual.svg)
+![Worked visual](assets/software-visual.svg)
 
-[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

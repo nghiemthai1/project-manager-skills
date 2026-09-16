@@ -11,10 +11,10 @@ Fictional control artifact as of 23 October 2026. M-D001 approved B1: BAC 240k U
 | EAC remaining at budget | 75+(240−60) = 255k | Remaining scope assumes budgeted performance |
 | EAC with CPI×SPI | 75+180/(0.8×0.75) = 375k | Stronger combined-efficiency scenario, not selected by default |
 
-Run [the source input](../assets/migration-evm.json):
+Run [the source input](assets/migration-evm.json):
 
 ```sh
-python scripts/earned_value.py --input assets/migration-evm.json --format markdown
+python scripts/earned_value.py --input examples/assets/migration-evm.json --format markdown
 ```
 
 AC/BAC = 31.25% measures cost incurred relative to budget, not completion or health. Only 60k of budgeted work has been earned for 75k spent. The scenario range is a reason to inspect remaining data remediation, vendor obligations, rehearsal and transition effort rather than pick whichever value fits the funding available.

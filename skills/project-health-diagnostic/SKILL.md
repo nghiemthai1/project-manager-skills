@@ -86,9 +86,11 @@ Explain why the selected branch fits, which alternatives are premature and what 
 
 ### When producing a visual
 
-Use the [dimension-by-dimension health view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [dimension-by-dimension health view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay on 28 October](examples/software.md): funding changes do not resolve a failed recovery gate.
 - [Northstar on 23 October](examples/migration.md): a funding exposure is known while final-date impact remains uncertain.

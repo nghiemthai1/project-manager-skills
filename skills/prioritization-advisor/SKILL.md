@@ -283,9 +283,11 @@ After collecting responses, the agent recommends a framework:
 
 ### When producing a visual
 
-Use the [tradeoff plot or ranked options table](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [tradeoff plot or ranked options table](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay software example](examples/software.md): protect acceptance before prioritizing optional scope; a worked MoSCoW decision and a RICE sensitivity subcase.
 - [Northstar migration example](examples/migration.md): scope change versus mandatory recovery, with a conditional comparison of discretionary support options.

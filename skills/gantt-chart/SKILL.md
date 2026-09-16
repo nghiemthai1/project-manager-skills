@@ -52,7 +52,7 @@ When approval is absent, call the row a target or planning scenario. “Baseline
 
 ### Dates and boundaries
 
-State working days, workweek, holidays and date-boundary convention. In the supplied examples, a bar covers the half-open interval from its start through the time before its finish boundary. A Monday-start, two-working-day activity ends at Wednesday's start boundary. A milestone is a zero-duration event at a stated boundary, not an extra day of work.
+State working days, workweek, holidays and date-boundary convention. With a half-open date convention, a bar covers the half-open interval from its start through the time before its finish boundary. A Monday-start, two-working-day activity ends at Wednesday's start boundary. A milestone is a zero-duration event at a stated boundary, not an extra day of work.
 
 Do not apply a weekday calendar to an explicitly scheduled weekend cutover. Use separate sections or a tool with the correct calendar for each activity. Hours, shifts, time zones, part-time assignments and intra-day handoffs need explicit treatment when they affect the decision.
 
@@ -69,7 +69,7 @@ Use completed or active status only with actual evidence. Missing percent-comple
 5. **Check the rendered chart.** Inspect label clipping, date ticks, weekend handling, zero-duration milestones, predecessor joins, color meaning and baseline alignment. Compare every displayed start/finish against the source table. A diagram that parses can still tell the wrong schedule story.
 6. **Explain the decision.** State changed work, finish variance in the right units, assumptions and the decision required. An updated forecast is not permission to defer a commitment. Save the source/version so a later chart can be compared without rewriting history.
 
-Use [the task and chart template](template.md). The [software example](examples/software.md) retains a planning baseline and a changed forecast; the [migration example](examples/migration.md) exposes a shared-resource limitation.
+Use [the task and chart template](template.md).
 
 ### Visual artifact workflow
 
@@ -87,9 +87,11 @@ Give tasks stable IDs. Use explicit ISO start dates or `after` references to pre
 
 ### Included offline renderer
 
-Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_gantt.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Start from either worked example's source, replace all fictional data, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
+Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_gantt.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
 
 ## Examples
+
+Optional worked applications:
 
 - [Software timeline](examples/software.md): four tasks, separate original and forecast rows, a two-working-day finish change, and the date arithmetic behind it.
 - [Migration timeline](examples/migration.md): two tied branches, an acceptance checkpoint and the difference between unconstrained and resource-feasible work.

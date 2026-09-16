@@ -85,9 +85,11 @@ Use the [workshop template](template.md) to capture question/answer context, ris
 
 ### When producing a visual
 
-Use the [risk exposure and control map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [risk exposure and control map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay recovery workshop](examples/software.md): an acceptance-critical threat is prioritized without an invented likelihood.
 - [Northstar migration review](examples/migration.md): attachment integrity and recoverability require separate controls; supplier transfer is not disappearance of exposure.

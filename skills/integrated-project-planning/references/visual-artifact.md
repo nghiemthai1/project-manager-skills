@@ -8,11 +8,9 @@ Capture: **scope/budget/schedule version; decision reference; capacity window; a
 
 Keep each artifact in its own units with a shared snapshot header. Link WBS, timeline, funding and gate records by literal IDs. Use an exception table rather than blending unlike dimensions into one readiness percentage.
 
-## Worked visual decision
+## Interpretation
 
-Relay scope and funding B2 on 19 October do not imply a new approved pilot date or waived security gate.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Reconcile scope, funding, dates and acceptance independently. A revised scope or funding baseline does not imply a new approved delivery date or waived gate.
 
 ## Delivery standard
 

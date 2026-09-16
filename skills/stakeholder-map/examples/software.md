@@ -27,6 +27,6 @@ Propose that Priya identify representative administrators and arrange workflow/r
 
 ## Graphical companion
 
-![Worked visual](../assets/software-visual.svg)
+![Worked visual](assets/software-visual.svg)
 
-[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

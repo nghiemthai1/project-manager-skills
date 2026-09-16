@@ -11,10 +11,10 @@ Fictional instructional capacity subcase; no calendar week or actual assignment 
 | Existing-system support | 8 | Allocation, not another deduction |
 | Vendor help | Unknown | Not entered as available replacement capacity |
 
-Run [the example input](../assets/migration-capacity.json):
+Run [the example input](assets/migration-capacity.json):
 
 ```sh
-python scripts/capacity.py --input assets/migration-capacity.json --format markdown
+python scripts/capacity.py --input examples/assets/migration-capacity.json --format markdown
 ```
 
 ## What-if and authority

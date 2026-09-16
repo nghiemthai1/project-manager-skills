@@ -8,11 +8,9 @@ Capture: **affected group; impact; readiness evidence; barrier; proposed interve
 
 Show readiness dimensions with evidence and unknowns rather than one training percentage. Distinguish attendance, demonstrated ability and sustained use. Never assign formal authority from a stakeholder’s grid placement.
 
-## Worked visual decision
+## Interpretation
 
 Pilot administrator recovery practice is behavioral evidence to obtain; sending guidance establishes communication, not ability or adoption.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

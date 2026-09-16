@@ -8,11 +8,9 @@ Capture: **observation ID; time/source; interpretation; causal confidence; propo
 
 A timeline orders events without proving causality. Distinguish fact nodes from hypotheses and experiments. Use arrows only when their causal meaning is evidenced or explicitly hypothetical.
 
-## Worked visual decision
+## Interpretation
 
 A late interface and a missed review may co-occur; drawing one arrow does not establish root cause. Propose a test of the mechanism and retain contrary evidence.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

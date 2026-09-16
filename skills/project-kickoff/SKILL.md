@@ -88,6 +88,8 @@ Scale the session to uncertainty. Stable repeat delivery may need an asynchronou
 
 ## Examples
 
+Optional worked applications:
+
 - [Relay before baseline approval](examples/software.md): a complete agenda, agreement table and planning handoff without attendance becoming consent.
 - [Northstar after charter approval](examples/migration.md): supplier delivery, business acceptance and service readiness remain distinct.
 

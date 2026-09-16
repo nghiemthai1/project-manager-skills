@@ -23,6 +23,6 @@ Later chronology is separate: Lena's 28 October rejection concerns missing recov
 
 ## Graphical companion
 
-![Worked visual](../assets/software-visual.svg)
+![Worked visual](assets/software-visual.svg)
 
-[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

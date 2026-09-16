@@ -1,7 +1,7 @@
 {
   "title": "Relay · deliverable structure",
   "scope": "Fictional snapshot · 16 October 2026 · B1 approved under D-001; decomposition and assignments still need confirmation",
-  "source": "../examples/software.md",
+  "source": "../software.md",
   "data": {
     "root": {
       "id": "1.0",

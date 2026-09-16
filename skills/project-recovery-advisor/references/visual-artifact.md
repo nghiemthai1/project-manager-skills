@@ -8,11 +8,9 @@ Capture: **option; scope/network/resource assumptions; cost/date bounds; nonnego
 
 Compare scenarios at the same cutoff using shared units. Highlight unsupported assumptions and checkpoints that could change the recommendation. Show proposed schedules as scenarios until approved.
 
-## Worked visual decision
+## Interpretation
 
 Adding people may cost onboarding time. A shorter bar is not recovery evidence without the actual skill, access and availability needed to make it feasible.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

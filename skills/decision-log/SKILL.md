@@ -72,9 +72,11 @@ Quality check: a reader can answer who had authority, what changed, when it took
 
 ### When producing a visual
 
-Use the [decision chronology or option map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [decision chronology or option map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay's separate scope/funding/date decisions](examples/software.md): CR-001 does not contain D-004 or security acceptance.
 - [Northstar's partial supersession](examples/migration.md): M-CR02 replaces specified baseline provisions while recovery and reconciliation remain required.

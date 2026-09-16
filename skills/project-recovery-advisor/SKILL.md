@@ -89,9 +89,11 @@ After an actual decision, record its scope, conditions and effective date, updat
 
 ### When producing a visual
 
-Use the [recovery option scenarios](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [recovery option scenarios](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay's bottleneck-led options](examples/software.md): staffing does not automatically fix an external input or acceptance gap.
 - [Northstar phased recovery](examples/migration.md): an approved plan still requires later restore and reconciliation evidence.

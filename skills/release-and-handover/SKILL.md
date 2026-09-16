@@ -95,9 +95,11 @@ Prepare handover criteria and documentation before release, but collect post-rel
 
 ### When producing a visual
 
-Use the [cutover sequence and transfer gates](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [cutover sequence and transfer gates](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay transition](examples/software.md): pilot, interim coverage, service acceptance and closure are distinct.
 - [Northstar cutover](examples/migration.md): current rehearsal evidence precedes go; actual stabilization supports later service transfer.

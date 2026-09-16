@@ -96,9 +96,11 @@ Use actual tolerances and gate rules. A local correction within delegation can p
 
 ### When producing a visual
 
-Use the [control review artifact pack](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [control review artifact pack](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay review and follow-through](examples/software.md): original funding exposure remains in the earlier report after a later change.
 - [Northstar linked control cycles](examples/migration.md): plan approval, failed restore, go, handover and closure stay separate dated events.

@@ -28,6 +28,6 @@ Deferring 1.5 may be a useful proposal, but on 16 October it is not yet an autho
 
 ## Graphical companion
 
-![Worked visual](../assets/software-visual.svg)
+![Worked visual](assets/software-visual.svg)
 
-[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

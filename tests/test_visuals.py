@@ -29,7 +29,7 @@ class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci)]:
             for scene in ('software', 'migration'):
-                stem = ROOT/'skills'/slug/'assets'/scene
+                stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
                 self.assertEqual(json.loads(Path(str(stem)+'.json').read_text(encoding='utf-8')), data)
                 svg = module.render_svg(data)

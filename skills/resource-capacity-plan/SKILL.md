@@ -71,9 +71,11 @@ Use [the capacity template](template.md). Quality means the reader can find the 
 
 ### When producing a visual
 
-Use the [per-person demand versus availability](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [per-person demand versus availability](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay staffing comparison](examples/software.md): aggregate spare hours conceal Omar's overload; includes runnable input.
 - [Northstar rehearsal capacity](examples/migration.md): a support reassignment is a conditional option, not free vendor capacity.

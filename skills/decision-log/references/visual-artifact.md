@@ -8,11 +8,9 @@ Capture: **decision ID; date; decider; state; exact choice; conditions; supersed
 
 A timeline can expose which baseline was effective when. Distinguish proposed, rejected, conditional and approved decisions with text. Edges mean supersedes or depends-on, not a claim that earlier records were wrong.
 
-## Worked visual decision
+## Interpretation
 
-Show D-001, CR-001 and D-004 on their separate dates. A later pilot deferral cannot be backdated into the 28 October readiness view.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Place decisions on their actual dates and identify what each supersedes. Do not backdate a later approval into an earlier readiness view.
 
 ## Delivery standard
 

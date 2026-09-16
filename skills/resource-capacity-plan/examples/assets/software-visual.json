@@ -1,7 +1,7 @@
 {
   "title": "Relay · capacity is specific to the person",
   "scope": "Fictional capacity exercise · 19–30 October 2026 · support counted once · no staffing commitments inferred",
-  "source": "../examples/software.md",
+  "source": "../software.md",
   "data": {
     "unit": "hours",
     "people": [

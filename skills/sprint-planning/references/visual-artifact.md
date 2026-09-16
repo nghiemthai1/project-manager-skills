@@ -8,11 +8,9 @@ Capture: **Sprint Goal; item ID; Definition of Done; dependencies; capacity assu
 
 A board supports workflow state, a timeline supports dated constraints. Neither turns selected work into a guaranteed commitment. Keep unfinished work and impediments visible; do not convert story points into individual utilization.
 
-## Worked visual decision
+## Interpretation
 
 A recovery demonstration item remains part of the forecast until its actual evidence meets applicable completion criteria. A filled column is not release acceptance.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

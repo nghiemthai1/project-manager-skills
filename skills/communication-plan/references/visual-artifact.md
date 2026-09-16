@@ -8,11 +8,9 @@ Capture: **audience; purpose; trigger or cadence; channel; sender; feedback rout
 
 A matrix is usually clearer than a network. If a cadence timeline is requested, separate actual meetings from proposed cadence and event-triggered messages. Show audience access and feedback, not only outbound arrows.
 
-## Worked visual decision
+## Interpretation
 
 A launch email cannot stand in for the earlier administrator feedback needed to make recovery guidance usable.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

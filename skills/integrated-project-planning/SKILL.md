@@ -83,9 +83,11 @@ Use [the integrated-plan template](template.md). A decision-ready plan should le
 
 ### When producing a visual
 
-Use the [linked baseline review pack](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [linked baseline review pack](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay integrated proposal](examples/software.md): pre-approval planning with missing capacity/interface evidence and later independent scope/date decisions.
 - [Northstar revised plan](examples/migration.md): phased scope, funding, rehearsal, immediate coverage and later service transfer form one chain.

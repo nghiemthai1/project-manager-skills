@@ -74,9 +74,11 @@ Use [the budget template](template.md). A decision-ready artifact reconciles the
 
 ### When producing a visual
 
-Use the [baseline, actual and forecast comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [baseline, actual and forecast comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay cost/funding bridge](examples/software.md): three forecast assumptions, reserve treatment and the later B2 decision.
 - [Northstar cost pressure](examples/migration.md): low spend does not mean healthy progress; includes a bridge to revised funding.

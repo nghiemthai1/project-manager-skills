@@ -18,7 +18,7 @@ fs.mkdirSync(output, {recursive: true});
     page.on('pageerror', error => errors.push(error.message));
     for (const slug of ['raci-matrix', 'gantt-chart']) {
       for (const scenario of ['software', 'migration']) {
-        const stem = path.join(root, 'skills', slug, 'assets', scenario);
+        const stem = path.join(root, 'skills', slug, 'examples', 'assets', scenario);
         for (const [view, width, height] of [['desktop',1440,1000], ['portrait',390,844], ['landscape',844,390]]) {
           await page.setViewport({width,height});
           await page.goto(pathToFileURL(stem+'.html').href);
@@ -66,7 +66,7 @@ fs.mkdirSync(output, {recursive: true});
     assert.equal(await page.$eval('tr[data-row="H-8"]',x=>x.hidden),true);
     for (const slug of ['project-budget','benefits-realization','resource-capacity-plan','scope-and-wbs','dependency-map','stakeholder-map','risk-workshop','release-readiness']) {
       await page.setViewport({width:1120,height:760});
-      await page.goto(pathToFileURL(path.join(root,'skills',slug,'assets/software-visual.svg')).href);
+      await page.goto(pathToFileURL(path.join(root,'skills',slug,'examples/assets/software-visual.svg')).href);
       const overflow=await page.evaluate(()=>[...document.querySelectorAll('text')].filter(t=>{const b=t.getBBox();return b.x<0||b.x+b.width>1120||b.y+b.height>760}).map(t=>t.textContent));
       assert.deepEqual(overflow,[],slug+' SVG text bounds');
       await page.screenshot({path:path.join(output,slug+'.png')});

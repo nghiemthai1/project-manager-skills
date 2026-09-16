@@ -8,11 +8,9 @@ Capture: **step/checkpoint ID; planned/actual timing; predecessor; performer; go
 
 Use a sequence diagram or timeline with hold points. Keep planned execution, observed completion and accepted transfer separate. Unknown rollback limits cannot become a reassuring green recovery arrow.
 
-## Worked visual decision
+## Interpretation
 
-Northstar 28 November cutover and 2 December operational handover are distinct events. Successful execution alone does not close the service transfer.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Show cutover and operational handover as distinct events. Successful execution alone does not close service transfer.
 
 ## Delivery standard
 

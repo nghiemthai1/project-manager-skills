@@ -22,8 +22,6 @@ Use the explicit skill invocation supported by your assistant, or ask it to read
 
 A forecast is not a baseline, a proposed owner is not an accepted assignment, and a test plan is not a test result. Include the source date and approval record where available. Ask for a draft with unknowns if you are not ready for a decision.
 
-## Learn while doing
+## Review the result
 
-Read the worked examples after your first draft. Compare the flawed and corrected versions with your own artifact. Use the Common Pitfalls section as a review aid, then inspect the underlying evidence. A completed template is only the beginning of that review.
-
-Try the [software walkthrough](walkthroughs/software.md) or [migration walkthrough](walkthroughs/migration.md) to see how artifacts connect across a project.
+Use Common Pitfalls to check the draft against your project evidence. Open specialized references only when the task needs them. The optional Examples section can help when you want to see the method applied.

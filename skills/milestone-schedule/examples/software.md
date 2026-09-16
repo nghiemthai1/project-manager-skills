@@ -11,10 +11,10 @@ Fictional instructional network, not Relay's approved calendar schedule. Unit: w
 
 Forward: D cannot start at C's finish 5 because B finishes at 6. Its ES is max(6,5)=6 and EF=7. Backward: D must start at 6 to retain finish 7, so B/C each have LF=6. C's LS=6−3=3; its ES=2, giving one working day of total float. A-B-D governs finish. C's float is not a promise of spare people or a calendar holiday allowance.
 
-Run the [source input](../assets/software-network.json) from this skill folder:
+Run the [source input](assets/software-network.json) from this skill folder:
 
 ```sh
-python scripts/schedule.py --input assets/software-network.json --format markdown
+python scripts/schedule.py --input examples/assets/software-network.json --format markdown
 ```
 
 ## Changed-duration case

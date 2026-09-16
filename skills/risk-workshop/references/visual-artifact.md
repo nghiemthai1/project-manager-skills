@@ -8,11 +8,9 @@ Capture: **risk ID; cause/event/effect; scale definitions; assessment confidence
 
 A probability-impact grid is optional, and only meaningful with explicit ordinal scales. Expose unknown probability and hard acceptance conditions. Link each plotted risk to response, trigger and evidence; score is not money or probability.
 
-## Worked visual decision
+## Interpretation
 
-Relay recovery probability is unknown. Put it in a missing-assessment lane with a mandatory-evidence note instead of inventing a score of 90.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Place unassessed risks in an explicit unknown lane. Mandatory evidence requirements remain visible even when probability is unknown.
 
 ## Delivery standard
 
@@ -21,7 +19,3 @@ Preserve a source snapshot and mapping from literal IDs/fields to the displayed 
 Choose static SVG for a shareable diagram, self-contained HTML when filtering or inspection helps, or a table when it communicates the decision better. Interactive output needs visible filter scope/counts, reset, keyboard access and persistent details; a phone view needs readable cards, a focused slice or a deliberate scroll region. Avoid tiny desktop diagrams on phones. Editing or live system writes require their own requested workflow.
 
 Deliver editable source plus a full accessible table/edge register. Label exports as full or current view and preserve hidden-data caveats. Open the actual artifact, compare values and relationships with the source, inspect desktop/portrait/landscape and test any controls and downloads. If rendering is unavailable, deliver a labeled source draft and say visual inspection was not performed. Do not claim a PDF/PNG exists from source code alone.
-
-## Rendered example
-
-Inspect the [software SVG](../assets/software-visual.svg) alongside its [editable data](../assets/software-visual.json) and [full source explanation](../examples/software.md). This static example has no interactive controls.

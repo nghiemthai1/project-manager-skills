@@ -8,11 +8,9 @@ Capture: **benefit ID; causal hypothesis; baseline; measure/unit/denominator; ob
 
 Use a causal chain with hypothesis labels or comparable outcome bars with sample sizes. Preserve delivery acceptance versus observed behavior versus financial realization. Unknown net benefit stays unknown.
 
-## Worked visual decision
+## Interpretation
 
-Relay’s teaching dataset drops from 15 to 12 minutes per ticket, with 40 versus 50 tickets. This is observational capacity evidence, not 20% cash savings.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Show the measurement baseline, sample size and observation period beside the result. Reduced handling time is capacity evidence; it does not by itself establish cash savings.
 
 ## Delivery standard
 
@@ -21,7 +19,3 @@ Preserve a source snapshot and mapping from literal IDs/fields to the displayed 
 Choose static SVG for a shareable diagram, self-contained HTML when filtering or inspection helps, or a table when it communicates the decision better. Interactive output needs visible filter scope/counts, reset, keyboard access and persistent details; a phone view needs readable cards, a focused slice or a deliberate scroll region. Avoid tiny desktop diagrams on phones. Editing or live system writes require their own requested workflow.
 
 Deliver editable source plus a full accessible table/edge register. Label exports as full or current view and preserve hidden-data caveats. Open the actual artifact, compare values and relationships with the source, inspect desktop/portrait/landscape and test any controls and downloads. If rendering is unavailable, deliver a labeled source draft and say visual inspection was not performed. Do not claim a PDF/PNG exists from source code alone.
-
-## Rendered example
-
-Inspect the [software SVG](../assets/software-visual.svg) alongside its [editable data](../assets/software-visual.json) and [full source explanation](../examples/software.md). This static example has no interactive controls.

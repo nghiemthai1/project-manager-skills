@@ -8,11 +8,9 @@ Capture: **person/skill; common time window; gross/leave/overhead; allocations; 
 
 Use common zero-based hour scales and a visible availability marker for each person. Preserve concurrent windows and skills; separate known zero from missing allocation. Totals never erase individual bottlenecks.
 
-## Worked visual decision
+## Interpretation
 
-Omar 64 demanded versus 56 available is eight hours overloaded; Lena’s twelve spare hours are not interchangeable integration capacity.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Show demand against availability for each person and skill over the same period. Spare hours in a different specialty do not automatically offset a bottleneck.
 
 ## Delivery standard
 
@@ -21,7 +19,3 @@ Preserve a source snapshot and mapping from literal IDs/fields to the displayed 
 Choose static SVG for a shareable diagram, self-contained HTML when filtering or inspection helps, or a table when it communicates the decision better. Interactive output needs visible filter scope/counts, reset, keyboard access and persistent details; a phone view needs readable cards, a focused slice or a deliberate scroll region. Avoid tiny desktop diagrams on phones. Editing or live system writes require their own requested workflow.
 
 Deliver editable source plus a full accessible table/edge register. Label exports as full or current view and preserve hidden-data caveats. Open the actual artifact, compare values and relationships with the source, inspect desktop/portrait/landscape and test any controls and downloads. If rendering is unavailable, deliver a labeled source draft and say visual inspection was not performed. Do not claim a PDF/PNG exists from source code alone.
-
-## Rendered example
-
-Inspect the [software SVG](../assets/software-visual.svg) alongside its [editable data](../assets/software-visual.json) and [full source explanation](../examples/software.md). This static example has no interactive controls.

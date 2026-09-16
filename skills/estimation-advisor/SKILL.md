@@ -87,9 +87,11 @@ Use [the estimation template](template.md). A good estimate is explainable by it
 
 ### When producing a visual
 
-Use the [estimate ranges or empirical forecast](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [estimate ranges or empirical forecast](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay three-point estimate](examples/software.md): asymmetric scenarios, different means and no invented confidence date.
 - [Northstar method choice](examples/migration.md): distinguish a bounded rehearsal estimate from unknown data-correction work.

@@ -74,6 +74,8 @@ Quality check: the reader can identify both the useful rule and the limit on its
 
 ## Examples
 
+Optional worked applications:
+
 - [Relay acceptance-evidence lesson](examples/software.md): an observed gate failure informs a proposed planning practice, not a proven meeting cadence.
 - [Northstar reconciliation lesson](examples/migration.md): count equality has a valid but limited role; relationship checks need their own coverage and adoption evidence.
 

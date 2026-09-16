@@ -82,13 +82,15 @@ Use [the artifact acceptance checklist](references/artifact-review.md) on actual
 
 ### Included offline renderer
 
-Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Start from either worked example's source, replace all fictional data, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
+Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
 
 ### Quality check before delivery
 
 Can a new team member find who performs the work, who owns the result, who contributes and who receives the outcome? Does every A refer to a real or explicitly proposed authority? Are independent acceptance decisions separate? Are vendor completion and internal acceptance distinguishable? Does the matrix show where confirmation is still needed?
 
 ## Examples
+
+Optional worked applications:
 
 - [Software release](examples/software.md): a complete draft RACI separates engineering delivery, security acceptance, service handover and sponsor decisions.
 - [IT migration](examples/migration.md): a vendor deliverable is kept distinct from business acceptance and operational transfer.

@@ -8,11 +8,9 @@ Capture: **quality objective; applicable requirement; preventive control; check/
 
 Use coverage states and exact evidence links. Separate planned checks from executed results. Do not average a failed mandatory control into a green quality score. Retain applicability/version and independent acceptance.
 
-## Worked visual decision
+## Interpretation
 
 A runbook document is planned support, not proof that operators can execute a recovery under the relevant failure condition.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

@@ -73,9 +73,11 @@ Quality check: a reader can explain why each item is classified, what changes ne
 
 ### When producing a visual
 
-Use the [exception board with optional risk grid](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [exception board with optional risk grid](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay's four distinct records](examples/software.md): an unavailable environment is an issue while interface compatibility remains uncertain.
 - [Northstar risk-to-issue transition](examples/migration.md): preserve M-R01 when M-I002 records actual lost links.

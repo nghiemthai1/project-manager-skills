@@ -8,11 +8,9 @@ Capture: **cutoff; current baseline; observed variance; forecast method; excepti
 
 Show a small set of linked, consistent artifacts. Retain raw source and prior snapshots. Timeline, budget and gate panels must identify whether each value is target, forecast or approved baseline.
 
-## Worked visual decision
+## Interpretation
 
-Relay’s 16 October cost forecast and dependency gap predate CR-001. A review pack must not mix the later budget into the earlier variance calculation.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Use the baseline and evidence available at each review cutoff. Do not mix a later approved budget into an earlier variance calculation.
 
 ## Delivery standard
 
