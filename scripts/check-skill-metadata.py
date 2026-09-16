@@ -7,7 +7,7 @@ from pathlib import Path
 import re
 import sys
 import yaml
-from validate import ROOT, REQUIRED, TYPES, frontmatter, without_fences, local_link_errors
+from validate import ROOT, REQUIRED, TYPES, frontmatter, without_fences, local_link_errors, metadata_errors
 
 
 def check(path):
@@ -24,16 +24,7 @@ def check(path):
             errors.append('description must contain 1–200 characters')
         elif not re.search(r'\bUse (?:when|for|before|during|after|to)\b',description,re.I):
             errors.append('description needs a concrete usage trigger')
-        metadata=data.get('metadata')
-        if not isinstance(metadata,dict):
-            errors.append('metadata must be a mapping')
-        else:
-            if metadata.get('type') not in TYPES:
-                errors.append('unsupported skill type')
-            if any(not isinstance(value,str) for value in metadata.values()):
-                errors.append('metadata values must be strings for portability')
-            if not isinstance(metadata.get('intent'),str) or not metadata.get('intent','').strip():
-                errors.append('metadata.intent must explain the fuller job')
+        errors.extend(metadata_errors(data))
         headings=re.findall(r'^## (.+)$',without_fences(body),re.M)
         if [heading for heading in headings if heading in REQUIRED]!=list(REQUIRED):
             errors.append('required sections must appear once and in order')

@@ -1,0 +1,15 @@
+{
+  "title": "Relay · a late interface is a local dependency gap",
+  "scope": "Fictional snapshot · 16 October 2026 · provider forecast is not a commitment",
+  "source": "../examples/software.md",
+  "data": {
+    "id": "DEP-AUDIT",
+    "id_state": "proposed artifact ID",
+    "needed_by": "2026-10-20",
+    "forecast": "2026-10-22",
+    "local_margin_calendar_days": -2,
+    "commitment": null,
+    "accepted": null
+  },
+  "reading_note": "R-001 possible incompatibility and I-001 unavailable environment remain separate records. Arrival of a file does not establish usable receiver acceptance. No two-day pilot deferral is inferred."
+}

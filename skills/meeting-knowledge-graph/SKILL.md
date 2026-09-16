@@ -1,19 +1,22 @@
 ---
 name: meeting-knowledge-graph
+argument-hint: '[meeting notes or transcript]'
 description: Build evidence-linked OKF meeting memory. Use when transcripts or notes need durable decisions, actions
   and recurring-series history rather than only a brief summary.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim
-    states, traceable concepts and preserved recurring-meeting history.
-  frameworks: OKF v0.2; immutable ledgers; attribution confidence; series delta
-  best_for: '["Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution
-    and claim states, traceable concepts and preserved recurring-meeting history."]'
-  scenarios: '["Convert these recurring meeting transcripts into durable evidence-linked memory while preserving
-    source order and changed decisions."]'
-  estimated_time: Depends on evidence and project scope
+intent: Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim
+  states, traceable concepts and preserved recurring-meeting history.
+type: workflow
+theme: delivery-and-decisions
+best_for:
+  - Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim states,
+    traceable concepts and preserved recurring-meeting history.
+scenarios:
+  - Convert these recurring meeting transcripts into durable evidence-linked memory while preserving source order
+    and changed decisions.
+estimated_time: Depends on evidence and project scope
+frameworks: OKF v0.2; immutable ledgers; attribution confidence; series delta
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Meeting Knowledge Graph
 
@@ -98,6 +101,10 @@ For recurring meetings, classify each affected concept as new, unchanged, update
 **Outputs:** navigable bundle plus brief and an explicit completion/uncertainty report. Inspect every consequential current claim for evidence and every changed concept for history. Compare source IDs/version/path strings literally; confirm unknown metadata survived and previous ledgers stayed unchanged.
 
 **Exit:** the brief is no stronger than its sources. State missing audio, unresolved attribution, intentional links or incomplete input rather than claim losslessness that was not verified. Updating local project memory is distinct from sending minutes, changing live tasks or approving project actions.
+
+### When producing a visual
+
+Use the [derived relationship view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

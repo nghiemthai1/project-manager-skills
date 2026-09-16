@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="856" viewBox="0 0 1420 856" role="img" aria-labelledby="title desc">
+<title id="title">Fictional handoff schedule</title><desc id="desc">Read-only schedule snapshot. Every source task is retained. Exact dates, ownership and sources are in the companion HTML and JSON.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#5d4a78"/></marker></defs>
+<rect width="1420" height="856" fill="#f7f9fc"/><g font-family="Arial,sans-serif">
+<text x="24.0" y="29.0" font-size="16" fill="#24364e" font-weight="700">Fictional handoff schedule</text>
+<text x="24.0" y="50.0" font-size="12" fill="#24364e" font-weight="400">draft-1 · As of 2028-02-28</text>
+<text x="24.0" y="71.0" font-size="12" fill="#24364e" font-weight="400">T-01, M-02 and R-03; external EXT-9 is outside snapshot</text>
+<text x="24.0" y="92.0" font-size="12" fill="#24364e" font-weight="400">Source: Fictional user request</text>
+<text x="24.0" y="113.0" font-size="12" fill="#24364e" font-weight="400">Calendar: Monday-Friday; 2028-02-29 holiday · [start, finish); finish is excluded</text>
+<text x="24.0" y="134.0" font-size="12" fill="#24364e" font-weight="400">Gray: Supplied comparison; approval unknown · Blue: forecast · Green: actual · Diamond: event, not acceptance</text>
+<text x="24.0" y="198.0" font-size="12" fill="#24364e" font-weight="700">TASK / SOURCE ID / OWNER</text>
+<rect x="733.3" y="208" width="323.3" height="323" fill="#e8edf4"/>
+<path d="M410.0,208 V531" stroke="#cdd7e4"/>
+<text x="391.0" y="197.0" font-size="11" fill="#24364e" font-weight="400">28 Feb</text>
+<path d="M733.3,208 V531" stroke="#cdd7e4"/>
+<text x="714.3" y="197.0" font-size="11" fill="#24364e" font-weight="400">29 Feb</text>
+<path d="M1056.7,208 V531" stroke="#cdd7e4"/>
+<text x="1037.7" y="197.0" font-size="11" fill="#24364e" font-weight="400">01 Mar</text>
+<path d="M1380.0,208 V531" stroke="#cdd7e4"/>
+<text x="1361.0" y="197.0" font-size="11" fill="#24364e" font-weight="400">02 Mar</text>
+<g data-task="T-01"><path d="M20,321 H1400" stroke="#d6deea"/>
+<text x="25.0" y="235.0" font-size="12" fill="#24364e" font-weight="600">T-01 · Work</text>
+<text x="25.0" y="256.0" font-size="11" fill="#24364e" font-weight="400">Owner: unknown</text>
+<text x="410.0" y="264.0" font-size="12" fill="#845408" font-weight="400">Forecast incomplete — retained in source table</text>
+</g>
+<g data-task="M-02"><path d="M20,426 H1400" stroke="#d6deea"/>
+<text x="25.0" y="340.0" font-size="12" fill="#24364e" font-weight="600">M-02 · Checkpoint</text>
+<text x="25.0" y="361.0" font-size="11" fill="#24364e" font-weight="400">Owner: unknown</text>
+<text x="410.0" y="369.0" font-size="12" fill="#845408" font-weight="400">Forecast incomplete — retained in source table</text>
+</g>
+<g data-task="R-03"><path d="M20,531 H1400" stroke="#d6deea"/>
+<text x="25.0" y="445.0" font-size="12" fill="#24364e" font-weight="600">R-03 · Review</text>
+<text x="25.0" y="466.0" font-size="11" fill="#24364e" font-weight="400">Owner: unknown</text>
+<text x="410.0" y="474.0" font-size="12" fill="#845408" font-weight="400">Forecast incomplete — retained in source table</text>
+</g>
+<path class="dependency" d="M1380.0,259 H1390.0 V469 H1056.7" fill="none" stroke="#5d4a78" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"><title>DEP-X FS</title></path>
+<text x="24.0" y="561.0" font-size="11" fill="#24364e" font-weight="400">Fictional data. No acceptance evidence or percent-progress evidence supplied.</text>
+<text x="24.0" y="579.0" font-size="11" fill="#24364e" font-weight="400">As-of date and all written dates retained without repair. Comparison approval is unknown.</text>
+<text x="24.0" y="597.0" font-size="11" fill="#24364e" font-weight="400">Mapping assumption: the stated actual start belongs to T-01, the work item; no actual finish was supplied.</text>
+<text x="24.0" y="615.0" font-size="11" fill="#24364e" font-weight="400">Display assumption: [start, finish) follows this renderer contract; source did not specify endpoint inclusion. Dates are unchanged.</text>
+<text x="24.0" y="633.0" font-size="11" fill="#24364e" font-weight="400">Working days and holiday are supplied by the requester; owners and relationship lag calendars beyond this snapshot are unknown.</text>
+<text x="24.0" y="651.0" font-size="11" fill="#24364e" font-weight="400">T-01: forecast incomplete; retained without an invented bar</text>
+<text x="24.0" y="669.0" font-size="11" fill="#24364e" font-weight="400">T-01: partial forecast interval; inspect source dates in table</text>
+<text x="24.0" y="687.0" font-size="11" fill="#24364e" font-weight="400">T-01: partial actual interval; inspect source dates in table</text>
+<text x="24.0" y="705.0" font-size="11" fill="#24364e" font-weight="400">M-02: forecast incomplete; retained without an invented bar</text>
+<text x="24.0" y="723.0" font-size="11" fill="#24364e" font-weight="400">R-03: forecast incomplete; retained without an invented bar</text>
+<text x="24.0" y="741.0" font-size="11" fill="#24364e" font-weight="400">R-03: partial forecast interval; inspect source dates in table</text>
+<text x="24.0" y="759.0" font-size="11" fill="#24364e" font-weight="400">DEP-X: forecast violates the stated relationship; no dates changed</text>
+<text x="24.0" y="777.0" font-size="11" fill="#24364e" font-weight="400">DEP-Z: endpoint outside snapshot; link retained in register</text>
+<text x="24.0" y="795.0" font-size="11" fill="#24364e" font-weight="400">DEP-X: T-01 → R-03 FS +0 unknown; zero lag supplied; source Fictional user request</text>
+<text x="24.0" y="813.0" font-size="11" fill="#24364e" font-weight="400">DEP-Z: EXT-9 → M-02 SS +2 working_days; source Fictional user request</text>
+</g></svg>

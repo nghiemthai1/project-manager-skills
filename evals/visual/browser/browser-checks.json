@@ -1,0 +1,172 @@
+{
+  "browser": "Chrome/152.0.7977.84",
+  "reports": [
+    {
+      "slug": "raci-matrix",
+      "scenario": "software",
+      "view": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "raci-matrix",
+      "scenario": "software",
+      "view": "portrait",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "raci-matrix",
+      "scenario": "software",
+      "view": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "raci-matrix",
+      "scenario": "migration",
+      "view": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "raci-matrix",
+      "scenario": "migration",
+      "view": "portrait",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "raci-matrix",
+      "scenario": "migration",
+      "view": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "gantt-chart",
+      "scenario": "software",
+      "view": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "gantt-chart",
+      "scenario": "software",
+      "view": "portrait",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "gantt-chart",
+      "scenario": "software",
+      "view": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "gantt-chart",
+      "scenario": "migration",
+      "view": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "gantt-chart",
+      "scenario": "migration",
+      "view": "portrait",
+      "viewport": [
+        390,
+        844
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "gantt-chart",
+      "scenario": "migration",
+      "view": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "overflow": false,
+      "searchResetKeyboard": true
+    },
+    {
+      "slug": "project-budget",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "benefits-realization",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "resource-capacity-plan",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "scope-and-wbs",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "dependency-map",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "stakeholder-map",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "risk-workshop",
+      "staticSVGTextBounds": true
+    },
+    {
+      "slug": "release-readiness",
+      "staticSVGTextBounds": true
+    }
+  ],
+  "completeExportsMatch": true,
+  "cleanRowExcludedFromFindings": true,
+  "consoleErrors": []
+}

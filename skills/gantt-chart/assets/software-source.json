@@ -1,0 +1,169 @@
+{
+  "title": "Relay · integration schedule",
+  "as_of": "2026-10-05",
+  "version": "GANTT-1.0",
+  "source": "Fictional software worked example; exact date table",
+  "scope": "Fictional teaching subcase; separate staff on B/C assumed, no actual progress or approved project commitment",
+  "comparison_label": "Original planning scenario (not approved baseline)",
+  "date_convention": "[start, finish)",
+  "calendar": {
+    "label": "Monday–Friday; no holidays assumed; date-only boundaries",
+    "working_weekdays": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holidays": []
+  },
+  "tasks": [
+    {
+      "id": "A",
+      "label": "Contract agreement",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "software.md / source table",
+      "comparison": {
+        "start": "2026-10-05",
+        "finish": "2026-10-07"
+      },
+      "forecast": {
+        "start": "2026-10-05",
+        "finish": "2026-10-07"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "B",
+      "label": "Interface build",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "software.md / source table",
+      "comparison": {
+        "start": "2026-10-07",
+        "finish": "2026-10-13"
+      },
+      "forecast": {
+        "start": "2026-10-07",
+        "finish": "2026-10-15"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "C",
+      "label": "Receiver tests",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "software.md / source table",
+      "comparison": {
+        "start": "2026-10-07",
+        "finish": "2026-10-12"
+      },
+      "forecast": {
+        "start": "2026-10-07",
+        "finish": "2026-10-12"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "D",
+      "label": "Integration",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "software.md / source table",
+      "comparison": {
+        "start": "2026-10-13",
+        "finish": "2026-10-14"
+      },
+      "forecast": {
+        "start": "2026-10-15",
+        "finish": "2026-10-16"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "E",
+      "label": "Finish checkpoint",
+      "kind": "milestone",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "software.md / source table",
+      "comparison": {
+        "start": "2026-10-14",
+        "finish": "2026-10-14"
+      },
+      "forecast": {
+        "start": "2026-10-16",
+        "finish": "2026-10-16"
+      },
+      "actual": null,
+      "progress": null
+    }
+  ],
+  "links": [
+    {
+      "id": "L-1",
+      "from": "A",
+      "to": "B",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "software.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-2",
+      "from": "A",
+      "to": "C",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "software.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-3",
+      "from": "B",
+      "to": "D",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "software.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-4",
+      "from": "C",
+      "to": "D",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "software.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-5",
+      "from": "D",
+      "to": "E",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "software.md / predecessor column",
+      "inferred": false
+    }
+  ],
+  "notes": [
+    "Task E is the displayed checkpoint, not acceptance evidence. IDs A–E identify this teaching network only.",
+    "Weekend shading adds no productive effort. The forecast is supplied, not recalculated by the renderer.",
+    "Seven to nine working days in the software exercise; this is not a two-calendar-day Relay deferral."
+  ]
+}

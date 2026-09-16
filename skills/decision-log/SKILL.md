@@ -1,19 +1,21 @@
 ---
 name: decision-log
+argument-hint: '[decision, authority, rationale, and conditions]'
 description: Record the exact choice, authority, rationale and conditions. Use when project decisions need traceable
   history across meetings, changes or conflicting recollections.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Create durable decision records that distinguish proposals from authority and preserve bounded approvals,
-    implementation state and later supersession.
-  frameworks: DACI; decision records; option analysis
-  best_for: '["Create durable decision records that distinguish proposals from authority and preserve bounded approvals,
-    implementation state and later supersession."]'
-  scenarios: '["Record what was actually decided, by whom, why, under which conditions, and what earlier decision
-    it supersedes."]'
-  estimated_time: Depends on evidence and project scope
+intent: Create durable decision records that distinguish proposals from authority and preserve bounded approvals,
+  implementation state and later supersession.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Create durable decision records that distinguish proposals from authority and preserve bounded approvals, implementation
+    state and later supersession.
+scenarios:
+  - Record what was actually decided, by whom, why, under which conditions, and what earlier decision it supersedes.
+estimated_time: Depends on evidence and project scope
+frameworks: DACI; decision records; option analysis
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Decision Log
 
@@ -67,6 +69,10 @@ Partial supersession matters: a new funding baseline can replace the cost provis
 6. **Check action and review.** Use the [template](template.md) to record implementation evidence and open conditions. A missed assumption or review trigger opens a reconsideration; it does not automatically authorize reversal. Communicate the actual decision only within existing authorization and record recipient acknowledgment separately.
 
 Quality check: a reader can answer who had authority, what changed, when it took effect, what did not change, what evidence supported it and what remains unimplemented. If any answer is missing, preserve the gap instead of turning an incomplete record into a confident approval.
+
+### When producing a visual
+
+Use the [decision chronology or option map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

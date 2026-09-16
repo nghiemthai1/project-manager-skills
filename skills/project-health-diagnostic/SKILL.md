@@ -1,19 +1,22 @@
 ---
 name: project-health-diagnostic
+argument-hint: '[current signals and conflicting evidence]'
 description: Diagnose delivery health and evidence confidence. Use when project status is disputed, incomplete or
   contradicted by cost, schedule or acceptance evidence.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
-    from causal hypotheses and recommend the next decision or investigation.
-  frameworks: Dimensional health assessment; leading/lagging indicators; causal hypotheses
-  best_for: '["Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
-    from causal hypotheses and recommend the next decision or investigation."]'
-  scenarios: '["Reports are green but milestones, defects and staffing tell different stories. Diagnose current
-    delivery health and missing evidence."]'
-  estimated_time: Depends on evidence and project scope
+intent: Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
+  from causal hypotheses and recommend the next decision or investigation.
+type: interactive
+theme: delivery-and-decisions
+best_for:
+  - Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms from
+    causal hypotheses and recommend the next decision or investigation.
+scenarios:
+  - Reports are green but milestones, defects and staffing tell different stories. Diagnose current delivery health
+    and missing evidence.
+estimated_time: Depends on evidence and project scope
+frameworks: Dimensional health assessment; leading/lagging indicators; causal hypotheses
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Health Diagnostic
 
@@ -80,6 +83,10 @@ For each suspected cause, describe the mechanism, supporting and contrary eviden
 4. **Recommend hold or pause at the decision boundary:** a required condition is failed/absent or no viable funded/authorized path is evidenced. Distinguish the recommendation from an actual hold decision and preserve any unaffected work that remains authorized.
 
 Explain why the selected branch fits, which alternatives are premature and what new evidence could change it. Give the actual decision authority or the gap in identifying that authority. Finish with a concise diagnosis plus evidence table; a formal numeric overall score is unnecessary.
+
+### When producing a visual
+
+Use the [dimension-by-dimension health view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

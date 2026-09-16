@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="1170" viewBox="0 0 1210 1170" role="img" aria-labelledby="title desc">
+<title id="title">Relay · responsibility map</title><desc id="desc">Proposed — assignments unconfirmed responsibility matrix. Full assignments, notes and sources are available in the accompanying HTML, JSON and CSV.</desc>
+<rect width="1210" height="1170" fill="#f7f9fc"/>
+<g font-family="Arial, sans-serif">
+<text x="26" y="35" font-size="23" fill="#13283f" font-weight="700">Relay · responsibility map</text>
+<text x="26" y="63" font-size="13" fill="#26354a" font-weight="400">Proposed — assignments unconfirmed · RACI-0.1 · As of 2026-09-29</text>
+<text x="26" y="82" font-size="13" fill="#26354a" font-weight="400">Proposed work and independent acceptance boundaries; no agreement or capacity inferred</text>
+<text x="26" y="101" font-size="13" fill="#26354a" font-weight="400">Source: Fictional software worked example; normalized from the supplied Markdown matrix</text>
+<text x="26" y="195" font-size="12" fill="#42516a" font-weight="700">DELIVERABLE / DECISION</text>
+<text x="322" y="190" font-size="13" fill="#13283f" font-weight="700">Ada: sponsor</text>
+<text x="467" y="190" font-size="13" fill="#13283f" font-weight="700">Mina: PM</text>
+<text x="612" y="190" font-size="13" fill="#13283f" font-weight="700">Omar: engineering</text>
+<text x="757" y="190" font-size="13" fill="#13283f" font-weight="700">Priya: product</text>
+<text x="902" y="190" font-size="13" fill="#13283f" font-weight="700">Lena: security</text>
+<text x="1047" y="190" font-size="13" fill="#13283f" font-weight="700">Theo: service</text>
+<rect x="20" y="225" width="1170" height="74" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="244" font-size="11" fill="#5b6677" font-weight="400">R-1</text>
+<text x="32" y="264" font-size="13" fill="#26354a" font-weight="600">Integrated baseline proposal</text>
+<rect x="318" y="235" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="259" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="330" y="277" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="463" y="235" width="129" height="54" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="259" font-size="20" fill="#423075" font-weight="700">A/R</text>
+<text x="475" y="277" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="608" y="235" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="259" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="620" y="277" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="753" y="235" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="259" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="765" y="277" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="898" y="235" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="259" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="910" y="277" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="1043" y="235" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="259" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="1055" y="277" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="20" y="299" width="1170" height="74" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="318" font-size="11" fill="#5b6677" font-weight="400">R-2</text>
+<text x="32" y="338" font-size="13" fill="#26354a" font-weight="600">Baseline approval decision</text>
+<rect x="318" y="309" width="129" height="54" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="333" font-size="20" fill="#423075" font-weight="700">A</text>
+<text x="330" y="351" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="463" y="309" width="129" height="54" rx="8" fill="#dbeafe" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="333" font-size="20" fill="#173d73" font-weight="700">R</text>
+<text x="475" y="351" font-size="10" fill="#173d73" font-weight="400">proposed</text>
+<rect x="608" y="309" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="333" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="620" y="351" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="753" y="309" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="333" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="765" y="351" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="898" y="309" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="333" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="910" y="351" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="1043" y="309" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="333" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="1055" y="351" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="20" y="373" width="1170" height="76" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="392" font-size="11" fill="#5b6677" font-weight="400">R-3</text>
+<text x="32" y="412" font-size="13" fill="#26354a" font-weight="600">SAML implementation and engineering</text>
+<text x="32" y="429" font-size="13" fill="#26354a" font-weight="600">evidence</text>
+<rect x="318" y="383" width="129" height="56" rx="8" fill="#edf0f4" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="407" font-size="20" fill="#38475a" font-weight="700">I</text>
+<text x="330" y="425" font-size="10" fill="#38475a" font-weight="400">proposed</text>
+<rect x="463" y="383" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="407" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="475" y="425" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="608" y="383" width="129" height="56" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="407" font-size="20" fill="#423075" font-weight="700">A/R</text>
+<text x="620" y="425" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="753" y="383" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="407" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="765" y="425" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="898" y="383" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="407" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="910" y="425" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="1043" y="383" width="129" height="56" rx="8" fill="#edf0f4" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="407" font-size="20" fill="#38475a" font-weight="700">I</text>
+<text x="1055" y="425" font-size="10" fill="#38475a" font-weight="400">proposed</text>
+<rect x="20" y="449" width="1170" height="74" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="468" font-size="11" fill="#5b6677" font-weight="400">R-4</text>
+<text x="32" y="488" font-size="13" fill="#26354a" font-weight="600">Backlog ordering</text>
+<rect x="318" y="459" width="129" height="54" rx="8" fill="#edf0f4" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="483" font-size="20" fill="#38475a" font-weight="700">I</text>
+<text x="330" y="501" font-size="10" fill="#38475a" font-weight="400">proposed</text>
+<rect x="463" y="459" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="483" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="475" y="501" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="608" y="459" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="483" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="620" y="501" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="753" y="459" width="129" height="54" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="483" font-size="20" fill="#423075" font-weight="700">A/R</text>
+<text x="765" y="501" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="898" y="459" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="483" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="910" y="501" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="1043" y="459" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="483" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="1055" y="501" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="20" y="523" width="1170" height="74" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="542" font-size="11" fill="#5b6677" font-weight="400">R-5</text>
+<text x="32" y="562" font-size="13" fill="#26354a" font-weight="600">Security acceptance decision</text>
+<rect x="318" y="533" width="129" height="54" rx="8" fill="#edf0f4" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="557" font-size="20" fill="#38475a" font-weight="700">I</text>
+<text x="330" y="575" font-size="10" fill="#38475a" font-weight="400">proposed</text>
+<rect x="463" y="533" width="129" height="54" rx="8" fill="#edf0f4" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="557" font-size="20" fill="#38475a" font-weight="700">I</text>
+<text x="475" y="575" font-size="10" fill="#38475a" font-weight="400">proposed</text>
+<rect x="608" y="533" width="129" height="54" rx="8" fill="#dbeafe" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="557" font-size="20" fill="#173d73" font-weight="700">R</text>
+<text x="620" y="575" font-size="10" fill="#173d73" font-weight="400">proposed</text>
+<rect x="753" y="533" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="557" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="765" y="575" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="898" y="533" width="129" height="54" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="557" font-size="20" fill="#423075" font-weight="700">A/R</text>
+<text x="910" y="575" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="1043" y="533" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="557" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="1055" y="575" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="20" y="597" width="1170" height="74" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="616" font-size="11" fill="#5b6677" font-weight="400">R-6</text>
+<text x="32" y="636" font-size="13" fill="#26354a" font-weight="600">Service handover acceptance</text>
+<rect x="318" y="607" width="129" height="54" rx="8" fill="#edf0f4" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="631" font-size="20" fill="#38475a" font-weight="700">I</text>
+<text x="330" y="649" font-size="10" fill="#38475a" font-weight="400">proposed</text>
+<rect x="463" y="607" width="129" height="54" rx="8" fill="#dbeafe" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="631" font-size="20" fill="#173d73" font-weight="700">R</text>
+<text x="475" y="649" font-size="10" fill="#173d73" font-weight="400">proposed</text>
+<rect x="608" y="607" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="631" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="620" y="649" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="753" y="607" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="631" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="765" y="649" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="898" y="607" width="129" height="54" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="631" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="910" y="649" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="1043" y="607" width="129" height="54" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="631" font-size="20" fill="#423075" font-weight="700">A/R</text>
+<text x="1055" y="649" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="20" y="671" width="1170" height="76" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="690" font-size="11" fill="#5b6677" font-weight="400">R-7</text>
+<text x="32" y="710" font-size="13" fill="#26354a" font-weight="600">Material scope/funding change</text>
+<text x="32" y="727" font-size="13" fill="#26354a" font-weight="600">decision</text>
+<rect x="318" y="681" width="129" height="56" rx="8" fill="#e3defa" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="705" font-size="20" fill="#423075" font-weight="700">A</text>
+<text x="330" y="723" font-size="10" fill="#423075" font-weight="400">proposed</text>
+<rect x="463" y="681" width="129" height="56" rx="8" fill="#dbeafe" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="705" font-size="20" fill="#173d73" font-weight="700">R</text>
+<text x="475" y="723" font-size="10" fill="#173d73" font-weight="400">proposed</text>
+<rect x="608" y="681" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="705" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="620" y="723" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="753" y="681" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="705" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="765" y="723" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="898" y="681" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="705" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="910" y="723" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="1043" y="681" width="129" height="56" rx="8" fill="#d6eee9" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="705" font-size="20" fill="#155d54" font-weight="700">C</text>
+<text x="1055" y="723" font-size="10" fill="#155d54" font-weight="400">proposed</text>
+<rect x="20" y="747" width="1170" height="74" fill="#fff" stroke="#dde3ec"/>
+<text x="32" y="766" font-size="11" fill="#5b6677" font-weight="400">GO-UNKNOWN</text>
+<text x="32" y="786" font-size="13" fill="#26354a" font-weight="600">Pilot go decision</text>
+<rect x="318" y="757" width="129" height="54" rx="8" fill="#fff0d0" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="330" y="781" font-size="20" fill="#744c0e" font-weight="700">?</text>
+<text x="330" y="799" font-size="10" fill="#744c0e" font-weight="400">unknown</text>
+<rect x="463" y="757" width="129" height="54" rx="8" fill="#fff0d0" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="475" y="781" font-size="20" fill="#744c0e" font-weight="700">?</text>
+<text x="475" y="799" font-size="10" fill="#744c0e" font-weight="400">unknown</text>
+<rect x="608" y="757" width="129" height="54" rx="8" fill="#fff0d0" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="620" y="781" font-size="20" fill="#744c0e" font-weight="700">?</text>
+<text x="620" y="799" font-size="10" fill="#744c0e" font-weight="400">unknown</text>
+<rect x="753" y="757" width="129" height="54" rx="8" fill="#fff0d0" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="765" y="781" font-size="20" fill="#744c0e" font-weight="700">?</text>
+<text x="765" y="799" font-size="10" fill="#744c0e" font-weight="400">unknown</text>
+<rect x="898" y="757" width="129" height="54" rx="8" fill="#fff0d0" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="910" y="781" font-size="20" fill="#744c0e" font-weight="700">?</text>
+<text x="910" y="799" font-size="10" fill="#744c0e" font-weight="400">unknown</text>
+<rect x="1043" y="757" width="129" height="54" rx="8" fill="#fff0d0" stroke="#a3adbd" stroke-dasharray="4 3"/>
+<text x="1055" y="781" font-size="20" fill="#744c0e" font-weight="700">?</text>
+<text x="1055" y="799" font-size="10" fill="#744c0e" font-weight="400">unknown</text>
+<text x="26" y="851" font-size="12" fill="#26354a" font-weight="400">R performs · A owns result · C consulted · I informed · A/R both · ? unresolved · — no assignment</text>
+<text x="26" y="870" font-size="12" fill="#26354a" font-weight="400">Dashed border = proposed/unknown; solid border = confirmed; red outline = disputed.</text>
+<text x="26" y="889" font-size="12" fill="#26354a" font-weight="400">8 rows · 6 roles · 8 rows with review findings. Counts are not utilization.</text>
+<text x="26" y="908" font-size="12" fill="#26354a" font-weight="400">Row IDs R-/M-R- and GO-UNKNOWN are illustrative artifact identifiers added for navigation, not new project approvals.</text>
+<text x="26" y="927" font-size="12" fill="#26354a" font-weight="400">All original matrix letters are retained. The unresolved go row makes the existing narrative gap visible.</text>
+<text x="26" y="946" font-size="12" fill="#26354a" font-weight="400">Full duty and source records are in HTML, JSON and CSV; counts are not utilization.</text>
+<text x="26" y="965" font-size="12" fill="#26354a" font-weight="400">R-2 / Mina: PM: prepare record</text>
+<text x="26" y="984" font-size="12" fill="#26354a" font-weight="400">R-5 / Omar: engineering: supply evidence</text>
+<text x="26" y="1003" font-size="12" fill="#26354a" font-weight="400">R-6 / Mina: PM: coordinate packet</text>
+<text x="26" y="1022" font-size="12" fill="#26354a" font-weight="400">R-7 / Mina: PM: impact packet</text>
+<text x="26" y="1041" font-size="12" fill="#26354a" font-weight="400">GO-UNKNOWN / Ada: sponsor: Release decision authority/assignment not established in this early draft</text>
+<text x="26" y="1060" font-size="12" fill="#26354a" font-weight="400">GO-UNKNOWN / Mina: PM: Release decision authority/assignment not established in this early draft</text>
+<text x="26" y="1079" font-size="12" fill="#26354a" font-weight="400">GO-UNKNOWN / Omar: engineering: Release decision authority/assignment not established in this early draft</text>
+<text x="26" y="1098" font-size="12" fill="#26354a" font-weight="400">GO-UNKNOWN / Priya: product: Release decision authority/assignment not established in this early draft</text>
+<text x="26" y="1117" font-size="12" fill="#26354a" font-weight="400">GO-UNKNOWN / Lena: security: Release decision authority/assignment not established in this early draft</text>
+<text x="26" y="1136" font-size="12" fill="#26354a" font-weight="400">GO-UNKNOWN / Theo: service: Release decision authority/assignment not established in this early draft</text>
+</g></svg>

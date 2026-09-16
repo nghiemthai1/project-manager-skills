@@ -1,0 +1,212 @@
+[
+  {
+    "skill": "project-intake-advisor",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "project-business-case",
+    "route": "Option comparison with ranges",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "delivery-approach-advisor",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "project-charter",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "project-governance",
+    "route": "Decision-rights flow",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "project-kickoff",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "stakeholder-identification",
+    "route": "Coverage map",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "stakeholder-map",
+    "route": "Paired stakeholder grids",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "stakeholder-engagement-advisor",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "raci-matrix",
+    "route": "Dedicated renderer and visual workflow",
+    "reference": "references/renderer.md"
+  },
+  {
+    "skill": "communication-plan",
+    "route": "Audience-channel cadence matrix",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "workshop-facilitation",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "scope-and-wbs",
+    "route": "Deliverable hierarchy",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "acceptance-and-traceability",
+    "route": "Evidence traceability matrix",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "prioritization-advisor",
+    "route": "Tradeoff plot or ranked options table",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "estimation-advisor",
+    "route": "Estimate ranges or empirical forecast",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "milestone-schedule",
+    "route": "Logic network plus milestone view",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "gantt-chart",
+    "route": "Dedicated renderer and visual workflow",
+    "reference": "references/renderer.md"
+  },
+  {
+    "skill": "integrated-project-planning",
+    "route": "Linked baseline review pack",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "dependency-map",
+    "route": "Provider-to-receiver graph",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "resource-capacity-plan",
+    "route": "Per-person demand versus availability",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "project-budget",
+    "route": "Baseline, actual and forecast comparison",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "vendor-procurement",
+    "route": "Deliverable and acceptance matrix",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "quality-management-plan",
+    "route": "Assurance and evidence coverage matrix",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "raid-log",
+    "route": "Exception board with optional risk grid",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "risk-workshop",
+    "route": "Risk exposure and control map",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "status-report",
+    "route": "Evidence-based status dashboard",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "decision-log",
+    "route": "Decision chronology or option map",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "escalation-brief",
+    "route": "Decision options comparison",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "meeting-knowledge-graph",
+    "route": "Derived relationship view",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "sprint-planning",
+    "route": "Sprint forecast board",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "change-request",
+    "route": "Before/after impact comparison",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "project-health-diagnostic",
+    "route": "Dimension-by-dimension health view",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "project-recovery-advisor",
+    "route": "Recovery option scenarios",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "delivery-control-cycle",
+    "route": "Control review artifact pack",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "organizational-change",
+    "route": "Group readiness and adoption matrix",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "release-readiness",
+    "route": "Independent gate evidence matrix",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "release-and-handover",
+    "route": "Cutover sequence and transfer gates",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "retrospective",
+    "route": "Evidence timeline or cause map",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "lessons-learned",
+    "route": "Conversation or text/table artifact by default",
+    "reference": null
+  },
+  {
+    "skill": "benefits-realization",
+    "route": "Benefit chain and measured outcome comparison",
+    "reference": "references/visual-artifact.md"
+  },
+  {
+    "skill": "project-closure",
+    "route": "Closure evidence and residual transfer matrix",
+    "reference": "references/visual-artifact.md"
+  }
+]

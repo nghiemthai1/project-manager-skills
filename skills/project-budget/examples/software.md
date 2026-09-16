@@ -29,3 +29,9 @@ On 19 October CR-001 later authorizes B2 of 120k: original 100k performance budg
 Additional fictional ledger illustration: a 20k purchase order includes 8k already within actual cost and 12k still unspent. If an ETC already includes that 12k, adding the whole 20k again would duplicate both incurred and remaining amounts. Reconcile the line items before forecasting; these teaching values are not extra Relay costs to add to the table above.
 
 **Repair:** “Reserve makes 120k authorized” misses the 10k gap beyond the total envelope and the reserve-release decision. Show both bridges and obtain the actual authority.
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

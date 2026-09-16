@@ -1,0 +1,49 @@
+row_id,deliverable,role_id,role,code,confirmation,work_boundary,source
+R-1,Integrated baseline proposal,Ada,Ada: sponsor,C,proposed,,software.md / proposed matrix
+R-1,Integrated baseline proposal,Mina,Mina: PM,A/R,proposed,,software.md / proposed matrix
+R-1,Integrated baseline proposal,Omar,Omar: engineering,C,proposed,,software.md / proposed matrix
+R-1,Integrated baseline proposal,Priya,Priya: product,C,proposed,,software.md / proposed matrix
+R-1,Integrated baseline proposal,Lena,Lena: security,C,proposed,,software.md / proposed matrix
+R-1,Integrated baseline proposal,Theo,Theo: service,C,proposed,,software.md / proposed matrix
+R-2,Baseline approval decision,Ada,Ada: sponsor,A,proposed,,software.md / proposed matrix
+R-2,Baseline approval decision,Mina,Mina: PM,R,proposed,prepare record,software.md / proposed matrix
+R-2,Baseline approval decision,Omar,Omar: engineering,C,proposed,,software.md / proposed matrix
+R-2,Baseline approval decision,Priya,Priya: product,C,proposed,,software.md / proposed matrix
+R-2,Baseline approval decision,Lena,Lena: security,C,proposed,,software.md / proposed matrix
+R-2,Baseline approval decision,Theo,Theo: service,C,proposed,,software.md / proposed matrix
+R-3,SAML implementation and engineering evidence,Ada,Ada: sponsor,I,proposed,,software.md / proposed matrix
+R-3,SAML implementation and engineering evidence,Mina,Mina: PM,C,proposed,,software.md / proposed matrix
+R-3,SAML implementation and engineering evidence,Omar,Omar: engineering,A/R,proposed,,software.md / proposed matrix
+R-3,SAML implementation and engineering evidence,Priya,Priya: product,C,proposed,,software.md / proposed matrix
+R-3,SAML implementation and engineering evidence,Lena,Lena: security,C,proposed,,software.md / proposed matrix
+R-3,SAML implementation and engineering evidence,Theo,Theo: service,I,proposed,,software.md / proposed matrix
+R-4,Backlog ordering,Ada,Ada: sponsor,I,proposed,,software.md / proposed matrix
+R-4,Backlog ordering,Mina,Mina: PM,C,proposed,,software.md / proposed matrix
+R-4,Backlog ordering,Omar,Omar: engineering,C,proposed,,software.md / proposed matrix
+R-4,Backlog ordering,Priya,Priya: product,A/R,proposed,,software.md / proposed matrix
+R-4,Backlog ordering,Lena,Lena: security,C,proposed,,software.md / proposed matrix
+R-4,Backlog ordering,Theo,Theo: service,C,proposed,,software.md / proposed matrix
+R-5,Security acceptance decision,Ada,Ada: sponsor,I,proposed,,software.md / proposed matrix
+R-5,Security acceptance decision,Mina,Mina: PM,I,proposed,,software.md / proposed matrix
+R-5,Security acceptance decision,Omar,Omar: engineering,R,proposed,supply evidence,software.md / proposed matrix
+R-5,Security acceptance decision,Priya,Priya: product,C,proposed,,software.md / proposed matrix
+R-5,Security acceptance decision,Lena,Lena: security,A/R,proposed,,software.md / proposed matrix
+R-5,Security acceptance decision,Theo,Theo: service,C,proposed,,software.md / proposed matrix
+R-6,Service handover acceptance,Ada,Ada: sponsor,I,proposed,,software.md / proposed matrix
+R-6,Service handover acceptance,Mina,Mina: PM,R,proposed,coordinate packet,software.md / proposed matrix
+R-6,Service handover acceptance,Omar,Omar: engineering,C,proposed,,software.md / proposed matrix
+R-6,Service handover acceptance,Priya,Priya: product,C,proposed,,software.md / proposed matrix
+R-6,Service handover acceptance,Lena,Lena: security,C,proposed,,software.md / proposed matrix
+R-6,Service handover acceptance,Theo,Theo: service,A/R,proposed,,software.md / proposed matrix
+R-7,Material scope/funding change decision,Ada,Ada: sponsor,A,proposed,,software.md / proposed matrix
+R-7,Material scope/funding change decision,Mina,Mina: PM,R,proposed,impact packet,software.md / proposed matrix
+R-7,Material scope/funding change decision,Omar,Omar: engineering,C,proposed,,software.md / proposed matrix
+R-7,Material scope/funding change decision,Priya,Priya: product,C,proposed,,software.md / proposed matrix
+R-7,Material scope/funding change decision,Lena,Lena: security,C,proposed,,software.md / proposed matrix
+R-7,Material scope/funding change decision,Theo,Theo: service,C,proposed,,software.md / proposed matrix
+GO-UNKNOWN,Pilot go decision,Ada,Ada: sponsor,?,unknown,Release decision authority/assignment not established in this early draft,software.md / review findings
+GO-UNKNOWN,Pilot go decision,Mina,Mina: PM,?,unknown,Release decision authority/assignment not established in this early draft,software.md / review findings
+GO-UNKNOWN,Pilot go decision,Omar,Omar: engineering,?,unknown,Release decision authority/assignment not established in this early draft,software.md / review findings
+GO-UNKNOWN,Pilot go decision,Priya,Priya: product,?,unknown,Release decision authority/assignment not established in this early draft,software.md / review findings
+GO-UNKNOWN,Pilot go decision,Lena,Lena: security,?,unknown,Release decision authority/assignment not established in this early draft,software.md / review findings
+GO-UNKNOWN,Pilot go decision,Theo,Theo: service,?,unknown,Release decision authority/assignment not established in this early draft,software.md / review findings

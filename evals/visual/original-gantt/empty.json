@@ -1,0 +1,31 @@
+{
+  "title": "Fictional handoff schedule",
+  "as_of": "2028-02-28",
+  "source": "Fictional user request",
+  "scope": "T-01, M-02 and R-03; external EXT-9 is outside snapshot",
+  "version": "draft-1",
+  "comparison_label": "Supplied comparison; approval unknown",
+  "date_convention": "[start, finish)",
+  "calendar": {
+    "label": "Monday-Friday; 2028-02-29 holiday",
+    "working_weekdays": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holidays": [
+      "2028-02-29"
+    ]
+  },
+  "tasks": [],
+  "links": [],
+  "notes": [
+    "Fictional data. No acceptance evidence or percent-progress evidence supplied.",
+    "As-of date and all written dates retained without repair. Comparison approval is unknown.",
+    "Mapping assumption: the stated actual start belongs to T-01, the work item; no actual finish was supplied.",
+    "Display assumption: [start, finish) follows this renderer contract; source did not specify endpoint inclusion. Dates are unchanged.",
+    "Working days and holiday are supplied by the requester; owners and relationship lag calendars beyond this snapshot are unknown."
+  ]
+}

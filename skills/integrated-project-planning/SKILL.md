@@ -1,19 +1,22 @@
 ---
 name: integrated-project-planning
+argument-hint: '[scope, schedule, capacity, funding, and gates]'
 description: Reconcile scope, acceptance, schedule, capacity, costs and controls into one plan. Use when preparing
   a baseline or revising a plan whose parts no longer agree.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded
-    baseline decision.
-  frameworks: Integrated baseline planning; progressive elaboration; consistency review
-  best_for: '["Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded
-    baseline decision."]'
-  scenarios: '["Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent
-    delivery plan."]'
-  estimated_time: Depends on evidence and project scope
+intent: Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded baseline
+  decision.
+type: workflow
+theme: scope-and-planning
+best_for:
+  - Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded baseline
+    decision.
+scenarios:
+  - Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent delivery
+    plan.
+estimated_time: Depends on evidence and project scope
+frameworks: Integrated baseline planning; progressive elaboration; consistency review
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Integrated Project Planning
 
@@ -77,6 +80,10 @@ Input: all current artifacts. Run the consistency tests above and inspect a fail
 Input: proposal, relevant authority decisions and conditions. Record exactly which scope/date/funding versions were approved; retain rejected options, open assumptions and separate acceptance gates. Output: baseline/forecast map, control cadence, owners and first evidence checkpoints. Exit: Delivery Control Cycle can compare current evidence against the correct authorized boundaries, or the plan remains a proposal pending a real decision. Later changes re-enter the affected phase without erasing earlier baselines.
 
 Use [the integrated-plan template](template.md). A decision-ready plan should let a reviewer trace a milestone to work, people, cost, acceptance and authority. It need not pretend all uncertainties are resolved; it must show which uncertainties matter to the decision and what happens if they break the plan.
+
+### When producing a visual
+
+Use the [linked baseline review pack](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

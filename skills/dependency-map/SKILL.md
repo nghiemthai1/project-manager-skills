@@ -1,19 +1,21 @@
 ---
 name: dependency-map
+argument-hint: '[handoffs, providers, receivers, and dates]'
 description: Define cross-team handoffs, usable acceptance and timing gaps. Use when external deliverables, approvals
   or shared services may block project work.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Make provider-to-receiver dependencies actionable with evidence, dates, acceptance and an explicit decision
+intent: Make provider-to-receiver dependencies actionable with evidence, dates, acceptance and an explicit decision
+  route.
+type: component
+theme: controls-and-assurance
+best_for:
+  - Make provider-to-receiver dependencies actionable with evidence, dates, acceptance and an explicit decision
     route.
-  frameworks: Dependency network; interface agreements; local margin versus float
-  best_for: '["Make provider-to-receiver dependencies actionable with evidence, dates, acceptance and an explicit
-    decision route."]'
-  scenarios: '["Map cross-team handoffs with provider, receiver, needed-by date, expected delivery and acceptance
-    evidence."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Map cross-team handoffs with provider, receiver, needed-by date, expected delivery and acceptance evidence.
+estimated_time: Depends on evidence and project scope
+frameworks: Dependency network; interface agreements; local margin versus float
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Dependency Map
 
@@ -65,6 +67,10 @@ A graph can clarify multiple handoffs, but keep its arrows directional and label
 6. **Close and maintain the loop.** Record action owner/status, decision deadline if supported, receiver acceptance and changed forecasts. Preserve rejected deliveries and prior promises. Recheck after scope, interface, resource or calendar changes.
 
 Use [the dependency template](template.md). Each material gap should lead to a decision or evidence request, not only a red arrow. A useful register lets both sides recognize the same deliverable and understand what “done” means.
+
+### When producing a visual
+
+Use the [provider-to-receiver graph](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

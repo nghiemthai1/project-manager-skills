@@ -1,17 +1,20 @@
 ---
 name: project-intake-advisor
+argument-hint: '[request or initiative idea]'
 description: Triage an incoming request into a project, change, operational task or investigation. Use when a vague
   ask or escalation needs a response before commitment.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Separate the literal request from its intended outcome and route it without inventing commitments.
-  frameworks: Request triage; outcome-evidence-action; decision rights
-  best_for: '["Separate the literal request from its intended outcome and route it without inventing commitments."]'
-  scenarios: '["Use project-intake-advisor: Separate the literal request from its intended outcome and route it
-    without inventing commitments."]'
-  estimated_time: Depends on evidence and project scope
+intent: Separate the literal request from its intended outcome and route it without inventing commitments.
+type: interactive
+theme: initiation-and-governance
+best_for:
+  - Separate the literal request from its intended outcome and route it without inventing commitments.
+scenarios:
+  - 'Use project-intake-advisor: Separate the literal request from its intended outcome and route it without inventing
+    commitments.'
+estimated_time: Depends on evidence and project scope
+frameworks: Request triage; outcome-evidence-action; decision rights
+domain: software-it-project-management
+version: 2.0.0
 license: CC-BY-NC-SA-4.0
 ---
 # Project Intake Advisor

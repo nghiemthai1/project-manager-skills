@@ -1,0 +1,47 @@
+{
+  "title": "Relay · unknown interest stays outside the grid",
+  "scope": "Fictional draft before baseline approval · qualitative placements are hypotheses, not measured scores",
+  "source": "../examples/software.md",
+  "data": {
+    "grid": "power × interest",
+    "quadrants": [
+      {
+        "label": "High power / high interest",
+        "stakeholders": [
+          "Ada · sponsor",
+          "Omar · engineering",
+          "Theo · service",
+          "Priya · product",
+          "Lena · at readiness gate"
+        ]
+      },
+      {
+        "label": "Low power / high interest",
+        "stakeholders": [
+          "No supplied placement"
+        ]
+      },
+      {
+        "label": "High power / lower interest",
+        "stakeholders": [
+          "No supplied placement"
+        ]
+      },
+      {
+        "label": "Low power / lower interest",
+        "stakeholders": [
+          "No supplied placement"
+        ]
+      }
+    ],
+    "unplaced": [
+      {
+        "group": "pilot tenant administrators",
+        "interest": null,
+        "power": "provisionally low / to validate",
+        "impact": "likely high"
+      }
+    ]
+  },
+  "reading_note": "Use the companion impact × power table in the example: administrators may have high workflow impact despite low formal power. Lena’s security authority does not imply budget authority. Validate engagement and representation."
+}

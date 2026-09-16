@@ -1,18 +1,20 @@
 ---
 name: benefits-realization
+argument-hint: '[benefit hypotheses and measured outcomes]'
 description: Define and verify benefits after project delivery. Use when outputs need to be connected to owned,
   measurable business outcomes and review decisions.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions.
-  frameworks: Benefits map; leading/lagging measures; ownership and review plan
-  best_for: '["Carry benefit hypotheses from a business case into measured outcomes and accountable post-project
-    decisions."]'
-  scenarios: '["Use benefits-realization: Carry benefit hypotheses from a business case into measured outcomes and
-    accountable post-project decisions."]'
-  estimated_time: Depends on evidence and project scope
+intent: Carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions.
+type: workflow
+theme: transition-and-outcomes
+best_for:
+  - Carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions.
+scenarios:
+  - 'Use benefits-realization: Carry benefit hypotheses from a business case into measured outcomes and accountable
+    post-project decisions.'
+estimated_time: Depends on evidence and project scope
+frameworks: Benefits map; leading/lagging measures; ownership and review plan
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Benefits Realization
 
@@ -69,6 +71,10 @@ Input: dated observations and comparable baseline. Calculate the stated measure,
 Input: review evidence and residual hypothesis. Output: keep, adjust, investigate, stop or scale recommendation, decided by the actual authority with action ownership. Retain prior profiles and reports. Close benefit tracking only when the agreed review/ownership conditions are satisfied; a project closure date does not automatically end outcome accountability.
 
 Use [the benefits template](template.md). A good review can answer what changed, compared with what, whether the comparison is credible, what costs or harms accompany it and who will act next. Adjacent skills are optional; keep those fields even without the rest of the library.
+
+### When producing a visual
+
+Use the [benefit chain and measured outcome comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

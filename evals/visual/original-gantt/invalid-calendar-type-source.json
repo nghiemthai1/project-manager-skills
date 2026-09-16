@@ -1,0 +1,86 @@
+{
+  "title": "Fictional handoff schedule",
+  "as_of": "2028-02-28",
+  "source": "Fictional user request",
+  "scope": "T-01, M-02 and R-03; external EXT-9 is outside snapshot",
+  "version": "draft-1",
+  "comparison_label": "Supplied comparison; approval unknown",
+  "date_convention": "[start, finish)",
+  "calendar": null,
+  "tasks": [
+    {
+      "id": "T-01",
+      "label": "Work",
+      "kind": "task",
+      "owner": "unknown",
+      "source": "S-1",
+      "forecast": {
+        "start": "2028-02-28",
+        "finish": "2028-03-02"
+      },
+      "comparison": {
+        "start": "2028-02-28",
+        "finish": "2028-03-01"
+      },
+      "actual": {
+        "start": "2028-02-28",
+        "finish": null
+      },
+      "progress": null
+    },
+    {
+      "id": "M-02",
+      "label": "Checkpoint",
+      "kind": "milestone",
+      "owner": "unknown",
+      "source": "S-2",
+      "forecast": null,
+      "comparison": null,
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "R-03",
+      "label": "Review",
+      "kind": "task",
+      "owner": "unknown",
+      "source": "Fictional user request; source ID not supplied",
+      "forecast": {
+        "start": "2028-03-01",
+        "finish": "2028-03-02"
+      },
+      "comparison": null,
+      "actual": null,
+      "progress": null
+    }
+  ],
+  "links": [
+    {
+      "id": "DEP-X",
+      "from": "T-01",
+      "to": "R-03",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "unknown; zero lag supplied",
+      "source": "Fictional user request",
+      "inferred": false
+    },
+    {
+      "id": "DEP-Z",
+      "from": "EXT-9",
+      "to": "M-02",
+      "type": "SS",
+      "lag": 2,
+      "lag_unit": "working_days",
+      "source": "Fictional user request",
+      "inferred": false
+    }
+  ],
+  "notes": [
+    "Fictional data. No acceptance evidence or percent-progress evidence supplied.",
+    "As-of date and all written dates retained without repair. Comparison approval is unknown.",
+    "Mapping assumption: the stated actual start belongs to T-01, the work item; no actual finish was supplied.",
+    "Display assumption: [start, finish) follows this renderer contract; source did not specify endpoint inclusion. Dates are unchanged.",
+    "Working days and holiday are supplied by the requester; owners and relationship lag calendars beyond this snapshot are unknown."
+  ]
+}

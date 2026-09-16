@@ -1,19 +1,20 @@
 ---
 name: delivery-approach-advisor
+argument-hint: '[delivery context and constraints]'
 description: Choose and tailor predictive, agile or hybrid practices. Use when uncertainty, feedback, dependencies
   and governance need to fit one delivery approach.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Recommend an explicit operating approach, with learning loops, controlled boundaries and evidence for
-    reassessment.
-  frameworks: Predictive/agile/hybrid tailoring; rolling-wave planning
-  best_for: '["Recommend an explicit operating approach, with learning loops, controlled boundaries and evidence
-    for reassessment."]'
-  scenarios: '["Requirements will evolve, but cutover needs formal approval. Recommend suitable delivery practices
-    and explain the tradeoffs."]'
-  estimated_time: Depends on evidence and project scope
+intent: Recommend an explicit operating approach, with learning loops, controlled boundaries and evidence for reassessment.
+type: interactive
+theme: initiation-and-governance
+best_for:
+  - Recommend an explicit operating approach, with learning loops, controlled boundaries and evidence for reassessment.
+scenarios:
+  - Requirements will evolve, but cutover needs formal approval. Recommend suitable delivery practices and explain
+    the tradeoffs.
+estimated_time: Depends on evidence and project scope
+frameworks: Predictive/agile/hybrid tailoring; rolling-wave planning
+domain: software-it-project-management
+version: 2.0.0
 ---
 # Delivery Approach Advisor
 

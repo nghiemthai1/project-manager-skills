@@ -1,0 +1,19 @@
+{
+  "reference": "Owner-installed gantt-chart-visualization",
+  "location": "C:\\Users\\nghie\\.codex\\skills\\gantt-chart-visualization",
+  "use": "Capability and workflow reference; newly written project-specific prose and implementation. Installed files remain unchanged.",
+  "files": {
+    "agents\\openai.yaml": "089e160998052fd4432385cd12b462032dc9b43bfbf1caf0ba0b20709d88cf1d",
+    "references\\gantt-accessibility-export-and-testing.md": "e8961dd1959ca76e413513ac5dc4632edab60e774210d42660438cb36270b2c4",
+    "references\\gantt-api-and-export-format-ingestion.md": "ea49436fc5642c455e91bb3fd4666c54ba1a753cd72f8fb88899d85e804a2da5",
+    "references\\gantt-chart-design-and-use-cases.md": "b371900cdb06db09191ee1adbc730f40f8fbcb416cef89a9a271dc6f17e6e04c",
+    "references\\gantt-data-contracts-and-integrations.md": "8b876a192dcf5c3a02eb832199b0cf36ba7425e862afec3083b0634d28ff53b5",
+    "references\\gantt-interaction-patterns.md": "bbd4a9c8a067f52b671f706e74183922da53d1ce6c04ca818f2985f23f5a8311",
+    "references\\gantt-performance-and-rendering.md": "200788ba24647d43721cdddba89aee49a8567cb4bb33d54795daeb93e4e9f3ed",
+    "SKILL.md": "a0dab154479273473e298ce1790226a493aee0ca92f6c75caab1f3f1e375d299"
+  },
+  "mobile_foundation": {
+    "path": "C:\\Users\\nghie\\.codex\\references\\foundations\\mobile-first-responsive-visualization.md",
+    "sha256": "e05753145073fb154ffb43ee2b965a436fb7349e45729773e8854f6488c97e3f"
+  }
+}

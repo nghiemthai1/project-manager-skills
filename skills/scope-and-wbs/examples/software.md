@@ -25,3 +25,9 @@ The hierarchy includes acceptance and transition work that a “frontend/backend
 Deferring 1.5 may be a useful proposal, but on 16 October it is not yet an authorized deletion. CR-001 on 19 October later approves that deferral. Preserve the dated B1 view and link the later change rather than pretending the polish was always excluded.
 
 **Repair:** “WBS = SAML frontend, backend and meetings” cannot show who proves recovery or accepts service. The revised hierarchy exposes those deliverables and their distinct completion evidence.
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

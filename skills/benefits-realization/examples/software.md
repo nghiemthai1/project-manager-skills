@@ -21,3 +21,9 @@ This is an estimated capacity difference for this cohort/window, not cash saved 
 3. Keep the result with Priya's review record; any actual continuation/scale decision must name its authority and conditions.
 
 **Repair:** “Project delivered; 20% cash savings achieved” makes two unsupported jumps. The corrected review separates accepted delivery, observed average effort, capacity interpretation and unproven financial realization.
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

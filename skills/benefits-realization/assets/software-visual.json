@@ -1,0 +1,18 @@
+{
+  "title": "Relay · observed handling time",
+  "scope": "Fictional additional teaching dataset · 4 December 2026 review · comparable-ticket assumption",
+  "source": "../examples/software.md",
+  "data": {
+    "labels": [
+      "Baseline · 40 tickets / 600 minutes",
+      "Post-pilot · 50 tickets / 600 minutes"
+    ],
+    "values": [
+      15,
+      12
+    ],
+    "unit": "minutes / ticket",
+    "zero_based_axis": true
+  },
+  "reading_note": "Mean effort fell 3 minutes (20%). At 50 tickets, the difference is 150 minutes / 2.5 hours. This does not establish causation, net benefit or cash savings."
+}

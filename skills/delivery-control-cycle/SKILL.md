@@ -1,19 +1,22 @@
 ---
 name: delivery-control-cycle
+argument-hint: '[control-period evidence and decisions]'
 description: Reconcile project evidence and turn exceptions into decisions. Use for a recurring control review or
   material change in delivery, funding or readiness.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting
-    prior baselines, then verifies actual response outcomes.
-  frameworks: Plan-monitor-control; exception escalation; integrated change control
-  best_for: '["Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting
-    prior baselines, then verifies actual response outcomes."]'
-  scenarios: '["Run the weekly evidence-to-decision control process across status, dependencies, risks, changes
-    and escalation follow-through."]'
-  estimated_time: Depends on evidence and project scope
+intent: Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting
+  prior baselines, then verifies actual response outcomes.
+type: workflow
+theme: delivery-and-decisions
+best_for:
+  - Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting prior
+    baselines, then verifies actual response outcomes.
+scenarios:
+  - Run the weekly evidence-to-decision control process across status, dependencies, risks, changes and escalation
+    follow-through.
+estimated_time: Depends on evidence and project scope
+frameworks: Plan-monitor-control; exception escalation; integrated change control
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Delivery Control Cycle
 
@@ -90,6 +93,10 @@ Use actual tolerances and gate rules. A local correction within delegation can p
 **Outputs:** the [control packet](template.md), recipient/action handoffs and verification checkpoints. An action closes with its relevant result or authorized disposition, not “working on it.”
 
 **Exit:** the next cycle can test whether the response happened and worked. If it did not, reopen or reconsider with new evidence; retain the earlier promise and explanation instead of rolling it forward invisibly.
+
+### When producing a visual
+
+Use the [control review artifact pack](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

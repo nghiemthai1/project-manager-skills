@@ -1,0 +1,20 @@
+{
+  "title": "Relay · evidence gaps before readiness",
+  "scope": "Fictional workshop subcase · proposed controls; no observed outage or assessed numeric probability",
+  "source": "../examples/software.md",
+  "data": {
+    "exposures": [
+      {
+        "event": "Recovery path may fail",
+        "probability": null,
+        "executed_demonstration": null
+      },
+      {
+        "event": "Operators may not use guidance successfully",
+        "probability": null,
+        "operator_validation": null
+      }
+    ]
+  },
+  "reading_note": "No probability-impact score is plotted because no assessed scales/values were supplied. Define relevant failure conditions, demonstrate recovery, validate operator use and obtain actual acceptance. A document is not a proven control."
+}

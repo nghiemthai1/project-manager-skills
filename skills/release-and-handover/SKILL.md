@@ -1,19 +1,21 @@
 ---
 name: release-and-handover
+argument-hint: '[cutover plan and service-transfer evidence]'
 description: Plan and coordinate authorized release, stabilization and service transfer. Use for software launches
   or IT cutovers with explicit recovery and ownership boundaries.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization
+intent: Coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization
+  and accepted transfer without gaps in operational responsibility.
+type: workflow
+theme: transition-and-outcomes
+best_for:
+  - Coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization
     and accepted transfer without gaps in operational responsibility.
-  frameworks: Cutover checkpoints; recovery limits; service transition; hypercare exit
-  best_for: '["Coordinate a defined release through readiness, bounded authorization, actual execution, monitored
-    stabilization and accepted transfer without gaps in operational responsibility."]'
-  scenarios: '["Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational
-    handover."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational handover.
+estimated_time: Depends on evidence and project scope
+frameworks: Cutover checkpoints; recovery limits; service transition; hypercare exit
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Release and Handover
 
@@ -90,6 +92,10 @@ Prepare handover criteria and documentation before release, but collect post-rel
 **Outputs:** service handover record, accepted residual register, enhanced-support exit decision and closure inputs. Transfer includes who will act, not only where files were sent.
 
 **Exit:** the receiving owner has accepted defined duties and there is no ownership gap. Hand costs, obligations, learning and future benefit review to project closure; a release outcome does not itself close the project.
+
+### When producing a visual
+
+Use the [cutover sequence and transfer gates](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

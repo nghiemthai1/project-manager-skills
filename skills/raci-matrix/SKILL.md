@@ -1,16 +1,20 @@
 ---
 name: raci-matrix
-description: Build and audit a responsibility assignment matrix. Use when work ownership, accountability, consultation,
-  or notification is unclear.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Assign clear responsibilities for defined deliverables and expose unresolved authority.
-  frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
-  best_for: '["Assign clear responsibilities for defined deliverables and expose unresolved authority."]'
-  scenarios: '["Use raci-matrix: Assign clear responsibilities for defined deliverables and expose unresolved authority."]'
-  estimated_time: Depends on evidence and project scope
+argument-hint: '[deliverables, roles, and assignment evidence]'
+description: Build and visualize responsibility matrices with assignment evidence. Use when deliverable ownership,
+  accountability, consultation or notification is unclear.
+intent: Produce an auditable responsibility matrix and usable graphical artifacts with explicit work boundaries,
+  confirmation state, accessible inspection and editable source.
+type: component
+theme: stakeholders-and-collaboration
+best_for:
+  - Assign clear responsibilities for defined deliverables and expose unresolved authority.
+scenarios:
+  - 'Use raci-matrix: Assign clear responsibilities for defined deliverables and expose unresolved authority.'
+estimated_time: Depends on evidence and project scope
+frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
+domain: software-it-project-management
+version: 2.1.0
 ---
 # RACI Matrix
 
@@ -67,6 +71,18 @@ A matrix becomes operational only when people understand and accept their assign
 6. **Maintain the agreement.** Revisit when scope, personnel, supplier boundaries or governance change. Preserve prior versions and confirmation records; do not backdate a reassignment into an earlier missed handoff.
 
 Use the [matrix template](template.md). The final package should include the readable grid, role definitions, unresolved assignments and a confirmation/version log. If the user wants CSV or a spreadsheet, preserve those semantics in separate columns or companion sheets rather than dropping caveats to fit cells.
+
+### Produce the visual artifact
+
+When the user wants a graphical matrix, follow [the visual model and design contract](references/visual-model-and-design.md). Keep relationship letters, narrower work duties and confirmation state separate in the data and display. Use a stable row/role grid, restrained redundant color, a visible proposed/confirmed legend and an audit register. A/R counts are not utilization.
+
+Choose the output for the audience: a readable static SVG/PDF for a report, a spreadsheet for cell-based collaboration, or self-contained HTML for search, role focus and persistent cell details. Preserve a full accessible table and editable source. A phone-width view should provide deliverable/role cards or a focused slice, not tiny text. Show active filters, hidden columns and a reset; keyboard users must be able to inspect the same duties as pointer users.
+
+Use [the artifact acceptance checklist](references/artifact-review.md) on actual generated files. Compare every letter, work boundary and confirmation state against the source, inspect desktop/portrait/landscape, and verify export scope. If a renderer is unavailable, label the table/source a draft rather than claim that a graphic was produced.
+
+### Included offline renderer
+
+Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Start from either worked example's source, replace all fictional data, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
 
 ### Quality check before delivery
 

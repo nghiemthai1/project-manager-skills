@@ -1,0 +1,377 @@
+{
+  "title": "Northstar · responsibility map",
+  "version": "M-RACI-0.1",
+  "as_of": "after 2026-10-05; exact draft date unspecified",
+  "source": "Fictional migration worked example; normalized from the supplied Markdown matrix",
+  "scope": "Proposed work and independent acceptance boundaries; no agreement or capacity inferred",
+  "state": "Proposed — assignments unconfirmed",
+  "roles": [
+    {
+      "id": "Noel",
+      "label": "Noel: sponsor"
+    },
+    {
+      "id": "Jules",
+      "label": "Jules: PM"
+    },
+    {
+      "id": "Chen",
+      "label": "Chen: migration"
+    },
+    {
+      "id": "Beck",
+      "label": "Beck: vendor"
+    },
+    {
+      "id": "Saira",
+      "label": "Saira: business"
+    },
+    {
+      "id": "Rosa",
+      "label": "Rosa: operations"
+    }
+  ],
+  "rows": [
+    {
+      "id": "M-R-1",
+      "label": "Vendor mapping deliverable",
+      "cells": {
+        "Noel": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "M-R-2",
+      "label": "Internal mapping verification",
+      "cells": {
+        "Noel": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "M-R-3",
+      "label": "Representative migration rehearsal",
+      "cells": {
+        "Noel": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "M-R-4",
+      "label": "Business acceptance decision",
+      "cells": {
+        "Noel": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "R",
+          "state": "proposed",
+          "note": "coordinate record",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "R",
+          "state": "proposed",
+          "note": "supply results",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "M-R-5",
+      "label": "Restore readiness demonstration",
+      "cells": {
+        "Noel": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "R",
+          "state": "proposed",
+          "note": "proposed executor",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "A",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "M-R-6",
+      "label": "Operational handover acceptance",
+      "cells": {
+        "Noel": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "R",
+          "state": "proposed",
+          "note": "coordinate transfer",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "M-R-7",
+      "label": "Material baseline/funding change decision",
+      "cells": {
+        "Noel": {
+          "code": "A",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Jules": {
+          "code": "R",
+          "state": "proposed",
+          "note": "impact proposal",
+          "source": "migration.md / proposed matrix"
+        },
+        "Chen": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Beck": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Saira": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        },
+        "Rosa": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "migration.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "GO-UNKNOWN",
+      "label": "Cutover go decision",
+      "cells": {
+        "Noel": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "migration.md / review findings"
+        },
+        "Jules": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "migration.md / review findings"
+        },
+        "Chen": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "migration.md / review findings"
+        },
+        "Beck": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "migration.md / review findings"
+        },
+        "Saira": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "migration.md / review findings"
+        },
+        "Rosa": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "migration.md / review findings"
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Row IDs R-/M-R- and GO-UNKNOWN are illustrative artifact identifiers added for navigation, not new project approvals.",
+    "All original matrix letters are retained. The unresolved go row makes the existing narrative gap visible.",
+    "Full duty and source records are in HTML, JSON and CSV; counts are not utilization."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "Northstar · rehearsal schedule",
+  "as_of": "Unknown; fictional planning snapshot",
+  "version": "GANTT-1.0",
+  "source": "Fictional migration worked example; exact date table",
+  "scope": "Fictional teaching subcase; separate staff on B/C assumed, no actual progress or approved project commitment",
+  "comparison_label": "No comparison supplied",
+  "date_convention": "[start, finish)",
+  "calendar": {
+    "label": "Monday–Friday; no holidays assumed; date-only boundaries",
+    "working_weekdays": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holidays": []
+  },
+  "tasks": [
+    {
+      "id": "A",
+      "label": "Extract sample",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "migration.md / source table",
+      "comparison": null,
+      "forecast": {
+        "start": "2026-11-02",
+        "finish": "2026-11-04"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "B",
+      "label": "Validate mapping",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "migration.md / source table",
+      "comparison": null,
+      "forecast": {
+        "start": "2026-11-04",
+        "finish": "2026-11-09"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "C",
+      "label": "Prepare restore environment",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "migration.md / source table",
+      "comparison": null,
+      "forecast": {
+        "start": "2026-11-04",
+        "finish": "2026-11-09"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "D",
+      "label": "Reconcile and restore",
+      "kind": "task",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "migration.md / source table",
+      "comparison": null,
+      "forecast": {
+        "start": "2026-11-09",
+        "finish": "2026-11-11"
+      },
+      "actual": null,
+      "progress": null
+    },
+    {
+      "id": "E",
+      "label": "Acceptance checkpoint",
+      "kind": "milestone",
+      "parent": null,
+      "owner": "Not assigned in this instructional subcase",
+      "source": "migration.md / source table",
+      "comparison": null,
+      "forecast": {
+        "start": "2026-11-11",
+        "finish": "2026-11-11"
+      },
+      "actual": null,
+      "progress": null
+    }
+  ],
+  "links": [
+    {
+      "id": "L-1",
+      "from": "A",
+      "to": "B",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "migration.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-2",
+      "from": "A",
+      "to": "C",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "migration.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-3",
+      "from": "B",
+      "to": "D",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "migration.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-4",
+      "from": "C",
+      "to": "D",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "migration.md / predecessor column",
+      "inferred": false
+    },
+    {
+      "id": "L-5",
+      "from": "D",
+      "to": "E",
+      "type": "FS",
+      "lag": 0,
+      "lag_unit": "working_days",
+      "source": "migration.md / predecessor column",
+      "inferred": false
+    }
+  ],
+  "notes": [
+    "Task E is the displayed checkpoint, not acceptance evidence. IDs A–E identify this teaching network only.",
+    "Weekend shading adds no productive effort. The forecast is supplied, not recalculated by the renderer.",
+    "Parallel B/C needs separate available resources. Full-time Chen on both implies a conditional serialized 16 November boundary, not the plotted 11 November case."
+  ]
+}

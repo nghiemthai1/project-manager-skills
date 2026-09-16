@@ -1,17 +1,20 @@
 ---
 name: project-charter
+argument-hint: '[project mandate and boundaries]'
 description: Define the project mandate, boundaries, success and authority. Use when starting a project or clarifying
   what delivery is authorized to achieve.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Create a decision-ready project mandate with measurable outcomes, scope boundaries and explicit authority.
-  frameworks: Project charter; SMART success criteria; assumptions and constraints; delegated authority
-  best_for: '["Create a decision-ready project mandate with measurable outcomes, scope boundaries and explicit authority."]'
-  scenarios: '["Use project-charter: Create a decision-ready project mandate with measurable outcomes, scope boundaries
-    and explicit authority."]'
-  estimated_time: Depends on evidence and project scope
+intent: Create a decision-ready project mandate with measurable outcomes, scope boundaries and explicit authority.
+type: component
+theme: initiation-and-governance
+best_for:
+  - Create a decision-ready project mandate with measurable outcomes, scope boundaries and explicit authority.
+scenarios:
+  - 'Use project-charter: Create a decision-ready project mandate with measurable outcomes, scope boundaries and
+    explicit authority.'
+estimated_time: Depends on evidence and project scope
+frameworks: Project charter; SMART success criteria; assumptions and constraints; delegated authority
+domain: software-it-project-management
+version: 2.0.0
 ---
 # Project Charter
 

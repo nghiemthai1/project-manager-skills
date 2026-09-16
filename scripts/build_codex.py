@@ -1,18 +1,43 @@
 """Build a Codex archive, repeatable within the same compression runtime."""
 import argparse
+import json
 from pathlib import Path
 import shutil
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
+import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_SUFFIXES = {'.md', '.yaml', '.yml', '.json', '.py', '.mmd', '.svg', '.csv'}
+TEXT_SUFFIXES = {'.md', '.yaml', '.yml', '.json', '.py', '.mmd', '.svg', '.csv', '.html'}
 BINARY_SUFFIXES = {'.png'}
 ALLOWED = TEXT_SUFFIXES | BINARY_SUFFIXES
 
 
 def payload_bytes(source):
     data = source.read_bytes()
-    return data.replace(b'\r\n', b'\n') if source.suffix in TEXT_SUFFIXES else data
+    if source.suffix in TEXT_SUFFIXES:
+        data = data.replace(b'\r\n', b'\n')
+    if source.name == 'SKILL.md':
+        data = codex_frontmatter(data.decode('utf-8')).encode('utf-8')
+    return data
+
+
+def codex_frontmatter(text):
+    """Keep the GitHub-friendly source flat; normalize only the install artifact."""
+    if not text.startswith('---\n'):
+        raise ValueError('SKILL.md requires YAML frontmatter')
+    parts = text[4:].split('\n---\n', 1)
+    if len(parts) != 2:
+        raise ValueError('SKILL.md requires closing frontmatter delimiter')
+    data = yaml.safe_load(parts[0])
+    if not isinstance(data, dict):
+        raise ValueError('Skill frontmatter must be an object')
+    supported = {'name', 'description', 'license', 'compatibility', 'allowed-tools'}
+    normalized = {key: value for key, value in data.items() if key in supported}
+    extra = {key: value if isinstance(value, str) else json.dumps(value, ensure_ascii=False)
+             for key, value in data.items() if key not in supported}
+    if extra:
+        normalized['metadata'] = extra
+    return '---\n'+yaml.safe_dump(normalized, sort_keys=False, allow_unicode=True, width=110)+'---\n'+parts[1]
 
 
 def build(root=ROOT, output=None):

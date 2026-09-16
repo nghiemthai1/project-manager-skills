@@ -1,19 +1,21 @@
 ---
 name: release-readiness
+argument-hint: '[release criteria and current evidence]'
 description: Assess a defined release against current gate evidence. Use before a pilot, launch or migration cutover
   to recommend go or hold without inventing authorization.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
-    exceptions, immediate service coverage and actual go authority.
-  frameworks: Readiness gates; exception authority; operational acceptance
-  best_for: '["Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
-    exceptions, immediate service coverage and actual go authority."]'
-  scenarios: '["Evaluate the current release evidence and recommend go or hold; restore failed even though most
-    checks passed."]'
-  estimated_time: Depends on evidence and project scope
+intent: Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
+  exceptions, immediate service coverage and actual go authority.
+type: component
+theme: transition-and-outcomes
+best_for:
+  - Produce a version-specific readiness matrix and recommendation that separates required gates, permitted exceptions,
+    immediate service coverage and actual go authority.
+scenarios:
+  - Evaluate the current release evidence and recommend go or hold; restore failed even though most checks passed.
+estimated_time: Depends on evidence and project scope
+frameworks: Readiness gates; exception authority; operational acceptance
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Release Readiness
 
@@ -63,6 +65,10 @@ Use conditional go only if actual governance permits the specified condition and
 6. **Record the actual decision and recheck rule.** Use the [matrix template](template.md). Record decider, date, scope/version/window, conditions and decision ID when evidenced. If configuration, population, environment, evidence or window changes, assess applicability again. An earlier go does not grant indefinite permission for materially different exposure.
 
 Quality check: the headline agrees with every independent mandatory gate; claims have applicable evidence; the actual authority can see what is passed, missing, rejected or exceptionally accepted. The record states what would change a hold recommendation and never equates go with completed deployment.
+
+### When producing a visual
+
+Use the [independent gate evidence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

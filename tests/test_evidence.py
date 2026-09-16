@@ -48,7 +48,7 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(topic['option_status'],'evaluating_not_approved')
 
     def test_helpers_work_as_isolated_copies(self):
-        paths=list((ROOT/'skills').glob('*/scripts/*.py'))
+        paths=[p for p in (ROOT/'skills').glob('*/scripts/*.py') if not p.name.startswith('render_')]
         self.assertEqual(len(paths),4)
         with tempfile.TemporaryDirectory() as temp:
             for path in paths:

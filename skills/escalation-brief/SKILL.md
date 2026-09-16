@@ -1,19 +1,22 @@
 ---
 name: escalation-brief
+argument-hint: '[exception, options, and required decision]'
 description: Present evidence, options and a precise decision request. Use when a project consequence exceeds delegated
   authority or a time-critical exception needs intervention.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Draft a decision-ready escalation that explains the authority boundary, credible options, timing basis
-    and consequence of no decision without assigning blame.
-  frameworks: SBAR; options and recommendation; last responsible decision point
-  best_for: '["Draft a decision-ready escalation that explains the authority boundary, credible options, timing
-    basis and consequence of no decision without assigning blame."]'
-  scenarios: '["Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options
-    and give a deadline."]'
-  estimated_time: Depends on evidence and project scope
+intent: Draft a decision-ready escalation that explains the authority boundary, credible options, timing basis and
+  consequence of no decision without assigning blame.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Draft a decision-ready escalation that explains the authority boundary, credible options, timing basis and consequence
+    of no decision without assigning blame.
+scenarios:
+  - Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options and give
+    a deadline.
+estimated_time: Depends on evidence and project scope
+frameworks: SBAR; options and recommendation; last responsible decision point
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Escalation Brief
 
@@ -63,6 +66,10 @@ Include the current course/no-decision consequence, the requested response and a
 6. **Review and follow through.** Use the [brief template](template.md). Someone reading only the first paragraph should know the choice and urgency basis. Deliver only when authorized; record actual decision, conditions and communication state separately. Update related plans prospectively and verify the response worked. An escalation is not closed because it was sent.
 
 Quality check: the brief uses facts rather than motives, presents a bounded ask to real authority, shows comparable options and explains the no-decision consequence. Unknowns are explicit without burying the recommendation. If the right action is local coordination, say so and avoid an unnecessary approval loop.
+
+### When producing a visual
+
+Use the [decision options comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

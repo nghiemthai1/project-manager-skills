@@ -1,18 +1,21 @@
 ---
 name: communication-plan
+argument-hint: '[audiences and communication needs]'
 description: Plan project communications around decisions, evidence and feedback. Use when updates are missed, audiences
   need different detail or meetings fail to resolve work.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Create an audience-specific communication agreement with consistent evidence, explicit response expectations
+intent: Create an audience-specific communication agreement with consistent evidence, explicit response expectations
+  and event-driven exception paths.
+type: component
+theme: stakeholders-and-collaboration
+best_for:
+  - Create an audience-specific communication agreement with consistent evidence, explicit response expectations
     and event-driven exception paths.
-  frameworks: Communication matrix; push/pull/interactive communication
-  best_for: '["Create an audience-specific communication agreement with consistent evidence, explicit response expectations
-    and event-driven exception paths."]'
-  scenarios: '["Build an audience/message/channel/cadence plan with feedback routes for the rollout."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Build an audience/message/channel/cadence plan with feedback routes for the rollout.
+estimated_time: Depends on evidence and project scope
+frameworks: Communication matrix; push/pull/interactive communication
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Communication Plan
 
@@ -60,6 +63,10 @@ Work backward from the point a decision becomes ineffective: allow evidence prep
 6. **Test and improve.** Walk a real missed handoff or failed gate through the [plan template](template.md). Can someone identify the recipient, useful response and fallback? At an agreed review, inspect response timeliness, reopened misunderstandings and decision quality. Attendance/open rates alone do not prove effectiveness. Combine or remove low-value communications through the actual team agreement.
 
 Quality check: every row has a purpose, source, owner, recipient, trigger and closure; unknowns are explicit. Material exceptions have a faster path than routine cadence. The same date cannot be a target in one message and an approved baseline in another without evidence of a decision.
+
+### When producing a visual
+
+Use the [audience-channel cadence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

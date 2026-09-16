@@ -61,6 +61,26 @@ def frontmatter(text):
     return result,parts[2]
 
 
+def metadata_errors(data):
+    """The authoring layout is flat so GitHub renders one readable row per field."""
+    errors = []
+    if 'metadata' in data:
+        errors.append('use flat frontmatter fields, not a nested metadata table')
+    if data.get('type') not in TYPES:
+        errors.append('unsupported skill type')
+    for key in ('argument-hint', 'intent', 'theme', 'domain', 'version', 'estimated_time'):
+        if not isinstance(data.get(key), str) or not data[key].strip():
+            errors.append(f'{key} must be nonempty text')
+    for key in ('best_for', 'scenarios'):
+        value = data.get(key)
+        if not isinstance(value, list) or not value or any(not isinstance(item, str) or not item.strip() for item in value):
+            errors.append(f'{key} must be a nonempty YAML list of text, not a JSON string')
+    for key, value in data.items():
+        if key not in ('best_for', 'scenarios') and not isinstance(value, str):
+            errors.append(f'{key} must be text; nested tables are not supported in the authoring layout')
+    return errors
+
+
 def without_fences(text):
     result=[]
     fence=None
@@ -126,9 +146,8 @@ def validate(root=ROOT):
             description=data.get('description')
             if not isinstance(description,str) or not 1<=len(description)<=200:
                 errors.append(f'{slug}: invalid description')
-            meta=data.get('metadata',{})
-            if not isinstance(meta,dict) or meta.get('type') not in TYPES or any(not isinstance(v,str) for v in meta.values()):
-                errors.append(f'{slug}: metadata must be string-valued with a supported type')
+            meta=data
+            errors.extend(f'{slug}: {message}' for message in metadata_errors(data))
             headings = re.findall(r'^## (.+)$', without_fences(body), re.MULTILINE)
             required_headings = [heading for heading in headings if heading in REQUIRED]
             if required_headings != list(REQUIRED):
