@@ -1,0 +1,4 @@
+interface:
+  display_name: "Change Request"
+  short_description: "Guide change request with evidence and judgment"
+  default_prompt: "Use $change-request to help with this project management task."

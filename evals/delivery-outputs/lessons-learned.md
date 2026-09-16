@@ -1,0 +1,19 @@
+# Cedar lesson L-ATT-01 — record counts do not establish attachment integrity
+
+Status: observed limitation documented; proposed relationship-testing practice is untested. Context: hosted-service migration of support tickets and attachments, evidence as of 2026-10-22. The supplied case reports matching source/destination record counts while attachment links failed in rehearsal. Counts, detailed result logs, build/data identity and exact rehearsal date are not attached; preserve these evidence limitations when reusing the lesson.
+
+Observed outcome: equal counts coexisted with broken links, so count equality was insufficient evidence of correct relationships and usable attachments in this case. This observation is supported by the supplied record. Explanation: cardinality checks do not inherently verify which attachment belongs to which ticket or whether a user can open it. The specific defect mechanism remains unknown; identifier changes, mapping and access behavior are hypotheses requiring technical evidence.
+
+Response: the team has proposed better relationship tests. No execution result or measured effect exists. Do not report that the intervention reduced defects, prevented cutover failure or is an established best practice proven by Cedar.
+
+Transferable decision principle: where migrated entities depend on relationships, assess completeness and correct linkage/usability as separate acceptance claims. Retain record counts as one completeness signal and seek evidence appropriate to the relationship behavior; do not infer business acceptance from volume parity alone.
+
+Proposed practice to test: trace representative migrated attachments to their correct parent ticket, verify targets exist and open under the intended access role, and include the reproduced failure as a regression case. Record data/build/environment identity, coverage, failures and investigation. Agree coverage with the business acceptance owner; samples can miss failures, and tests may need independent expected relationships to avoid duplicating the same mapping error.
+
+Fits when: migrations preserve links, identifiers or cross-entity relationships and those relationships matter to user workflows. Limits: this case does not establish the specific cause, probability of production failure or effectiveness/cost of any testing technique. Unrelated flat datasets may not need attachment tests; retained links may still be unusable because permissions, external targets or content are wrong. Passing relationship tests would not establish restore, training or overall operational readiness.
+
+Adoption action: propose adding a separate relationship-integrity evidence row to the migration acceptance matrix and a bounded check to the next rehearsal. Dev is proposed technical owner, Inez proposed acceptance reviewer and Sol proposed follow-through coordinator; acceptance is pending. Link the known failure evidence, acceptance criterion and rehearsal result rather than publishing an unsupported success claim. This artifact changes no live template or external system.
+
+Review measure: whether the check detects the known failing relationship, reports coverage and actionable failures, distinguishes repaired behavior, and has acceptable execution/review effort. Review at the next rehearsal evidence review (date to confirm). Compare other concurrent changes before making causal claims. On observed results, update status to tested in that bounded context, adjusted or rejected; broader adoption requires further evidence.
+
+Related records to preserve: original rehearsal evidence (location unknown), acceptance/traceability matrix, defect and remediation record, retrospective experiment and subsequent result. Revision 1 dated 2026-10-22: records the count-equality limitation and untested practice; no effectiveness result recorded.

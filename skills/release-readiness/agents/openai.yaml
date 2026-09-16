@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Readiness"
+  short_description: "Guide release readiness with evidence and judgment"
+  default_prompt: "Use $release-readiness to help with this project management task."

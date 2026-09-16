@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Closure"
+  short_description: "Guide project closure with evidence and judgment"
+  default_prompt: "Use $project-closure to help with this project management task."

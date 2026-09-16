@@ -1,0 +1,4 @@
+interface:
+  display_name: "Escalation Brief"
+  short_description: "Guide escalation brief with evidence and judgment"
+  default_prompt: "Use $escalation-brief to help with this project management task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Health Diagnostic"
+  short_description: "Guide project health diagnostic with evidence and judgment"
+  default_prompt: "Use $project-health-diagnostic to help with this project management task."

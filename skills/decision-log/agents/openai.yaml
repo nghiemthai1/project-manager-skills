@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Log"
+  short_description: "Guide decision log with evidence and judgment"
+  default_prompt: "Use $decision-log to help with this project management task."

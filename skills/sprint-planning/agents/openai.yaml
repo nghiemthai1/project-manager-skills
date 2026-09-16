@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sprint Planning"
+  short_description: "Guide sprint planning with evidence and judgment"
+  default_prompt: "Use $sprint-planning to help with this project management task."

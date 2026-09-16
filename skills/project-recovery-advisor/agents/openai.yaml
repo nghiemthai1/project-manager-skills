@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Recovery Advisor"
+  short_description: "Guide project recovery advisor with evidence and judgment"
+  default_prompt: "Use $project-recovery-advisor to help with this project management task."

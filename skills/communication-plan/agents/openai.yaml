@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Plan"
+  short_description: "Guide communication plan with evidence and judgment"
+  default_prompt: "Use $communication-plan to help with this project management task."

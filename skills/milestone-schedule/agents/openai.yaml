@@ -1,0 +1,4 @@
+interface:
+  display_name: "Milestone Schedule"
+  short_description: "Guide milestone schedule with evidence and judgment"
+  default_prompt: "Use $milestone-schedule to help with this project management task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Budget"
+  short_description: "Guide project budget with evidence and judgment"
+  default_prompt: "Use $project-budget to help with this project management task."

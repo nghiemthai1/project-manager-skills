@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retrospective"
+  short_description: "Guide retrospective with evidence and judgment"
+  default_prompt: "Use $retrospective to help with this project management task."

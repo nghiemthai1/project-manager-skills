@@ -1,0 +1,20 @@
+# Cedar delivery control record — 22 October 2026
+
+Evidence cut-off: 2026-10-22, using the supplied record. C-B1 / C-01 approved 2026-10-01 remains cutover 2026-11-14 and USD 200,000 performance BAC; separate management reserve USD 20,000 belongs to sponsor Nia. Analytics redesign remains excluded. Prior dated status, action register, original risk ID, underlying test reports and accounting/earning rules were not supplied. No earlier action completion is inferred.
+
+| Area | Current evidence / change | Forecast or consequence | Response / decision |
+|---|---|---|---|
+| Attachments | Prior tracker says possible risk; rehearsal has now reproduced broken links | Present quality issue; future production recurrence remains a risk | Preserve original risk history, mark occurrence in rehearsal and link a new issue; require repair and successful representative linkage retest |
+| Restore | No demonstration supplied | Operational readiness unproven; not evidence of actual restore failure | Assign execution owner, agree Pax's criteria and obtain executed results |
+| Vendor dependency | Mapping expected October 29 against October 27 integration need | Two-calendar-day expectation gap; no validated final cutover forecast | Kit/Dev confirm usable handoff and acceptance; Sol resequences and escalates before need date |
+| Capacity | Dev 40 gross - 8 leave - 4 overhead = 28 available; 24 migration + 8 support = 32 demand | Four-hour overload, 114.3% load; other allocations unknown | Confirm qualified cover or controlled deferral through resource authority; do not count unknown staff as spare |
+| Cost | PV 80,000, EV 60,000, AC 75,000, BAC 200,000 | CV -15,000; SV -20,000 USD; CPI .80; SPI .75 | Validate common cut-off and objective earning rules; obtain bottom-up ETC |
+| Date and authority | Manager suggests November 21; no Nia approval | Suggestion is neither baseline nor validated forecast | Keep November 14 comparison point; prepare impacts and seek explicit decision |
+
+Conditional CPI EAC = 200,000/.80 = USD 250,000 if current efficiency persists. This is 50,000 above BAC and 30,000 above the 220,000 baseline-plus-reserve envelope even if all reserve were released. No release or new funding is approved. Remaining-at-budget EAC would be 75,000 + 140,000 = 215,000, conditional on remaining work performing at budget. Neither is final cost or automatic management forecast; SV does not measure calendar delay.
+
+Draft linked control entries: attachment historic risk (ID to recover) -> I-ATT open reproduced defect -> R-ATT future recurrence; D-MAP handoff expectation conflict -> possible future missed-dependency issue if October 27 passes without acceptance; I-RESTORE evidence gap; I-CAP four-hour allocation conflict; I-COST adverse cost variance. These local draft IDs must be reconciled with existing IDs before updating a live tracker. No item is closed.
+
+Decision/action queue (assignments proposed unless already established role): Sol coordinates repair ownership with Dev/Kit, obtains vendor commitment and accepted resource allocation, and prepares an integrated remaining schedule/ETC. Inez agrees business evidence; Pax specifies restore/operational acceptance. Resource manager identity and technical repair owner require confirmation. Nia decides date, funding and reserve changes with impacts; no new decision is recorded. Exact sponsor deadline is unknown; propose review before the October 27 dependency need and immediately on a gate-threatening change, with timing confirmed by decision-makers.
+
+Status handoff: delivery feasibility remains unresolved, with a known attachment failure, missing restore evidence, vendor timing conflict, overload and conditional funding exposure. No accepted scope completion or actual cutover is established. At next control review, check actual test results, usable mapping acceptance, confirmed staffing and reconciled ETC; “working on it” does not close actions. Preserve this dated record and C-01; nothing was sent or changed externally.
