@@ -43,3 +43,7 @@ The review found case contamination in a closure lesson, unconfirmed receiver as
 One challenge per skill is narrow coverage. Same-family model reviewers may share blind spots. Future model behavior, installation discovery in every client, real recordings, contractual/legal adequacy, organization-specific approval rules, resource-leveled schedules, and real project outcomes are not established by these checks. Client installation instructions are documented, not a claim of live testing across clients.
 
 Before relying on this library in an organization, trial it on anonymized completed projects, compare generated decisions to source records with experienced project managers, and record corrections and outcomes. Add new counterexamples when a skill fails. Do not convert a passing structural check into a general reliability claim.
+
+## Codex distribution added in 1.0.1
+
+The packaging regression test compares all archived skill resources with canonical source files, checks the `.agents/skills` and project-facing `AGENTS.md` layout, excludes caches, runs all four helpers from the extracted ZIP, and verifies repeatable archive bytes and identical alias content. The suite now contains 31 tests. This tests distribution contents and execution, not live Codex client discovery.

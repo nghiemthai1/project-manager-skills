@@ -49,6 +49,12 @@ Read the helper's input contract before using it. The schedule helper models an 
 
 ## Installation and maintenance
 
+| Tool | Download | Contents |
+|---|---|---|
+| Codex | [`pm-skills-codex.zip`](https://github.com/nghiemthai1/project-manager-skills/releases/latest/download/pm-skills-codex.zip) | Installs `.agents/skills` and `AGENTS.md` |
+
+Download while signed in to GitHub with access to this private repository. Extract into your project root; merge the included `AGENTS.md` with any existing project instructions. See the [Codex ZIP setup](docs/INSTALLATION.md#codex-zip-quick-setup).
+
 [Install selected skills](docs/INSTALLATION.md). Reading Markdown requires no runtime. Python is needed only for optional helpers and repository checks.
 
 For maintainers:

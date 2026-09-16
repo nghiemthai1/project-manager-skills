@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Added a Codex download ZIP with all skills under `.agents/skills` and project-facing `AGENTS.md`.
+- Added reproducible packaging, extracted-payload tests, and tagged-release automation.
+
 ## 1.0.0
 
 - Added 30 software and IT project management skills spanning initiation through closure.

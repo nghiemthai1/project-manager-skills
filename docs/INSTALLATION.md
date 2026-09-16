@@ -4,7 +4,33 @@
 
 Open a skill folder and read `SKILL.md`. Give its instructions and your project context to an assistant that accepts Markdown. Supporting examples and templates are linked from the entrypoint. A bare Markdown chat does not automatically gain access to local helper scripts.
 
-## Codex
+## Codex ZIP quick setup
+
+1. Open the [latest release](https://github.com/nghiemthai1/project-manager-skills/releases/latest) while signed in with repository access.
+2. Download [pm-skills-codex.zip](https://github.com/nghiemthai1/project-manager-skills/releases/latest/download/pm-skills-codex.zip).
+3. Extract its contents into your project root. If `AGENTS.md` or a same-named skill already exists, extract to a temporary folder first and merge deliberately.
+4. Confirm this layout, including the hidden `.agents` folder:
+
+```text
+.agents/
+  skills/
+    project-charter/
+      SKILL.md
+    ...
+AGENTS.md
+```
+
+5. Open Codex in that project and ask: “Use the project-charter skill to turn these notes into a draft charter.”
+
+The ZIP contains all 30 complete skill folders, including templates, examples and optional helpers. Its `AGENTS.md` provides usage guidance for your project; repository maintainer instructions stay in the source repository. Downloading alone does not install anything: extraction places the files in the discovery location.
+
+For an authenticated CLI download:
+
+```sh
+gh release download --repo nghiemthai1/project-manager-skills --pattern pm-skills-codex.zip
+```
+
+## Codex manual setup
 
 Copy the selected skill folder, including its supporting files, into your project's `.agents/skills/` directory or your user-level `~/.agents/skills/` directory. Keep the skill folder name unchanged. OpenAI documents the skill structure and discovery behavior in [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
@@ -29,3 +55,9 @@ Repository maintainers also install the pinned YAML parser in `requirements-dev.
 ## Scope of compatibility
 
 The packages follow the [Agent Skills specification](https://agentskills.io/specification). Metadata and standalone helper invocation are checked in this repository. A full live-client acceptance test in every supported assistant is not claimed; client-specific installation behavior follows its current official documentation.
+
+## Build a release package
+
+Run `python scripts/build_codex.py`. It writes `dist/codex/codex-project-manager-skills.zip` and the identical download alias `dist/codex/pm-skills-codex.zip`. Generated archives are excluded from source commits. Packaging tests compare every included skill file and execute helpers from the extracted archive.
+
+The release workflow validates and packages on pull requests and main pushes. Pushing a new `v*` tag publishes both ZIPs as GitHub Release assets after the checks pass. Use a new version tag for each release; the README's latest-release link stays the same.
