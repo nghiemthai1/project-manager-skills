@@ -4,7 +4,8 @@
     "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
     "path": "skills/stakeholder-mapping/SKILL.md",
     "adaptation": "close",
-    "license": "CC-BY-NC-SA-4.0"
+    "license": "CC-BY-NC-SA-4.0",
+    "local_revision": "2.1.0: added visual artifact contract and export/accessibility checks; existing license retained"
   },
   "stakeholder-engagement-advisor": {
     "repository": "deanpeters/Product-Manager-Skills",
@@ -25,14 +26,16 @@
     "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
     "path": "skills/stakeholder-identification/SKILL.md",
     "adaptation": "close",
-    "license": "CC-BY-NC-SA-4.0"
+    "license": "CC-BY-NC-SA-4.0",
+    "local_revision": "2.1.0: added visual artifact contract and export/accessibility checks; existing license retained"
   },
   "prioritization-advisor": {
     "repository": "deanpeters/Product-Manager-Skills",
     "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
     "path": "skills/prioritization-advisor/SKILL.md",
     "adaptation": "close",
-    "license": "CC-BY-NC-SA-4.0"
+    "license": "CC-BY-NC-SA-4.0",
+    "local_revision": "2.1.0: added visual artifact contract and export/accessibility checks; existing license retained"
   },
   "project-intake-advisor": {
     "repository": "deanpeters/Product-Manager-Skills",

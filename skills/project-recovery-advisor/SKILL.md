@@ -5,7 +5,7 @@ description: Choose a credible response when the delivery plan fails. Use after 
 metadata:
   type: interactive
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Develop and compare feasible project recovery options, preserve mandatory outcomes and authority, and
     define evidence checkpoints that test whether the chosen intervention works.
   frameworks: Root-cause hypotheses; recovery option appraisal; recovery checkpoints
@@ -84,6 +84,10 @@ Explain rejected options and what evidence would make them viable. Several works
 ### Record, execute within authority and inspect
 
 After an actual decision, record its scope, conditions and effective date, update affected plans prospectively and confirm owners/resources. Drafting alone does not execute or announce the response. At each checkpoint compare actual evidence with the recovery hypothesis, not merely task completion. If the mechanism is not improving or assumptions fail, return to the decision authority with revised options rather than rolling the promise forward indefinitely.
+
+### When producing a visual
+
+Use the [recovery option scenarios](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

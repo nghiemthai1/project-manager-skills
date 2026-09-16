@@ -48,7 +48,7 @@ The canonical source remains `skills/` in this repository. Installed copies will
 
 ## Optional Python helpers
 
-Python 3.11+ is required only to run calculation helpers. They use the standard library and make no network requests. From a skill folder, run its helper with `--help` or `--demo`. From elsewhere, pass the helper's absolute path. Each helper contract documents the JSON fields and limitations.
+Python 3.11+ is required only to run calculation helpers and visual renderers. They use the standard library and make no network requests. From a skill folder, run its helper with `--help` or `--demo`. From elsewhere, pass the helper's absolute path. Each helper contract documents the JSON fields and limitations.
 
 Repository maintainers also install the pinned YAML parser in `requirements-dev.txt` for validation. That dependency is not needed for the operational helpers.
 

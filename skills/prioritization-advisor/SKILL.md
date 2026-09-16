@@ -5,7 +5,7 @@ description: Choose a scope prioritization method that fits evidence and constra
 metadata:
   type: interactive
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Recommend and apply a defensible prioritization method while preserving mandatory acceptance and decision
     rights.
   frameworks: MoSCoW; RICE; weighted scoring; Cost of Delay; value/effort; Kano
@@ -278,6 +278,10 @@ After collecting responses, the agent recommends a framework:
 ```
 
 ---
+
+### When producing a visual
+
+Use the [tradeoff plot or ranked options table](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

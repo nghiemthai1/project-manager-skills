@@ -5,7 +5,7 @@ description: Facilitate a focused risk review and choose owned responses. Use be
 metadata:
   type: interactive
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to response
     options, triggers and residual-risk decisions.
   frameworks: Premortem; probability-impact matrix; response planning; residual risk
@@ -79,6 +79,10 @@ Multiple risks may need different branches. Do not force one score or response a
 ### Produce the response record and handoff
 
 Use the [workshop template](template.md) to capture question/answer context, risk statements, evidence/confidence, priority rationale, response, performer/owner, trigger, contingency, residual authority and next review. Keep proposed assignments and acceptance decisions separate. Hand current problems to issue resolution and material changes to change control. Revisit when evidence, proximity, scope or control effectiveness changes.
+
+### When producing a visual
+
+Use the [risk exposure and control map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

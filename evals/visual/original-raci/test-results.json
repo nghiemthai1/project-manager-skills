@@ -1,0 +1,75 @@
+{
+  "renderer": "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\skills\\raci-matrix\\scripts\\render_raci.py",
+  "primary_output": {
+    "files": [
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\visual-forward-test\\handoffs.svg",
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\visual-forward-test\\handoffs.html",
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\visual-forward-test\\handoffs.json",
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\visual-forward-test\\handoffs.csv"
+    ],
+    "rows": 3,
+    "roles": 2,
+    "findings": [
+      {
+        "id": "H-7",
+        "findings": [
+          "0 A assignments; confirm bounded ownership",
+          "Unresolved cells",
+          "Assignments not fully confirmed"
+        ]
+      },
+      {
+        "id": "H-9",
+        "findings": [
+          "2 A assignments; confirm bounded ownership",
+          "No R assignment",
+          "Assignments not fully confirmed"
+        ]
+      }
+    ]
+  },
+  "svg_dimensions": {
+    "width": "780",
+    "height": "777"
+  },
+  "adverse_rejections": [
+    {
+      "case": "duplicate-role",
+      "exit_code": 2,
+      "stderr": "Input error: Duplicate role ID"
+    },
+    {
+      "case": "missing-cell",
+      "exit_code": 2,
+      "stderr": "Input error: H-7: every role needs an explicit cell, including unknowns"
+    },
+    {
+      "case": "invalid-code",
+      "exit_code": 2,
+      "stderr": "Input error: H-7/PM: invalid code"
+    },
+    {
+      "case": "missing-evidence",
+      "exit_code": 2,
+      "stderr": "Input error: H-7/PM: confirmed requires an evidence reference"
+    },
+    {
+      "case": "invalid-state",
+      "exit_code": 2,
+      "stderr": "Input error: H-7/PM: invalid confirmation state"
+    }
+  ],
+  "passes": [
+    "Exact JSON round-trip",
+    "Six CSV assignment records and source IDs",
+    "SVG XML and displayed codes/states/work boundary",
+    "Self-contained exports and findings controls present",
+    "Formula text prefixed in CSV",
+    "HTML/XML injection escaped",
+    "Explicit no assignment, unknown and disputed coexist in adverse fixture"
+  ],
+  "limitations": [
+    "No browser interaction or rendered viewport inspection yet",
+    "SVG has generic reference to companion evidence but no per-cell evidence references or detailed audit register"
+  ]
+}

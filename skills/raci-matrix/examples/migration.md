@@ -1,5 +1,7 @@
 # Northstar: vendor delivery versus internal acceptance
 
+Open the **[interactive artifact](../assets/migration.html)**, **[SVG](../assets/migration.svg)**, [editable JSON](../assets/migration-source.json), or [CSV](../assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+
 Fictional training artifact. Draft after M-D001 on 5 October 2026. The approved mandate exists; the detailed letters below are proposed allocations requiring role confirmation. M-D001 does not by itself approve this matrix.
 
 Legend: R performs; A owns result; C consulted; I informed; A/R combines duties; — no assignment in this draft.

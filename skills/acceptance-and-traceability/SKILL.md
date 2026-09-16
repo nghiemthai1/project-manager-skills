@@ -5,7 +5,7 @@ description: Connect requirements to applicable results and acceptance decisions
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Create an auditable chain from authorized requirement through verification to a bounded acceptance decision.
   frameworks: Requirements traceability matrix; verification versus validation; bidirectional impact analysis
   best_for: '["Create an auditable chain from authorized requirement through verification to a bounded acceptance
@@ -66,6 +66,10 @@ Retain failed and superseded results. New evidence adds to the chain; it does no
 6. **Maintain through change.** Identify affected requirements, checks, data and acceptors. Preserve old results, assess applicability and request targeted retesting or renewed acceptance where needed. Hand the current evidence and open gaps to readiness or change control.
 
 Use [the traceability template](template.md). A reviewer should be able to follow a material claim to its source and actual result, tell whether that result applies now, and identify the decision still needed. If they cannot, the matrix is incomplete even if every cell contains text.
+
+### When producing a visual
+
+Use the [evidence traceability matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

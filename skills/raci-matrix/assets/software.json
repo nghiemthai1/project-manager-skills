@@ -1,0 +1,377 @@
+{
+  "title": "Relay · responsibility map",
+  "version": "RACI-0.1",
+  "as_of": "2026-09-29",
+  "source": "Fictional software worked example; normalized from the supplied Markdown matrix",
+  "scope": "Proposed work and independent acceptance boundaries; no agreement or capacity inferred",
+  "state": "Proposed — assignments unconfirmed",
+  "roles": [
+    {
+      "id": "Ada",
+      "label": "Ada: sponsor"
+    },
+    {
+      "id": "Mina",
+      "label": "Mina: PM"
+    },
+    {
+      "id": "Omar",
+      "label": "Omar: engineering"
+    },
+    {
+      "id": "Priya",
+      "label": "Priya: product"
+    },
+    {
+      "id": "Lena",
+      "label": "Lena: security"
+    },
+    {
+      "id": "Theo",
+      "label": "Theo: service"
+    }
+  ],
+  "rows": [
+    {
+      "id": "R-1",
+      "label": "Integrated baseline proposal",
+      "cells": {
+        "Ada": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "R-2",
+      "label": "Baseline approval decision",
+      "cells": {
+        "Ada": {
+          "code": "A",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "R",
+          "state": "proposed",
+          "note": "prepare record",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "R-3",
+      "label": "SAML implementation and engineering evidence",
+      "cells": {
+        "Ada": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "R-4",
+      "label": "Backlog ordering",
+      "cells": {
+        "Ada": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "R-5",
+      "label": "Security acceptance decision",
+      "cells": {
+        "Ada": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "R",
+          "state": "proposed",
+          "note": "supply evidence",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "R-6",
+      "label": "Service handover acceptance",
+      "cells": {
+        "Ada": {
+          "code": "I",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "R",
+          "state": "proposed",
+          "note": "coordinate packet",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "A/R",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "R-7",
+      "label": "Material scope/funding change decision",
+      "cells": {
+        "Ada": {
+          "code": "A",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Mina": {
+          "code": "R",
+          "state": "proposed",
+          "note": "impact packet",
+          "source": "software.md / proposed matrix"
+        },
+        "Omar": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Priya": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Lena": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        },
+        "Theo": {
+          "code": "C",
+          "state": "proposed",
+          "note": "",
+          "source": "software.md / proposed matrix"
+        }
+      }
+    },
+    {
+      "id": "GO-UNKNOWN",
+      "label": "Pilot go decision",
+      "cells": {
+        "Ada": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "software.md / review findings"
+        },
+        "Mina": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "software.md / review findings"
+        },
+        "Omar": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "software.md / review findings"
+        },
+        "Priya": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "software.md / review findings"
+        },
+        "Lena": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "software.md / review findings"
+        },
+        "Theo": {
+          "code": "?",
+          "state": "unknown",
+          "note": "Release decision authority/assignment not established in this early draft",
+          "source": "software.md / review findings"
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Row IDs R-/M-R- and GO-UNKNOWN are illustrative artifact identifiers added for navigation, not new project approvals.",
+    "All original matrix letters are retained. The unresolved go row makes the existing narrative gap visible.",
+    "Full duty and source records are in HTML, JSON and CSV; counts are not utilization."
+  ]
+}

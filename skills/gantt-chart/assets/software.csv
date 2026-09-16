@@ -1,0 +1,16 @@
+id,label,kind,parent,owner,layer,start,finish,source
+A,Contract agreement,task,,Not assigned in this instructional subcase,Original planning scenario (not approved baseline),2026-10-05,2026-10-07,software.md / source table
+A,Contract agreement,task,,Not assigned in this instructional subcase,forecast,2026-10-05,2026-10-07,software.md / source table
+A,Contract agreement,task,,Not assigned in this instructional subcase,actual,,,software.md / source table
+B,Interface build,task,,Not assigned in this instructional subcase,Original planning scenario (not approved baseline),2026-10-07,2026-10-13,software.md / source table
+B,Interface build,task,,Not assigned in this instructional subcase,forecast,2026-10-07,2026-10-15,software.md / source table
+B,Interface build,task,,Not assigned in this instructional subcase,actual,,,software.md / source table
+C,Receiver tests,task,,Not assigned in this instructional subcase,Original planning scenario (not approved baseline),2026-10-07,2026-10-12,software.md / source table
+C,Receiver tests,task,,Not assigned in this instructional subcase,forecast,2026-10-07,2026-10-12,software.md / source table
+C,Receiver tests,task,,Not assigned in this instructional subcase,actual,,,software.md / source table
+D,Integration,task,,Not assigned in this instructional subcase,Original planning scenario (not approved baseline),2026-10-13,2026-10-14,software.md / source table
+D,Integration,task,,Not assigned in this instructional subcase,forecast,2026-10-15,2026-10-16,software.md / source table
+D,Integration,task,,Not assigned in this instructional subcase,actual,,,software.md / source table
+E,Finish checkpoint,milestone,,Not assigned in this instructional subcase,Original planning scenario (not approved baseline),2026-10-14,2026-10-14,software.md / source table
+E,Finish checkpoint,milestone,,Not assigned in this instructional subcase,forecast,2026-10-16,2026-10-16,software.md / source table
+E,Finish checkpoint,milestone,,Not assigned in this instructional subcase,actual,,,software.md / source table

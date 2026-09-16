@@ -6,7 +6,7 @@ license: CC-BY-NC-SA-4.0
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: 'Run two complementary 2x2 grids — Power × Interest (sets engagement strategy per stakeholder) and Impact
     × Power (surfaces who bears consequences but lacks voice) — then compare outputs to reveal blind spots and plan
     quadrant migration. The grids answer different questions and neither one alone is sufficient: Power × Interest
@@ -118,6 +118,10 @@ Document: who is moving, what action triggers the move, and who owns it.
 **Step 5 — Feed into engagement planning**
 
 For each stakeholder in "manage closely" and each Q1 stakeholder, create an engagement plan using stakeholder-engagement-advisor. These are the relationships where tactical planning — specific messages, mediums, cadences, and success criteria — yields the most return.
+
+### When producing a visual
+
+Use the [paired stakeholder grids](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

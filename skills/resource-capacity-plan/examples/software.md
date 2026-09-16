@@ -28,3 +28,9 @@ python scripts/capacity.py --input assets/software-capacity.json --format markdo
 These are what-if scenarios, not decisions. Mina must resolve the actual constrained work and approving resource role. A balanced period still needs daily/window checks: if two tasks need Omar at the same time, total hours are insufficient evidence.
 
 **Repair:** “The team has four spare hours, so the pilot is staffed” becomes “Omar is eight hours overloaded under the supplied case; twelve spare security hours do not establish a substitute. Confirm a specific scope, sequence or coverage decision.”
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

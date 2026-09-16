@@ -1,0 +1,105 @@
+{
+  "main": {
+    "files": [
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\schedule.svg",
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\schedule.html",
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\schedule.json",
+      "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\schedule.csv"
+    ],
+    "diagnostics": [
+      "T-01: partial actual interval; inspect source dates in table",
+      "M-02: forecast incomplete; retained without an invented bar",
+      "DEP-X: forecast violates the stated relationship; no dates changed",
+      "DEP-Z: endpoint outside snapshot; link retained in register"
+    ]
+  },
+  "svg_dimensions": {
+    "width": "1420",
+    "height": "784"
+  },
+  "fixtures": {
+    "cycle": {
+      "files": [
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\cycle.svg",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\cycle.html",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\cycle.json",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\cycle.csv"
+      ],
+      "diagnostics": [
+        "T-01: partial actual interval; inspect source dates in table",
+        "M-02: forecast incomplete; retained without an invented bar",
+        "Dependency cycle: snapshot is not a feasible computed schedule",
+        "DEP-X: forecast violates the stated relationship; no dates changed",
+        "DEP-Z: endpoint outside snapshot; link retained in register",
+        "DEP-CYCLE: forecast violates the stated relationship; no dates changed"
+      ]
+    },
+    "empty": {
+      "files": [
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\empty.svg",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\empty.html",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\empty.json",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\empty.csv"
+      ],
+      "diagnostics": []
+    },
+    "partial": {
+      "files": [
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\partial.svg",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\partial.html",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\partial.json",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\partial.csv"
+      ],
+      "diagnostics": [
+        "T-01: forecast incomplete; retained without an invented bar",
+        "T-01: partial forecast interval; inspect source dates in table",
+        "T-01: partial actual interval; inspect source dates in table",
+        "M-02: forecast incomplete; retained without an invented bar",
+        "R-03: forecast incomplete; retained without an invented bar",
+        "R-03: partial forecast interval; inspect source dates in table",
+        "DEP-X: forecast violates the stated relationship; no dates changed",
+        "DEP-Z: endpoint outside snapshot; link retained in register"
+      ]
+    },
+    "long": {
+      "files": [
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\long.svg",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\long.html",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\long.json",
+        "C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\.work\\gantt-forward-test\\long.csv"
+      ],
+      "diagnostics": [
+        "T-01: partial actual interval; inspect source dates in table",
+        "M-02: forecast incomplete; retained without an invented bar",
+        "DEP-X: forecast violates the stated relationship; no dates changed",
+        "DEP-Z: endpoint outside snapshot; link retained in register"
+      ]
+    }
+  },
+  "invalid_calendar_type": {
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\skills\\gantt-chart\\scripts\\render_gantt.py\", line 298, in <module>\n    if __name__ == '__main__': raise SystemExit(main())\n                                                ~~~~^^\n  File \"C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\skills\\gantt-chart\\scripts\\render_gantt.py\", line 285, in main\n    data=validate(demo() if args.demo else json.loads(args.input.read_text(encoding='utf-8')))\n  File \"C:\\Users\\nghie\\OneDrive\\Documents\\ChatGPT\\project-manager-skills\\skills\\gantt-chart\\scripts\\render_gantt.py\", line 45, in validate\n    if not isinstance(calendar.get('label'), str) or not calendar['label']:\n                      ^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+  },
+  "long_owner_overlap": {
+    "last_owner_baseline": 861.0,
+    "next_task_first_label_baseline": 575.0,
+    "overlaps": true
+  },
+  "tested": [
+    "Source JSON exact round-trip for primary and all valid adverse fixtures",
+    "Typed links and external endpoint retained",
+    "FS-zero contradiction diagnosed without repair",
+    "Unscheduled milestone no invented diamond",
+    "Partial actual no completed bar",
+    "Leap-day holiday shaded at correct date",
+    "Forecast and comparison pixel endpoints preserve source dates",
+    "Empty source no fake date axis",
+    "Cycles diagnosed",
+    "SVG XML valid; injected markup escaped",
+    "CSV 9 task/layer records, correct line endings",
+    "All embedded exports equal external files"
+  ],
+  "not_tested": [
+    "Browser controls, keyboard, viewport layout; parent handles browser QA"
+  ]
+}

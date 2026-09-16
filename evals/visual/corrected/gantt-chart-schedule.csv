@@ -1,0 +1,10 @@
+id,label,kind,parent,owner,layer,start,finish,source
+T-01,Work,task,,unknown,Supplied comparison; approval unknown,2028-02-28,2028-03-01,S-1
+T-01,Work,task,,unknown,forecast,2028-02-28,2028-03-02,S-1
+T-01,Work,task,,unknown,actual,2028-02-28,,S-1
+M-02,Checkpoint,milestone,,unknown,Supplied comparison; approval unknown,,,S-2
+M-02,Checkpoint,milestone,,unknown,forecast,,,S-2
+M-02,Checkpoint,milestone,,unknown,actual,,,S-2
+R-03,Review,task,,unknown,Supplied comparison; approval unknown,,,Fictional user request; source ID not supplied
+R-03,Review,task,,unknown,forecast,2028-03-01,2028-03-02,Fictional user request; source ID not supplied
+R-03,Review,task,,unknown,actual,,,Fictional user request; source ID not supplied

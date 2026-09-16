@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="379" viewBox="0 0 1420 379" role="img" aria-labelledby="title desc">
+<title id="title">Fictional handoff schedule</title><desc id="desc">Read-only schedule snapshot. Every source task is retained. Exact dates, ownership and sources are in the companion HTML and JSON.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#5d4a78"/></marker></defs>
+<rect width="1420" height="379" fill="#f7f9fc"/><g font-family="Arial,sans-serif">
+<text x="24.0" y="29.0" font-size="16" fill="#24364e" font-weight="700">Fictional handoff schedule</text>
+<text x="24.0" y="50.0" font-size="12" fill="#24364e" font-weight="400">draft-1 · As of 2028-02-28</text>
+<text x="24.0" y="71.0" font-size="12" fill="#24364e" font-weight="400">T-01, M-02 and R-03; external EXT-9 is outside snapshot</text>
+<text x="24.0" y="92.0" font-size="12" fill="#24364e" font-weight="400">Source: Fictional user request</text>
+<text x="24.0" y="113.0" font-size="12" fill="#24364e" font-weight="400">Calendar: Monday-Friday; 2028-02-29 holiday · [start, finish); finish is excluded</text>
+<text x="24.0" y="134.0" font-size="12" fill="#24364e" font-weight="400">Gray: Supplied comparison; approval unknown · Blue: forecast · Green: actual · Diamond: event, not acceptance</text>
+<text x="24.0" y="198.0" font-size="12" fill="#24364e" font-weight="700">TASK / SOURCE ID / OWNER</text>
+<text x="410.0" y="198.0" font-size="12" fill="#24364e" font-weight="400">No dated intervals — no date axis inferred</text>
+<text x="24.0" y="246.0" font-size="11" fill="#24364e" font-weight="400">Fictional data. No acceptance evidence or percent-progress evidence supplied.</text>
+<text x="24.0" y="264.0" font-size="11" fill="#24364e" font-weight="400">As-of date and all written dates retained without repair. Comparison approval is unknown.</text>
+<text x="24.0" y="282.0" font-size="11" fill="#24364e" font-weight="400">Mapping assumption: the stated actual start belongs to T-01, the work item; no actual finish was supplied.</text>
+<text x="24.0" y="300.0" font-size="11" fill="#24364e" font-weight="400">Display assumption: [start, finish) follows this renderer contract; source did not specify endpoint inclusion. Dates are unchanged.</text>
+<text x="24.0" y="318.0" font-size="11" fill="#24364e" font-weight="400">Working days and holiday are supplied by the requester; owners and relationship lag calendars beyond this snapshot are unknown.</text>
+<text x="24.0" y="336.0" font-size="11" fill="#24364e" font-weight="400">No rows in this snapshot.</text>
+</g></svg>

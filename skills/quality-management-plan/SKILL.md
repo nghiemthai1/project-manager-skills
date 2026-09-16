@@ -5,7 +5,7 @@ description: Define quality criteria, prevention, verification and defect contro
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Plan how the project will prevent defects, verify outputs and obtain acceptance using risk-proportionate
     evidence.
   frameworks: Quality planning/assurance/control; verification versus validation; risk-based testing; PDCA
@@ -59,6 +59,10 @@ PDCA connects a proposed improvement to a small trial, inspection and a decision
 6. **Review and maintain the plan.** Walk through a failed high-consequence test and a changed scope/version. Ensure evidence is invalidated or refreshed when applicability changes. Pass actual results to readiness and preserve earlier failures rather than overwriting them with the latest pass.
 
 Use [the quality-plan template](template.md). The plan is usable when a delivery owner knows what to do, a reviewer knows what evidence to inspect and an acceptor can explain the consequence of a failure. A list of tools or a target pass percentage alone is not enough.
+
+### When producing a visual
+
+Use the [assurance and evidence coverage matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

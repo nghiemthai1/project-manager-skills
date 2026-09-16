@@ -36,3 +36,13 @@ State what moved, compared with which baseline, in working or calendar days, and
 ## Render review
 
 Compare displayed starts/finishes to the source; inspect long labels, weekend events, milestone positions, legend, status claims and baseline/forecast distinction. Keep editable source with any exported visual.
+
+## Visual delivery record
+
+- Decision/audience and reason for this visual rather than a simpler alternative:
+- Source file/system, field mapping, snapshot/filter coverage and missing data:
+- Artifact mode: static, read-only inspection, or explicitly requested editing:
+- Desktop, portrait and landscape reading path; essential values outside hover:
+- Controls actually implemented and checked; selection/filter/reset behavior:
+- Editable source and generated export paths; full versus current-view scope:
+- Render dimensions/tool, source-to-mark checks, defects repaired and remaining limits:

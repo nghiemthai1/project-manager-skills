@@ -20,3 +20,9 @@ Recheck on an applicable recovery result, material configuration change, changed
 Later chronology stays separate: D-004 on 29 October defers the pilot to 3 November; Lena accepts security evidence on 2 November; pilot starts on 3 November; Theo accepts full service handover on 6 November. Those supplied outcomes do not fill missing underlying result/roster details in this earlier matrix.
 
 **Repair:** “Go because coding and budget are complete” substitutes activity and funding for readiness. The corrected matrix names the missing independent condition and exact evidence/authority needed to change the recommendation.
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

@@ -1,0 +1,16 @@
+[
+  {
+    "renderer": "render_raci",
+    "fixture": "200 synthetic rows; no performance portability claim",
+    "generation_seconds_local": 0.074,
+    "html_bytes": 957177,
+    "svg_bytes": 221328
+  },
+  {
+    "renderer": "render_gantt",
+    "fixture": "200 synthetic rows; no performance portability claim",
+    "generation_seconds_local": 0.0813,
+    "html_bytes": 823526,
+    "svg_bytes": 135666
+  }
+]

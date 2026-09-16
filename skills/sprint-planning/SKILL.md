@@ -5,7 +5,7 @@ description: Prepare a coherent Sprint Goal and feasible team forecast. Use when
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Help a Scrum team prepare a Sprint Goal, selected-work forecast and delivery plan while preserving team
     accountabilities, quality and separate project authority.
   frameworks: Scrum Sprint Planning; Sprint Goal; Definition of Done; capacity
@@ -62,6 +62,10 @@ When a dependent input is unconfirmed, identify useful work that genuinely remai
 7. **Adapt with evidence.** During delivery, use observed work and changed inputs to inspect progress toward the goal. Revise the delivery plan and discuss scope with the Product Owner as appropriate; do not silently lower quality. If the goal becomes obsolete, the Product Owner holds Sprint-cancellation authority. Record the actual decision rather than treating the PM's preference as cancellation.
 
 Quality check: the artifact supports a useful outcome, makes conditional work visible and does not convert project pressure into team guarantees. An empty history field is an uncertainty; a failed requirement remains work, even if many small tasks are complete.
+
+### When producing a visual
+
+Use the [sprint forecast board](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

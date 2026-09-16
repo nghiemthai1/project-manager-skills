@@ -5,7 +5,7 @@ description: Reconcile delivery, finances and continuing obligations. Use when p
 metadata:
   type: workflow
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Prepare and record a defensible project closure or termination with accepted deliverables, reconciled
     costs, owned residual obligations and a continuing benefit-review plan.
   frameworks: Closure assurance; financial reconciliation; residual transfer; benefits handoff
@@ -92,6 +92,10 @@ Compare actual delivery against original and approved revised scope/date/cost, s
 **Outputs:** closure/termination report, accepted residual register and permitted resource-release actions. Execute external changes only under user authorization and actual decision scope.
 
 **Exit:** what ended and what continues are explicit. If the project is already approved closed but supporting evidence is missing, preserve that fact and identify assurance gaps/continuing work; do not retroactively manufacture a complete packet.
+
+### When producing a visual
+
+Use the [closure evidence and residual transfer matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

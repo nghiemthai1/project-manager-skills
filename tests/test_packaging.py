@@ -26,6 +26,10 @@ class PackagingTests(unittest.TestCase):
                 self.assertEqual(actual,expected)
                 for asset in ('software.mmd','software.svg','migration.mmd','migration.svg'):
                     self.assertIn('.agents/skills/gantt-chart/assets/'+asset,names)
+                for slug in ('gantt-chart', 'raci-matrix'):
+                    for scene in ('software', 'migration'):
+                        for extension in ('.html', '.svg', '.json', '.csv'):
+                            self.assertIn(f'.agents/skills/{slug}/assets/{scene}{extension}', names)
                 for slug in json.loads((ROOT/'catalog/upstream-sources.json').read_text(encoding='utf-8')):
                     self.assertIn(f'.agents/skills/{slug}/SOURCE.md',names)
                     self.assertIn(f'.agents/skills/{slug}/LICENSE.md',names)
@@ -35,7 +39,7 @@ class PackagingTests(unittest.TestCase):
                     if path.is_file() and path.suffix in module.ALLOWED:
                         name='.agents/skills/'+path.relative_to(ROOT/'skills').as_posix()
                         expected_bytes=path.read_bytes()
-                        if path.suffix in {'.md','.yaml','.yml','.json','.py','.mmd','.svg','.csv'}:
+                        if path.suffix in {'.md','.yaml','.yml','.json','.py','.mmd','.svg','.csv','.html'}:
                             expected_bytes=expected_bytes.replace(b'\r\n',b'\n')
                         self.assertEqual(bundle.read(name),expected_bytes)
                 self.assertEqual(bundle.read('AGENTS.md'),(ROOT/'packaging/codex/AGENTS.md').read_bytes().replace(b'\r\n',b'\n'))

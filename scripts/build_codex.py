@@ -5,7 +5,7 @@ import shutil
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_SUFFIXES = {'.md', '.yaml', '.yml', '.json', '.py', '.mmd', '.svg', '.csv'}
+TEXT_SUFFIXES = {'.md', '.yaml', '.yml', '.json', '.py', '.mmd', '.svg', '.csv', '.html'}
 BINARY_SUFFIXES = {'.png'}
 ALLOWED = TEXT_SUFFIXES | BINARY_SUFFIXES
 

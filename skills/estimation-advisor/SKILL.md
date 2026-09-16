@@ -5,7 +5,7 @@ description: Choose and explain an estimation method with units, assumptions and
 metadata:
   type: interactive
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Select an evidence-appropriate estimate and explain what it can support without turning scenarios into
     promised dates or probabilities.
   frameworks: Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting
@@ -81,6 +81,10 @@ Confirm only the missing factor that affects use: contributor capability, unavai
 5. Hand the effort/duration basis to capacity and schedule planning, with owner/acceptance status and unresolved dependencies. Preserve the user's target separately.
 
 Use [the estimation template](template.md). A good estimate is explainable by its scope, evidence and conditions, not by the number of decimal places. Do not demand all four questions when the input already supports a bounded answer.
+
+### When producing a visual
+
+Use the [estimate ranges or empirical forecast](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

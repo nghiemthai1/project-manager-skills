@@ -5,7 +5,7 @@ description: Plan supplier selection, acceptance and delivery control. Use when 
 metadata:
   type: workflow
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Coordinate a supplier engagement from defined need through evidenced delivery and accepted commercial
     handoff.
   frameworks: Make-or-buy analysis; statement of work; weighted supplier evaluation; supplier performance and acceptance
@@ -71,6 +71,10 @@ Input: dated progress evidence, delivered versions, acceptance results and curre
 Input: applicable acceptance evidence, residual obligations, invoices/commitments, warranty/support and exit needs. Output: acceptance record, commercial reconciliation and accepted operational ownership. Exit: the right people accept the relevant work and obligations; project closure may retain explicitly transferred obligations rather than pretend all have vanished. If the supplier owns data or access, define the evidenced return/export and access-removal route under the actual agreement.
 
 Use [the engagement template](template.md). At every handoff, identify the receiving role and evidence it needs. Quality means the project can distinguish “promised,” “delivered,” “verified,” “accepted” and “paid” without conflating them.
+
+### When producing a visual
+
+Use the [deliverable and acceptance matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

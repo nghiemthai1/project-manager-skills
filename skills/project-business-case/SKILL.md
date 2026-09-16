@@ -5,7 +5,7 @@ description: Compare project options, costs, benefits and uncertainty. Use when 
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Recommend an investment option with explicit alternatives, assumptions, benefit ownership and a decision
     boundary.
   frameworks: Options appraisal; cost-benefit analysis; sensitivity analysis
@@ -62,6 +62,10 @@ Do not import a universal discount rate, uplift, ROI target or assumed realizati
 6. **Record the actual decision and handoff.** A recommendation remains proposed until the actual authority decides. Pass the authorized boundary to the charter and planning work; pass benefit definitions and review needs to the eventual business owner. Revisit when a material assumption changes.
 
 Use [the business-case template](template.md). Before calling the case decision-ready, check that the recommendation can be traced to comparable options, every decisive number has a basis, affordability is addressed and the downside could be explained to a skeptical sponsor. Unknown mandatory evidence makes the decision conditional rather than magically complete.
+
+### When producing a visual
+
+Use the [option comparison with ranges](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

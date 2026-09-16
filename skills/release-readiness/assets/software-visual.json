@@ -1,0 +1,37 @@
+{
+  "title": "Relay · independent release conditions",
+  "scope": "Fictional review · 28 October 2026 · recovery evidence missing; no applicable authorized exception supplied",
+  "source": "../examples/software.md",
+  "data": {
+    "recommendation": "hold",
+    "formal_decision": "not created by this artifact",
+    "rows": [
+      {
+        "condition": "Required recovery access",
+        "state": "MISSING / REJECTED",
+        "evidence": "Lena rejects; demonstration absent"
+      },
+      {
+        "condition": "SAML / audit scope evidence",
+        "state": "UNKNOWN",
+        "evidence": "Detailed current results not supplied"
+      },
+      {
+        "condition": "Scope / cost authorization",
+        "state": "APPROVED CHANGE",
+        "evidence": "CR-001; B2 120k; no security waiver"
+      },
+      {
+        "condition": "Pilot baseline date",
+        "state": "30 OCTOBER",
+        "evidence": "D-004 has not yet changed the date"
+      },
+      {
+        "condition": "Immediate operational coverage",
+        "state": "UNKNOWN",
+        "evidence": "Roster / access evidence absent"
+      }
+    ]
+  },
+  "reading_note": "Do not average failed and passed gates. Later chronology is separate: D-004 on 29 October; Lena acceptance on 2 November; pilot 3 November; full Theo service handover 6 November. Do not backfill this earlier snapshot."
+}

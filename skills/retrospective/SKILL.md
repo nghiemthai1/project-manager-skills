@@ -5,7 +5,7 @@ description: Turn delivery observations into a few testable improvements. Use af
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Create a retrospective record that separates observations, causal hypotheses and bounded improvement experiments,
     with ownership, measures and an actual review loop.
   frameworks: PDCA; 5 Whys with evidence; experiment design
@@ -67,6 +67,10 @@ Distinguish process execution from outcome: a review meeting held is implementat
 7. **Close the learning loop.** At review, record whether the change was implemented, observed result, comparison limits and unintended effects. Choose adopt, adjust, stop or gather more evidence. If no results are supplied, leave the experiment proposed/in progress; never fabricate a successful review to complete the story.
 
 Quality check: a future reviewer can distinguish what happened, what is only suspected, what changed and what evidence supports the next action. A concise record can contain open questions; forced consensus or a long action list weakens it.
+
+### When producing a visual
+
+Use the [evidence timeline or cause map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

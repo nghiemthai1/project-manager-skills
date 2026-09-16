@@ -24,3 +24,9 @@ Propose that Priya identify representative administrators and arrange workflow/r
 | Confirm service concerns and handover boundary | Mina with Theo | Documented operational acceptance needs | Planning review; pending |
 
 **Repair:** “Administrators have no authority, so email them at launch” under-serves the group that lives with failure. Recruit their input early while preserving formal approval roles. Review the map after pilot scope, customer representation or organizational authority changes.
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

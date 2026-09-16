@@ -1,0 +1,7 @@
+row_id,deliverable,role_id,role,code,confirmation,work_boundary,source
+H-7,Handoff evidence and acceptance,PM,PM,R,confirmed,Prepare the evidence package; acceptance authority is separate,M-3
+H-7,Handoff evidence and acceptance,OPS,OPS,?,unknown,Acceptance authority unresolved,Fictional user request
+H-8,Separate archive task,PM,PM,A/R,confirmed,Own and perform the archive task,M-4
+H-8,Separate archive task,OPS,OPS,I,confirmed,Receive archive outcome; notification trigger not supplied,M-4
+H-9,Purchase approval,PM,PM,A,proposed,Proposed purchase approval authority; no preparation assignment,Fictional user request
+H-9,Purchase approval,OPS,OPS,A,proposed,Proposed purchase approval authority; no preparation assignment,Fictional user request

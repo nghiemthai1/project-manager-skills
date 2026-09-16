@@ -4,11 +4,18 @@ Practical skills for software and IT project managers, written to improve both t
 
 Start with your decision: define scope, test a delivery forecast, expose a risk, recover a troubled project, or establish whether a release is ready. Each skill explains the method, its limits, a worked application, and recognizable failure modes.
 
-Version 2 contains **42 skills**, **42 templates**, **84 worked examples**, and **four standalone calculation helpers**. All 30 original skills have been expanded, with 12 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
+Version 2.1 contains **42 skills**, **42 templates**, **84 worked examples**, and **four calculation helpers and two visual renderers**. All 30 original skills have been expanded, with 12 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
 
 ## Find the skill you need
 
-Looking for the artifacts? Open the **[filled RACI matrix](skills/raci-matrix/examples/software.md)** or **[rendered Gantt chart](skills/gantt-chart/assets/software.svg)**. Each has a reusable template, a full skill guide and software/IT migration examples; the Gantt package includes editable Mermaid sources.
+Open a worked artifact directly. These examples are fictional, with proposals and unknowns explicitly marked. Download HTML to open it locally; no server is needed.
+
+| Artifact | Software / Relay | IT migration / Northstar |
+|---|---|---|
+| RACI matrix | [Interactive HTML](skills/raci-matrix/assets/software.html) · [SVG](skills/raci-matrix/assets/software.svg) · [Explanation](skills/raci-matrix/examples/software.md) | [Interactive HTML](skills/raci-matrix/assets/migration.html) · [SVG](skills/raci-matrix/assets/migration.svg) · [Explanation](skills/raci-matrix/examples/migration.md) |
+| Gantt chart | [Interactive HTML](skills/gantt-chart/assets/software.html) · [SVG](skills/gantt-chart/assets/software.svg) · [Explanation](skills/gantt-chart/examples/software.md) | [Interactive HTML](skills/gantt-chart/assets/migration.html) · [SVG](skills/gantt-chart/assets/migration.svg) · [Explanation](skills/gantt-chart/examples/migration.md) |
+
+Each HTML includes complete SVG, JSON and CSV downloads. Both packages include reusable templates and standalone renderers. The Gantt package also retains Mermaid sources and their original SVGs. See [visual artifact guidance and coverage](docs/VISUAL-UPGRADE.md).
 
 | Your situation | Start here |
 |---|---|

@@ -1,12 +1,13 @@
 ---
 name: gantt-chart
-description: Create a dated Gantt chart with dependencies and baseline comparison. Use when a project schedule needs
-  a readable timeline for planning or control.
+description: Design and deliver Gantt artifacts with source mapping, readable interaction and exports. Use when
+  schedules need timelines, baseline comparisons or visual review.
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
-  intent: Turn evidenced schedule data into a readable timeline without inventing dates or completion.
+  version: 2.1.0
+  intent: Choose and produce an evidence-preserving schedule visualization with explicit data mapping, calendar
+    semantics, interaction, accessibility and inspected exports.
   frameworks: Gantt timeline; working calendars; finish-to-start dependencies; baseline comparison
   best_for: '["Turn evidenced schedule data into a readable timeline without inventing dates or completion."]'
   scenarios: '["Use gantt-chart: Turn evidenced schedule data into a readable timeline without inventing dates or
@@ -62,15 +63,29 @@ Use completed or active status only with actual evidence. Missing percent-comple
 1. **Validate the source table.** Retain stable task IDs, distinguish date layers, and check missing dates, inverted intervals, duplicate IDs and unknown predecessors. Ask for information that changes the chart; do not fill gaps with realistic-looking dates.
 2. **Reconcile logic and calendars.** Check dependency cycles, successor timing, holidays, imposed dates and scarce-resource overlaps. Recompute the network after a material change. Label unresolved resource/calendar assumptions on the chart.
 3. **Select the right view.** Use a detailed team timeline for executable work or a milestone/workstream summary for executives. Keep the full task table as the source. A simpler view can omit low-level rows without changing dates or hiding a failed gate.
-4. **Generate the visual.** Markdown Mermaid is the portable default; retain editable chart source and a tabular fallback. For readers without Mermaid support, export an SVG/PNG or use a spreadsheet chart. Preserve baseline and forecast labels and place an as-of date in the title or caption.
+4. **Generate the appropriate artifact.** For a reusable inspection view, prefer self-contained semantic HTML with SVG, persistent details and meaningful controls. For a small embedded diagram, Mermaid remains useful. Deliver editable source data and a rendered SVG/table; add other formats for the audience. Follow the design/export references below, preserve comparison labels and state as-of and visible scope.
 5. **Check the rendered chart.** Inspect label clipping, date ticks, weekend handling, zero-duration milestones, predecessor joins, color meaning and baseline alignment. Compare every displayed start/finish against the source table. A diagram that parses can still tell the wrong schedule story.
 6. **Explain the decision.** State changed work, finish variance in the right units, assumptions and the decision required. An updated forecast is not permission to defer a commitment. Save the source/version so a later chart can be compared without rewriting history.
 
 Use [the task and chart template](template.md). The [software example](examples/software.md) retains a planning baseline and a changed forecast; the [migration example](examples/migration.md) exposes a shared-resource limitation.
 
+### Visual artifact workflow
+
+Before rendering, read [source mapping and model](references/source-and-model.md); for vendor files or screenshots also read [import routing](references/import-routing.md). Identify planned schedule, actual history, roadmap, resource calendar or visual reconstruction before mapping dates. Keep missing tasks and relationships visible as diagnostics.
+
+Use [design and interaction](references/design-and-interaction.md) to choose a task-grid timeline, executive milestone view, dependency graph or another clearer surface. Define read-only versus editing mode, selection, search/filter/reset, hierarchy, comparison layers and export scope before implementing controls. Preserve exact values outside hover and provide a readable portrait view as well as landscape/desktop inspection.
+
+Use [rendering, export and QA](references/render-export-qa.md) to choose a renderer against actual rows/links and to inspect generated files. A default report needs no hosted app or live integration. Large editable schedules need a scheduling engine and measured interaction behavior, not merely more SVG bars. Deliver only the export formats actually generated and verified.
+
+The final package includes the source mapping, normalized editable data, diagnostics, accessible table, graphical output and a short visual review record. If rendering is unavailable, provide source plus an explicitly unrendered draft; do not claim visual QA or a completed graphic.
+
 ### Mermaid conventions used here
 
 Give tasks stable IDs. Use explicit ISO start dates or `after` references to predecessor IDs. Declare the working-calendar exclusions. Use zero-duration milestone entries. Mermaid can render the diagram, but this library does not treat it as a resource-leveling or approval engine. Check the [current syntax documentation](https://mermaid.js.org/syntax/gantt.html) for features supported by the renderer you use.
+
+### Included offline renderer
+
+Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_gantt.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Start from either worked example's source, replace all fictional data, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
 
 ## Examples
 

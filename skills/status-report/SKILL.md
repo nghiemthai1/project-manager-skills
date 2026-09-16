@@ -5,7 +5,7 @@ description: Report project evidence, forecast variance and decisions needed. Us
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance
     states and makes the next intervention clear.
   frameworks: RAG by tolerance; management by exception; baseline/forecast/actual
@@ -64,6 +64,10 @@ Cost indicators also need interpretation: CPI describes earned value per cost, S
 7. **Preserve the dated record.** Record author/source references and compare with the previous report. Correct errors transparently. Drafting is not sending, and acknowledgment of a report is not approval of its recommendations. Update linked decision/change records only when actual decisions occur.
 
 Quality check: every confident claim has a source or calculation; every forecast has an assumption/as-of; every baseline has authority; every material blocker survives into the headline or clear decision section. “No decision needed” is acceptable when supported, not a default used to avoid difficult asks.
+
+### When producing a visual
+
+Use the [evidence-based status dashboard](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

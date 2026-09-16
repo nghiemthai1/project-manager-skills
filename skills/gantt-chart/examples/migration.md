@@ -1,5 +1,7 @@
 # Migration rehearsal: two tied branches
 
+Open the **[interactive artifact](../assets/migration.html)**, **[SVG](../assets/migration.svg)**, [editable JSON](../assets/migration-source.json), or [CSV](../assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+
 Fictional instructional subcase, not Northstar's approved cutover schedule or its actual rehearsal history. Additional assumptions: start Monday 2 November 2026; Monday–Friday workweek with no holidays; separate available resources for B and C; no external input delays. Finish dates below are exclusive boundaries.
 
 | Task | Duration | Predecessors | Forecast start | Forecast finish | Model interpretation |

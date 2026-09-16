@@ -1,0 +1,21 @@
+{
+  "title": "Relay · capacity is specific to the person",
+  "scope": "Fictional capacity exercise · 19–30 October 2026 · support counted once · no staffing commitments inferred",
+  "source": "../examples/software.md",
+  "data": {
+    "unit": "hours",
+    "people": [
+      {
+        "name": "Omar",
+        "available": 56,
+        "demand": 64
+      },
+      {
+        "name": "Lena",
+        "available": 32,
+        "demand": 20
+      }
+    ]
+  },
+  "reading_note": "Total: 84 h demanded / 88 h available. Four spare team hours do not resolve Omar’s eight-hour overload. Lena’s skills are not interchangeable. Check daily concurrency before claiming feasibility."
+}

@@ -5,7 +5,7 @@ description: Assess a proposed change and preserve exact approval boundaries. Us
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded authority
     and verified prospective baseline updates.
   frameworks: Integrated change control; impact analysis; configuration history
@@ -61,6 +61,10 @@ Dependencies and resource bottlenecks can prevent a shorter task from improving 
 6. **Implement prospectively and verify.** After actual authorization, update only affected baselines and linked plans, retaining old versions and decision references. Communicate within authorization. Verify implementation against the approved boundary and conditions, including applicable acceptance evidence. Close when verification or an explicit authorized disposition supports it, not merely when the approver says yes.
 
 Quality check: a reviewer can compare before/proposed/approved states, explain impacts and unknowns, identify real authority and see how compliance with the decision will be verified. If the report's only benefit is “now green,” investigate whether it hides variance rather than changes delivery.
+
+### When producing a visual
+
+Use the [before/after impact comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

@@ -1,0 +1,16 @@
+id,label,kind,parent,owner,layer,start,finish,source
+A,Extract sample,task,,Not assigned in this instructional subcase,No comparison supplied,,,migration.md / source table
+A,Extract sample,task,,Not assigned in this instructional subcase,forecast,2026-11-02,2026-11-04,migration.md / source table
+A,Extract sample,task,,Not assigned in this instructional subcase,actual,,,migration.md / source table
+B,Validate mapping,task,,Not assigned in this instructional subcase,No comparison supplied,,,migration.md / source table
+B,Validate mapping,task,,Not assigned in this instructional subcase,forecast,2026-11-04,2026-11-09,migration.md / source table
+B,Validate mapping,task,,Not assigned in this instructional subcase,actual,,,migration.md / source table
+C,Prepare restore environment,task,,Not assigned in this instructional subcase,No comparison supplied,,,migration.md / source table
+C,Prepare restore environment,task,,Not assigned in this instructional subcase,forecast,2026-11-04,2026-11-09,migration.md / source table
+C,Prepare restore environment,task,,Not assigned in this instructional subcase,actual,,,migration.md / source table
+D,Reconcile and restore,task,,Not assigned in this instructional subcase,No comparison supplied,,,migration.md / source table
+D,Reconcile and restore,task,,Not assigned in this instructional subcase,forecast,2026-11-09,2026-11-11,migration.md / source table
+D,Reconcile and restore,task,,Not assigned in this instructional subcase,actual,,,migration.md / source table
+E,Acceptance checkpoint,milestone,,Not assigned in this instructional subcase,No comparison supplied,,,migration.md / source table
+E,Acceptance checkpoint,milestone,,Not assigned in this instructional subcase,forecast,2026-11-11,2026-11-11,migration.md / source table
+E,Acceptance checkpoint,milestone,,Not assigned in this instructional subcase,actual,,,migration.md / source table

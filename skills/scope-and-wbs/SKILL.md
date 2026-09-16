@@ -5,7 +5,7 @@ description: Define a deliverable-oriented scope breakdown with boundaries and c
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted.
   frameworks: Deliverable-oriented WBS; 100% rule; WBS dictionary
   best_for: '["Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted."]'
@@ -64,6 +64,10 @@ Near-term packages can have executable detail while later work remains at a plan
 6. **Hand off and maintain.** Pass package IDs to estimation, dependencies, schedule, cost and traceability. When scope changes, update affected packages and retain the prior version and decision reference; do not silently rewrite earlier reports.
 
 Use [the WBS and dictionary template](template.md). The quality review should find no orphan requirement, no unexplained package, no duplicated shared work and no claim of accepted ownership without evidence. Coverage can remain explicitly incomplete while a decision is open; honesty is more useful than a false 100% badge.
+
+### When producing a visual
+
+Use the [deliverable hierarchy](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

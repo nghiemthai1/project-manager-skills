@@ -5,7 +5,7 @@ description: Compare complete demand with realistic availability, skills and tim
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Expose person-level capacity constraints and develop explicit allocation, scope or sequence options without
     assuming interchangeable people.
   frameworks: Capacity-demand analysis; skill constraints; resource leveling options
@@ -66,6 +66,10 @@ A scenario can be useful before confirmation. Label it, state what must be agree
 6. **Record and refresh.** Keep proposed and confirmed allocations separate. Recalculate confirmed changes or label a what-if. Feed the accepted availability/constraints to scheduling and review when scope, leave, support load or commitments change.
 
 Use [the capacity template](template.md). Quality means the reader can find the constrained skill/person/time, understand the demand basis and identify the decision that could resolve it. A polished utilization chart is not enough.
+
+### When producing a visual
+
+Use the [per-person demand versus availability](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

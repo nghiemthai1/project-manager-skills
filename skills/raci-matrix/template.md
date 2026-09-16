@@ -26,3 +26,13 @@ Define what each R produces and what each A owns. Separate independent acceptanc
 |---|---|---|---|---|
 
 Before calling the matrix confirmed, check R coverage, accountable ownership, independent approval boundaries, affected voices, feasible allocation and accepted assignments.
+
+## Visual delivery record
+
+- Decision/audience and reason for this visual rather than a simpler alternative:
+- Source file/system, field mapping, snapshot/filter coverage and missing data:
+- Artifact mode: static, read-only inspection, or explicitly requested editing:
+- Desktop, portrait and landscape reading path; essential values outside hover:
+- Controls actually implemented and checked; selection/filter/reset behavior:
+- Editable source and generated export paths; full versus current-view scope:
+- Render dimensions/tool, source-to-mark checks, defects repaired and remaining limits:

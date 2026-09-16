@@ -20,3 +20,9 @@ Proposed trigger: inability to execute the agreed demonstration, failed recovery
 Later chronology is separate: Lena's 28 October rejection concerns missing recovery demonstration. It does not prove the workshop's imagined outage occurred. Subsequent 2 November acceptance follows later evidence and must not be backdated here.
 
 **Repair:** “Risk score 90; mitigated because a runbook exists” substitutes invented precision and a document for capability. The repaired record makes both evidence tests and actual authority visible.
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

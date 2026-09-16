@@ -5,7 +5,7 @@ description: Build and review cost baselines, actuals, remaining forecasts and f
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Reconcile project cost evidence and forecast assumptions while separating performance measurement from
     spending authorization.
   frameworks: Cost baseline; contingency versus management reserve; earned value management
@@ -68,6 +68,10 @@ The spread between scenarios is a prompt to inspect remaining work, not permissi
 6. **Record changes prospectively.** Link the exact authorization, new baseline and reserve treatment. Preserve earlier reports and the prior baseline. Revisit forecasts when actuals, scope, remaining estimates or obligations change.
 
 Use [the budget template](template.md). A decision-ready artifact reconciles the dollars, explains the forecast assumption and makes the authorization gap visible. Unknown obligations or weak EV make the conclusion conditional rather than a reason to invent numbers.
+
+### When producing a visual
+
+Use the [baseline, actual and forecast comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

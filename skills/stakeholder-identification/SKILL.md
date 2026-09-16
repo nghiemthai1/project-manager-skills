@@ -6,7 +6,7 @@ license: CC-BY-NC-SA-4.0
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Produce a comprehensive, equity-aware stakeholder set before any engagement begins. Combines broad brainstorm
     with structured categorization (Allies / Audiences / Influencers, R/P/D marking), an explicit equity and bias
     check, and a disciplined narrowing to the 2-3 stakeholders to understand deeply first. Designed to run as a
@@ -116,6 +116,10 @@ With the full list visible, identify the 2-3 stakeholders you need to understand
 - The most likely blockers or skeptics
 
 For each priority stakeholder, capture: name, category, R/P/D tag, and a one-line "what we need to learn from them." These outputs feed directly into stakeholder-map and stakeholder-engagement-advisor.
+
+### When producing a visual
+
+Use the [coverage map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

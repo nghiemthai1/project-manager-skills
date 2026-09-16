@@ -5,7 +5,7 @@ description: Prepare affected people to adopt new ways of working. Use when proj
 metadata:
   type: workflow
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Coordinate impact assessment, readiness, adoption support and reinforcement around the people affected
     by delivery.
   frameworks: ADKAR lens; change impact assessment; readiness and reinforcement
@@ -70,6 +70,10 @@ Input: authorized rollout decision, known readiness gaps and accepted support co
 Input: observed behavior, support demand and remaining gaps. Inspect whether the intended behavior persists, adjust the work system and transfer ongoing measures/actions to the business/service owner. Output: accepted reinforcement and benefit-monitoring handoff. If adoption remains weak, diagnose the barrier again instead of declaring training a success and closing the issue.
 
 Use [the change/adoption template](template.md). Link each action to an observed or hypothesized barrier and a test of whether it helped. Where a related skill is unavailable, retain the group, impact, owner, evidence and next-decision fields directly.
+
+### When producing a visual
+
+Use the [group readiness and adoption matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

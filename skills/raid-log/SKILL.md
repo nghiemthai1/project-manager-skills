@@ -5,7 +5,7 @@ description: Maintain distinct risks, assumptions, issues and dependencies with 
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Maintain a dated RAID register whose classification, response, ownership and lifecycle follow the evidence
     rather than optimistic status labels.
   frameworks: RAID; cause-event-effect; issue lifecycle; assumption validation
@@ -67,6 +67,10 @@ Keep stable IDs and dated updates. When a risk materializes, create or link the 
 6. **Close with the right evidence.** Record date, evidence, actual accepting authority where required and any transferred residual work. A planned retest is not a passed retest. Keep superseded, reopened and materialized histories. Produce the [current register and update ledger](template.md) with the next review trigger.
 
 Quality check: a reader can explain why each item is classified, what changes next, who can decide and what would justify closure. A proposed owner/action remains visibly proposed. No dependency is closed by a supplier's assurance alone.
+
+### When producing a visual
+
+Use the [exception board with optional risk grid](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

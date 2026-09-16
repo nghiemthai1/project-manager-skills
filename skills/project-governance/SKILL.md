@@ -5,7 +5,7 @@ description: Define project decision rights, tolerances and evidence gates. Use 
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Create a proportionate governance agreement that separates preparation, authority, assurance and acceptance.
   frameworks: Stage gates; management by exception; delegated authority
   best_for: '["Create a proportionate governance agreement that separates preparation, authority, assurance and
@@ -56,6 +56,10 @@ A gate should answer a bounded question such as whether a specified population m
 6. **Record and maintain the agreement.** Preserve the approving record, effective version and unresolved items. Link actual decisions to the decision log, assignments to RACI, and controls to status/escalation. Review after mandate, personnel or risk changes.
 
 Use [the governance template](template.md). Quality means a reader can answer who may decide this particular issue, on what evidence, by when and with which limits. A role name without a source or boundary is insufficient.
+
+### When producing a visual
+
+Use the [decision-rights flow](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 

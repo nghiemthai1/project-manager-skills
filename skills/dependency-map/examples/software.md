@@ -30,3 +30,9 @@ Mina should reconcile date meanings and contacts with both sides; Omar should as
 Keep the original forecast and any later revisions. Mark delivered when the defined output arrives, verified when applicable checks run, and accepted only when the actual receiver records that decision. An interface ZIP arriving on 22 October may still require validation before usable work starts.
 
 **Repair:** “Platform is two days late, so the pilot slips two days” becomes “the known local margin is −2 calendar days; project impact awaits the integrated remaining-work and capacity model.”
+
+## Graphical companion
+
+![Worked visual](../assets/software-visual.svg)
+
+[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

@@ -5,7 +5,7 @@ description: Build and analyze dependency logic, float and milestone forecasts. 
 metadata:
   type: component
   domain: software-it-project-management
-  version: 2.0.0
+  version: 2.1.0
   intent: Produce an explainable schedule model and milestone decision without confusing unconstrained offsets with
     feasible committed dates.
   frameworks: Critical Path Method; total float; rolling-wave scheduling
@@ -61,6 +61,10 @@ Rolling-wave planning gives near-term activities enough detail to execute while 
 6. **Deliver the schedule decision.** State the feasible forecast if supported, its variance to the unchanged baseline/target, milestone criteria and unresolved decisions. Baseline approval is a separate event; retain prior approved versions when it changes.
 
 Use [the schedule template](template.md). Quality review checks complete logic, useful estimates, consistent units, feasible resource/calendar assumptions, gate evidence and the distinction between calculated model and authorized commitment.
+
+### When producing a visual
+
+Use the [logic network plus milestone view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
 
 ## Examples
 
