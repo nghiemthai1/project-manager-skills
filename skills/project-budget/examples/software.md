@@ -1,27 +1,31 @@
-# Project Budget: software example
+# Relay: cost position before the funding decision
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional control artifact as of 16 October 2026. D-001 approved B1 on 2 October: BAC 100,000 USD and separately controlled management reserve 10,000. Cumulative PV 50,000, EV 40,000 and AC 48,000 refer to that same baseline and date. The example assumes the supplied EV is maintained under applicable earning rules; the underlying detailed ledger is not reproduced here.
 
-## Control point: 16 October
+| Indicator / forecast | Calculation | Result | Interpretation |
+|---|---|---:|---|
+| CV | 40,000−48,000 | −8,000 USD | Earned work cost more than its budgeted value |
+| SV | 40,000−50,000 | −10,000 USD | Value behind plan, not days late |
+| CPI | 40,000/48,000 | 0.8333 | Current earned value per dollar of actual cost |
+| SPI | 40,000/50,000 | 0.8 | Value earned relative to planned value |
+| Cost-efficiency EAC | 100,000/0.833333… | 120,000 USD | Current cost efficiency persists |
+| Remaining-at-budget EAC | 48,000+100,000−40,000 | 108,000 USD | Remaining work performs at its budgeted cost |
+| Combined-efficiency EAC | 48,000+60,000/(0.833333…×0.8) | 138,000 USD | Both efficiencies applied to remaining work |
 
-B1 is USD 100,000, approved 2 October. Management reserve is separately USD 10,000. PV=50,000, EV=40,000, AC=48,000.
+Run [the aligned input](../assets/software-evm.json):
 
-| Indicator | Result | Interpretation |
-|---|---|---|
-| CV | -8,000 USD | Earned work cost more than its budgeted value |
-| SV | -10,000 USD | Earned value trails planned value; not ten thousand days |
-| CPI | 0.8333 | Current earned value per dollar spent |
-| SPI | 0.8 | Earned value relative to planned value |
-| CPI-based EAC | 120,000 USD | Assumes current cost efficiency continues |
-| Remaining-at-budget EAC | 108,000 USD | Assumes past cost variance does not recur |
-| CPI×SPI EAC | 138,000 USD | Applies both efficiencies to remaining work |
+```sh
+python scripts/earned_value.py --input assets/software-evm.json --format markdown
+```
 
-The spread between forecasts is a reason to examine remaining work. It is not permission to choose the cheapest result. At EAC 120,000, the gap is 20,000 above BAC and 10,000 above the total original envelope.
+## Funding and forecast decision
 
-On 19 October Ada authorizes B2 of 120,000 and the extra funding. The 16 October analysis remains against B1.
+At the 120k scenario, the gap is 20k above BAC and 10k above the original 110k total envelope. Mina needs a current remaining-work estimate and actual obligation reconciliation before recommending management's forecast. Selecting 108k because it fits the envelope would be unjustified unless the remaining-at-budget assumption is supported. No EAC formula establishes the pilot's calendar finish.
 
-## Repair
+On 19 October CR-001 later authorizes B2 of 120k: original 100k performance budget + 10k original reserve released into the revised budget + 10k additional authorization beyond the old total envelope. The exact approved scope includes the optional polish deferral; security acceptance remains. The 16 October report stays against B1 and does not imply those decisions had already occurred.
 
-**Flawed:** "Reserve makes the 120,000 forecast authorized."
+## Double-counting subcase
 
-**Corrected:** "Original total authorization is 110,000. A further 10,000 and the appropriate reserve/baseline decisions are required."
+Additional fictional ledger illustration: a 20k purchase order includes 8k already within actual cost and 12k still unspent. If an ETC already includes that 12k, adding the whole 20k again would duplicate both incurred and remaining amounts. Reconcile the line items before forecasting; these teaching values are not extra Relay costs to add to the table above.
+
+**Repair:** “Reserve makes 120k authorized” misses the 10k gap beyond the total envelope and the reserve-release decision. Show both bridges and obtain the actual authority.

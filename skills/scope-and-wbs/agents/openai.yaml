@@ -1,4 +1,4 @@
 interface:
   display_name: "Scope and Work Breakdown"
-  short_description: "Guide scope and work breakdown with evidence and judgment"
-  default_prompt: "Use $scope-and-wbs to help with this project management task."
+  short_description: "Define a deliverable-oriented scope breakdown with boundaries an"
+  default_prompt: "Use $scope-and-wbs to turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted."

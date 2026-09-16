@@ -1,27 +1,29 @@
-# Stakeholder Engagement Advisor: software example
+# Relay: engage the security authority after a readiness rejection
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional case as of 28 October. Lena rejects readiness because recovery access has not been demonstrated. Ada's earlier scope/budget approval did not waive security acceptance. Mina needs an actionable response, not a message pressuring Lena to approve.
 
-## Dialogue: 28 October
+## Context already answered
 
-**Mina:** "Lena is blocking the pilot. Help me convince her to accept."
+Lena is the security lead and acceptance authority for the relevant evidence. The context is a failed readiness gate. Her stated concern is absent recovery proof; her private motives, available review capacity and exact retest criteria are unknown. Skip profile questions already answered. The one consequential remaining question is: “What executed recovery evidence would satisfy this criterion, and when can the authorized reviewer inspect it?” In a single-shot request, put that question in the proposed action rather than stopping the draft.
 
-**Advisor:** "What acceptance condition does Lena say is unmet?"
+| Their need | Project need | Shared interest | Constraint |
+|---|---|---|---|
+| Demonstrated secure recovery | A credible release decision | A pilot that can recover safely | Evidence absent; target date alone cannot resolve it |
 
-**Mina:** "Recovery access has not been demonstrated."
+## Options and recommendation
 
-**Advisor:** "That is an evidence gap. Arrange a recovery demonstration and clarify the failure criteria. If it cannot pass before the window, take the release consequence to Ada. Persuasion does not supply the missing result."
+1. **Evidence working session — recommended.** Lena and the technical owner clarify acceptance, applicable environment and retest evidence. Useful when the gap can be defined precisely; requires actual reviewer availability.
+2. **Written evidence packet and review.** Fits if criteria are already clear and results can be supplied asynchronously. Faster coordination, but premature while no demonstration exists.
+3. **Authority clarification.** Use only if participants disagree about the applicable rule or exception route. A sponsor escalation can resolve governance; it is not an invented waiver.
+
+Recommend option 1, followed by option 2 when evidence exists. No meeting has been scheduled and no owner/date is newly committed by this artifact.
 
 ## Draft message
 
-"Lena, recovery access has not yet been demonstrated. Please confirm the test evidence required for acceptance and review the proposed demonstration with Omar. Mina will bring any resulting pilot-date impact to Ada. This request does not ask you to waive the criterion."
+“Lena, the readiness record shows recovery access has not been demonstrated. We will retain that condition in the release assessment. Could we confirm the required recovery scenario, applicable environment and evidence for your review? Mina can coordinate with Omar on an execution plan once criteria and capacity are clear. Please flag any review lead time we need to include in the forecast.”
 
-## Why this fits
+## Action and success evidence
 
-The concern is concrete and within Lena's acceptance responsibility. The appropriate intervention is evidence and a scheduling decision, not a change in tone.
+Proposed owner: Mina for coordination; Omar for the technical plan within his known remediation role. Timing: before another readiness decision, exact slot unconfirmed. Success: an agreed criterion, executed applicable evidence and Lena's explicit review outcome—not merely a meeting or a friendlier response. If the plan cannot meet the target, present a date decision to the appropriate authority without implying that Lena caused the underlying evidence gap.
 
-## Repair
-
-**Flawed:** "Tell Lena executives already want green status."
-
-**Corrected:** "Confirm and produce the evidence, then escalate the consequence if the gate cannot be met."
+**Repair:** “Ada approved the budget, so please stop blocking the pilot” substitutes pressure for evidence and broadens Ada's decision. State the missing proof and request the smallest useful next step.

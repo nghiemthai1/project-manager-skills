@@ -1,6 +1,6 @@
 # Maintainer instructions
 
-This repository teaches software and IT project management through original skills, worked artifacts, and explicit failure analysis. Read `docs/AUTHORING.md` before changing skill content. Preserve the human learning value along with actionable agent instructions.
+This repository teaches software and IT project management through skills, worked artifacts, and explicit failure analysis. Read `docs/AUTHORING.md` before changing skill content. Preserve the human learning value along with actionable agent instructions.
 
 Canonical packages are in `skills/`. Do not edit installed copies or unrelated personal files. Keep the existing root meeting-knowledge-graph folder and TLDR learning documents outside commits; the adapted package under skills is the maintained library version.
 
@@ -11,3 +11,5 @@ Run `python scripts/validate.py` and `python -m unittest discover -s tests -v` a
 Preserve OKF v0.2 meeting memory semantics and unknown metadata. Do not rewrite earlier meeting ledgers to match a later decision. Keep operational helpers standalone, offline, and Python 3.11+ standard library only.
 
 Do not describe new content as field-tested or battle-tested without recorded field evidence. Update validation claims and coverage when behavior changes. The repository stays private unless the owner explicitly requests otherwise.
+
+For the requested v2 revision, follow docs/REVISION-2-PLAN.md and the pinned Dean Peters authoring sources. Close adaptations must retain per-package SOURCE.md and LICENSE.md; update catalog/upstream-sources.json. Do not call adapted prose original.

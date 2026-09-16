@@ -1,19 +1,27 @@
-# Integrated plan
+# Integrated project plan and decision
 
-- Version / status / mandate:
-- Decisions this plan requests:
+Project / as-of / mandate / current and proposed versions / approval status:
+Decision needed / actual authorities / material unknowns:
 
-| Planning area | Artifact / version | Key assumption or constraint | Owner | Open decision |
+| Phase | Input/version | Output and receiving role | Exit evidence / decision | Open condition / next action |
 |---|---|---|---|---|
-| Scope and acceptance | | | | |
-| Estimates and schedule | | | | |
-| Capacity and dependencies | | | | |
-| Budget and funding | | | | |
-| Risk and governance | | | | |
-| Transition and closure | | | | |
+| Mandate and boundaries | | | | |
+| Work and acceptance | | | | |
+| Delivery and funding model | | | | |
+| Integrated challenge | | | | |
+| Decision and control handoff | | | | |
 
-## Feasible options and tradeoffs
+| Package / milestone | Scope and acceptance | Estimate and dependencies | Resource/calendar basis | Cost/funding basis | Owner/authority status | Forecast / baseline distinction |
+|---|---|---|---|---|---|---|
+| | | | | | | |
 
-## Cross-artifact reconciliation
+Immediate operating readiness before execution:
+Full service handover after relevant cutover/stabilization evidence:
 
-## Approval record and control-cycle handoff
+| Contradiction or assumption | Artifacts affected | Consequence | Option / proposed owner | Resolution evidence / status |
+|---|---|---|---|---|
+| | | | | |
+
+Recommended option / credible alternative / conditions:
+Actual baseline decision and exact authorized changes / preserved prior versions:
+Control cadence, first checkpoint and accepted owners / unresolved handoffs:

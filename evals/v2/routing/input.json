@@ -1,0 +1,342 @@
+{
+  "candidates": [
+    {
+      "name": "estimation-advisor",
+      "description": "Choose and explain an estimation method with units, assumptions and uncertainty. Use when sizing work or testing a forecast before committing effort or dates."
+    },
+    {
+      "name": "communication-plan",
+      "description": "Plan project communications around decisions, evidence and feedback. Use when updates are missed, audiences need different detail or meetings fail to resolve work."
+    },
+    {
+      "name": "gantt-chart",
+      "description": "Create a dated Gantt chart with dependencies and baseline comparison. Use when a project schedule needs a readable timeline for planning or control."
+    },
+    {
+      "name": "quality-management-plan",
+      "description": "Define quality criteria, prevention, verification and defect control. Use when project quality expectations need an executable plan before delivery or release."
+    },
+    {
+      "name": "stakeholder-identification",
+      "description": "Identify affected people and decision makers before prioritizing engagement. Use when starting a project or checking a stakeholder list for missing voices."
+    },
+    {
+      "name": "project-business-case",
+      "description": "Compare project options, costs, benefits and uncertainty. Use when an investment or material continuation decision needs a defensible business case."
+    },
+    {
+      "name": "status-report",
+      "description": "Report project evidence, forecast variance and decisions needed. Use for an executive update, recurring control report or material exception."
+    },
+    {
+      "name": "project-recovery-advisor",
+      "description": "Choose a credible response when the delivery plan fails. Use after a material project setback or diagnosis, with causal evidence, options and measurable checkpoints."
+    },
+    {
+      "name": "decision-log",
+      "description": "Record the exact choice, authority, rationale and conditions. Use when project decisions need traceable history across meetings, changes or conflicting recollections."
+    },
+    {
+      "name": "risk-workshop",
+      "description": "Facilitate a focused risk review and choose owned responses. Use before a commitment, after a material change or when uncertainty is hidden by a stale register."
+    },
+    {
+      "name": "project-health-diagnostic",
+      "description": "Diagnose delivery health and evidence confidence. Use when project status is disputed, incomplete or contradicted by cost, schedule or acceptance evidence."
+    },
+    {
+      "name": "integrated-project-planning",
+      "description": "Reconcile scope, acceptance, schedule, capacity, costs and controls into one plan. Use when preparing a baseline or revising a plan whose parts no longer agree."
+    },
+    {
+      "name": "release-and-handover",
+      "description": "Plan and coordinate authorized release, stabilization and service transfer. Use for software launches or IT cutovers with explicit recovery and ownership boundaries."
+    },
+    {
+      "name": "project-governance",
+      "description": "Define project decision rights, tolerances and evidence gates. Use when approval, escalation or acceptance responsibilities are unclear."
+    },
+    {
+      "name": "lessons-learned",
+      "description": "Capture reusable learning with evidence, context and limits. Use when a milestone, experiment or project outcome should inform another team or future delivery."
+    },
+    {
+      "name": "project-kickoff",
+      "description": "Establish mandate, decision rights and a usable working agreement. Use when starting or resetting a software or IT project."
+    },
+    {
+      "name": "sprint-planning",
+      "description": "Prepare a coherent Sprint Goal and feasible team forecast. Use when supporting Scrum Sprint Planning with capacity, dependencies and required quality made explicit."
+    },
+    {
+      "name": "stakeholder-engagement-advisor",
+      "description": "Plan engagement for a specific stakeholder. Use when preparing an outreach, navigating resistance, or aligning a critical relationship before a key milestone."
+    },
+    {
+      "name": "retrospective",
+      "description": "Turn delivery observations into a few testable improvements. Use after an iteration, rehearsal or milestone when the team needs evidence-based learning and follow-through."
+    },
+    {
+      "name": "meeting-knowledge-graph",
+      "description": "Build evidence-linked OKF meeting memory. Use when transcripts or notes need durable decisions, actions and recurring-series history rather than only a brief summary."
+    },
+    {
+      "name": "project-intake-advisor",
+      "description": "Triage an incoming request into a project, change, operational task or investigation. Use when a vague ask or escalation needs a response before commitment."
+    },
+    {
+      "name": "project-closure",
+      "description": "Reconcile delivery, finances and continuing obligations. Use when preparing normal project closure or authorized termination with explicit acceptance and ownership."
+    },
+    {
+      "name": "raid-log",
+      "description": "Maintain distinct risks, assumptions, issues and dependencies with evidence and closure rules. Use when setting up controls or updating them after new project evidence."
+    },
+    {
+      "name": "stakeholder-map",
+      "description": "Prioritize stakeholders using two complementary grids. Use when setting engagement strategy and surfacing whose voice needs elevating after stakeholder identification."
+    },
+    {
+      "name": "release-readiness",
+      "description": "Assess a defined release against current gate evidence. Use before a pilot, launch or migration cutover to recommend go or hold without inventing authorization."
+    },
+    {
+      "name": "project-charter",
+      "description": "Define the project mandate, boundaries, success and authority. Use when starting a project or clarifying what delivery is authorized to achieve."
+    },
+    {
+      "name": "prioritization-advisor",
+      "description": "Choose a scope prioritization method that fits evidence and constraints. Use when optional project work competes for limited time, funding or capacity."
+    },
+    {
+      "name": "workshop-facilitation",
+      "description": "Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking."
+    },
+    {
+      "name": "scope-and-wbs",
+      "description": "Define a deliverable-oriented scope breakdown with boundaries and completion evidence. Use when preparing estimates or resolving missing, duplicated or expanding project work."
+    },
+    {
+      "name": "resource-capacity-plan",
+      "description": "Compare complete demand with realistic availability, skills and timing. Use when staffing, competing assignments or a shared specialist may make a plan infeasible."
+    },
+    {
+      "name": "acceptance-and-traceability",
+      "description": "Connect requirements to applicable results and acceptance decisions. Use when defining done, checking coverage or assessing the evidence impact of a change."
+    },
+    {
+      "name": "change-request",
+      "description": "Assess a proposed change and preserve exact approval boundaries. Use when scope, date, cost or acceptance changes cross agreed project control limits."
+    },
+    {
+      "name": "raci-matrix",
+      "description": "Build and audit a responsibility assignment matrix. Use when work ownership, accountability, consultation, or notification is unclear."
+    },
+    {
+      "name": "delivery-approach-advisor",
+      "description": "Choose and tailor predictive, agile or hybrid practices. Use when uncertainty, feedback, dependencies and governance need to fit one delivery approach."
+    },
+    {
+      "name": "delivery-control-cycle",
+      "description": "Reconcile project evidence and turn exceptions into decisions. Use for a recurring control review or material change in delivery, funding or readiness."
+    },
+    {
+      "name": "escalation-brief",
+      "description": "Present evidence, options and a precise decision request. Use when a project consequence exceeds delegated authority or a time-critical exception needs intervention."
+    },
+    {
+      "name": "milestone-schedule",
+      "description": "Build and analyze dependency logic, float and milestone forecasts. Use when testing schedule feasibility or the effect of a duration or dependency change."
+    },
+    {
+      "name": "organizational-change",
+      "description": "Prepare affected people to adopt new ways of working. Use when project delivery changes roles, processes or services and training alone will not establish readiness."
+    },
+    {
+      "name": "project-budget",
+      "description": "Build and review cost baselines, actuals, remaining forecasts and funding gaps. Use when planning a budget or explaining project cost performance and reserve decisions."
+    },
+    {
+      "name": "benefits-realization",
+      "description": "Define and verify benefits after project delivery. Use when outputs need to be connected to owned, measurable business outcomes and review decisions."
+    },
+    {
+      "name": "dependency-map",
+      "description": "Define cross-team handoffs, usable acceptance and timing gaps. Use when external deliverables, approvals or shared services may block project work."
+    },
+    {
+      "name": "vendor-procurement",
+      "description": "Plan supplier selection, acceptance and delivery control. Use when a project depends on purchased services or vendor deliverables."
+    }
+  ],
+  "requests": [
+    {
+      "id": "R001",
+      "request": "Draft the project mandate with scope, exclusions, success measures, sponsor and PM authority."
+    },
+    {
+      "id": "R002",
+      "request": "Calculate which dependency paths govern finish and how much total float each activity has in this task network."
+    },
+    {
+      "id": "R003",
+      "request": "Facilitate a premortem to identify plausible failure causes, assess uncertainty and choose responses."
+    },
+    {
+      "id": "R004",
+      "request": "Map cross-team handoffs with provider, receiver, needed-by date, expected delivery and acceptance evidence."
+    },
+    {
+      "id": "R005",
+      "request": "Prepare affected staff to use the new process, diagnose adoption barriers and plan readiness and reinforcement."
+    },
+    {
+      "id": "R006",
+      "request": "Update our linked risks, assumptions, issues and dependencies with owners, triggers and next actions."
+    },
+    {
+      "id": "R007",
+      "request": "Analyze cumulative PV, EV and AC against BAC, forecast remaining cost and expose funding gaps."
+    },
+    {
+      "id": "R008",
+      "request": "Help the Scrum team form a coherent Sprint Goal and feasible selected-work forecast from backlog and availability."
+    },
+    {
+      "id": "R009",
+      "request": "Record what was actually decided, by whom, why, under which conditions, and what earlier decision it supersedes."
+    },
+    {
+      "id": "R010",
+      "request": "Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision asks."
+    },
+    {
+      "id": "R011",
+      "request": "The approved plan is no longer feasible. Compare scope, sequence, resource and date recovery options with checkpoints."
+    },
+    {
+      "id": "R012",
+      "request": "Decompose the approved project scope into deliverable-oriented work packages with boundaries and completion evidence."
+    },
+    {
+      "id": "R013",
+      "request": "Turn this completed project experience into a transferable lesson with context, evidence, limits and an adoption route."
+    },
+    {
+      "id": "R014",
+      "request": "Identify all groups affected by this migration, including indirect users and people missing from our initial list."
+    },
+    {
+      "id": "R015",
+      "request": "Determine whether we can close the project given acceptance, financial obligations, residual work and the benefits handoff."
+    },
+    {
+      "id": "R016",
+      "request": "Convert these recurring meeting transcripts into durable evidence-linked memory while preserving source order and changed decisions."
+    },
+    {
+      "id": "R017",
+      "request": "Facilitate this already-scoped decision workshop one question at a time and handle interruptions without losing our place."
+    },
+    {
+      "id": "R018",
+      "request": "Reports are green but milestones, defects and staffing tell different stories. Diagnose current delivery health and missing evidence."
+    },
+    {
+      "id": "R019",
+      "request": "A sponsor sent a vague request to add excluded analytics by Friday. Analyze the ask and draft a reply before I commit."
+    },
+    {
+      "id": "R020",
+      "request": "Define who may approve scope, spending, release and exceptions, with tolerances and evidence gates."
+    },
+    {
+      "id": "R021",
+      "request": "Run the weekly evidence-to-decision control process across status, dependencies, risks, changes and escalation follow-through."
+    },
+    {
+      "id": "R022",
+      "request": "Compare supplier options, define deliverable acceptance and plan commercial delivery controls through handover."
+    },
+    {
+      "id": "R023",
+      "request": "Assess a specific proposed change to the approved scope and date, compare impacts and prepare the authorization record."
+    },
+    {
+      "id": "R024",
+      "request": "Compare a pilot, full rollout and doing the minimum using their costs, uncertain benefits and affordability."
+    },
+    {
+      "id": "R025",
+      "request": "Create a plan for defect prevention, process assurance, verification and retesting before migration execution."
+    },
+    {
+      "id": "R026",
+      "request": "Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational handover."
+    },
+    {
+      "id": "R027",
+      "request": "Requirements will evolve, but cutover needs formal approval. Recommend suitable delivery practices and explain the tradeoffs."
+    },
+    {
+      "id": "R028",
+      "request": "We have a stakeholder register. Map power, interest and impact to choose engagement priorities."
+    },
+    {
+      "id": "R029",
+      "request": "Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options and give a deadline."
+    },
+    {
+      "id": "R030",
+      "request": "Prepare and run the launch workshop for the project team, then capture working agreements, open decisions and actions."
+    },
+    {
+      "id": "R031",
+      "request": "Evaluate the current release evidence and recommend go or hold; restore failed even though most checks passed."
+    },
+    {
+      "id": "R032",
+      "request": "Build an audience/message/channel/cadence plan with feedback routes for the rollout."
+    },
+    {
+      "id": "R033",
+      "request": "Link each requirement to its acceptance criterion, executed test evidence, result and approving authority."
+    },
+    {
+      "id": "R034",
+      "request": "Create a responsibility grid for migration deliverables. Separate who does the work from who owns each result."
+    },
+    {
+      "id": "R035",
+      "request": "Help me prepare a constructive conversation with the operations owner who is concerned about accepting support."
+    },
+    {
+      "id": "R036",
+      "request": "Review whether the delivered change improved the business outcome, using a credible baseline, comparable measures and an ongoing owner."
+    },
+    {
+      "id": "R037",
+      "request": "Facilitate a team review of observed work and choose a small improvement experiment with an owner and measure."
+    },
+    {
+      "id": "R038",
+      "request": "Turn this dated task table into a readable timeline, with baseline and forecast bars and milestone dates."
+    },
+    {
+      "id": "R039",
+      "request": "Choose a method for ranking optional scope while protecting mandatory acceptance. Our reach and effort estimates are uncertain."
+    },
+    {
+      "id": "R040",
+      "request": "Check next weeks assignments against each persons available hours, leave, support load and specialist constraints."
+    },
+    {
+      "id": "R041",
+      "request": "Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent delivery plan."
+    },
+    {
+      "id": "R042",
+      "request": "Help estimate this uncertain integration task. We have optimistic, likely and pessimistic durations but no probability model."
+    }
+  ]
+}

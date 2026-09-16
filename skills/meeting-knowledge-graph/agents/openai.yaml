@@ -1,4 +1,4 @@
 interface:
   display_name: "Meeting Knowledge Graph"
-  short_description: "Guide meeting knowledge graph with evidence and judgment"
-  default_prompt: "Use $meeting-knowledge-graph to help with this project management task."
+  short_description: "Build evidence-linked OKF meeting memory"
+  default_prompt: "Use $meeting-knowledge-graph to convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim states, traceable concepts and preserved recurring-meeting history."

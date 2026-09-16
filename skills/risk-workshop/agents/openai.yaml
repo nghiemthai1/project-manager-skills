@@ -1,4 +1,4 @@
 interface:
   display_name: "Risk Workshop"
-  short_description: "Guide risk workshop with evidence and judgment"
-  default_prompt: "Use $risk-workshop to help with this project management task."
+  short_description: "Facilitate a focused risk review and choose owned responses. Use"
+  default_prompt: "Use $risk-workshop to guide a bounded risk conversation from independent hypotheses through evidence-based assessment to response options, triggers and residual-risk decisions."

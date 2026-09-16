@@ -1,0 +1,18 @@
+gantt
+    title Fictional integration - forecast versus baseline (as of 5 Oct 2026)
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+    excludes weekends
+    todayMarker off
+    section Original planning scenario
+    A Contract agreement :ba, 2026-10-05, 2d
+    B Interface build :bb, after ba, 4d
+    C Receiver tests :bc, 2026-10-07, 2026-10-12
+    D Integration :bd, after bb bc, 1d
+    Baseline finish boundary :milestone, bm, after bd, 0d
+    section Forecast - B takes six days
+    A Contract agreement :crit, fa, 2026-10-05, 2d
+    B Interface build :crit, fb, after fa, 6d
+    C Receiver tests :fc, 2026-10-07, 2026-10-12
+    D Integration :crit, fd, after fb fc, 1d
+    Forecast finish boundary :milestone, fm, after fd, 0d

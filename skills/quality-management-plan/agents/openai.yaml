@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quality Management Plan"
+  short_description: "Define quality criteria, prevention, verification and defect con"
+  default_prompt: "Use $quality-management-plan to plan how the project will prevent defects, verify outputs and obtain acceptance using risk-proportionate evidence."

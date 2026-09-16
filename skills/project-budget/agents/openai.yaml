@@ -1,4 +1,4 @@
 interface:
   display_name: "Project Budget"
-  short_description: "Guide project budget with evidence and judgment"
-  default_prompt: "Use $project-budget to help with this project management task."
+  short_description: "Build and review cost baselines, actuals, remaining forecasts an"
+  default_prompt: "Use $project-budget to reconcile project cost evidence and forecast assumptions while separating performance measurement from spending authorization."

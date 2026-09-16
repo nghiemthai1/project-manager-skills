@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Intake Advisor"
+  short_description: "Triage an incoming request into a project, change, operational t"
+  default_prompt: "Use $project-intake-advisor to separate the literal request from its intended outcome and route it without inventing commitments."

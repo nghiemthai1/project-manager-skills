@@ -1,25 +1,25 @@
-# Estimation Advisor: software example
+# Relay: asymmetric effort scenarios
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional instructional estimate for one bounded integration package, not Relay's full delivery forecast. Assume the same completion rule across scenarios: implementation, review, applicable integration tests and correction of the modeled interface issues. The values are teaching inputs: O=2, M=4, P=12 person-days. Contributor confirmation and actual scheduling availability are not supplied.
 
-## Guided decision
+| Scenario | Effort | Assumed condition |
+|---|---:|---|
+| Optimistic | 2 person-days | Stable compatible interface and available test environment |
+| Most likely | 4 | Ordinary integration adjustment and review |
+| Pessimistic modeled case | 12 | Bounded compatibility rework and repeated testing; catastrophic outages excluded |
 
-**Mina:** "Can we promise the audit integration in four days? We think it is between two and twelve person-days."
+## Method and calculation
 
-**Advisor:** "Is the main uncertainty the interface behavior, the amount of work, or team availability?"
+Three-point estimation is useful because the task boundary is fixed while implementation conditions vary. Triangular mean = (2+4+12)/3 = 6 person-days. PERT mean = (2+4×4+12)/6 = 5. Spread convention = (12−2)/6 ≈ 1.67. The PERT estimate gives more weight to the typical case, so it is lower than the equal-weight mean for these asymmetric inputs.
 
-**Mina:** "The interface is changing. For the currently understood work, Omar estimates O=2, M=4, P=12 person-days."
+Neither 5 ± 2×1.67 nor the 2–12 scenario range is an evidenced 95% confidence interval. The inputs do not supply a probability model, validated distribution or deadline probability. The local helper reproduces the three values and conventions; it does not approve or choose one as management's commitment.
 
-**Advisor:** "Use a three-point effort estimate for that bounded scope, plus an investigation of interface compatibility. Do not promise a duration until capacity and waiting are included."
+## Recommendation and planning handoff
 
-## Worked result
+1. Use the PERT convention only if the contributors agree that its weighting suits the planning purpose; otherwise report the scenarios and the alternative mean transparently.
+2. Investigate interface compatibility and environment availability because they drive the adverse case. At the canonical 16 October control point, R-001 and I-001 distinguish a possible incompatibility from an actually unavailable environment; do not merge them.
+3. Pass person-day effort and waiting assumptions to the real capacity/schedule model. Omar's availability, predecessor readiness and acceptance reviews determine elapsed dates. Do not turn “five person-days” into a promise to finish in one calendar week.
 
-Triangular mean = (2+4+12)/3 = 6 person-days. PERT mean = (2+16+12)/6 = 5 person-days. PERT spread heuristic = 10/6 = 1.6667 person-days.
+Re-estimate when the interface is confirmed, the environment becomes available, scope changes or early execution provides better actual evidence. The October 30 baseline remains a separate project commitment until an authorized change; this toy task does not compute its finish.
 
-The two central estimates differ because PERT gives more weight to the typical scenario. Neither makes the four-day promise credible. Mina records interface stability as an assumption and asks Omar to define the investigation's exit evidence.
-
-## Repair
-
-**Flawed:** "Five days, 95% confidence, guaranteed next week."
-
-**Corrected:** "PERT central effort estimate five person-days for the stated scope; deadline confidence is unmeasured. Validate interface behavior and available capacity before forecasting completion."
+**Repair:** “The helper says five days with 95% confidence” becomes “PERT mean five person-days under stated scenarios; confidence probability and calendar finish are not established.”

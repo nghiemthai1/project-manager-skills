@@ -1,17 +1,27 @@
 # Decision record
 
-- ID / title / state / decision date:
-- Question and context:
-- Driver / approver / contributors / informed:
-- Authority and source evidence:
+ID / title / decision question:
+Source reference and date / author / attribution confidence:
+Decision state / actual decider and authority basis:
+Decision date / effective date / scope of effectiveness:
 
-| Option | Benefit | Cost / risk | Disposition and reason |
-|---|---|---|---|
+## Choice and rationale
 
-## Decision, exact scope, and conditions
+Exact choice and boundaries:
+Options actually considered / reason for selection or rejection:
+Missing rationale versus separately labeled later analysis:
+Conditions, exclusions, assumptions and dissent:
+Revisit trigger / residual risk actually accepted:
 
-## Consequences and implementation actions
+## Roles and consequences
 
-## Related artifacts / supersedes / superseded by
+Driver / Approver / Contributors / Informed (actual or proposed):
 
-## Revisit trigger
+| Affected artifact / field | Previous provision / decision | New authorized provision | Unchanged boundary | Implementation owner / state / evidence |
+|---|---|---|---|---|
+| | | | | |
+
+Supersedes which provisions of which IDs / superseded by:
+Conditions still open / decision required for reconsideration:
+Distribution/acknowledgment state, separate from approval:
+Corrections or appended updates with date and source:

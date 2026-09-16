@@ -1,4 +1,4 @@
 interface:
   display_name: "Delivery Control Cycle"
-  short_description: "Guide delivery control cycle with evidence and judgment"
-  default_prompt: "Use $delivery-control-cycle to help with this project management task."
+  short_description: "Reconcile project evidence and turn exceptions into decisions. U"
+  default_prompt: "Use $delivery-control-cycle to run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting prior baselines, then verifies actual response outcomes."

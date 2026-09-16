@@ -1,0 +1,4 @@
+interface:
+  display_name: "RACI Matrix"
+  short_description: "Build and audit a responsibility assignment matrix"
+  default_prompt: "Use $raci-matrix to assign clear responsibilities for defined deliverables and expose unresolved authority."

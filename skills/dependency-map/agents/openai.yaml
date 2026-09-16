@@ -1,4 +1,4 @@
 interface:
   display_name: "Dependency Map"
-  short_description: "Guide dependency map with evidence and judgment"
-  default_prompt: "Use $dependency-map to help with this project management task."
+  short_description: "Define cross-team handoffs, usable acceptance and timing gaps"
+  default_prompt: "Use $dependency-map to make provider-to-receiver dependencies actionable with evidence, dates, acceptance and an explicit decision route."

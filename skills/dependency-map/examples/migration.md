@@ -1,19 +1,31 @@
-# Dependency Map: migration example
+# Northstar: timing and correctness are different dependencies
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional register with dated updates. M-DEP01 is the vendor export mapping expected 4 November and needed 2 November. Beck is vendor lead, Chen migration lead and Jules PM; the case does not by itself establish every contractual or receiving acceptance delegation.
 
-## Record at 23 October
+## Snapshot 1 — 23 October 2026
 
-M-DEP01 is the vendor export mapping. Beck is provider contact and Chen is receiver. Expected delivery is 4 November, against a 2 November need: -2 calendar days of local margin. Acceptance includes sample records with correct attachment identifiers and documented transformations.
+| Field | M-DEP01 record |
+|---|---|
+| Handoff | Applicable export mapping for the agreed migration population |
+| Provider | Beck coordinates vendor delivery; authorized commitment source still needed |
+| Receiver | Chen's migration work; exact receiving sign-off to confirm |
+| Proposed usable criteria | Versioned field/ID relationships, documented exceptions and evidence usable for rehearsal |
+| Needed-by / expected | 2 November / 4 November |
+| Local margin | −2 calendar days, not CPM float or proven cutover slip |
+| State | Forecast gap; mapping not accepted by this record |
 
-## Worked coordination decision
+M-R01 separately states that inconsistent attachment identifiers might break record linkage. Proposed early checks should test that uncertainty without declaring a defect before observation. A partial mapping or representative sample might enable preparation, but its population/version limits and final verification remain explicit.
 
-Jules requests a mapping review before treating delivery as complete. An early sample would allow Chen to test linkage while the vendor completes the final mapping. This is a proposal, not a promise on Beck's behalf. If the sample fails, the receiving work remains blocked even if the mapping file arrived on time.
+## Snapshot 2 — 6 November 2026
 
-At the 6 November rehearsal, actual lost attachment links become M-I002. Keep M-DEP01's delivery history and link the issue instead of retroactively pretending the dependency was never delivered. Acceptance status must explain which condition failed.
+Rehearsal reproduces lost attachment links, M-I002. Add the observed issue and link it to the earlier risk and applicable provider/receiver handoff. Do not retroactively change the 23 October risk into an issue or claim that mapping delivery timing explains all linkage failures. Capture the failing export/version, expected relationships, actual result and repair ownership.
 
-## Repair
+Jules coordinates the revised handoff and options; Chen assesses technical correction/verification. Beck's supplier role supports clarification, but no contract remedy or internal acceptance authority is invented. Saira's business reconciliation and Rosa's restore/service requirements remain separate from file receipt.
 
-**Flawed:** "Mapping file uploaded; dependency closed."
+## Response and closure
 
-**Corrected:** "File received, acceptance failed on attachment linkage. M-I002 owns remediation; receiving migration work cannot proceed to the acceptance gate."
+Obtain a correction forecast and inspect its effect on the real remaining rehearsal and approval network. Possible staged delivery must preserve the agreed population/acceptance or be presented as a change. Receiver validation and the actual acceptance decision close the usable handoff; a vendor “done” message does not.
+
+M-CR02 on 9 November later authorizes a phased plan. Keep that approval separate from these earlier records and from the eventual release gate.
+
+**Repair:** “Mapping arrived, mark all vendor dependencies green” ignores usable correctness and independent acceptance. Track timing, verification and receiving decisions on their own evidence.

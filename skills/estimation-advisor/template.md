@@ -1,17 +1,18 @@
-# Estimation recommendation
+# Estimate recommendation and basis
 
-- Decision supported:
-- Scope / acceptance / exclusions:
-- Evidence supplied / missing:
-- Method selected and why:
-- Alternative rejected and when it would become useful:
-- Unit and scenario boundaries:
+Work / completion rule / scope version / estimate date / contributor:
+Decision: exploration, forecast or commitment request / requested unit:
+Known inputs / material unanswered question:
 
-| Input / observation | Value | Evidence or assumption | Validation owner |
-|---|---|---|---|
+1. Recommended method and fit.
+2. Alternative and tradeoff.
+3. Investigation needed, if any, with proposed boundary and exit question.
 
-## Result and interpretation
+| Item / scenario | Value and unit | Basis / condition | Included and excluded work | Confidence limit / owner status |
+|---|---|---|---|---|
+| | | | | |
 
-## Limits, dependencies, and revisit trigger
-
-## Commitment status
+Calculation / convention / useful precision:
+Assumptions and shared uncertainty / external waiting / resource constraints:
+Estimate versus user target / no unsupported probability or approval:
+Validation and re-estimation trigger / capacity and schedule handoff:

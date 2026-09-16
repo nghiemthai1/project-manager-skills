@@ -1,16 +1,17 @@
-# Dependency map
+# Dependency register and response
 
-- Coordination boundary / as-of date / review cadence:
-- Date basis: calendar days, or explicitly supplied working calendar:
+Project / coordination boundary / as-of / scope or interface version:
+Calendar and date meaning: delivered, available for validation, or accepted usable input:
 
-| ID | Provider / owner | Receiver / owner | Deliverable and acceptance | Expected delivery / confidence | Needed by / basis | Local margin | Status | Evidence |
+| ID / consuming work | Handoff / usable criteria | Provider / authority status | Receiver / authority status | Needed-by / basis | Committed / source | Forecast / as-of | Local margin / limits | Delivery / acceptance state |
 |---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
 
-## Gaps and decisions
+Optional graph: arrows name the handoff, not generic team influence.
 
-| Dependency | Proposed response | Decision owner | Decision needed by | Downstream impact still to validate |
-|---|---|---|---|---|
+| Gap / unknown | Immediate consequence | Response option / tradeoff | Action owner / confirmation | Decision authority / latest useful date | Status / next evidence |
+|---|---|---|---|---|---|
+| | | | | | |
 
-## Change history
-
-Record prior dates, reason, evidence, and receiver acceptance. Add a graph only when it clarifies the table.
+Acceptance record / changed-date history / rejected delivery evidence:
+Scope of schedule inference / unresolved network or capacity inputs:

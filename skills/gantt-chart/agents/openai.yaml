@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gantt Chart"
+  short_description: "Create a dated Gantt chart with dependencies and baseline compar"
+  default_prompt: "Use $gantt-chart to turn evidenced schedule data into a readable timeline without inventing dates or completion."

@@ -1,4 +1,4 @@
 interface:
   display_name: "RAID Log"
-  short_description: "Guide raid log with evidence and judgment"
-  default_prompt: "Use $raid-log to help with this project management task."
+  short_description: "Maintain distinct risks, assumptions, issues and dependencies wi"
+  default_prompt: "Use $raid-log to maintain a dated RAID register whose classification, response, ownership and lifecycle follow the evidence rather than optimistic status labels."

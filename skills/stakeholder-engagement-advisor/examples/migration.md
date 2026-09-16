@@ -1,23 +1,27 @@
-# Stakeholder Engagement Advisor: migration example
+# Northstar: engage operations around recoverability
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional planning case. Rosa will not accept service responsibility until restore and monitoring demonstrations pass. Jules calls her cautious and wants to secure handover. The supplied concern is specific and legitimate; neither her motive nor willingness to compromise is evidenced.
 
-## Dialogue: before handover
+## Profile and context
 
-**Jules:** "Rosa keeps refusing operations ownership."
+Rosa holds operational acceptance responsibility and will live with the service after the project. Power and impact are both high within that boundary. The engagement is pre-handover alignment with an unresolved evidence condition. Those inputs already answer the advisor's three profile/context categories; do not repeat them as a questionnaire.
 
-**Advisor:** "Is Rosa disputing the ownership, the workload, or the readiness evidence?"
+The missing discriminator is whether the team knows the required restore/monitoring scenarios and has feasible execution/review dates. Keep dates unknown until confirmed.
 
-**Jules:** "She requires a successful restore and monitoring demonstration."
+## Approaches
 
-## Recommendation
+1. **Joint readiness walkthrough — recommended.** Walk the operational scenarios with Rosa, Chen and the relevant vendor contact. Agree what evidence each scenario needs and who can produce it.
+2. **Evidence packet review.** Fits after demonstrations have run. Reduces meeting load, but is not useful if the packet contains only plans.
+3. **Governance escalation with options.** Fits if ownership, resources or criteria remain disputed after clarification. Present impact and alternatives to Noel; do not ask him to declare a failed restore successful.
 
-Hold a focused readiness review with Rosa and Chen. Compare actual demonstration evidence with the agreed service criteria. Ask Rosa to identify any remaining gaps, their severity, and the acceptance condition. If staffing also prevents ownership, treat that as a separate capacity decision.
+## Draft message and action
 
-After the failed restore on 25 November, the next action is remediation and repeat evidence. After the successful rehearsal on 27 November, service handover still requires its own acceptance record, eventually completed on 2 December.
+“Rosa, we need to establish the restore and monitoring evidence for service acceptance. Could we review the required scenarios and operational thresholds with you and Chen, identify what is already demonstrated, and name the remaining evidence gaps? We will use the outcome to build a feasible transition plan and keep handover pending until the applicable conditions are met.”
 
-## Repair
+Proposed coordination owner: Jules. Technical execution ownership and resource allocation require confirmation; Chen is not automatically assigned every test. Medium: a focused working session with a short evidence pre-read, then a written disposition record. Date: before the handover decision, exact date to agree. No message is sent by drafting it.
 
-**Flawed:** "Mark Rosa informed because the vendor finished."
+## What counts as progress
 
-**Corrected:** "Rosa is an acceptance owner, not merely a recipient. Resolve her evidenced service conditions and record acceptance when given."
+An agreed scenario list, evidence owners, feasible review timing and an explicit readiness disposition. Rosa receiving the packet is not acceptance. If a representative joins for Rosa, confirm what they can decide and what remains with her; a convenient attendee is not automatically an authorized proxy.
+
+**Repair:** “The vendor says migration is finished; operations must take it now” erases the receiving team's evidence condition. Distinguish supplier completion, business acceptance and service transfer, then address the actual remaining work.

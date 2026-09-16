@@ -1,17 +1,31 @@
-# Release and handover record
+# Release, stabilization and service-transfer packet
 
-- Release / version / window / authorization reference:
-- Readiness record and open conditions:
+Release/version/population/environment/window / baseline / current evidence cutoff:
+Readiness recommendation / actual go reference and conditions / user execution authorization:
+Current blockers and recheck triggers:
 
-| Step / checkpoint | Owner | Prerequisites | Verification | Recovery decision and limit | Actual result / evidence |
+## Execution sequence
+
+| Step / performer confirmed? | Predecessor / entry evidence | Planned action | Verification / checkpoint authority | Recovery limits / latest useful decision | Actual time/version/result and decision |
 |---|---|---|---|---|---|
+| | | | | | |
 
-## Immediate operational coverage and communications
+## Immediate coverage and stabilization
 
-## Monitoring and recovery decisions
+| Duty / period | Confirmed owner / access and capacity | Monitoring or evidence | Escalation / recovery decision authority | Gap or accepted condition |
+|---|---|---|---|---|
+| | | | | |
 
-## Handover inventory
+Irreversible effects / actual demonstrated recovery boundary:
+Enhanced-support scope, staffing and cost responsibility:
+Stabilization criteria / actual results / exit authority and decision:
+Communications approval, actual sends and response state:
 
-Runbooks, access, known issues, support routes, training, obligations, and accepted owner.
+## Handover
 
-## Handover acceptance / enhanced-support exit / closure handoff
+| Duty, artifact or residual item | Receiving owner | Evidence/material/access | Actual acceptance, date and scope | Continued coverage until transfer |
+|---|---|---|---|---|
+| | | | | |
+
+Closure handoff: release result, residual obligations, financial inputs, learning and benefit owner:
+Literal IDs/version checks / actual execution versus prepared plan:

@@ -1,36 +1,75 @@
 # Skill catalog
 
-Each skill has a template, two worked examples, and failure-mode guidance. Component skills produce bounded artifacts; interactive skills diagnose and recommend; workflows coordinate related decisions.
+42 packages. Frameworks explain the methods used; they do not establish certification or field reliability. Read each skill for fit, limits, examples and failure analysis.
 
-| Skill | Type | Use when |
+### Initiation and governance (6)
+
+| Skill | Focus | Framework |
 |---|---|---|
-| [Acceptance and Traceability](../skills/acceptance-and-traceability/SKILL.md) | component | Connect scoped requirements to deliverables, test evidence, and acceptance authority. Use to define done, review coverage, or assess change impact. |
-| [Change Request](../skills/change-request/SKILL.md) | component | Assess and record a proposed change to project scope, schedule, cost, or acceptance with impact, options, authority, and baseline history. |
-| [Communication Plan](../skills/communication-plan/SKILL.md) | component | Design a project communication plan around stakeholder decisions, information needs, cadence, channels, and feedback. Use when updates are missed or meetings lack purpose. |
-| [Decision Log](../skills/decision-log/SKILL.md) | component | Record project decisions with authority, alternatives, rationale, conditions, and supersession history. Use when choices must remain traceable across meetings or changes. |
-| [Delivery Approach Advisor](../skills/delivery-approach-advisor/SKILL.md) | interactive | Choose predictive, agile, or hybrid delivery based on uncertainty, feedback, dependencies, and governance. Use when starting or changing a project approach. |
-| [Delivery Control Cycle](../skills/delivery-control-cycle/SKILL.md) | workflow | Run a recurring project control review that reconciles evidence, updates forecasts and RAID, records decisions, and produces actionable status. |
-| [Dependency Map](../skills/dependency-map/SKILL.md) | component | Map cross-team deliverables, provider and receiver commitments, delivery gaps, and escalation actions. Use for blocked or tightly coupled workstreams. |
-| [Escalation Brief](../skills/escalation-brief/SKILL.md) | component | Draft a focused project escalation with evidence, impact, options, recommendation, and a decision owner. Use when a blocker exceeds delegated authority. |
-| [Estimation Advisor](../skills/estimation-advisor/SKILL.md) | interactive | Select and explain an estimation approach for software or IT work, with ranges, assumptions, and validation steps. Use before committing dates or effort. |
-| [Integrated Project Planning](../skills/integrated-project-planning/SKILL.md) | workflow | Build a coherent project plan connecting scope, acceptance, estimates, dependencies, capacity, budget, risk, and governance. Use before approving or revising a baseline. |
-| [Lessons Learned](../skills/lessons-learned/SKILL.md) | component | Turn project evidence and tested improvements into reusable lessons with context, limits, and adoption actions. Use at milestones or closure. |
-| [Meeting Knowledge Graph](../skills/meeting-knowledge-graph/SKILL.md) | workflow | Convert transcripts, notes, or available recording transcriptions into evidence-linked OKF project memory. Use for durable meeting records and recurring-series updates, not a brief summary. |
-| [Milestone Schedule](../skills/milestone-schedule/SKILL.md) | component | Build a dependency-based project schedule with milestone acceptance, critical-path reasoning, and explicit baseline and forecast dates. |
-| [Project Budget](../skills/project-budget/SKILL.md) | component | Build and review project cost baselines, actuals, forecasts, reserves, and earned value indicators. Use for budget planning, variance analysis, or funding decisions. |
-| [Project Charter](../skills/project-charter/SKILL.md) | component | Draft a project charter with outcomes, scope boundaries, authority, constraints, and success measures. Use to authorize or clarify a software or IT project. |
-| [Project Closure](../skills/project-closure/SKILL.md) | workflow | Close a project with explicit acceptance, financial reconciliation, transferred obligations, archived evidence, and post-project benefit ownership. |
-| [Project Health Diagnostic](../skills/project-health-diagnostic/SKILL.md) | interactive | Diagnose project health from scope, schedule, cost, quality, capacity, and evidence confidence. Use when status is disputed, incomplete, or inconsistent. |
-| [Project Kickoff](../skills/project-kickoff/SKILL.md) | workflow | Run a project kickoff that establishes mandate, roles, acceptance, delivery approach, and first decisions. Use when launching or resetting a software or IT project. |
-| [Project Recovery Advisor](../skills/project-recovery-advisor/SKILL.md) | interactive | Develop feasible recovery options for a troubled software or IT project, with causal evidence, tradeoffs, authority, and measurable checkpoints. |
-| [RAID Log](../skills/raid-log/SKILL.md) | component | Maintain risks, assumptions, issues, and dependencies with distinct states, evidence, owners, and review actions. Use for ongoing project control. |
-| [Release and Handover](../skills/release-and-handover/SKILL.md) | workflow | Coordinate an authorized release through execution, monitoring, recovery decisions, and explicit service handover. Use for software launches and IT cutovers. |
-| [Release Readiness](../skills/release-readiness/SKILL.md) | component | Assess release or cutover readiness against explicit acceptance, recovery, operational, and authorization evidence. Use for a go/no-go review. |
-| [Resource Capacity Plan](../skills/resource-capacity-plan/SKILL.md) | component | Compare project demand with realistic availability and skills, expose overloads, and develop staffing or scope options for a defined planning period. |
-| [Retrospective](../skills/retrospective/SKILL.md) | component | Facilitate and document an evidence-based delivery retrospective with a small set of owned improvement experiments. Use after an iteration, milestone, or project event. |
-| [Risk Workshop](../skills/risk-workshop/SKILL.md) | interactive | Facilitate a focused project risk review using objectives, a premortem, evidence-based assessment, and owned responses. Use before a major plan or gate. |
-| [Scope and Work Breakdown](../skills/scope-and-wbs/SKILL.md) | component | Define project scope and a deliverable-oriented work breakdown with exclusions, ownership, and completion evidence. Use before estimating or controlling scope. |
-| [Sprint Planning](../skills/sprint-planning/SKILL.md) | component | Prepare an evidence-based Sprint plan with a goal, team forecast, capacity, dependencies, and Definition of Done. Use with a Scrum team, not as a manager-imposed commitment. |
-| [Stakeholder Engagement Advisor](../skills/stakeholder-engagement-advisor/SKILL.md) | interactive | Diagnose a stakeholder alignment problem and recommend an evidence-based conversation, decision, or escalation. Use for resistance, disengagement, or conflicting expectations. |
-| [Stakeholder Map](../skills/stakeholder-map/SKILL.md) | component | Identify affected stakeholders, decision authority, influence, and engagement needs. Use for a project start, stakeholder change, or missed acceptance voices. |
-| [Status Report](../skills/status-report/SKILL.md) | component | Create evidence-based project status updates with baseline variance, forecast, risks, and explicit decisions needed. Use for weekly or executive reporting. |
+| [Project Intake Advisor](../skills/project-intake-advisor/SKILL.md) | Triage requests into a project, change, operational work, or investigation | Request triage; outcome-evidence-action; decision rights |
+| [Project Business Case](../skills/project-business-case/SKILL.md) | Compare investment options before authorizing delivery | Options appraisal; cost-benefit analysis; sensitivity analysis |
+| [Delivery Approach Advisor](../skills/delivery-approach-advisor/SKILL.md) | Choose delivery practices that fit uncertainty and governance | Predictive/agile/hybrid tailoring; rolling-wave planning |
+| [Project Charter](../skills/project-charter/SKILL.md) | Authorize a bounded outcome and management mandate | Project charter; SMART success criteria; assumption analysis |
+| [Project Governance](../skills/project-governance/SKILL.md) | Define decision rights, tolerances, assurance, and escalation | Stage gates; management by exception; delegated authority |
+| [Project Kickoff](../skills/project-kickoff/SKILL.md) | Turn the mandate into an operating agreement | Kickoff facilitation; RACI; decision/action separation |
+
+### Stakeholders and collaboration (6)
+
+| Skill | Focus | Framework |
+|---|---|---|
+| [Stakeholder Identification](../skills/stakeholder-identification/SKILL.md) | Find affected people, delivery partners, and decision makers | MITRE stakeholder identification; allies/audiences/influencers; equity lens |
+| [Stakeholder Map](../skills/stakeholder-map/SKILL.md) | Set engagement priorities and expose missing voices | Power-interest matrix; impact-power matrix; quadrant migration |
+| [Stakeholder Engagement Advisor](../skills/stakeholder-engagement-advisor/SKILL.md) | Prepare reciprocal engagement for a specific stakeholder | Adaptive Decision Ladder; MITRE engagement canvas; credible proxies |
+| [RACI Matrix](../skills/raci-matrix/SKILL.md) | Assign clear work accountability without inventing authority | RACI responsibility assignment matrix; horizontal/vertical role analysis |
+| [Communication Plan](../skills/communication-plan/SKILL.md) | Choose audience-specific messages, channels, and feedback | Communication matrix; push/pull/interactive communication |
+| [Workshop Facilitation](../skills/workshop-facilitation/SKILL.md) | Run purposeful guided sessions and handle interruptions | One-question facilitation; guided/context-dump/best-guess modes |
+
+### Scope and planning (7)
+
+| Skill | Focus | Framework |
+|---|---|---|
+| [Scope and Work Breakdown](../skills/scope-and-wbs/SKILL.md) | Decompose complete deliverables and control boundaries | Deliverable-oriented WBS; 100% rule; WBS dictionary |
+| [Acceptance and Traceability](../skills/acceptance-and-traceability/SKILL.md) | Connect requirements to executed evidence and acceptance | Requirements traceability matrix; verification versus validation |
+| [Prioritization Advisor](../skills/prioritization-advisor/SKILL.md) | Choose a defensible scope sequencing or tradeoff method | MoSCoW; RICE; weighted scoring; Cost of Delay; Kano |
+| [Estimation Advisor](../skills/estimation-advisor/SKILL.md) | Select an estimation method and expose uncertainty | Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting |
+| [Milestone Schedule](../skills/milestone-schedule/SKILL.md) | Build feasible logic and milestone forecasts | Critical Path Method; total float; rolling-wave scheduling |
+| [Gantt Chart](../skills/gantt-chart/SKILL.md) | Show dated work, dependencies, baselines, and milestones | Gantt timeline; working calendars; baseline/forecast comparison |
+| [Integrated Project Planning](../skills/integrated-project-planning/SKILL.md) | Reconcile scope, schedule, capacity, funding and gates | Integrated baseline planning; progressive elaboration; consistency review |
+
+### Controls and assurance (7)
+
+| Skill | Focus | Framework |
+|---|---|---|
+| [Dependency Map](../skills/dependency-map/SKILL.md) | Secure usable provider-to-receiver handoffs | Dependency network; interface agreements; local margin versus float |
+| [Resource Capacity Plan](../skills/resource-capacity-plan/SKILL.md) | Resolve individual bottlenecks and competing allocations | Capacity-demand analysis; skill constraints; resource leveling options |
+| [Project Budget](../skills/project-budget/SKILL.md) | Plan and control forecast cost and funding | Cost baseline; contingency versus management reserve; earned value management |
+| [Vendor and Procurement Management](../skills/vendor-procurement/SKILL.md) | Define vendor selection, deliverables, acceptance and controls | Make-or-buy; weighted supplier evaluation; contract deliverable control |
+| [Quality Management Plan](../skills/quality-management-plan/SKILL.md) | Plan assurance, verification and defect disposition | Quality planning/assurance/control; verification versus validation; risk-based testing; PDCA |
+| [RAID Log](../skills/raid-log/SKILL.md) | Maintain actionable risks, assumptions, issues and dependencies | RAID; cause-event-effect; issue lifecycle; assumption validation |
+| [Risk Workshop](../skills/risk-workshop/SKILL.md) | Discover and select responses to project uncertainty | Premortem; probability-impact matrix; response planning; residual risk |
+
+### Delivery and decisions (9)
+
+| Skill | Focus | Framework |
+|---|---|---|
+| [Status Report](../skills/status-report/SKILL.md) | Report evidence, variance and decisions for the audience | RAG by tolerance; management by exception; baseline/forecast/actual |
+| [Decision Log](../skills/decision-log/SKILL.md) | Preserve the exact choice, authority, rationale and conditions | DACI; decision records; option analysis |
+| [Escalation Brief](../skills/escalation-brief/SKILL.md) | Obtain a timely decision beyond delegated authority | SBAR; options and recommendation; last responsible decision point |
+| [Meeting Knowledge Graph](../skills/meeting-knowledge-graph/SKILL.md) | Preserve evidence-linked meeting history and current state | OKF v0.2; immutable ledgers; attribution confidence; series delta |
+| [Sprint Planning](../skills/sprint-planning/SKILL.md) | Support a coherent goal and feasible team forecast | Scrum Sprint Planning; Sprint Goal; Definition of Done; capacity |
+| [Change Request](../skills/change-request/SKILL.md) | Assess and decide changes without laundering baselines | Integrated change control; impact analysis; configuration history |
+| [Project Health Diagnostic](../skills/project-health-diagnostic/SKILL.md) | Diagnose delivery confidence from conflicting signals | Dimensional health assessment; leading/lagging indicators; causal hypotheses |
+| [Project Recovery Advisor](../skills/project-recovery-advisor/SKILL.md) | Select a feasible response when the plan fails | Root-cause hypotheses; recovery option appraisal; recovery checkpoints |
+| [Delivery Control Cycle](../skills/delivery-control-cycle/SKILL.md) | Run a repeatable evidence-to-decision control review | Plan-monitor-control; exception escalation; integrated change control |
+
+### Transition and outcomes (7)
+
+| Skill | Focus | Framework |
+|---|---|---|
+| [Organizational Change and Adoption](../skills/organizational-change/SKILL.md) | Prepare affected people to adopt the delivered change | ADKAR lens; change impact assessment; readiness and reinforcement |
+| [Release Readiness](../skills/release-readiness/SKILL.md) | Recommend go/hold using current applicable evidence | Readiness gates; exception authority; operational acceptance |
+| [Release and Handover](../skills/release-and-handover/SKILL.md) | Coordinate authorized execution and accepted service transfer | Cutover checkpoints; recovery limits; service transition; hypercare exit |
+| [Retrospective](../skills/retrospective/SKILL.md) | Turn observations into testable improvements | PDCA; 5 Whys with evidence; experiment design |
+| [Lessons Learned](../skills/lessons-learned/SKILL.md) | Capture transferable learning with limits and adoption evidence | After-action review; contextual lessons; knowledge transfer |
+| [Benefits Realization](../skills/benefits-realization/SKILL.md) | Assign and verify post-delivery business outcomes | Benefits map; leading/lagging measures; ownership and review plan |
+| [Project Closure](../skills/project-closure/SKILL.md) | Close or terminate only with accepted residual obligations | Closure assurance; financial reconciliation; residual transfer; benefits handoff |

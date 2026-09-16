@@ -1,4 +1,4 @@
 interface:
   display_name: "Project Closure"
-  short_description: "Guide project closure with evidence and judgment"
-  default_prompt: "Use $project-closure to help with this project management task."
+  short_description: "Reconcile delivery, finances and continuing obligations"
+  default_prompt: "Use $project-closure to prepare and record a defensible project closure or termination with accepted deliverables, reconciled costs, owned residual obligations and a continuing benefit-review plan."

@@ -1,0 +1,39 @@
+{
+  "unit": "working_days",
+  "tasks": [
+    {
+      "id": "A",
+      "duration": 2,
+      "predecessors": []
+    },
+    {
+      "id": "B",
+      "duration": 3,
+      "predecessors": [
+        "A"
+      ]
+    },
+    {
+      "id": "C",
+      "duration": 3,
+      "predecessors": [
+        "A"
+      ]
+    },
+    {
+      "id": "D",
+      "duration": 2,
+      "predecessors": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "E",
+      "duration": 0,
+      "predecessors": [
+        "D"
+      ]
+    }
+  ]
+}

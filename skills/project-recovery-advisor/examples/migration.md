@@ -1,23 +1,25 @@
-# Project Recovery Advisor: migration example
+# Northstar recovery after the linkage failure
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario, 6 November 2026. M-I002 records observed lost attachment links; earlier M-R01 remains its related risk history. B1 from M-D001 is still 21 November and 240k plus 24k reserve. A vendor patch has not by itself established corrected relationships, recoverability or funded remaining work.
 
-## Dialogue: after 6 November rehearsal
+Jules asks whether sending a patch preserves the date. The advisor distinguishes the current defect from its unverified cause and the remaining schedule/funding constraints. Exact affected population, patch configuration, retest capacity and remaining estimates must be established.
 
-**Jules:** "Can we retain the date if the vendor sends a patch?"
+| Option | Mechanism and required boundary | Decision/evidence gap |
+|---|---|---|
+| Retain original scope/sequence | Correct defect and verify all required work in original order | No validated remaining schedule or funding sufficiency yet |
+| Phase migration | May change near-term population and sequencing while preserving acceptance for included scope | Exact phase boundary, later obligations, support/dual-running costs and authority required |
+| Change timing without phasing | Could allow complete correction/verification; may add operating cost | Credible dates and costs absent |
+| Pause commitment if no viable path | Avoid unsupported cutover while examining obligations/value | Actual pause authority and consequences needed |
 
-**Advisor:** "Would that establish accepted linkage and restore evidence, and is the remaining cost funded?"
+Recommend a bounded phased-plan appraisal alongside the unchanged-scope remaining forecast. Do not invent a phase population or claim all records are corrected from counts alone. Chen/Beck provide technical and supplier evidence within confirmed assignments; Saira retains business acceptance, Rosa service acceptance and Noel material plan/funding authority.
 
-**Jules:** "No; both evidence and funding still need decisions."
+| Checkpoint | Evidence that tests recovery | Reconsider trigger |
+|---|---|---|
+| Correction | Identified mapping/version produces correct relationships under justified coverage | Reproduced lost links or unresolved population uncertainty |
+| Plan feasibility | Resource/calendar sequence and full remaining-cost estimate for agreed scope | Funding gap, unavailable input or capacity |
+| Readiness | Applicable reconciliation and restore proof plus immediate service coverage | Required result failed or missing |
+| Outcome | Authorized cutover and observed operation before service transfer | Instability or unaccepted residual work |
 
-## Recommendation
+On 9 November, M-CR02 later approves phased scope, 28 November and 300k B2 funding. Keep that decision separate from evidence of effectiveness. Restore failure on 25 November triggers hold/remediation; successful rehearsal and Saira's acceptance on 27 November support the later go decision. If the required evidence had stayed absent, the recommendation would still be hold despite the revised baseline.
 
-Compare a phased migration with the unchanged sequence. Require representative reconciliation, a successful restore, service coverage, and a revised cost/schedule assessment. Noel's 9 November M-CR02 approval establishes the chosen phased plan and funding; it does not eliminate the release gates.
-
-The failed restore on 25 November triggers hold and remediation, not a waiver by implication. A successful 27 November rehearsal supports the later go decision. If required evidence remained absent, the recommendation would remain hold even against the revised date.
-
-## Repair
-
-**Flawed:** "The patch arrived, so the recovery is complete."
-
-**Corrected:** "The response is complete only when applicable acceptance evidence and authorized decisions support the next gate."
+**Repair:** “Patch arrived, recovery complete” confuses a response action with the result. The checkpoints require current evidence and actual authority for the next stage.

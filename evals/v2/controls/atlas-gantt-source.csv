@@ -1,0 +1,6 @@
+ID,Task,Owner,Technical predecessors,Resource ordering,Working duration,Baseline start,Baseline finish,Proposed start,Proposed exclusive finish,Actual evidence
+A,A,Unknown,None,None,2,Unknown,Unknown,2026-10-05,2026-10-07,Not supplied
+B,B,Fin,A FS zero lag,None,4,Unknown,Unknown,2026-10-07,2026-10-13,Not supplied
+C,C,Fin,A FS zero lag,B before C proposed,3,Unknown,Unknown,2026-10-13,2026-10-16,Not supplied
+D,D,Unknown,B and C FS zero lag,None,1,Unknown,Unknown,2026-10-16,2026-10-19,Not supplied
+E,E,Unknown,D FS zero lag,None,0,Unknown,2026-10-14,2026-10-19,2026-10-19,Not supplied

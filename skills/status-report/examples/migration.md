@@ -1,25 +1,21 @@
-# Status Report: migration example
+# Northstar status: 23 October 2026
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario. Draft executive update to Noel; amounts are USD. Formal local RAG thresholds are not supplied, so the report uses a direct intervention statement.
 
-## Situation: 23 October
+## Executive report
 
-Northstar's approved cutover is 21 November, with B1 performance budget USD 240,000 and separate management reserve USD 24,000. The forecast vendor mapping arrives on 4 November against a 2 November need.
+**Funding intervention is required; cutover confidence needs review.** M-D001 established B1 on 5 October: 21 November cutover and 240k performance budget, with 24k separate management reserve.
 
-## Worked report
+At this cutoff, PV 80k, EV 60k and AC 75k produce CPI 0.80 and SPI 0.75. If cost efficiency continues, EAC is 300k. This is 60k above B1 and 36k above the 264k total envelope. Reserve release alone cannot cover the forecast, and additional funding has not been approved.
 
-**Intervention required on funding; schedule at risk.** CPI is 60,000 / 75,000 = 0.8. If that efficiency continues, EAC is USD 300,000. That exceeds B1 by USD 60,000 and the entire authorized funding envelope by USD 36,000. Noel has not approved an increase.
+M-DEP01 records vendor mapping forecast 4 November against 2 November need. The two-calendar-day local gap requires provider/receiver confirmation and schedule analysis; it does not establish the final cutover date. Reconciliation and restore evidence remain pending. Equal record counts alone cannot establish Saira's relationship acceptance.
 
-Jules requests a sponsor review of scope phasing, forecast credibility, and funding. Beck owns confirmation of the vendor mapping date. Chen will assess the integration impact once that date is confirmed. A revised cutover date is not yet approved.
+Jules requests review of remaining-work estimates, phased-scope options and funding before a changed plan is adopted. Beck needs to confirm the supplier forecast through the actual commitment authority; Chen's schedule/validation analysis is still needed. The last useful decision time remains to establish from those inputs. No new date, scope phase or budget is approved in this report.
 
-**Acceptance:** reconciliation and restore evidence are still pending. Counts alone will not meet Saira's acceptance criteria.
+## Evidence appendix
 
-## Why this choice
+CPI=60/75=0.8; SPI=60/80=0.75; EAC=240/0.8=300k. Cost variance is−15k and value-based schedule variance−20k. Neither SPI nor schedule variance yields calendar delay. The management forecast should reconcile remaining work rather than automatically select a formula.
 
-Budget performance and authorization are separate. Reserve is neither automatic spending permission nor earned value. The report makes the funding gap visible without claiming that the cutover has already moved.
+No attachment failure is reported as actual here: M-I002 occurs on 6 November. No phased baseline is imported from the future M-CR02 approval on 9 November. Subsequent reports can show those changes while preserving this cutoff and B1 comparison.
 
-## Repair a flawed version
-
-**Flawed:** "Budget is fine after using reserve; SPI 0.75 means 25% of the calendar remains."
-
-**Corrected:** "Forecast cost exceeds the total envelope by USD 36,000. SPI 0.75 describes earned progress relative to planned value at this date; the schedule network is needed to forecast calendar completion."
+**Repair:** “Use reserve, report green; SPI means 25% of the calendar remains” makes two unsupported claims. The corrected report shows the 36k envelope gap and requests the missing schedule and forecast evidence.

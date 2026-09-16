@@ -1,12 +1,21 @@
-# Acceptance and traceability
+# Requirements and acceptance traceability
 
-- Scope / requirements version / as-of date:
+Project / scope version / as-of / release or data configuration:
+Source documents / conflicting or proposed criteria:
 
-| Requirement ID | Rationale / source | Deliverable | Observable criterion | Verification method | Execution result / evidence | Acceptance authority | Decision / status |
+| Requirement ID / source | Deliverable or WBS ID | Observable criterion / mandatory status | Method / planned check | Actual evidence, date, version and population | Result / limitation | Acceptor / actual decision | Gap / action |
 |---|---|---|---|---|---|---|---|
+| | | | | | | | |
 
-## Coverage gaps and conflicting requirements
+## Coverage review
 
-## Approved exceptions and boundaries
+Requirements without applicable evidence / features or tests without an authorized purpose:
+Unresolved conflicts / excluded population / gate consequence:
 
-## Changes requiring new evidence
+| Change | Affected IDs and evidence | Still applicable / refresh / invalidated | Reason | Retest or decision owner / status |
+|---|---|---|---|---|
+| | | | | |
+
+Decision and exception records / conditions / superseded results:
+
+Review: planned versus executed, failed versus blocked, passed versus accepted, current versus stale, producer versus authority. Do not fill unknowns with sample values.

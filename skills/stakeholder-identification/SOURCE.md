@@ -1,0 +1,7 @@
+# Source and changes
+
+Author: Dean Peters. Close adaptation of [stakeholder-identification](https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/stakeholder-identification/SKILL.md), revision `1b5a524ebb95e9497fa3f25002d8b8ec528d4444`.
+
+Preserved the broad brainstorm, allies/audiences/influencers categories, R/P/D marking, equity lens, bias check, priority-learning handoff, explanations and failure modes. Changed product references to project delivery, replaced unavailable package links, added local register and examples, removed an unsupported universal completeness percentage, and clarified provisional authority and group representatives. R/P/D Resources is explicitly distinguished from RACI Responsible.
+
+The source, adaptation and accompanying examples/templates use [CC BY-NC-SA 4.0](LICENSE.md), including its warranty disclaimer. Preserve attribution, source, modification notice and license when copying. No endorsement is implied.

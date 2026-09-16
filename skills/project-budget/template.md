@@ -1,20 +1,24 @@
-# Budget and forecast
+# Cost performance, forecast and funding
 
-- Currency / as-of date / accounting cut-off:
-- Scope and baseline version / approval:
-- Reserve treatment and release authority:
+Project / scope / baseline and approval / currency / as-of / accounting cut-off:
+Cost categories and inclusion/exclusion / earning rules if EVM applies:
 
-| Category | Approved baseline | Actual | Remaining forecast | Forecast total | Variance | Basis |
-|---|---|---|---|---|---|---|
+| Financial view | Amount | Basis / source | Included elsewhere? | Authority or limitation |
+|---|---|---|---|---|
+| BAC | | | | |
+| Contingency / management reserve | | | | |
+| Actuals | | | | |
+| Committed but unspent | | | | |
+| Other remaining estimate | | | | |
+| Total authorized envelope | | | | |
 
-## EVM, only when supported
+PV / EV / AC alignment and evidence:
 
-PV / EV / AC / BAC, earning method, CV / SV / CPI / SPI, forecast assumptions.
+| Forecast or indicator | Calculation | Result / unit | Assumption and why relevant |
+|---|---|---|---|
+| | | | |
 
-## Funding bridge
-
-Baseline + separately authorized reserve + other funding = total envelope. Compare with forecast without assuming reserve release.
-
-## Options and decision required
-
-## Assumptions, unknowns, and baseline history
+Recommended or conditional EAC / gap to BAC / gap to total envelope:
+Reserve release needed / additional authorization / options and consequences:
+Actual decision, conditions and prospective baseline bridge:
+Review: commitments counted once; EV evidence exists; unknowns visible; no forecast-as-permission or value-variance-as-date claim.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stakeholder Identification"
+  short_description: "Find affected people and decision makers"
+  default_prompt: "Use $stakeholder-identification to check this project's stakeholder list for missing voices."

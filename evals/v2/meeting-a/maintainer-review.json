@@ -1,0 +1,9 @@
+{
+  "previous_meeting_byte_identical": true,
+  "prior_meeting_sha256": "67dedab06deca2758f22398491c756c4746b1ae605e8b8a00f86a6d16dc5e687",
+  "unknown_nested_metadata_and_aliases_equal": true,
+  "original_source_preserved": true,
+  "exact_ordered_notes": 7,
+  "raw_source_copy_byte_identical": true,
+  "semantic_review": "Read every changed concept, both meeting records, log, index, brief and extraction audit; date-only decision, unresolved speakers, denied commitments, quoted ticket text and dissent retained."
+}

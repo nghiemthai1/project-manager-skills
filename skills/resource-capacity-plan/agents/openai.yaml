@@ -1,4 +1,4 @@
 interface:
   display_name: "Resource Capacity Plan"
-  short_description: "Guide resource capacity plan with evidence and judgment"
-  default_prompt: "Use $resource-capacity-plan to help with this project management task."
+  short_description: "Compare complete demand with realistic availability, skills and "
+  default_prompt: "Use $resource-capacity-plan to expose person-level capacity constraints and develop explicit allocation, scope or sequence options without assuming interchangeable people."

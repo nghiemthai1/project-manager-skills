@@ -1,17 +1,19 @@
-# Retrospective: software example
+# Relay retrospective: when recovery evidence became visible
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario after the 3 November 2026 pilot. The supplied sequence is Lena's rejection of missing recovery evidence on 28 October, D-004 deferral on 29 October, security acceptance on 2 November and pilot on 3 November. Actual retrospective attendance, earlier-review records and experiment results are not supplied.
 
-## Relay learning review
+Learning question: could acceptance evidence have been made decision-ready earlier? Use a timeline because the order of commitments, evidence needs and actual results matters. Do not start with a claim that security caused the delay.
 
-Observation: the pilot was deferred after recovery evidence was missing on 28 October. Interpretation to test: acceptance activities entered coordination too late. This is not proof that an individual neglected their job.
+| Observation | Hypothesis, not established cause | Missing/contrary evidence |
+|---|---|---|
+| Required demonstration absent at 28 October review | Evidence work may have entered planning too late or lacked viable prerequisites | Original acceptance plan, environment history, capacity and earlier escalations |
+| Pilot began after later acceptance | Obtaining evidence was relevant to the gate | Does not prove meeting frequency or any single intervention caused success |
+| Earlier scope/funding change did not establish readiness | Baseline decisions and acceptance were managed as different boundaries | Need actual coordination records to diagnose whether those boundaries were misunderstood |
 
-A proposed experiment is to review evidence readiness with Lena and Theo before the next release forecast is presented for commitment. The team should agree who owns the review, its timing relative to the decision, and a measure such as unresolved mandatory evidence discovered at the final gate.
+Proposed experiment: for the next comparable release, include a versioned acceptance-evidence review before the date decision's last useful point. Lena and Theo contribute domain needs; Mina is a proposed coordinator, not an accepted assignment. Timing should derive from demonstration/correction/review lead time, not a universal number of days or a standing meeting by default.
 
-The measure is diagnostic, not a reason to hide gaps. If early reviews still miss critical conditions, inspect the coverage and participation rather than declaring the experiment successful because a meeting occurred.
+Measure whether each mandatory condition has a usable evidence plan, owner and prerequisite before commitment, and when material gaps are discovered relative to the decision. Establish the comparison from actual earlier records; no numeric baseline or improvement target is invented. Guardrail: preserve reporting of gaps and required criteria—fewer red rows achieved by hiding them is failure.
 
-## Repair
+Review after one comparable release and before institutional adoption. Inspect whether the review happened, whether it surfaced actionable gaps, and whether other changes such as scope or staffing explain the result. Possible outcomes are adopt with limits, adjust participants/timing, stop an ineffective ceremony or gather more evidence. No result is claimed yet.
 
-**Flawed:** "Security caused delay; invite them to more meetings."
-
-**Corrected:** "Investigate when acceptance conditions and evidence needs became visible, then test a specific earlier review with the right participants."
+**Repair:** “Security delayed us; invite them to more meetings” invents cause and remedy. The experiment tests a specific evidence-planning mechanism with an observable outcome and an explicit pending review.

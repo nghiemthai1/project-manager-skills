@@ -1,0 +1,12 @@
+gantt
+    title Fictional rehearsal - feasible only with separate B and C resources
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+    excludes weekends
+    todayMarker off
+    section Unconstrained scenario
+    A Extract sample :crit, a, 2026-11-02, 2d
+    B Validate mapping :crit, b, 2026-11-04, 2026-11-09
+    C Prepare restore environment :crit, c, 2026-11-04, 2026-11-09
+    D Reconcile and restore :crit, d, after b c, 2d
+    E Acceptance checkpoint :milestone, e, after d, 0d

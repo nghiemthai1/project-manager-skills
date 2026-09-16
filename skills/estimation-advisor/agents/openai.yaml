@@ -1,4 +1,4 @@
 interface:
   display_name: "Estimation Advisor"
-  short_description: "Guide estimation advisor with evidence and judgment"
-  default_prompt: "Use $estimation-advisor to help with this project management task."
+  short_description: "Choose and explain an estimation method with units, assumptions "
+  default_prompt: "Use $estimation-advisor to select an evidence-appropriate estimate and explain what it can support without turning scenarios into promised dates or probabilities."

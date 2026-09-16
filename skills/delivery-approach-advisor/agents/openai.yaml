@@ -1,4 +1,4 @@
 interface:
   display_name: "Delivery Approach Advisor"
-  short_description: "Guide delivery approach advisor with evidence and judgment"
-  default_prompt: "Use $delivery-approach-advisor to help with this project management task."
+  short_description: "Choose and tailor predictive, agile or hybrid practices"
+  default_prompt: "Use $delivery-approach-advisor to recommend an explicit operating approach, with learning loops, controlled boundaries and evidence for reassessment."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Integrated Project Planning"
-  short_description: "Guide integrated project planning with evidence and judgment"
-  default_prompt: "Use $integrated-project-planning to help with this project management task."
+  short_description: "Reconcile scope, acceptance, schedule, capacity, costs and contr"
+  default_prompt: "Use $integrated-project-planning to coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded baseline decision."

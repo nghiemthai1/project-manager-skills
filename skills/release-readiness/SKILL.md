@@ -1,75 +1,84 @@
 ---
 name: release-readiness
-description: "Assess release or cutover readiness against explicit acceptance, recovery, operational, and authorization evidence. Use for a go/no-go review."
+description: Assess a defined release against current gate evidence. Use before a pilot, launch or migration cutover
+  to recommend go or hold without inventing authorization.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
+    exceptions, immediate service coverage and actual go authority.
+  frameworks: Readiness gates; exception authority; operational acceptance
+  best_for: '["Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
+    exceptions, immediate service coverage and actual go authority."]'
+  scenarios: '["Evaluate the current release evidence and recommend go or hold; restore failed even though most
+    checks passed."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Release Readiness
 
 ## Purpose
 
-Provide a defensible readiness recommendation before exposing users or operations to a release. Use for pilot launch, production cutover, or a major migration wave. Readiness assessment and actual go authorization are separate records.
+Make a defensible readiness recommendation before a release exposes users or operations to change. Produce an evidence matrix and bounded decision request for the exact version, scope, environment and window. Readiness assessment, actual go authorization and successful execution are separate states.
+
+Use for a pilot, software launch or migration wave. A previously approved plan establishes a comparison and authority boundary; it does not prove today's configuration is ready. When live incidents already exist, follow the applicable incident process as well as the project decision route.
 
 ## Input
 
-Bring release scope/version, gate criteria, test and reconciliation results, rollback/restore evidence, service coverage, open defects, and decision authorities.
+Use release scope/version/population, window and baseline, actual gate rules, test/reconciliation results, defect dispositions, recovery evidence, dependencies, monitoring, support coverage and authorities. Preserve IDs and evidence locations literally. Separate supplied case facts from illustrative examples or neighboring cases; never borrow their tests, approvals or proposed interventions.
 
-Example: "Review the 25 November migration cutover evidence and recommend go or hold."
+Example: “Review the 25 November cutover evidence and identify what prevents a go recommendation.”
 
-Missing evidence stays missing. A deadline or a previously approved plan is not evidence that a criterion passed.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+If criteria or authority are missing, draft the matrix with those gaps. Do not invent a zero-defect threshold, permitted waiver, recovery time or approver. A technical lead is not automatically the receiving business or service acceptor. Use existing context before asking the few questions that change the recommendation.
 
 ## Key Concepts
 
-### Gates are conditions, not percentages
+### A gate is a condition, not a checklist percentage
 
-A gate defines the evidence required for a decision. A mandatory failed condition cannot be canceled by many minor passes. Separate blockers from explicitly waivable exceptions and from lower-priority follow-up work according to the project's actual rules.
+Classify requirements under actual governance: mandatory conditions, exceptions that specified authorities may permit, and follow-up items that do not block the decision. If classification is unknown, say so. Many minor passes do not compensate for one required restore failure. A composite percentage obscures which condition governs exposure.
 
-### Recoverability and ownership
+### Applicability is part of the result
 
-A rollback or restore plan describes an intended response. A relevant demonstration provides evidence it works under stated conditions. Record the decision window, irreversible steps, recovery limits, monitoring, and who owns the service during the release. Full post-release handover may occur later, but immediate operational coverage must be explicit.
+Record configuration/version, environment, data population, method, execution date, observed result and limitations. A pass for a previous mapping or small unrepresentative sample does not automatically support the current release. Review change impact and refresh affected evidence; do not discard all historical evidence indiscriminately or reuse it without justification.
 
-### Why this works
+Verification result and acceptance decision are distinct. A passed test may support a domain acceptance; that acceptance may still leave other domains and go authority unresolved. The matrix should show both, not one ambiguous “approved” column.
 
-An evidence matrix connects each readiness claim to a responsible authority. It prevents the release date, a vendor receipt, or code completion from substituting for business and operational acceptance.
+### Recovery and operational coverage have real boundaries
+
+A rollback/restore document states a plan. An applicable demonstration supports a capability within tested conditions. Identify irreversible data/external effects, the last useful recovery decision point, recovery limitations, monitoring signals and who can act. Do not assume a snapshot reverses every external transaction.
+
+Immediate operating coverage, escalation and recovery ownership must be established before exposure. Full service handover may occur after actual rollout and stabilization evidence. Requiring a completed post-launch report before launch is impossible; removing pre-launch coverage because handover is later is equally unsound.
+
+### Conditional go is not deferred proof by default
+
+Use conditional go only if actual governance permits the specified condition and authority. Identify whether the condition must be satisfied before execution or may remain as an explicitly accepted residual obligation. A mandatory failed gate without a permitted authorized exception remains a blocker; “we will fix it after go” does not change that.
 
 ## Application
 
-Before drafting, separate supplied case facts from illustrative examples and neighboring cases. Do not import a lesson, test result, proposed intervention, or approval from another case. Label any new recommendation as proposed. A technical lead is not automatically the confirmed receiving acceptance authority; mark that assignment unconfirmed unless supplied. Describe a hold as recommended until an authorized hold decision is evidenced, and call an approved cutover date a baseline.
+1. **Fix the decision boundary.** Identify exact release/version/population/environment/window and actual go/no-go authority. Distinguish approved baseline from desired or forecast date. Record what this decision covers and what remains outside it.
+2. **Build the gate inventory.** Map agreed scope and acceptance to required evidence, actual acceptor, classification and exception authority if any. Mark proposed criteria and unconfirmed roles. Include relevant security, business, recovery, operational, dependency and communication conditions without assuming every project needs an identical checklist.
+3. **Inspect evidence, not status labels.** Record passed, failed, not run, unknown and accepted exception distinctly. Attach applicable source/result and the actual acceptance state. Reconcile conflicting evidence and preserve previous-version results as history. A vendor upload is not receiving acceptance.
+4. **Challenge recovery and exposure.** Review actual demonstrations, point-of-no-return constraints, monitoring, intervention triggers, operator access and immediate coverage. Confirm capacity for correction/retest and decision timing. Unknowns that prevent safe execution remain visible; a runbook cannot fill them by assertion.
+5. **Recommend a bounded outcome.** Recommend go only when applicable evidence and required acceptances support the defined scope. Recommend hold when a required condition is failed/absent or critical authority is unresolved. Use permitted conditional go only with exact conditions, owner, timing and consequence. Do not claim the actual authority issued a hold merely because you recommend it.
+6. **Record the actual decision and recheck rule.** Use the [matrix template](template.md). Record decider, date, scope/version/window, conditions and decision ID when evidenced. If configuration, population, environment, evidence or window changes, assess applicability again. An earlier go does not grant indefinite permission for materially different exposure.
 
-1. Confirm the release boundary, version, target window, and actual go/no-go authority.
-2. List agreed acceptance and operational gates with owners and required evidence. Mark any proposed criteria unconfirmed.
-3. Inspect current results and their applicability to this version and environment. Separate passed, failed, not run, unknown, and approved exception states.
-4. Review dependencies, unresolved defects, rollback/restore, monitoring, support coverage, and communication readiness.
-5. Recommend go, conditional go only where permitted, or hold. Explain each blocking gap and the evidence or authorized exception needed to change the recommendation.
-6. Record the authority's actual decision and conditions separately. Do not infer a waiver from schedule pressure or broad sponsorship.
-7. Define recheck triggers for changed scope, environment, data, or evidence; a prior pass may no longer apply after a material change.
-
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Quality check: the headline agrees with every independent mandatory gate; claims have applicable evidence; the actual authority can see what is passed, missing, rejected or exceptionally accepted. The record states what would change a hold recommendation and never equates go with completed deployment.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay missing recovery evidence](examples/software.md): B2 funding and the existing date do not satisfy security acceptance.
+- [Northstar failed restore](examples/migration.md): the phased baseline preserves the gate and separates later go from service transfer.
 
 ## Common Pitfalls
 
-- **Checklist arithmetic:** 95% of items pass, so a failed restore is ignored. Evaluate the consequence and mandatory gates.
-- **Plan equals proof:** a rollback document is treated as a successful rehearsal. Inspect demonstration evidence and applicability.
-- **Sponsor as universal waiver:** budget authority is assumed to override security or business acceptance. Verify the actual governance.
-- **Version mismatch:** tests from a previous build justify a changed release. Review applicability and rerun affected evidence.
-- **Go as completion:** authorization is treated as successful deployment. Monitor actual execution and retain the handover/closure steps.
+- **Checklist arithmetic:** a high pass count hides a required failure. Assess condition and consequence rather than averaging.
+- **Plan equals proof:** a recovery document is called a successful demonstration. Inspect actual execution and its limits.
+- **Sponsor as universal waiver:** funding authority is used to bypass independent acceptance. Verify actual exception/go rights and scope.
+- **Stale pass reused:** previous-version evidence supports a changed release without analysis. Map change impact and refresh affected checks.
+- **Coverage after exposure:** operators are assigned only at handover. Confirm immediate coverage before go, then validate full transfer later.
+- **Go means done:** permission is reported as successful delivery. Link subsequent execution and monitoring evidence separately.
 
 ## References
 
-- [Acceptance And Traceability](../acceptance-and-traceability/SKILL.md)
-- [Release And Handover](../release-and-handover/SKILL.md)
-- [Decision Log](../decision-log/SKILL.md)
-- [Project Recovery Advisor](../project-recovery-advisor/SKILL.md)
-
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+- [Acceptance and Traceability](../acceptance-and-traceability/SKILL.md), [Quality Management Plan](../quality-management-plan/SKILL.md) and [Project Governance](../project-governance/SKILL.md) supply optional criteria/evidence/authority inputs.
+- [Release and Handover](../release-and-handover/SKILL.md), [Decision Log](../decision-log/SKILL.md) and [Project Recovery Advisor](../project-recovery-advisor/SKILL.md) support the next action. The matrix remains usable without adjacent packages.

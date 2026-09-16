@@ -1,0 +1,33 @@
+{
+  "period": "2026-10-19 through 2026-10-30; fictional exercise",
+  "people": [
+    {
+      "id": "Omar",
+      "gross_hours": 80,
+      "leave_hours": 8,
+      "overhead_hours": 16,
+      "allocations": [
+        {
+          "project": "Relay",
+          "hours": 48
+        },
+        {
+          "project": "support",
+          "hours": 16
+        }
+      ]
+    },
+    {
+      "id": "Lena",
+      "gross_hours": 40,
+      "leave_hours": 0,
+      "overhead_hours": 8,
+      "allocations": [
+        {
+          "project": "Relay",
+          "hours": 20
+        }
+      ]
+    }
+  ]
+}

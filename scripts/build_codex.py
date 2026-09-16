@@ -5,7 +5,14 @@ import shutil
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED = {'.md', '.yaml', '.yml', '.json', '.py'}
+TEXT_SUFFIXES = {'.md', '.yaml', '.yml', '.json', '.py', '.mmd', '.svg', '.csv'}
+BINARY_SUFFIXES = {'.png'}
+ALLOWED = TEXT_SUFFIXES | BINARY_SUFFIXES
+
+
+def payload_bytes(source):
+    data = source.read_bytes()
+    return data.replace(b'\r\n', b'\n') if source.suffix in TEXT_SUFFIXES else data
 
 
 def build(root=ROOT, output=None):
@@ -24,7 +31,7 @@ def build(root=ROOT, output=None):
                 raise ValueError(f'Symlinks are not packaged: {relative}')
             if source.is_file() and source.suffix in ALLOWED:
                 # Normalize text line endings so Windows and Linux builds match.
-                entries['.agents/skills/'+relative.as_posix()] = source.read_bytes().replace(b'\r\n', b'\n')
+                entries['.agents/skills/'+relative.as_posix()] = payload_bytes(source)
     entries['AGENTS.md'] = entries['AGENTS.md'].replace(b'\r\n', b'\n')
     output.mkdir(parents=True, exist_ok=True)
     archive = output/'codex-project-manager-skills.zip'

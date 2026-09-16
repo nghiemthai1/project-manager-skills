@@ -1,4 +1,4 @@
 interface:
   display_name: "Release and Handover"
-  short_description: "Guide release and handover with evidence and judgment"
-  default_prompt: "Use $release-and-handover to help with this project management task."
+  short_description: "Plan and coordinate authorized release, stabilization and servic"
+  default_prompt: "Use $release-and-handover to coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization and accepted transfer without gaps in operational responsibility."

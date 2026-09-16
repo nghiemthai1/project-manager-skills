@@ -23,7 +23,7 @@ A framework earns its place by improving a decision. Use the method that fits th
 
 ## References for verification
 
-These links explain technical methods and specifications. Repository instructions and examples are original.
+These links explain technical methods and specifications. Original methods and examples coexist with explicitly licensed close adaptations. See the [source notices](../THIRD_PARTY_NOTICES.md) and each adapted package’s SOURCE.md.
 
 - [GAO Schedule Assessment Guide](https://www.gao.gov/products/gao-16-89g): integrated schedule quality, dependency logic, and critical-path interpretation.
 - [DOE integrated project management using earned value](https://www.energy.gov/documents/integrated-project-management-using-earned-value-management-system): earned-value measures and forecast assumptions.

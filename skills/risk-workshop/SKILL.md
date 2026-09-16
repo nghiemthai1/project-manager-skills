@@ -1,77 +1,103 @@
 ---
 name: risk-workshop
-description: "Facilitate a focused project risk review using objectives, a premortem, evidence-based assessment, and owned responses. Use before a major plan or gate."
+description: Facilitate a focused risk review and choose owned responses. Use before a commitment, after a material
+  change or when uncertainty is hidden by a stale register.
 metadata:
   type: interactive
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to response
+    options, triggers and residual-risk decisions.
+  frameworks: Premortem; probability-impact matrix; response planning; residual risk
+  best_for: '["Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to
+    response options, triggers and residual-risk decisions."]'
+  scenarios: '["Facilitate a premortem to identify plausible failure causes, assess uncertainty and choose responses."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Risk Workshop
 
 ## Purpose
 
-Identify risks that change project decisions and convert them into responses. Use before commitment, at a major change, or when a risk register has become stale. A workshop should improve choices rather than maximize the number of entries.
+Discover uncertainty that could change a project decision, then choose what to do about it. Produce a prioritized risk record and response recommendation. Success is a better decision or changed plan, not the largest possible risk list.
+
+Use before commitment, at a material change or when a register no longer explains current exposure. If the event has already happened, start issue resolution and use the workshop for remaining uncertainty. A workshop cannot authorize a failed gate to pass or establish probabilities through group confidence alone.
 
 ## Input
 
-Bring objectives, scope, constraints, the current plan, known incidents, and participant perspectives.
+Use the objective/decision, scope and baseline, current plan, known incidents, evidence, constraints and relevant perspectives. Existing context answers questions; do not repeat it. Missing details can remain explicit in a provisional assessment.
 
-Example: "Run a risk workshop before we accept the migration cutover plan."
+Choose **guided mode** to ask one material question at a time, **context-dump mode** to synthesize supplied notes and ask only gaps, or **best-guess mode** to draft hypotheses and provisional responses with assumptions visible. Best guess never means invented events, ratings, attendance, commitments or approvals.
 
-For guided use, establish the decision, most uncertain area, and available evidence with a few focused questions. Do not demand a complete risk register before helping create one.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Example: “Before we commit to migration cutover, test our confidence in attachment relationships and recoverability.”
 
 ## Key Concepts
 
-### Premortem and objective-based review
+### Premortem broadens discovery, not proof
 
-A premortem asks participants to imagine a future failure and explain plausible causes. It helps surface concerns that optimism or hierarchy suppresses. Its stories are hypotheses, not facts or measured probabilities. Pair it with a structured review of schedule, cost, scope, quality, operations, people, vendor, and change risks relevant to the project.
+Invite people to imagine a defined future failure and independently write plausible causes before discussion. Then ask what present evidence supports or contradicts each story. Independent input can surface concerns that a senior person's opening view suppresses. Pair it with an objective-based scan across scope, schedule, cost, quality, operations, people, suppliers and adoption; use only relevant categories.
 
-### Assess before scoring
+Stories are hypotheses. “It failed in our imagined future” is not an observation or a probability estimate. Keep actual incidents separate. For sensitive disagreement, offer a route that does not require public agreement with the most senior participant.
 
-Use cause-event-consequence statements. Distinguish likelihood, impact, proximity, detectability, and evidence quality rather than hiding them in one unsupported score. Define qualitative scales before ranking. A low-probability catastrophic event may merit action even if a simple product score is modest.
+### Assess meaning before assigning a score
 
-### Response choices
+Write cause, uncertain event and objective consequence. Examine likelihood, impact, proximity, detectability and evidence confidence separately. If the project has a probability/impact matrix, use its defined scales and escalation rules. If not, draft categories for agreement or use qualitative consequence/evidence descriptions without numerical multiplication.
 
-Avoid by changing the plan; mitigate by reducing likelihood or consequence; transfer or share a contractual exposure without pretending accountability disappears; accept within authority with a contingency and trigger.
+A matrix is a screening tool. Ordinal score products do not measure expected loss, and averaging them can hide a low-likelihood consequence outside tolerance. Quantitative analysis needs relevant data, distributions and dependencies; do not simulate confidence from workshop votes.
 
-### Why this works
+### Responses have mechanisms and residual exposure
 
-Independent first-pass thinking broadens the concerns raised. An owned response with a trigger turns discussion into control, while a stated uncertainty prevents invented precision.
+Avoid changes the plan to remove the exposure; mitigate reduces likelihood or consequence; transfer/share allocates defined contractual or financial responsibility; accept records an authorized decision with appropriate monitoring/contingency. Operational accountability and business disruption do not disappear because a supplier has an obligation.
+
+Distinguish the preventive response from the contingency triggered if warning or failure occurs. “Monitor closely” may be a detection action but does not itself reduce impact. Assess residual exposure after a response is actually implemented and its effectiveness checked, not after it is merely assigned.
 
 ## Application
 
-1. Establish the decision being protected and the review boundary. Ask only missing material context, normally three to five questions at most.
-2. Invite independent risk ideas before group discussion. Use a premortem prompt and objective-based categories to expose overlooked areas.
-3. Consolidate duplicates while preserving distinct causes and consequences. Move present problems into issues.
-4. Agree assessment criteria and assess evidence, likelihood, impact, timing, and confidence. Keep unknown values unknown.
-5. Select responses for the most consequential risks. Record owner, action, early-warning trigger, contingency, and residual exposure.
-6. Identify who must accept residual risks outside team authority. Draft the decision request instead of approving it yourself.
-7. Produce the prioritized risk record and follow-up review. Explain why lower-priority items receive less attention and what would promote them.
+### Establish the conversation in up to four adaptive questions
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
+Ask one at a time in guided mode; skip answered questions. Offer choices and accept freeform context.
 
+1. **What decision and failure boundary are we protecting?** Options: baseline commitment, release/cutover gate, supplier handoff, major change, other. If the boundary is unclear, first produce the decision/objective statement. Do not workshop “all project risk forever.”
+2. **Where is uncertainty or current evidence weakest?** Options: technical/data, timing/capacity, supplier/coordination, acceptance/operations, adoption, mixed. Branch into a relevant premortem and request direct evidence. If an event is already observed, record a linked issue and examine residual uncertainty.
+3. **How will consequence and timing be assessed?** Use actual scales/tolerances if supplied. Otherwise ask which objective cannot tolerate failure and when a response stops being useful. Unknown likelihood remains unknown; a mandatory gate does not need a made-up score to deserve attention.
+4. **What responses and authority are available?** Establish who can implement a change, what capacity/evidence it needs and who can accept residual exposure. If no owner or authority is known, recommend identifying that role before treating a response as committed.
 
+### Discover and challenge
+
+Use independent first-pass ideas, then consolidate duplicates while preserving materially different causes, populations or consequences. Ask for a contrary example and existing controls. Scan omitted objectives and stakeholders; a vendor-only group may miss operator consequences. Limit attention to decision-relevant uncertainties and explicitly park the rest with a review trigger.
+
+### Select a numbered recommendation
+
+Choose the best-supported branch and explain alternatives:
+
+1. **Implement a preventive response:** when a feasible intervention can reduce a material exposure before the decision. State mechanism, effort/capacity, owner, evidence of effectiveness and residual uncertainty.
+2. **Investigate before commitment:** when missing evidence could change feasibility or response choice. Define the question, bounded investigation, proposed resource/time cap and decision it will enable. Do not invent the cap as an approved allocation.
+3. **Change the plan or hold the commitment:** when required evidence is absent, a gate has failed or exposure exceeds actual tolerance. Present scope/sequence/date options; only the actual authority can approve a change.
+4. **Accept and monitor within authority:** when exposure and tradeoffs are understood and the authorized owner accepts them. Record warning signal, contingency, review point and decision reference. A mandatory criterion cannot be waived by choosing this label.
+
+Multiple risks may need different branches. Do not force one score or response across the whole project. If an opportunity is in scope, make its positive objective effect explicit and evaluate action and downside on the same evidence basis.
+
+### Produce the response record and handoff
+
+Use the [workshop template](template.md) to capture question/answer context, risk statements, evidence/confidence, priority rationale, response, performer/owner, trigger, contingency, residual authority and next review. Keep proposed assignments and acceptance decisions separate. Hand current problems to issue resolution and material changes to change control. Revisit when evidence, proximity, scope or control effectiveness changes.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay recovery workshop](examples/software.md): an acceptance-critical threat is prioritized without an invented likelihood.
+- [Northstar migration review](examples/migration.md): attachment integrity and recoverability require separate controls; supplier transfer is not disappearance of exposure.
 
 ## Common Pitfalls
 
-- **Premortem becomes prediction:** a plausible story is assigned a fabricated probability. Record it as a hypothesis and seek evidence.
-- **Ranking without scale:** participants score the same impact differently. Define objectives and category meanings first.
-- **Mitigation without trigger:** an action has no signal for escalation. State when it starts and what indicates it is failing.
-- **Transferred means gone:** a vendor contract is assumed to remove business consequences. Record the residual operational exposure.
-- **Workshop ends at the list:** no one changes a plan. Assign follow-up and decision authority.
+- **Fiction becomes evidence:** premortem stories are written as incidents. Label hypotheses and seek observable support before revising factual status.
+- **Precision by voting:** participants assign percentages with no basis. Use agreed qualitative meanings or an evidence-gathering action; record confidence.
+- **Mitigation by document:** a runbook exists, so recoverability is called controlled. Test the actual behavior and operator ability against criteria.
+- **Transfer means gone:** contract responsibility replaces the project's contingency. Retain residual business exposure and actual cutover authority.
+- **Assigned means accepted:** a workshop volunteers an absent engineer. Record a proposal and confirm capacity/ownership before relying on it.
+- **List without a decision:** many risks are scored but no plan changes. End with a recommendation, action/evidence, trigger and authority for each priority exposure.
 
 ## References
 
-- [Risk management principles](https://www.gov.uk/government/publications/orange-book)
-- [Raid Log](../raid-log/SKILL.md)
-- [Release Readiness](../release-readiness/SKILL.md)
-- [Project Recovery Advisor](../project-recovery-advisor/SKILL.md)
+- [Orange Book](https://www.gov.uk/government/publications/orange-book) for broader risk-governance principles.
+- [Workshop Facilitation](../workshop-facilitation/SKILL.md) supports the conversation; [RAID Log](../raid-log/SKILL.md) maintains resulting states.
+- [Release Readiness](../release-readiness/SKILL.md) and [Project Recovery Advisor](../project-recovery-advisor/SKILL.md) receive evidence or plan-change recommendations.
 
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+Optional related skills are not runtime dependencies. The response record can be used on its own.

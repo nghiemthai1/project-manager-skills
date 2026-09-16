@@ -1,17 +1,19 @@
-# Milestone schedule
+# Milestone schedule and feasibility
 
-- As-of date / scope version:
-- Target dates / approved baseline and decision ID:
-- Duration units / working calendars / constraints:
+Project / scope version / status date / model boundary:
+Duration unit / origin / calendars and finish-boundary convention:
+Target or approved comparison / decision reference:
 
-| Activity ID | Deliverable | Duration and basis | Predecessors | Owner | Resource/calendar constraints |
-|---|---|---|---|---|---|
-
-| Milestone | Acceptance evidence | Target | Baseline | Forecast | Approver | Confidence |
+| ID | Activity or milestone / exit evidence | Duration / basis | Technical predecessors | Resource constraints | ES / EF | LS / LF / total float |
 |---|---|---|---|---|---|---|
+| | | | | | | |
 
-## Critical and near-critical work
+Critical and tied paths / near-critical work / model limits:
 
-State the model and limits before interpreting float.
+| Milestone | Evidence criterion | Actual authority | Baseline/target | Forecast and basis | Missing input / decision |
+|---|---|---|---|---|---|
+| | | | | | |
 
-## Decisions, unknowns, and change history
+Resource/calendar reconciliation / added planning-order links:
+Change scenario / recalculated finish / variance in correct units:
+Actuals and prior baselines retained / next action and owner status:

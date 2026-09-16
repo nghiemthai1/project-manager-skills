@@ -1,14 +1,28 @@
-# Recovery recommendation
+# Recovery options and conditional agreement
 
-- Objective at risk / current baseline / forecast:
-- Immediate exposure and authorized containment:
-- Causal evidence and hypotheses:
+Project / as-of / mode / baseline and current forecast:
+Threatened objective / required outcomes / flexible boundaries / authority:
+Known immediate exposure and permitted stabilization:
 
-| Option | Scope / date effect | Capacity / cost | Acceptance / risk | Preconditions | Feasibility |
+| Observed condition | Causal hypothesis | Supporting / contrary evidence | Discriminating check / owner / timing basis |
+|---|---|---|---|
+| | | | |
+
+## Option appraisal
+
+| Option including unchanged course | Mechanism changed | Scope / acceptance | Resource and sequence feasibility | Whole-scope cost / funding | Residual risk / unknowns | Authority needed |
+|---|---|---|---|---|---|---|
+| | | | | | | |
+
+Numbered recommendation and reasons / alternatives rejected or unproven:
+Proposed versus actual approval / conditions / effective date / decision ID:
+
+## Recovery checkpoints
+
+| Hypothesis / result sought | Action and confirmed performer | Resources / accepted date | Leading evidence | Outcome and actual acceptor | Reconsider/stop trigger |
 |---|---|---|---|---|---|
+| | | | | | |
 
-## Recommendation and authority required
-
-## Checkpoints, evidence, and reconsideration trigger
-
-## Approved changes and baseline history
+Baseline changes and prior history retained:
+Actual results / remaining obligations / next decision:
+Literal identifiers checked / external action state:

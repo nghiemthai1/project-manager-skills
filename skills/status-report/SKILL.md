@@ -1,76 +1,85 @@
 ---
 name: status-report
-description: "Create evidence-based project status updates with baseline variance, forecast, risks, and explicit decisions needed. Use for weekly or executive reporting."
+description: Report project evidence, forecast variance and decisions needed. Use for an executive update, recurring
+  control report or material exception.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance
+    states and makes the next intervention clear.
+  frameworks: RAG by tolerance; management by exception; baseline/forecast/actual
+  best_for: '["Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance
+    states and makes the next intervention clear."]'
+  scenarios: '["Write a one-screen sponsor update from these current facts, showing delivery confidence, changes
+    and decision asks."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Status Report
 
 ## Purpose
 
-Help a stakeholder decide whether to intervene. Report what changed, what the change means for delivery, and who needs to decide next. Use for a recurring project update or a dated exception report. A status report does not approve a revised baseline or replace a detailed schedule.
+Help the reader decide whether and how to intervene. State what changed, what it means for delivery, and the decision needed. A status report is a selective control view, not a copy of the task tracker or permission to change the plan.
+
+Use for executive updates, regular delivery reviews and material exceptions. Use a health diagnostic when conflicting signals need investigation before a credible conclusion exists. If the immediate job is one choice beyond delegated authority, use an escalation brief and link it from the report.
 
 ## Input
 
-Bring the reporting date, audience, last report, approved scope/date/budget, current forecast, and evidence of accepted work. Useful additions are unresolved decisions and owners.
+Use reporting date/cutoff, audience, previous report, applicable approval/baseline records, current forecast method, observed actuals, acceptance evidence, current issues and decisions. Identify sources that disagree. Mark missing or stale information explicitly rather than assuming no news is good news.
 
-Example: "Write the 16 October Relay update for Ada using these costs, dependency changes, and the prior report."
+Example: “Write Ada a one-screen 16 October update from the cost data, interface forecast and current acceptance gaps. No change has been approved.”
 
-If the baseline or forecast is missing, produce a partial report with an explicit confidence gap. Do not infer a green status from an absence of reported problems.
+The report can be partial if data is incomplete. State which conclusion cannot yet be supported and what evidence will resolve it. Do not copy fictional example people, ratings or thresholds into a real update.
 
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Preserve supplied baseline, decision, requirement and version identifiers exactly, including case, punctuation and spacing. For example, `VB1` must not become `VB 1` in a polished report. Compare referenced identifiers with the input before delivery; never apply a global prose-spacing rule across them.
 
 ## Key Concepts
 
-### Baseline, actual, forecast
+### Use four distinct states
 
-The baseline is the authorized comparison point. Actuals describe observed results. The forecast is today's expectation. Keeping all three visible prevents a moving target from hiding a missed commitment. A target date without approval is not a baseline.
+The **target** is desired performance. The **baseline** is the authorized comparison point. The **forecast** is today's expectation under stated assumptions. **Actuals** are observed results. Acceptance is a separate decision about a defined result; completed effort or a passed test is not automatically accepted scope.
 
-### RAG with evidence
+A revised forecast belongs in the report before a change is approved. A revised baseline requires its actual decision reference and effective date. Preserve original-to-current baseline history and forecast movement so rebaselining cannot erase earlier performance.
 
-Red/amber/green summarizes an agreed tolerance, not the team's mood. Explain the assessment separately for scope, schedule, cost, and quality where they differ. Red means intervention is required under the project's rules; amber means credible recovery exists but material risk remains; green requires supporting evidence. If no thresholds have been agreed, label your rating provisional and explain the proposed interpretation. Use unknown when the evidence cannot support a rating.
+### RAG summarizes a decision rule
 
-### Why this works
+Red/amber/green should mean something under the project's tolerances and escalation rules. A common local interpretation is red requiring intervention, amber carrying a material threat with a credible response, and green supported within agreed boundaries. These are not universal thresholds. If rules are absent, label the assessment provisional and explain its evidence; use unknown when data cannot support a rating.
 
-A short narrative connected to a decision lets the reader act without reconstructing a backlog. Leading with accepted outcomes avoids confusing effort with progress. Showing forecast changes also exposes deteriorating situations before a formal breach.
+Assess scope, schedule, cost, quality/acceptance and operations separately where they differ. A required release gate failure cannot be averaged away by green cost and scope rows. Conversely, one uncertain input does not prove a specific final-date slip without the schedule model.
 
-An executive update emphasizes tradeoffs and decisions. A team update adds immediate dependencies and operational detail. Neither audience receives different facts.
+### Report outcome and consequence
+
+“Six workshops held” describes activity. “Acceptance population agreed by the actual owner, record X” describes a decision result. If acceptance has not occurred, say work is prepared, tested, awaiting review or blocked as supported. Do not turn a percentage of tasks closed into percentage of business value or readiness.
+
+Cost indicators also need interpretation: CPI describes earned value per cost, SPI compares earned to planned value, and monetary schedule variance is not days late. A forecast cost is not a funding authorization. Keep reserve and approval boundaries visible where they affect the decision.
 
 ## Application
 
-1. Fix the as-of date and audience. Reconcile contradictions between the tracker, forecast, prior report, and approval log before selecting a rating.
-2. Identify completed outcomes with acceptance evidence. Keep partial progress distinct from accepted deliverables.
-3. Compare current forecasts with the applicable baseline. Show original and revised baselines when a change was approved, including the decision ID.
-4. Write a short health statement with the most consequential evidence. Do not average away a release-blocking failure behind healthy cost or scope.
-5. List the next few deliverables and the risks/issues affecting them, with owners and dates when evidenced.
-6. End with explicit decisions or help required, decision owner, needed-by date, and consequence of delay. If those fields are unknown, name the gap.
-7. Review the headline against every underlying row. Keep the detailed evidence linked and record changes since the last report.
-8. For a one-screen executive request, aim for 150–250 words with at most three material asks. Use only the template sections needed for the decision; move detailed diagnostics to a separate linked appendix when useful. Do not turn an executive brief into a full control report.
+1. **Fix audience and cutoff.** Identify what the recipient can decide and the period covered. Reconcile source conflicts or report them explicitly. A later approval cannot be used to improve an earlier report. Record stale-source dates when they differ from the reporting date.
+2. **Build the comparison underneath the headline.** For each material dimension, show baseline/authority, current forecast or observation, variance, confidence and consequence. Calculate date differences on the declared calendar and like date definitions; do not subtract supplier delivery from receiver acceptance and call the result project float.
+3. **Select a defensible health statement.** Lead with the highest-consequence current evidence and its needed action. State provisional/unknown status where appropriate. A reader seeing only the first paragraph should not infer readiness when required evidence is failed or absent.
+4. **Report progress and changes.** Name a few completed/accepted outcomes with evidence, material forecast movement and changed issues. Keep planned work separate. Explain why an item matters instead of listing every activity. Retain issue/risk distinctions and stable IDs.
+5. **Make the asks executable.** State decision, actual authority, evidence/option needed, useful decision time and consequence of delay. If authority or time is unknown, identify that gap. Limit executive asks to the few consequential choices; link deeper analysis.
+6. **Check consistency and fit.** Test the headline against each row, then against current decisions. Tailor detail, not facts. Use the [template](template.md), but do not fill sections that add no decision value. For a requested one-screen executive update, aim for 150–250 words and at most three material asks; put detailed arithmetic and diagnostic evidence in an appendix.
+7. **Preserve the dated record.** Record author/source references and compare with the previous report. Correct errors transparently. Drafting is not sending, and acknowledgment of a report is not approval of its recommendations. Update linked decision/change records only when actual decisions occur.
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Quality check: every confident claim has a source or calculation; every forecast has an assumption/as-of; every baseline has authority; every material blocker survives into the headline or clear decision section. “No decision needed” is acceptable when supported, not a default used to avoid difficult asks.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay executive update and evidence appendix](examples/software.md): a 120k forecast remains distinct from B1 and funding permission.
+- [Northstar intervention report](examples/migration.md): a reserve does not eliminate the total-envelope gap or prove a new cutover date.
 
 ## Common Pitfalls
 
-- **Green headline, red evidence:** a blocked release is buried in a footnote. Stakeholders miss the intervention window. Rewrite the headline around the blocker and the decision it requires; check whether someone reading only the first paragraph would act correctly.
-- **Baseline laundering:** the latest forecast silently replaces the authorized date. Slippage disappears. Show both columns and link the approval for any rebaseline.
-- **Activity as achievement:** "held six workshops" substitutes for an accepted outcome. Report the decision, validated requirement, or other result, or label the work still in progress.
-- **Ask without a recipient:** "leadership support needed" has no executable next step. Specify the decision and accountable authority, leaving unknowns explicit.
+- **Green headline, red gate:** a failed acceptance condition is hidden below healthy metrics. Rewrite the headline around the consequential blocker and decision.
+- **Baseline laundering:** the newest forecast replaces the approved date. Restore separate columns and the actual change reference.
+- **Activity theatre:** meeting and task counts imply accepted delivery. Name observable results and acceptance state, or label the work in progress.
+- **False precision:** an interface delay becomes an identical whole-project delay. Show the local gap and missing network/capacity analysis.
+- **Ask without authority:** “leadership help” reaches no accountable decider. State the choice, role and window; keep unknowns explicit.
+- **Overgrown executive brief:** every control detail crowds out intervention. Keep the short report, link an evidence appendix and preserve the same facts.
 
 ## References
 
-- [Earned value interpretation](https://www.energy.gov/documents/integrated-project-management-using-earned-value-management-system)
-- [Project Health Diagnostic](../project-health-diagnostic/SKILL.md)
-- [Project Budget](../project-budget/SKILL.md)
-- [Escalation Brief](../escalation-brief/SKILL.md)
-- [Decision Log](../decision-log/SKILL.md)
-
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+- [DOE earned-value overview](https://www.energy.gov/documents/integrated-project-management-using-earned-value-management-system) and [Project Budget](../project-budget/SKILL.md) support indicator interpretation.
+- [Project Health Diagnostic](../project-health-diagnostic/SKILL.md), [Escalation Brief](../escalation-brief/SKILL.md) and [Decision Log](../decision-log/SKILL.md) are optional handoffs for diagnosis, action and authority.

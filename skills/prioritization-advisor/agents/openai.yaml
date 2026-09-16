@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prioritization Advisor"
+  short_description: "Choose a scope prioritization method that fits evidence and cons"
+  default_prompt: "Use $prioritization-advisor to recommend and apply a defensible prioritization method while preserving mandatory acceptance and decision rights."

@@ -1,15 +1,23 @@
-# Project Health Diagnostic: migration example
+# Northstar health diagnosis at 23 October
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario, 23 October 2026. The question is whether the current plan supports the approved 21 November cutover and funding. M-D001 established B1: BAC 240k plus 24k separate reserve. Numerical RAG tolerance rules are not supplied.
 
-## Diagnosis: 23 October
+| Dimension | Evidence and calculation | Confidence / limits | Decision implication |
+|---|---|---|---|
+| Cost performance | PV 80k, EV 60k, AC 75k; CPI 0.8, SPI 0.75 | Arithmetic clear if earning/accounting basis aligned | Cost efficiency unfavorable; ratios are not acceptance or calendar delay |
+| Conditional final cost | 240/0.8=300k if efficiency persists | Scenario, not validated remaining-work forecast | 60k above BAC and 36k above 264k envelope; reserve alone insufficient |
+| Mapping dependency | M-DEP01 need 2 November / forecast 4 November | Local date gap known; usable criteria, receiver timing and network effect incomplete | Investigate consuming work; no exact whole-cutover slip supported |
+| Acceptance | Reconciliation and restore evidence pending | Current sufficiency not established | Counts alone cannot establish correct relationships or recovery |
+| Capacity / scope completion | Current detailed evidence not supplied | Unknown | No whole-project green claim |
 
-Northstar's cost forecast is materially above the authorized envelope under the CPI continuation assumption. The vendor mapping has a two-calendar-day local gap. Reconciliation and restore acceptance evidence are incomplete. These are different dimensions with different confidence limits.
+Spend 75/240=31.25% of BAC says how much cost has been incurred, not how much usable scope is complete. EV/BAC=25% is a budget-weighted earned fraction under valid earning rules, not necessarily physical acceptance. Neither cancels the funding exposure.
 
-The diagnostic should not claim a precise cutover delay from SPI 0.75 or from the mapping gap alone. Jules needs the remaining-work estimate, integrated schedule, and readiness evidence. The funding gap already supports an escalation without waiting for perfect schedule knowledge.
+Causal hypotheses for cost inefficiency could include underestimated effort, rework, idle dependency time or accounting/earning mismatch. The diagnostic does not pick a cause without evidence. Compare the actual work/cost boundary and reconcile a current ETC; separately inspect mapping validation and resource sequence.
 
-## Repair
+1. **Recommend a sponsor funding/plan intervention** because the conditional scenario exposes a material authorization gap that deserves action now.
+2. **Obtain a remaining-work estimate and integrated schedule** to choose among continued scope, phasing or timing responses. This is the evidence gap that prevents a precise final forecast.
+3. **Keep acceptance evidence explicit** before any readiness conclusion. Do not wait for perfect schedule data to disclose funding exposure, or treat funding approval as acceptance.
 
-**Flawed:** "Only 31.25% of the budget is spent, so health is green."
+Noel is the sponsor for material baseline/funding decisions; Jules coordinates the evidence. Exact response deadlines and confirmed action assignments remain to establish. M-I002 on 6 November and M-CR02 on 9 November are later events and must not enter this diagnosis as known facts.
 
-**Corrected:** "Spend percentage does not measure earned progress or readiness. Report the evidenced cost inefficiency, unresolved dependencies, and acceptance gaps separately."
+**Repair:** “Only 31.25% spent, healthy” hides earned performance and required evidence. The corrected dimensional review makes the intervention and remaining uncertainty visible together.

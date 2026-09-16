@@ -1,14 +1,25 @@
-# Retrospective
+# Retrospective and improvement experiment
 
-- Period / goal / participants / learning question:
-- Previous experiments and results:
+Event / period / learning question / facilitator / actual participants and missing perspectives:
+Expected outcome / actual result / source evidence:
 
-| Observation and evidence | Interpretation / uncertainty | Alternative explanation |
-|---|---|---|
+| Prior experiment | Implemented? Evidence | Observed effect / limits | Adopt, adjust, stop or investigate |
+|---|---|---|---|
+| | | | |
 
-## Themes and selected improvements
+| Date / observation and source | Interpretation or hypothesis | Contrary evidence / missing perspective | Discriminating check |
+|---|---|---|---|
+| | | | |
 
-| Experiment | Hypothesis | Owner / acceptance | Measure | Review point | Adopt / adjust / stop result |
+Method chosen and why / alternatives considered:
+
+## One to three experiments
+
+| Changed behavior and boundary | Mechanism / hypothesis | Owner and resources (actual/proposed) | Baseline/comparison and outcome measure | Guardrail / possible harm | Review point / decision rule |
 |---|---|---|---|---|---|
+| | | | | | |
 
-## Unresolved perspectives and follow-through
+Accepted planning handoff / actual execution authorization:
+At review: implementation evidence, observed results, confounders and unintended effects:
+Actual adopt/adjust/stop decision or pending state:
+Unselected suggestions / rationale / dissent retained:

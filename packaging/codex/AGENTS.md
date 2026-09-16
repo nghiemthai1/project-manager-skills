@@ -8,7 +8,10 @@ Match the user's task to the relevant skill description, then read that skill's 
 
 Examples of starting points:
 
+- `project-intake-advisor` and `project-business-case` for request triage and investment options.
 - `project-charter` for mandate, scope, success and authority.
+- `raci-matrix` for bounded responsibility assignments.
+- `gantt-chart` for dated timelines with source tables and editable chart assets.
 - `integrated-project-planning` for a coherent delivery plan.
 - `status-report` for an evidence-based update.
 - `project-health-diagnostic` and `project-recovery-advisor` for troubled delivery.
@@ -23,6 +26,8 @@ Separate targets, approved baselines, forecasts and actual results. Keep proposa
 
 Preserve original baselines and meeting ledgers when later decisions change current state. For OKF v0.2 bundles, retain stable slugs, unknown metadata, source links and history.
 
+Preserve supplied IDs, version strings, slugs, paths and URLs exactly, including case, punctuation and spacing. Treat them as literal data during prose formatting; do not apply global spacing substitutions to artifacts. Compare identifiers against the input before delivering a record.
+
 Drafting a plan does not authorize external messages, changes to live systems, spending or releases. Follow the user's actual authorization and the project's existing rules.
 
 ## Optional calculations
@@ -30,3 +35,7 @@ Drafting a plan does not authorize external messages, changes to live systems, s
 Four skills include offline Python 3.11+ standard-library helpers: estimation-advisor, resource-capacity-plan, milestone-schedule and project-budget. Read the owning skill's helper contract before running its script. Calculations do not establish missing evidence or grant approval.
 
 This library has synthetic scenario and automated test evidence. Do not claim production field use or universal reliability.
+
+## Source notices
+
+Closely adapted skills include SOURCE.md and LICENSE.md. Preserve those files when copying packages; their stated licenses also cover their accompanying adaptations and examples. Other original packages retain the repository's stated rights status.

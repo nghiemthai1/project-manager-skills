@@ -1,0 +1,296 @@
+[
+  {
+    "category": "Initiation and governance",
+    "name": "project-intake-advisor",
+    "focus": "Triage requests into a project, change, operational work, or investigation",
+    "frameworks": "Request triage; outcome-evidence-action; decision rights",
+    "type": "interactive"
+  },
+  {
+    "category": "Initiation and governance",
+    "name": "project-business-case",
+    "focus": "Compare investment options before authorizing delivery",
+    "frameworks": "Options appraisal; cost-benefit analysis; sensitivity analysis",
+    "type": "component"
+  },
+  {
+    "category": "Initiation and governance",
+    "name": "delivery-approach-advisor",
+    "focus": "Choose delivery practices that fit uncertainty and governance",
+    "frameworks": "Predictive/agile/hybrid tailoring; rolling-wave planning",
+    "type": "interactive"
+  },
+  {
+    "category": "Initiation and governance",
+    "name": "project-charter",
+    "focus": "Authorize a bounded outcome and management mandate",
+    "frameworks": "Project charter; SMART success criteria; assumption analysis",
+    "type": "component"
+  },
+  {
+    "category": "Initiation and governance",
+    "name": "project-governance",
+    "focus": "Define decision rights, tolerances, assurance, and escalation",
+    "frameworks": "Stage gates; management by exception; delegated authority",
+    "type": "component"
+  },
+  {
+    "category": "Initiation and governance",
+    "name": "project-kickoff",
+    "focus": "Turn the mandate into an operating agreement",
+    "frameworks": "Kickoff facilitation; RACI; decision/action separation",
+    "type": "workflow"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "stakeholder-identification",
+    "focus": "Find affected people, delivery partners, and decision makers",
+    "frameworks": "MITRE stakeholder identification; allies/audiences/influencers; equity lens",
+    "type": "component"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "stakeholder-map",
+    "focus": "Set engagement priorities and expose missing voices",
+    "frameworks": "Power-interest matrix; impact-power matrix; quadrant migration",
+    "type": "component"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "stakeholder-engagement-advisor",
+    "focus": "Prepare reciprocal engagement for a specific stakeholder",
+    "frameworks": "Adaptive Decision Ladder; MITRE engagement canvas; credible proxies",
+    "type": "interactive"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "raci-matrix",
+    "focus": "Assign clear work accountability without inventing authority",
+    "frameworks": "RACI responsibility assignment matrix; horizontal/vertical role analysis",
+    "type": "component"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "communication-plan",
+    "focus": "Choose audience-specific messages, channels, and feedback",
+    "frameworks": "Communication matrix; push/pull/interactive communication",
+    "type": "component"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "workshop-facilitation",
+    "focus": "Run purposeful guided sessions and handle interruptions",
+    "frameworks": "One-question facilitation; guided/context-dump/best-guess modes",
+    "type": "interactive"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "scope-and-wbs",
+    "focus": "Decompose complete deliverables and control boundaries",
+    "frameworks": "Deliverable-oriented WBS; 100% rule; WBS dictionary",
+    "type": "component"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "acceptance-and-traceability",
+    "focus": "Connect requirements to executed evidence and acceptance",
+    "frameworks": "Requirements traceability matrix; verification versus validation",
+    "type": "component"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "prioritization-advisor",
+    "focus": "Choose a defensible scope sequencing or tradeoff method",
+    "frameworks": "MoSCoW; RICE; weighted scoring; Cost of Delay; Kano",
+    "type": "interactive"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "estimation-advisor",
+    "focus": "Select an estimation method and expose uncertainty",
+    "frameworks": "Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting",
+    "type": "interactive"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "milestone-schedule",
+    "focus": "Build feasible logic and milestone forecasts",
+    "frameworks": "Critical Path Method; total float; rolling-wave scheduling",
+    "type": "component"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "gantt-chart",
+    "focus": "Show dated work, dependencies, baselines, and milestones",
+    "frameworks": "Gantt timeline; working calendars; baseline/forecast comparison",
+    "type": "component"
+  },
+  {
+    "category": "Scope and planning",
+    "name": "integrated-project-planning",
+    "focus": "Reconcile scope, schedule, capacity, funding and gates",
+    "frameworks": "Integrated baseline planning; progressive elaboration; consistency review",
+    "type": "workflow"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "dependency-map",
+    "focus": "Secure usable provider-to-receiver handoffs",
+    "frameworks": "Dependency network; interface agreements; local margin versus float",
+    "type": "component"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "resource-capacity-plan",
+    "focus": "Resolve individual bottlenecks and competing allocations",
+    "frameworks": "Capacity-demand analysis; skill constraints; resource leveling options",
+    "type": "component"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "project-budget",
+    "focus": "Plan and control forecast cost and funding",
+    "frameworks": "Cost baseline; contingency versus management reserve; earned value management",
+    "type": "component"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "vendor-procurement",
+    "focus": "Define vendor selection, deliverables, acceptance and controls",
+    "frameworks": "Make-or-buy; weighted supplier evaluation; contract deliverable control",
+    "type": "workflow"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "quality-management-plan",
+    "focus": "Plan assurance, verification and defect disposition",
+    "frameworks": "Quality planning/assurance/control; verification versus validation; risk-based testing; PDCA",
+    "type": "component"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "raid-log",
+    "focus": "Maintain actionable risks, assumptions, issues and dependencies",
+    "frameworks": "RAID; cause-event-effect; issue lifecycle; assumption validation",
+    "type": "component"
+  },
+  {
+    "category": "Controls and assurance",
+    "name": "risk-workshop",
+    "focus": "Discover and select responses to project uncertainty",
+    "frameworks": "Premortem; probability-impact matrix; response planning; residual risk",
+    "type": "interactive"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "status-report",
+    "focus": "Report evidence, variance and decisions for the audience",
+    "frameworks": "RAG by tolerance; management by exception; baseline/forecast/actual",
+    "type": "component"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "decision-log",
+    "focus": "Preserve the exact choice, authority, rationale and conditions",
+    "frameworks": "DACI; decision records; option analysis",
+    "type": "component"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "escalation-brief",
+    "focus": "Obtain a timely decision beyond delegated authority",
+    "frameworks": "SBAR; options and recommendation; last responsible decision point",
+    "type": "component"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "meeting-knowledge-graph",
+    "focus": "Preserve evidence-linked meeting history and current state",
+    "frameworks": "OKF v0.2; immutable ledgers; attribution confidence; series delta",
+    "type": "workflow"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "sprint-planning",
+    "focus": "Support a coherent goal and feasible team forecast",
+    "frameworks": "Scrum Sprint Planning; Sprint Goal; Definition of Done; capacity",
+    "type": "component"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "change-request",
+    "focus": "Assess and decide changes without laundering baselines",
+    "frameworks": "Integrated change control; impact analysis; configuration history",
+    "type": "component"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "project-health-diagnostic",
+    "focus": "Diagnose delivery confidence from conflicting signals",
+    "frameworks": "Dimensional health assessment; leading/lagging indicators; causal hypotheses",
+    "type": "interactive"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "project-recovery-advisor",
+    "focus": "Select a feasible response when the plan fails",
+    "frameworks": "Root-cause hypotheses; recovery option appraisal; recovery checkpoints",
+    "type": "interactive"
+  },
+  {
+    "category": "Delivery and decisions",
+    "name": "delivery-control-cycle",
+    "focus": "Run a repeatable evidence-to-decision control review",
+    "frameworks": "Plan-monitor-control; exception escalation; integrated change control",
+    "type": "workflow"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "organizational-change",
+    "focus": "Prepare affected people to adopt the delivered change",
+    "frameworks": "ADKAR lens; change impact assessment; readiness and reinforcement",
+    "type": "workflow"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "release-readiness",
+    "focus": "Recommend go/hold using current applicable evidence",
+    "frameworks": "Readiness gates; exception authority; operational acceptance",
+    "type": "component"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "release-and-handover",
+    "focus": "Coordinate authorized execution and accepted service transfer",
+    "frameworks": "Cutover checkpoints; recovery limits; service transition; hypercare exit",
+    "type": "workflow"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "retrospective",
+    "focus": "Turn observations into testable improvements",
+    "frameworks": "PDCA; 5 Whys with evidence; experiment design",
+    "type": "component"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "lessons-learned",
+    "focus": "Capture transferable learning with limits and adoption evidence",
+    "frameworks": "After-action review; contextual lessons; knowledge transfer",
+    "type": "component"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "benefits-realization",
+    "focus": "Assign and verify post-delivery business outcomes",
+    "frameworks": "Benefits map; leading/lagging measures; ownership and review plan",
+    "type": "workflow"
+  },
+  {
+    "category": "Transition and outcomes",
+    "name": "project-closure",
+    "focus": "Close or terminate only with accepted residual obligations",
+    "frameworks": "Closure assurance; financial reconciliation; residual transfer; benefits handoff",
+    "type": "workflow"
+  }
+]

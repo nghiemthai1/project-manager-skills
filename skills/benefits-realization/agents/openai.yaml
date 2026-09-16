@@ -1,0 +1,4 @@
+interface:
+  display_name: "Benefits Realization"
+  short_description: "Define and verify benefits after project delivery"
+  default_prompt: "Use $benefits-realization to carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions."

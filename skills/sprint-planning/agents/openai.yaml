@@ -1,4 +1,4 @@
 interface:
   display_name: "Sprint Planning"
-  short_description: "Guide sprint planning with evidence and judgment"
-  default_prompt: "Use $sprint-planning to help with this project management task."
+  short_description: "Prepare a coherent Sprint Goal and feasible team forecast"
+  default_prompt: "Use $sprint-planning to help a Scrum team prepare a Sprint Goal, selected-work forecast and delivery plan while preserving team accountabilities, quality and separate project authority."

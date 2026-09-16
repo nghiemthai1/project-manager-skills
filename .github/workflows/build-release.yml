@@ -16,6 +16,8 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -r requirements-dev.txt
       - run: python scripts/validate.py
+      - run: python scripts/check-skill-metadata.py
+      - run: python scripts/check-skill-triggers.py
       - run: python -m unittest discover -s tests -v
       - run: python scripts/build_codex.py
       - uses: actions/upload-artifact@v4

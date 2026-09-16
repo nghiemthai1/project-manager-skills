@@ -1,4 +1,4 @@
 interface:
   display_name: "Escalation Brief"
-  short_description: "Guide escalation brief with evidence and judgment"
-  default_prompt: "Use $escalation-brief to help with this project management task."
+  short_description: "Present evidence, options and a precise decision request"
+  default_prompt: "Use $escalation-brief to draft a decision-ready escalation that explains the authority boundary, credible options, timing basis and consequence of no decision without assigning blame."

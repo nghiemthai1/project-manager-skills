@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vendor and Procurement Management"
+  short_description: "Plan supplier selection, acceptance and delivery control"
+  default_prompt: "Use $vendor-procurement to coordinate a supplier engagement from defined need through evidenced delivery and accepted commercial handoff."

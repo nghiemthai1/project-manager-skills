@@ -1,4 +1,6 @@
-# Validation record
+# Published v1 validation record
+
+For version 2, see the [current coverage and release gates](../evals/v2/README.md). The records below describe the published v1 library; they do not validate later content changes.
 
 This newly authored library has numerical regression tests and independent synthetic executions. It has no recorded production field trials. “Battle-tested” would overstate the evidence.
 
@@ -10,7 +12,7 @@ python scripts/validate.py
 python -m unittest discover -s tests -v
 ```
 
-The structural validator checks the exact 30-package inventory, metadata and interface fields, required sections and support files, catalog drift, and repository-local Markdown links. It does not grade teaching quality or verify external links. GitHub Actions runs the same checks on Windows and Ubuntu with Python 3.11 and 3.14.
+The v1 structural validator checked the exact 30-package inventory, metadata and interface fields, required sections and support files, catalog drift, and repository-local Markdown links. It does not grade teaching quality or verify external links. GitHub Actions runs the same checks on Windows and Ubuntu with Python 3.11 and 3.14.
 
 Local release check: all 30 automated tests pass on Windows. All four Windows/Ubuntu and Python 3.11/3.14 CI jobs also passed; the commit and run are recorded in the [release acceptance ledger](IMPLEMENTATION.md).
 

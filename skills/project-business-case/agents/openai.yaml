@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Business Case"
+  short_description: "Compare project options, costs, benefits and uncertainty"
+  default_prompt: "Use $project-business-case to recommend an investment option with explicit alternatives, assumptions, benefit ownership and a decision boundary."

@@ -22,7 +22,7 @@ AGENTS.md
 
 5. Open Codex in that project and ask: “Use the project-charter skill to turn these notes into a draft charter.”
 
-The ZIP contains all 30 complete skill folders, including templates, examples and optional helpers. Its `AGENTS.md` provides usage guidance for your project; repository maintainer instructions stay in the source repository. Downloading alone does not install anything: extraction places the files in the discovery location.
+The ZIP contains all 42 complete skill folders, including templates, examples and optional helpers. Its `AGENTS.md` provides usage guidance for your project; repository maintainer instructions stay in the source repository. Downloading alone does not install anything: extraction places the files in the discovery location.
 
 For an authenticated CLI download:
 
@@ -42,7 +42,7 @@ Copy the selected skill folder into the project's `.claude/skills/` directory or
 
 ## Copy safely
 
-Do not overwrite a different installed skill with the same name without comparing it first. Install only the skills you need, or copy all 30 if the full workflow is useful. No global configuration changes or live service credentials are required by this library.
+Do not overwrite a different installed skill with the same name without comparing it first. Install only the skills you need, or copy all 42 if the full workflow is useful. No global configuration changes or live service credentials are required by this library.
 
 The canonical source remains `skills/` in this repository. Installed copies will not update automatically when this repository changes. Record the source commit for reproducibility, then replace selected copies deliberately after review.
 

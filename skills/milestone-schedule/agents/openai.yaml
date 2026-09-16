@@ -1,4 +1,4 @@
 interface:
   display_name: "Milestone Schedule"
-  short_description: "Guide milestone schedule with evidence and judgment"
-  default_prompt: "Use $milestone-schedule to help with this project management task."
+  short_description: "Build and analyze dependency logic, float and milestone forecast"
+  default_prompt: "Use $milestone-schedule to produce an explainable schedule model and milestone decision without confusing unconstrained offsets with feasible committed dates."

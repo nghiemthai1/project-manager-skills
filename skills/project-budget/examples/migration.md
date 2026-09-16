@@ -1,19 +1,32 @@
-# Project Budget: migration example
+# Northstar: low spending with adverse earned performance
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional control artifact as of 23 October 2026. M-D001 approved B1: BAC 240k USD plus separate management reserve 24k. Cumulative PV=80k, EV=60k, AC=75k. The data are aligned to the same baseline/date; detailed earning records and supplier obligations still need inspection for an operational decision.
 
-## Control point: 23 October
+| Measure / scenario | Result | Meaning |
+|---|---:|---|
+| CV = 60−75 | −15k USD | Cost exceeds budgeted value earned |
+| SV = 60−80 | −20k USD | Value behind plan; no calendar delay implied |
+| CPI / SPI | 0.8 / 0.75 | Cost and value-progress ratios |
+| EAC if CPI persists | 240/0.8 = 300k | Historical cost-efficiency scenario |
+| EAC remaining at budget | 75+(240−60) = 255k | Remaining scope assumes budgeted performance |
+| EAC with CPI×SPI | 75+180/(0.8×0.75) = 375k | Stronger combined-efficiency scenario, not selected by default |
 
-Northstar B1 is USD 240,000, plus USD 24,000 separate management reserve. PV=80,000, EV=60,000, AC=75,000. CPI=0.8, SPI=0.75, CV=-15,000, and SV=-20,000.
+Run [the source input](../assets/migration-evm.json):
 
-A CPI-based EAC is 240,000 / 0.8 = USD 300,000. The forecast exceeds BAC by 60,000 and the total authorized envelope by 36,000. Jules needs an estimate of remaining remediation, vendor commitments, and support transition before recommending a management forecast.
+```sh
+python scripts/earned_value.py --input assets/migration-evm.json --format markdown
+```
 
-## Decision record
+AC/BAC = 31.25% measures cost incurred relative to budget, not completion or health. Only 60k of budgeted work has been earned for 75k spent. The scenario range is a reason to inspect remaining data remediation, vendor obligations, rehearsal and transition effort rather than pick whichever value fits the funding available.
 
-M-CR02, approved 9 November, establishes the phased scope, 28 November cutover, B2 USD 300,000, and its funding. This approval changes future comparison points; it does not retroactively fix the 23 October cost performance.
+## Funding bridge and later decision
 
-## Repair
+At EAC 300k, the gap to BAC is 60k and to the 264k total envelope is 36k. Access to reserve remains separately controlled. Jules should prepare the current ETC, cost-category reconciliation and feasible scope/date alternatives for Noel. On 23 October there is no authorization to treat 300k as the baseline.
 
-**Flawed:** "We are only 31.25% spent, so budget is healthy."
+M-CR02 on 9 November later authorizes phased scope, 28 November cutover and B2 300k with funding resolved: original 240k + 24k reserve + 36k additional authority. Preserve the earlier report and actual approval conditions. The later restore failure still affects readiness; budget authorization does not waive it.
 
-**Corrected:** "AC/BAC measures spending against budget, not delivery health. At this date only USD 60,000 of budgeted work is earned for USD 75,000 spent; investigate the remaining forecast and funding gap."
+## Decision and repair
+
+A bottom-up forecast may differ from every ratio scenario if remaining work has different economics. Explain that evidence and reconcile unspent commitments once; do not call a statistical ratio the only correct answer.
+
+**Repair:** “Only 31.25% spent, so budget is healthy” becomes “current efficiency implies a material possible overrun; reconcile the remaining estimate and obtain funding/scope decisions while preserving B1 history.”

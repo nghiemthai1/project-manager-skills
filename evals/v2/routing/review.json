@@ -1,0 +1,7 @@
+{
+  "unique_requests": 42,
+  "matched_primary_selections": 42,
+  "mismatches": [],
+  "positive_and_sibling_negative_checks": 84,
+  "note": "Sibling negatives repeat positive requests; 84 checks are not 84 independent executions. Candidate descriptions and requests are author-curated; this is one synthetic description-only evaluator pass."
+}

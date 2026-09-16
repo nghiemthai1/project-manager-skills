@@ -1,14 +1,23 @@
-# Lesson record
+# Contextual lesson card
 
-- ID / title / status / context:
-- Source evidence and outcome:
-- Explanation and uncertainty:
-- Response tested and result:
+Lesson ID / title / author / date / document lifecycle:
+Practice maturity and evidence basis:
+Learning question / project context and constraints:
 
-## Transferable practice
+| Expected outcome | Observed outcome and source | Mechanism or hypothesis | Intervention actually tried | Actual result / contrary evidence / limits |
+|---|---|---|---|---|
+| | | | | |
 
-## Fits when / limits / counterexamples
+Transferable principle:
+Use when / inspect these conditions first:
+Does not establish / counterconditions / costs and tradeoffs:
 
-## Adoption action, owner, and review measure
+## Adoption and review
 
-## Related artifacts and revision history
+| Proposed changed artifact or behavior | Recipient / owner confirmed? | Resources / actual implementation state | Outcome measure and guardrail | Review point / evidence for adoption, revision or stopping |
+|---|---|---|---|---|
+| | | | | |
+
+Source IDs and links / related practice:
+Distribution versus actual use / observed effect:
+Revision/supersession history and reason:

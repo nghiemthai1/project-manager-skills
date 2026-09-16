@@ -1,17 +1,28 @@
-# Decision Log: software example
+# Relay decision history without expanded approval
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario. Amounts in USD. Source facts establish the decisions below; a full meeting transcript, actual list of consulted contributors and detailed options debate are not supplied.
 
-## CR-001 decision record: 19 October
+| ID / date | Actual choice and authority | Effect / limit |
+|---|---|---|
+| D-001 /2 October 2026 | Ada establishes B1: initial scope, 30 October pilot, 100k performance budget with 10k reserve outside it | Original comparison point; not erased by later changes |
+| CR-001 /19 October | Ada approves deferring optional operator dashboard polish and B2 performance budget 120k with explicit funding | Scope/cost change; required pilot capabilities and recovery acceptance remain |
+| D-004 /29 October | Pilot date deferred to 3 November | Separate later date decision, not part of CR-001 |
 
-**State:** approved by Ada. **Choice:** defer optional operator dashboard polish and establish B2 performance budget USD 120,000 with additional funding beyond the original envelope explicitly authorized.
+## CR-001 detail
 
-The decision protects the required pilot scope while acknowledging the cost forecast. It does not waive recovery-access acceptance or authorize an unready release. Mina coordinates updates to scope, budget, and reporting; technical completion remains separate.
+Driver: Mina coordinates the change. Approver: Ada for the stated scope/funding choice. Contributors and informed recipients are not fully recorded. Lena's security acceptance and Theo's service acceptance remain separate authorities.
 
-B1 and its 2 October D-001 approval remain in history. The 16 October report continues to compare against B1. The later D-004 on 29 October defers the pilot date to 3 November; it is not backdated into CR-001.
+Funding bridge: original 100k performance budget +10k reserve release +10k additional funding =120k B2. The original 110k envelope alone would not support the new performance baseline. This approval does not prove expenditure occurred or that remaining work is complete.
 
-## Repair
+Rationale supported by context: the change addresses delivery pressure and the cost forecast while preserving required pilot scope. The exact alternatives debated and detailed rejection reasons are not supplied; do not invent a unanimous option appraisal. A present-day explanation can discuss the tradeoff but must not be presented as a transcript.
 
-**Flawed:** "Ada approved everything for launch."
+| Implementation consequence | State supported by record |
+|---|---|
+| Update scope and cost baseline with CR-001 link | Authorized; Mina coordinates, actual artifact update evidence separate |
+| Remove only optional polish from current delivery scope | Authorized boundary; implementation verification required |
+| Retain recovery/audit/guidance/reversibility evidence | No waiver supplied |
+| Revise 30 October pilot date | Not authorized by CR-001; D-004 later changes it |
 
-**Corrected:** "Ada approved specified scope and funding changes. Security acceptance and the go/no-go decision remain separate."
+The 16 October status report still compares with B1 because it precedes this approval. Lena rejects missing recovery evidence on 28 October; that does not contradict CR-001 because CR-001 never granted security acceptance. The later 2 November acceptance is recorded when it occurs.
+
+**Repair:** “Ada approved everything for launch” is replaced with the exact scope/funding decision, unchanged criteria and separate later date/acceptance records. No earlier ledger is edited to imply advance knowledge.

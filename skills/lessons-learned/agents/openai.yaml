@@ -1,4 +1,4 @@
 interface:
   display_name: "Lessons Learned"
-  short_description: "Guide lessons learned with evidence and judgment"
-  default_prompt: "Use $lessons-learned to help with this project management task."
+  short_description: "Capture reusable learning with evidence, context and limits"
+  default_prompt: "Use $lessons-learned to turn observed project outcomes and bounded improvement results into contextual lessons, separate practice maturity from aspiration and define a verifiable adoption action."

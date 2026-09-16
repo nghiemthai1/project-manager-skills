@@ -1,14 +1,23 @@
-# Scope and WBS
+# Scope, WBS and dictionary
 
-- Mandate / version / approval status:
-- Included outcomes:
-- Explicit exclusions:
+Project / mandate / scope version / as-of / approval status:
+Included outcomes / explicit exclusions / disputed boundaries:
 
-| WBS ID | Parent | Deliverable / package | Owner | Completion evidence | Boundary and interfaces | Assumptions |
+| WBS ID | Parent | Deliverable / package | Delivery owner and confirmation | Completion evidence / acceptor | Boundary / interfaces | Uncertainty |
 |---|---|---|---|---|---|---|
+| | | | | | | |
 
-## Coverage and overlap review
+## Work-package dictionary — repeat where the decision needs detail
 
-## Unresolved scope decisions
+ID and title / source requirements / output:
+Included work / excluded work / shared work counted elsewhere:
+Acceptance criteria and authority / actual agreement status:
+Provider inputs / receiving outputs / dependency IDs:
+Estimate method and unit / assumptions / investigation or revisit trigger:
 
-## Version history and change references
+| Coverage finding | Requirement/package affected | Consequence | Resolution or proposed action / owner | Status |
+|---|---|---|---|---|
+| | | | | |
+
+Version/change record / affected estimates, dates and costs:
+Handoff: stable package IDs to planning and traceability; no approval implied by inclusion in a draft.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Change Request"
-  short_description: "Guide change request with evidence and judgment"
-  default_prompt: "Use $change-request to help with this project management task."
+  short_description: "Assess a proposed change and preserve exact approval boundaries"
+  default_prompt: "Use $change-request to develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded authority and verified prospective baseline updates."

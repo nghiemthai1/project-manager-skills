@@ -1,75 +1,89 @@
 ---
 name: resource-capacity-plan
-description: "Compare project demand with realistic availability and skills, expose overloads, and develop staffing or scope options for a defined planning period."
+description: Compare complete demand with realistic availability, skills and timing. Use when staffing, competing
+  assignments or a shared specialist may make a plan infeasible.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Expose person-level capacity constraints and develop explicit allocation, scope or sequence options without
+    assuming interchangeable people.
+  frameworks: Capacity-demand analysis; skill constraints; resource leveling options
+  best_for: '["Expose person-level capacity constraints and develop explicit allocation, scope or sequence options
+    without assuming interchangeable people."]'
+  scenarios: '["Check next weeks assignments against each persons available hours, leave, support load and specialist
+    constraints."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Resource Capacity Plan
 
 ## Purpose
 
-Make resource constraints visible before they become missed commitments. Use for sprint preparation, shared-specialist allocation, or cross-project planning. This plan proposes allocations; it does not grant authority over another manager's staff.
+Determine whether the proposed work can be staffed within a stated period and identify the real decisions when it cannot. Produce an availability/demand table, skill and timing checks, feasible options and allocation status. Use for sprint preparation, rehearsal planning, shared specialists or cross-project coordination.
+
+The artifact proposes or records assignments; it does not grant authority over another manager's staff. Team headcount and aggregate spare hours cannot establish that the required person is available at the needed time with the needed skill.
 
 ## Input
 
-Bring a common planning period, named people or explicit roles, gross available hours, leave, operational duties, other assignments, and the demand basis.
+Bring a common planning period, people or defined roles, gross hours, leave, non-project overhead, all assignments, effort estimates, skill needs and timing constraints. Reuse supplied context. Partial input supports a qualified draft; if nothing is supplied, ask which work and period need a feasibility decision. Missing other-project allocations remain unknown, not zero.
 
-Example: "Check whether Omar can support the pilot while retaining his support rotation."
-
-Missing cross-project allocations make available capacity uncertain. Do not treat the absence of those records as zero demand.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Example: “Can Omar support the pilot while retaining the support rotation? Check both his hours and the integration window.” Use hour-based analysis when effort inputs are meaningful; empirical team flow may be a better forecast when detailed individual allocations would be speculative.
 
 ## Key Concepts
 
-### Capacity is not headcount
+### Reconcile the arithmetic before interpreting it
 
-Gross hours minus leave and non-project overhead gives modeled availability. Compare it with all demand in the same period. Do not subtract the same meeting or support duty twice: either it is a deduction or an allocation with a clear basis.
+For one person and period, modeled availability = gross hours − leave − overhead. Demand is the sum of all included allocations; remaining = availability − demand. Overload is the positive part of demand − availability. Every category appears once: operational support can be a deduction or an allocation, but not both. State which convention is used.
 
-### Skills and timing
+Load percentage is demand/availability when availability is positive. Zero availability means the ratio is unavailable, not automatically zero; positive demand then represents an obvious shortage. The [offline helper](scripts/capacity.py) enforces finite nonnegative inputs and reports individual overload even when the team has spare hours. Read [its contract](references/helper.md); it cannot discover omitted assignments or infer skills and daily calendars.
 
-Unused hours on a security specialist do not automatically replace integration engineering hours. A period total can also hide a one-day peak or a dependency bottleneck. Review skill fit and intra-period timing after the arithmetic.
+### Capacity has skill, timing and uncertainty
 
-### Why this works
+| Check | What the arithmetic alone misses |
+|---|---|
+| Skill fit | Spare security hours do not automatically perform integration engineering |
+| Timing | Two tasks may need the same specialist during the same four-hour window despite fitting the weekly total |
+| Prerequisites | Access, environment or a provider handoff can make nominal hours unusable |
+| Onboarding | New capacity may consume supervision and require time before productive work |
+| Unplanned demand | Support interruptions need an evidenced allowance or scenario; no universal utilization percentage is assumed |
+| Completeness | Missing cross-project work can make a positive balance misleading |
 
-A named overload creates a concrete choice: reduce or defer demand, change sequence, add genuinely available skilled capacity, or accept a consequence through the right authority. An optimistic utilization target creates no capacity.
+Separate known availability, estimated demand and proposed allocation. An estimate from an agent is not a team commitment. Do not convert story points to hours using a universal exchange rate, or compare teams using point velocity as productivity.
 
-Use hours when reliable effort estimates exist. For a stable agile team, empirical throughput may provide a better forecast than detailed individual allocation. Never convert story points using a universal hours ratio.
+### Resolve constraints through explicit options
+
+Resource leveling changes the sequence to respect availability and may move finish. Resource smoothing tries to resolve peaks within available schedule flexibility; it requires the actual network and does not create float. Adding capacity works only if the skill, start, access and supervision are real. Overtime, deferral and reassignment have costs and authorities; none should appear as a silent arithmetic fix.
+
+A scenario can be useful before confirmation. Label it, state what must be agreed and retain the current case alongside it. If data are incomplete, report “feasible under these assumptions” or an unresolved constraint rather than an unconditional staffing verdict.
 
 ## Application
 
-1. Establish period boundaries and whether data covers all assignments. Label missing allocations as unknown rather than entering invented zeros.
-2. Separate gross hours, leave, overhead, and project demand. Record source dates and assumptions.
-3. Use [capacity.py](scripts/capacity.py) for hour-based comparison after reading [the input contract](references/helper.md).
-4. Examine each person's overload and required skill. Do not let aggregate spare hours cancel a specialist shortage.
-5. Check sequencing and intra-period peaks. Compare realistic options with their lead times and learning costs.
-6. Record proposed allocation changes, approving resource managers, and unresolved decisions. Recalculate only after changes are confirmed or clearly label a what-if scenario.
-7. Review when availability, scope, or external commitments change. Feed confirmed capacity to the schedule.
+1. **Define period and completeness.** Align dates, hours conventions and scope. Inventory all relevant assignments and the source/as-of of availability. Mark missing allocations and role vacancies explicitly.
+2. **Build the baseline comparison.** Separate gross hours, leave, overhead and demand. Reconcile duplicate categories and include review, integration, transition and support where required by the scope.
+3. **Calculate and inspect each person.** Use the helper for supported hourly inputs, then examine overloads and unknowns. Aggregate totals summarize but cannot cancel an individual's constraint.
+4. **Test skill and calendar feasibility.** Map critical skills to timed work, check intra-period peaks and prerequisites, and include onboarding/supervision. Cross-check the schedule rather than treating every remaining hour as fungible.
+5. **Compare options.** Show the amount and timing of demand to defer, resequence, reassign or resource. State scope/date/quality/cost effects, actual approving roles and the evidence required for each option. Preserve mandatory acceptance work.
+6. **Record and refresh.** Keep proposed and confirmed allocations separate. Recalculate confirmed changes or label a what-if. Feed the accepted availability/constraints to scheduling and review when scope, leave, support load or commitments change.
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Use [the capacity template](template.md). Quality means the reader can find the constrained skill/person/time, understand the demand basis and identify the decision that could resolve it. A polished utilization chart is not enough.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay staffing comparison](examples/software.md): aggregate spare hours conceal Omar's overload; includes runnable input.
+- [Northstar rehearsal capacity](examples/migration.md): a support reassignment is a conditional option, not free vendor capacity.
 
 ## Common Pitfalls
 
-- **100% before interruption:** all gross hours are committed while leave and support are ignored. Include evidenced deductions or label them unknown.
-- **Double haircut:** support is deducted from availability and counted again as demand. Reconcile each category once.
-- **Fungible people:** spare security hours are used to cancel an engineering overload. Check the actual skill and timing requirement.
-- **Nominal staffing:** a new hire is treated as productive immediately. Include confirmed start, access, onboarding, and supervision demands.
-- **False certainty from empty records:** missing assignments are entered as zero. State the data gap and withhold an unconditional feasibility claim.
+- **100% before interruption:** gross hours are all committed while leave/support are ignored. Use evidenced deductions or expose the uncertainty.
+- **Double haircut:** the same support duty reduces availability and appears in demand. Reconcile categories once before acting on the result.
+- **Fungible people:** spare hours from an unrelated skill erase a bottleneck. Check capability and actual timing.
+- **Nominal staffing:** a new hire or vendor is productive immediately on paper. Confirm start, access, competence and supervision cost.
+- **False certainty from blank data:** absent allocations are entered as zero. Retain unknowns and qualify feasibility.
+- **Accepted by spreadsheet:** a balanced scenario is reported as staffed. Obtain the actual resource decision before updating the committed plan.
 
 ## References
 
-- [Capacity in Sprint forecasting](https://scrumguides.org/scrum-guide.html)
-- [Sprint Planning](../sprint-planning/SKILL.md)
-- [Milestone Schedule](../milestone-schedule/SKILL.md)
-- [Project Recovery Advisor](../project-recovery-advisor/SKILL.md)
+- [Scrum Guide](https://scrumguides.org/scrum-guide.html): team forecasting and accountabilities where Scrum applies.
+- [Milestone Schedule](../milestone-schedule/SKILL.md), [Sprint Planning](../sprint-planning/SKILL.md), [Project Recovery Advisor](../project-recovery-advisor/SKILL.md): sequence, forecast and respond to constraints.
 
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+These packages are optional; retain the period, hours, skill/timing checks and assignment status when using the template alone.

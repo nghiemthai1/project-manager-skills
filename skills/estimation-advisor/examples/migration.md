@@ -1,25 +1,25 @@
-# Estimation Advisor: migration example
+# Northstar: estimate a rehearsal, investigate data rework
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional instructional subcase linked to the migration context. Assume a defined sample rehearsal with O=3, M=6, P=15 person-days, including preparation, execution, reconciliation and correction within the stated sample boundary. These are teaching values, not Northstar's approved schedule or a population-wide migration estimate.
 
-## Guided decision
+## Supplied context and method choice
 
-**Jules:** "How long will the attachment migration take? The last migration took three weeks."
+The bounded rehearsal can use three-point scenarios; unknown population-wide attachment correction should not inherit that range. On 6 November the canonical M-I002 establishes actual lost links, but their full extent and repair effort still require evidence. The advisor should ask for the affected population/condition only if it changes the next decision, not repeat all questions about project purpose.
 
-**Advisor:** "Does the earlier migration match this record population, attachment scheme, and restore requirement?"
+| Calculation | Result | Meaning |
+|---|---:|---|
+| Triangular mean | (3+6+15)/3 = 8 person-days | Equal-weight scenario convention |
+| PERT mean | (3+4×6+15)/6 = 7 | Typical-case-weighted convention |
+| Spread heuristic | (15−3)/6 = 2 | Not a validated standard deviation for a deadline claim |
 
-**Jules:** "No. The old system had no attachments."
+1. **Bounded rehearsal:** retain the seven-person-day PERT convention if its assumptions are accepted, alongside the three scenarios and exclusions.
+2. **Unknown correction:** propose an investigation that identifies failure patterns, affected population and reproducible repair evidence. Exact timebox, owner and capacity must be agreed; “investigate” is not a blank commitment.
+3. **Parametric alternative after evidence:** a representative measured correction rate might support size×rate plus setup/review effort, but only over comparable records and conditions. A tiny convenience sample cannot establish a reliable rate for all attachments.
 
-**Advisor:** "That analogy supports some setup work but not the dominant migration risk. Run a bounded rehearsal on representative attachment cases, then estimate the remaining migration bottom-up."
+## Handoff and sensitivity
 
-## Worked recommendation
+Chen's limited availability and Beck's supplier dependencies must be modeled separately from person-days. Shared mapping uncertainty can affect multiple packages together; summing their estimates as independent would understate exposure. The milestone schedule also needs review/acceptance availability and actual calendars.
 
-Chen's proposed investigation must answer whether identifiers preserve ticket-to-attachment relationships and how reconciliation detects missing links. Inputs include representative edge cases, an explicit sample basis, elapsed extraction time, failed-record handling, and restore evidence. No duration is invented for this investigation; Chen must propose the timebox with available capacity.
+No 95% completion date is supported by these three values. A requested cutover date must be tested against the integrated remaining work and the actual approval boundary. Earlier 21 November and later authorized 28 November baselines remain distinct from this instructional estimate.
 
-Use observed rehearsal throughput only after separating fixed setup from record-volume work. Explain whether the test environment represents production. Re-estimate when the mapping or population changes.
-
-## Repair
-
-**Flawed:** "Three weeks, because we migrated a system before."
-
-**Corrected:** "The prior three-week migration is not comparable for attachment handling. Estimate shared setup from history; resolve attachment linkage through a rehearsal before forecasting total duration."
+**Repair:** “Multiply the sample's average repair time by every record and promise the result” ignores sampling, failure-pattern and setup assumptions. Validate the rate and scope or retain investigation as the next bounded decision.

@@ -1,75 +1,91 @@
 ---
 name: project-budget
-description: "Build and review project cost baselines, actuals, forecasts, reserves, and earned value indicators. Use for budget planning, variance analysis, or funding decisions."
+description: Build and review cost baselines, actuals, remaining forecasts and funding gaps. Use when planning a
+  budget or explaining project cost performance and reserve decisions.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Reconcile project cost evidence and forecast assumptions while separating performance measurement from
+    spending authorization.
+  frameworks: Cost baseline; contingency versus management reserve; earned value management
+  best_for: '["Reconcile project cost evidence and forecast assumptions while separating performance measurement
+    from spending authorization."]'
+  scenarios: '["Analyze cumulative PV, EV and AC against BAC, forecast remaining cost and expose funding gaps."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Project Budget
 
 ## Purpose
 
-Help the project manager distinguish what the project may spend, what it has spent, and what it is now expected to cost. Use for a budget baseline, control-period update, or funding escalation. A calculated forecast is not authorization.
+Explain what the project is authorized to spend, what it has incurred and what its remaining work is expected to cost. Produce a cost/funding bridge, forecast comparison and decision request. Use for baseline preparation, period control, a funding escalation or a proposed scope change.
+
+A forecast is not authorization. A budget increase does not prove better cost performance, and low cash spend does not prove healthy delivery. Keep financial evidence aligned to the same scope, currency, baseline and status date before calculating ratios.
 
 ## Input
 
-Bring currency, reporting date, scoped cost categories, approved budget and approval record, actuals, commitments, remaining estimate, and reserve treatment. Earned value additionally requires planned value and objective earning rules.
+Bring cost categories, estimates, actuals/accruals, open commitments, remaining-work estimate, approved budget and decision record, reserve treatment, currency and accounting cut-off. Earned value additionally needs planned value and objective earning rules. Reuse supplied context; partial data supports a qualified bridge, not invented precision. With no input, ask whether the decision concerns initial affordability, current variance or additional funding.
 
-Example: "Explain the 16 October Relay variance and the funding decision it implies."
-
-If planned/earned value is not maintained reliably, use actual-plus-estimate-to-complete forecasting. Do not manufacture EVM from subjective percent complete.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Example: “Explain Relay's 16 October cost position and the decision implied by a 120k forecast.” If PV/EV are not maintained credibly, use actual-plus-estimate-to-complete with completion evidence rather than manufacturing EVM from a subjective percent complete.
 
 ## Key Concepts
 
-### Baseline and funding
+### Keep four financial views distinct
 
-Budget at completion (BAC) is the performance baseline used in EVM. Contingency for identified risks may be included according to the project's budgeting convention. Management reserve is commonly held outside the performance baseline; explicitly state local treatment. A funding envelope and spending authority must be recorded separately from forecast arithmetic.
+| View | Meaning / control |
+|---|---|
+| Performance baseline / BAC | Budget at completion for the defined scope used in performance measurement; identify its approval |
+| Reserves | State the local convention: identified-risk contingency may be inside the baseline, while management reserve may be outside and separately controlled |
+| Actuals and commitments | Incurred cost versus future obligations; reconcile invoiced/accrued/unspent amounts at one cut-off |
+| Forecast and funding | Expected total cost versus the authorized envelope and access to funds; reserve existence is not automatic release authority |
 
-### Earned value
+Do not add an entire purchase order to actuals when part of it is already incurred. Explain whether unspent commitments are included in the remaining estimate. Whole-life operation or benefit costs may be outside the project baseline yet still belong in the business case; state the boundary instead of silently excluding them.
 
-PV is budgeted work planned by the status date; EV is budgeted value of work actually earned under defined rules; AC is actual cost. CV=EV-AC and SV=EV-PV are value variances. CPI=EV/AC and SPI=EV/PV are ratios. SV is not a count of days. Use the [helper contract](references/helper.md) for forecast assumptions and zero denominators.
+### Use earned value only with a defensible earning basis
 
-### Why this works
+PV is budgeted work planned by the status date; EV is budgeted value of work actually earned under defined rules; AC is actual cost. Examples of earning rules include discrete completed deliverables or weighted milestones with objective evidence. Time elapsed and money spent are not equivalent to earned progress.
 
-Comparing earned progress with cost exposes an overrun earlier than cash spent alone. A current remaining-work estimate incorporates scope changes and known problems that a historical ratio may miss. Comparing multiple forecast assumptions supports a decision rather than pretending one formula predicts the future.
+`CV = EV − AC` and `SV = EV − PV` are monetary/value variances. `CPI = EV/AC` and `SPI = EV/PV` are ratios. Monetary SV is not calendar delay; SPI reaches one for fully earned baseline scope even if completion was late. Ratios with zero denominators are unavailable, not automatically healthy.
 
-Actuals, open commitments, and remaining estimates must be reconciled so the same cost is not counted twice. Define the accounting cut-off before comparing values.
+### Forecasts express different assumptions
+
+| Forecast | Formula | When its assumption needs scrutiny |
+|---|---|---|
+| Bottom-up management forecast | `AC + current ETC` | ETC must cover all remaining scope, correction, commitments and transition once |
+| Remaining at budget | `AC + BAC − EV` | Assumes past variance does not recur in remaining work |
+| Cost efficiency persists | `BAC / CPI` | Historical aggregate efficiency must be relevant to remaining work |
+| Cost and schedule efficiencies persist | `AC + (BAC−EV)/(CPI×SPI)` | Strong combined assumption; not an automatic default or date forecast |
+
+The spread between scenarios is a prompt to inspect remaining work, not permission to pick the cheapest. The [offline helper](scripts/earned_value.py) calculates supported indicators and unavailable values; read [its contract](references/helper.md). It does not choose management's forecast, release reserve or convert currency. Preserve full calculation precision internally and round for the audience.
 
 ## Application
 
-1. Establish scope, currency, as-of date, baseline version, and authorization. Reconcile cost data to the same period and population.
-2. Separate baseline, reserve, actuals, commitments, and estimate to complete. Document how committed but unspent costs enter the remaining forecast.
-3. Choose actual-plus-remaining forecast unless objective earned-value records support EVM. Where supported, use [earned_value.py](scripts/earned_value.py).
-4. Explain variances and compare forecast scenarios. Treat a ratio forecast as a diagnostic, not an automatic replacement for the management forecast.
-5. Identify gaps against the baseline and total authorized funding, with explicit reserve release authority.
-6. Present options with scope/schedule/quality consequences. Request a funding or scope decision from the right authority; preserve the earlier baseline.
-7. Record accepted changes prospectively and show the bridge from the previous budget. Keep prior reports unchanged.
+1. **Establish the cost boundary.** Record scope/baseline version, authorization, currency, cut-off and accounting basis. Identify whether reserve, taxes, supplier costs, internal effort and transition are included, excluded or unknown.
+2. **Reconcile costs and obligations.** Build actual, committed-but-unspent and uncommitted-remaining views. Remove double counting without losing obligations; mark incomplete ledgers rather than assuming zero.
+3. **Select the measurement method.** Use actual-plus-ETC unless reliable PV/EV support EVM. Where EVM applies, retain earning rules and result evidence. The helper accepts only one aligned cumulative dataset.
+4. **Compare and explain forecasts.** Calculate the relevant scenarios and inspect current bottom-up remaining work. Explain material variance causes as evidenced findings or hypotheses; do not assert that a ratio identifies a cause.
+5. **Show the funding bridge.** Compare the recommended/conditional forecast with BAC and the total authorized envelope. Separate reserve release from additional authority. Present scope/date/quality consequences of options to the actual decider.
+6. **Record changes prospectively.** Link the exact authorization, new baseline and reserve treatment. Preserve earlier reports and the prior baseline. Revisit forecasts when actuals, scope, remaining estimates or obligations change.
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Use [the budget template](template.md). A decision-ready artifact reconciles the dollars, explains the forecast assumption and makes the authorization gap visible. Unknown obligations or weak EV make the conclusion conditional rather than a reason to invent numbers.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay cost/funding bridge](examples/software.md): three forecast assumptions, reserve treatment and the later B2 decision.
+- [Northstar cost pressure](examples/migration.md): low spend does not mean healthy progress; includes a bridge to revised funding.
 
 ## Common Pitfalls
 
-- **Burn equals progress:** spending 50% is reported as 50% complete. Use accepted earning rules or a separate deliverable view.
-- **Reserve invisibility:** reserve is silently absorbed into BAC. State its location, authority, and release record.
-- **Formula as prophecy:** EAC is presented as a guaranteed final cost. State the persistence assumption and compare a bottom-up remaining estimate.
-- **Budget after the fact:** an overrun is erased by overwriting BAC. Preserve the baseline and link the authorized change.
-- **Duplicate commitments:** a purchase order is included in actuals and added again in remaining costs. Reconcile incurred and unincurred amounts.
+- **Burn equals progress:** 50% spent becomes 50% complete. Use objective earning or a separate deliverable view.
+- **Reserve invisibility:** reserve is silently included twice or treated as free spending authority. State location, control and release record.
+- **Formula as prophecy:** one EAC becomes a guaranteed cost. Explain assumptions and compare current remaining-work evidence.
+- **Budget after the fact:** BAC is overwritten to erase past variance. Retain dated reports and authorized change history.
+- **Duplicate commitments:** incurred supplier cost is added again as future obligation. Reconcile consumed and unspent portions.
+- **Dollar SV becomes days:** a financial variance is used to move a milestone. Use the actual schedule for calendar impact.
 
 ## References
 
-- [DOE earned value and forecast guidance](https://www.energy.gov/documents/integrated-project-management-using-earned-value-management-system)
-- [Status Report](../status-report/SKILL.md)
-- [Change Request](../change-request/SKILL.md)
-- [Project Health Diagnostic](../project-health-diagnostic/SKILL.md)
+- [DOE earned value guidance](https://www.energy.gov/documents/integrated-project-management-using-earned-value-management-system): measures and forecast assumptions.
+- [Project Business Case](../project-business-case/SKILL.md), [Status Report](../status-report/SKILL.md), [Change Request](../change-request/SKILL.md): justification, reporting and authorized change.
 
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+Related packages are optional. Retain the cost boundary, evidence, forecast basis and approval distinction in a standalone budget artifact.

@@ -1,19 +1,30 @@
-# Resource Capacity Plan: software example
+# Relay: four spare team hours do not solve an eight-hour shortage
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional capacity exercise for 19–30 October 2026. Hours are instructional inputs, not independently confirmed resource commitments. Support is an allocation; meetings/administration are overhead, so support is not deducted twice.
 
-## Worked comparison: 19–30 October
+| Person | Gross | Leave | Overhead | Available | Relay demand | Support demand | Total demand | Remaining / overload |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Omar | 80 | 8 | 16 | 56 | 48 | 16 | 64 | −8; overload 8 |
+| Lena | 40 | 0 | 8 | 32 | 20 | 0 in this explicitly bounded exercise | 20 | +12; overload 0 |
+| Total | 120 | 8 | 24 | 88 | 68 | 16 | 84 | +4 aggregate, but Omar still overloaded |
 
-Omar has 80 gross hours, eight hours of leave, and sixteen hours of meetings/administration. Availability is 56 hours. Relay needs 48 hours and support needs sixteen, for total demand of 64. Overload is eight hours.
+Omar's modeled load is 64/56 ≈ 114.3%; Lena's is 20/32 = 62.5%. The aggregate 84/88 ≈ 95.5% does not establish feasibility. Lena's security expertise is not evidence of integration-engineering capacity. In a real record, an absent support assignment would remain unknown; this exercise explicitly supplies no additional Lena demand.
 
-Lena has forty gross hours and eight overhead hours, leaving 32. Her Relay demand is twenty, leaving twelve. Team totals show 88 available against 84 demanded, but Omar still has an eight-hour overload.
+Run [the example input](../assets/software-capacity.json):
 
-## Recommendation
+```sh
+python scripts/capacity.py --input assets/software-capacity.json --format markdown
+```
 
-Mina should negotiate eight hours of Omar's demand, sequence the work differently, or obtain confirmed integration-capable help. Lena's spare capacity cannot be silently transferred because her security expertise does not establish integration capability. The helper reports person-level overload separately from team totals for this reason.
+## Decision options
 
-## Repair
+| Option | What it changes | Required confirmation |
+|---|---|---|
+| Transfer 8 support hours | Omar demand becomes 56 if a qualified colleague accepts those hours | Actual support owner/manager, competent coverage and timing |
+| Defer 8 hours of eligible Relay work | Omar demand becomes 56 in this period | Scope/date impact and relevant authorization; mandatory acceptance cannot disappear |
+| Add integration-capable help | May reduce Omar's work, but supervision can offset the gain | Named skill, access, availability and bounded task division |
+| Resequence across periods | Moves demand to a later period | Real schedule flexibility and later capacity, not assumed float |
 
-**Flawed:** "The team has four spare hours, so the pilot is fully staffed."
+These are what-if scenarios, not decisions. Mina must resolve the actual constrained work and approving resource role. A balanced period still needs daily/window checks: if two tasks need Omar at the same time, total hours are insufficient evidence.
 
-**Corrected:** "Aggregate capacity is positive, but the integration owner is overloaded by eight hours. Resolve that constraint before declaring the plan feasible."
+**Repair:** “The team has four spare hours, so the pilot is staffed” becomes “Omar is eight hours overloaded under the supplied case; twelve spare security hours do not establish a substitute. Confirm a specific scope, sequence or coverage decision.”

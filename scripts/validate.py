@@ -10,13 +10,46 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = ('Purpose','Input','Key Concepts','Application','Examples','Common Pitfalls','References')
 TYPES = {'component','interactive','workflow'}
-EXPECTED = {
- 'delivery-approach-advisor','project-charter','stakeholder-map','stakeholder-engagement-advisor','project-kickoff',
- 'scope-and-wbs','acceptance-and-traceability','estimation-advisor','milestone-schedule','integrated-project-planning',
- 'dependency-map','resource-capacity-plan','project-budget','raid-log','risk-workshop',
- 'communication-plan','status-report','decision-log','escalation-brief','meeting-knowledge-graph',
- 'sprint-planning','change-request','project-health-diagnostic','project-recovery-advisor','delivery-control-cycle',
- 'release-readiness','release-and-handover','retrospective','lessons-learned','project-closure'}
+# Reviewed target inventory is independent of which folders happen to exist.
+# Adding an empty folder cannot make an omitted planned package disappear.
+LIBRARY_PATH = 'catalog/library.json'
+
+
+def library_rows(root):
+    rows = json.loads((root/LIBRARY_PATH).read_text(encoding='utf-8'))
+    if not isinstance(rows, list) or not rows:
+        raise ValueError('library manifest must be a nonempty list')
+    names = [row['name'] for row in rows]
+    if len(set(names)) != len(names):
+        raise ValueError('duplicate names in library manifest')
+    for row in rows:
+        for key in ('name', 'category', 'focus', 'frameworks', 'type'):
+            if not isinstance(row[key], str) or not row[key].strip():
+                raise ValueError(f'library row requires nonempty {key}')
+        if row['type'] not in TYPES:
+            raise ValueError(f"invalid library type: {row['name']}")
+    return rows
+
+
+def framework_tables(entries, library, prefix=''):
+    by_name = {entry['name']: entry for entry in entries}
+    categories = list(dict.fromkeys(row['category'] for row in library))
+    lines = []
+    for category in categories:
+        rows = [row for row in library if row['category'] == category]
+        lines.extend([f'### {category} ({len(rows)})', '', '| Skill | Focus | Framework |', '|---|---|---|'])
+        for row in rows:
+            entry = by_name.get(row['name'])
+            if entry is None:
+                continue
+            lines.append(f"| [{entry['title']}]({prefix}{entry['path']}) | {row['focus']} | {row['frameworks']} |")
+        lines.append('')
+    return '\n'.join(lines).rstrip()
+
+
+TABLE_START = '<!-- skill-framework-catalog:start -->'
+TABLE_END = '<!-- skill-framework-catalog:end -->'
+
 
 
 def frontmatter(text):
@@ -57,7 +90,7 @@ def bundle_root(path,root):
 def local_link_errors(path,root):
     text=without_fences(path.read_text(encoding='utf-8'))
     errors=[]
-    for target in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^)]+)\)',text):
+    for target in re.findall(r'!?\[[^\]\n]+\]\(([^)]+)\)',text):
         target=target.strip().split(' "',1)[0].strip('<>')
         parsed=urlsplit(target)
         if parsed.scheme or target.startswith('//'): continue
@@ -75,9 +108,15 @@ def validate(root=ROOT):
     root=root.resolve()
     errors=[]
     entries=[]
+    try:
+        library = library_rows(root)
+    except (ValueError, KeyError, TypeError, OSError) as exc:
+        return [f'library manifest: {exc}'], []
+    expected = {row['name'] for row in library}
+    intended = {row['name']: row for row in library}
     found={p.parent.name for p in (root/'skills').glob('*/SKILL.md')}
-    if found!=EXPECTED:
-        errors.append(f'skill set mismatch: missing={sorted(EXPECTED-found)}, unexpected={sorted(found-EXPECTED)}')
+    if found!=expected:
+        errors.append(f'skill set mismatch: missing={sorted(expected-found)}, unexpected={sorted(found-expected)}')
     for path in sorted((root/'skills').glob('*/SKILL.md')):
         slug=path.parent.name
         try:
@@ -85,20 +124,24 @@ def validate(root=ROOT):
             if data.get('name')!=slug or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',slug) or len(slug)>64:
                 errors.append(f'{slug}: invalid or mismatched name')
             description=data.get('description')
-            if not isinstance(description,str) or not 1<=len(description)<=1024:
+            if not isinstance(description,str) or not 1<=len(description)<=200:
                 errors.append(f'{slug}: invalid description')
             meta=data.get('metadata',{})
             if not isinstance(meta,dict) or meta.get('type') not in TYPES or any(not isinstance(v,str) for v in meta.values()):
                 errors.append(f'{slug}: metadata must be string-valued with a supported type')
-            for heading in REQUIRED:
-                if f'## {heading}\n' not in body: errors.append(f'{slug}: missing {heading} section')
+            headings = re.findall(r'^## (.+)$', without_fences(body), re.MULTILINE)
+            required_headings = [heading for heading in headings if heading in REQUIRED]
+            if required_headings != list(REQUIRED):
+                errors.append(f'{slug}: required sections must occur once in the prescribed order')
+            if slug in intended and meta.get('type') != intended[slug]['type']:
+                errors.append(f'{slug}: type differs from reviewed library manifest')
             if re.search(r'\b(?:TODO|FIXME|TBD_AUTHOR)\b',body): errors.append(f'{slug}: unfinished author scaffold')
             for relative in ('template.md','examples/software.md','examples/migration.md','agents/openai.yaml'):
                 if not (path.parent/relative).is_file(): errors.append(f'{slug}: missing {relative}')
             ui=yaml.safe_load((path.parent/'agents/openai.yaml').read_text(encoding='utf-8'))['interface']
             if not 25<=len(ui['short_description'])<=64: errors.append(f'{slug}: UI short description length')
             if '$'+slug not in ui['default_prompt']: errors.append(f'{slug}: UI prompt missing explicit invocation')
-            entries.append({'name':slug,'title':ui['display_name'],'type':meta.get('type'),'description':description,'path':f'skills/{slug}/SKILL.md'})
+            entries.append({'name':slug,'title':ui['display_name'],'type':meta.get('type'),'description':description,'path':f'skills/{slug}/SKILL.md','category':intended.get(slug,{}).get('category'),'focus':intended.get(slug,{}).get('focus'),'frameworks':intended.get(slug,{}).get('frameworks')})
         except (ValueError,yaml.YAMLError,KeyError,TypeError,OSError) as exc:
             errors.append(f'{slug}: {exc}')
     catalog=root/'catalog/skills.json'
@@ -107,6 +150,10 @@ def validate(root=ROOT):
             if json.loads(catalog.read_text(encoding='utf-8'))!=entries: errors.append('catalog/skills.json differs from skill metadata; rebuild catalog')
         except (ValueError,OSError) as exc: errors.append(f'catalog: {exc}')
     else: errors.append('catalog/skills.json missing')
+    readme = (root/'README.md').read_text(encoding='utf-8')
+    table_block = TABLE_START+'\n'+framework_tables(entries, library)+'\n'+TABLE_END
+    if table_block not in readme:
+        errors.append('README framework catalog differs from manifest; rebuild catalog')
     for path in root.rglob('*.md'):
         rel=path.relative_to(root)
         if any(part.startswith('.') for part in rel.parts) or rel.parts[0]=='meeting-knowledge-graph' or path.name.startswith('TLDR_AI_'):
@@ -123,10 +170,19 @@ def main():
     if args.build_catalog:
         target=ROOT/'catalog'; target.mkdir(exist_ok=True)
         (target/'skills.json').write_text(json.dumps(entries,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-        lines=['# Skill catalog','','Each skill has a template, two worked examples, and failure-mode guidance. Component skills produce bounded artifacts; interactive skills diagnose and recommend; workflows coordinate related decisions.','','| Skill | Type | Use when |','|---|---|---|']
-        for entry in entries:
-            lines.append(f"| [{entry['title']}](../{entry['path']}) | {entry['type']} | {entry['description']} |")
-        (target/'README.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+        library = library_rows(ROOT)
+        tables = framework_tables(entries, library, '../')
+        (target/'README.md').write_text('# Skill catalog\n\n'+f'{len(entries)} packages. Frameworks explain the methods used; they do not establish certification or field reliability. Read each skill for fit, limits, examples and failure analysis.\n\n'+tables+'\n',encoding='utf-8')
+        readme_path = ROOT/'README.md'
+        readme = readme_path.read_text(encoding='utf-8')
+        block = TABLE_START+'\n'+framework_tables(entries, library)+'\n'+TABLE_END
+        if TABLE_START in readme and TABLE_END in readme:
+            start = readme.index(TABLE_START)
+            end = readme.index(TABLE_END, start)+len(TABLE_END)
+            readme = readme[:start]+block+readme[end:]
+        else:
+            readme = readme.replace('## Calculation helpers', '## Skills and frameworks\n\n'+block+'\n\n## Calculation helpers')
+        readme_path.write_text(readme,encoding='utf-8')
         errors,_=validate()
     if errors:
         for error in errors: print(error,file=sys.stderr)

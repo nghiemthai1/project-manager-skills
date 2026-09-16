@@ -1,71 +1,87 @@
 ---
 name: scope-and-wbs
-description: "Define project scope and a deliverable-oriented work breakdown with exclusions, ownership, and completion evidence. Use before estimating or controlling scope."
+description: Define a deliverable-oriented scope breakdown with boundaries and completion evidence. Use when preparing
+  estimates or resolving missing, duplicated or expanding project work.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted.
+  frameworks: Deliverable-oriented WBS; 100% rule; WBS dictionary
+  best_for: '["Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted."]'
+  scenarios: '["Decompose the approved project scope into deliverable-oriented work packages with boundaries and
+    completion evidence."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Scope and Work Breakdown
 
 ## Purpose
 
-Translate a mandate into manageable deliverables without hiding the work required for acceptance and transition. Use for initial planning or impact analysis. A WBS organizes scope; it does not prescribe the execution sequence.
+Make the project's work boundary explicit before people price it, schedule it or claim it is complete. Produce a deliverable-oriented work breakdown structure, a dictionary for consequential work packages, and a record of exclusions and unresolved decisions. Use for initial planning, a scope review or change-impact analysis.
+
+A WBS organizes what the project must produce and the work needed to produce it. A schedule sequences that work. A backlog orders evolving items. They may share IDs and relationships, but none is automatically a substitute for the others. The output should expose missing integration, assurance and transition work as clearly as missing features.
 
 ## Input
 
-Bring the charter, deliverables, exclusions, acceptance conditions, interfaces, and known constraints.
+Bring the mandate, scope version, outcomes, deliverables, exclusions, acceptance conditions, interfaces and known constraints. A rough list is enough to start. Use inline facts without re-asking; with no input, ask what authorized outcome the breakdown must cover. If scope is disputed, preserve both interpretations as a decision rather than choosing one silently.
 
-Example: "Break the SSO pilot into work packages, including the work needed to operate it."
+Copy supplied mandate, package and requirement identifiers and version strings exactly, including case, punctuation and spacing. Treat these as literal data during editing and compare them against the input before delivery. Prose-formatting substitutions must not alter traceability references.
 
-If boundaries are disputed, capture competing interpretations for decision rather than choosing one silently.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Example: “Break our SSO pilot into work packages, including recovery evidence and the work needed to operate it.” Do not borrow sample people, costs or commitments from these examples as project facts.
 
 ## Key Concepts
 
-### Deliverable-oriented decomposition
+### Decompose outcomes, then test completeness
 
-A work breakdown structure groups all agreed project work into progressively smaller deliverables or work packages. The 100% rule is a completeness test: children together cover their parent's scope without overlapping it. It is not a claim that all requirements are known at kickoff.
+The 100% rule asks whether the children collectively cover the parent's project scope without double counting it. It is a test of coverage and boundaries, not a claim that uncertainty has disappeared. Use stable IDs and meaningful parent/child relationships. Include project management and enabling work when they are part of delivery; a feature-only breakdown misses approvals, environments, migration, training and closure.
 
-A work-package description states its outcome, boundary, owner, and completion evidence. Stop decomposing when the package can be estimated, assigned, and assessed credibly. Excessively small tasks make the hierarchy expensive to maintain; packages too broad hide uncertainty.
+A deliverable-oriented label names an observable result, such as “verified attachment mapping,” rather than an activity like “hold data meeting.” Activities can later sit beneath that work package in the schedule. Organizing by phase or team can help views, but keep a single clear scope ownership model so the same integration work is not budgeted twice.
 
-Include management, integration, testing, migration, training, rollout reversal, and closure work when required. Product features alone rarely represent the whole project.
+### Stop at a useful work package
 
-### Why this works
+A work package is detailed enough when its output, boundary, accountable delivery role, acceptance evidence, estimate basis and interfaces can be understood. Decompose further when hidden variation changes ownership, acceptance or estimation. Do not force every package to the same size or a universal hours rule. If the uncertainty dominates, identify a bounded investigation with its decision output rather than disguising it as a precise build task.
 
-Scope boundaries reduce double counting and expose omitted work before costs and dates acquire false precision. A separate dependency model then sequences these packages. Agile work can use evolving lower-level detail while preserving explicit release boundaries.
+| Dictionary field | What it must make clear |
+|---|---|
+| Output and boundary | What is produced, included and excluded |
+| Completion evidence | Observable criterion and who accepts the result |
+| Delivery role | Who prepares/performs the work; proposed versus confirmed |
+| Interfaces | Inputs needed and outputs another package consumes |
+| Estimate basis | Scope assumptions, unit, method and confidence limits |
+| Control link | Source mandate, requirement IDs and change version |
+
+### Preserve scope under progressive elaboration
+
+Near-term packages can have executable detail while later work remains at a planning-package level with assumptions and review points. Do not call undefined work out of scope merely because it has not been decomposed. Conversely, a useful idea is not authorized scope just because someone adds it to the hierarchy. Record material additions, removals and changed acceptance through the actual scope-control process.
 
 ## Application
 
-1. Confirm the mandate and scope version. List included outcomes and explicit exclusions.
-2. Decompose by deliverable or workstream, then into accountable work packages. Keep the hierarchy understandable to its owners.
-3. Write a brief dictionary entry for each package: outcome, boundary, acceptance, owner, assumptions, and interfaces.
-4. Check parent coverage and overlap. Include enabling and transition work, not only build activity.
-5. Flag unresolved scope decisions before estimating affected packages. Do not hide unknown work in a miscellaneous bucket.
-6. Hand packages to estimation, capacity, and schedule planning. Maintain scope versions and route material changes through the agreed change process.
+1. **State the boundary.** Identify the mandate/version, included outcomes, explicit exclusions and open scope decisions. Separate approved scope from a proposed addition or optional deferral.
+2. **Build the hierarchy.** Group results into a small number of understandable deliverables, then decompose enough to reveal ownership and interfaces. Give every node a stable ID; keep alternative views linked to the same underlying packages.
+3. **Write consequential dictionary entries.** Define output, acceptance, owner status, interfaces, assumptions and estimate basis. Use an investigation package where unknowns prevent a responsible delivery estimate.
+4. **Audit coverage and overlap.** Walk from each requirement to a package and from each package back to a mandate. Check build, integration, testing, data, security, transition, management and closure as relevant. Ask where each shared handoff is counted once.
+5. **Resolve or expose decisions.** A boundary conflict should produce options and the actual decision owner. Keep proposed assignments and acceptance criteria distinct from agreements. Do not remove mandatory work to make the hierarchy fit a target date.
+6. **Hand off and maintain.** Pass package IDs to estimation, dependencies, schedule, cost and traceability. When scope changes, update affected packages and retain the prior version and decision reference; do not silently rewrite earlier reports.
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Use [the WBS and dictionary template](template.md). The quality review should find no orphan requirement, no unexplained package, no duplicated shared work and no claim of accepted ownership without evidence. Coverage can remain explicitly incomplete while a decision is open; honesty is more useful than a false 100% badge.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay scope hierarchy](examples/software.md): a full pilot boundary, detailed recovery package and a controlled optional deferral.
+- [Northstar migration packages](examples/migration.md): population, relationships, restore and service transfer cannot hide inside “migration.”
 
 ## Common Pitfalls
 
-- **Task list mistaken for scope:** a sequence of meetings omits the required outcome. Anchor packages in deliverables and their acceptance.
-- **Missing transition work:** training and support disappear from estimates. Review the operational handover explicitly.
-- **Double-counted integration:** every team estimates the full shared integration effort. Define ownership and boundaries at interfaces.
-- **Decomposition as certainty:** a detailed hierarchy hides unknown data quality. Preserve uncertainty and investigation work.
+- **Task list mistaken for scope:** meetings and coding tasks have no defined output. Anchor packages in deliverables and acceptance, then sequence activities separately.
+- **Missing transition work:** support, reversal and training do not appear in estimates. Include the outputs needed by the receiving service and their evidence.
+- **Double-counted integration:** every team budgets the whole shared handoff. Assign the shared package once and define each contributor's bounded input.
+- **Decomposition as certainty:** many rows conceal unknown data quality. Record an investigation, its assumptions and the decision it informs.
+- **Quiet scope deletion:** an in-scope “nice to have” disappears without a decision. Retain the approved boundary and route the proposed deferral through change control.
 
 ## References
 
-- [Project Charter](../project-charter/SKILL.md)
-- [Acceptance And Traceability](../acceptance-and-traceability/SKILL.md)
-- [Estimation Advisor](../estimation-advisor/SKILL.md)
-- [Change Request](../change-request/SKILL.md)
+- [Project Charter](../project-charter/SKILL.md): mandate and boundaries.
+- [Acceptance and Traceability](../acceptance-and-traceability/SKILL.md): coverage and completion evidence.
+- [Estimation Advisor](../estimation-advisor/SKILL.md), [Change Request](../change-request/SKILL.md): estimate and maintain the defined work.
 
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+If adjacent skills are unavailable, the scope hierarchy, dictionary and decision record remain usable on their own.

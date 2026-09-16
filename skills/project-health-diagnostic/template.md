@@ -1,14 +1,29 @@
-# Health diagnostic
+# Project health diagnostic
 
-- Decision / as-of date / baseline / tolerance basis:
+Project / decision / as-of / source cutoff / mode:
+Applicable baseline and authority / actual tolerances or provisional criteria:
+Supplied answers / missing adaptive questions that change the recommendation:
 
-| Dimension | Evidence and source date | Variance / trend | Assessment | Confidence | Consequence / next check |
+## Dimensional assessment
+
+| Dimension | Authorized comparison / target | Observation or forecast / source / date / version | Variance, gap or contradiction | Evidence confidence / applicability | Decision consequence |
 |---|---|---|---|---|---|
+| Scope | | | | | |
+| Schedule / dependencies | | | | | |
+| Cost / funding | | | | | |
+| Quality / acceptance / operations | | | | | |
+| Capacity | | | | | |
 
-## Most consequential constraint
+Independent gate failures / binding constraints / unavailable conclusions:
 
-## Contradictions and unknowns
+## Causal hypotheses
 
-## Causal hypotheses to test
+| Hypothesis and mechanism | Supporting evidence | Contrary or missing evidence | Discriminating check / owner | Result that changes the action |
+|---|---|---|---|---|
+| | | | | |
 
-## Recommended intervention and review trigger
+Numbered recommendation / alternatives and reasons:
+Actual decision authority / proposed investigation or response / timing basis:
+What would change the diagnosis / next evidence review:
+Current decision state (a recommendation is not an approval):
+Literal source IDs and versions checked against input:

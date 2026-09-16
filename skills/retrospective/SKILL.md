@@ -1,75 +1,89 @@
 ---
 name: retrospective
-description: "Facilitate and document an evidence-based delivery retrospective with a small set of owned improvement experiments. Use after an iteration, milestone, or project event."
+description: Turn delivery observations into a few testable improvements. Use after an iteration, rehearsal or milestone
+  when the team needs evidence-based learning and follow-through.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Create a retrospective record that separates observations, causal hypotheses and bounded improvement experiments,
+    with ownership, measures and an actual review loop.
+  frameworks: PDCA; 5 Whys with evidence; experiment design
+  best_for: '["Create a retrospective record that separates observations, causal hypotheses and bounded improvement
+    experiments, with ownership, measures and an actual review loop."]'
+  scenarios: '["Facilitate a team review of observed work and choose a small improvement experiment with an owner
+    and measure."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Retrospective
 
 ## Purpose
 
-Help a team learn from how work happened and choose a practical improvement. Use after a Sprint, rehearsal, milestone, or incident-related delivery cycle. A retrospective is not a performance ranking or a substitute for a formal incident investigation.
+Help a team understand how work happened and choose a practical improvement. Produce an evidence record and one to three feasible experiments. Use after a Sprint, rehearsal, milestone or meaningful delivery event; the number of suggestions is not the measure of success.
+
+This is not an individual performance ranking, a substitute for a formal incident investigation, or proof of one root cause. A lessons-learned artifact later makes bounded findings reusable by other projects. First establish whether the proposed change actually helps this team.
 
 ## Input
 
-Bring the goal, period, observable outcomes, timeline, participant perspectives, and previous improvement actions.
+Use the period/goal, expected and actual outcomes, event timeline, participant perspectives, relevant data and previous improvement actions. Include what went well and near misses, not only visible failures. Preserve exact IDs and dated evidence. Conflicting recollections remain conflicting until evidence resolves them.
 
-Example: "Run a retro on the failed migration rehearsal and select one improvement to test."
+Example: “Review the failed rehearsal and select one improvement that would detect the relationship problem earlier.”
 
-If perspectives conflict, preserve the disagreement and seek evidence instead of forcing consensus.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+With no raw material, ask for the event and learning question. With supplied notes, begin from them. Mark missing perspectives, ownership or measurements; do not invent attendance, motives, admissions or team consensus. Preparing an agenda does not schedule or send invitations.
 
 ## Key Concepts
 
-### Observation, interpretation, experiment
+### Observation, interpretation and experiment
 
-An observation is what happened. An interpretation explains why. An experiment tests whether a change improves the situation. Keeping these separate prevents a plausible story from becoming an established root cause.
+An observation states what happened with its evidence. An interpretation proposes why. An experiment tests a change meant to affect that mechanism. “Review happened late” is different from “reviewers did not care,” and neither by itself proves that more meetings will improve readiness.
 
-Start/Stop/Continue is useful for quickly organizing suggestions. A timeline helps when sequence matters. Five Whys can explore a causal hypothesis, but does not prove one root cause or justify blaming the last person in the chain. Use the method that fits the question.
+Retain alternative explanations and counterevidence. A later good result may reflect a simpler release, extra capacity or chance. Attribution should match the evidence, especially with small samples or multiple changes at once.
 
-### Closed learning loop
+### Choose a method for the question
 
-An improvement needs an owner, a bounded change, a success measure, and a review point. In a Plan-Do-Check-Act pattern, the review determines whether to adopt, adjust, or stop the experiment.
+| Method | Useful when | Limit to preserve |
+|---|---|---|
+| Timeline | Sequence, handoffs or changing information matter | A chronology alone does not prove causation |
+| Start/Stop/Continue | The team needs a quick way to organize candidate behavior changes | Suggestions still need evidence, feasibility and a test |
+| Five Whys | A specific observed problem has a plausible mechanism to investigate | Do not force exactly five levels, one root cause or blame; verify each link |
+| PDCA | The team can try a bounded change and review its effect | “Do” without “Check/Act” is implementation, not demonstrated learning |
 
-### Why this works
+In Plan–Do–Check–Act, define the hypothesis and measurement, try the change within authority, inspect actual results, then adopt, adjust or stop. Failure is useful evidence about limits and should remain in history.
 
-Small observable experiments are easier to execute and evaluate than broad promises such as "communicate better." Reviewing earlier actions prevents retrospectives from repeatedly producing the same untested list.
+### A useful experiment can be inspected
+
+Specify the changed behavior, population/work boundary, proposed owner, resource/time limit, expected mechanism, baseline/comparison, measure, guardrail and review point. A guardrail prevents an apparent improvement from hiding harm—for example, fewer late gate gaps must not come from suppressing reports or weakening criteria.
+
+Distinguish process execution from outcome: a review meeting held is implementation evidence; earlier discovery of material gaps is an outcome to inspect. Neither automatically proves the practice caused improvement.
 
 ## Application
 
-1. Agree the period, learning question, and discussion boundaries. Review prior improvement actions and their evidence.
-2. Gather observations independently before interpreting them. Use a timeline or another appropriate structure.
-3. Separate facts from hypotheses and identify missing perspectives. Discuss system conditions, decisions, and constraints without inventing motives.
-4. Select a small number of consequential themes. Evaluate alternatives rather than treating the first suggestion as the answer.
-5. Define one to three feasible experiments with owner, expected effect, measurement, and review point. Label proposed assignments until accepted.
-6. Produce the retrospective artifact and carry improvements into actual planning.
-7. At the review, compare observed results with the hypothesis and adopt, adjust, or stop. Preserve failed experiments as learning rather than deleting them.
+1. **Set the learning boundary.** State event/period, intended outcome and the question to answer. Review earlier experiments and their actual outcomes before creating new actions. Establish respectful discussion and appropriate evidence handling; examine decisions and constraints without assigning motives.
+2. **Gather observations before debate.** Invite independent input, then build a dated timeline or other fitting structure. Keep facts, recollections and hypotheses visibly distinct. Include missing/contradictory evidence and absent perspectives; a loud majority does not settle source truth.
+3. **Explore mechanisms.** Select a few consequential observations. Ask what system condition, handoff, decision or assumption could produce them, what contrary evidence exists and what check would discriminate among explanations. Use Five Whys only when each step remains testable.
+4. **Choose feasible experiments.** Compare candidate changes by relevance, expected learning, effort, authority and risk. Select one to three that fit actual capacity. Mark owners and dates proposed until accepted. Mandatory remediation may already be required work; do not reclassify it as optional experimentation.
+5. **Write the experiment contract.** Use the [template](template.md). Define what will change, why it may work, what evidence to collect and what would justify adoption, adjustment or stopping. If no baseline exists, plan initial measurement instead of inventing a percentage improvement target.
+6. **Put the change into work.** Hand accepted experiments to the actual backlog/control plan with resources and review. Drafting a retrospective does not assign live tasks or alter a required gate. Preserve dissent and reasons for not selecting other suggestions.
+7. **Close the learning loop.** At review, record whether the change was implemented, observed result, comparison limits and unintended effects. Choose adopt, adjust, stop or gather more evidence. If no results are supplied, leave the experiment proposed/in progress; never fabricate a successful review to complete the story.
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Quality check: a future reviewer can distinguish what happened, what is only suspected, what changed and what evidence supports the next action. A concise record can contain open questions; forced consensus or a long action list weakens it.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay acceptance-planning experiment](examples/software.md): test earlier evidence visibility rather than blame security.
+- [Northstar relationship-check experiment](examples/migration.md): define the defect a test must detect and preserve separate restore concerns.
 
 ## Common Pitfalls
 
-- **Blameless means consequence-free:** decisions and constraints are never examined. Discuss evidence and accountable actions without personal accusations.
-- **Five Whys certainty:** a conversational chain is declared a proven root cause. Validate the hypothesis against alternative explanations.
-- **Action avalanche:** fifteen improvements compete with delivery. Select a small feasible set.
-- **No measurement:** "better communication" cannot be checked. Define the changed behavior and observable result.
-- **Repeated amnesia:** last retro's actions vanish. Start with their outcomes.
+- **Blameless means unexamined:** decisions and constraints are never discussed. Review accountable actions with evidence while avoiding personal accusation.
+- **Why-chain certainty:** an appealing narrative becomes proven cause. Check each causal link and alternatives.
+- **Action avalanche:** fifteen ideas compete with delivery and none finish. Select a small feasible set with accepted capacity.
+- **Metric rewards concealment:** fewer reported problems is called improvement. Add coverage/transparency guardrails and inspect missed conditions.
+- **Meeting held means success:** execution of the new process becomes its outcome. Measure the intended effect separately.
+- **Repeated amnesia:** prior experiments disappear. Start each review with their actual results and unresolved decisions.
 
 ## References
 
-- [Scrum Guide: retrospective purpose](https://scrumguides.org/scrum-guide.html)
-- [Lessons Learned](../lessons-learned/SKILL.md)
-- [Sprint Planning](../sprint-planning/SKILL.md)
-- [Delivery Control Cycle](../delivery-control-cycle/SKILL.md)
-
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+- [ASQ PDCA](https://asq.org/quality-resources/pdca-cycle) provides the improvement-cycle context.
+- [Workshop Facilitation](../workshop-facilitation/SKILL.md) supports a difficult conversation; [Lessons Learned](../lessons-learned/SKILL.md) captures bounded reusable findings.
+- [Sprint Planning](../sprint-planning/SKILL.md) and [Delivery Control Cycle](../delivery-control-cycle/SKILL.md) receive accepted improvement work. These are optional handoffs.

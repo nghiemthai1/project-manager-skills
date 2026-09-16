@@ -1,0 +1,212 @@
+{
+  "project-intake-advisor": {
+    "positive": "A sponsor sent a vague request to add excluded analytics by Friday. Analyze the ask and draft a reply before I commit.",
+    "negative": "Assess a specific proposed change to the approved scope and date, compare impacts and prepare the authorization record.",
+    "negative_skill": "change-request"
+  },
+  "project-business-case": {
+    "positive": "Compare a pilot, full rollout and doing the minimum using their costs, uncertain benefits and affordability.",
+    "negative": "Draft the project mandate with scope, exclusions, success measures, sponsor and PM authority.",
+    "negative_skill": "project-charter"
+  },
+  "delivery-approach-advisor": {
+    "positive": "Requirements will evolve, but cutover needs formal approval. Recommend suitable delivery practices and explain the tradeoffs.",
+    "negative": "Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent delivery plan.",
+    "negative_skill": "integrated-project-planning"
+  },
+  "project-charter": {
+    "positive": "Draft the project mandate with scope, exclusions, success measures, sponsor and PM authority.",
+    "negative": "Compare a pilot, full rollout and doing the minimum using their costs, uncertain benefits and affordability.",
+    "negative_skill": "project-business-case"
+  },
+  "project-governance": {
+    "positive": "Define who may approve scope, spending, release and exceptions, with tolerances and evidence gates.",
+    "negative": "Create a responsibility grid for migration deliverables. Separate who does the work from who owns each result.",
+    "negative_skill": "raci-matrix"
+  },
+  "project-kickoff": {
+    "positive": "Prepare and run the launch workshop for the project team, then capture working agreements, open decisions and actions.",
+    "negative": "Draft the project mandate with scope, exclusions, success measures, sponsor and PM authority.",
+    "negative_skill": "project-charter"
+  },
+  "stakeholder-identification": {
+    "positive": "Identify all groups affected by this migration, including indirect users and people missing from our initial list.",
+    "negative": "We have a stakeholder register. Map power, interest and impact to choose engagement priorities.",
+    "negative_skill": "stakeholder-map"
+  },
+  "stakeholder-map": {
+    "positive": "We have a stakeholder register. Map power, interest and impact to choose engagement priorities.",
+    "negative": "Identify all groups affected by this migration, including indirect users and people missing from our initial list.",
+    "negative_skill": "stakeholder-identification"
+  },
+  "stakeholder-engagement-advisor": {
+    "positive": "Help me prepare a constructive conversation with the operations owner who is concerned about accepting support.",
+    "negative": "Build an audience/message/channel/cadence plan with feedback routes for the rollout.",
+    "negative_skill": "communication-plan"
+  },
+  "raci-matrix": {
+    "positive": "Create a responsibility grid for migration deliverables. Separate who does the work from who owns each result.",
+    "negative": "Define who may approve scope, spending, release and exceptions, with tolerances and evidence gates.",
+    "negative_skill": "project-governance"
+  },
+  "communication-plan": {
+    "positive": "Build an audience/message/channel/cadence plan with feedback routes for the rollout.",
+    "negative": "Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision asks.",
+    "negative_skill": "status-report"
+  },
+  "workshop-facilitation": {
+    "positive": "Facilitate this already-scoped decision workshop one question at a time and handle interruptions without losing our place.",
+    "negative": "Prepare and run the launch workshop for the project team, then capture working agreements, open decisions and actions.",
+    "negative_skill": "project-kickoff"
+  },
+  "scope-and-wbs": {
+    "positive": "Decompose the approved project scope into deliverable-oriented work packages with boundaries and completion evidence.",
+    "negative": "Calculate which dependency paths govern finish and how much total float each activity has in this task network.",
+    "negative_skill": "milestone-schedule"
+  },
+  "acceptance-and-traceability": {
+    "positive": "Link each requirement to its acceptance criterion, executed test evidence, result and approving authority.",
+    "negative": "Create a plan for defect prevention, process assurance, verification and retesting before migration execution.",
+    "negative_skill": "quality-management-plan"
+  },
+  "prioritization-advisor": {
+    "positive": "Choose a method for ranking optional scope while protecting mandatory acceptance. Our reach and effort estimates are uncertain.",
+    "negative": "Help the Scrum team form a coherent Sprint Goal and feasible selected-work forecast from backlog and availability.",
+    "negative_skill": "sprint-planning"
+  },
+  "estimation-advisor": {
+    "positive": "Help estimate this uncertain integration task. We have optimistic, likely and pessimistic durations but no probability model.",
+    "negative": "Calculate which dependency paths govern finish and how much total float each activity has in this task network.",
+    "negative_skill": "milestone-schedule"
+  },
+  "milestone-schedule": {
+    "positive": "Calculate which dependency paths govern finish and how much total float each activity has in this task network.",
+    "negative": "Turn this dated task table into a readable timeline, with baseline and forecast bars and milestone dates.",
+    "negative_skill": "gantt-chart"
+  },
+  "gantt-chart": {
+    "positive": "Turn this dated task table into a readable timeline, with baseline and forecast bars and milestone dates.",
+    "negative": "Calculate which dependency paths govern finish and how much total float each activity has in this task network.",
+    "negative_skill": "milestone-schedule"
+  },
+  "integrated-project-planning": {
+    "positive": "Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent delivery plan.",
+    "negative": "Decompose the approved project scope into deliverable-oriented work packages with boundaries and completion evidence.",
+    "negative_skill": "scope-and-wbs"
+  },
+  "dependency-map": {
+    "positive": "Map cross-team handoffs with provider, receiver, needed-by date, expected delivery and acceptance evidence.",
+    "negative": "Calculate which dependency paths govern finish and how much total float each activity has in this task network.",
+    "negative_skill": "milestone-schedule"
+  },
+  "resource-capacity-plan": {
+    "positive": "Check next weeks assignments against each persons available hours, leave, support load and specialist constraints.",
+    "negative": "Analyze cumulative PV, EV and AC against BAC, forecast remaining cost and expose funding gaps.",
+    "negative_skill": "project-budget"
+  },
+  "project-budget": {
+    "positive": "Analyze cumulative PV, EV and AC against BAC, forecast remaining cost and expose funding gaps.",
+    "negative": "Compare a pilot, full rollout and doing the minimum using their costs, uncertain benefits and affordability.",
+    "negative_skill": "project-business-case"
+  },
+  "vendor-procurement": {
+    "positive": "Compare supplier options, define deliverable acceptance and plan commercial delivery controls through handover.",
+    "negative": "Map cross-team handoffs with provider, receiver, needed-by date, expected delivery and acceptance evidence.",
+    "negative_skill": "dependency-map"
+  },
+  "quality-management-plan": {
+    "positive": "Create a plan for defect prevention, process assurance, verification and retesting before migration execution.",
+    "negative": "Link each requirement to its acceptance criterion, executed test evidence, result and approving authority.",
+    "negative_skill": "acceptance-and-traceability"
+  },
+  "raid-log": {
+    "positive": "Update our linked risks, assumptions, issues and dependencies with owners, triggers and next actions.",
+    "negative": "Facilitate a premortem to identify plausible failure causes, assess uncertainty and choose responses.",
+    "negative_skill": "risk-workshop"
+  },
+  "risk-workshop": {
+    "positive": "Facilitate a premortem to identify plausible failure causes, assess uncertainty and choose responses.",
+    "negative": "Update our linked risks, assumptions, issues and dependencies with owners, triggers and next actions.",
+    "negative_skill": "raid-log"
+  },
+  "status-report": {
+    "positive": "Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision asks.",
+    "negative": "Reports are green but milestones, defects and staffing tell different stories. Diagnose current delivery health and missing evidence.",
+    "negative_skill": "project-health-diagnostic"
+  },
+  "decision-log": {
+    "positive": "Record what was actually decided, by whom, why, under which conditions, and what earlier decision it supersedes.",
+    "negative": "Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options and give a deadline.",
+    "negative_skill": "escalation-brief"
+  },
+  "escalation-brief": {
+    "positive": "Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options and give a deadline.",
+    "negative": "Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision asks.",
+    "negative_skill": "status-report"
+  },
+  "meeting-knowledge-graph": {
+    "positive": "Convert these recurring meeting transcripts into durable evidence-linked memory while preserving source order and changed decisions.",
+    "negative": "Record what was actually decided, by whom, why, under which conditions, and what earlier decision it supersedes.",
+    "negative_skill": "decision-log"
+  },
+  "sprint-planning": {
+    "positive": "Help the Scrum team form a coherent Sprint Goal and feasible selected-work forecast from backlog and availability.",
+    "negative": "Choose a method for ranking optional scope while protecting mandatory acceptance. Our reach and effort estimates are uncertain.",
+    "negative_skill": "prioritization-advisor"
+  },
+  "change-request": {
+    "positive": "Assess a specific proposed change to the approved scope and date, compare impacts and prepare the authorization record.",
+    "negative": "A sponsor sent a vague request to add excluded analytics by Friday. Analyze the ask and draft a reply before I commit.",
+    "negative_skill": "project-intake-advisor"
+  },
+  "project-health-diagnostic": {
+    "positive": "Reports are green but milestones, defects and staffing tell different stories. Diagnose current delivery health and missing evidence.",
+    "negative": "Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision asks.",
+    "negative_skill": "status-report"
+  },
+  "project-recovery-advisor": {
+    "positive": "The approved plan is no longer feasible. Compare scope, sequence, resource and date recovery options with checkpoints.",
+    "negative": "Reports are green but milestones, defects and staffing tell different stories. Diagnose current delivery health and missing evidence.",
+    "negative_skill": "project-health-diagnostic"
+  },
+  "delivery-control-cycle": {
+    "positive": "Run the weekly evidence-to-decision control process across status, dependencies, risks, changes and escalation follow-through.",
+    "negative": "Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision asks.",
+    "negative_skill": "status-report"
+  },
+  "organizational-change": {
+    "positive": "Prepare affected staff to use the new process, diagnose adoption barriers and plan readiness and reinforcement.",
+    "negative": "Assess a specific proposed change to the approved scope and date, compare impacts and prepare the authorization record.",
+    "negative_skill": "change-request"
+  },
+  "release-readiness": {
+    "positive": "Evaluate the current release evidence and recommend go or hold; restore failed even though most checks passed.",
+    "negative": "Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational handover.",
+    "negative_skill": "release-and-handover"
+  },
+  "release-and-handover": {
+    "positive": "Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational handover.",
+    "negative": "Evaluate the current release evidence and recommend go or hold; restore failed even though most checks passed.",
+    "negative_skill": "release-readiness"
+  },
+  "retrospective": {
+    "positive": "Facilitate a team review of observed work and choose a small improvement experiment with an owner and measure.",
+    "negative": "Turn this completed project experience into a transferable lesson with context, evidence, limits and an adoption route.",
+    "negative_skill": "lessons-learned"
+  },
+  "lessons-learned": {
+    "positive": "Turn this completed project experience into a transferable lesson with context, evidence, limits and an adoption route.",
+    "negative": "Facilitate a team review of observed work and choose a small improvement experiment with an owner and measure.",
+    "negative_skill": "retrospective"
+  },
+  "benefits-realization": {
+    "positive": "Review whether the delivered change improved the business outcome, using a credible baseline, comparable measures and an ongoing owner.",
+    "negative": "Determine whether we can close the project given acceptance, financial obligations, residual work and the benefits handoff.",
+    "negative_skill": "project-closure"
+  },
+  "project-closure": {
+    "positive": "Determine whether we can close the project given acceptance, financial obligations, residual work and the benefits handoff.",
+    "negative": "Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational handover.",
+    "negative_skill": "release-and-handover"
+  }
+}

@@ -1,16 +1,35 @@
-# Delivery control record
+# Dated delivery control packet
 
-- Review date / cut-off / baseline:
+Project / review purpose / as-of / source cutoff / preparer:
+Current target, baseline, forecast and approval references:
 
-## Prior decisions and action outcomes
+## Review basis and carry-forward
 
-## Evidence received, stale inputs, and contradictions
-
-| Area | Change since prior review | Evidence | Forecast / consequence | Response / decision |
+| Source / version | Evidence date / scope | Current or stale | Owner / gap | Conclusion it supports or cannot support |
 |---|---|---|---|---|
+| | | | | |
 
-## Updated RAID and change references
+| Prior action / decision ID | Actual execution evidence | Effectiveness evidence | Open, verified or reconsider | Next owner / timing basis |
+|---|---|---|---|---|
+| | | | | |
 
-## Decisions required and confirmed actions
+## Reconciliation and forecast
 
-## Status handoff and next review triggers
+| Fact or contradiction / IDs | Previous state | New evidence | Current interpretation / confidence | Affected control or forecast |
+|---|---|---|---|---|
+| | | | | |
+
+| Dimension | Applicable baseline | Current forecast / actual / acceptance | Method and assumptions | Consequence / next decision |
+|---|---|---|---|---|
+| | | | | |
+
+## Decisions and follow-through
+
+| Exception / option | Authority boundary | Recommendation versus actual decision | Conditions / effective date | Implementation and verification |
+|---|---|---|---|---|
+| | | | | |
+
+Audience-specific status / actual communication authorization/state:
+Current artifacts updated / earlier reports and ledgers retained:
+Next routine review / earlier event triggers / useful decision window:
+Literal IDs and linked evidence checked:

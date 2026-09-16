@@ -1,4 +1,4 @@
 interface:
   display_name: "Release Readiness"
-  short_description: "Guide release readiness with evidence and judgment"
-  default_prompt: "Use $release-readiness to help with this project management task."
+  short_description: "Assess a defined release against current gate evidence. Use befo"
+  default_prompt: "Use $release-readiness to produce a version-specific readiness matrix and recommendation that separates required gates, permitted exceptions, immediate service coverage and actual go authority."

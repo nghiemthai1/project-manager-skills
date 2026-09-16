@@ -1,76 +1,101 @@
 ---
 name: project-health-diagnostic
-description: "Diagnose project health from scope, schedule, cost, quality, capacity, and evidence confidence. Use when status is disputed, incomplete, or inconsistent."
+description: Diagnose delivery health and evidence confidence. Use when project status is disputed, incomplete or
+  contradicted by cost, schedule or acceptance evidence.
 metadata:
   type: interactive
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
+    from causal hypotheses and recommend the next decision or investigation.
+  frameworks: Dimensional health assessment; leading/lagging indicators; causal hypotheses
+  best_for: '["Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
+    from causal hypotheses and recommend the next decision or investigation."]'
+  scenarios: '["Reports are green but milestones, defects and staffing tell different stories. Diagnose current
+    delivery health and missing evidence."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Project Health Diagnostic
 
 ## Purpose
 
-Find the delivery condition that most needs attention and explain the evidence behind it. Use when reports contradict one another or a project appears healthy despite unresolved concerns. A diagnostic is a decision aid, not a certified audit or a universal scoring model.
+Explain the condition that most needs attention and the evidence supporting that conclusion. Produce a dimensional diagnostic and a short recommendation. Use when a dashboard conflicts with delivery evidence, reports disagree, or decision-makers cannot tell whether the plan remains credible.
+
+This is not a universal health score, certified audit or business-growth diagnostic. It evaluates software/IT project delivery against its actual objectives and authority. A status report communicates the result; a recovery advisor develops the response when the current plan is infeasible.
 
 ## Input
 
-Bring the as-of date, baseline, current reports, forecast, acceptance evidence, risks/issues, and decisions.
+Bring the decision and as-of date, approved scope/date/cost, current forecasts, actual results, acceptance records, capacity, dependencies and previous reports. Rough or contradictory inputs are useful: they identify what needs investigation. Preserve supplied IDs and versions literally; a polished summary must not alter its source references.
 
-Example: "Our dashboard is green but release acceptance is incomplete. Diagnose the real condition."
+Example: “Our report is green, but the required restore failed and the cost forecast exceeds funding. What is the real condition?”
 
-With sparse evidence, produce a confidence-aware diagnostic and a short list of information that would change the conclusion.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Choose **guided** mode for one question at a time, **context dump** to synthesize the evidence already supplied, or **best guess** for a provisional diagnostic with explicit assumptions. Do not invent data or authority in any mode. Ask only for information that changes the decision; sparse evidence can support a bounded conclusion.
 
 ## Key Concepts
 
-### Health and confidence
+### Condition and confidence are separate axes
 
-Health describes the assessed condition relative to objectives and tolerances. Confidence describes how well the evidence supports that assessment. Unknown is not green, and a confidently reported forecast can still be bad news.
+Health describes the assessed delivery condition relative to objectives. Confidence describes the strength and applicability of the supporting evidence. A clearly evidenced failed gate is poor condition with high confidence. A cheerful month-old report for a different release version is weak evidence, regardless of its color.
 
-Review scope, schedule, cost, quality/acceptance, resources, and material risks separately. The overall narrative should reflect the consequential constraint, not an average that cancels a failed gate with cheap spending.
+Unknown is neither healthy nor proof of failure. It may prevent a decision, warrant investigation or require a conservative readiness recommendation under an actual gate rule. Explain which conclusion is supported instead of assigning an arbitrary middle score.
 
-### Tolerance-based review
+### Dimensions cannot always compensate for one another
 
-Use actual agreed thresholds or explicitly provisional criteria. RAG is a communication shorthand; it should summarize an explained decision about intervention. A cost ratio alone does not establish schedule readiness. A stable backlog does not prove the right scope is accepted.
+Review scope, schedule, cost/funding, quality/acceptance, resources, dependencies and operational readiness. Use a dimension only when material to the decision. A required gate failure remains independently consequential even if spending is below budget. A composite average can hide that fact.
 
-### Why this works
+Use agreed tolerances. If absent, provide a direct narrative or label provisional criteria. No standard CPI band, days-late threshold or five-color scheme is imposed by this skill. Separate an approved baseline breach from a threatened future breach and a missing forecast.
 
-Triangulating baseline, actual evidence, and current forecast exposes inconsistencies a single dashboard hides. Separating missing evidence from poor performance also identifies whether the next step is investigation or intervention.
+### Triangulation tests claims
+
+Compare baseline authority, observed results and forecast basis. Check dates, versions, populations, units and sources before combining numbers. Leading indicators such as missing usable inputs may expose future trouble; lagging results such as accepted work or actual cost show what has occurred. Neither alone establishes the whole picture.
+
+An evidence-rich forecast may still be unfavorable. A low spend percentage may reflect missing delivery rather than good cost control. A passing sample with unknown selection cannot establish population-wide acceptance.
+
+### Symptoms do not establish causes
+
+“Late” is an outcome, not proof of low effort. Candidate mechanisms include unavailable inputs, resource conflicts, rework, unclear scope, weak evidence or slow decisions. Write each as a hypothesis with supporting/contrary observations and the smallest discriminating check. Several independent constraints may exist; do not force one root cause because a framework asks for it.
 
 ## Application
 
-1. Establish the decision and as-of date. Ask only missing context that changes the diagnosis, normally at most three to five questions.
-2. Confirm the baseline and tolerance authority. Separate proposed revisions from approved ones.
-3. Review each dimension with evidence, variance, trend, confidence, and consequence. Reconcile contradictory sources rather than choosing the more favorable one.
-4. Identify the binding delivery constraint and any independent gate failure. Do not average these away.
-5. Distinguish symptoms from causal hypotheses. Ask what evidence would confirm or disprove the suspected cause.
-6. Recommend the next intervention or evidence request, responsible role, and review trigger. Keep recovery options separate from claimed recovery success.
-7. Produce a concise diagnostic with knowns, unknowns, and the decision needed. Route material recovery work to a dedicated recovery plan.
+### Ask up to four adaptive questions
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
+Skip answered questions and ask one at a time in guided mode. Offer the options and accept other context.
 
+1. **Which decision must this diagnosis support?** Choose continuing the plan, committing a date/funding, approving release, or resolving conflicting reports. If no decision is clear, first state the objective and the consequence of being wrong.
+2. **What is actually authorized and current?** Identify baseline/decision IDs, as-of and tolerance rules. If only a target or proposal exists, diagnose against that state without inventing a baseline. If records conflict, preserve both and identify the authority/source needed to resolve them.
+3. **What directly observed evidence most challenges the headline?** Branch to failed/absent acceptance, schedule/dependency, cost/funding, capacity or scope evidence. Ask about applicability and cutoff, not more dashboard labels. If the result is already supplied, inspect it rather than repeating the question.
+4. **What would change the next action?** Identify missing forecast, causal evidence, authority or feasible response. If a mandatory failure already supports intervention, do not wait for perfect data in unrelated dimensions before saying so.
 
+### Build the diagnostic
+
+Use the [template](template.md) to show for each material dimension: authorized comparison, observation/forecast, date/version, variance or gap, evidence confidence and decision consequence. Check the overall narrative against the most consequential independent condition. Record unknowns and contradictions as findings, not silent zeroes.
+
+For each suspected cause, describe the mechanism, supporting and contrary evidence, check and responsible role. Distinguish “confirmed blocker” from “hypothesized reason.” Keep diagnosis separate from the approval or execution of a recovery plan.
+
+### Select a numbered recommendation
+
+1. **Continue with targeted monitoring:** evidence supports the current course within actual limits. Name the signal that would change the conclusion; avoid an unconditional green forecast.
+2. **Resolve a specific evidence gap:** the missing information could change the decision and no established condition already demands stronger intervention. Define the question, evidence owner and useful review point.
+3. **Intervene through a recovery/change decision:** a supported constraint threatens or breaches objectives beyond current authority. State the affected boundary, immediate coordination and required option analysis.
+4. **Recommend hold or pause at the decision boundary:** a required condition is failed/absent or no viable funded/authorized path is evidenced. Distinguish the recommendation from an actual hold decision and preserve any unaffected work that remains authorized.
+
+Explain why the selected branch fits, which alternatives are premature and what new evidence could change it. Give the actual decision authority or the gap in identifying that authority. Finish with a concise diagnosis plus evidence table; a formal numeric overall score is unnecessary.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay on 28 October](examples/software.md): funding changes do not resolve a failed recovery gate.
+- [Northstar on 23 October](examples/migration.md): a funding exposure is known while final-date impact remains uncertain.
 
 ## Common Pitfalls
 
-- **Composite green:** healthy spending masks a failed acceptance condition. Surface the gate independently.
-- **Confidence as health:** detailed reporting is mistaken for good performance. Assess the condition and evidence quality separately.
-- **Missing means fine:** blank risk fields become zero risk. Show the unknown and the decision it prevents.
-- **Symptoms as causes:** lateness is attributed to low effort without evidence. Test capacity, scope, dependencies, and acceptance hypotheses.
-- **Universal thresholds:** an arbitrary CPI band becomes policy. Use agreed tolerances or label the interpretation provisional.
+- **Composite green:** healthy dimensions cancel a required failure. Keep the gate independent and lead with its consequence.
+- **Confidence mistaken for health:** detailed cost records make an unfavorable forecast look safe. State condition and evidence confidence separately.
+- **Missing means fine:** blank acceptance fields become green. Identify the evidence gap and decision it prevents.
+- **Symptoms become blame:** late work is attributed to effort without investigation. Compare plausible mechanisms with discriminating evidence.
+- **One ratio becomes everything:** CPI or spend percentage is used as completion or schedule confidence. Interpret each measure within its boundary.
+- **Diagnosis claims authority:** the report says release is formally canceled without a decision. Recommend the needed action and record actual authority separately.
 
 ## References
 
-- [Earned value interpretation](https://www.energy.gov/documents/integrated-project-management-using-earned-value-management-system)
-- [Status Report](../status-report/SKILL.md)
-- [Project Recovery Advisor](../project-recovery-advisor/SKILL.md)
-- [Project Budget](../project-budget/SKILL.md)
-- [Release Readiness](../release-readiness/SKILL.md)
-
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+- [Project Budget](../project-budget/SKILL.md), [Milestone Schedule](../milestone-schedule/SKILL.md) and [Acceptance and Traceability](../acceptance-and-traceability/SKILL.md) support dimension-specific evidence.
+- [Status Report](../status-report/SKILL.md), [Project Recovery Advisor](../project-recovery-advisor/SKILL.md) and [Release Readiness](../release-readiness/SKILL.md) are optional next artifacts. The diagnostic works independently using the fields above.

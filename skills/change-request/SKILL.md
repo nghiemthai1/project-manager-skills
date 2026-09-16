@@ -1,73 +1,82 @@
 ---
 name: change-request
-description: "Assess and record a proposed change to project scope, schedule, cost, or acceptance with impact, options, authority, and baseline history."
+description: Assess a proposed change and preserve exact approval boundaries. Use when scope, date, cost or acceptance
+  changes cross agreed project control limits.
 metadata:
   type: component
   domain: software-it-project-management
-  version: "1.0.0"
+  version: 2.0.0
+  intent: Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded authority
+    and verified prospective baseline updates.
+  frameworks: Integrated change control; impact analysis; configuration history
+  best_for: '["Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded
+    authority and verified prospective baseline updates."]'
+  scenarios: '["Assess a specific proposed change to the approved scope and date, compare impacts and prepare the
+    authorization record."]'
+  estimated_time: Depends on evidence and project scope
 ---
 # Change Request
 
 ## Purpose
 
-Make the consequence of a proposed change visible before it becomes an implicit commitment. Use when a request crosses agreed baseline or delegated decision boundaries. Routine backlog refinement inside those boundaries need not become a formal change board exercise.
+Make a proposed change an informed choice before it becomes an implicit commitment. Produce a request, integrated impact assessment, decision record and implementation verification plan. Use when a request crosses the actual baseline or delegated control boundary.
+
+Routine refinement within agreed authority does not need an invented change board. Record the relevant local decision and update plans proportionately. A forecast update also does not automatically change the baseline: report reality promptly while keeping authorization distinct.
 
 ## Input
 
-Bring the current baseline, proposed change and reason, affected deliverables, timing, cost, risks, acceptance, and decision authority.
+Use current baseline/version/decision, requester and reason, exact change, affected scope/requirements, timing, estimates, capacity, dependencies, acceptance and operating obligations. Include actual delegation/tolerance rules and previous related requests. If the boundary is unclear, identify it rather than imposing a universal threshold.
 
-Example: "Assess deferring dashboard polish to protect the SSO pilot while preserving security criteria."
+Example: “Assess deferring included dashboard polish while preserving the required pilot capabilities and recovery evidence.”
 
-If impact data is incomplete, produce a preliminary assessment with the missing evidence and conditions for decision.
-
-Use context already supplied. If inputs are incomplete, distinguish useful draft work from decisions that require missing evidence. Mark unknowns explicitly; never fill them with example data.
+Incomplete impacts can produce a preliminary assessment with evidence gaps and a bounded investigation recommendation. Do not present an uncosted idea as an implementation-ready approval. Drafting does not contact stakeholders, alter contracts or commit resources.
 
 ## Key Concepts
 
-### Change control protects informed choice
+### Integrated change control follows consequences
 
-A change request connects a proposed deviation to its effects across scope, schedule, capacity, cost, quality, risk, and operations. A small feature may have a large integration or approval consequence. Conversely, a low-impact internal adjustment may sit within delegated authority.
+A small feature can change testing, data, security or service obligations. A removed item can leave orphan dependencies or make a deliverable unusable. Trace effects across scope/WBS, acceptance, schedule, resources, cost/funding, risks, supplier commitments and transition. Use depth proportional to the actual consequence, not the requester's description of it as “just a small favor.”
 
-### Baseline and forecast
+Separate approval of an idea, authorization to investigate, conditional plan approval and permission to implement. They have different boundaries and evidence needs. An urgent request does not create emergency delegation; use the actual emergency procedure if one is supplied.
 
-A forecast updates expectations. A baseline change updates the authorized comparison point. Recording a late forecast does not itself require pretending the baseline changed; approving a change does not erase prior performance.
+### Before, proposed after, authorized after
 
-### Why this works
+Show three states. Before is the current authorized provision. Proposed after is the requested scenario and forecast impact. Authorized after exists only when an actual decision identifies it. Preserve earlier performance and reports against the baseline applicable at their cutoff.
 
-Visible alternatives make change a deliberate tradeoff. Exact approval boundaries prevent "yes to the idea" from becoming unlimited permission to spend, delay, or relax acceptance.
+Approval can be partial: cost and scope may change while date and acceptance remain. Conditions may delay effectiveness or impose implementation obligations; record which, rather than interpreting “approved subject to” as unconditional permission.
+
+### Impact ranges need a consistent boundary
+
+Compare alternatives with the same scope, horizon, currency and cost inclusions. Include rework, retesting, transition and ongoing consequences where relevant. Savings from deferral are not automatically cash savings; fixed commitments and transferred future work may remain. A new EAC is a forecast, while available funding and reserve release are separate questions.
+
+Dependencies and resource bottlenecks can prevent a shorter task from improving the finish. Show the schedule mechanism rather than summing optimistic savings. A required criterion cannot be dropped merely because a preference score is low.
 
 ## Application
 
-1. Identify the request, rationale, requester, and current baseline. Determine whether it crosses an agreed control boundary.
-2. Trace affected deliverables, dependencies, acceptance, resources, cost, and service obligations. Record estimates as estimates with a basis.
-3. Compare doing nothing, the requested change, and a feasible alternative where one exists. Include the cost of delay in deciding.
-4. State the recommended option and evidence still needed. Identify the actual authority and decision window.
-5. Keep status proposed until an authorized decision is evidenced. Record approval, rejection, deferral, or conditions accurately.
-6. After approval, update only the affected baselines, notify relevant owners when authorized, and preserve the earlier versions and decision link.
-7. Verify that implementation matches the approved scope and conditions. Close the request based on evidence, not merely approval.
+1. **Triage the boundary.** Identify the actual change and authority it crosses. If within delegation, record that basis and use proportionate control. If unknown, draft impacts and obtain the specific delegation evidence. Do not make every backlog edit a sponsor decision.
+2. **Define before/after precisely.** Preserve requirement/work-package IDs and versions. State included, removed, deferred and unchanged scope; distinguish a changed acceptance criterion from a new implementation method. If the phase population is unknown, do not invent it to complete the form.
+3. **Trace integrated impacts.** Build the [impact matrix](template.md) with evidence, estimate basis, uncertainty, owner and affected artifact. Test for omitted verification/support work and duplicated cost. Identify which previous evidence remains applicable after configuration changes and what must be refreshed.
+4. **Compare options and timing.** Include current course/no change, requested change and a feasible alternative when available. Explain benefits, disadvantages, residual risk and opportunity lost if the decision is delayed. Derive the useful decision point from lead times or mark it proposed. Recommend investigation when a critical unknown prevents responsible choice.
+5. **Record the exact decision.** Keep proposed, approved, rejected and deferred states distinct. Capture actual authority, date/effectiveness, conditions, scope and funding source. Split independent acceptance/release authorities. No response, a discussion or a supplier estimate is approval.
+6. **Implement prospectively and verify.** After actual authorization, update only affected baselines and linked plans, retaining old versions and decision references. Communicate within authorization. Verify implementation against the approved boundary and conditions, including applicable acceptance evidence. Close when verification or an explicit authorized disposition supports it, not merely when the approver says yes.
 
-Use the [artifact template](template.md). Keep the deliverable concise; retain the reasoning needed to explain its consequential choices.
-
-
+Quality check: a reviewer can compare before/proposed/approved states, explain impacts and unknowns, identify real authority and see how compliance with the decision will be verified. If the report's only benefit is “now green,” investigate whether it hides variance rather than changes delivery.
 
 ## Examples
 
-- [Software release](examples/software.md): application, reasoning, and a corrected failure.
-- [IT migration](examples/migration.md): application, reasoning, and a corrected failure.
+- [Relay CR-001 and separate date change](examples/software.md): deferring polish does not remove recovery evidence or authorize a new date.
+- [Northstar phased change](examples/migration.md): scope population remains explicit and later failed restore still controls readiness.
 
 ## Common Pitfalls
 
-- **Small favor exemption:** a request bypasses impact assessment because it sounds easy. Check interfaces, acceptance, and operating consequences.
-- **Forecast becomes approval:** a more realistic date is silently adopted. Separate expected finish from authorized baseline.
-- **Condition loss:** a conditional approval is recorded as unconditional. Carry the conditions into implementation and verification.
-- **Bureaucracy for every task:** harmless refinement is forced through a board. Apply the agreed authority boundaries proportionately.
-- **History deletion:** previous performance disappears after rebaseline. Retain the bridge from old to new.
+- **Small-favor exemption:** sounding easy substitutes for impact tracing. Check interfaces, acceptance, capacity and service effects before choosing the control path.
+- **Forecast becomes permission:** a revised estimate/date is copied into baseline. Keep it proposed until actual authority decides.
+- **Conditions disappear:** approval wording is shortened to “yes.” Carry conditions into affected artifacts and verification.
+- **Scope removal creates fake savings:** deferred work and fixed supplier costs vanish from the model. Show what is avoided, shifted, still committed or unknown.
+- **Approval closes the request:** nobody checks that the implemented result matches the choice. Verify exact scope and applicable evidence before closure.
+- **History is cleaned up:** old reports are rewritten to the new date. Keep their cutoffs and add the prospective baseline bridge.
 
 ## References
 
-- [Decision Log](../decision-log/SKILL.md)
-- [Acceptance And Traceability](../acceptance-and-traceability/SKILL.md)
-- [Integrated Project Planning](../integrated-project-planning/SKILL.md)
-- [Project Budget](../project-budget/SKILL.md)
-
-Related skills are optional handoffs. If unavailable, use the artifact requirements described here; do not stop solely because another skill is not installed.
+- [Decision Log](../decision-log/SKILL.md) preserves authority; [Acceptance and Traceability](../acceptance-and-traceability/SKILL.md) checks affected evidence.
+- [Integrated Project Planning](../integrated-project-planning/SKILL.md), [Project Budget](../project-budget/SKILL.md) and [Dependency Map](../dependency-map/SKILL.md) provide optional impact analysis. When unavailable, use the matrix and checks described here.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Organizational Change and Adoption"
+  short_description: "Prepare affected people to adopt new ways of working"
+  default_prompt: "Use $organizational-change to coordinate impact assessment, readiness, adoption support and reinforcement around the people affected by delivery."

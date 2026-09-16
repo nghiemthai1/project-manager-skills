@@ -1,0 +1,44 @@
+{
+  "stakeholder-map": {
+    "repository": "deanpeters/Product-Manager-Skills",
+    "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
+    "path": "skills/stakeholder-mapping/SKILL.md",
+    "adaptation": "close",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "stakeholder-engagement-advisor": {
+    "repository": "deanpeters/Product-Manager-Skills",
+    "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
+    "path": "skills/stakeholder-engagement-advisor/SKILL.md",
+    "adaptation": "close",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "workshop-facilitation": {
+    "repository": "deanpeters/Product-Manager-Skills",
+    "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
+    "path": "skills/workshop-facilitation/SKILL.md",
+    "adaptation": "close",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "stakeholder-identification": {
+    "repository": "deanpeters/Product-Manager-Skills",
+    "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
+    "path": "skills/stakeholder-identification/SKILL.md",
+    "adaptation": "close",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "prioritization-advisor": {
+    "repository": "deanpeters/Product-Manager-Skills",
+    "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
+    "path": "skills/prioritization-advisor/SKILL.md",
+    "adaptation": "close",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "project-intake-advisor": {
+    "repository": "deanpeters/Product-Manager-Skills",
+    "commit": "1b5a524ebb95e9497fa3f25002d8b8ec528d4444",
+    "path": "skills/incoming-request-advisor/SKILL.md",
+    "adaptation": "close",
+    "license": "CC-BY-NC-SA-4.0"
+  }
+}

@@ -1,21 +1,28 @@
-# Project Kickoff: software example
+# Relay kickoff before baseline approval
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario, planning session on 29 September 2026. The illustrative working agreements below are proposed unless a scenario fact establishes the role. No attendee confirmations or exact session duration were supplied.
 
-## Relay kickoff output
+Mina prepares a kickoff for the one-tenant SAML pilot: audit evidence, recovery, support guidance and reversible rollout are included; SCIM is excluded. Optional polish remains in the initial scope. The 30 October date is a target; D-001 does not approve B1 until 2 October. The requested 100k performance budget and 10k sponsor reserve are not yet approvals at this session.
 
-The team confirms one-tenant SAML scope and excludes SCIM. Priya orders the backlog; Developers forecast sprint work. Mina coordinates dependencies and sponsor decisions. Lena owns security acceptance and Theo owns service acceptance.
+| Agenda question | Input | Intended output |
+|---|---|---|
+| What outcome and boundary are we preparing? | Draft charter and exclusions | Shared boundary with unresolved baseline decision |
+| Who performs, accepts and authorizes? | Role information | Specific delivery/acceptance map, missing rights identified |
+| What must planning know before dates are credible? | Interface, recovery and capacity questions | Evidence requests and dependencies |
+| What is settled versus proposed? | Session record | Read-back and planning handoff |
 
-Before D-001 on 2 October, the 30 October date remains a target. The kickoff records the funding and integrated-baseline decision as pending rather than treating attendance as approval.
+| Agreement area | Proposed operating rule / known role | State or gap |
+|---|---|---|
+| Prioritization and planning | Priya orders the backlog; Developers forecast sprint work if Scrum is used; Mina coordinates integrated constraints | Roles known; actual sprint capacity and cadence not supplied |
+| Security and service | Lena accepts security evidence; Theo accepts service handover; evidence criteria must be agreed | Roles known; no current acceptance implied |
+| Baseline | Ada decides requested scope/funding/date baseline through the decision record | Pending at this date |
+| Handoffs | Audit interface must be versioned and receiver-validated before dependent verification | Provider/receiver contacts, usable date and commitment unknown |
+| Exceptions | A failed required gate produces a decision brief before rollout commitment | Proposed route; release authority and response window to confirm |
 
-The first planning handoff requests the audit interface's provider/receiver acceptance, recovery test criteria, available engineering capacity, and rollout reversal conditions. Each unresolved owner or date stays explicit until assigned.
+The facilitator tests: “If recovery cannot be demonstrated, can the pilot still be declared ready because login works?” The answer needed is the gate/authority route, not a vote to ignore recovery. Lena's review role does not make her the recovery implementer.
 
-## Why this works
+Planning handoff: obtain audit interface usable-condition evidence; define recovery and reversal checks; confirm engineering/reviewer availability; identify release authority. Mina is the proposed coordinator of these requests, not an invented owner of every technical task. Due dates and accepted assignments remain unknown.
 
-The session exposes the decisions the plan depends on. It does not try to solve interface design in the kickoff or grant Mina the team's sprint-planning authority.
+Exit: useful planning can proceed with the gaps visible. Read-back distinguishes the proposed agreement from the pending baseline. A later record adds D-001 on 2 October; it must not backdate approval to the kickoff.
 
-## Repair
-
-**Flawed:** "All attendees approved the deadline and all backlog items."
-
-**Corrected:** "Participants confirmed the working approach. The sponsor baseline remains pending D-001; sprint scope remains a team forecast."
+**Repair:** “All attendees approved 30 October and every backlog item” would invent both sponsor approval and Developers' forecast. Replace it with the exact pending baseline and role-specific decisions above.

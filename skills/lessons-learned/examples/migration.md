@@ -1,17 +1,20 @@
-# Lessons Learned: migration example
+# Northstar lesson: test the property that matters
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional training scenario. M-I002 on 6 November records lost attachment links, related to earlier M-R01. Counts can match even when a file points to the wrong ticket. That observation supports the limit of count reconciliation for this relationship requirement.
 
-## Lesson: reconciliation must test relationships as well as population
+The transferable principle is to combine completeness checks with checks of the properties required for usable acceptance. Counts remain useful for population questions; they do not prove identity, relationships, permissions or recoverability. The lesson is not “counts are useless,” nor does it prescribe one universal sample size or error tolerance.
 
-Northstar's attachment files could be present while their ticket links were wrong. The observed failure supports including identity and relationship checks in the agreed reconciliation method. File-count equality alone did not answer the business acceptance question.
+A proposed practice adds expected relationship rules, applicable mapping/version, justified coverage and explicit exception disposition to the migration acceptance template. It fits migrations where parent/child associations carry business meaning. Other transformations may need different invariants; sampling only easy records or repeating known seeded cases cannot establish all-population correctness.
 
-The practice applies where relationships carry business meaning. It does not mean every migration needs the same sample size or zero tolerance for every low-severity discrepancy; those decisions need context and authority.
+| Evidence state | What can be claimed |
+|---|---|
+| Observed lost links despite count-oriented assurance | The supplied checks did not establish the required relationship property |
+| Proposed relationship-check suite and exception review | A rationale for improving evidence; no measured effect yet |
+| Later successful rehearsal/acceptance | A bounded outcome in the scenario; not proof that this proposed template change caused it |
+| Broader adoption | Not supplied; cannot call it an organizational standard or field-tested method |
 
-An adoption action is to update the migration acceptance template with relationship rules and exception disposition. Saira's acceptance perspective is required. Record actual ownership and later effectiveness evidence instead of assuming a template edit guarantees success.
+Adoption proposal: have the responsible migration/acceptance owners add the fields and review their usefulness on the next relevant migration. Saira's acceptance perspective is needed; Chen may contribute technical checks, but actual assignments/capacity remain to confirm. Measure detection and disposition of meaningful errors, false positives, coverage and review burden—not merely number of tests run.
 
-## Repair
+Retain contrary results. If the revised check misses a different linkage mechanism, refine its applicability instead of editing history to say it always worked. A later restore failure concerns another property and should have its own evidence/lesson record.
 
-**Flawed:** "Counts are useless."
-
-**Corrected:** "Counts provide population evidence but must be combined with the checks required to establish correctness for the agreed use."
+**Repair:** “Matching counts are useless; this template guarantees correctness” overreacts in both directions. The corrected lesson explains what counts establish, which other properties need proof and what remains untested about the adoption proposal.

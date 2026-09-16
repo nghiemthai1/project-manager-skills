@@ -1,0 +1,21 @@
+{
+  "period": "fictional rehearsal week; exact dates unspecified",
+  "people": [
+    {
+      "id": "Chen",
+      "gross_hours": 40,
+      "leave_hours": 8,
+      "overhead_hours": 4,
+      "allocations": [
+        {
+          "project": "migration rehearsal",
+          "hours": 24
+        },
+        {
+          "project": "existing-system support",
+          "hours": 8
+        }
+      ]
+    }
+  ]
+}

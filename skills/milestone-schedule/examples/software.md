@@ -1,28 +1,28 @@
-# Milestone Schedule: software example
+# Software integration: work the forward and backward passes
 
-Fictional training scenario. Values and thresholds are examples, not defaults for real projects.
+Fictional instructional network, not Relay's approved calendar schedule. Unit: working-day offsets from zero. Assume finish-to-start links, zero lag and distinct available resources for parallel branches. No holidays, real dates or post-integration release gates are modeled.
 
-## Instructional network
+| Task | Duration | Predecessors | ES | EF | LS | LF | Total float |
+|---|---:|---|---:|---:|---:|---:|---:|
+| A Agree contract | 2 | None | 0 | 2 | 0 | 2 | 0 |
+| B Implement interface | 4 | A | 2 | 6 | 2 | 6 | 0 |
+| C Prepare receiver tests | 3 | A | 2 | 5 | 3 | 6 | 1 |
+| D Integrate | 1 | B, C | 6 | 7 | 6 | 7 | 0 |
 
-This four-task exercise illustrates the method; it is not Relay's approved calendar schedule.
+Forward: D cannot start at C's finish 5 because B finishes at 6. Its ES is max(6,5)=6 and EF=7. Backward: D must start at 6 to retain finish 7, so B/C each have LF=6. C's LS=6−3=3; its ES=2, giving one working day of total float. A-B-D governs finish. C's float is not a promise of spare people or a calendar holiday allowance.
 
-| Task | Duration, working days | Predecessors |
-|---|---|---|
-| A: agree contract | 2 | none |
-| B: implement interface | 4 | A |
-| C: prepare receiver tests | 3 | A |
-| D: integrate | 1 | B, C |
+Run the [source input](../assets/software-network.json) from this skill folder:
 
-Earliest finish is day-offset 7. A-B-D is critical. C begins at offset 2 and finishes at 5; its latest start is 3 and latest finish is 6, giving one working day of float.
+```sh
+python scripts/schedule.py --input assets/software-network.json --format markdown
+```
 
-If B grows from four to six working days, the unconstrained network finishes at offset 9. That does not prove Relay's pilot slips two calendar days: actual calendars, subsequent release gates, and resources are absent from this exercise.
+## Changed-duration case
 
-## Decision
+If B increases from four to six working days, its EF becomes 8; D runs 8–9 and finish becomes offset 9. C still finishes at 5 and now has LS 5/LF 8, so total float becomes 3. The change adds two working-day offsets to this network. It does not prove a two-calendar-day delay to Relay's pilot because real calendars, staffing, acceptance and subsequent work are absent.
 
-Mina uses this reasoning to request the actual remaining network before changing the 30 October forecast. Lena's security acceptance remains a separate gate and must have explicit exit evidence.
+## Decision and evidence
 
-## Repair
+Mina should obtain the actual remaining network before altering the 30 October forecast. Lena's security acceptance needs its own evidence and review availability. If B and C use the same full-time specialist, even the original seven-day model is infeasible until the resource conflict is resolved. The Gantt skill's separate dated example illustrates calendar placement; it does not promote this toy network into Relay's baseline.
 
-**Flawed:** "The vendor is two days late, so move the pilot two days."
-
-**Corrected:** "Recalculate the integrated network and reconcile calendars and resources. The known local delivery gap alone does not establish the pilot impact."
+**Repair:** “The vendor is two days late, so move the pilot two days” skips the remaining logic. Retain the local gap, compute the actual affected network and obtain an authorized baseline decision only if a commitment changes.

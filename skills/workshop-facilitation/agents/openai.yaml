@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workshop Facilitation"
+  short_description: "Guide purposeful project workshops"
+  default_prompt: "Use $workshop-facilitation to run a focused project workshop."
