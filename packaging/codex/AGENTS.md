@@ -4,7 +4,7 @@ This project includes project management skills in `.agents/skills/`. Use them t
 
 ## Use the library
 
-Match the user's task to the relevant skill description, then read that skill's `SKILL.md`. Read its linked template, worked examples, and references when useful. Start with the user's decision and explain why the chosen framework fits and where it stops being useful. Do not run the entire lifecycle for a bounded request.
+Match the user's task to the relevant skill description, then read that skill's `SKILL.md`. Read linked templates and references only as needed for the task. Examples are optional illustrations; open them when requested or when they clarify an unfamiliar method, rather than rereading them during routine use. Start with the user's decision and explain why the chosen framework fits and where it stops being useful. Do not run the entire lifecycle for a bounded request.
 
 Examples of starting points:
 

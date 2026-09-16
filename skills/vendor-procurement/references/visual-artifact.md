@@ -8,11 +8,9 @@ Capture: **vendor/deliverable ID; contractual boundary; internal receiver; evide
 
 Use a matrix or handoff graph. Distinguish supplier completion, internal validation, acceptance and payment authorization. Treat proposed contract terms as proposals. Avoid visual legal conclusions from an undocumented status.
 
-## Worked visual decision
+## Interpretation
 
-An attachment export delivered by Beck is not Northstar business acceptance; missing usable links must remain visible at the receiving boundary.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Separate supplier delivery from receiver acceptance. Missing usable relationships or incomplete evidence must remain visible at the handoff boundary.
 
 ## Delivery standard
 

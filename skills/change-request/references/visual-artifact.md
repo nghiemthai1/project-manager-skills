@@ -8,11 +8,9 @@ Capture: **change ID; current approved baseline; proposal; scope/schedule/cost/g
 
 Use paired views sharing scales and IDs. Always label which side is approved and which is proposed. Do not rewrite the prior baseline in place. A change-effect diagram must retain conditions and unchanged acceptance obligations.
 
-## Worked visual decision
+## Interpretation
 
-CR-001 can change scope and funding on 19 October while the 30 October date remains until D-004. Separate panels stop a proposed date becoming a fact.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Show scope, funding and date approvals separately. Approval of one dimension must not make an unrelated proposed change appear authorized.
 
 ## Delivery standard
 

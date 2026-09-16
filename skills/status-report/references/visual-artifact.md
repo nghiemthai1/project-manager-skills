@@ -8,11 +8,9 @@ Capture: **snapshot date; baseline/forecast/actual; tolerance source; dimension;
 
 Use a few direct-labeled indicators and an exception table. Each state needs its rule and source; unknown is not green. Keep failed gates separate from schedule/cost averages. Trends need comparable observations, not invented history.
 
-## Worked visual decision
+## Interpretation
 
-On 28 October, Relay requires a hold recommendation for missing recovery demonstration regardless of funded scope. Show the decision needed beside that gate.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Place missing mandatory evidence beside the decision it blocks. Approved funding or completed coding does not establish release readiness.
 
 ## Delivery standard
 

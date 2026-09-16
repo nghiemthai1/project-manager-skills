@@ -67,9 +67,11 @@ Quality check: the artifact supports a useful outcome, makes conditional work vi
 
 ### When producing a visual
 
-Use the [sprint forecast board](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [sprint forecast board](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay planning packet](examples/software.md): one person's overload and an unconfirmed audit handoff constrain the candidate forecast.
 - [Northstar applicability and rehearsal plan](examples/migration.md): hybrid delivery is not relabeled Scrum; an optional Scrum application preserves the same evidence boundary.

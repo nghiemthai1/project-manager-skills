@@ -1,7 +1,7 @@
 {
   "title": "Relay · cost and funding boundaries",
   "scope": "Fictional control snapshot · 16 October 2026 · B1 / D-001 · amounts in thousands of USD",
-  "source": "../examples/software.md",
+  "source": "../software.md",
   "data": {
     "labels": [
       "Actual cost to date",

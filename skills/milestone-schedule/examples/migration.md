@@ -12,10 +12,10 @@ Fictional instructional subcase, not Northstar's approved cutover or actual rehe
 
 Both A-B-D-E and A-C-D-E total seven working days. Accelerating B by one day leaves C finishing at offset 5, so D and E do not move. The zero-duration E represents the acceptance event only; any preparation, review effort or waiting would need activities and constraints of its own.
 
-Run the [source input](../assets/migration-network.json):
+Run the [source input](assets/migration-network.json):
 
 ```sh
-python scripts/schedule.py --input assets/migration-network.json --format markdown
+python scripts/schedule.py --input examples/assets/migration-network.json --format markdown
 ```
 
 ## Resource-feasible alternative

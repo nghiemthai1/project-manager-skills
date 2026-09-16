@@ -75,9 +75,11 @@ Use [the engagement template](template.md). At every handoff, identify the recei
 
 ### When producing a visual
 
-Use the [deliverable and acceptance matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [deliverable and acceptance matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay identity-provider engagement](examples/software.md): fictional procurement subcase with eligibility, preference scoring and a conditional recommendation.
 - [Northstar export control](examples/migration.md): an existing supplier's late mapping and defective export require different actions.

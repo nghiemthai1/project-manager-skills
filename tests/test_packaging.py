@@ -26,11 +26,11 @@ class PackagingTests(unittest.TestCase):
                 actual={n.split('/')[2] for n in names if n.endswith('/SKILL.md')}
                 self.assertEqual(actual,expected)
                 for asset in ('software.mmd','software.svg','migration.mmd','migration.svg'):
-                    self.assertIn('.agents/skills/gantt-chart/assets/'+asset,names)
+                    self.assertIn('.agents/skills/gantt-chart/examples/assets/'+asset,names)
                 for slug in ('gantt-chart', 'raci-matrix'):
                     for scene in ('software', 'migration'):
                         for extension in ('.html', '.svg', '.json', '.csv'):
-                            self.assertIn(f'.agents/skills/{slug}/assets/{scene}{extension}', names)
+                            self.assertIn(f'.agents/skills/{slug}/examples/assets/{scene}{extension}', names)
                 for slug in json.loads((ROOT/'catalog/upstream-sources.json').read_text(encoding='utf-8')):
                     self.assertIn(f'.agents/skills/{slug}/SOURCE.md',names)
                     self.assertIn(f'.agents/skills/{slug}/LICENSE.md',names)

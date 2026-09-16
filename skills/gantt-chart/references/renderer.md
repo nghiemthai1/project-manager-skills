@@ -3,7 +3,7 @@
 Run from this skill folder, or use absolute paths from another directory:
 
 ```sh
-python scripts/render_gantt.py assets/software-source.json --output output/software
+python scripts/render_gantt.py project-data.json --output output/project
 python scripts/render_gantt.py --demo --output output/demo
 ```
 
@@ -11,7 +11,7 @@ Open the resulting `.html` in a browser. The same stem produces `.svg`, `.json` 
 
 ## Input contract
 
-Use [the small software input](../assets/software-source.json) as a schema example, not as facts for a real project. Required snapshot strings: `title`, `version`, `as_of`, `source`, `scope`, `comparison_label`. State unknown metadata in words. Set `date_convention` to `[start, finish)`. `calendar` contains a descriptive `label`, `working_weekdays` (Monday=0 through Sunday=6), and an optional list of ISO `holidays`. This calendar controls shading; it does not move task dates.
+Required snapshot strings: `title`, `version`, `as_of`, `source`, `scope`, `comparison_label`. State unknown metadata in words. Set `date_convention` to `[start, finish)`. `calendar` contains a descriptive `label`, `working_weekdays` (Monday=0 through Sunday=6), and an optional list of ISO `holidays`. This calendar controls shading; it does not move task dates.
 
 `tasks` is a list with unique string `id`, `label`, `owner`, `source`, and `kind` (`task`, `milestone`, `summary`). Optional `parent` preserves the source hierarchy ID without calculating rollups. `comparison`, `forecast` and `actual` are null or objects with date-only ISO `start` and `finish`, either of which can be null. Partial intervals remain in the table and diagnostics without a fabricated bar. A milestone's known start and finish must agree. Comparison labels identify a scenario, target or named approved baseline; the helper does not establish approval.
 

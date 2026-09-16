@@ -68,9 +68,11 @@ Quality check: the headline agrees with every independent mandatory gate; claims
 
 ### When producing a visual
 
-Use the [independent gate evidence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [independent gate evidence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay missing recovery evidence](examples/software.md): B2 funding and the existing date do not satisfy security acceptance.
 - [Northstar failed restore](examples/migration.md): the phased baseline preserves the gate and separates later go from service transfer.

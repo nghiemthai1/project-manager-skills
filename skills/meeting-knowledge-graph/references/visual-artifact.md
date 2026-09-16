@@ -8,11 +8,9 @@ Capture: **OKF entity ID; source meeting/turn; relationship type; time validity;
 
 Create an optional derived SVG/HTML graph while preserving the OKF v0.2 ledger as authority. Edges require source links and typed meaning. Keep unknown speakers/metadata, objections and superseded decisions; never rewrite earlier ledgers to match the graph.
 
-## Worked visual decision
+## Interpretation
 
 A later approved option can be a current-state node with a dated supersedes edge. The earlier meeting still records the proposal and objection exactly as they occurred.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

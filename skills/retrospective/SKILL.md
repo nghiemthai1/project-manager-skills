@@ -72,9 +72,11 @@ Quality check: a future reviewer can distinguish what happened, what is only sus
 
 ### When producing a visual
 
-Use the [evidence timeline or cause map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [evidence timeline or cause map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay acceptance-planning experiment](examples/software.md): test earlier evidence visibility rather than blame security.
 - [Northstar relationship-check experiment](examples/migration.md): define the defect a test must detect and preserve separate restore concerns.

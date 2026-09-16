@@ -8,11 +8,9 @@ Capture: **activity ID; typed predecessors; lag/calendar; duration unit; date co
 
 Use a network to explain driving paths and a timeline for dated events. Show tied paths; a milestone diamond does not include its preparation effort. Preserve resource assumptions and calendar boundaries.
 
-## Worked visual decision
+## Interpretation
 
-In the Northstar rehearsal, accelerating B alone does not shorten the tied B/C finish. The separate-resource assumption belongs beside the network.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Show all tied controlling branches and resource assumptions. Accelerating one branch alone may not shorten the finish.
 
 ## Delivery standard
 

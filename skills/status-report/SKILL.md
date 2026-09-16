@@ -70,9 +70,11 @@ Quality check: every confident claim has a source or calculation; every forecast
 
 ### When producing a visual
 
-Use the [evidence-based status dashboard](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [evidence-based status dashboard](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay executive update and evidence appendix](examples/software.md): a 120k forecast remains distinct from B1 and funding permission.
 - [Northstar intervention report](examples/migration.md): a reserve does not eliminate the total-envelope gap or prove a new cutover date.

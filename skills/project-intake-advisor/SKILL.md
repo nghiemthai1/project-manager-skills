@@ -181,6 +181,8 @@ Ask the user to reply with `1`, `2`, `3`, `4`, a combination like `1 and 3`, or 
 
 ## Examples
 
+Optional worked applications:
+
 - [Relay request triage](examples/software.md): a requested addition to an active baseline, with a draft reply that does not promise delivery.
 - [Northstar request triage](examples/migration.md): separate a migration incident from an excluded reporting enhancement and route each appropriately.
 

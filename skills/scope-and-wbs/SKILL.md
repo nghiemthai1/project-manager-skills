@@ -70,9 +70,11 @@ Use [the WBS and dictionary template](template.md). The quality review should fi
 
 ### When producing a visual
 
-Use the [deliverable hierarchy](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [deliverable hierarchy](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay scope hierarchy](examples/software.md): a full pilot boundary, detailed recovery package and a controlled optional deferral.
 - [Northstar migration packages](examples/migration.md): population, relationships, restore and service transfer cannot hide inside “migration.”

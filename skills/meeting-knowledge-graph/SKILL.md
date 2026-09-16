@@ -104,9 +104,11 @@ For recurring meetings, classify each affected concept as new, unchanged, update
 
 ### When producing a visual
 
-Use the [derived relationship view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [derived relationship view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay steering record](examples/software.md): ordered turns, funding decision, anonymous question and a current concept with preserved custom metadata.
 - [Northstar recurring delta](examples/migration.md): investigation is not a promised fix; later approval changes current state without rewriting the earlier proposal.

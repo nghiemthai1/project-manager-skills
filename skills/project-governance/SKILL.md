@@ -61,9 +61,11 @@ Use [the governance template](template.md). Quality means a reader can answer wh
 
 ### When producing a visual
 
-Use the [decision-rights flow](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [decision-rights flow](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay approval and acceptance](examples/software.md): sponsor funding, security evidence and service acceptance remain separate.
 - [Northstar cutover authority](examples/migration.md): a failed restore holds the gate despite an approved new date and budget.

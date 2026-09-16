@@ -2,20 +2,11 @@
 
 Practical skills for software and IT project managers, written to improve both the work and the judgment behind it.
 
-Start with your decision: define scope, test a delivery forecast, expose a risk, recover a troubled project, or establish whether a release is ready. Each skill explains the method, its limits, a worked application, and recognizable failure modes.
+Start with your decision: define scope, test a delivery forecast, expose a risk, recover a troubled project, or establish whether a release is ready. Each skill explains the framework, when to use it, how to apply it, and recognizable failure modes.
 
-Version 2.1 contains **42 skills**, **42 templates**, **84 worked examples**, and **four calculation helpers and two visual renderers**. All 30 original skills have been expanded, with 12 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
+Version 2.1 contains **42 skills**, reusable templates, and **four calculation helpers and two visual renderers**. All 30 original skills have been expanded, with 12 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
 
 ## Find the skill you need
-
-Open a worked artifact directly. These examples are fictional, with proposals and unknowns explicitly marked. Download HTML to open it locally; no server is needed.
-
-| Artifact | Software / Relay | IT migration / Northstar |
-|---|---|---|
-| RACI matrix | [Interactive HTML](skills/raci-matrix/assets/software.html) · [SVG](skills/raci-matrix/assets/software.svg) · [Explanation](skills/raci-matrix/examples/software.md) | [Interactive HTML](skills/raci-matrix/assets/migration.html) · [SVG](skills/raci-matrix/assets/migration.svg) · [Explanation](skills/raci-matrix/examples/migration.md) |
-| Gantt chart | [Interactive HTML](skills/gantt-chart/assets/software.html) · [SVG](skills/gantt-chart/assets/software.svg) · [Explanation](skills/gantt-chart/examples/software.md) | [Interactive HTML](skills/gantt-chart/assets/migration.html) · [SVG](skills/gantt-chart/assets/migration.svg) · [Explanation](skills/gantt-chart/examples/migration.md) |
-
-Each HTML includes complete SVG, JSON and CSV downloads. Both packages include reusable templates and standalone renderers. The Gantt package also retains Mermaid sources and their original SVGs. See [visual artifact guidance and coverage](docs/VISUAL-UPGRADE.md).
 
 | Your situation | Start here |
 |---|---|
@@ -23,6 +14,8 @@ Each HTML includes complete SVG, JSON and CSV downloads. Both packages include r
 | Our approach does not fit the work | [Delivery Approach Advisor](skills/delivery-approach-advisor/SKILL.md) |
 | Scope keeps expanding | [Scope and Work Breakdown](skills/scope-and-wbs/SKILL.md), then [Change Request](skills/change-request/SKILL.md) |
 | The date is doubtful | [Estimation Advisor](skills/estimation-advisor/SKILL.md), [Milestone Schedule](skills/milestone-schedule/SKILL.md) |
+| Responsibilities are unclear | [RACI Matrix](skills/raci-matrix/SKILL.md) |
+| We need a timeline or baseline comparison | [Gantt Chart](skills/gantt-chart/SKILL.md) |
 | Other teams are blocking us | [Dependency Map](skills/dependency-map/SKILL.md) |
 | People are overallocated | [Resource Capacity Plan](skills/resource-capacity-plan/SKILL.md) |
 | Reports say green but the evidence does not | [Project Health Diagnostic](skills/project-health-diagnostic/SKILL.md) |
@@ -31,7 +24,7 @@ Each HTML includes complete SVG, JSON and CSV downloads. Both packages include r
 | We may not be ready to release | [Release Readiness](skills/release-readiness/SKILL.md) |
 | Delivery is finished but obligations remain | [Project Closure](skills/project-closure/SKILL.md) |
 
-Browse the [complete catalog](catalog/README.md), follow the [quick start](docs/QUICKSTART.md), or read the [software release](docs/walkthroughs/software.md) and [IT migration](docs/walkthroughs/migration.md) walkthroughs.
+Browse the [complete catalog](catalog/README.md) or follow the [quick start](docs/QUICKSTART.md).
 
 ## How the library works
 
@@ -39,9 +32,9 @@ Browse the [complete catalog](catalog/README.md), follow the [quick start](docs/
 - **Interactive skills** ask only the missing questions that change the recommendation.
 - **Workflows** connect planning, delivery control, release, and closure without requiring every skill to be installed.
 
-Every entrypoint includes Purpose, Input, Key Concepts, Application, Examples, Common Pitfalls, and References. The learning is part of the skill: read why an approach fits, what it cannot prove, and how a misleading artifact is repaired.
+Start with Purpose and Input, follow Application, and use Common Pitfalls to review the result. Templates and specialized references support the work as needed.
 
-The two example projects are fictional. Their values are teaching inputs, not default thresholds, commitments, or approvals for your project.
+Each skill has an optional Examples section with fictional worked applications and their downloads. To see how skills connect, follow the [software release](docs/walkthroughs/software.md) or [IT migration](docs/walkthroughs/migration.md) walkthrough.
 
 ## Skills and frameworks
 

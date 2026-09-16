@@ -8,11 +8,9 @@ Capture: **signal; date; source; tolerance; contradiction; confidence; causal hy
 
 Use labeled rows for schedule, cost, scope, capacity and gates. Avoid a radar area or average that lets a large good score offset a hard failure. Correlated signals are not independent confirmation of the same diagnosis.
 
-## Worked visual decision
+## Interpretation
 
-CPI 0.8333 and an incomplete mandatory recovery demonstration answer different questions; a single weighted health score hides the needed decision.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Keep cost efficiency and mandatory acceptance evidence distinct. A weighted health score must not conceal the decision required by a failed gate.
 
 ## Delivery standard
 

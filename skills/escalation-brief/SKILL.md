@@ -69,9 +69,11 @@ Quality check: the brief uses facts rather than motives, presents a bounded ask 
 
 ### When producing a visual
 
-Use the [decision options comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [decision options comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay funding and recovery escalation](examples/software.md): the proposed review date and cost forecast remain unapproved.
 - [Northstar funding and phasing decision](examples/migration.md): the reserve bridge and incomplete option evidence are visible.

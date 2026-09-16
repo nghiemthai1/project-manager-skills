@@ -75,9 +75,11 @@ Use [the change/adoption template](template.md). Link each action to an observed
 
 ### When producing a visual
 
-Use the [group readiness and adoption matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [group readiness and adoption matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay pilot adoption](examples/software.md): distinguish a missing recovery demonstration from an operator learning need.
 - [Northstar service-desk adoption](examples/migration.md): attendance, role access and demonstrated ability support different conclusions.

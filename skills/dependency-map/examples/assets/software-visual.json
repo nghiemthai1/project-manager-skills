@@ -1,7 +1,7 @@
 {
   "title": "Relay · a late interface is a local dependency gap",
   "scope": "Fictional snapshot · 16 October 2026 · provider forecast is not a commitment",
-  "source": "../examples/software.md",
+  "source": "../software.md",
   "data": {
     "id": "DEP-AUDIT",
     "id_state": "proposed artifact ID",

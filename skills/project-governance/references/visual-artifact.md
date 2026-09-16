@@ -8,11 +8,9 @@ Capture: **decision class; actual authority; delegation boundary; trigger; evide
 
 Draw who decides after which evidence, with arrows labeled request, review or decision. Unknown authority is an open node, not the nearest senior person. Separate consultation from approval.
 
-## Worked visual decision
+## Interpretation
 
 The sponsor funding branch cannot bypass independent security acceptance. A single green Go box would hide separate decisions.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

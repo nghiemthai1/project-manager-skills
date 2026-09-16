@@ -66,9 +66,11 @@ Quality check: every row has a purpose, source, owner, recipient, trigger and cl
 
 ### When producing a visual
 
-Use the [audience-channel cadence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [audience-channel cadence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay communication agreement](examples/software.md): sponsor decisions, security evidence and operator readiness have distinct responses.
 - [Northstar failed-gate communication](examples/migration.md): a restore failure changes the immediate communication path while later user notices remain conditional.

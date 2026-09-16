@@ -8,11 +8,9 @@ Capture: **group ID; affected work; representation evidence; identification conf
 
 Group by relationship to the change, not by an invented numeric importance. Keep unidentified affected groups visible. A named proxy is not proof that a group was represented.
 
-## Worked visual decision
+## Interpretation
 
-Relay administrators appear as a proposed affected group with unknown representatives, instead of disappearing because only named leaders were supplied.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Keep affected groups visible when their representatives are unknown. A list of named leaders alone is not evidence of complete coverage.
 
 ## Delivery standard
 

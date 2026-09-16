@@ -67,9 +67,11 @@ Use [the business-case template](template.md). Before calling the case decision-
 
 ### When producing a visual
 
-Use the [option comparison with ranges](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [option comparison with ranges](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay pilot investment](examples/software.md): a conditional short-horizon comparison with explicitly synthetic benefit assumptions.
 - [Northstar continuation](examples/migration.md): a material forecast change calls for renewed justification, not retrospective approval.

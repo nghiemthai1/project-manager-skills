@@ -3,7 +3,7 @@
 Run from this skill folder, or use absolute paths:
 
 ```sh
-python scripts/render_raci.py assets/software-source.json --output output/software
+python scripts/render_raci.py project-data.json --output output/project
 python scripts/render_raci.py --demo --output output/demo
 ```
 
@@ -11,7 +11,7 @@ The helper requires Python 3.11+ and no packages. It writes self-contained `.htm
 
 ## Input
 
-The [software source](../assets/software-source.json) is a complete fictional model. Required strings are `title`, `version`, `as_of`, `source`, `scope`, `state`. Unknown metadata is explicit text. `roles` contains unique string `id` and `label`. `rows` contains unique string `id`, `label`, and `cells`, keyed by every role ID. Do not omit an unresolved cell.
+Required strings are `title`, `version`, `as_of`, `source`, `scope`, `state`. Unknown metadata is explicit text. `roles` contains unique string `id` and `label`. `rows` contains unique string `id`, `label`, and `cells`, keyed by every role ID. Do not omit an unresolved cell.
 
 Each cell has `code` (`R`, `A`, `C`, `I`, `A/R`, `?` or `—`), `state` (`proposed`, `confirmed`, `disputed`, `unknown`), `note` (narrow duty) and `source` (evidence reference). `?` is unresolved; `—` explicitly means no assignment. A confirmed cell requires a reference, though the helper cannot verify its truth. The source JSON preserves additional fields. Put important caveats in the optional `notes` list so they appear in the SVG as well.
 

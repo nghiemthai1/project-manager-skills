@@ -8,11 +8,9 @@ Capture: **scope ID; unit; calendar; method; assumptions; range inputs; distribu
 
 Show ranges and their meaning. PERT O/M/P inputs do not create a probability confidence band by themselves. Keep effort and duration separate; use empirical percentiles only from an appropriate supplied dataset.
 
-## Worked visual decision
+## Interpretation
 
 Label an optimistic-to-pessimistic estimate as an input range, not a 90% delivery interval. Unknown capacity prevents converting it into a promised date.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

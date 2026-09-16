@@ -8,11 +8,9 @@ Capture: **requirement ID; version/configuration; acceptance criterion; executed
 
 Keep requirement-to-test-to-result-to-decision links inspectable. Use text states for not run, failed, passed, accepted and unknown. A passed test is not an accepted requirement by color alone.
 
-## Worked visual decision
+## Interpretation
 
-R-ACC03 stays missing evidence on 28 October even though funding and most coding are complete. Later acceptance must not overwrite that snapshot.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Keep missing acceptance evidence visible at the reporting cutoff. Later acceptance must not overwrite an earlier snapshot.
 
 ## Delivery standard
 

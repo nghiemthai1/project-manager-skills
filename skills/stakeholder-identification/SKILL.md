@@ -124,28 +124,13 @@ For each priority stakeholder, capture: name, category, R/P/D tag, and a one-lin
 
 ### When producing a visual
 
-Use the [coverage map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [coverage map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+
+Use the [register template](template.md).
 
 ## Examples
 
-The examples are fictional. Use the [register template](template.md), [software register](examples/software.md) and [IT migration register](examples/migration.md) for complete local artifacts.
-
-**Situation:** A project team is scoping a new intake workflow that replaces manual email-based requests with a self-service portal. Initial stakeholder list: VP of Operations, Engineering Lead, PMO Director, enterprise customers.
-
-**Underdeveloped (common default):**
-The list captures obvious sponsors and the customer segment that asked loudest for the feature. Missing: the customer support agents who currently process every manual request (primary daily users of the current workflow), IT security team (P — must approve data handling), compliance officer (P — regulatory implications), small business customers who lack technical staff to use a self-service portal (high-impact, low-power audience).
-
-**Stronger list after applying equity lens and R/P/D marking:**
-- VP of Operations (D, Ally) — final scope authority
-- Engineering Lead (R, Ally) — capacity and technical feasibility
-- PMO Director (P, Influencer) — must approve process change
-- Enterprise customers (Audience) — primary users of new portal
-- **Customer support agents** (Audience, R) — process every intake today; adoption risk if not consulted
-- **IT Security** (P) — data handling approval required
-- **Compliance Officer** (P) — regulatory review
-- **Small business customers** (Audience) — impacted differently; may need a non-self-service path
-
-The second list changes the project requirements, rollout plan and definition of success.
+Optional: [software](examples/software.md), [IT migration](examples/migration.md), and [additional illustrations](examples/illustrations.md).
 
 ## Common Pitfalls
 

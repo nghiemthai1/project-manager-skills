@@ -8,11 +8,9 @@ Capture: **item ID; chosen method; dimensions/units; score inputs; evidence/conf
 
 Pick a plot only when its dimensions answer the tradeoff. Ordinal weighted scores need disclosed weights and sensitivity; uncertainty should remain visible. Mandatory work is a constraint, not an item to remove because its score is low.
 
-## Worked visual decision
+## Interpretation
 
-Optional Relay polish can be considered for deferral; missing required recovery evidence cannot be removed by moving it into a low-value quadrant.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Separate discretionary scope from mandatory acceptance evidence. A low preference score cannot remove a required recovery or compliance condition.
 
 ## Delivery standard
 

@@ -8,11 +8,9 @@ Capture: **record ID/type; cause/event/effect; probability/impact evidence; owne
 
 Use separate symbols/text for risk, assumption, issue and dependency. Probability-impact positions require supplied scales and assessments; unknowns stay outside the grid. Never plot a realized issue as an uncertain future event.
 
-## Worked visual decision
+## Interpretation
 
-Relay R-001 possible incompatibility and I-001 unavailable environment remain separate records. A color alone cannot explain whether action or investigation is needed.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Distinguish possible future events from issues that have already occurred. Show the response or investigation needed; color alone cannot explain that difference.
 
 ## Delivery standard
 

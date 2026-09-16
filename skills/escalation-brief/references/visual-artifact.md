@@ -8,11 +8,9 @@ Capture: **problem/evidence; impact bounds; authority gap; options; latest usefu
 
 A compact option table is usually enough. If using bars or a timeline, state their units and uncertainty. Keep the decision request and actual authority legible; do not let decorative severity replace evidence.
 
-## Worked visual decision
+## Interpretation
 
 A local two-day dependency gap supports investigation and options, not an asserted two-day total-project slip.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

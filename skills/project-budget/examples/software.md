@@ -12,10 +12,10 @@ Fictional control artifact as of 16 October 2026. D-001 approved B1 on 2 October
 | Remaining-at-budget EAC | 48,000+100,000−40,000 | 108,000 USD | Remaining work performs at its budgeted cost |
 | Combined-efficiency EAC | 48,000+60,000/(0.833333…×0.8) | 138,000 USD | Both efficiencies applied to remaining work |
 
-Run [the aligned input](../assets/software-evm.json):
+Run [the aligned input](assets/software-evm.json):
 
 ```sh
-python scripts/earned_value.py --input assets/software-evm.json --format markdown
+python scripts/earned_value.py --input examples/assets/software-evm.json --format markdown
 ```
 
 ## Funding and forecast decision
@@ -32,6 +32,6 @@ Additional fictional ledger illustration: a 20k purchase order includes 8k alrea
 
 ## Graphical companion
 
-![Worked visual](../assets/software-visual.svg)
+![Worked visual](assets/software-visual.svg)
 
-[Editable source data](../assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.

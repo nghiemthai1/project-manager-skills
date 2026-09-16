@@ -1,6 +1,6 @@
 # Software integration: Gantt with baseline comparison
 
-Open the **[interactive artifact](../assets/software.html)**, **[SVG](../assets/software.svg)**, [editable JSON](../assets/software-source.json), or [CSV](../assets/software.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/software.html)**, **[SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Relay's approved calendar baseline. Additional assumptions: start Monday 5 October 2026; Monday–Friday workweek; no holidays; full-time separate staff for parallel B and C. Dates are finish boundaries, not inclusive final work dates. The “baseline” below is only the original planning scenario for this exercise.
 
@@ -34,9 +34,9 @@ gantt
 
 ```
 
-[Editable Mermaid source](../assets/software.mmd).
+[Editable Mermaid source](assets/software.mmd).
 
-![Rendered software Gantt](../assets/software.svg)
+![Rendered software Gantt](assets/software.svg)
 
 C uses an explicit Monday finish boundary so the rendered bar matches the table's next-working-boundary convention. Its three productive days remain Wednesday through Friday; the shaded weekend adds no effort. The table retains the dependency on A. Recalculate explicit dates when the underlying schedule changes.
 

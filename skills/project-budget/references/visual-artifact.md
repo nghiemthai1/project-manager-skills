@@ -8,11 +8,9 @@ Capture: **currency; as-of date; baseline version; BAC; PV/EV/AC; EAC method; re
 
 Use aligned nonstacked bars for comparable amounts and separate funding bridges. BAC, AC and EAC overlap conceptually and must not be stacked as additive spend. Distinguish management reserve from the performance baseline.
 
-## Worked visual decision
+## Interpretation
 
-Relay 120k EAC exceeds 100k BAC by 20k and 110k envelope by 10k. The forecast does not authorize spending or imply calendar days late.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
+Compare EAC with both BAC and the funding envelope, with each difference labeled. A forecast does not authorize spending or imply calendar days late.
 
 ## Delivery standard
 
@@ -21,7 +19,3 @@ Preserve a source snapshot and mapping from literal IDs/fields to the displayed 
 Choose static SVG for a shareable diagram, self-contained HTML when filtering or inspection helps, or a table when it communicates the decision better. Interactive output needs visible filter scope/counts, reset, keyboard access and persistent details; a phone view needs readable cards, a focused slice or a deliberate scroll region. Avoid tiny desktop diagrams on phones. Editing or live system writes require their own requested workflow.
 
 Deliver editable source plus a full accessible table/edge register. Label exports as full or current view and preserve hidden-data caveats. Open the actual artifact, compare values and relationships with the source, inspect desktop/portrait/landscape and test any controls and downloads. If rendering is unavailable, deliver a labeled source draft and say visual inspection was not performed. Do not claim a PDF/PNG exists from source code alone.
-
-## Rendered example
-
-Inspect the [software SVG](../assets/software-visual.svg) alongside its [editable data](../assets/software-visual.json) and [full source explanation](../examples/software.md). This static example has no interactive controls.

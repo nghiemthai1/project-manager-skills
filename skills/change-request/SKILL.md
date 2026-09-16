@@ -67,9 +67,11 @@ Quality check: a reviewer can compare before/proposed/approved states, explain i
 
 ### When producing a visual
 
-Use the [before/after impact comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [before/after impact comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay CR-001 and separate date change](examples/software.md): deferring polish does not remove recovery evidence or authorize a new date.
 - [Northstar phased change](examples/migration.md): scope population remains explicit and later failed restore still controls readiness.

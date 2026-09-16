@@ -70,9 +70,11 @@ Use [the traceability template](template.md). A reviewer should be able to follo
 
 ### When producing a visual
 
-Use the [evidence traceability matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [evidence traceability matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay recovery chain](examples/software.md): a planned demonstration and later accepted evidence remain separate dated states.
 - [Northstar relationship chain](examples/migration.md): matching counts do not close a failed attachment requirement.

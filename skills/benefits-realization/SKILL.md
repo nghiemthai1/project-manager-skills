@@ -74,9 +74,11 @@ Use [the benefits template](template.md). A good review can answer what changed,
 
 ### When producing a visual
 
-Use the [benefit chain and measured outcome comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [benefit chain and measured outcome comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay support-capacity hypothesis](examples/software.md): a dated handoff plus a separate illustrative review that distinguishes time capacity from cash.
 - [Northstar service outcomes](examples/migration.md): a weak baseline limits the claim even when migration is accepted.

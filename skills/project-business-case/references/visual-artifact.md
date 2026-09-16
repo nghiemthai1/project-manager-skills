@@ -8,11 +8,9 @@ Capture: **option ID; do-minimum comparator; currency/base date; cost/benefit ti
 
 Use aligned bars or interval marks only for comparable values. Preserve the do-minimum option and distinguish approved funding from modeled return. Avoid a pie that treats costs, capacity and uncertain benefits as one total.
 
-## Worked visual decision
+## Interpretation
 
 An apparently cheaper option can still fail a mandatory recovery condition; put that condition beside the range rather than burying it in a weighted score.
-
-Read the complete [software example](../examples/software.md) or [migration example](../examples/migration.md) before extracting a chart; preserve its fictional label, cutoff and boundaries.
 
 ## Delivery standard
 

@@ -98,9 +98,11 @@ Compare actual delivery against original and approved revised scope/date/cost, s
 
 ### When producing a visual
 
-Use the [closure evidence and residual transfer matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [closure evidence and residual transfer matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Relay closure record](examples/software.md): B2 is not final actual cost, and the benefit review remains later.
 - [Northstar closure record](examples/migration.md): phased baseline history, accepted service transfer and missing underlying evidence coexist honestly.

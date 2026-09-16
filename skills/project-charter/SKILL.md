@@ -80,6 +80,8 @@ Can the sponsor tell what is being authorized? Can a delivery lead identify excl
 
 ## Examples
 
+Optional worked applications:
+
 - [Relay software charter](examples/software.md): a complete proposed charter before baseline approval, with measured acceptance still requiring agreement.
 - [Northstar migration charter](examples/migration.md): an existing approved mandate is summarized without expanding scope or inventing tolerances.
 

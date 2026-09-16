@@ -1,6 +1,6 @@
 # Migration rehearsal: two tied branches
 
-Open the **[interactive artifact](../assets/migration.html)**, **[SVG](../assets/migration.svg)**, [editable JSON](../assets/migration-source.json), or [CSV](../assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/migration.html)**, **[SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Northstar's approved cutover schedule or its actual rehearsal history. Additional assumptions: start Monday 2 November 2026; Monday–Friday workweek with no holidays; separate available resources for B and C; no external input delays. Finish dates below are exclusive boundaries.
 
@@ -28,9 +28,9 @@ gantt
 
 ```
 
-[Editable Mermaid source](../assets/migration.mmd).
+[Editable Mermaid source](assets/migration.mmd).
 
-![Rendered migration Gantt](../assets/migration.svg)
+![Rendered migration Gantt](assets/migration.svg)
 
 B and C use explicit Monday finish boundaries to match the source table. Their productive dates remain 4–6 November; the shaded weekend adds no effort. The table preserves their dependency on A. Explicit dates must be recalculated when the schedule changes.
 

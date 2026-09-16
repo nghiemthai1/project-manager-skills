@@ -66,9 +66,11 @@ Use [the schedule template](template.md). Quality review checks complete logic, 
 
 ### When producing a visual
 
-Use the [logic network plus milestone view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the worked example’s evidence and uncertainty in the graphic.
+Use the [logic network plus milestone view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
 
 ## Examples
+
+Optional worked applications:
 
 - [Software network](examples/software.md): forward/backward passes, one-day float and a changed critical duration, with runnable input.
 - [Migration network](examples/migration.md): tied branches and a shared-specialist alternative, with runnable input.
