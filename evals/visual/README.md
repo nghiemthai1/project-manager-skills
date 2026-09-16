@@ -27,3 +27,5 @@ Run `python scripts/validate.py --build-catalog`, both authoring check scripts, 
 ## Remaining limits
 
 No live Codex-client installation run, assistive-technology certification, physical-phone test, vendor import integration, editable schedule engine or user field trial is claimed. HTML runs offline; SVG and JSON remain usable without JavaScript. Browser print is available but no generated PDF or PNG delivery is claimed by the renderer.
+
+Hosted CI passed all four OS/Python combinations after a Python 3.11 f-string compatibility correction: [run](https://github.com/nghiemthai1/project-manager-skills/actions/runs/35141626680). The [local release candidate](release-candidate.json) was rebuilt after that fix and checked byte-for-byte against canonical payloads. Main promotion and release publication remain subject to the owner approval requested after automatic approval review rejected them.

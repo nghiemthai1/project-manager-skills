@@ -1,0 +1,19 @@
+{
+  "status": "local release candidate verified; remote release not published",
+  "source_commit": "25c5ab0e39653986f2ddd0496412db0c22cc9e06",
+  "entries": 323,
+  "bytes": 588146,
+  "sha256": "4e5a13a0a90fb5bd65aa68aba0afd1c389484da335f20d9bbc6597943a9ee73d",
+  "both_aliases_identical": true,
+  "all_payloads_match_source": true,
+  "all_crc_valid": true,
+  "helpers_executed": [
+    ".agents/skills/estimation-advisor/scripts/estimate.py",
+    ".agents/skills/gantt-chart/scripts/render_gantt.py",
+    ".agents/skills/milestone-schedule/scripts/schedule.py",
+    ".agents/skills/project-budget/scripts/earned_value.py",
+    ".agents/skills/raci-matrix/scripts/render_raci.py",
+    ".agents/skills/resource-capacity-plan/scripts/capacity.py"
+  ],
+  "text_normalization": "CRLF to LF; compressed bytes reproducible only within the same compression runtime"
+}

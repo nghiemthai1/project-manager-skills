@@ -1,6 +1,6 @@
 # Visual artifact upgrade
 
-Status: local implementation and validation complete; private release verification pending. Reference: the owner-installed gantt-chart-visualization skill and its six references, plus its mobile visualization foundation. The [reference inventory](../catalog/visual-reference.json) records inspected file hashes; the installed copy is not modified or required at runtime.
+Status: implemented and validated on the review branch; main promotion and private release await owner approval after automatic approval review rejected those final actions. Reference: the owner-installed gantt-chart-visualization skill and its six references, plus its mobile visualization foundation. The [reference inventory](../catalog/visual-reference.json) records inspected file hashes; the installed copy is not modified or required at runtime.
 
 The requested outcome is comparable visual-design depth in this repository, especially Gantt and RACI, with the same standard applied whenever another skill produces a graphical artifact. Preserve the repository's project-management methods and evidence semantics. No hosted application is required.
 
@@ -27,7 +27,7 @@ The requested outcome is comparable visual-design depth in this repository, espe
 - [x] Produce and inspect richer Gantt/RACI artifacts for both fictional examples.
 - [x] Apply visual standards to all other applicable skills, with scope-specific examples and honest chart choices.
 - [x] Test source integrity, numerical/date semantics, interaction, accessibility and exports with adverse inputs.
-- [ ] Run authoring, catalog, calculation, packaging and cross-platform gates.
+- [x] Run authoring, catalog, calculation, packaging and cross-platform gates.
 - [ ] Publish privately and verify the downloaded artifact payload.
 
 ## Boundaries
@@ -50,3 +50,5 @@ Use the reference's design principles with original project-specific explanation
 The included Gantt renderer is a read-only, date-only snapshot viewer. It preserves typed relationships and calendars but does not implement vendor adapters, resource leveling, intraday scheduling, editing, live writes or computed critical paths. Search filters its source table/cards while the chart retains the complete network; the UI explicitly states that scope. The wider guide explains when a different renderer or schedule engine is needed. The RACI helper reports evidence/assignment gaps without approving roles. Both produce full exports, not current-filter-only exports.
 
 Two hundred-row synthetic generation probes establish only that these examples generated successfully on the local machine. They are not a large-project performance guarantee. Browser checks use local Chrome; mobile-sized layouts are not tests on physical phones.
+
+Hosted compatibility passed on Ubuntu/Windows with Python 3.11/3.14 for commit `25c5ab0e39653986f2ddd0496412db0c22cc9e06`: [CI run](https://github.com/nghiemthai1/project-manager-skills/actions/runs/35141626680). The [local release candidate](../evals/visual/release-candidate.json) has matching payloads and six successfully executed extracted helpers. It is not yet a published release.
