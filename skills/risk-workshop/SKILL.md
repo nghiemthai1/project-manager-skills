@@ -1,18 +1,21 @@
 ---
 name: risk-workshop
+argument-hint: '[project context and uncertain outcomes]'
 description: Facilitate a focused risk review and choose owned responses. Use before a commitment, after a material
   change or when uncertainty is hidden by a stale register.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to response
+intent: Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to response
+  options, triggers and residual-risk decisions.
+type: interactive
+theme: controls-and-assurance
+best_for:
+  - Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to response
     options, triggers and residual-risk decisions.
-  frameworks: Premortem; probability-impact matrix; response planning; residual risk
-  best_for: '["Guide a bounded risk conversation from independent hypotheses through evidence-based assessment to
-    response options, triggers and residual-risk decisions."]'
-  scenarios: '["Facilitate a premortem to identify plausible failure causes, assess uncertainty and choose responses."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Facilitate a premortem to identify plausible failure causes, assess uncertainty and choose responses.
+estimated_time: Depends on evidence and project scope
+frameworks: Premortem; probability-impact matrix; response planning; residual risk
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Risk Workshop
 

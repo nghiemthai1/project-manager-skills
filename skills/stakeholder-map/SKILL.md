@@ -1,27 +1,32 @@
 ---
 name: stakeholder-map
+argument-hint: '[stakeholders, influence, interest, and impact]'
 description: Prioritize stakeholders using two complementary grids. Use when setting engagement strategy and surfacing
   whose voice needs elevating after stakeholder identification.
+intent: 'Run two complementary 2x2 grids — Power × Interest (sets engagement strategy per stakeholder) and Impact
+  × Power (surfaces who bears consequences but lacks voice) — then compare outputs to reveal blind spots and plan
+  quadrant migration. The grids answer different questions and neither one alone is sufficient: Power × Interest
+  tells you how to engage; Impact × Power tells you whose voice to elevate. Feed outputs into stakeholder-engagement-advisor
+  for per-stakeholder action planning.'
+type: component
+theme: stakeholders-and-collaboration
+best_for:
+  - After stakeholder identification, when you need to decide who gets which level of engagement
+  - Preparing an engagement plan before a project review where executives and impacted user groups have conflicting
+    authority
+  - Surfacing high-impact, low-power user segments who deserve more voice in project decisions but lack org pull
+  - Re-baselining stakeholder strategy after a reorg has shifted who holds decision authority
+  - Planning a compliance or regulatory initiative where power to block sits separately from who bears the consequences
+scenarios:
+  - Who should I prioritize engaging on this initiative?
+  - How do I handle stakeholders with conflicting priorities?
+  - Help me figure out whose voice is missing from our project decisions
+  - I need a stakeholder engagement strategy before our quarterly review
+estimated_time: 25-40 min
+domain: software-it-project-management
+version: 2.1.0
 license: CC-BY-NC-SA-4.0
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: 'Run two complementary 2x2 grids — Power × Interest (sets engagement strategy per stakeholder) and Impact
-    × Power (surfaces who bears consequences but lacks voice) — then compare outputs to reveal blind spots and plan
-    quadrant migration. The grids answer different questions and neither one alone is sufficient: Power × Interest
-    tells you how to engage; Impact × Power tells you whose voice to elevate. Feed outputs into stakeholder-engagement-advisor
-    for per-stakeholder action planning.'
-  best_for: '["After stakeholder identification, when you need to decide who gets which level of engagement", "Preparing
-    an engagement plan before a project review where executives and impacted user groups have conflicting authority",
-    "Surfacing high-impact, low-power user segments who deserve more voice in project decisions but lack org pull",
-    "Re-baselining stakeholder strategy after a reorg has shifted who holds decision authority", "Planning a compliance
-    or regulatory initiative where power to block sits separately from who bears the consequences"]'
-  scenarios: '["Who should I prioritize engaging on this initiative?", "How do I handle stakeholders with conflicting
-    priorities?", "Help me figure out whose voice is missing from our project decisions", "I need a stakeholder
-    engagement strategy before our quarterly review"]'
-  estimated_time: 25-40 min
-  source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/stakeholder-mapping/SKILL.md
+source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/stakeholder-mapping/SKILL.md
 ---
 # Stakeholder Mapping
 

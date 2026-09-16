@@ -1,19 +1,22 @@
 ---
 name: project-closure
+argument-hint: '[closure evidence and remaining obligations]'
 description: Reconcile delivery, finances and continuing obligations. Use when preparing normal project closure
   or authorized termination with explicit acceptance and ownership.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Prepare and record a defensible project closure or termination with accepted deliverables, reconciled
-    costs, owned residual obligations and a continuing benefit-review plan.
-  frameworks: Closure assurance; financial reconciliation; residual transfer; benefits handoff
-  best_for: '["Prepare and record a defensible project closure or termination with accepted deliverables, reconciled
-    costs, owned residual obligations and a continuing benefit-review plan."]'
-  scenarios: '["Determine whether we can close the project given acceptance, financial obligations, residual work
-    and the benefits handoff."]'
-  estimated_time: Depends on evidence and project scope
+intent: Prepare and record a defensible project closure or termination with accepted deliverables, reconciled costs,
+  owned residual obligations and a continuing benefit-review plan.
+type: workflow
+theme: transition-and-outcomes
+best_for:
+  - Prepare and record a defensible project closure or termination with accepted deliverables, reconciled costs,
+    owned residual obligations and a continuing benefit-review plan.
+scenarios:
+  - Determine whether we can close the project given acceptance, financial obligations, residual work and the benefits
+    handoff.
+estimated_time: Depends on evidence and project scope
+frameworks: Closure assurance; financial reconciliation; residual transfer; benefits handoff
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Closure
 

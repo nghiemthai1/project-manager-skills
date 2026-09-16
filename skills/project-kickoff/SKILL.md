@@ -1,19 +1,22 @@
 ---
 name: project-kickoff
+argument-hint: '[project context and kickoff goals]'
 description: Establish mandate, decision rights and a usable working agreement. Use when starting or resetting a
   software or IT project.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Turn a mandate and unresolved planning questions into explicit working agreements, decision records and
-    an owned planning handoff.
-  frameworks: Kickoff facilitation; RACI; decision/action separation
-  best_for: '["Turn a mandate and unresolved planning questions into explicit working agreements, decision records
-    and an owned planning handoff."]'
-  scenarios: '["Prepare and run the launch workshop for the project team, then capture working agreements, open
-    decisions and actions."]'
-  estimated_time: Depends on evidence and project scope
+intent: Turn a mandate and unresolved planning questions into explicit working agreements, decision records and
+  an owned planning handoff.
+type: workflow
+theme: initiation-and-governance
+best_for:
+  - Turn a mandate and unresolved planning questions into explicit working agreements, decision records and an owned
+    planning handoff.
+scenarios:
+  - Prepare and run the launch workshop for the project team, then capture working agreements, open decisions and
+    actions.
+estimated_time: Depends on evidence and project scope
+frameworks: Kickoff facilitation; RACI; decision/action separation
+domain: software-it-project-management
+version: 2.0.0
 ---
 # Project Kickoff
 

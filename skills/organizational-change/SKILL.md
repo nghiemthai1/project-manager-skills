@@ -1,19 +1,21 @@
 ---
 name: organizational-change
+argument-hint: '[affected groups and adoption evidence]'
 description: Prepare affected people to adopt new ways of working. Use when project delivery changes roles, processes
   or services and training alone will not establish readiness.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Coordinate impact assessment, readiness, adoption support and reinforcement around the people affected
-    by delivery.
-  frameworks: ADKAR lens; change impact assessment; readiness and reinforcement
-  best_for: '["Coordinate impact assessment, readiness, adoption support and reinforcement around the people affected
-    by delivery."]'
-  scenarios: '["Use organizational-change: Coordinate impact assessment, readiness, adoption support and reinforcement
-    around the people affected by delivery."]'
-  estimated_time: Depends on evidence and project scope
+intent: Coordinate impact assessment, readiness, adoption support and reinforcement around the people affected by
+  delivery.
+type: workflow
+theme: transition-and-outcomes
+best_for:
+  - Coordinate impact assessment, readiness, adoption support and reinforcement around the people affected by delivery.
+scenarios:
+  - 'Use organizational-change: Coordinate impact assessment, readiness, adoption support and reinforcement around
+    the people affected by delivery.'
+estimated_time: Depends on evidence and project scope
+frameworks: ADKAR lens; change impact assessment; readiness and reinforcement
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Organizational Change and Adoption
 

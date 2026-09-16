@@ -1,19 +1,21 @@
 ---
 name: project-recovery-advisor
+argument-hint: '[delivery problem and recovery constraints]'
 description: Choose a credible response when the delivery plan fails. Use after a material project setback or diagnosis,
   with causal evidence, options and measurable checkpoints.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Develop and compare feasible project recovery options, preserve mandatory outcomes and authority, and
-    define evidence checkpoints that test whether the chosen intervention works.
-  frameworks: Root-cause hypotheses; recovery option appraisal; recovery checkpoints
-  best_for: '["Develop and compare feasible project recovery options, preserve mandatory outcomes and authority,
-    and define evidence checkpoints that test whether the chosen intervention works."]'
-  scenarios: '["The approved plan is no longer feasible. Compare scope, sequence, resource and date recovery options
-    with checkpoints."]'
-  estimated_time: Depends on evidence and project scope
+intent: Develop and compare feasible project recovery options, preserve mandatory outcomes and authority, and define
+  evidence checkpoints that test whether the chosen intervention works.
+type: interactive
+theme: delivery-and-decisions
+best_for:
+  - Develop and compare feasible project recovery options, preserve mandatory outcomes and authority, and define
+    evidence checkpoints that test whether the chosen intervention works.
+scenarios:
+  - The approved plan is no longer feasible. Compare scope, sequence, resource and date recovery options with checkpoints.
+estimated_time: Depends on evidence and project scope
+frameworks: Root-cause hypotheses; recovery option appraisal; recovery checkpoints
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Recovery Advisor
 

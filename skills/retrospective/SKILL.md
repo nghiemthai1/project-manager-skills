@@ -1,19 +1,21 @@
 ---
 name: retrospective
+argument-hint: '[observations, outcomes, and improvement goals]'
 description: Turn delivery observations into a few testable improvements. Use after an iteration, rehearsal or milestone
   when the team needs evidence-based learning and follow-through.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Create a retrospective record that separates observations, causal hypotheses and bounded improvement experiments,
+intent: Create a retrospective record that separates observations, causal hypotheses and bounded improvement experiments,
+  with ownership, measures and an actual review loop.
+type: component
+theme: transition-and-outcomes
+best_for:
+  - Create a retrospective record that separates observations, causal hypotheses and bounded improvement experiments,
     with ownership, measures and an actual review loop.
-  frameworks: PDCA; 5 Whys with evidence; experiment design
-  best_for: '["Create a retrospective record that separates observations, causal hypotheses and bounded improvement
-    experiments, with ownership, measures and an actual review loop."]'
-  scenarios: '["Facilitate a team review of observed work and choose a small improvement experiment with an owner
-    and measure."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Facilitate a team review of observed work and choose a small improvement experiment with an owner and measure.
+estimated_time: Depends on evidence and project scope
+frameworks: PDCA; 5 Whys with evidence; experiment design
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Retrospective
 

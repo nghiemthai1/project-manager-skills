@@ -1,19 +1,21 @@
 ---
 name: decision-log
+argument-hint: '[decision, authority, rationale, and conditions]'
 description: Record the exact choice, authority, rationale and conditions. Use when project decisions need traceable
   history across meetings, changes or conflicting recollections.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Create durable decision records that distinguish proposals from authority and preserve bounded approvals,
-    implementation state and later supersession.
-  frameworks: DACI; decision records; option analysis
-  best_for: '["Create durable decision records that distinguish proposals from authority and preserve bounded approvals,
-    implementation state and later supersession."]'
-  scenarios: '["Record what was actually decided, by whom, why, under which conditions, and what earlier decision
-    it supersedes."]'
-  estimated_time: Depends on evidence and project scope
+intent: Create durable decision records that distinguish proposals from authority and preserve bounded approvals,
+  implementation state and later supersession.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Create durable decision records that distinguish proposals from authority and preserve bounded approvals, implementation
+    state and later supersession.
+scenarios:
+  - Record what was actually decided, by whom, why, under which conditions, and what earlier decision it supersedes.
+estimated_time: Depends on evidence and project scope
+frameworks: DACI; decision records; option analysis
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Decision Log
 

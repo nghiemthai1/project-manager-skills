@@ -1,18 +1,20 @@
 ---
 name: project-governance
+argument-hint: '[decision rights and escalation context]'
 description: Define project decision rights, tolerances and evidence gates. Use when approval, escalation or acceptance
   responsibilities are unclear.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Create a proportionate governance agreement that separates preparation, authority, assurance and acceptance.
-  frameworks: Stage gates; management by exception; delegated authority
-  best_for: '["Create a proportionate governance agreement that separates preparation, authority, assurance and
-    acceptance."]'
-  scenarios: '["Use project-governance: Create a proportionate governance agreement that separates preparation,
-    authority, assurance and acceptance."]'
-  estimated_time: Depends on evidence and project scope
+intent: Create a proportionate governance agreement that separates preparation, authority, assurance and acceptance.
+type: component
+theme: initiation-and-governance
+best_for:
+  - Create a proportionate governance agreement that separates preparation, authority, assurance and acceptance.
+scenarios:
+  - 'Use project-governance: Create a proportionate governance agreement that separates preparation, authority,
+    assurance and acceptance.'
+estimated_time: Depends on evidence and project scope
+frameworks: Stage gates; management by exception; delegated authority
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Governance
 

@@ -1,19 +1,21 @@
 ---
 name: release-readiness
+argument-hint: '[release criteria and current evidence]'
 description: Assess a defined release against current gate evidence. Use before a pilot, launch or migration cutover
   to recommend go or hold without inventing authorization.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
-    exceptions, immediate service coverage and actual go authority.
-  frameworks: Readiness gates; exception authority; operational acceptance
-  best_for: '["Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
-    exceptions, immediate service coverage and actual go authority."]'
-  scenarios: '["Evaluate the current release evidence and recommend go or hold; restore failed even though most
-    checks passed."]'
-  estimated_time: Depends on evidence and project scope
+intent: Produce a version-specific readiness matrix and recommendation that separates required gates, permitted
+  exceptions, immediate service coverage and actual go authority.
+type: component
+theme: transition-and-outcomes
+best_for:
+  - Produce a version-specific readiness matrix and recommendation that separates required gates, permitted exceptions,
+    immediate service coverage and actual go authority.
+scenarios:
+  - Evaluate the current release evidence and recommend go or hold; restore failed even though most checks passed.
+estimated_time: Depends on evidence and project scope
+frameworks: Readiness gates; exception authority; operational acceptance
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Release Readiness
 

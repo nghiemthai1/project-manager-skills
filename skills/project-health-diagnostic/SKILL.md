@@ -1,19 +1,22 @@
 ---
 name: project-health-diagnostic
+argument-hint: '[current signals and conflicting evidence]'
 description: Diagnose delivery health and evidence confidence. Use when project status is disputed, incomplete or
   contradicted by cost, schedule or acceptance evidence.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
-    from causal hypotheses and recommend the next decision or investigation.
-  frameworks: Dimensional health assessment; leading/lagging indicators; causal hypotheses
-  best_for: '["Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
-    from causal hypotheses and recommend the next decision or investigation."]'
-  scenarios: '["Reports are green but milestones, defects and staffing tell different stories. Diagnose current
-    delivery health and missing evidence."]'
-  estimated_time: Depends on evidence and project scope
+intent: Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms
+  from causal hypotheses and recommend the next decision or investigation.
+type: interactive
+theme: delivery-and-decisions
+best_for:
+  - Find the consequential delivery constraints through a dimensional evidence review, distinguish symptoms from
+    causal hypotheses and recommend the next decision or investigation.
+scenarios:
+  - Reports are green but milestones, defects and staffing tell different stories. Diagnose current delivery health
+    and missing evidence.
+estimated_time: Depends on evidence and project scope
+frameworks: Dimensional health assessment; leading/lagging indicators; causal hypotheses
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Health Diagnostic
 

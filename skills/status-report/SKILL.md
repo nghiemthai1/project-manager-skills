@@ -1,19 +1,22 @@
 ---
 name: status-report
+argument-hint: '[reporting cutoff, baseline, and current evidence]'
 description: Report project evidence, forecast variance and decisions needed. Use for an executive update, recurring
   control report or material exception.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance
-    states and makes the next intervention clear.
-  frameworks: RAG by tolerance; management by exception; baseline/forecast/actual
-  best_for: '["Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance
-    states and makes the next intervention clear."]'
-  scenarios: '["Write a one-screen sponsor update from these current facts, showing delivery confidence, changes
-    and decision asks."]'
-  estimated_time: Depends on evidence and project scope
+intent: Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance
+  states and makes the next intervention clear.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Produce a dated audience-specific status report that preserves baseline, forecast, actual and acceptance states
+    and makes the next intervention clear.
+scenarios:
+  - Write a one-screen sponsor update from these current facts, showing delivery confidence, changes and decision
+    asks.
+estimated_time: Depends on evidence and project scope
+frameworks: RAG by tolerance; management by exception; baseline/forecast/actual
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Status Report
 

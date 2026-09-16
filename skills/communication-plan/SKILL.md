@@ -1,18 +1,21 @@
 ---
 name: communication-plan
+argument-hint: '[audiences and communication needs]'
 description: Plan project communications around decisions, evidence and feedback. Use when updates are missed, audiences
   need different detail or meetings fail to resolve work.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Create an audience-specific communication agreement with consistent evidence, explicit response expectations
+intent: Create an audience-specific communication agreement with consistent evidence, explicit response expectations
+  and event-driven exception paths.
+type: component
+theme: stakeholders-and-collaboration
+best_for:
+  - Create an audience-specific communication agreement with consistent evidence, explicit response expectations
     and event-driven exception paths.
-  frameworks: Communication matrix; push/pull/interactive communication
-  best_for: '["Create an audience-specific communication agreement with consistent evidence, explicit response expectations
-    and event-driven exception paths."]'
-  scenarios: '["Build an audience/message/channel/cadence plan with feedback routes for the rollout."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Build an audience/message/channel/cadence plan with feedback routes for the rollout.
+estimated_time: Depends on evidence and project scope
+frameworks: Communication matrix; push/pull/interactive communication
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Communication Plan
 

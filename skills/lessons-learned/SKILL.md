@@ -1,19 +1,22 @@
 ---
 name: lessons-learned
+argument-hint: '[experience, evidence, and reuse context]'
 description: Capture reusable learning with evidence, context and limits. Use when a milestone, experiment or project
   outcome should inform another team or future delivery.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: Turn observed project outcomes and bounded improvement results into contextual lessons, separate practice
-    maturity from aspiration and define a verifiable adoption action.
-  frameworks: After-action review; contextual lessons; knowledge transfer
-  best_for: '["Turn observed project outcomes and bounded improvement results into contextual lessons, separate
-    practice maturity from aspiration and define a verifiable adoption action."]'
-  scenarios: '["Turn this completed project experience into a transferable lesson with context, evidence, limits
-    and an adoption route."]'
-  estimated_time: Depends on evidence and project scope
+intent: Turn observed project outcomes and bounded improvement results into contextual lessons, separate practice
+  maturity from aspiration and define a verifiable adoption action.
+type: component
+theme: transition-and-outcomes
+best_for:
+  - Turn observed project outcomes and bounded improvement results into contextual lessons, separate practice maturity
+    from aspiration and define a verifiable adoption action.
+scenarios:
+  - Turn this completed project experience into a transferable lesson with context, evidence, limits and an adoption
+    route.
+estimated_time: Depends on evidence and project scope
+frameworks: After-action review; contextual lessons; knowledge transfer
+domain: software-it-project-management
+version: 2.0.0
 ---
 # Lessons Learned
 

@@ -1,19 +1,21 @@
 ---
 name: resource-capacity-plan
+argument-hint: '[people, availability, and work demand]'
 description: Compare complete demand with realistic availability, skills and timing. Use when staffing, competing
   assignments or a shared specialist may make a plan infeasible.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Expose person-level capacity constraints and develop explicit allocation, scope or sequence options without
+intent: Expose person-level capacity constraints and develop explicit allocation, scope or sequence options without
+  assuming interchangeable people.
+type: component
+theme: controls-and-assurance
+best_for:
+  - Expose person-level capacity constraints and develop explicit allocation, scope or sequence options without
     assuming interchangeable people.
-  frameworks: Capacity-demand analysis; skill constraints; resource leveling options
-  best_for: '["Expose person-level capacity constraints and develop explicit allocation, scope or sequence options
-    without assuming interchangeable people."]'
-  scenarios: '["Check next weeks assignments against each persons available hours, leave, support load and specialist
-    constraints."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Check next weeks assignments against each persons available hours, leave, support load and specialist constraints.
+estimated_time: Depends on evidence and project scope
+frameworks: Capacity-demand analysis; skill constraints; resource leveling options
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Resource Capacity Plan
 

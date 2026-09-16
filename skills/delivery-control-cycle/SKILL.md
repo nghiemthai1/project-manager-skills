@@ -1,19 +1,22 @@
 ---
 name: delivery-control-cycle
+argument-hint: '[control-period evidence and decisions]'
 description: Reconcile project evidence and turn exceptions into decisions. Use for a recurring control review or
   material change in delivery, funding or readiness.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting
-    prior baselines, then verifies actual response outcomes.
-  frameworks: Plan-monitor-control; exception escalation; integrated change control
-  best_for: '["Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting
-    prior baselines, then verifies actual response outcomes."]'
-  scenarios: '["Run the weekly evidence-to-decision control process across status, dependencies, risks, changes
-    and escalation follow-through."]'
-  estimated_time: Depends on evidence and project scope
+intent: Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting
+  prior baselines, then verifies actual response outcomes.
+type: workflow
+theme: delivery-and-decisions
+best_for:
+  - Run a repeatable evidence-to-decision cycle that aligns current forecasts and controls without rewriting prior
+    baselines, then verifies actual response outcomes.
+scenarios:
+  - Run the weekly evidence-to-decision control process across status, dependencies, risks, changes and escalation
+    follow-through.
+estimated_time: Depends on evidence and project scope
+frameworks: Plan-monitor-control; exception escalation; integrated change control
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Delivery Control Cycle
 

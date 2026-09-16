@@ -1,19 +1,21 @@
 ---
 name: sprint-planning
+argument-hint: '[Sprint Goal, backlog, and capacity context]'
 description: Prepare a coherent Sprint Goal and feasible team forecast. Use when supporting Scrum Sprint Planning
   with capacity, dependencies and required quality made explicit.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Help a Scrum team prepare a Sprint Goal, selected-work forecast and delivery plan while preserving team
-    accountabilities, quality and separate project authority.
-  frameworks: Scrum Sprint Planning; Sprint Goal; Definition of Done; capacity
-  best_for: '["Help a Scrum team prepare a Sprint Goal, selected-work forecast and delivery plan while preserving
-    team accountabilities, quality and separate project authority."]'
-  scenarios: '["Help the Scrum team form a coherent Sprint Goal and feasible selected-work forecast from backlog
-    and availability."]'
-  estimated_time: Depends on evidence and project scope
+intent: Help a Scrum team prepare a Sprint Goal, selected-work forecast and delivery plan while preserving team
+  accountabilities, quality and separate project authority.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Help a Scrum team prepare a Sprint Goal, selected-work forecast and delivery plan while preserving team accountabilities,
+    quality and separate project authority.
+scenarios:
+  - Help the Scrum team form a coherent Sprint Goal and feasible selected-work forecast from backlog and availability.
+estimated_time: Depends on evidence and project scope
+frameworks: Scrum Sprint Planning; Sprint Goal; Definition of Done; capacity
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Sprint Planning
 

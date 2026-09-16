@@ -1,19 +1,22 @@
 ---
 name: change-request
+argument-hint: '[proposed change and current baseline]'
 description: Assess a proposed change and preserve exact approval boundaries. Use when scope, date, cost or acceptance
   changes cross agreed project control limits.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded authority
+intent: Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded authority
+  and verified prospective baseline updates.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded authority
     and verified prospective baseline updates.
-  frameworks: Integrated change control; impact analysis; configuration history
-  best_for: '["Develop a proportionate change assessment with integrated impacts, feasible alternatives, bounded
-    authority and verified prospective baseline updates."]'
-  scenarios: '["Assess a specific proposed change to the approved scope and date, compare impacts and prepare the
-    authorization record."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Assess a specific proposed change to the approved scope and date, compare impacts and prepare the authorization
+    record.
+estimated_time: Depends on evidence and project scope
+frameworks: Integrated change control; impact analysis; configuration history
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Change Request
 

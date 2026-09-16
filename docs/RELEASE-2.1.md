@@ -21,3 +21,7 @@ The private release will retain both `pm-skills-codex.zip` and `codex-project-ma
 Commit `25c5ab0e39653986f2ddd0496412db0c22cc9e06` passes [all four hosted jobs](https://github.com/nghiemthai1/project-manager-skills/actions/runs/35141626680). The [local candidate report](../evals/visual/release-candidate.json) records the archive hash, exact payload comparison and six extracted helper executions. The first Python 3.11 run exposed an f-string parsing incompatibility in RACI search; the correction preserves identical generated artifacts and passes the full matrix.
 
 Automatic approval review rejected main-branch promotion and publication of v2.1.0 pending explicit owner approval. The review branch and local ZIP are complete; no main promotion or release tag was performed. Downloading the existing latest GitHub release still retrieves v2.0.0 until publication is approved and completes.
+
+## Metadata presentation follow-up
+
+All 42 source headers now use Dean-style flat rows and native YAML lists. The Codex ZIP converts those authoring fields to install-compatible metadata without changing instruction bodies or field values. See the [metadata checks](../evals/metadata/README.md) and [current candidate digest](../evals/metadata/checks.json); the earlier visual-only candidate remains a historical verification record. The current suite has 44 passing local tests.

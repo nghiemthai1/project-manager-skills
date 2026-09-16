@@ -1,17 +1,20 @@
 ---
 name: raci-matrix
+argument-hint: '[deliverables, roles, and assignment evidence]'
 description: Build and visualize responsibility matrices with assignment evidence. Use when deliverable ownership,
   accountability, consultation or notification is unclear.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Produce an auditable responsibility matrix and usable graphical artifacts with explicit work boundaries,
-    confirmation state, accessible inspection and editable source.
-  frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
-  best_for: '["Assign clear responsibilities for defined deliverables and expose unresolved authority."]'
-  scenarios: '["Use raci-matrix: Assign clear responsibilities for defined deliverables and expose unresolved authority."]'
-  estimated_time: Depends on evidence and project scope
+intent: Produce an auditable responsibility matrix and usable graphical artifacts with explicit work boundaries,
+  confirmation state, accessible inspection and editable source.
+type: component
+theme: stakeholders-and-collaboration
+best_for:
+  - Assign clear responsibilities for defined deliverables and expose unresolved authority.
+scenarios:
+  - 'Use raci-matrix: Assign clear responsibilities for defined deliverables and expose unresolved authority.'
+estimated_time: Depends on evidence and project scope
+frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
+domain: software-it-project-management
+version: 2.1.0
 ---
 # RACI Matrix
 

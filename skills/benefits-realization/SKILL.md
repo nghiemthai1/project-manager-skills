@@ -1,18 +1,20 @@
 ---
 name: benefits-realization
+argument-hint: '[benefit hypotheses and measured outcomes]'
 description: Define and verify benefits after project delivery. Use when outputs need to be connected to owned,
   measurable business outcomes and review decisions.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions.
-  frameworks: Benefits map; leading/lagging measures; ownership and review plan
-  best_for: '["Carry benefit hypotheses from a business case into measured outcomes and accountable post-project
-    decisions."]'
-  scenarios: '["Use benefits-realization: Carry benefit hypotheses from a business case into measured outcomes and
-    accountable post-project decisions."]'
-  estimated_time: Depends on evidence and project scope
+intent: Carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions.
+type: workflow
+theme: transition-and-outcomes
+best_for:
+  - Carry benefit hypotheses from a business case into measured outcomes and accountable post-project decisions.
+scenarios:
+  - 'Use benefits-realization: Carry benefit hypotheses from a business case into measured outcomes and accountable
+    post-project decisions.'
+estimated_time: Depends on evidence and project scope
+frameworks: Benefits map; leading/lagging measures; ownership and review plan
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Benefits Realization
 

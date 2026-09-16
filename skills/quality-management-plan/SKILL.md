@@ -1,19 +1,21 @@
 ---
 name: quality-management-plan
+argument-hint: '[quality objectives, controls, and evidence]'
 description: Define quality criteria, prevention, verification and defect control. Use when project quality expectations
   need an executable plan before delivery or release.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Plan how the project will prevent defects, verify outputs and obtain acceptance using risk-proportionate
-    evidence.
-  frameworks: Quality planning/assurance/control; verification versus validation; risk-based testing; PDCA
-  best_for: '["Plan how the project will prevent defects, verify outputs and obtain acceptance using risk-proportionate
-    evidence."]'
-  scenarios: '["Use quality-management-plan: Plan how the project will prevent defects, verify outputs and obtain
-    acceptance using risk-proportionate evidence."]'
-  estimated_time: Depends on evidence and project scope
+intent: Plan how the project will prevent defects, verify outputs and obtain acceptance using risk-proportionate
+  evidence.
+type: component
+theme: controls-and-assurance
+best_for:
+  - Plan how the project will prevent defects, verify outputs and obtain acceptance using risk-proportionate evidence.
+scenarios:
+  - 'Use quality-management-plan: Plan how the project will prevent defects, verify outputs and obtain acceptance
+    using risk-proportionate evidence.'
+estimated_time: Depends on evidence and project scope
+frameworks: Quality planning/assurance/control; verification versus validation; risk-based testing; PDCA
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Quality Management Plan
 

@@ -1,18 +1,21 @@
 ---
 name: raid-log
+argument-hint: '[risks, assumptions, issues, and dependencies]'
 description: Maintain distinct risks, assumptions, issues and dependencies with evidence and closure rules. Use
   when setting up controls or updating them after new project evidence.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Maintain a dated RAID register whose classification, response, ownership and lifecycle follow the evidence
-    rather than optimistic status labels.
-  frameworks: RAID; cause-event-effect; issue lifecycle; assumption validation
-  best_for: '["Maintain a dated RAID register whose classification, response, ownership and lifecycle follow the
-    evidence rather than optimistic status labels."]'
-  scenarios: '["Update our linked risks, assumptions, issues and dependencies with owners, triggers and next actions."]'
-  estimated_time: Depends on evidence and project scope
+intent: Maintain a dated RAID register whose classification, response, ownership and lifecycle follow the evidence
+  rather than optimistic status labels.
+type: component
+theme: controls-and-assurance
+best_for:
+  - Maintain a dated RAID register whose classification, response, ownership and lifecycle follow the evidence rather
+    than optimistic status labels.
+scenarios:
+  - Update our linked risks, assumptions, issues and dependencies with owners, triggers and next actions.
+estimated_time: Depends on evidence and project scope
+frameworks: RAID; cause-event-effect; issue lifecycle; assumption validation
+domain: software-it-project-management
+version: 2.1.0
 ---
 # RAID Log
 

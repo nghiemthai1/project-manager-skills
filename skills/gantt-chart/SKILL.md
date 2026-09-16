@@ -1,18 +1,20 @@
 ---
 name: gantt-chart
+argument-hint: '[schedule data or timeline request]'
 description: Design and deliver Gantt artifacts with source mapping, readable interaction and exports. Use when
   schedules need timelines, baseline comparisons or visual review.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Choose and produce an evidence-preserving schedule visualization with explicit data mapping, calendar
-    semantics, interaction, accessibility and inspected exports.
-  frameworks: Gantt timeline; working calendars; finish-to-start dependencies; baseline comparison
-  best_for: '["Turn evidenced schedule data into a readable timeline without inventing dates or completion."]'
-  scenarios: '["Use gantt-chart: Turn evidenced schedule data into a readable timeline without inventing dates or
-    completion."]'
-  estimated_time: Depends on evidence and project scope
+intent: Choose and produce an evidence-preserving schedule visualization with explicit data mapping, calendar semantics,
+  interaction, accessibility and inspected exports.
+type: component
+theme: scope-and-planning
+best_for:
+  - Turn evidenced schedule data into a readable timeline without inventing dates or completion.
+scenarios:
+  - 'Use gantt-chart: Turn evidenced schedule data into a readable timeline without inventing dates or completion.'
+estimated_time: Depends on evidence and project scope
+frameworks: Gantt timeline; working calendars; finish-to-start dependencies; baseline comparison
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Gantt Chart
 

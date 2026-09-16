@@ -1,19 +1,22 @@
 ---
 name: estimation-advisor
+argument-hint: '[work scope and estimation evidence]'
 description: Choose and explain an estimation method with units, assumptions and uncertainty. Use when sizing work
   or testing a forecast before committing effort or dates.
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Select an evidence-appropriate estimate and explain what it can support without turning scenarios into
-    promised dates or probabilities.
-  frameworks: Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting
-  best_for: '["Select an evidence-appropriate estimate and explain what it can support without turning scenarios
-    into promised dates or probabilities."]'
-  scenarios: '["Help estimate this uncertain integration task. We have optimistic, likely and pessimistic durations
-    but no probability model."]'
-  estimated_time: Depends on evidence and project scope
+intent: Select an evidence-appropriate estimate and explain what it can support without turning scenarios into promised
+  dates or probabilities.
+type: interactive
+theme: scope-and-planning
+best_for:
+  - Select an evidence-appropriate estimate and explain what it can support without turning scenarios into promised
+    dates or probabilities.
+scenarios:
+  - Help estimate this uncertain integration task. We have optimistic, likely and pessimistic durations but no probability
+    model.
+estimated_time: Depends on evidence and project scope
+frameworks: Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Estimation Advisor
 

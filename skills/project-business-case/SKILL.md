@@ -1,19 +1,21 @@
 ---
 name: project-business-case
+argument-hint: '[investment options and evidence]'
 description: Compare project options, costs, benefits and uncertainty. Use when an investment or material continuation
   decision needs a defensible business case.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Recommend an investment option with explicit alternatives, assumptions, benefit ownership and a decision
-    boundary.
-  frameworks: Options appraisal; cost-benefit analysis; sensitivity analysis
-  best_for: '["Recommend an investment option with explicit alternatives, assumptions, benefit ownership and a decision
-    boundary."]'
-  scenarios: '["Use project-business-case: Recommend an investment option with explicit alternatives, assumptions,
-    benefit ownership and a decision boundary."]'
-  estimated_time: Depends on evidence and project scope
+intent: Recommend an investment option with explicit alternatives, assumptions, benefit ownership and a decision
+  boundary.
+type: component
+theme: initiation-and-governance
+best_for:
+  - Recommend an investment option with explicit alternatives, assumptions, benefit ownership and a decision boundary.
+scenarios:
+  - 'Use project-business-case: Recommend an investment option with explicit alternatives, assumptions, benefit
+    ownership and a decision boundary.'
+estimated_time: Depends on evidence and project scope
+frameworks: Options appraisal; cost-benefit analysis; sensitivity analysis
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Business Case
 

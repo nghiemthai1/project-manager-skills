@@ -1,19 +1,22 @@
 ---
 name: meeting-knowledge-graph
+argument-hint: '[meeting notes or transcript]'
 description: Build evidence-linked OKF meeting memory. Use when transcripts or notes need durable decisions, actions
   and recurring-series history rather than only a brief summary.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim
-    states, traceable concepts and preserved recurring-meeting history.
-  frameworks: OKF v0.2; immutable ledgers; attribution confidence; series delta
-  best_for: '["Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution
-    and claim states, traceable concepts and preserved recurring-meeting history."]'
-  scenarios: '["Convert these recurring meeting transcripts into durable evidence-linked memory while preserving
-    source order and changed decisions."]'
-  estimated_time: Depends on evidence and project scope
+intent: Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim
+  states, traceable concepts and preserved recurring-meeting history.
+type: workflow
+theme: delivery-and-decisions
+best_for:
+  - Convert ordered meeting evidence into a loss-conscious OKF v0.2 bundle with distinct attribution and claim states,
+    traceable concepts and preserved recurring-meeting history.
+scenarios:
+  - Convert these recurring meeting transcripts into durable evidence-linked memory while preserving source order
+    and changed decisions.
+estimated_time: Depends on evidence and project scope
+frameworks: OKF v0.2; immutable ledgers; attribution confidence; series delta
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Meeting Knowledge Graph
 

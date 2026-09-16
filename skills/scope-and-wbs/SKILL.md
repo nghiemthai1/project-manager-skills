@@ -1,17 +1,20 @@
 ---
 name: scope-and-wbs
+argument-hint: '[scope boundary and deliverables]'
 description: Define a deliverable-oriented scope breakdown with boundaries and completion evidence. Use when preparing
   estimates or resolving missing, duplicated or expanding project work.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted.
-  frameworks: Deliverable-oriented WBS; 100% rule; WBS dictionary
-  best_for: '["Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted."]'
-  scenarios: '["Decompose the approved project scope into deliverable-oriented work packages with boundaries and
-    completion evidence."]'
-  estimated_time: Depends on evidence and project scope
+intent: Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted.
+type: component
+theme: scope-and-planning
+best_for:
+  - Turn the mandate into complete, nonoverlapping work packages that can be estimated, owned and accepted.
+scenarios:
+  - Decompose the approved project scope into deliverable-oriented work packages with boundaries and completion
+    evidence.
+estimated_time: Depends on evidence and project scope
+frameworks: Deliverable-oriented WBS; 100% rule; WBS dictionary
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Scope and Work Breakdown
 

@@ -1,19 +1,22 @@
 ---
 name: integrated-project-planning
+argument-hint: '[scope, schedule, capacity, funding, and gates]'
 description: Reconcile scope, acceptance, schedule, capacity, costs and controls into one plan. Use when preparing
   a baseline or revising a plan whose parts no longer agree.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded
-    baseline decision.
-  frameworks: Integrated baseline planning; progressive elaboration; consistency review
-  best_for: '["Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded
-    baseline decision."]'
-  scenarios: '["Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent
-    delivery plan."]'
-  estimated_time: Depends on evidence and project scope
+intent: Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded baseline
+  decision.
+type: workflow
+theme: scope-and-planning
+best_for:
+  - Coordinate planning artifacts and resolve cross-discipline contradictions before presenting a bounded baseline
+    decision.
+scenarios:
+  - Bring scope, estimates, dependencies, people, costs, risks and acceptance together into one coherent delivery
+    plan.
+estimated_time: Depends on evidence and project scope
+frameworks: Integrated baseline planning; progressive elaboration; consistency review
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Integrated Project Planning
 

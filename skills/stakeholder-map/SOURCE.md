@@ -7,3 +7,5 @@ This entrypoint is a close adaptation, not an independently authored substitute.
 License: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE.md). Source and adaptation are provided as-is, without warranties; see the license's disclaimer and limitations. No endorsement by the source author is implied. Preserve this notice and license when copying this package independently.
 
 Visual revision 2.1 adds project-specific source contracts, chart-choice limits, responsive reading and export checks. Existing attribution and license remain in effect.
+
+Metadata presentation revision: flattened the authoring frontmatter into Dean-style rows and restored native best_for/scenarios lists. Existing guidance, source attribution and license are preserved; Codex installs receive normalized frontmatter from the package builder.

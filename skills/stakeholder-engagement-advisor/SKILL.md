@@ -1,27 +1,31 @@
 ---
 name: stakeholder-engagement-advisor
+argument-hint: '[stakeholder and engagement context]'
 description: Plan engagement for a specific stakeholder. Use when preparing an outreach, navigating resistance,
   or aligning a critical relationship before a key milestone.
+intent: 'Guide per-stakeholder engagement planning through the Adaptive Decision Ladder: three targeted questions
+  diagnose the stakeholder''s profile, power/impact quadrant, and your engagement context, then deliver a tailored
+  approach — key message framing, recommended medium and cadence, what you need from them versus what they need
+  from you, and a named next action with owner and deadline. Treats both sides of the relationship, not just yours.'
+type: interactive
+theme: stakeholders-and-collaboration
+best_for:
+  - Preparing to engage a powerful executive sponsor whose support is critical but whose motivations are unclear
+  - Planning outreach to a resistant or skeptical stakeholder who could block delivery
+  - Navigating first contact with a newly identified stakeholder mid-initiative
+  - Designing inclusive engagement for a Q1 (high-impact, low-power) user community that needs more voice
+  - Aligning cross-functional engagement strategy before a high-stakes project review or launch
+scenarios:
+  - Help me plan how to engage [stakeholder] before my project review
+  - I have a resistant stakeholder — how do I approach them?
+  - I need to bring a new executive sponsor up to speed quickly
+  - How do I engage frontline users who've been excluded from our feedback loops?
+  - Help me prepare a 1:1 with someone who could block this initiative
+estimated_time: 15-25 min
+domain: software-it-project-management
+version: 2.0.0
 license: CC-BY-NC-SA-4.0
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: 'Guide per-stakeholder engagement planning through the Adaptive Decision Ladder: three targeted questions
-    diagnose the stakeholder''s profile, power/impact quadrant, and your engagement context, then deliver a tailored
-    approach — key message framing, recommended medium and cadence, what you need from them versus what they need
-    from you, and a named next action with owner and deadline. Treats both sides of the relationship, not just yours.'
-  best_for: '["Preparing to engage a powerful executive sponsor whose support is critical but whose motivations
-    are unclear", "Planning outreach to a resistant or skeptical stakeholder who could block delivery", "Navigating
-    first contact with a newly identified stakeholder mid-initiative", "Designing inclusive engagement for a Q1
-    (high-impact, low-power) user community that needs more voice", "Aligning cross-functional engagement strategy
-    before a high-stakes project review or launch"]'
-  scenarios: '["Help me plan how to engage [stakeholder] before my project review", "I have a resistant stakeholder
-    — how do I approach them?", "I need to bring a new executive sponsor up to speed quickly", "How do I engage
-    frontline users who''ve been excluded from our feedback loops?", "Help me prepare a 1:1 with someone who could
-    block this initiative"]'
-  estimated_time: 15-25 min
-  source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/stakeholder-engagement-advisor/SKILL.md
+source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/stakeholder-engagement-advisor/SKILL.md
 ---
 # Stakeholder Engagement Advisor
 

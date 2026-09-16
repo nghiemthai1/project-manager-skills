@@ -1,19 +1,21 @@
 ---
 name: milestone-schedule
+argument-hint: '[activities, dependencies, and calendars]'
 description: Build and analyze dependency logic, float and milestone forecasts. Use when testing schedule feasibility
   or the effect of a duration or dependency change.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Produce an explainable schedule model and milestone decision without confusing unconstrained offsets with
-    feasible committed dates.
-  frameworks: Critical Path Method; total float; rolling-wave scheduling
-  best_for: '["Produce an explainable schedule model and milestone decision without confusing unconstrained offsets
-    with feasible committed dates."]'
-  scenarios: '["Calculate which dependency paths govern finish and how much total float each activity has in this
-    task network."]'
-  estimated_time: Depends on evidence and project scope
+intent: Produce an explainable schedule model and milestone decision without confusing unconstrained offsets with
+  feasible committed dates.
+type: component
+theme: scope-and-planning
+best_for:
+  - Produce an explainable schedule model and milestone decision without confusing unconstrained offsets with feasible
+    committed dates.
+scenarios:
+  - Calculate which dependency paths govern finish and how much total float each activity has in this task network.
+estimated_time: Depends on evidence and project scope
+frameworks: Critical Path Method; total float; rolling-wave scheduling
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Milestone Schedule
 

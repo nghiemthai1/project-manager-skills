@@ -1,19 +1,21 @@
 ---
 name: release-and-handover
+argument-hint: '[cutover plan and service-transfer evidence]'
 description: Plan and coordinate authorized release, stabilization and service transfer. Use for software launches
   or IT cutovers with explicit recovery and ownership boundaries.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization
+intent: Coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization
+  and accepted transfer without gaps in operational responsibility.
+type: workflow
+theme: transition-and-outcomes
+best_for:
+  - Coordinate a defined release through readiness, bounded authorization, actual execution, monitored stabilization
     and accepted transfer without gaps in operational responsibility.
-  frameworks: Cutover checkpoints; recovery limits; service transition; hypercare exit
-  best_for: '["Coordinate a defined release through readiness, bounded authorization, actual execution, monitored
-    stabilization and accepted transfer without gaps in operational responsibility."]'
-  scenarios: '["Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational
-    handover."]'
-  estimated_time: Depends on evidence and project scope
+scenarios:
+  - Coordinate authorized cutover checkpoints, recovery decisions, support transition and accepted operational handover.
+estimated_time: Depends on evidence and project scope
+frameworks: Cutover checkpoints; recovery limits; service transition; hypercare exit
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Release and Handover
 

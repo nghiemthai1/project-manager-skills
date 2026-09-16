@@ -1,18 +1,21 @@
 ---
 name: project-budget
+argument-hint: '[baseline, cost evidence, and forecast assumptions]'
 description: Build and review cost baselines, actuals, remaining forecasts and funding gaps. Use when planning a
   budget or explaining project cost performance and reserve decisions.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Reconcile project cost evidence and forecast assumptions while separating performance measurement from
-    spending authorization.
-  frameworks: Cost baseline; contingency versus management reserve; earned value management
-  best_for: '["Reconcile project cost evidence and forecast assumptions while separating performance measurement
-    from spending authorization."]'
-  scenarios: '["Analyze cumulative PV, EV and AC against BAC, forecast remaining cost and expose funding gaps."]'
-  estimated_time: Depends on evidence and project scope
+intent: Reconcile project cost evidence and forecast assumptions while separating performance measurement from spending
+  authorization.
+type: component
+theme: controls-and-assurance
+best_for:
+  - Reconcile project cost evidence and forecast assumptions while separating performance measurement from spending
+    authorization.
+scenarios:
+  - Analyze cumulative PV, EV and AC against BAC, forecast remaining cost and expose funding gaps.
+estimated_time: Depends on evidence and project scope
+frameworks: Cost baseline; contingency versus management reserve; earned value management
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Project Budget
 

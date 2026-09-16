@@ -1,20 +1,21 @@
 ---
 name: vendor-procurement
+argument-hint: '[supplier deliverables and acceptance boundaries]'
 description: Plan supplier selection, acceptance and delivery control. Use when a project depends on purchased services
   or vendor deliverables.
-metadata:
-  type: workflow
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Coordinate a supplier engagement from defined need through evidenced delivery and accepted commercial
-    handoff.
-  frameworks: Make-or-buy analysis; statement of work; weighted supplier evaluation; supplier performance and acceptance
-    gates
-  best_for: '["Coordinate a supplier engagement from defined need through evidenced delivery and accepted commercial
-    handoff."]'
-  scenarios: '["Use vendor-procurement: Coordinate a supplier engagement from defined need through evidenced delivery
-    and accepted commercial handoff."]'
-  estimated_time: Depends on evidence and project scope
+intent: Coordinate a supplier engagement from defined need through evidenced delivery and accepted commercial handoff.
+type: workflow
+theme: controls-and-assurance
+best_for:
+  - Coordinate a supplier engagement from defined need through evidenced delivery and accepted commercial handoff.
+scenarios:
+  - 'Use vendor-procurement: Coordinate a supplier engagement from defined need through evidenced delivery and accepted
+    commercial handoff.'
+estimated_time: Depends on evidence and project scope
+frameworks: Make-or-buy analysis; statement of work; weighted supplier evaluation; supplier performance and acceptance
+  gates
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Vendor and Procurement Management
 

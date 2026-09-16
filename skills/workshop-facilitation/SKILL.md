@@ -1,21 +1,24 @@
 ---
 name: workshop-facilitation
+argument-hint: '[workshop goal and participant context]'
 description: Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent
   pacing, options, and progress tracking.
+intent: 'Provide the canonical facilitation pattern for interactive skills: one step at a time, with clear progress,
+  adaptive recommendations at decision points, and predictable interruption handling.'
+type: interactive
+theme: stakeholders-and-collaboration
+best_for:
+  - Adding structured facilitation to any PM workshop or guided session
+  - Running interactive sessions with numbered recommendations and progress tracking
+  - Ensuring your workshops stay on track and end with actionable choices
+scenarios:
+  - I want to run a structured project decision workshop with my delivery team — set up the facilitation protocol
+  - Help me facilitate a discovery sprint kickoff with clear questions, options, and progress labels
+estimated_time: varies by workshop
+domain: software-it-project-management
+version: 2.0.0
 license: CC-BY-NC-SA-4.0
-metadata:
-  type: interactive
-  domain: software-it-project-management
-  version: 2.0.0
-  intent: 'Provide the canonical facilitation pattern for interactive skills: one step at a time, with clear progress,
-    adaptive recommendations at decision points, and predictable interruption handling.'
-  best_for: '["Adding structured facilitation to any PM workshop or guided session", "Running interactive sessions
-    with numbered recommendations and progress tracking", "Ensuring your workshops stay on track and end with actionable
-    choices"]'
-  scenarios: '["I want to run a structured project decision workshop with my delivery team — set up the facilitation protocol",
-    "Help me facilitate a discovery sprint kickoff with clear questions, options, and progress labels"]'
-  estimated_time: varies by workshop
-  source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/workshop-facilitation/SKILL.md
+source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/workshop-facilitation/SKILL.md
 ---
 ## Purpose
 Provide the canonical facilitation pattern for interactive skills: one step at a time, with clear progress, adaptive recommendations at decision points, and predictable interruption handling.

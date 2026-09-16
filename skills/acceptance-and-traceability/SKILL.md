@@ -1,18 +1,19 @@
 ---
 name: acceptance-and-traceability
+argument-hint: '[requirements, criteria, and evidence]'
 description: Connect requirements to applicable results and acceptance decisions. Use when defining done, checking
   coverage or assessing the evidence impact of a change.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Create an auditable chain from authorized requirement through verification to a bounded acceptance decision.
-  frameworks: Requirements traceability matrix; verification versus validation; bidirectional impact analysis
-  best_for: '["Create an auditable chain from authorized requirement through verification to a bounded acceptance
-    decision."]'
-  scenarios: '["Link each requirement to its acceptance criterion, executed test evidence, result and approving
-    authority."]'
-  estimated_time: Depends on evidence and project scope
+intent: Create an auditable chain from authorized requirement through verification to a bounded acceptance decision.
+type: component
+theme: scope-and-planning
+best_for:
+  - Create an auditable chain from authorized requirement through verification to a bounded acceptance decision.
+scenarios:
+  - Link each requirement to its acceptance criterion, executed test evidence, result and approving authority.
+estimated_time: Depends on evidence and project scope
+frameworks: Requirements traceability matrix; verification versus validation; bidirectional impact analysis
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Acceptance and Traceability
 

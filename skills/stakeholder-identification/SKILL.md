@@ -1,25 +1,30 @@
 ---
 name: stakeholder-identification
+argument-hint: '[initiative and affected groups]'
 description: Identify affected people and decision makers before prioritizing engagement. Use when starting a project
   or checking a stakeholder list for missing voices.
+intent: Produce a comprehensive, equity-aware stakeholder set before any engagement begins. Combines broad brainstorm
+  with structured categorization (Allies / Audiences / Influencers, R/P/D marking), an explicit equity and bias
+  check, and a disciplined narrowing to the 2-3 stakeholders to understand deeply first. Designed to run as a solo
+  exercise or a kickoff workshop. Feed outputs directly into stakeholder-mapping for prioritization.
+type: component
+theme: stakeholders-and-collaboration
+best_for:
+  - Launching a new initiative where the stakeholder landscape is unmapped and influence networks are unknown
+  - Scoping a discovery sprint to define who to research, interview, and recruit
+  - Preparing a project stakeholder section with a validated, comprehensive list before writing requirements
+  - Onboarding to a new delivery domain and needing to map allies, gatekeepers, and decision-makers quickly
+  - Pressure-testing an existing stakeholder list for blind spots, bias, and missing edge-case populations
+scenarios:
+  - Who are all the stakeholders for this initiative?
+  - Are we missing anyone important in our stakeholder map?
+  - Help me prepare the stakeholder section of my project plan
+  - Who should we recruit for discovery research?
+estimated_time: 20-30 min
+frameworks: MITRE stakeholder identification; allies/audiences/influencers; R/P/D; equity lens
+domain: software-it-project-management
+version: 2.1.0
 license: CC-BY-NC-SA-4.0
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Produce a comprehensive, equity-aware stakeholder set before any engagement begins. Combines broad brainstorm
-    with structured categorization (Allies / Audiences / Influencers, R/P/D marking), an explicit equity and bias
-    check, and a disciplined narrowing to the 2-3 stakeholders to understand deeply first. Designed to run as a
-    solo exercise or a kickoff workshop. Feed outputs directly into stakeholder-mapping for prioritization.
-  frameworks: MITRE stakeholder identification; allies/audiences/influencers; R/P/D; equity lens
-  best_for: '["Launching a new initiative where the stakeholder landscape is unmapped and influence networks are
-    unknown", "Scoping a discovery sprint to define who to research, interview, and recruit", "Preparing a project stakeholder
-    section with a validated, comprehensive list before writing requirements", "Onboarding to a new delivery domain
-    and needing to map allies, gatekeepers, and decision-makers quickly", "Pressure-testing an existing stakeholder
-    list for blind spots, bias, and missing edge-case populations"]'
-  scenarios: '["Who are all the stakeholders for this initiative?", "Are we missing anyone important in our stakeholder
-    map?", "Help me prepare the stakeholder section of my project plan", "Who should we recruit for discovery research?"]'
-  estimated_time: 20-30 min
 ---
 # Stakeholder Identification
 

@@ -1,0 +1,12 @@
+{
+  "checked_skills": 42,
+  "all_existing_metadata_values_preserved": true,
+  "all_skill_bodies_unchanged": true,
+  "all_descriptions_unchanged": true,
+  "all_codex_install_headers_pass_quick_validate": true,
+  "candidate_entries": 323,
+  "candidate_bytes": 590296,
+  "candidate_sha256": "cf95deb075fa75ff369b329a01e878ebe55f45e71077d0d7b69f39880de4dbff",
+  "normalization": "SKILL.md extended frontmatter fields move to string-valued metadata; all bodies unchanged; text payloads use LF",
+  "published": false
+}

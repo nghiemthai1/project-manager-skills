@@ -1,19 +1,22 @@
 ---
 name: escalation-brief
+argument-hint: '[exception, options, and required decision]'
 description: Present evidence, options and a precise decision request. Use when a project consequence exceeds delegated
   authority or a time-critical exception needs intervention.
-metadata:
-  type: component
-  domain: software-it-project-management
-  version: 2.1.0
-  intent: Draft a decision-ready escalation that explains the authority boundary, credible options, timing basis
-    and consequence of no decision without assigning blame.
-  frameworks: SBAR; options and recommendation; last responsible decision point
-  best_for: '["Draft a decision-ready escalation that explains the authority boundary, credible options, timing
-    basis and consequence of no decision without assigning blame."]'
-  scenarios: '["Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options
-    and give a deadline."]'
-  estimated_time: Depends on evidence and project scope
+intent: Draft a decision-ready escalation that explains the authority boundary, credible options, timing basis and
+  consequence of no decision without assigning blame.
+type: component
+theme: delivery-and-decisions
+best_for:
+  - Draft a decision-ready escalation that explains the authority boundary, credible options, timing basis and consequence
+    of no decision without assigning blame.
+scenarios:
+  - Prepare a decision brief for the sponsor because the forecast exceeds my authority; compare options and give
+    a deadline.
+estimated_time: Depends on evidence and project scope
+frameworks: SBAR; options and recommendation; last responsible decision point
+domain: software-it-project-management
+version: 2.1.0
 ---
 # Escalation Brief
 
