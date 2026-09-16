@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: RAID; cause-event-effect; issue lifecycle; assumption validation
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # RAID Log
 

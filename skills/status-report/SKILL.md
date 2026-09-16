@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: RAG by tolerance; management by exception; baseline/forecast/actual
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Status Report
 

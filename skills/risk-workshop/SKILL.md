@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Premortem; probability-impact matrix; response planning; residual risk
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Risk Workshop
 

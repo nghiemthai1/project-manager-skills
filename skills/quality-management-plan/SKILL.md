@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Quality planning/assurance/control; verification versus validation; risk-based testing; PDCA
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Quality Management Plan
 

@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Communication matrix; push/pull/interactive communication
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Communication Plan
 

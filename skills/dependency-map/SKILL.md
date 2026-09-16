@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Dependency network; interface agreements; local margin versus float
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Dependency Map
 

@@ -15,6 +15,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Gantt timeline; working calendars; finish-to-start dependencies; baseline comparison
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Gantt Chart
 

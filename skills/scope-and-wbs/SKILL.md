@@ -15,6 +15,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Deliverable-oriented WBS; 100% rule; WBS dictionary
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Scope and Work Breakdown
 

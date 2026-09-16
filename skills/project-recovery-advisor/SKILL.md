@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Root-cause hypotheses; recovery option appraisal; recovery checkpoints
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Project Recovery Advisor
 

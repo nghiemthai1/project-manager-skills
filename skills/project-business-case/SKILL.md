@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Options appraisal; cost-benefit analysis; sensitivity analysis
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Project Business Case
 

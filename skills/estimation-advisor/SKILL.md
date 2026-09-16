@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Estimation Advisor
 

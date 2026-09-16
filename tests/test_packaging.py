@@ -25,6 +25,13 @@ class PackagingTests(unittest.TestCase):
                 expected={row['name'] for row in json.loads((ROOT/'catalog/library.json').read_text(encoding='utf-8'))}
                 actual={n.split('/')[2] for n in names if n.endswith('/SKILL.md')}
                 self.assertEqual(actual,expected)
+                for slug in expected:
+                    license_name=f'.agents/skills/{slug}/LICENSE.md'
+                    self.assertEqual(bundle.read(license_name),(ROOT/'skills'/slug/'LICENSE.md').read_bytes().replace(b'\r\n',b'\n'))
+                for helper in (ROOT/'skills').glob('*/scripts/*.py'):
+                    code_license=helper.parent/'LICENSE.md'
+                    self.assertEqual(code_license.read_text(encoding='utf-8'),(ROOT/'LICENSE.md').read_text(encoding='utf-8'))
+                    self.assertIn(b'MIT License',bundle.read('.agents/skills/'+helper.relative_to(ROOT/'skills').as_posix()))
                 for asset in ('software.mmd','software.svg','migration.mmd','migration.svg'):
                     self.assertIn('.agents/skills/gantt-chart/examples/assets/'+asset,names)
                 for slug in ('gantt-chart', 'raci-matrix'):

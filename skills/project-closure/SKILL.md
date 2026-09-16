@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Closure assurance; financial reconciliation; residual transfer; benefits handoff
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Project Closure
 

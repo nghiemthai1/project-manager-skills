@@ -131,7 +131,7 @@ Read the helper's input contract before using it. The schedule helper models an 
 |---|---|---|
 | Codex | [`pm-skills-codex.zip`](https://github.com/nghiemthai1/project-manager-skills/releases/latest/download/pm-skills-codex.zip) | Installs `.agents/skills` and `AGENTS.md` |
 
-Download while signed in to GitHub with access to this private repository. Extract into your project root; merge the included `AGENTS.md` with any existing project instructions. See the [Codex ZIP setup](docs/INSTALLATION.md#codex-zip-quick-setup).
+Download the release ZIP and extract into your project root; merge the included `AGENTS.md` with any existing project instructions. See the [Codex ZIP setup](docs/INSTALLATION.md#codex-zip-quick-setup).
 
 [Install selected skills](docs/INSTALLATION.md). Reading Markdown requires no runtime. Python is needed only for optional helpers and repository checks.
 
@@ -151,4 +151,8 @@ Read [Authoring](docs/AUTHORING.md), [Frameworks](docs/FRAMEWORKS.md), [Glossary
 
 This is a newly authored skill set. Numerical regression tests and independent synthetic project exercises provide evidence of specific behavior. They do not establish a history of production use. The [v2 evaluation record](evals/v2/README.md) retains 42 fictional behavior cases, three targeted reruns and a separate description-routing run. See the validation report for coverage, limitations and corrections.
 
-Private repository. Original material has no public redistribution license; closely adapted packages retain their stated upstream licenses. See [third-party notices](THIRD_PARTY_NOTICES.md).
+## Contributing and licensing
+
+Read [contribution.md](contribution.md) to propose improvements or submit a pull request.
+
+Original skills, documentation, and code use [MIT](LICENSE.md), allowing commercial reuse. Six Dean Peters adaptations retain CC BY-NC-SA 4.0 and its noncommercial restriction. See [license scope](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md) for attribution and package-specific terms.

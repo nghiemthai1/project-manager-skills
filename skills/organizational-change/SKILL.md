@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: ADKAR lens; change impact assessment; readiness and reinforcement
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Organizational Change and Adoption
 

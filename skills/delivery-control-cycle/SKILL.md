@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Plan-monitor-control; exception escalation; integrated change control
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Delivery Control Cycle
 

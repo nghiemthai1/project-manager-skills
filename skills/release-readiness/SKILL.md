@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Readiness gates; exception authority; operational acceptance
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Release Readiness
 

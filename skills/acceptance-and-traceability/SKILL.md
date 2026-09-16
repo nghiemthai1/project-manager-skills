@@ -14,6 +14,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Requirements traceability matrix; verification versus validation; bidirectional impact analysis
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Acceptance and Traceability
 

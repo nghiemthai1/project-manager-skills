@@ -15,6 +15,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Benefits map; leading/lagging measures; ownership and review plan
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Benefits Realization
 

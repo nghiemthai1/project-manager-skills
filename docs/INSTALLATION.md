@@ -6,7 +6,7 @@ Open a skill folder and read `SKILL.md`. Give its instructions and your project 
 
 ## Codex ZIP quick setup
 
-1. Open the [latest release](https://github.com/nghiemthai1/project-manager-skills/releases/latest) while signed in with repository access.
+1. Open the [latest release](https://github.com/nghiemthai1/project-manager-skills/releases/latest).
 2. Download [pm-skills-codex.zip](https://github.com/nghiemthai1/project-manager-skills/releases/latest/download/pm-skills-codex.zip).
 3. Extract its contents into your project root. If `AGENTS.md` or a same-named skill already exists, extract to a temporary folder first and merge deliberately.
 4. Confirm this layout, including the hidden `.agents` folder:
@@ -22,9 +22,9 @@ AGENTS.md
 
 5. Open Codex in that project and ask: “Use the project-charter skill to turn these notes into a draft charter.”
 
-The ZIP contains all 42 complete skill folders, including templates, examples and optional helpers. Its `AGENTS.md` provides usage guidance for your project; repository maintainer instructions stay in the source repository. Downloading alone does not install anything: extraction places the files in the discovery location.
+The ZIP contains all 42 complete skill folders, including templates, examples, optional helpers, and their license files. Its `AGENTS.md` provides usage guidance for your project; repository maintainer instructions stay in the source repository. Downloading alone does not install anything: extraction places the files in the discovery location.
 
-For an authenticated CLI download:
+For a GitHub CLI download:
 
 ```sh
 gh release download --repo nghiemthai1/project-manager-skills --pattern pm-skills-codex.zip

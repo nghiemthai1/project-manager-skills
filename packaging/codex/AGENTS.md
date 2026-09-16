@@ -38,4 +38,4 @@ This library has synthetic scenario and automated test evidence. Do not claim pr
 
 ## Source notices
 
-Closely adapted skills include SOURCE.md and LICENSE.md. Preserve those files when copying packages; their stated licenses also cover their accompanying adaptations and examples. Other original packages retain the repository's stated rights status.
+Closely adapted skills include SOURCE.md and LICENSE.md. Preserve those files when copying packages; their stated licenses also cover their accompanying adaptations and examples. Original skills, documentation, and code use MIT. Each package includes LICENSE.md, and standalone helpers include the full MIT notice. The six adapted packages retain CC BY-NC-SA 4.0 and its noncommercial restriction. Preserve license and source notices when copying. These project-facing instructions are Copyright (c) 2026 Thai Nghiem, licensed under [MIT](https://github.com/nghiemthai1/project-manager-skills/blob/main/LICENSE.md).

@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Critical Path Method; total float; rolling-wave scheduling
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Milestone Schedule
 

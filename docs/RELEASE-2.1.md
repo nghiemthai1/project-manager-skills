@@ -8,19 +8,19 @@ The installed global Gantt skill served as a capability reference and was not mo
 
 ## Validation
 
-Local Windows validation: 42 automated tests, 42 metadata/trigger-readiness checks, repository links/catalog, and both core skill-creator validations pass. Browser tests cover the four interactive artifacts across desktop/portrait/landscape, native keyboard details, search/reset, role focus, Gantt scale/comparison controls, exact full-export equality and eight static SVG boundaries. Independent fictional RACI/Gantt executions and retained defects/corrections are in the [visual evaluation](../evals/visual/README.md).
+Local Windows validation: 44 automated tests, 42 metadata/trigger-readiness checks, repository links/catalog, and both core skill-creator validations pass. Browser tests cover the four interactive artifacts across desktop/portrait/landscape, native keyboard details, search/reset, role focus, Gantt scale/comparison controls, exact full-export equality and eight static SVG boundaries. Independent fictional RACI/Gantt executions and retained defects/corrections are in the [visual evaluation](../evals/visual/README.md).
 
 No large-project performance guarantee, live client installation, screen-reader certification, physical-phone testing or field-tested claim is made. Gantt is a date-only snapshot reader, not a scheduling engine or editor. Missing source evidence remains unknown.
 
 ## Distribution
 
-The private release will retain both `pm-skills-codex.zip` and `codex-project-manager-skills.zip`. Extracting adds `.agents/skills` and project-facing `AGENTS.md`; merge existing project instructions as explained in [installation](INSTALLATION.md). HTML is now part of the packaged text payload. Payload verification and hosted CI references will be appended after the release exists.
+The [v2.1.0 release](https://github.com/nghiemthai1/project-manager-skills/releases/tag/v2.1.0) includes both `pm-skills-codex.zip` and `codex-project-manager-skills.zip`. Extracting adds `.agents/skills` and project-facing `AGENTS.md`; merge existing project instructions as explained in [installation](INSTALLATION.md). HTML is now part of the packaged text payload. The release notes link hosted CI and the downloaded-payload verification report.
 
 ## Verified release candidate
 
 Commit `25c5ab0e39653986f2ddd0496412db0c22cc9e06` passes [all four hosted jobs](https://github.com/nghiemthai1/project-manager-skills/actions/runs/35141626680). The [local candidate report](../evals/visual/release-candidate.json) records the archive hash, exact payload comparison and six extracted helper executions. The first Python 3.11 run exposed an f-string parsing incompatibility in RACI search; the correction preserves identical generated artifacts and passes the full matrix.
 
-Automatic approval review rejected main-branch promotion and publication of v2.1.0 pending explicit owner approval. The review branch and local ZIP are complete; no main promotion or release tag was performed. Downloading the existing latest GitHub release still retrieves v2.0.0 until publication is approved and completes.
+The owner merged the changes and explicitly approved publication. Version 2.1.0 was published on 16 September 2026 from commit `7842f9da762de62bb97a4f367670e2ee3a33e0e5`. Both downloaded ZIP aliases had 323 matching payload entries, and all six extracted helpers passed. The release notes retain the full hash and CI references.
 
 ## Metadata presentation follow-up
 

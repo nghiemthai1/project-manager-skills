@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Integrated change control; impact analysis; configuration history
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Change Request
 

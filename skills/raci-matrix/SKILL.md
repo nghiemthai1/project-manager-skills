@@ -15,6 +15,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # RACI Matrix
 

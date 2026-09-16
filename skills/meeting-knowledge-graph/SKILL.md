@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: OKF v0.2; immutable ledgers; attribution confidence; series delta
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Meeting Knowledge Graph
 

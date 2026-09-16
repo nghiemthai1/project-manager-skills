@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: PDCA; 5 Whys with evidence; experiment design
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Retrospective
 

@@ -16,6 +16,7 @@ frameworks: Make-or-buy analysis; statement of work; weighted supplier evaluatio
   gates
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Vendor and Procurement Management
 

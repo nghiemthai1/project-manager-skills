@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Scrum Sprint Planning; Sprint Goal; Definition of Done; capacity
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Sprint Planning
 

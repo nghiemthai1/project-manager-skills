@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: After-action review; contextual lessons; knowledge transfer
 domain: software-it-project-management
 version: 2.0.0
+license: MIT
 ---
 # Lessons Learned
 

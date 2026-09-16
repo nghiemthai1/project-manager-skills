@@ -65,3 +65,7 @@ python -m unittest discover -s tests -v
 Replace `example` with the package being authored; omit positional paths to audit the whole library. Metadata/trigger scripts check authored structure and curated case availability. They do not execute a model or prove correct routing. Forward-test substantial revisions using fresh raw inputs without supplying intended answers; retain actual outputs and inspect them against the inputs. The v2 record tracks coverage and remaining gaps.
 
 Maintain `catalog/library.json` as the reviewed inventory and framework map, independently of existing folders. Rebuild the catalog to update the managed README framework tables. Add meaningful positive and sibling-negative requests to `evals/trigger-cases.json`; naming a skill directly is not a demanding routing test.
+
+## License each package
+
+Include `LICENSE.md` and identify the applicable license in skill frontmatter: `MIT` for original packages, `CC-BY-NC-SA-4.0` for the six Dean-derived packages. Original Python/JavaScript helpers use MIT: include `scripts/LICENSE.md` and preserve a full license notice in standalone helpers. Adapted packages must also retain their source and change notices. See [Licensing](../LICENSING.md) and [the contribution guide](../contribution.md).

@@ -16,6 +16,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Cost baseline; contingency versus management reserve; earned value management
 domain: software-it-project-management
 version: 2.1.0
+license: MIT
 ---
 # Project Budget
 

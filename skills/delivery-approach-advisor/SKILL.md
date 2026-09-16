@@ -15,6 +15,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Predictive/agile/hybrid tailoring; rolling-wave planning
 domain: software-it-project-management
 version: 2.0.0
+license: MIT
 ---
 # Delivery Approach Advisor
 

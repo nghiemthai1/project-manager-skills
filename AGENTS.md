@@ -10,6 +10,6 @@ Run `python scripts/validate.py` and `python -m unittest discover -s tests -v` a
 
 Preserve OKF v0.2 meeting memory semantics and unknown metadata. Do not rewrite earlier meeting ledgers to match a later decision. Keep operational helpers standalone, offline, and Python 3.11+ standard library only.
 
-Do not describe new content as field-tested or battle-tested without recorded field evidence. Update validation claims and coverage when behavior changes. The repository stays private unless the owner explicitly requests otherwise.
+Do not describe new content as field-tested or battle-tested without recorded field evidence. Update validation claims and coverage when behavior changes. The owner has authorized public publication. Keep credentials, client data, and excluded personal workspace files outside commits. Preserve the content and code licenses described in LICENSING.md.
 
 For the requested v2 revision, follow docs/REVISION-2-PLAN.md and the pinned Dean Peters authoring sources. Close adaptations must retain per-package SOURCE.md and LICENSE.md; update catalog/upstream-sources.json. Do not call adapted prose original.

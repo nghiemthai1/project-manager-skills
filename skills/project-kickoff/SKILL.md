@@ -17,6 +17,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Kickoff facilitation; RACI; decision/action separation
 domain: software-it-project-management
 version: 2.0.0
+license: MIT
 ---
 # Project Kickoff
 

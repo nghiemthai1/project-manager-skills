@@ -15,6 +15,7 @@ estimated_time: Depends on evidence and project scope
 frameworks: Project charter; SMART success criteria; assumptions and constraints; delegated authority
 domain: software-it-project-management
 version: 2.0.0
+license: MIT
 ---
 # Project Charter
 
