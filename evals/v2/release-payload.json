@@ -1,0 +1,37 @@
+{
+  "release": "v2.0.0",
+  "source_commit": "4e95fbcdbbc1d947aac0b5adc71e9c290962f146",
+  "sha256": "2394e64756e027a97e9ffa1f98233779c8283baa05c79759d47ee4e614ab09a6",
+  "bytes": 421070,
+  "archive_entries": 244,
+  "skill_count": 42,
+  "templates": 42,
+  "worked_examples": 84,
+  "identical_aliases": true,
+  "every_payload_byte_matches_canonical_normalized_source": true,
+  "crc_check_passed": true,
+  "local_build_byte_identical": false,
+  "helpers": [
+    {
+      "helper": ".agents/skills/estimation-advisor/scripts/estimate.py",
+      "exit_code": 0,
+      "stdout": "# Three-point estimation\n\n- **unit:** person_days\n- **optimistic:** 2.0\n- **most likely:** 4.0\n- **pessimistic:** 12.0\n- **triangular mean:** 6.0\n- **pert mean:** 5.0\n- **pert standard deviation heuristic:** 1.6666666666666667\n- **assumptions:** [\"Inputs describe the same scoped task and unit.\", \"PERT weights the most-likely case four times; these are elicited estimates.\", \"The spread heuristic is not a validated confidence interval or a deadline probability.\"]\n"
+    },
+    {
+      "helper": ".agents/skills/milestone-schedule/scripts/schedule.py",
+      "exit_code": 0,
+      "stdout": "# Unconstrained finish-to-start CPM\n\n- **unit:** working_days\n- **project duration:** 7.0\n## Tasks\n\n| id | duration | early_start | early_finish | late_start | late_finish | total_float | critical |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| A | 2.0 | 0.0 | 2.0 | 0.0 | 2.0 | 0.0 | True |\n| B | 4.0 | 2.0 | 6.0 | 2.0 | 6.0 | 0.0 | True |\n| C | 3.0 | 2.0 | 5.0 | 3.0 | 6.0 | 1.0 | False |\n| D | 1.0 | 6.0 | 7.0 | 6.0 | 7.0 | 0.0 | True |\n\n- **critical activities:** [\"A\", \"B\", \"D\"]\n## Critical Edges\n\n| from | to |\n| --- | --- |\n| A | B |\n| B | D |\n\n- **assumptions:** [\"One common project origin and finish; all terminal tasks must finish.\", \"Finish-to-start links, zero lag, no date constraints, calendars, or resource leveling.\", \"Zero-duration milestones are permitted. Multiple critical paths may exist.\", \"A delivery-date gap is not total float. Output offsets are not calendar dates.\"]\n"
+    },
+    {
+      "helper": ".agents/skills/project-budget/scripts/earned_value.py",
+      "exit_code": 0,
+      "stdout": "# Cumulative earned value\n\n- **currency:** USD\n- **as of:** 2026-10-16\n- **pv:** 50000.0\n- **ev:** 40000.0\n- **ac:** 48000.0\n- **bac:** 100000.0\n- **cv:** -8000.0\n- **sv:** -10000.0\n- **cpi:** 0.8333333333333334\n- **spi:** 0.8\n- **eac cpi:** 120000.0\n- **eac cpi spi:** 138000.0\n- **eac remaining at budget:** 108000.0\n- **vac cpi:** -20000.0\n- **assumptions:** [\"All values are cumulative at the same date, currency, scope, and approved baseline.\", \"eac_cpi assumes observed cost efficiency continues; eac_cpi_spi also applies schedule efficiency to remaining cost.\", \"eac_remaining_at_budget assumes past cost variance will not recur in remaining work.\", \"None of these forecasts authorizes spending or is automatically the management forecast.\", \"SV is in currency, not days; SPI approaches 1 at completed scope even if completion was late.\", \"A zero denominator makes the corresponding ratio or forecast unavailable.\"]\n"
+    },
+    {
+      "helper": ".agents/skills/resource-capacity-plan/scripts/capacity.py",
+      "exit_code": 0,
+      "stdout": "# Capacity against allocated demand\n\n- **period:** 2026-10-19 through 2026-10-30\n- **unit:** hours\n## People\n\n| id | available_hours | demand_hours | remaining_hours | overload_hours | load_percent |\n| --- | --- | --- | --- | --- | --- |\n| Omar | 56.0 | 64.0 | -8.0 | 8.0 | 114.28571428571428 |\n| Lena | 32.0 | 20.0 | 12.0 | 0.0 | 62.5 |\n\n- **total available hours:** 88.0\n- **total demand hours:** 84.0\n- **sum person overload hours:** 8.0\n- **assumptions:** [\"All allocations cover the same period; missing projects understate demand.\", \"Leave and overhead are disjoint deductions; no automatic utilization haircut is applied.\", \"Spare hours on another person do not establish interchangeable skills or resolve an overload.\"]\n"
+    }
+  ],
+  "cross_runtime_archive_note": "All uncompressed entries and metadata matched; 226 compressed sizes differed between local Python 3.14 zlib-ng 1.3.1 and the hosted Python 3.11 build. Archive byte repeatability is scoped to the same compression runtime. Both downloaded release aliases are byte-identical and match the published digest."
+}

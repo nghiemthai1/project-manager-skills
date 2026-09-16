@@ -1,4 +1,6 @@
-# Release acceptance ledger
+# Version 1 release acceptance ledger
+
+Historical record. For the expanded library, see the [v2 release acceptance](RELEASE-2.md).
 
 Target: 30 original software/IT project management skills, two worked scenarios per skill, four standalone calculation helpers, adapted OKF meeting memory, private GitHub delivery.
 

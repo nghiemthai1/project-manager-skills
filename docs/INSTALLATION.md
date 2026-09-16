@@ -61,3 +61,5 @@ The packages follow the [Agent Skills specification](https://agentskills.io/spec
 Run `python scripts/build_codex.py`. It writes `dist/codex/codex-project-manager-skills.zip` and the identical download alias `dist/codex/pm-skills-codex.zip`. Generated archives are excluded from source commits. Packaging tests compare every included skill file and execute helpers from the extracted archive.
 
 The release workflow validates and packages on pull requests and main pushes. Pushing a new `v*` tag publishes both ZIPs as GitHub Release assets after the checks pass. Use a new version tag for each release; the README's latest-release link stays the same.
+
+Archive bytes repeat within the same Python/compression runtime. Different compression libraries can produce different ZIP bytes for identical extracted files. Verify the digest published for the release asset; the v2 download audit separately compares every extracted payload byte with canonical source.

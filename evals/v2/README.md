@@ -1,6 +1,6 @@
 # Revision 2 evidence
 
-Status: local release candidate; remote CI and publication pending. These records concern the working revision, not the published v1.0.1 package. Previous v1 evaluations remain historical and do not validate changed v2 instructions.
+Status: published as v2.0.0; [release acceptance](../../docs/RELEASE-2.md) records the exact commit, CI and downloaded payload. These records concern v2, not the earlier v1.0.1 package. Previous v1 evaluations remain historical and do not validate changed v2 instructions.
 
 ## Executions reviewed
 
@@ -69,13 +69,13 @@ Execution logs: [planning A](planning-a/execution-log.md), [B](planning-b/execut
 
 ## Current automated gates
 
-The 42-package catalog, section order, metadata layout and local links pass the structural validator. All 32 numerical, evidence and packaging tests pass locally on Windows. Packaging includes Mermaid/SVG/CSV resources and preserves binary PNG bytes; licensed adaptations retain their source/license files. Local ZIP builds are development artifacts, not published releases.
+The 42-package catalog, section order, metadata layout and local links pass the structural validator. All 32 numerical, evidence and packaging tests pass locally on Windows. Packaging includes Mermaid/SVG/CSV resources and preserves binary PNG bytes; licensed adaptations retain their source/license files. The published v2 ZIP was downloaded and independently compared with canonical payload bytes; see [the payload report](release-payload.json).
 
 Six new authored JSON examples were also executed directly through the packaged schedule, capacity and earned-value helpers. Software/migration CPM durations are 7/7 with the documented floats/tied paths; software person-level overload is 8 despite 4 aggregate spare hours, and migration overload is 4; conditional EAC triples are 120/108/138k and 300/255/375k for persistent CPI, remaining-at-budget and combined efficiency respectively. These are explicit model assumptions, not resource-leveled date commitments or funding approvals.
 
 All 42 packages now pass metadata/intent and trigger-readiness checks. All 30 originals and 12 additions have substantive v2 guides, templates and paired examples. Trigger-readiness remains a structural check; the separate observed routing run is linked below.
 
-Still required: final release review, cross-platform CI, private publication and download verification. No v2 remote CI or release is claimed here.
+Release gates completed: [v2.0.0](https://github.com/nghiemthai1/project-manager-skills/releases/tag/v2.0.0), all four platform/version CI jobs, private visibility and downloaded payload verification. [Release acceptance](../../docs/RELEASE-2.md) records the supporting evidence and limits.
 
 
 ## Delivery, transition, learning and foundation executions

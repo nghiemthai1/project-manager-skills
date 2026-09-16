@@ -1,4 +1,4 @@
-"""Build a reproducible Codex archive containing .agents/skills and AGENTS.md."""
+"""Build a Codex archive, repeatable within the same compression runtime."""
 import argparse
 from pathlib import Path
 import shutil
@@ -30,7 +30,7 @@ def build(root=ROOT, output=None):
             if source.is_symlink():
                 raise ValueError(f'Symlinks are not packaged: {relative}')
             if source.is_file() and source.suffix in ALLOWED:
-                # Normalize text line endings so Windows and Linux builds match.
+                # Normalize text line endings so Windows and Linux payloads match.
                 entries['.agents/skills/'+relative.as_posix()] = payload_bytes(source)
     entries['AGENTS.md'] = entries['AGENTS.md'].replace(b'\r\n', b'\n')
     output.mkdir(parents=True, exist_ok=True)

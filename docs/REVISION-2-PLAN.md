@@ -1,6 +1,6 @@
 # Substantive library revision
 
-Status: local release candidate. All authoring and local evaluation work is complete; cross-platform CI and private release verification remain pending.
+Status: complete for v2.0.0. See the [release acceptance record](RELEASE-2.md) for CI, private publication and downloaded payload evidence.
 
 ## Authoring basis
 
@@ -30,8 +30,8 @@ Closely preserve Dean's overlapping methods, branching flows and teaching explan
 - [x] README has categorized Skill | Focus | Framework tables covering the complete inventory.
 - [x] Catalog, package counts, installation guidance and ZIP payload reflect the final inventory.
 - [x] Behavioral evaluation covers changed decisions and new skills; findings corrected or explicitly bounded.
-- [ ] Numerical, link, packaging and cross-platform CI tests pass.
-- [ ] Updated private release is published and downloaded for payload verification.
+- [x] Numerical, link, packaging and cross-platform CI tests pass.
+- [x] Updated private release is published and downloaded for payload verification.
 
 Existing v1 evaluation records remain historical evidence, not proof that changed v2 behavior passed. Record new test scope and limits separately.
 
@@ -43,7 +43,7 @@ Six Dean adaptations were compared with pinned source and retain portable source
 
 All 42 packages pass authoring metadata/trigger readiness. Structural validation and all 32 local tests pass; the development ZIP contains all 42 complete packages, chart/source assets and adaptation notices. [Revision 2 evidence](../evals/v2/README.md) retains 42 distinct fictional behavior cases and three targeted reruns. A fresh description-only routing pass selected the intended primary skill for all 42 unique curated requests. Identifier failures from earlier executions remain retained with corrected reruns, not silently erased. Same-family synthetic and retained-context limits are explicit.
 
-Pending: cross-platform CI, final private release and downloaded payload verification. No remote pass or release is implied by local checks.
+Completed: all four Windows/Ubuntu and Python 3.11/3.14 jobs passed for the release commit; v2.0.0 was published privately and both downloaded ZIP aliases passed full payload verification. Details and limits are recorded in [release acceptance](RELEASE-2.md).
 
 ## Source overlap review
 
