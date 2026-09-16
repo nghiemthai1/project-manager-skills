@@ -12,7 +12,7 @@ python -m unittest discover -s tests -v
 
 The structural validator checks the exact 30-package inventory, metadata and interface fields, required sections and support files, catalog drift, and repository-local Markdown links. It does not grade teaching quality or verify external links. GitHub Actions runs the same checks on Windows and Ubuntu with Python 3.11 and 3.14.
 
-Local release check: all 30 automated tests pass on Windows. Remote matrix results are recorded in the release acceptance ledger after execution.
+Local release check: all 30 automated tests pass on Windows. All four Windows/Ubuntu and Python 3.11/3.14 CI jobs also passed; the commit and run are recorded in the [release acceptance ledger](IMPLEMENTATION.md).
 
 ## Calculation evidence
 
