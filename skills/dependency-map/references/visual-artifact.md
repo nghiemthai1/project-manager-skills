@@ -1,21 +1,50 @@
-# Provider-to-receiver graph
+# Provider-to-receiver visual design
 
-Read this when the request calls for a graphical artifact. A chart is optional when the existing table or discussion already answers the decision.
+Read this when a dependency decision benefits from a graph. The visual must preserve the register's evidence rather than turn incomplete records into confident geometry.
 
-## Source and choice
+## Start from the decision
 
-Capture: **dependency ID; provider; receiver; usable boundary; needed-by; forecast; commitment evidence; acceptance state**.
+Use a left-to-right network to answer **who must provide what to whom, and which chain or cycle needs coordination?** Use a DSM to answer **which provider/receiver seams recur?** Use the register to answer **what are the exact dates, usable criteria, owners and sources?** A single artifact can offer all three views, but each view keeps its own meaning.
 
-Label arrows with the handed-off artifact, date meaning and local margin. Keep missing counterparties visible. Use a network only where relationships matter; include a full edge register and literal IDs.
+Arrows always run **provider → receiver**. Label every edge with its literal dependency ID and expose the handoff name in a persistent detail panel. Show node type and owner without implying that a coordinator has contractual or acceptance authority.
 
-## Interpretation
+## Required source contract
 
-Compare each handoff forecast with its needed-by date in explicit units. A local delivery gap does not establish total-project delay without integrated schedule logic.
+At snapshot level retain title, as-of date, version, source, scope and calendar unit. Each node needs an ID, label, type, owner and source. Each dependency needs:
 
-## Delivery standard
+- dependency ID, provider and receiver IDs;
+- handed-off result and observable usable criteria;
+- needed-by, requested, committed and forecast dates as separate nullable fields;
+- commitment evidence when a committed date exists;
+- operating status and acceptance state;
+- provider-side and receiver-side owners, source and note.
 
-Preserve a source snapshot and mapping from literal IDs/fields to the displayed marks. Put the title, scope, as-of date, units, assumptions and unknowns next to the visual. Use direct labels plus shape/text states; color cannot be the only meaning. Do not fabricate coordinates, dates, scores or confidence to make a chart complete.
+Do not substitute `unknown` with a guessed date or omit an unresolved provider. Add an explicit unknown node when the boundary is known but its provider is not.
 
-Choose static SVG for a shareable diagram, self-contained HTML when filtering or inspection helps, or a table when it communicates the decision better. Interactive output needs visible filter scope/counts, reset, keyboard access and persistent details; a phone view needs readable cards, a focused slice or a deliberate scroll region. Avoid tiny desktop diagrams on phones. Editing or live system writes require their own requested workflow.
+## State and emphasis
 
-Deliver editable source plus a full accessible table/edge register. Label exports as full or current view and preserve hidden-data caveats. Open the actual artifact, compare values and relationships with the source, inspect desktop/portrait/landscape and test any controls and downloads. If rendering is unavailable, deliver a labeled source draft and say visual inspection was not performed. Do not claim a PDF/PNG exists from source code alone.
+Use text plus color for every state. A useful deterministic order is blocked/verification failed, negative local gap, explicit at-risk, unconfirmed, watch, accepted. Call this a coordination order. Do not label it probability, severity, float or criticality unless those values come from an identified method and complete source.
+
+A local margin is `needed-by − forecast` in the declared unit. Display `not calculable` when either date is missing. A negative result means only that the current forecast is after the receiver's stated need.
+
+Selection should reveal the edge, provider, receiver and immediately connected chain while retaining a visible way to restore all links. Filters must state `visible / total` counts. If a selection falls outside the filter, move to the first visible dependency and disclose the filtered scope through the count.
+
+## Layout and scale
+
+Use a deterministic layered layout so the same data produces the same drawing. Keep cycles visible; placing a cyclic group in a shared column is preferable to deleting an edge or inventing precedence. Route crossings behind nodes, give edge labels a solid background and keep graph labels short. Put full criteria and evidence in the detail panel and register.
+
+For a small network, render every material handoff. With dozens of nodes, start from a filtered domain, selected chain or DSM and make the scope explicit. Route editable, live or very large dependency models to suitable graph tooling rather than claiming this small offline renderer covers them.
+
+## Interaction and responsive behavior
+
+The HTML view should provide search, status and party filters; a negative-gap/blocked focus; link focus; zoom; graph/DSM switching; visible-slice CSV; print/PDF; and persistent details. Edge and node selection must work with Enter or Space. Escape should clear the review filters. Hover may reinforce state but cannot be the only way to retrieve evidence.
+
+At phone width, keep controls and details in one column, preserve a deliberate horizontal scroll region for the graph or matrix, and turn the register into labeled cards. In landscape, keep touch targets usable and avoid page-level horizontal overflow. The graph can be wider than its bounded scroll container.
+
+## Accessibility and delivery
+
+Include an accessible table containing every visible field, readable focus styles, non-color labels and an SVG title/description. Keep graph marks keyboard reachable. Treat browser print as a report surface: title, scope, as-of date, filters and method boundary must remain visible.
+
+Deliver the editable source JSON, normalized JSON, full CSV, static SVG and self-contained HTML together. The toolbar CSV may reflect current filters; label it as visible. Permanent downloads preserve the complete source snapshot. Guard spreadsheet cells beginning with formula characters.
+
+Open the actual files. Compare IDs, directions, dates, margins, states and sources with the input. Inspect desktop, portrait and landscape sizes; test empty filters, keyboard selection, view switching, zoom, visible CSV and print layout. If rendering was unavailable, say visual inspection was not performed.

@@ -1,0 +1,69 @@
+{
+  "title": "Relay dependency control view",
+  "as_of": "2026-10-16",
+  "version": "1.0",
+  "source": "Fictional Relay scenario and dependency-map worked example, cut off 16 October 2026",
+  "scope": "Material cross-boundary inputs for audit integration and adjacent readiness evidence; unknown assignments and dates retained",
+  "calendar": {"label": "Calendar days; no timezone conversion", "unit": "calendar_days"},
+  "nodes": [
+    {"id": "PLATFORM", "label": "Platform team", "kind": "team", "owner": "Accountable contact unknown", "source": "Scenario supplies team only"},
+    {"id": "ENV-PROVIDER", "label": "Environment provider", "kind": "unknown", "owner": "Assignment unknown", "source": "I-001 identifies an unavailable environment; provider is not supplied"},
+    {"id": "INTEGRATION", "label": "Integration team", "kind": "team", "owner": "Omar (technical remediation)", "source": "Relay scenario"},
+    {"id": "SECURITY", "label": "Security", "kind": "authority", "owner": "Lena", "source": "Relay scenario"},
+    {"id": "SERVICE", "label": "Service ownership", "kind": "authority", "owner": "Theo", "source": "Relay scenario"}
+  ],
+  "dependencies": [
+    {
+      "id": "DEP-AUDIT", "provider": "PLATFORM", "receiver": "INTEGRATION",
+      "handoff": "Audit-event interface", "usable_criteria": "Proposed boundary: agreed schema/version, reachable test interface, representative event behavior and receiver validation evidence.",
+      "needed_by": "2026-10-20", "requested": null, "committed": null, "commitment_source": null, "forecast": "2026-10-22",
+      "status": "at_risk", "acceptance_state": "not_delivered", "owner": "Accountable contact unknown", "receiver_owner": "Omar; acceptance assignment to confirm",
+      "source": "Relay control point at 16 October: needed 20 October, forecast 22 October", "note": "The forecast is not a provider commitment. R-001 is a separate incompatibility risk."
+    },
+    {
+      "id": "DEP-ENV", "provider": "ENV-PROVIDER", "receiver": "INTEGRATION",
+      "handoff": "Available test environment", "usable_criteria": "Access, configuration and test readiness sufficient for the receiving integration checks; exact boundary to confirm.",
+      "needed_by": null, "requested": null, "committed": null, "commitment_source": null, "forecast": null,
+      "status": "blocked", "acceptance_state": "not_delivered", "owner": "Assignment unknown", "receiver_owner": "Omar",
+      "source": "I-001 states the environment is currently unavailable; provider and dates are not supplied", "note": "I-001 remains a separate issue record; this arrow exposes its unresolved handoff boundary."
+    },
+    {
+      "id": "DEP-RECOVERY", "provider": "INTEGRATION", "receiver": "SECURITY",
+      "handoff": "Recovery-access evidence", "usable_criteria": "Proposed boundary: a reproducible recovery-access demonstration and reviewable evidence for security acceptance.",
+      "needed_by": null, "requested": null, "committed": null, "commitment_source": null, "forecast": null,
+      "status": "unconfirmed", "acceptance_state": "unknown", "owner": "Omar", "receiver_owner": "Lena",
+      "source": "Approved Relay scope requires recovery access and security acceptance; dates are not supplied at this cutoff", "note": "This record does not backfill the later 28 October rejection."
+    },
+    {
+      "id": "DEP-GUIDE", "provider": "INTEGRATION", "receiver": "SERVICE",
+      "handoff": "Operator guidance", "usable_criteria": "Proposed boundary: guidance covers the agreed pilot operation and is reviewed by the service owner.",
+      "needed_by": null, "requested": null, "committed": null, "commitment_source": null, "forecast": null,
+      "status": "unconfirmed", "acceptance_state": "unknown", "owner": "Omar", "receiver_owner": "Theo",
+      "source": "Approved Relay scope includes operator guidance; delivery and acceptance dates are not supplied", "note": "Proposed dependency inventory item, not a commitment."
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Delivery interface control", "headline": "Relay dependency network",
+    "lede": "One dated gap, one blocked environment boundary, and two readiness handoffs whose dates remain unknown. The graph shows where evidence must cross teams without turning gaps into CPM claims.",
+    "default_dependency_id": "DEP-AUDIT",
+    "metrics": [
+      {"label": "Handoffs", "value": "4", "note": "Scoped boundary records"},
+      {"label": "Known date gap", "value": "−2 days", "note": "Calendar margin only"},
+      {"label": "Unconfirmed dates", "value": "3", "note": "Unknowns retained"},
+      {"label": "Commitments", "value": "0 evidenced", "note": "Forecast stays distinct"}
+    ],
+    "insight_heading": "The dated problem is narrow; the evidence problem is broader.",
+    "insight_points": [
+      "DEP-AUDIT has a two-calendar-day local gap, but the remaining schedule is not present.",
+      "DEP-ENV needs a provider, usable boundary and dates before it can be managed as an interface agreement.",
+      "Security and service-readiness arrows remain unconfirmed rather than borrowing later outcomes."
+    ],
+    "decision": "Reconcile DEP-AUDIT timing and acceptance with both sides, then assign and date the environment boundary."
+  },
+  "analysis": {
+    "method": "Rule-based coordination view using supplied status and comparable needed-by/forecast dates. Local calendar margin is not CPM float or proven project delay.",
+    "coordination_focus_ids": ["DEP-AUDIT", "DEP-ENV"],
+    "critical_path": null
+  },
+  "notes": ["All records are fictional training data.", "Proposed boundary records preserve unknown dates and authority instead of inventing them."]
+}

@@ -136,7 +136,7 @@
     "category": "Controls and assurance",
     "name": "dependency-map",
     "focus": "Secure usable provider-to-receiver handoffs",
-    "frameworks": "Dependency network; interface agreements; local margin versus float",
+    "frameworks": "Dependency network; interface agreements; local margin; dependency structure matrix; Conway's Law; CPM boundary",
     "type": "component"
   },
   {

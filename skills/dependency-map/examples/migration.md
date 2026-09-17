@@ -29,3 +29,11 @@ Obtain a correction forecast and inspect its effect on the real remaining rehear
 M-CR02 on 9 November later authorizes a phased plan. Keep that approval separate from these earlier records and from the eventual release gate.
 
 **Repair:** “Mapping arrived, mark all vendor dependencies green” ignores usable correctness and independent acceptance. Track timing, verification and receiving decisions on their own evidence.
+
+## Interactive dependency companion
+
+[Open the offline dependency explorer](assets/migration.html) to inspect the provider-to-receiver graph, repeated vendor seam in the DSM, evidence details, filters, responsive register, visible-slice CSV and print/PDF view.
+
+![Northstar dependency network](assets/migration.svg)
+
+Downloads: [source JSON](assets/migration-source.json), [normalized JSON](assets/migration.json), [full CSV](assets/migration.csv), and [static SVG](assets/migration.svg). Records derived from acceptance boundaries keep their dates unconfirmed and do not backfill later rehearsal, restore or acceptance outcomes.

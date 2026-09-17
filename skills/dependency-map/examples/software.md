@@ -31,8 +31,10 @@ Keep the original forecast and any later revisions. Mark delivered when the defi
 
 **Repair:** “Platform is two days late, so the pilot slips two days” becomes “the known local margin is −2 calendar days; project impact awaits the integrated remaining-work and capacity model.”
 
-## Graphical companion
+## Interactive dependency companion
 
-![Worked visual](assets/software-visual.svg)
+[Open the offline dependency explorer](assets/software.html) for the provider-to-receiver graph, DSM matrix, filters, selected handoff evidence, responsive register, visible-slice CSV and print/PDF view.
 
-[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+![Relay dependency network](assets/software.svg)
+
+Downloads: [source JSON](assets/software-source.json), [normalized JSON](assets/software.json), [full CSV](assets/software.csv), and [static SVG](assets/software.svg). The additional environment, security and service-readiness arrows are explicitly scoped boundary records; their unknown dates and assignments remain visible rather than being invented.

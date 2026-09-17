@@ -96,7 +96,7 @@
   },
   {
     "skill": "dependency-map",
-    "route": "Provider-to-receiver graph",
+      "route": "Dedicated provider-to-receiver graph, DSM, evidence register and offline renderer",
     "reference": "references/visual-artifact.md"
   },
   {

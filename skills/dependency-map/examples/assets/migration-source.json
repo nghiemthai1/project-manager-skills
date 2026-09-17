@@ -1,0 +1,68 @@
+{
+  "title": "Northstar dependency control view",
+  "as_of": "2026-10-23",
+  "version": "1.0",
+  "source": "Fictional Northstar scenario and dependency-map worked example, cut off 23 October 2026",
+  "scope": "Vendor-to-migration and downstream acceptance interfaces known at the 23 October control point",
+  "calendar": {"label": "Calendar days; no timezone conversion", "unit": "calendar_days"},
+  "nodes": [
+    {"id": "VENDOR", "label": "Vendor", "kind": "vendor", "owner": "Beck (vendor lead)", "source": "Northstar scenario"},
+    {"id": "MIGRATION", "label": "Migration team", "kind": "team", "owner": "Chen", "source": "Northstar scenario"},
+    {"id": "BUSINESS", "label": "Business acceptance", "kind": "authority", "owner": "Saira", "source": "Northstar scenario"},
+    {"id": "OPERATIONS", "label": "Operations", "kind": "authority", "owner": "Rosa", "source": "Northstar scenario"}
+  ],
+  "dependencies": [
+    {
+      "id": "M-DEP01", "provider": "VENDOR", "receiver": "MIGRATION",
+      "handoff": "Applicable export mapping", "usable_criteria": "Versioned field and identifier relationships, documented exceptions, and evidence usable for rehearsal.",
+      "needed_by": "2026-11-02", "requested": null, "committed": null, "commitment_source": null, "forecast": "2026-11-04",
+      "status": "at_risk", "acceptance_state": "not_delivered", "owner": "Beck; commitment authority not evidenced", "receiver_owner": "Chen; sign-off assignment to confirm",
+      "source": "Northstar scenario at 23 October: expected 4 November, needed 2 November", "note": "The expected date is not relabeled as a commitment."
+    },
+    {
+      "id": "M-DEP-ID", "provider": "VENDOR", "receiver": "MIGRATION",
+      "handoff": "Attachment identifier rules", "usable_criteria": "The applicable identifier relationships and exceptions can be tested against the agreed migration population.",
+      "needed_by": null, "requested": null, "committed": null, "commitment_source": null, "forecast": null,
+      "status": "at_risk", "acceptance_state": "unknown", "owner": "Beck", "receiver_owner": "Chen",
+      "source": "M-R01 identifies possible inconsistent attachment identifiers; no separate delivery dates are supplied", "note": "This boundary supports investigation without declaring a defect or a cause before observation."
+    },
+    {
+      "id": "M-DEP-REC", "provider": "MIGRATION", "receiver": "BUSINESS",
+      "handoff": "Reconciliation evidence", "usable_criteria": "Agreed population reconciles with no unexplained high-severity mismatches for Saira's acceptance decision.",
+      "needed_by": null, "requested": null, "committed": null, "commitment_source": null, "forecast": null,
+      "status": "unconfirmed", "acceptance_state": "unknown", "owner": "Chen", "receiver_owner": "Saira",
+      "source": "Baseline acceptance requirements; delivery and review dates are not supplied at this cutoff", "note": "Counts alone do not establish correctness or acceptance."
+    },
+    {
+      "id": "M-DEP-OPS", "provider": "MIGRATION", "receiver": "OPERATIONS",
+      "handoff": "Restore and monitoring demonstration", "usable_criteria": "Restore and monitoring demonstrations pass before Rosa accepts service responsibility.",
+      "needed_by": null, "requested": null, "committed": null, "commitment_source": null, "forecast": null,
+      "status": "unconfirmed", "acceptance_state": "unknown", "owner": "Chen", "receiver_owner": "Rosa",
+      "source": "Northstar acceptance requirements and operations boundary; dates are not supplied at this cutoff", "note": "This record does not backfill the later restore-test result."
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Migration interface control", "headline": "Northstar dependency network",
+    "lede": "The vendor forecast is late against the receiving need, while correctness, business reconciliation, and operations acceptance remain separate evidence boundaries.",
+    "default_dependency_id": "M-DEP01",
+    "metrics": [
+      {"label": "Handoffs", "value": "4", "note": "Scoped boundary records"},
+      {"label": "Known date gap", "value": "−2 days", "note": "Calendar margin only"},
+      {"label": "Vendor seam", "value": "2 records", "note": "DSM pair count"},
+      {"label": "Accepted", "value": "0", "note": "At 23 October cutoff"}
+    ],
+    "insight_heading": "Arrival, correctness, and acceptance need different evidence.",
+    "insight_points": [
+      "M-DEP01 exposes a local date gap without asserting cutover impact.",
+      "The attachment-rule boundary keeps M-R01 as a risk until observation establishes an issue.",
+      "Business reconciliation and operations handover cannot be closed by a vendor done message."
+    ],
+    "decision": "Obtain an authorized mapping forecast and validation plan, then date the receiving checks and downstream acceptance boundaries."
+  },
+  "analysis": {
+    "method": "Rule-based coordination view plus provider/receiver pair counts. No integrated task network, calendars or resource model was supplied, so no critical path is asserted.",
+    "coordination_focus_ids": ["M-DEP01", "M-DEP-ID"],
+    "critical_path": null
+  },
+  "notes": ["All records are fictional training data.", "The graph uses only facts available at the 23 October cutoff and explicitly labeled boundary proposals."]
+}

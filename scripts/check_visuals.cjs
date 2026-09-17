@@ -16,7 +16,7 @@ fs.mkdirSync(output, {recursive: true});
     const page = await browser.newPage();
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    for (const slug of ['raci-matrix', 'gantt-chart']) {
+    for (const slug of ['raci-matrix', 'gantt-chart', 'dependency-map']) {
       for (const scenario of ['software', 'migration']) {
         const stem = path.join(root, 'skills', slug, 'examples', 'assets', scenario);
         for (const [view, width, height] of [['desktop',1440,1000], ['portrait',390,844], ['landscape',844,390]]) {
@@ -26,17 +26,34 @@ fs.mkdirSync(output, {recursive: true});
           if (slug === 'gantt-chart') assert.deepEqual(await page.$$eval('.gantt-row.is-related',rows=>rows.map(row=>row.dataset.taskId).sort()),['A','D','E']);
           await page.screenshot({path:path.join(output,`${slug}-${scenario}-${view}-viewport.png`)});
           if (view !== 'desktop') {
-            const contentSelector = slug === 'gantt-chart' ? '.gantt-scroll' : (view === 'portrait' ? '.mobile article' : '.scroll');
+            const contentSelector = slug === 'gantt-chart' ? '.gantt-scroll' : (slug === 'dependency-map' ? '.graph-shell' : (view === 'portrait' ? '.mobile article' : '.scroll'));
             await page.$eval(contentSelector, x=>x.scrollIntoView());
             await page.screenshot({path:path.join(output,`${slug}-${scenario}-${view}-content.png`)});
             await page.evaluate(()=>scrollTo(0,0));
           }
-          await page.type('#search','NO-MATCH-LITERAL');
-          assert.match(await page.$eval('#scope',x=>x.textContent), /^0 \//);
-          await page.click('#reset');
-          await page.evaluate(() => [...document.querySelectorAll('[data-detail]')].find(x=>x.getBoundingClientRect().height>0).focus());
-          await page.keyboard.press('Enter');
-          assert.doesNotMatch(await page.$eval('#detail-text',x=>x.textContent), /^Select/);
+          if (slug === 'dependency-map') {
+            await page.type('#search','NO-MATCH-LITERAL');
+            assert.match(await page.$eval('#count',x=>x.textContent), /^0 of/);
+            await page.click('#reset');
+            await page.focus('.edge');
+            await page.keyboard.press('Enter');
+            assert.match(await page.$eval('#detail',x=>x.textContent), /Evidence:/);
+            const before = await page.$eval('#graph',x=>Number(x.getAttribute('width')));
+            await page.click('#plus');
+            const after = await page.$eval('#graph',x=>Number(x.getAttribute('width')));
+            assert.ok(after > before);
+            await page.click('#matrixTab');
+            assert.equal(await page.$eval('#matrix',x=>getComputedStyle(x).display),'block');
+            await page.click('#graphTab');
+            await page.click('#links');
+            assert.ok(await page.$$eval('.dim',x=>x.length) > 0);
+          } else {
+            await page.type('#search','NO-MATCH-LITERAL');
+            assert.match(await page.$eval('#scope',x=>x.textContent), /^0 \//);
+            await page.click('#reset');
+            await page.evaluate(() => [...document.querySelectorAll('[data-detail]')].find(x=>x.getBoundingClientRect().height>0).focus());
+            await page.keyboard.press('Enter');
+            assert.doesNotMatch(await page.$eval('#detail-text',x=>x.textContent), /^Select/);
           if (slug === 'raci-matrix') {
             const role = await page.$eval('#role',x=>x.options[1].value);
             await page.select('#role',role);
@@ -64,13 +81,15 @@ fs.mkdirSync(output, {recursive: true});
             const phase = await page.$eval('#phaseFilter',x=>x.options[1].value);
             await page.select('#phaseFilter',phase);
             assert.doesNotMatch(await page.$eval('#scope',x=>x.textContent),/^5 \/ 5/);
-          }
+          }}
           await page.click('#reset');
           reports.push({slug,scenario,view,viewport:[width,height],overflow:false,searchResetKeyboard:true});
         }
-        const exports = await page.$$eval('a[download]',els=>els.map(x=>({name:x.download,body:x.href.split(',')[1]})));
+        const exports = slug === 'dependency-map'
+          ? await page.$$eval('a[download]',async els=>Promise.all(els.map(async x=>({name:x.download,body:await (await fetch(x.href)).text()}))))
+          : await page.$$eval('a[download]',els=>els.map(x=>({name:x.download,body:x.href.split(',')[1]})));
         for (const exported of exports) {
-          const ext = path.extname(exported.name), actual = Buffer.from(exported.body,'base64').toString('utf8');
+          const ext = path.extname(exported.name), actual = slug === 'dependency-map' ? exported.body : Buffer.from(exported.body,'base64').toString('utf8');
           const expected = fs.readFileSync(stem+ext,'utf8');
           if (ext === '.json') assert.deepEqual(JSON.parse(actual),JSON.parse(expected));
           else assert.equal(actual.replace(/\r\n/g,'\n'),expected.replace(/\r\n/g,'\n'));
@@ -83,7 +102,7 @@ fs.mkdirSync(output, {recursive: true});
     await page.select('#issues','findings');
     assert.match(await page.$eval('#scope',x=>x.textContent),/^2 \/ 3/);
     assert.equal(await page.$eval('tr[data-row="H-8"]',x=>x.hidden),true);
-    for (const slug of ['project-budget','benefits-realization','resource-capacity-plan','scope-and-wbs','dependency-map','stakeholder-map','risk-workshop','release-readiness']) {
+    for (const slug of ['project-budget','benefits-realization','resource-capacity-plan','scope-and-wbs','stakeholder-map','risk-workshop','release-readiness']) {
       await page.setViewport({width:1120,height:760});
       await page.goto(pathToFileURL(path.join(root,'skills',slug,'examples/assets/software-visual.svg')).href);
       const overflow=await page.evaluate(()=>[...document.querySelectorAll('text')].filter(t=>{const b=t.getBBox();return b.x<0||b.x+b.width>1120||b.y+b.height>760}).map(t=>t.textContent));

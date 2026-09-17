@@ -40,7 +40,7 @@
 
 | Skill | Focus | Framework |
 |---|---|---|
-| [Dependency Map](../skills/dependency-map/SKILL.md) | Secure usable provider-to-receiver handoffs | Dependency network; interface agreements; local margin versus float |
+| [Dependency Map](../skills/dependency-map/SKILL.md) | Secure usable provider-to-receiver handoffs | Dependency network; interface agreements; local margin; dependency structure matrix; Conway's Law; CPM boundary |
 | [Resource Capacity Plan](../skills/resource-capacity-plan/SKILL.md) | Resolve individual bottlenecks and competing allocations | Capacity-demand analysis; skill constraints; resource leveling options |
 | [Project Budget](../skills/project-budget/SKILL.md) | Plan and control forecast cost and funding | Cost baseline; contingency versus management reserve; earned value management |
 | [Vendor and Procurement Management](../skills/vendor-procurement/SKILL.md) | Define vendor selection, deliverables, acceptance and controls | Make-or-buy; weighted supplier evaluation; contract deliverable control |

@@ -4,7 +4,7 @@ Practical skills for software and IT project managers, written to improve both t
 
 Start with your decision: define scope, test a delivery forecast, expose a risk, recover a troubled project, or establish whether a release is ready. Each skill explains the framework, when to use it, how to apply it, and recognizable failure modes.
 
-Version 2.1 contains **42 skills**, reusable templates, and **four calculation helpers and two visual renderers**. All 30 original skills have been expanded, with 12 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
+Version 2.1 contains **42 skills**, reusable templates, and **four calculation helpers and three visual renderers**. All 30 original skills have been expanded, with 12 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
 
 ## Find the skill you need
 
@@ -77,7 +77,7 @@ Each skill has an optional Examples section with fictional worked applications a
 
 | Skill | Focus | Framework |
 |---|---|---|
-| [Dependency Map](skills/dependency-map/SKILL.md) | Secure usable provider-to-receiver handoffs | Dependency network; interface agreements; local margin versus float |
+| [Dependency Map](skills/dependency-map/SKILL.md) | Secure usable provider-to-receiver handoffs | Dependency network; interface agreements; local margin; dependency structure matrix; Conway's Law; CPM boundary |
 | [Resource Capacity Plan](skills/resource-capacity-plan/SKILL.md) | Resolve individual bottlenecks and competing allocations | Capacity-demand analysis; skill constraints; resource leveling options |
 | [Project Budget](skills/project-budget/SKILL.md) | Plan and control forecast cost and funding | Cost baseline; contingency versus management reserve; earned value management |
 | [Vendor and Procurement Management](skills/vendor-procurement/SKILL.md) | Define vendor selection, deliverables, acceptance and controls | Make-or-buy; weighted supplier evaluation; contract deliverable control |

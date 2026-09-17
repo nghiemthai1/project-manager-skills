@@ -23,11 +23,12 @@ def load(slug, filename):
 
 gantt = load('gantt-chart', 'render_gantt.py')
 raci = load('raci-matrix', 'render_raci.py')
+dependency = load('dependency-map', 'render_dependency_map.py')
 
 
 class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
-        for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci)]:
+        for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -114,14 +115,33 @@ class VisualTests(unittest.TestCase):
     def test_raci_confirmed_needs_source_and_cells_are_explicit(self):
         data=raci.demo();data['rows'][0]['cells']['PM']['state']='confirmed'
         with self.assertRaises(ValueError):raci.validate(data)
+
+    def test_dependency_margin_direction_and_acceptance(self):
+        data=dependency.demo();original=copy.deepcopy(data)
+        dep=data['dependencies'][1]
+        self.assertEqual(dependency.local_margin(dep),-2)
+        self.assertEqual(dependency.category(dep),'gap')
+        self.assertIn(',-2,',dependency.render_csv(data))
+        dep['acceptance_state']='accepted';dep['status']='accepted'
+        self.assertEqual(dependency.category(dep),'closed')
+        self.assertEqual(original['dependencies'][1]['forecast'],'2026-10-22')
+
+    def test_dependency_rejects_missing_endpoints_and_unsupported_cpm(self):
+        data=dependency.demo();data['dependencies'][0]['provider']='MISSING'
+        with self.assertRaises(ValueError):dependency.validate(data)
+        data=dependency.demo();data['analysis']['critical_path']={'dependency_ids':['MISSING'],'method':'Imported CPM'}
+        with self.assertRaises(ValueError):dependency.validate(data)
+        data=dependency.demo();data['dependencies'][0]['committed']='2026-10-18'
+        with self.assertRaises(ValueError):dependency.validate(data)
         data=raci.demo();del data['rows'][0]['cells']['OPS']
         with self.assertRaises(ValueError):raci.validate(data)
 
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci):
+        for module in (gantt,raci,dependency):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
-            item=data['tasks'][0] if module is gantt else data['rows'][0]
-            item['label']='=WEBSERVICE("example")'
+            if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
+            elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
+            else: data['dependencies'][0]['handoff']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -129,7 +149,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci):
+            for module in (gantt,raci,dependency):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

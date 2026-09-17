@@ -77,7 +77,7 @@
     "path": "skills/dependency-map/SKILL.md",
     "category": "Controls and assurance",
     "focus": "Secure usable provider-to-receiver handoffs",
-    "frameworks": "Dependency network; interface agreements; local margin versus float"
+    "frameworks": "Dependency network; interface agreements; local margin; dependency structure matrix; Conway's Law; CPM boundary"
   },
   {
     "name": "escalation-brief",

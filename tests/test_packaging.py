@@ -34,7 +34,7 @@ class PackagingTests(unittest.TestCase):
                     self.assertIn(b'MIT License',bundle.read('.agents/skills/'+helper.relative_to(ROOT/'skills').as_posix()))
                 for asset in ('software.mmd','software.svg','migration.mmd','migration.svg'):
                     self.assertIn('.agents/skills/gantt-chart/examples/assets/'+asset,names)
-                for slug in ('gantt-chart', 'raci-matrix'):
+                for slug in ('gantt-chart', 'raci-matrix', 'dependency-map'):
                     for scene in ('software', 'migration'):
                         for extension in ('.html', '.svg', '.json', '.csv'):
                             self.assertIn(f'.agents/skills/{slug}/examples/assets/{scene}{extension}', names)
