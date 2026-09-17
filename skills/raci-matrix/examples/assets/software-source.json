@@ -8,33 +8,59 @@
   "roles": [
     {
       "id": "Ada",
-      "label": "Ada: sponsor"
+      "label": "Ada: sponsor",
+      "function": "governance",
+      "authority": "Proposed accountability for baseline and material scope/funding decisions; pilot-go authority remains unresolved",
+      "source": "software.md / proposed matrix and review findings"
     },
     {
       "id": "Mina",
-      "label": "Mina: PM"
+      "label": "Mina: PM",
+      "function": "coordination",
+      "authority": "Prepares and coordinates decision records; independent acceptance authority is not claimed",
+      "source": "software.md / proposed matrix"
     },
     {
       "id": "Omar",
-      "label": "Omar: engineering"
+      "label": "Omar: engineering",
+      "function": "engineering",
+      "authority": "Proposed ownership of SAML implementation and engineering evidence",
+      "source": "software.md / proposed matrix"
     },
     {
       "id": "Priya",
-      "label": "Priya: product"
+      "label": "Priya: product",
+      "function": "product",
+      "authority": "Proposed ownership of backlog ordering",
+      "source": "software.md / proposed matrix"
     },
     {
       "id": "Lena",
-      "label": "Lena: security"
+      "label": "Lena: security",
+      "function": "security",
+      "authority": "Proposed independent security acceptance authority",
+      "source": "software.md / proposed matrix"
     },
     {
       "id": "Theo",
-      "label": "Theo: service"
+      "label": "Theo: service",
+      "function": "service",
+      "authority": "Proposed service handover acceptance authority",
+      "source": "software.md / proposed matrix"
     }
+  ],
+  "row_groups": [
+    {"id": "baseline", "index": "01", "name": "Baseline and governance"},
+    {"id": "delivery", "index": "02", "name": "Product and engineering delivery"},
+    {"id": "acceptance", "index": "03", "name": "Independent acceptance"},
+    {"id": "change", "index": "04", "name": "Change and release decisions"}
   ],
   "rows": [
     {
       "id": "R-1",
       "label": "Integrated baseline proposal",
+      "group": "baseline",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "C",
@@ -77,6 +103,8 @@
     {
       "id": "R-2",
       "label": "Baseline approval decision",
+      "group": "baseline",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "A",
@@ -119,6 +147,8 @@
     {
       "id": "R-3",
       "label": "SAML implementation and engineering evidence",
+      "group": "delivery",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "I",
@@ -161,6 +191,8 @@
     {
       "id": "R-4",
       "label": "Backlog ordering",
+      "group": "delivery",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "I",
@@ -203,6 +235,8 @@
     {
       "id": "R-5",
       "label": "Security acceptance decision",
+      "group": "acceptance",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "I",
@@ -245,6 +279,8 @@
     {
       "id": "R-6",
       "label": "Service handover acceptance",
+      "group": "acceptance",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "I",
@@ -287,6 +323,8 @@
     {
       "id": "R-7",
       "label": "Material scope/funding change decision",
+      "group": "change",
+      "source": "software.md / proposed matrix",
       "cells": {
         "Ada": {
           "code": "A",
@@ -329,6 +367,8 @@
     {
       "id": "GO-UNKNOWN",
       "label": "Pilot go decision",
+      "group": "change",
+      "source": "software.md / review findings",
       "cells": {
         "Ada": {
           "code": "?",
@@ -369,6 +409,29 @@
       }
     }
   ],
+  "presentation": {
+    "eyebrow": "Responsibility baseline",
+    "headline": "Authority before initials",
+    "lede": "Inspect each delivery relationship, its confirmation state, and the evidence needed to rely on it.",
+    "default_row_id": "R-5",
+    "metrics": [
+      {"label": "Bounded rows", "value": "8", "note": "Deliverables and decisions"},
+      {"label": "Named roles", "value": "6", "note": "Proposed participants"},
+      {"label": "Unresolved cells", "value": "6", "note": "Pilot-go authority retained"},
+      {"label": "Confirmed cells", "value": "0", "note": "No agreement inferred"}
+    ],
+    "insight_heading": "The release decision remains the control point",
+    "insight_points": [
+      "Independent security and service acceptance have their own bounded rows.",
+      "Every visible letter is still proposed; assignment and confirmation remain separate."
+    ],
+    "decision": "Establish pilot-go authority and confirm the proposed assignments before using this matrix as an operating baseline."
+  },
+  "analysis": {
+    "method": "Rule-based horizontal and vertical review of supplied RACI cells; thresholds reveal discussion points and do not measure workload.",
+    "consulted_review_threshold": 4,
+    "accountability_concentration_threshold": 3
+  },
   "notes": [
     "Row IDs R-/M-R- and GO-UNKNOWN are illustrative artifact identifiers added for navigation, not new project approvals.",
     "All original matrix letters are retained. The unresolved go row makes the existing narrative gap visible.",

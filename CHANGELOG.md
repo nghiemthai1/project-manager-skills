@@ -6,6 +6,7 @@
 - Vendored the six recorded Gantt reference guides and mobile-first visualization foundation so the skill remains complete when copied independently.
 - Rebuilt both Gantt examples as responsive offline schedule explorers with phase-grouped rows, sticky date/task panes, dynamic dependency redraw, selected-chain highlighting, persistent evidence details, phase/owner/search filters, critical-only review, comparison/link toggles, zoom, visible-slice CSV, complete exports, and print/PDF context.
 - Rebuilt `dependency-map` around provider-to-receiver interface agreements, transparent coordination ordering, DSM/Conway diagnosis and an explicit CPM boundary; added an offline graph/DSM/register renderer with responsive interaction, full and filtered exports, and rebuilt Relay/Northstar examples.
+- Rebuilt `raci-matrix` as a responsive responsibility-control workspace with matrix, horizontal audit and vertical role-profile views, evidence-aware assignment detail, declared review thresholds, full and visible-slice exports, and redesigned Relay/Northstar examples.
 
 ## 2.0.0
 

@@ -20,6 +20,18 @@ Define what each R produces and what each A owns. Separate independent acceptanc
 | Row / role | Missing or conflicting assignment | Consequence | Proposed resolution | Authority to confirm | Due / trigger | Status |
 |---|---|---|---|---|---|---|
 
+Declare any visual review thresholds before using them:
+
+- Consulted-count threshold for a row:
+- Accountable-row concentration threshold for a role:
+- Why those thresholds are useful for this scope:
+- Explicit caveat: counts indicate responsibility patterns, not effort, utilization or available capacity.
+
+### Vertical role review
+
+| Role | A rows | R rows | C rows | I rows | Unknown/disputed | Authority or compatibility question | Capacity evidence needed |
+|---|---:|---:|---:|---:|---:|---|---|
+
 ## Confirmation and change history
 
 | Version / date | Change | People confirming / source | Effective boundary | Remaining gaps |

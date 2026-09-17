@@ -54,12 +54,19 @@ fs.mkdirSync(output, {recursive: true});
             await page.evaluate(() => [...document.querySelectorAll('[data-detail]')].find(x=>x.getBoundingClientRect().height>0).focus());
             await page.keyboard.press('Enter');
             assert.doesNotMatch(await page.$eval('#detail-text',x=>x.textContent), /^Select/);
-          if (slug === 'raci-matrix') {
-            const role = await page.$eval('#role',x=>x.options[1].value);
-            await page.select('#role',role);
-            assert.match(await page.$eval('#scope',x=>x.textContent), /other columns are hidden/);
-            assert.equal(await page.$$eval('[data-role]',els=>els.filter(x=>!x.hidden).every(x=>x.dataset.role===document.querySelector('#role').value)),true);
-          } else {
+           if (slug === 'raci-matrix') {
+             const role = await page.$eval('#role',x=>x.options[1].value);
+             await page.select('#role',role);
+             assert.match(await page.$eval('#scope',x=>x.textContent), /other columns are hidden/);
+             assert.equal(await page.$$eval('[data-role]',els=>els.filter(x=>!x.hidden).every(x=>x.dataset.role===document.querySelector('#role').value)),true);
+             await page.click('#auditTab');
+             assert.equal(await page.$eval('#auditView',x=>getComputedStyle(x).display),'block');
+             await page.click('#rolesTab');
+             assert.equal(await page.$eval('#rolesView',x=>getComputedStyle(x).display),'block');
+             await page.click('#authority');
+             assert.equal(await page.$eval('#authority',x=>x.getAttribute('aria-pressed')),'true');
+             await page.click('#matrixTab');
+           } else {
             const focused = await page.$eval('[data-detail]:focus',x=>x.dataset.taskId);
             await page.keyboard.press('ArrowDown');
             assert.notEqual(await page.$eval('[data-detail]:focus',x=>x.dataset.taskId),focused);

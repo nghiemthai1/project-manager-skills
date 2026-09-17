@@ -116,6 +116,25 @@ class VisualTests(unittest.TestCase):
         data=raci.demo();data['rows'][0]['cells']['PM']['state']='confirmed'
         with self.assertRaises(ValueError):raci.validate(data)
 
+    def test_raci_vertical_audit_and_declared_thresholds(self):
+        data=raci.demo()
+        profile={item['id']:item for item in raci.role_audit(data)}
+        self.assertEqual(profile['PM']['counts']['R'],1)
+        self.assertEqual(profile['PM']['exact_counts']['R'],1)
+        self.assertEqual(profile['OPS']['counts']['?'],1)
+        self.assertIn('unresolved assignment',profile['OPS']['signals'][0])
+        data['analysis']['accountability_concentration_threshold']=True
+        with self.assertRaises(ValueError):raci.validate(data)
+        data=raci.demo();data['rows'][0]['group']='missing'
+        with self.assertRaises(ValueError):raci.validate(data)
+
+    def test_raci_product_views_and_export_scope_are_present(self):
+        data=raci.demo();html=raci.render_html(data)
+        for token in ('id="matrixTab"','id="auditTab"','id="rolesTab"','id="authority"',
+                      'id="visibleCsv"','Role profiles','other columns are hidden'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="raci-matrix.'),3)
+
     def test_dependency_margin_direction_and_acceptance(self):
         data=dependency.demo();original=copy.deepcopy(data)
         dep=data['dependencies'][1]

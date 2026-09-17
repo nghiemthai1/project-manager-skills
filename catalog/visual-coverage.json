@@ -46,7 +46,7 @@
   },
   {
     "skill": "raci-matrix",
-    "route": "Dedicated renderer and visual workflow",
+    "route": "Dedicated matrix, row-audit and role-profile workflow with evidence details and offline renderer",
     "reference": "references/renderer.md"
   },
   {

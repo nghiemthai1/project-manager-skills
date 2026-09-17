@@ -13,7 +13,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [stakeholder-identification](../skills/stakeholder-identification/references/visual-artifact.md) | Coverage map |
 | [stakeholder-map](../skills/stakeholder-map/references/visual-artifact.md) | Paired stakeholder grids |
 | [stakeholder-engagement-advisor](../skills/stakeholder-engagement-advisor/SKILL.md) | Conversation or text/table artifact by default |
-| [raci-matrix](../skills/raci-matrix/references/renderer.md) | Dedicated renderer and visual workflow |
+| [raci-matrix](../skills/raci-matrix/references/renderer.md) | Dedicated matrix, row-audit and role-profile workflow with evidence details and offline renderer |
 | [communication-plan](../skills/communication-plan/references/visual-artifact.md) | Audience-channel cadence matrix |
 | [workshop-facilitation](../skills/workshop-facilitation/SKILL.md) | Conversation or text/table artifact by default |
 | [scope-and-wbs](../skills/scope-and-wbs/references/visual-artifact.md) | Deliverable hierarchy |

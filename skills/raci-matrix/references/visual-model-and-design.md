@@ -22,13 +22,19 @@ Keep deliverables on rows and roles on columns, with frozen row labels and colum
 
 Use one restrained color per relationship plus printed letters. Distinguish confirmation with border/pattern/text, not by reusing the R/A color scale. A proposed A can be colored as A while retaining its proposed label. A/R must remain legible as two duties.
 
-Provide row and role summaries. Flag missing/competing A, missing R, unconfirmed material assignments and unusually concentrated review demands. **Counts are responsibility patterns, not effort or utilization.** Do not compute an overload percentage from R/A totals.
+Provide three coordinated views:
+
+1. **Matrix:** the canonical row-by-role assignment grid.
+2. **Row audit:** horizontal tests for accountable authority, execution coverage, unresolved/disputed cells, confirmation and consultation spread.
+3. **Role profiles:** vertical code/state counts and declared pattern signals.
+
+Keep selection and filters coherent across the views. A role profile can say that a role appears as A on four rows; it cannot say that the person is 80% utilized. Flag missing/competing A, missing R, unconfirmed material assignments and unusually concentrated review demands. **Counts are responsibility patterns, not effort or utilization.** Do not compute an overload percentage from R/A totals.
 
 Keep annotations adjacent to the affected row or in a numbered audit register. Long duties should wrap or expand; do not shrink the whole grid. Exported graphics require the same caveats and legend as the interactive view.
 
 ## Interaction and small screens
 
-For a self-contained read-only HTML view, provide search by row/role/ID, a role-focused view, an unresolved/disputed filter and a reset. Show visible versus total rows and columns. Filtering to one role must not make a row look as if no A exists elsewhere: show “other assignments hidden” and offer the full row.
+For a self-contained read-only HTML view, provide search by row/role/ID, workstream and confirmation filters, a role-focused view, findings-only and authority-only review, and a reset. Show visible versus total rows. Filtering to one role must not make a row look as if no A exists elsewhere: show “other assignments hidden” and offer the full row.
 
 Cell selection should open persistent text containing deliverable, role, code, work boundary, confirmation and source. Use native buttons/links or a properly implemented accessible grid. Keyboard focus must be visible and must survive reset/filter changes sensibly. Hover can preview; it cannot be the only way to read an assignment.
 
@@ -40,6 +46,18 @@ Default to a proposed read-only artifact. If editing is requested, separate loca
 
 ## Export and review
 
-Deliver editable source, a readable SVG/PDF/PNG when requested, an accessible table and optionally standalone HTML. Label export scope, filters and role subset. Paginate large matrices with repeated role headers/row IDs rather than squeezing text. Keep the full audit register and source/confirmation record with the graphic.
+Deliver editable source, a readable SVG/PDF/PNG when requested, an accessible table and optionally standalone HTML. Keep permanent SVG/JSON/CSV downloads tied to the complete snapshot. If a visible-slice export is offered, label it separately and derive it from the active row and role filters. Paginate large matrices with repeated role headers/row IDs rather than squeezing text. Keep the full audit register and source/confirmation record with the graphic.
+
+## Visual hierarchy
+
+Lead with the responsibility question, not the file name. A useful product view has:
+
+- an eyebrow and headline that state the management purpose;
+- four or fewer metrics that explain scope and uncertainty;
+- one toolbar that groups inspection controls and exports;
+- a persistent detail region containing duty, evidence, confirmation and row audit;
+- a decision readout that states what must be resolved before the matrix can be relied upon.
+
+Use navy for structure, one accent for attention and restrained relationship colors inside cells. Confirmation must remain readable from border and text when color is unavailable. Workstream bands may organize rows but must not imply schedule sequence.
 
 Review long labels, missing and duplicate role IDs, disputed cells, A/R, multiple A, zero R, unknown versus explicitly blank, role filtering, keyboard cell details and narrow layout. Compare every rendered letter and qualification with source data. Check that a screenshot cannot be mistaken for confirmed assignments when the source is a draft.

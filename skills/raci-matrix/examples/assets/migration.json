@@ -8,33 +8,70 @@
   "roles": [
     {
       "id": "Noel",
-      "label": "Noel: sponsor"
+      "label": "Noel: sponsor",
+      "function": "governance",
+      "authority": "Proposed accountability for material baseline/funding change; cutover-go authority remains unresolved",
+      "source": "migration.md / proposed matrix and review findings"
     },
     {
       "id": "Jules",
-      "label": "Jules: PM"
+      "label": "Jules: PM",
+      "function": "coordination",
+      "authority": "Coordinates evidence and decision records; independent acceptance authority is not claimed",
+      "source": "migration.md / proposed matrix"
     },
     {
       "id": "Chen",
-      "label": "Chen: migration"
+      "label": "Chen: migration",
+      "function": "migration",
+      "authority": "Proposed ownership of internal verification and migration rehearsal",
+      "source": "migration.md / proposed matrix"
     },
     {
       "id": "Beck",
-      "label": "Beck: vendor"
+      "label": "Beck: vendor",
+      "function": "vendor",
+      "authority": "Proposed ownership of the vendor mapping deliverable only",
+      "source": "migration.md / proposed matrix"
     },
     {
       "id": "Saira",
-      "label": "Saira: business"
+      "label": "Saira: business",
+      "function": "business",
+      "authority": "Proposed independent business acceptance authority",
+      "source": "migration.md / proposed matrix"
     },
     {
       "id": "Rosa",
-      "label": "Rosa: operations"
+      "label": "Rosa: operations",
+      "function": "operations",
+      "authority": "Proposed restore readiness and operational handover acceptance authority",
+      "source": "migration.md / proposed matrix"
+    }
+  ],
+  "row_groups": [
+    {
+      "id": "prepare",
+      "index": "01",
+      "name": "Mapping and rehearsal"
+    },
+    {
+      "id": "acceptance",
+      "index": "02",
+      "name": "Independent acceptance"
+    },
+    {
+      "id": "governance",
+      "index": "03",
+      "name": "Change and cutover decisions"
     }
   ],
   "rows": [
     {
       "id": "M-R-1",
       "label": "Vendor mapping deliverable",
+      "group": "prepare",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "I",
@@ -77,6 +114,8 @@
     {
       "id": "M-R-2",
       "label": "Internal mapping verification",
+      "group": "prepare",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "I",
@@ -119,6 +158,8 @@
     {
       "id": "M-R-3",
       "label": "Representative migration rehearsal",
+      "group": "prepare",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "I",
@@ -161,6 +202,8 @@
     {
       "id": "M-R-4",
       "label": "Business acceptance decision",
+      "group": "acceptance",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "I",
@@ -203,6 +246,8 @@
     {
       "id": "M-R-5",
       "label": "Restore readiness demonstration",
+      "group": "acceptance",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "I",
@@ -245,6 +290,8 @@
     {
       "id": "M-R-6",
       "label": "Operational handover acceptance",
+      "group": "acceptance",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "I",
@@ -287,6 +334,8 @@
     {
       "id": "M-R-7",
       "label": "Material baseline/funding change decision",
+      "group": "governance",
+      "source": "migration.md / proposed matrix",
       "cells": {
         "Noel": {
           "code": "A",
@@ -329,6 +378,8 @@
     {
       "id": "GO-UNKNOWN",
       "label": "Cutover go decision",
+      "group": "governance",
+      "source": "migration.md / review findings",
       "cells": {
         "Noel": {
           "code": "?",
@@ -369,6 +420,45 @@
       }
     }
   ],
+  "presentation": {
+    "eyebrow": "Responsibility baseline",
+    "headline": "Acceptance stays independent",
+    "lede": "Trace the vendor, migration, business, and operations boundaries before relying on the cutover plan.",
+    "default_row_id": "M-R-4",
+    "metrics": [
+      {
+        "label": "Bounded rows",
+        "value": "8",
+        "note": "Deliverables and decisions"
+      },
+      {
+        "label": "Named roles",
+        "value": "6",
+        "note": "Proposed participants"
+      },
+      {
+        "label": "Unresolved cells",
+        "value": "6",
+        "note": "Cutover-go authority retained"
+      },
+      {
+        "label": "Confirmed cells",
+        "value": "0",
+        "note": "No agreement inferred"
+      }
+    ],
+    "insight_heading": "The vendor boundary is explicit",
+    "insight_points": [
+      "Vendor delivery, internal verification, business acceptance, and operational acceptance remain separate rows.",
+      "The cutover-go question is visible instead of being assigned by assumption."
+    ],
+    "decision": "Confirm cutover-go authority and each proposed relationship before treating this draft as the migration operating model."
+  },
+  "analysis": {
+    "method": "Rule-based horizontal and vertical review of supplied RACI cells; thresholds reveal discussion points and do not measure workload.",
+    "consulted_review_threshold": 4,
+    "accountability_concentration_threshold": 3
+  },
   "notes": [
     "Row IDs R-/M-R- and GO-UNKNOWN are illustrative artifact identifiers added for navigation, not new project approvals.",
     "All original matrix letters are retained. The unresolved go row makes the existing narrative gap visible.",

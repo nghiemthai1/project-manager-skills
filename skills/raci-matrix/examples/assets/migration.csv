@@ -1,49 +1,49 @@
-row_id,deliverable,role_id,role,code,confirmation,work_boundary,source
-M-R-1,Vendor mapping deliverable,Noel,Noel: sponsor,I,proposed,,migration.md / proposed matrix
-M-R-1,Vendor mapping deliverable,Jules,Jules: PM,C,proposed,,migration.md / proposed matrix
-M-R-1,Vendor mapping deliverable,Chen,Chen: migration,C,proposed,,migration.md / proposed matrix
-M-R-1,Vendor mapping deliverable,Beck,Beck: vendor,A/R,proposed,,migration.md / proposed matrix
-M-R-1,Vendor mapping deliverable,Saira,Saira: business,C,proposed,,migration.md / proposed matrix
-M-R-1,Vendor mapping deliverable,Rosa,Rosa: operations,I,proposed,,migration.md / proposed matrix
-M-R-2,Internal mapping verification,Noel,Noel: sponsor,I,proposed,,migration.md / proposed matrix
-M-R-2,Internal mapping verification,Jules,Jules: PM,C,proposed,,migration.md / proposed matrix
-M-R-2,Internal mapping verification,Chen,Chen: migration,A/R,proposed,,migration.md / proposed matrix
-M-R-2,Internal mapping verification,Beck,Beck: vendor,C,proposed,,migration.md / proposed matrix
-M-R-2,Internal mapping verification,Saira,Saira: business,C,proposed,,migration.md / proposed matrix
-M-R-2,Internal mapping verification,Rosa,Rosa: operations,I,proposed,,migration.md / proposed matrix
-M-R-3,Representative migration rehearsal,Noel,Noel: sponsor,I,proposed,,migration.md / proposed matrix
-M-R-3,Representative migration rehearsal,Jules,Jules: PM,C,proposed,,migration.md / proposed matrix
-M-R-3,Representative migration rehearsal,Chen,Chen: migration,A/R,proposed,,migration.md / proposed matrix
-M-R-3,Representative migration rehearsal,Beck,Beck: vendor,C,proposed,,migration.md / proposed matrix
-M-R-3,Representative migration rehearsal,Saira,Saira: business,C,proposed,,migration.md / proposed matrix
-M-R-3,Representative migration rehearsal,Rosa,Rosa: operations,C,proposed,,migration.md / proposed matrix
-M-R-4,Business acceptance decision,Noel,Noel: sponsor,I,proposed,,migration.md / proposed matrix
-M-R-4,Business acceptance decision,Jules,Jules: PM,R,proposed,coordinate record,migration.md / proposed matrix
-M-R-4,Business acceptance decision,Chen,Chen: migration,R,proposed,supply results,migration.md / proposed matrix
-M-R-4,Business acceptance decision,Beck,Beck: vendor,C,proposed,,migration.md / proposed matrix
-M-R-4,Business acceptance decision,Saira,Saira: business,A/R,proposed,,migration.md / proposed matrix
-M-R-4,Business acceptance decision,Rosa,Rosa: operations,C,proposed,,migration.md / proposed matrix
-M-R-5,Restore readiness demonstration,Noel,Noel: sponsor,I,proposed,,migration.md / proposed matrix
-M-R-5,Restore readiness demonstration,Jules,Jules: PM,C,proposed,,migration.md / proposed matrix
-M-R-5,Restore readiness demonstration,Chen,Chen: migration,R,proposed,proposed executor,migration.md / proposed matrix
-M-R-5,Restore readiness demonstration,Beck,Beck: vendor,C,proposed,,migration.md / proposed matrix
-M-R-5,Restore readiness demonstration,Saira,Saira: business,C,proposed,,migration.md / proposed matrix
-M-R-5,Restore readiness demonstration,Rosa,Rosa: operations,A,proposed,,migration.md / proposed matrix
-M-R-6,Operational handover acceptance,Noel,Noel: sponsor,I,proposed,,migration.md / proposed matrix
-M-R-6,Operational handover acceptance,Jules,Jules: PM,R,proposed,coordinate transfer,migration.md / proposed matrix
-M-R-6,Operational handover acceptance,Chen,Chen: migration,C,proposed,,migration.md / proposed matrix
-M-R-6,Operational handover acceptance,Beck,Beck: vendor,C,proposed,,migration.md / proposed matrix
-M-R-6,Operational handover acceptance,Saira,Saira: business,C,proposed,,migration.md / proposed matrix
-M-R-6,Operational handover acceptance,Rosa,Rosa: operations,A/R,proposed,,migration.md / proposed matrix
-M-R-7,Material baseline/funding change decision,Noel,Noel: sponsor,A,proposed,,migration.md / proposed matrix
-M-R-7,Material baseline/funding change decision,Jules,Jules: PM,R,proposed,impact proposal,migration.md / proposed matrix
-M-R-7,Material baseline/funding change decision,Chen,Chen: migration,C,proposed,,migration.md / proposed matrix
-M-R-7,Material baseline/funding change decision,Beck,Beck: vendor,C,proposed,,migration.md / proposed matrix
-M-R-7,Material baseline/funding change decision,Saira,Saira: business,C,proposed,,migration.md / proposed matrix
-M-R-7,Material baseline/funding change decision,Rosa,Rosa: operations,C,proposed,,migration.md / proposed matrix
-GO-UNKNOWN,Cutover go decision,Noel,Noel: sponsor,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
-GO-UNKNOWN,Cutover go decision,Jules,Jules: PM,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
-GO-UNKNOWN,Cutover go decision,Chen,Chen: migration,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
-GO-UNKNOWN,Cutover go decision,Beck,Beck: vendor,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
-GO-UNKNOWN,Cutover go decision,Saira,Saira: business,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
-GO-UNKNOWN,Cutover go decision,Rosa,Rosa: operations,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
+row_group,row_id,deliverable,row_source,role_id,role,role_function,code,confirmation,work_boundary,assignment_source
+prepare,M-R-1,Vendor mapping deliverable,migration.md / proposed matrix,Noel,Noel: sponsor,governance,I,proposed,,migration.md / proposed matrix
+prepare,M-R-1,Vendor mapping deliverable,migration.md / proposed matrix,Jules,Jules: PM,coordination,C,proposed,,migration.md / proposed matrix
+prepare,M-R-1,Vendor mapping deliverable,migration.md / proposed matrix,Chen,Chen: migration,migration,C,proposed,,migration.md / proposed matrix
+prepare,M-R-1,Vendor mapping deliverable,migration.md / proposed matrix,Beck,Beck: vendor,vendor,A/R,proposed,,migration.md / proposed matrix
+prepare,M-R-1,Vendor mapping deliverable,migration.md / proposed matrix,Saira,Saira: business,business,C,proposed,,migration.md / proposed matrix
+prepare,M-R-1,Vendor mapping deliverable,migration.md / proposed matrix,Rosa,Rosa: operations,operations,I,proposed,,migration.md / proposed matrix
+prepare,M-R-2,Internal mapping verification,migration.md / proposed matrix,Noel,Noel: sponsor,governance,I,proposed,,migration.md / proposed matrix
+prepare,M-R-2,Internal mapping verification,migration.md / proposed matrix,Jules,Jules: PM,coordination,C,proposed,,migration.md / proposed matrix
+prepare,M-R-2,Internal mapping verification,migration.md / proposed matrix,Chen,Chen: migration,migration,A/R,proposed,,migration.md / proposed matrix
+prepare,M-R-2,Internal mapping verification,migration.md / proposed matrix,Beck,Beck: vendor,vendor,C,proposed,,migration.md / proposed matrix
+prepare,M-R-2,Internal mapping verification,migration.md / proposed matrix,Saira,Saira: business,business,C,proposed,,migration.md / proposed matrix
+prepare,M-R-2,Internal mapping verification,migration.md / proposed matrix,Rosa,Rosa: operations,operations,I,proposed,,migration.md / proposed matrix
+prepare,M-R-3,Representative migration rehearsal,migration.md / proposed matrix,Noel,Noel: sponsor,governance,I,proposed,,migration.md / proposed matrix
+prepare,M-R-3,Representative migration rehearsal,migration.md / proposed matrix,Jules,Jules: PM,coordination,C,proposed,,migration.md / proposed matrix
+prepare,M-R-3,Representative migration rehearsal,migration.md / proposed matrix,Chen,Chen: migration,migration,A/R,proposed,,migration.md / proposed matrix
+prepare,M-R-3,Representative migration rehearsal,migration.md / proposed matrix,Beck,Beck: vendor,vendor,C,proposed,,migration.md / proposed matrix
+prepare,M-R-3,Representative migration rehearsal,migration.md / proposed matrix,Saira,Saira: business,business,C,proposed,,migration.md / proposed matrix
+prepare,M-R-3,Representative migration rehearsal,migration.md / proposed matrix,Rosa,Rosa: operations,operations,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-4,Business acceptance decision,migration.md / proposed matrix,Noel,Noel: sponsor,governance,I,proposed,,migration.md / proposed matrix
+acceptance,M-R-4,Business acceptance decision,migration.md / proposed matrix,Jules,Jules: PM,coordination,R,proposed,coordinate record,migration.md / proposed matrix
+acceptance,M-R-4,Business acceptance decision,migration.md / proposed matrix,Chen,Chen: migration,migration,R,proposed,supply results,migration.md / proposed matrix
+acceptance,M-R-4,Business acceptance decision,migration.md / proposed matrix,Beck,Beck: vendor,vendor,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-4,Business acceptance decision,migration.md / proposed matrix,Saira,Saira: business,business,A/R,proposed,,migration.md / proposed matrix
+acceptance,M-R-4,Business acceptance decision,migration.md / proposed matrix,Rosa,Rosa: operations,operations,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-5,Restore readiness demonstration,migration.md / proposed matrix,Noel,Noel: sponsor,governance,I,proposed,,migration.md / proposed matrix
+acceptance,M-R-5,Restore readiness demonstration,migration.md / proposed matrix,Jules,Jules: PM,coordination,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-5,Restore readiness demonstration,migration.md / proposed matrix,Chen,Chen: migration,migration,R,proposed,proposed executor,migration.md / proposed matrix
+acceptance,M-R-5,Restore readiness demonstration,migration.md / proposed matrix,Beck,Beck: vendor,vendor,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-5,Restore readiness demonstration,migration.md / proposed matrix,Saira,Saira: business,business,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-5,Restore readiness demonstration,migration.md / proposed matrix,Rosa,Rosa: operations,operations,A,proposed,,migration.md / proposed matrix
+acceptance,M-R-6,Operational handover acceptance,migration.md / proposed matrix,Noel,Noel: sponsor,governance,I,proposed,,migration.md / proposed matrix
+acceptance,M-R-6,Operational handover acceptance,migration.md / proposed matrix,Jules,Jules: PM,coordination,R,proposed,coordinate transfer,migration.md / proposed matrix
+acceptance,M-R-6,Operational handover acceptance,migration.md / proposed matrix,Chen,Chen: migration,migration,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-6,Operational handover acceptance,migration.md / proposed matrix,Beck,Beck: vendor,vendor,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-6,Operational handover acceptance,migration.md / proposed matrix,Saira,Saira: business,business,C,proposed,,migration.md / proposed matrix
+acceptance,M-R-6,Operational handover acceptance,migration.md / proposed matrix,Rosa,Rosa: operations,operations,A/R,proposed,,migration.md / proposed matrix
+governance,M-R-7,Material baseline/funding change decision,migration.md / proposed matrix,Noel,Noel: sponsor,governance,A,proposed,,migration.md / proposed matrix
+governance,M-R-7,Material baseline/funding change decision,migration.md / proposed matrix,Jules,Jules: PM,coordination,R,proposed,impact proposal,migration.md / proposed matrix
+governance,M-R-7,Material baseline/funding change decision,migration.md / proposed matrix,Chen,Chen: migration,migration,C,proposed,,migration.md / proposed matrix
+governance,M-R-7,Material baseline/funding change decision,migration.md / proposed matrix,Beck,Beck: vendor,vendor,C,proposed,,migration.md / proposed matrix
+governance,M-R-7,Material baseline/funding change decision,migration.md / proposed matrix,Saira,Saira: business,business,C,proposed,,migration.md / proposed matrix
+governance,M-R-7,Material baseline/funding change decision,migration.md / proposed matrix,Rosa,Rosa: operations,operations,C,proposed,,migration.md / proposed matrix
+governance,GO-UNKNOWN,Cutover go decision,migration.md / review findings,Noel,Noel: sponsor,governance,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
+governance,GO-UNKNOWN,Cutover go decision,migration.md / review findings,Jules,Jules: PM,coordination,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
+governance,GO-UNKNOWN,Cutover go decision,migration.md / review findings,Chen,Chen: migration,migration,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
+governance,GO-UNKNOWN,Cutover go decision,migration.md / review findings,Beck,Beck: vendor,vendor,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
+governance,GO-UNKNOWN,Cutover go decision,migration.md / review findings,Saira,Saira: business,business,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings
+governance,GO-UNKNOWN,Cutover go decision,migration.md / review findings,Rosa,Rosa: operations,operations,?,unknown,Release decision authority/assignment not established in this early draft,migration.md / review findings

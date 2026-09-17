@@ -14,7 +14,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # RACI Matrix
@@ -62,6 +62,8 @@ Do not put informal technical leadership and formal acceptance authority in the 
 
 A matrix becomes operational only when people understand and accept their assignments. Label it draft/proposed until that confirmation exists. Silence after an email is not acceptance.
 
+Use the declared, reviewable tests in [RACI audit methods](references/raci-audit-methods.md). A structural rule such as “one A per bounded row” can identify a governance question. A concentration threshold can identify where to ask about capacity or decision bottlenecks. Neither kind of rule proves the answer.
+
 ## Application
 
 1. **Bound the matrix.** Identify scope version, date, purpose and decision rights. Choose rows from actual deliverables and handoffs. Split rows where acceptance authority or work boundary differs.
@@ -75,15 +77,15 @@ Use the [matrix template](template.md). The final package should include the rea
 
 ### Produce the visual artifact
 
-When the user wants a graphical matrix, follow [the visual model and design contract](references/visual-model-and-design.md). Keep relationship letters, narrower work duties and confirmation state separate in the data and display. Use a stable row/role grid, restrained redundant color, a visible proposed/confirmed legend and an audit register. A/R counts are not utilization.
+When the user wants a graphical matrix, follow [the visual model and design contract](references/visual-model-and-design.md). Keep relationship letters, narrower work duties and confirmation state separate in the data and display. Use a stable row/role grid, restrained redundant color, a visible proposed/confirmed legend and an audit register. Pair the matrix with horizontal row audit and vertical role-profile views; neither may silently rewrite the matrix. A/R counts are not utilization.
 
-Choose the output for the audience: a readable static SVG/PDF for a report, a spreadsheet for cell-based collaboration, or self-contained HTML for search, role focus and persistent cell details. Preserve a full accessible table and editable source. A phone-width view should provide deliverable/role cards or a focused slice, not tiny text. Show active filters, hidden columns and a reset; keyboard users must be able to inspect the same duties as pointer users.
+Choose the output for the audience: a readable static SVG/PDF for a report, a spreadsheet for cell-based collaboration, or self-contained HTML for search, workstream and confirmation filters, role focus, row audit, role profiles and persistent cell details. Preserve a full accessible table and editable source. A phone-width view should provide deliverable/role cards or a focused slice, not tiny text. Show active filters, hidden columns and a reset; keyboard users must be able to inspect the same duties as pointer users.
 
 Use [the artifact acceptance checklist](references/artifact-review.md) on actual generated files. Compare every letter, work boundary and confirmation state against the source, inspect desktop/portrait/landscape, and verify export scope. If a renderer is unavailable, label the table/source a draft rather than claim that a graphic was produced.
 
 ### Included offline renderer
 
-Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
+Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and long-form CSV with Python 3.11+ and no external packages. The HTML provides matrix, row-audit and role-profile views plus full and visible-slice exports. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a live assignment or capacity-management application.
 
 ### Quality check before delivery
 
