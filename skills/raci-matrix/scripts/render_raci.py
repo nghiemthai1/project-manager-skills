@@ -399,11 +399,15 @@ def render_html(data, svg=None, csv_text=None):
             count = summary['exact_counts'][code]
             if count:
                 segments.append(f'<span style="width:{count/max_rows*100:.2f}%;background:{color}" title="{esc(code)}: {count}"></span>')
+        role_counts_html = ''.join(
+            f'<span><b>{summary["exact_counts"][code]}</b>{esc(code)}</span>'
+            for code in ('A', 'R', 'A/R', 'C', 'I', '?', '—')
+        )
         profile_cards.append(
             f'<article class="role-card" data-role="{esc(role["id"])}"><div class="role-head"><div><small>{esc(role.get("function", "ROLE PROFILE"))}</small>'
             f'<h3>{esc(role["label"])}</h3></div><span class="role-total">{sum(summary["states"].values()) - summary["counts"]["—"]} assigned</span></div>'
             f'<div class="stack" aria-label="Assignment relationship counts">{"".join(segments)}</div>'
-            f'<div class="role-counts">{"".join(f"<span><b>{summary["exact_counts"][code]}</b>{esc(code)}</span>" for code in ("A","R","A/R","C","I","?","—"))}</div>'
+            f'<div class="role-counts">{role_counts_html}</div>'
             f'<p><b>Confirmation:</b> {summary["states"]["confirmed"]} confirmed · {summary["states"]["proposed"]} proposed · '
             f'{summary["states"]["disputed"]} disputed · {summary["states"]["unknown"]} unknown</p>'
             f'<ul>{"".join(f"<li>{esc(signal)}</li>" for signal in summary["signals"])}</ul>'
