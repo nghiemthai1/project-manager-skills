@@ -17,6 +17,88 @@
     ],
     "holidays": []
   },
+  "presentation": {
+    "eyebrow": "RELAY / DELIVERY INSIGHT 01",
+    "headline": "Two more days on the path to integration.",
+    "lede": "The interface build grows from four to six working days. Receiver tests still finish in time; integration waits for the interface.",
+    "default_task_id": "B",
+    "metrics": [
+      {
+        "label": "Original finish",
+        "value": "14 Oct",
+        "note": "7 working days · planning scenario"
+      },
+      {
+        "label": "Forecast finish",
+        "value": "16 Oct",
+        "note": "9 working days · finish boundary"
+      },
+      {
+        "label": "Finish change",
+        "value": "+2 days",
+        "note": "Working days · no baseline approval",
+        "tone": "risk"
+      }
+    ],
+    "insight_heading": "A → B → D drives the finish.",
+    "insight_points": [
+      "B / Interface build is the only duration increase, from 4 to 6 working days.",
+      "C / Receiver tests finishes on 12 October and has 3 working days of forecast total float.",
+      "D / Integration shifts to 15–16 October because both B and C must finish first."
+    ],
+    "decision": "Keep the 16 October forecast unless a supported scope, sequence, or resource change justifies another plan."
+  },
+  "analysis": {
+    "method": "Supplied CPM result for the fictional network; zero-lag FS relationships, Monday–Friday, no holidays, no resource leveling. Dates were checked against the supplied intervals and were not rescheduled.",
+    "comparison": {
+      "duration_working_days": 7,
+      "critical_task_ids": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ]
+    },
+    "forecast": {
+      "duration_working_days": 9,
+      "critical_task_ids": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "critical_paths": [
+        [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      ],
+      "tasks": {
+        "A": {
+          "duration_working_days": 2,
+          "total_float_working_days": 0
+        },
+        "B": {
+          "duration_working_days": 6,
+          "total_float_working_days": 0
+        },
+        "C": {
+          "duration_working_days": 3,
+          "total_float_working_days": 3
+        },
+        "D": {
+          "duration_working_days": 1,
+          "total_float_working_days": 0
+        },
+        "E": {
+          "duration_working_days": 0,
+          "total_float_working_days": 0
+        }
+      }
+    }
+  },
   "tasks": [
     {
       "id": "A",

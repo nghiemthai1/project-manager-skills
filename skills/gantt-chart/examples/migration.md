@@ -1,6 +1,6 @@
 # Migration rehearsal: two tied branches
 
-Open the **[interactive artifact](assets/migration.html)**, **[SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/migration.html)**, **[full editorial SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses a fixed task grid and scrollable timeline on larger screens, task cards in portrait, persistent evidence details, search/owner filters, zoom, and dependency/critical-path controls. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Northstar's approved cutover schedule or its actual rehearsal history. Additional assumptions: start Monday 2 November 2026; Monday–Friday workweek with no holidays; separate available resources for B and C; no external input delays. Finish dates below are exclusive boundaries.
 
@@ -30,7 +30,9 @@ gantt
 
 [Editable Mermaid source](assets/migration.mmd).
 
-![Rendered migration Gantt](assets/migration.svg)
+![Editorial migration Gantt showing the tied branches, join, checkpoint, and resource caveat](assets/migration.svg)
+
+The artifact separates the plotted seven-working-day parallel forecast from the conditional ten-working-day serialized scenario. The JSON records both critical paths and the resource assumption explicitly. The renderer displays that supplied analysis without promoting the 16 November boundary to an approved forecast or implying that the checkpoint proves acceptance.
 
 B and C use explicit Monday finish boundaries to match the source table. Their productive dates remain 4–6 November; the shaded weekend adds no effort. The table preserves their dependency on A. Explicit dates must be recalculated when the schedule changes.
 

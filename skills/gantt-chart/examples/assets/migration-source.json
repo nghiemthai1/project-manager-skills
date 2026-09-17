@@ -17,6 +17,52 @@
     ],
     "holidays": []
   },
+  "presentation": {
+    "eyebrow": "NORTHSTAR / REHEARSAL INSIGHT 01",
+    "headline": "Two parallel branches hold the rehearsal finish.",
+    "lede": "Mapping validation and restore preparation both finish on 9 November. The 11 November checkpoint depends on separate capacity for that overlap.",
+    "default_task_id": "B",
+    "metrics": [
+      {
+        "label": "Parallel finish",
+        "value": "11 Nov",
+        "note": "7 working days · separate staff assumed"
+      },
+      {
+        "label": "Critical branches",
+        "value": "2",
+        "note": "B and C jointly gate the restore"
+      },
+      {
+        "label": "Serialized scenario",
+        "value": "16 Nov",
+        "note": "Conditional · not the plotted forecast",
+        "tone": "risk"
+      }
+    ],
+    "insight_heading": "B and C are both critical.",
+    "insight_points": [
+      "A / Extract sample releases two parallel three-day branches on 4 November.",
+      "B / Validate mapping and C / Prepare restore environment both have zero total float in the supplied parallel case.",
+      "If one person must perform B and C full-time, the conditional serialized boundary moves to 16 November."
+    ],
+    "decision": "Confirm the B/C assignments and acceptance availability before promising the 11 November checkpoint."
+  },
+  "analysis": {
+    "method": "Supplied CPM result for the fictional parallel network; zero-lag FS relationships, Monday–Friday, no holidays, no resource leveling. The 16 November serialized case is a separate conditional scenario and is not plotted as forecast.",
+    "forecast": {
+      "duration_working_days": 7,
+      "critical_task_ids": ["A", "B", "C", "D", "E"],
+      "critical_paths": [["A", "B", "D", "E"], ["A", "C", "D", "E"]],
+      "tasks": {
+        "A": {"duration_working_days": 2, "total_float_working_days": 0},
+        "B": {"duration_working_days": 3, "total_float_working_days": 0},
+        "C": {"duration_working_days": 3, "total_float_working_days": 0},
+        "D": {"duration_working_days": 2, "total_float_working_days": 0},
+        "E": {"duration_working_days": 0, "total_float_working_days": 0}
+      }
+    }
+  },
   "tasks": [
     {
       "id": "A",

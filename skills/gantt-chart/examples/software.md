@@ -1,6 +1,6 @@
 # Software integration: Gantt with baseline comparison
 
-Open the **[interactive artifact](assets/software.html)**, **[SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/software.html)**, **[full editorial SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses a fixed task grid and scrollable timeline on larger screens, task cards in portrait, persistent evidence details, search/owner filters, zoom, and comparison/dependency/critical-path controls. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Relay's approved calendar baseline. Additional assumptions: start Monday 5 October 2026; Monday–Friday workweek; no holidays; full-time separate staff for parallel B and C. Dates are finish boundaries, not inclusive final work dates. The “baseline” below is only the original planning scenario for this exercise.
 
@@ -36,7 +36,9 @@ gantt
 
 [Editable Mermaid source](assets/software.mmd).
 
-![Rendered software Gantt](assets/software.svg)
+![Editorial software Gantt showing the original and forecast layers, dependencies, critical work, and source boundaries](assets/software.svg)
+
+The artifact leads with the schedule decision: the original 14 October finish boundary moves to 16 October because B gains two working days. The JSON carries the presentation copy and the supplied CPM result separately from task dates, so the headline, critical IDs, and C's three days of total float remain inspectable claims rather than renderer guesses. The HTML preserves the whole network while search and owner filters focus the controls; exports always retain every source row.
 
 C uses an explicit Monday finish boundary so the rendered bar matches the table's next-working-boundary convention. Its three productive days remain Wednesday through Friday; the shaded weekend adds no effort. The table retains the dependency on A. Recalculate explicit dates when the underlying schedule changes.
 

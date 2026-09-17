@@ -45,6 +45,10 @@ fs.mkdirSync(output, {recursive: true});
             assert.equal(await page.$eval('.chart svg',x=>x.style.width),'150%');
             await page.select('#comparison','hide');
             assert.equal(await page.$eval('.chart',x=>x.classList.contains('no-comparison')),true);
+            await page.select('#dependencies','hide');
+            assert.equal(await page.$eval('.chart',x=>x.classList.contains('no-dependencies')),true);
+            await page.select('#critical','highlight');
+            assert.equal(await page.$eval('.chart',x=>x.classList.contains('show-critical')),true);
           }
           await page.click('#reset');
           reports.push({slug,scenario,view,viewport:[width,height],overflow:false,searchResetKeyboard:true});

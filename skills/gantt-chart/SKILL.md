@@ -112,7 +112,7 @@ Deliver the source mapping, normalized editable data, diagnostics, accessible ta
 
 Optional worked applications:
 
-- [Software timeline](examples/software.md): four tasks, separate original and forecast rows, a two-working-day finish change, and the arithmetic behind it.
+- [Software timeline](examples/software.md): original and forecast layers, a two-working-day finish change, an explicit critical path, responsive task cards and the arithmetic behind it.
 - [Migration timeline](examples/migration.md): two tied branches, an acceptance checkpoint and the difference between unconstrained and resource-feasible work.
 
 These fictional subcases add calendar assumptions for teaching. They do not replace Relay’s or Northstar’s approved project dates.

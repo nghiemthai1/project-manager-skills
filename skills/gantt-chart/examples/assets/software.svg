@@ -1,96 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="940" viewBox="0 0 1420 940" role="img" aria-labelledby="title desc">
-<title id="title">Relay · integration schedule</title><desc id="desc">Read-only schedule snapshot. Every source task is retained. Exact dates, ownership and sources are in the companion HTML and JSON.</desc>
-<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#5d4a78"/></marker></defs>
-<rect width="1420" height="940" fill="#f7f9fc"/><g font-family="Arial,sans-serif">
-<text x="24.0" y="29.0" font-size="16" fill="#24364e" font-weight="700">Relay · integration schedule</text>
-<text x="24.0" y="50.0" font-size="12" fill="#24364e" font-weight="400">GANTT-1.0 · As of 2026-10-05</text>
-<text x="24.0" y="71.0" font-size="12" fill="#24364e" font-weight="400">Fictional teaching subcase; separate staff on B/C assumed, no actual progress or approved project commitment</text>
-<text x="24.0" y="92.0" font-size="12" fill="#24364e" font-weight="400">Source: Fictional software worked example; exact date table</text>
-<text x="24.0" y="113.0" font-size="12" fill="#24364e" font-weight="400">Calendar: Monday–Friday; no holidays assumed; date-only boundaries · [start, finish); finish is excluded</text>
-<text x="24.0" y="134.0" font-size="12" fill="#24364e" font-weight="400">Gray: Original planning scenario (not approved baseline) · Blue: forecast · Green: actual · Diamond: event, not acceptance</text>
-<text x="24.0" y="198.0" font-size="12" fill="#24364e" font-weight="700">TASK / SOURCE ID / OWNER</text>
-<rect x="850.9" y="208" width="88.2" height="533" fill="#e8edf4"/>
-<rect x="939.1" y="208" width="88.2" height="533" fill="#e8edf4"/>
-<path d="M410.0,208 V741" stroke="#cdd7e4"/>
-<text x="391.0" y="197.0" font-size="11" fill="#24364e" font-weight="400">05 Oct</text>
-<path d="M498.2,208 V741" stroke="#cdd7e4"/>
-<text x="479.2" y="197.0" font-size="11" fill="#24364e" font-weight="400">06 Oct</text>
-<path d="M586.4,208 V741" stroke="#cdd7e4"/>
-<text x="567.4" y="197.0" font-size="11" fill="#24364e" font-weight="400">07 Oct</text>
-<path d="M674.5,208 V741" stroke="#cdd7e4"/>
-<text x="655.5" y="197.0" font-size="11" fill="#24364e" font-weight="400">08 Oct</text>
-<path d="M762.7,208 V741" stroke="#cdd7e4"/>
-<text x="743.7" y="197.0" font-size="11" fill="#24364e" font-weight="400">09 Oct</text>
-<path d="M850.9,208 V741" stroke="#cdd7e4"/>
-<text x="831.9" y="197.0" font-size="11" fill="#24364e" font-weight="400">10 Oct</text>
-<path d="M939.1,208 V741" stroke="#cdd7e4"/>
-<text x="920.1" y="197.0" font-size="11" fill="#24364e" font-weight="400">11 Oct</text>
-<path d="M1027.3,208 V741" stroke="#cdd7e4"/>
-<text x="1008.3" y="197.0" font-size="11" fill="#24364e" font-weight="400">12 Oct</text>
-<path d="M1115.5,208 V741" stroke="#cdd7e4"/>
-<text x="1096.5" y="197.0" font-size="11" fill="#24364e" font-weight="400">13 Oct</text>
-<path d="M1203.6,208 V741" stroke="#cdd7e4"/>
-<text x="1184.6" y="197.0" font-size="11" fill="#24364e" font-weight="400">14 Oct</text>
-<path d="M1291.8,208 V741" stroke="#cdd7e4"/>
-<text x="1272.8" y="197.0" font-size="11" fill="#24364e" font-weight="400">15 Oct</text>
-<path d="M1380.0,208 V741" stroke="#cdd7e4"/>
-<text x="1361.0" y="197.0" font-size="11" fill="#24364e" font-weight="400">16 Oct</text>
-<g data-task="A"><path d="M20,321 H1400" stroke="#d6deea"/>
-<text x="25.0" y="235.0" font-size="12" fill="#24364e" font-weight="600">A · Contract agreement</text>
-<text x="25.0" y="256.0" font-size="11" fill="#24364e" font-weight="400">Owner: Not assigned in this instructional</text>
-<text x="25.0" y="270.0" font-size="11" fill="#24364e" font-weight="400">subcase</text>
-<rect class="comparison" x="410.0" y="229" width="176.4" height="9" rx="2" fill="#7d8ca4"/>
-<text x="410.0" y="250.0" font-size="10" fill="#7d8ca4" font-weight="400">10-05 → 10-07</text>
-<rect class="forecast" x="410.0" y="256" width="176.4" height="9" rx="2" fill="#176c91"/>
-<text x="410.0" y="277.0" font-size="10" fill="#176c91" font-weight="400">10-05 → 10-07</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="864" viewBox="0 0 1440 864" role="img" aria-labelledby="title desc">
+<title id="title">Two more days on the path to integration.</title>
+<desc id="desc">Read-only Gantt snapshot with a task grid, date axis, supplied schedule layers, milestones, dependencies, analysis notes and source caveats.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#657b76"/></marker></defs>
+<rect width="100%" height="100%" fill="#f4f5f0"/>
+<g font-family="Arial,sans-serif" fill="#182c36">
+<text x="24.0" y="30.0" font-size="11" fill="#007969" font-weight="700">RELAY / DELIVERY INSIGHT 01</text>
+<text x="1416.0" text-anchor="end" y="30.0" font-size="11" fill="#576a74" font-weight="400">GANTT-1.0 · 2026-10-05</text>
+<text x="24.0" y="74.0" font-size="30" fill="#182c36" font-weight="700">Two more days on the path to integration.</text>
+<text x="24.0" y="104.0" font-size="13" fill="#576a74" font-weight="400">The interface build grows from four to six working days. Receiver tests still finish in time; integration waits for the interface.</text>
+<rect x="24.0" y="145" width="463.0" height="72" fill="#ffffff" stroke="#dce3df"/>
+<text x="40.0" y="165.0" font-size="10" fill="#576a74" font-weight="700">ORIGINAL FINISH</text>
+<text x="40.0" y="191.0" font-size="22" fill="#182c36" font-weight="700">14 Oct</text>
+<text x="184.0" y="190.0" font-size="10" fill="#576a74" font-weight="400">7 working days · planning scenario</text>
+<rect x="488.0" y="145" width="463.0" height="72" fill="#ffffff" stroke="#dce3df"/>
+<text x="504.0" y="165.0" font-size="10" fill="#576a74" font-weight="700">FORECAST FINISH</text>
+<text x="504.0" y="191.0" font-size="22" fill="#182c36" font-weight="700">16 Oct</text>
+<text x="648.0" y="190.0" font-size="10" fill="#576a74" font-weight="400">9 working days · finish boundary</text>
+<rect x="952.0" y="145" width="463.0" height="72" fill="#ffffff" stroke="#dce3df"/>
+<text x="968.0" y="165.0" font-size="10" fill="#576a74" font-weight="700">FINISH CHANGE</text>
+<text x="968.0" y="191.0" font-size="22" fill="#b44330" font-weight="700">+2 days</text>
+<text x="1112.0" y="190.0" font-size="10" fill="#576a74" font-weight="400">Working days · no baseline approval</text>
+<rect x="24" y="236" width="1392" height="482" rx="10" fill="#ffffff" stroke="#dce3df"/>
+<rect x="24" y="236" width="326" height="482" rx="10" fill="#fbfcf9"/>
+<text x="43.0" y="261.0" font-size="10" fill="#576a74" font-weight="700">TASK / WORKING DURATION</text>
+<rect x="830.9" y="236" width="96.2" height="482" fill="#f0f3ef"/>
+<rect x="927.1" y="236" width="96.2" height="482" fill="#f0f3ef"/>
+<path d="M350.0,236 V718" stroke="#e1e7e2"/>
+<text x="357.0" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">MON</text>
+<text x="357.0" y="279.0" font-size="12" fill="#182c36" font-weight="400">5 Oct</text>
+<path d="M446.2,236 V718" stroke="#e1e7e2"/>
+<text x="453.2" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">TUE</text>
+<text x="453.2" y="279.0" font-size="12" fill="#182c36" font-weight="400">6 Oct</text>
+<path d="M542.4,236 V718" stroke="#e1e7e2"/>
+<text x="549.4" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">WED</text>
+<text x="549.4" y="279.0" font-size="12" fill="#182c36" font-weight="400">7 Oct</text>
+<path d="M638.5,236 V718" stroke="#e1e7e2"/>
+<text x="645.5" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">THU</text>
+<text x="645.5" y="279.0" font-size="12" fill="#182c36" font-weight="400">8 Oct</text>
+<path d="M734.7,236 V718" stroke="#e1e7e2"/>
+<text x="741.7" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">FRI</text>
+<text x="741.7" y="279.0" font-size="12" fill="#182c36" font-weight="400">9 Oct</text>
+<path d="M830.9,236 V718" stroke="#e1e7e2"/>
+<text x="837.9" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">SAT</text>
+<text x="837.9" y="279.0" font-size="12" fill="#182c36" font-weight="400">10 Oct</text>
+<path d="M927.1,236 V718" stroke="#e1e7e2"/>
+<text x="934.1" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">SUN</text>
+<text x="934.1" y="279.0" font-size="12" fill="#182c36" font-weight="400">11 Oct</text>
+<path d="M1023.3,236 V718" stroke="#e1e7e2"/>
+<text x="1030.3" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">MON</text>
+<text x="1030.3" y="279.0" font-size="12" fill="#182c36" font-weight="400">12 Oct</text>
+<path d="M1119.5,236 V718" stroke="#e1e7e2"/>
+<text x="1126.5" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">TUE</text>
+<text x="1126.5" y="279.0" font-size="12" fill="#182c36" font-weight="400">13 Oct</text>
+<path d="M1215.6,236 V718" stroke="#e1e7e2"/>
+<text x="1222.6" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">WED</text>
+<text x="1222.6" y="279.0" font-size="12" fill="#182c36" font-weight="400">14 Oct</text>
+<path d="M1311.8,236 V718" stroke="#e1e7e2"/>
+<text x="1318.8" y="258.0" font-size="9" fill="#6a7b74" font-weight="700">THU</text>
+<text x="1318.8" y="279.0" font-size="12" fill="#182c36" font-weight="400">15 Oct</text>
+<path d="M1408.0,236 V718" stroke="#e1e7e2"/>
+<path class="dependency" d="M542.4,347.0 H554.4 V431.0 H542.4" fill="none" stroke="#657b76" stroke-width="1.2" opacity=".7" marker-end="url(#arrow)"><title>L-1 · FS</title></path>
+<path class="dependency" d="M542.4,347.0 H554.4 V515.0 H542.4" fill="none" stroke="#657b76" stroke-width="1.2" opacity=".7" marker-end="url(#arrow)"><title>L-2 · FS</title></path>
+<path class="dependency" d="M1311.8,431.0 H1323.8 V599.0 H1311.8" fill="none" stroke="#657b76" stroke-width="1.2" opacity=".7" marker-end="url(#arrow)"><title>L-3 · FS</title></path>
+<path class="dependency" d="M1023.3,515.0 H1323.8 V599.0 H1311.8" fill="none" stroke="#657b76" stroke-width="1.2" opacity=".7" marker-end="url(#arrow)"><title>L-4 · FS</title></path>
+<path class="dependency" d="M1408.0,599.0 H1403.0 V683.0 H1408.0" fill="none" stroke="#657b76" stroke-width="1.2" opacity=".7" marker-end="url(#arrow)"><title>L-5 · FS</title></path>
+<g data-task="A" data-critical="true">
+<path d="M24,382 H1416" stroke="#e1e7e2"/>
+<text x="43.0" y="327.0" font-size="13" fill="#182c36" font-weight="700">A / Contract agreement</text>
+<text x="43.0" y="351.0" font-size="10" fill="#576a74" font-weight="400">2 working days · critical</text>
+<text x="43.0" y="367.0" font-size="9" fill="#72817b" font-weight="400">Owner: Not assigned in this instructional subcase</text>
+<rect class="comparison" x="350.0" y="325.5" width="192.4" height="7" rx="3" fill="#a6b1be"/>
+<rect class="forecast critical" x="350.0" y="341.0" width="192.4" height="14" rx="3" fill="#007969"/>
+<text x="354.0" y="374.0" font-size="9" fill="#3e5951" font-weight="400">5 Oct → 7 Oct</text>
 </g>
-<g data-task="B"><path d="M20,426 H1400" stroke="#d6deea"/>
-<text x="25.0" y="340.0" font-size="12" fill="#24364e" font-weight="600">B · Interface build</text>
-<text x="25.0" y="361.0" font-size="11" fill="#24364e" font-weight="400">Owner: Not assigned in this instructional</text>
-<text x="25.0" y="375.0" font-size="11" fill="#24364e" font-weight="400">subcase</text>
-<rect class="comparison" x="586.4" y="334" width="529.1" height="9" rx="2" fill="#7d8ca4"/>
-<text x="586.4" y="355.0" font-size="10" fill="#7d8ca4" font-weight="400">10-07 → 10-13</text>
-<rect class="forecast" x="586.4" y="361" width="705.5" height="9" rx="2" fill="#176c91"/>
-<text x="586.4" y="382.0" font-size="10" fill="#176c91" font-weight="400">10-07 → 10-15</text>
+<g data-task="B" data-critical="true">
+<path d="M24,466 H1416" stroke="#e1e7e2"/>
+<text x="43.0" y="411.0" font-size="13" fill="#182c36" font-weight="700">B / Interface build</text>
+<text x="43.0" y="435.0" font-size="10" fill="#576a74" font-weight="400">6 working days · critical</text>
+<text x="43.0" y="451.0" font-size="9" fill="#72817b" font-weight="400">Owner: Not assigned in this instructional subcase</text>
+<rect class="comparison" x="542.4" y="409.5" width="577.1" height="7" rx="3" fill="#a6b1be"/>
+<rect class="forecast critical" x="542.4" y="425.0" width="769.5" height="14" rx="3" fill="#007969"/>
+<text x="542.4" y="458.0" font-size="9" fill="#3e5951" font-weight="400">7 Oct → 15 Oct</text>
 </g>
-<g data-task="C"><path d="M20,531 H1400" stroke="#d6deea"/>
-<text x="25.0" y="445.0" font-size="12" fill="#24364e" font-weight="600">C · Receiver tests</text>
-<text x="25.0" y="466.0" font-size="11" fill="#24364e" font-weight="400">Owner: Not assigned in this instructional</text>
-<text x="25.0" y="480.0" font-size="11" fill="#24364e" font-weight="400">subcase</text>
-<rect class="comparison" x="586.4" y="439" width="440.9" height="9" rx="2" fill="#7d8ca4"/>
-<text x="586.4" y="460.0" font-size="10" fill="#7d8ca4" font-weight="400">10-07 → 10-12</text>
-<rect class="forecast" x="586.4" y="466" width="440.9" height="9" rx="2" fill="#176c91"/>
-<text x="586.4" y="487.0" font-size="10" fill="#176c91" font-weight="400">10-07 → 10-12</text>
+<g data-task="C" data-critical="false">
+<path d="M24,550 H1416" stroke="#e1e7e2"/>
+<text x="43.0" y="495.0" font-size="13" fill="#182c36" font-weight="700">C / Receiver tests</text>
+<text x="43.0" y="519.0" font-size="10" fill="#576a74" font-weight="400">3 working days · 3 days total float</text>
+<text x="43.0" y="535.0" font-size="9" fill="#72817b" font-weight="400">Owner: Not assigned in this instructional subcase</text>
+<rect class="comparison" x="542.4" y="493.5" width="480.9" height="7" rx="3" fill="#a6b1be"/>
+<rect class="forecast" x="542.4" y="509.0" width="480.9" height="14" rx="3" fill="#007969"/>
+<text x="542.4" y="542.0" font-size="9" fill="#3e5951" font-weight="400">7 Oct → 12 Oct</text>
 </g>
-<g data-task="D"><path d="M20,636 H1400" stroke="#d6deea"/>
-<text x="25.0" y="550.0" font-size="12" fill="#24364e" font-weight="600">D · Integration</text>
-<text x="25.0" y="571.0" font-size="11" fill="#24364e" font-weight="400">Owner: Not assigned in this instructional</text>
-<text x="25.0" y="585.0" font-size="11" fill="#24364e" font-weight="400">subcase</text>
-<rect class="comparison" x="1115.5" y="544" width="88.2" height="9" rx="2" fill="#7d8ca4"/>
-<text x="1115.5" y="565.0" font-size="10" fill="#7d8ca4" font-weight="400">10-13 → 10-14</text>
-<rect class="forecast" x="1291.8" y="571" width="88.2" height="9" rx="2" fill="#176c91"/>
-<text x="1270.0" y="592.0" font-size="10" fill="#176c91" font-weight="400">10-15 → 10-16</text>
+<g data-task="D" data-critical="true">
+<path d="M24,634 H1416" stroke="#e1e7e2"/>
+<text x="43.0" y="579.0" font-size="13" fill="#182c36" font-weight="700">D / Integration</text>
+<text x="43.0" y="603.0" font-size="10" fill="#576a74" font-weight="400">1 working day · critical</text>
+<text x="43.0" y="619.0" font-size="9" fill="#72817b" font-weight="400">Owner: Not assigned in this instructional subcase</text>
+<rect class="comparison" x="1119.5" y="577.5" width="96.2" height="7" rx="3" fill="#a6b1be"/>
+<rect class="forecast critical" x="1311.8" y="593.0" width="96.2" height="14" rx="3" fill="#007969"/>
+<text x="1293.0" y="626.0" font-size="9" fill="#3e5951" font-weight="400">15 Oct → 16 Oct</text>
 </g>
-<g data-task="E"><path d="M20,741 H1400" stroke="#d6deea"/>
-<text x="25.0" y="655.0" font-size="12" fill="#24364e" font-weight="600">E · Finish checkpoint</text>
-<text x="25.0" y="676.0" font-size="11" fill="#24364e" font-weight="400">Owner: Not assigned in this instructional</text>
-<text x="25.0" y="690.0" font-size="11" fill="#24364e" font-weight="400">subcase</text>
-<path class="comparison" d="M1203.6,647 l6,6 -6,6 -6,-6 Z" fill="#7d8ca4"/>
-<text x="1203.6" y="670.0" font-size="10" fill="#7d8ca4" font-weight="400">10-14 → 10-14</text>
-<path class="forecast" d="M1380.0,674 l6,6 -6,6 -6,-6 Z" fill="#176c91"/>
-<text x="1270.0" y="697.0" font-size="10" fill="#176c91" font-weight="400">10-16 → 10-16</text>
+<g data-task="E" data-critical="true">
+<path d="M24,718 H1416" stroke="#e1e7e2"/>
+<text x="43.0" y="663.0" font-size="13" fill="#182c36" font-weight="700">E / Finish checkpoint</text>
+<text x="43.0" y="687.0" font-size="10" fill="#576a74" font-weight="400">0 working days · critical</text>
+<text x="43.0" y="703.0" font-size="9" fill="#72817b" font-weight="400">Owner: Not assigned in this instructional subcase</text>
+<path class="comparison" d="M1215.6,658.0 l7,7 -7,7 -7,-7 Z" fill="#a6b1be"/>
+<path class="forecast critical" d="M1408.0,677.0 l7,7 -7,7 -7,-7 Z" fill="#007969"/>
+<text x="1293.0" y="710.0" font-size="9" fill="#3e5951" font-weight="400">16 Oct → 16 Oct</text>
 </g>
-<path class="dependency" d="M586.4,259 H596.4 V364 H586.4" fill="none" stroke="#5d4a78" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"><title>L-1 FS</title></path>
-<path class="dependency" d="M586.4,259 H596.4 V469 H586.4" fill="none" stroke="#5d4a78" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"><title>L-2 FS</title></path>
-<path class="dependency" d="M1291.8,364 H1301.8 V574 H1291.8" fill="none" stroke="#5d4a78" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"><title>L-3 FS</title></path>
-<path class="dependency" d="M1027.3,469 H1301.8 V574 H1291.8" fill="none" stroke="#5d4a78" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"><title>L-4 FS</title></path>
-<path class="dependency" d="M1380.0,574 H1390.0 V679 H1380.0" fill="none" stroke="#5d4a78" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrow)"><title>L-5 FS</title></path>
-<text x="24.0" y="771.0" font-size="11" fill="#24364e" font-weight="400">Task E is the displayed checkpoint, not acceptance evidence. IDs A–E identify this teaching network only.</text>
-<text x="24.0" y="789.0" font-size="11" fill="#24364e" font-weight="400">Weekend shading adds no productive effort. The forecast is supplied, not recalculated by the renderer.</text>
-<text x="24.0" y="807.0" font-size="11" fill="#24364e" font-weight="400">Seven to nine working days in the software exercise; this is not a two-calendar-day Relay deferral.</text>
-<text x="24.0" y="825.0" font-size="11" fill="#24364e" font-weight="400">L-1: A → B FS +0 working_days; source software.md / predecessor column</text>
-<text x="24.0" y="843.0" font-size="11" fill="#24364e" font-weight="400">L-2: A → C FS +0 working_days; source software.md / predecessor column</text>
-<text x="24.0" y="861.0" font-size="11" fill="#24364e" font-weight="400">L-3: B → D FS +0 working_days; source software.md / predecessor column</text>
-<text x="24.0" y="879.0" font-size="11" fill="#24364e" font-weight="400">L-4: C → D FS +0 working_days; source software.md / predecessor column</text>
-<text x="24.0" y="897.0" font-size="11" fill="#24364e" font-weight="400">L-5: D → E FS +0 working_days; source software.md / predecessor column</text>
+<text x="24.0" y="746.0" font-size="10" fill="#007969" font-weight="700">READING NOTES / SOURCE BOUNDARIES</text>
+<text x="24.0" y="769.0" font-size="10" fill="#576a74" font-weight="400">Supplied CPM result for the fictional network; zero-lag FS relationships, Monday–Friday, no holidays, no resource leveling. Dates were checked against the supplied</text>
+<text x="24.0" y="787.0" font-size="10" fill="#576a74" font-weight="400">intervals and were not rescheduled.</text>
+<text x="24.0" y="805.0" font-size="10" fill="#576a74" font-weight="400">Task E is the displayed checkpoint, not acceptance evidence. IDs A–E identify this teaching network only.</text>
+<text x="24.0" y="823.0" font-size="10" fill="#576a74" font-weight="400">Weekend shading adds no productive effort. The forecast is supplied, not recalculated by the renderer.</text>
+<text x="24.0" y="841.0" font-size="10" fill="#576a74" font-weight="400">Seven to nine working days in the software exercise; this is not a two-calendar-day Relay deferral.</text>
 </g></svg>
