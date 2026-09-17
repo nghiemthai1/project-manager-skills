@@ -22,6 +22,23 @@
     "headline": "Two parallel branches hold the rehearsal finish.",
     "lede": "Mapping validation and restore preparation both finish on 9 November. The 11 November checkpoint depends on separate capacity for that overlap.",
     "default_task_id": "B",
+    "phases": [
+      {
+        "id": "sample",
+        "index": "01",
+        "name": "Sample preparation"
+      },
+      {
+        "id": "readiness",
+        "index": "02",
+        "name": "Parallel readiness"
+      },
+      {
+        "id": "restore",
+        "index": "03",
+        "name": "Restore and acceptance"
+      }
+    ],
     "metrics": [
       {
         "label": "Parallel finish",
@@ -100,6 +117,8 @@
   "tasks": [
     {
       "id": "A",
+      "phase": "sample",
+      "tone": "design",
       "label": "Extract sample",
       "kind": "task",
       "parent": null,
@@ -115,6 +134,8 @@
     },
     {
       "id": "B",
+      "phase": "readiness",
+      "tone": "product",
       "label": "Validate mapping",
       "kind": "task",
       "parent": null,
@@ -130,6 +151,8 @@
     },
     {
       "id": "C",
+      "phase": "readiness",
+      "tone": "platform",
       "label": "Prepare restore environment",
       "kind": "task",
       "parent": null,
@@ -145,6 +168,8 @@
     },
     {
       "id": "D",
+      "phase": "restore",
+      "tone": "quality",
       "label": "Reconcile and restore",
       "kind": "task",
       "parent": null,
@@ -160,6 +185,8 @@
     },
     {
       "id": "E",
+      "phase": "restore",
+      "tone": "quality",
       "label": "Acceptance checkpoint",
       "kind": "milestone",
       "parent": null,

@@ -53,12 +53,18 @@ class VisualTests(unittest.TestCase):
     def test_gantt_declared_analysis_and_presentation_are_validated(self):
         data=gantt.demo();data['presentation']={'eyebrow':'Demo','headline':'Evidence first','lede':'One dated task.',
             'default_task_id':'T-1','metrics':[{'label':'Finish','value':'7 Oct','note':'Supplied boundary'}],
-            'insight_heading':'Review the source.','insight_points':['No dates were recalculated.'],'decision':'Validate before commitment.'}
+            'insight_heading':'Review the source.','insight_points':['No dates were recalculated.'],'decision':'Validate before commitment.',
+            'phases':[{'id':'prepare','index':'01','name':'Preparation'}]}
+        data['tasks'][0].update(phase='prepare',tone='design')
         data['analysis']={'method':'Supplied teaching result; no scheduling performed.',
             'forecast':{'critical_task_ids':['T-1'],'tasks':{'T-1':{'duration_working_days':2,'total_float_working_days':0}}}}
         self.assertIs(gantt.validate(data),data)
         self.assertIn('Evidence first',gantt.render_svg(data))
         broken=copy.deepcopy(data);broken['analysis']['forecast']['critical_task_ids']=['MISSING']
+        with self.assertRaises(ValueError):gantt.validate(broken)
+        broken=copy.deepcopy(data);broken['tasks'][0]['phase']='missing'
+        with self.assertRaises(ValueError):gantt.validate(broken)
+        broken=copy.deepcopy(data);broken['tasks'][0]['tone']='rainbow'
         with self.assertRaises(ValueError):gantt.validate(broken)
 
     def test_typed_link_timing_does_not_reschedule(self):

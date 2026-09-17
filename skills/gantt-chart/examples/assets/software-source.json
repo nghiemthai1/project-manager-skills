@@ -22,6 +22,11 @@
     "headline": "Two more days on the path to integration.",
     "lede": "The interface build grows from four to six working days. Receiver tests still finish in time; integration waits for the interface.",
     "default_task_id": "B",
+    "phases": [
+      {"id": "planning", "index": "01", "name": "Planning and agreement"},
+      {"id": "parallel", "index": "02", "name": "Parallel delivery"},
+      {"id": "integration", "index": "03", "name": "Integration and finish"}
+    ],
     "metrics": [
       {
         "label": "Original finish",
@@ -70,6 +75,8 @@
   "tasks": [
     {
       "id": "A",
+      "phase": "planning",
+      "tone": "design",
       "label": "Contract agreement",
       "kind": "task",
       "parent": null,
@@ -88,6 +95,8 @@
     },
     {
       "id": "B",
+      "phase": "parallel",
+      "tone": "product",
       "label": "Interface build",
       "kind": "task",
       "parent": null,
@@ -106,6 +115,8 @@
     },
     {
       "id": "C",
+      "phase": "parallel",
+      "tone": "quality",
       "label": "Receiver tests",
       "kind": "task",
       "parent": null,
@@ -124,6 +135,8 @@
     },
     {
       "id": "D",
+      "phase": "integration",
+      "tone": "platform",
       "label": "Integration",
       "kind": "task",
       "parent": null,
@@ -142,6 +155,8 @@
     },
     {
       "id": "E",
+      "phase": "integration",
+      "tone": "quality",
       "label": "Finish checkpoint",
       "kind": "milestone",
       "parent": null,

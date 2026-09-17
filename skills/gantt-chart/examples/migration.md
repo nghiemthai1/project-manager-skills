@@ -1,6 +1,6 @@
 # Migration rehearsal: two tied branches
 
-Open the **[interactive artifact](assets/migration.html)**, **[full editorial SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses a fixed task grid and scrollable timeline on larger screens, task cards in portrait, persistent evidence details, search/owner filters, zoom, and dependency/critical-path controls. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/migration.html)**, **[full editorial SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses phase-grouped rows, a sticky date header and task pane, search/phase/owner filters, critical-only review, dependency toggles, selected-chain highlighting, zoom, visible-slice CSV, persistent evidence details, and a print/PDF layout. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Northstar's approved cutover schedule or its actual rehearsal history. Additional assumptions: start Monday 2 November 2026; Monday–Friday workweek with no holidays; separate available resources for B and C; no external input delays. Finish dates below are exclusive boundaries.
 

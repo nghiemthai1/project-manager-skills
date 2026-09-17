@@ -23,9 +23,11 @@ fs.mkdirSync(output, {recursive: true});
           await page.setViewport({width,height});
           await page.goto(pathToFileURL(stem+'.html').href);
           assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${slug}: page overflow at ${width}`);
+          if (slug === 'gantt-chart') assert.deepEqual(await page.$$eval('.gantt-row.is-related',rows=>rows.map(row=>row.dataset.taskId).sort()),['A','D','E']);
           await page.screenshot({path:path.join(output,`${slug}-${scenario}-${view}-viewport.png`)});
           if (view !== 'desktop') {
-            await page.$eval(view === 'portrait' ? '.mobile article' : '.scroll', x=>x.scrollIntoView());
+            const contentSelector = slug === 'gantt-chart' ? '.gantt-scroll' : (view === 'portrait' ? '.mobile article' : '.scroll');
+            await page.$eval(contentSelector, x=>x.scrollIntoView());
             await page.screenshot({path:path.join(output,`${slug}-${scenario}-${view}-content.png`)});
             await page.evaluate(()=>scrollTo(0,0));
           }
@@ -40,15 +42,28 @@ fs.mkdirSync(output, {recursive: true});
             await page.select('#role',role);
             assert.match(await page.$eval('#scope',x=>x.textContent), /other columns are hidden/);
             assert.equal(await page.$$eval('[data-role]',els=>els.filter(x=>!x.hidden).every(x=>x.dataset.role===document.querySelector('#role').value)),true);
-          } else if (view !== 'portrait') {
-            await page.select('#zoom','150');
-            assert.equal(await page.$eval('.chart svg',x=>x.style.width),'150%');
-            await page.select('#comparison','hide');
-            assert.equal(await page.$eval('.chart',x=>x.classList.contains('no-comparison')),true);
-            await page.select('#dependencies','hide');
-            assert.equal(await page.$eval('.chart',x=>x.classList.contains('no-dependencies')),true);
-            await page.select('#critical','highlight');
-            assert.equal(await page.$eval('.chart',x=>x.classList.contains('show-critical')),true);
+          } else {
+            const focused = await page.$eval('[data-detail]:focus',x=>x.dataset.taskId);
+            await page.keyboard.press('ArrowDown');
+            assert.notEqual(await page.$eval('[data-detail]:focus',x=>x.dataset.taskId),focused);
+            await page.keyboard.press('Escape');
+            assert.equal(await page.$eval('#detailPanel',x=>x.hidden),true);
+            const before = await page.$eval(':root',x=>parseFloat(getComputedStyle(x).getPropertyValue('--day-width')));
+            await page.click('#zoomIn');
+            const after = await page.$eval(':root',x=>parseFloat(getComputedStyle(x).getPropertyValue('--day-width')));
+            assert.ok(after > before);
+            if (await page.$eval('#comparisonToggle',x=>!x.hidden)) {
+              await page.click('#comparisonToggle');
+              assert.equal(await page.$eval('#comparisonToggle',x=>x.getAttribute('aria-pressed')),'false');
+            }
+            await page.click('#linksToggle');
+            assert.equal(await page.$eval('#linksToggle',x=>x.getAttribute('aria-pressed')),'false');
+            await page.click('#criticalToggle');
+            assert.match(await page.$eval('#scope',x=>x.textContent),/critical-only/);
+            await page.click('#reset');
+            const phase = await page.$eval('#phaseFilter',x=>x.options[1].value);
+            await page.select('#phaseFilter',phase);
+            assert.doesNotMatch(await page.$eval('#scope',x=>x.textContent),/^5 \/ 5/);
           }
           await page.click('#reset');
           reports.push({slug,scenario,view,viewport:[width,height],overflow:false,searchResetKeyboard:true});
