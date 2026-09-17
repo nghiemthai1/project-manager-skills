@@ -2,6 +2,8 @@
 
 Status: completed and published as [v2.1.0](https://github.com/nghiemthai1/project-manager-skills/releases/tag/v2.1.0) after owner approval. Both downloaded ZIPs and all six extracted helpers were verified. Reference: the owner-installed gantt-chart-visualization skill and its six references, plus its mobile visualization foundation. The [reference inventory](../catalog/visual-reference.json) records inspected file hashes; the installed copy is not modified or required at runtime.
 
+The current `gantt-chart` package now carries the six reference guides unchanged, vendors the mobile foundation for standalone use, and adapts the reference entrypoint to this library's required teaching structure, evidence semantics, examples and offline renderer. It covers source-system ingestion, normalized contracts, responsive interaction, scale-aware rendering, accessibility, export and test gates directly inside the distributable package.
+
 The requested outcome is comparable visual-design depth in this repository, especially Gantt and RACI, with the same standard applied whenever another skill produces a graphical artifact. Preserve the repository's project-management methods and evidence semantics. No hosted application is required.
 
 ## Capability comparison and acceptance
@@ -38,7 +40,7 @@ Use the reference's design principles with original project-specific explanation
 
 ## Delivered scope
 
-- Two original standalone renderers: Gantt and RACI. Each fictional software/migration case includes offline HTML, SVG, exact source JSON and spreadsheet-safe CSV. Both guides teach source mapping, artifact choice, interaction, responsive reading, uncertainty and export inspection.
+- Two original standalone renderers: Gantt and RACI. Each fictional software/migration case includes offline HTML, SVG, exact source JSON and spreadsheet-safe CSV. The Gantt package also includes its full source-ingestion, data-contract, interaction, performance, accessibility and mobile design references, while retaining the small read-only renderer as an optional path.
 - All 42 packages have a recorded [visual route](VISUAL-COVERAGE.md). Thirty-three additional packages have job-specific visual contracts. Seven remain conversation/text-first by default; charts are not manufactured where they add no decision value.
 - Eight additional rendered software companions cover budget, benefits, capacity, WBS, dependency handoff, stakeholder mapping, risk evidence and release readiness. Their source tables, assumptions and editable JSON accompany the SVGs. Existing full migration examples remain available; this revision does not claim eight new migration graphics.
 - Codex ZIP packaging now includes HTML. The existing `.agents/skills` plus `AGENTS.md` release layout and both download aliases are preserved.

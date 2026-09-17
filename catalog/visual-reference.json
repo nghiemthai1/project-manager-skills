@@ -1,7 +1,7 @@
 {
   "reference": "Owner-installed gantt-chart-visualization",
   "location": "C:\\Users\\nghie\\.codex\\skills\\gantt-chart-visualization",
-  "use": "Capability and workflow reference; newly written project-specific prose and implementation. Installed files remain unchanged.",
+  "use": "Capability and workflow source. The six Gantt references are vendored unchanged; the project entrypoint adapts them to repository evidence, packaging and renderer conventions. Installed files remain unchanged.",
   "files": {
     "agents\\openai.yaml": "089e160998052fd4432385cd12b462032dc9b43bfbf1caf0ba0b20709d88cf1d",
     "references\\gantt-accessibility-export-and-testing.md": "e8961dd1959ca76e413513ac5dc4632edab60e774210d42660438cb36270b2c4",

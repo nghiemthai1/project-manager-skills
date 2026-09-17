@@ -103,11 +103,11 @@
     "name": "gantt-chart",
     "title": "Gantt Chart",
     "type": "component",
-    "description": "Design and deliver Gantt artifacts with source mapping, readable interaction and exports. Use when schedules need timelines, baseline comparisons or visual review.",
+    "description": "Design, critique, map and deliver Gantt charts from schedules, trackers, roadmaps or exports. Use for task spans, milestones, dependencies, baselines, critical paths or resource timelines.",
     "path": "skills/gantt-chart/SKILL.md",
     "category": "Scope and planning",
-    "focus": "Show dated work, dependencies, baselines, and milestones",
-    "frameworks": "Gantt timeline; working calendars; baseline/forecast comparison"
+    "focus": "Design and deliver responsive schedule views from mapped source evidence",
+    "frameworks": "Gantt timeline; source normalization; responsive interaction; baseline/forecast comparison"
   },
   {
     "name": "integrated-project-planning",

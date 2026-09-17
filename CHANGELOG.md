@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Expanded `gantt-chart` to match the owner Gantt visualization workflow: source-system ingestion, normalized contracts, responsive interaction, renderer selection, accessibility, export and test gates are now packaged together.
+- Vendored the six recorded Gantt reference guides and mobile-first visualization foundation so the skill remains complete when copied independently.
+
 ## 2.0.0
 
 - Expanded all 30 original skills with framework fit, decision rules, complete templates, worked artifacts and failure/repair analysis.

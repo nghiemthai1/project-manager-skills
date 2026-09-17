@@ -70,7 +70,7 @@ Each skill has an optional Examples section with fictional worked applications a
 | [Prioritization Advisor](skills/prioritization-advisor/SKILL.md) | Choose a defensible scope sequencing or tradeoff method | MoSCoW; RICE; weighted scoring; Cost of Delay; Kano |
 | [Estimation Advisor](skills/estimation-advisor/SKILL.md) | Select an estimation method and expose uncertainty | Analogous/parametric/bottom-up estimation; three-point PERT; empirical forecasting |
 | [Milestone Schedule](skills/milestone-schedule/SKILL.md) | Build feasible logic and milestone forecasts | Critical Path Method; total float; rolling-wave scheduling |
-| [Gantt Chart](skills/gantt-chart/SKILL.md) | Show dated work, dependencies, baselines, and milestones | Gantt timeline; working calendars; baseline/forecast comparison |
+| [Gantt Chart](skills/gantt-chart/SKILL.md) | Design and deliver responsive schedule views from mapped source evidence | Gantt timeline; source normalization; responsive interaction; baseline/forecast comparison |
 | [Integrated Project Planning](skills/integrated-project-planning/SKILL.md) | Reconcile scope, schedule, capacity, funding and gates | Integrated baseline planning; progressive elaboration; consistency review |
 
 ### Controls and assurance (7)

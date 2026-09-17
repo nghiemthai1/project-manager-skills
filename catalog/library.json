@@ -121,8 +121,8 @@
   {
     "category": "Scope and planning",
     "name": "gantt-chart",
-    "focus": "Show dated work, dependencies, baselines, and milestones",
-    "frameworks": "Gantt timeline; working calendars; baseline/forecast comparison",
+    "focus": "Design and deliver responsive schedule views from mapped source evidence",
+    "frameworks": "Gantt timeline; source normalization; responsive interaction; baseline/forecast comparison",
     "type": "component"
   },
   {

@@ -21,7 +21,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [prioritization-advisor](../skills/prioritization-advisor/references/visual-artifact.md) | Tradeoff plot or ranked options table |
 | [estimation-advisor](../skills/estimation-advisor/references/visual-artifact.md) | Estimate ranges or empirical forecast |
 | [milestone-schedule](../skills/milestone-schedule/references/visual-artifact.md) | Logic network plus milestone view |
-| [gantt-chart](../skills/gantt-chart/references/renderer.md) | Dedicated renderer and visual workflow |
+| [gantt-chart](../skills/gantt-chart/SKILL.md) | Full Gantt design, source-ingestion, interaction, responsive, accessibility and export workflow; optional offline renderer |
 | [integrated-project-planning](../skills/integrated-project-planning/references/visual-artifact.md) | Linked baseline review pack |
 | [dependency-map](../skills/dependency-map/references/visual-artifact.md) | Provider-to-receiver graph |
 | [resource-capacity-plan](../skills/resource-capacity-plan/references/visual-artifact.md) | Per-person demand versus availability |

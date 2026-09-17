@@ -85,7 +85,7 @@
     "negative_skill": "gantt-chart"
   },
   "gantt-chart": {
-    "positive": "Turn this dated task table into a readable timeline, with baseline and forecast bars and milestone dates.",
+    "positive": "Map this filtered Jira or Project export into a responsive Gantt with preserved source IDs, baseline and forecast layers, dependencies, mobile behavior and full-data exports.",
     "negative": "Calculate which dependency paths govern finish and how much total float each activity has in this task network.",
     "negative_skill": "milestone-schedule"
   },

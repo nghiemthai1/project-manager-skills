@@ -1,10 +1,19 @@
-# Gantt source and review template
+# Gantt source, product and review template
 
 - Project / audience / version / as-of date:
 - Purpose: planning scenario, baseline proposal, forecast review, or actual history:
+- Source classification: schedule engine, task tracker, roadmap, resource calendar, static export, or visual reconstruction:
+- Source snapshot / export date / visible filter scope / permissions:
 - Baseline approval and source (or explicitly none):
 - Calendar: workweek, holidays, time zone, task-specific exceptions:
 - Finish convention: inclusive last work date or exclusive finish boundary:
+- Artifact mode: static explanation, read-only explorer, or editable planner:
+
+## Source mapping
+
+| Source field / path | Normalized field | Conversion / date policy | Trusted, inferred, missing or unsupported | Evidence / consequence |
+|---|---|---|---|---|
+| | | | | |
 
 | ID | Deliverable / task | Owner | Predecessors / relationship / lag | Duration / unit / basis | Baseline start | Baseline finish | Forecast start | Forecast finish | Actual start/finish and evidence | Status / unknowns |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -23,6 +32,16 @@ gantt
     Example work :example, 2026-10-05, 2d
     Example gate :milestone, gate, after example, 0d
 ```
+
+## Reading and interaction contract
+
+- Dominant question the default view answers:
+- Large-screen grid / timeline / persistent detail behavior:
+- Search, filter, grouping, sort, zoom, selection, hierarchy and reset:
+- Dependency, comparison, critical-path, non-working-time and label toggles:
+- Portrait summary or focused slice; landscape behavior when needed:
+- Touch and keyboard paths; hover replacement; focus-return behavior:
+- Editing validation, permissions, preview, undo and sync/conflict behavior, or explicitly read-only:
 
 ## Dependencies, resource conflicts and missing data
 
@@ -46,3 +65,6 @@ Compare displayed starts/finishes to the source; inspect long labels, weekend ev
 - Controls actually implemented and checked; selection/filter/reset behavior:
 - Editable source and generated export paths; full versus current-view scope:
 - Render dimensions/tool, source-to-mark checks, defects repaired and remaining limits:
+- Performance evidence: tested task/link count, visible rows, date span and interaction result:
+- Accessibility checks: semantic table/summary, focus path, non-color cues, reduced motion and screen-reader scope:
+- Offline/live state: last updated, stale/partial behavior, reconnect or explicitly static/offline:

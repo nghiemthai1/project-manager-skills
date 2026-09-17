@@ -1,119 +1,147 @@
 ---
 name: gantt-chart
-argument-hint: '[schedule data or timeline request]'
-description: Design and deliver Gantt artifacts with source mapping, readable interaction and exports. Use when
-  schedules need timelines, baseline comparisons or visual review.
-intent: Choose and produce an evidence-preserving schedule visualization with explicit data mapping, calendar semantics,
-  interaction, accessibility and inspected exports.
+argument-hint: '[schedule data, source export, timeline request, or Gantt design problem]'
+description: Design, critique, map and deliver Gantt charts from schedules, trackers, roadmaps or exports. Use for task spans, milestones, dependencies, baselines, critical paths or resource timelines.
+intent: Choose and produce an evidence-preserving schedule visualization with explicit source mapping, calendar semantics, responsive interaction, accessibility, scale limits and inspected exports.
 type: component
 theme: scope-and-planning
 best_for:
-  - Turn evidenced schedule data into a readable timeline without inventing dates or completion.
+  - Turn evidenced schedule data into a readable, responsive timeline without inventing dates, progress or authority.
+  - Design or critique a Gantt product surface, source adapter, interaction model or export workflow.
 scenarios:
-  - 'Use gantt-chart: Turn evidenced schedule data into a readable timeline without inventing dates or completion.'
-estimated_time: Depends on evidence and project scope
-frameworks: Gantt timeline; working calendars; finish-to-start dependencies; baseline comparison
+  - Turn a dated task table into an interactive baseline-versus-forecast Gantt with dependencies and accessible exports.
+  - Map a Project, Primavera, Jira, GitHub Projects, Smartsheet, monday.com, Asana, ClickUp or Azure DevOps export into a trustworthy timeline.
+estimated_time: Depends on evidence, source complexity and artifact scope
+frameworks: Gantt timeline; source normalization and provenance; working calendars; dependency and baseline comparison; responsive interaction
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Gantt Chart
 
 ## Purpose
 
-Make the schedule visible: when work is expected, which handoffs determine starts, where gates fall, and how a forecast differs from an approved baseline. Produce a chart plus the underlying task table and assumptions. Use for a sponsor discussion, team planning, release coordination or a change-impact comparison.
+Design, critique, map and deliver Gantt charts when the schedule itself is the evidence. A useful Gantt combines a stable task grid, calendar axis, bars, milestones, dependencies, comparison layers and an explicit reading path. It may be a small offline report, an exploratory view or an editable scheduling product; those modes have different data, interaction and validation requirements.
 
-A Gantt chart displays a schedule; drawing bars does not make the schedule feasible. Use Milestone Schedule to establish network logic and critical-path calculations, then use this skill to communicate the result. For unordered ideas or dates without duration evidence, create an explicitly provisional milestone view or missing-input table first.
+First decide whether Gantt is the right surface. Use it when time spans, sequence, dependency, resource or baseline reasoning drives the decision. Use Kanban for flow state and WIP, a table for exact lookup, a milestone timeline for a few executive dates, a dependency graph when dates are unreliable, a calendar for booking without project logic, or an uncertainty view when ranges and scenarios matter more than one date.
+
+A Gantt displays a schedule; drawing bars does not make that schedule feasible. Critical path needs a complete network and calendar assumptions. Resource feasibility needs assignments, capacity and timing. An attractive forecast is not an approved baseline, and a milestone diamond is not acceptance evidence.
 
 ## Input
 
-Bring task IDs and labels, start/finish dates or durations, predecessor IDs, calendar/holiday rules, owner or role, baseline version, forecast date and any actual-progress evidence. A task export or rough table is enough to begin; unresolved values remain unresolved.
+Bring the scheduling question and intended audience, then the best available source: a true schedule engine, task tracker, roadmap snapshot, resource calendar, static table/export or visual artifact. Include task IDs and hierarchy, start/finish or duration, dependency types and lag, calendar/holiday rules, owner or resource, status/progress meaning, baseline version, forecast as-of date, actual evidence, constraints and source links where available.
 
-Example: “Show this release plan as a Gantt chart. Keep the approved baseline visible and highlight how the vendor delay changes the forecast.”
+For external data, identify the system, export format and date, visible filters, timezone/locale, permission scope and whether the extract is complete. Discover native and custom fields before mapping them. Preserve source IDs, field names and ambiguous values rather than silently turning a custom “Target end” field into schedule truth.
 
-Use inline context without re-asking. With no data, ask which schedule to visualize and offer a fillable task table. If a demonstration is requested, use clearly labeled fictional values. Do not silently create a project start date, holiday calendar, actual completion or approval.
+Use supplied context without re-asking. Partial data supports a partial artifact with diagnostics. Missing dates remain unscheduled; missing percent complete remains unknown. If no schedule data is supplied, ask which schedule or source should be visualized and offer the [source and review template](template.md). If a demonstration is requested, use clearly labeled fictional values.
 
 ## Key Concepts
 
-### Chart, network and calendar answer different questions
+### Classify the question and source before drawing
 
-The chart shows time position and overlap. The dependency network explains what must precede what. The calendar translates duration units into dates. Resource planning establishes whether apparently parallel work can actually overlap. None can safely be inferred solely from the appearance of the other.
+Identify whether the user needs a planned schedule, actual lifecycle history, roadmap, resource plan, capacity view, baseline-variance review, critical-path review or stakeholder snapshot. Then classify the source. A Project/P6 export can contain schedule semantics; a Jira or spreadsheet view may be a filtered task snapshot; a PDF or screenshot is visual evidence rather than reliable structured data.
 
-For a finish-to-start link, a successor starts no earlier than all required predecessors finish, subject to calendar and constraints. Where lead/lag or another relationship applies, use a scheduling tool that models it and document the relationship; do not replace it with a convenient arbitrary date.
+Do not infer a planned span from issue-created and issue-closed dates unless the user asks for actual lifecycle analysis. Do not treat an exported row number as stable identity or assume a filtered export includes hidden predecessors and children. Read [API and export ingestion](references/gantt-api-and-export-format-ingestion.md) before mapping vendor data or static exports.
 
-### Three date layers
+### Normalize schedule meaning and provenance
+
+Separate source adaptation from rendering. Normalize tasks, hierarchy/WBS, date layers, resources, calendars, dependencies, constraints, progress, source IDs and diagnostics. Keep field-level provenance and mark every inference. A renderer should not need to know Jira field IDs or Project XML paths; a source adapter should not decide visual layout.
+
+Use [the normalized data contract](references/gantt-data-contracts-and-integrations.md) for reusable components, adapters, APIs, fixtures or synchronization. For the included offline helper, follow its narrower [renderer contract](references/renderer.md). It preserves supplied dates and relationships but does not schedule, level resources or compute critical path.
+
+### Chart, network, calendar and resources answer different questions
+
+The chart shows time position and overlap. The network explains what must precede what. The calendar translates duration units into dates. Resource analysis tests whether apparently parallel work can overlap. Reconcile all four before claiming feasibility.
+
+Store date-only values as dates, not UTC instants. State the finish convention. Under `[start, finish)`, a Monday-start two-working-day task finishes at Wednesday’s boundary. A milestone is a zero-duration event at a stated boundary; preparation, review and acceptance effort remain separate work.
+
+Keep baseline, forecast and actual distinct:
 
 | Layer | Meaning | Update rule |
 |---|---|---|
-| Baseline | Authorized comparison point, linked to its approval/version | Change only when the relevant baseline change is approved; preserve prior versions |
-| Forecast | Current expected start/finish based on remaining work and constraints | Refresh at an explicit as-of date; show why it changed |
-| Actual | Observed start/finish supported by execution evidence | Record the event; do not infer from elapsed time or a plan |
+| Baseline | Authorized comparison point with an approval/version | Change only through actual baseline authority; preserve prior versions |
+| Forecast | Current expectation from remaining work and constraints | Refresh at an explicit as-of date and explain movement |
+| Actual | Observed execution event with applicable evidence | Record the event; do not infer it from elapsed time or a plan |
 
-When approval is absent, call the row a target or planning scenario. “Baseline” is not a styling choice. Draw baseline and forecast on separate labeled rows or layers. A completed work bar can still finish later than baseline; visual completion does not mean on time.
+When approval is absent, label the layer target or planning scenario. Use completed/active status and progress only when the source defines and supports them. Critical styling must come from the modeled network and assumptions, not from business importance or manual color.
 
-### Dates and boundaries
+### A Gantt is a responsive product surface
 
-State working days, workweek, holidays and date-boundary convention. With a half-open date convention, a bar covers the half-open interval from its start through the time before its finish boundary. A Monday-start, two-working-day activity ends at Wednesday's start boundary. A milestone is a zero-duration event at a stated boundary, not an extra day of work.
+The default large-screen view normally uses a frozen task grid and horizontally scrollable timeline with stable row alignment. Show the scale, today or as-of marker when meaningful, non-working time, bars, milestones, direct labels and restrained dependency lines. Choose one dominant reading question: what is planned, what moved, what blocks, who is overloaded, or what differs from baseline.
 
-Do not apply a weekday calendar to an explicitly scheduled weekend cutover. Use separate sections or a tool with the correct calendar for each activity. Hours, shifts, time zones, part-time assignments and intra-day handoffs need explicit treatment when they affect the decision.
+Mobile portrait needs a usable summary or focused slice rather than a miniature desktop chart. Prefer task/phase cards with compact bars, exact dates and persistent selection. Add landscape support when horizontal dependency inspection or editing matters. Keep the visualization visible while search, filters or settings are used; provide touch and keyboard paths and replace hover with tap, focus, selection or always-visible facts. Read [mobile-first responsive visualization](references/mobile-first-responsive-visualization.md) for the full contract.
 
-### Status and criticality need evidence
+### Match the renderer to scale and editability
 
-Use completed or active status only with actual evidence. Missing percent-complete data is unknown, not zero. Percentage of time elapsed is not percentage of work earned. Critical coloring must come from the modeled schedule and its assumptions; an important executive task is not necessarily mathematically critical. Show more than one critical path when the network has ties.
+| Need | Suitable approach |
+|---|---|
+| Small read-only report or editorial schedule | Semantic HTML task grid plus SVG, or declarative SVG when the model is already computed |
+| Lightweight reporting | Highcharts Gantt, Frappe Gantt, Plotly timelines, Observable Plot or comparable read-only tooling |
+| Resource booking | FullCalendar resource timeline or another scheduler where resources and slots dominate |
+| Enterprise editable schedule | Bryntum, DHTMLX, Kendo UI, Syncfusion or a comparable scheduling component with calendars, validation, undo and import/export |
+| Large dense product surface | Virtualized HTML grid with Canvas/SVG layers; Canvas for dense bars/links when DOM cost dominates |
+
+Avoid raw WebGL unless density, continuous pan/zoom or GPU picking makes Canvas and DOM impractical. Read [performance and rendering](references/gantt-performance-and-rendering.md) before promising behavior for hundreds or thousands of rows.
 
 ## Application
 
-1. **Validate the source table.** Retain stable task IDs, distinguish date layers, and check missing dates, inverted intervals, duplicate IDs and unknown predecessors. Ask for information that changes the chart; do not fill gaps with realistic-looking dates.
-2. **Reconcile logic and calendars.** Check dependency cycles, successor timing, holidays, imposed dates and scarce-resource overlaps. Recompute the network after a material change. Label unresolved resource/calendar assumptions on the chart.
-3. **Select the right view.** Use a detailed team timeline for executable work or a milestone/workstream summary for executives. Keep the full task table as the source. A simpler view can omit low-level rows without changing dates or hiding a failed gate.
-4. **Generate the appropriate artifact.** For a reusable inspection view, prefer self-contained semantic HTML with SVG, persistent details and meaningful controls. For a small embedded diagram, Mermaid remains useful. Deliver editable source data and a rendered SVG/table; add other formats for the audience. Follow the design/export references below, preserve comparison labels and state as-of and visible scope.
-5. **Check the rendered chart.** Inspect label clipping, date ticks, weekend handling, zero-duration milestones, predecessor joins, color meaning and baseline alignment. Compare every displayed start/finish against the source table. A diagram that parses can still tell the wrong schedule story.
-6. **Explain the decision.** State changed work, finish variance in the right units, assumptions and the decision required. An updated forecast is not permission to defer a commitment. Save the source/version so a later chart can be compared without rewriting history.
+1. **Classify the decision and mode.** State the question, audience and whether the result is a static explanation, read-only explorer or editable planner. Confirm that Gantt is primary; name the better surface when it is not.
+2. **Inspect and map the source.** Inventory fields, IDs, filters, calendars, hierarchy, relationship semantics, date types and authority. Build a source-field → normalized-field → conversion → evidence/uncertainty map. Keep missing and ambiguous fields visible.
+3. **Validate and normalize.** Check duplicate IDs, invalid or partial intervals, unknown predecessors, hierarchy/dependency cycles, milestone meaning, timezone/date boundaries and source coverage. Retain unscheduled tasks and unsupported typed links as diagnostics rather than dropping them. Reconcile date layers without rewriting history.
+4. **Test schedule claims.** Check successor timing against dependency type, lag and calendar. Recompute the network after material change when a suitable engine exists. Check scarce-resource overlaps using actual demand and availability. State which claims remain unavailable.
+5. **Choose the reading path.** Use a detailed task-grid timeline for executable work, a workstream/milestone summary for executives, a resource timeline for allocation or another surface when clearer. Keep the complete normalized data even when the visible view is a summary. Read [design and use cases](references/gantt-chart-design-and-use-cases.md).
+6. **Define interaction before implementation.** Specify search, filtering, grouping, sorting, zoom/pan, hierarchy, task selection, dependency highlighting, comparison/critical-path toggles, reset, export and deep links. For editing, also define drag/resize validation, cycle prevention, downstream-change preview, permissions, undo, stale versions and sync failure. Read [interaction patterns](references/gantt-interaction-patterns.md).
+7. **Design large-screen and mobile states.** Preserve the same claim, source context and caveats while reducing density through prioritization and disclosure. Keep exact values outside hover, controls keyboard reachable and touch targets usable. Define what remains visible while the mobile keyboard or settings panel is open.
+8. **Generate the artifact and exports.** For a rich small schedule, prefer self-contained semantic HTML plus SVG, a persistent details view and editable normalized JSON. Use the [included renderer](references/renderer.md) when its date-only, read-only contract fits. Mermaid is suitable for a compact embedded diagram, not a scheduling engine. Define whether each export is current view, selected range or full data.
+9. **Inspect behavior and output.** Compare every visible start, finish, milestone, label and relationship with normalized data. Test desktop, portrait and landscape; search/reset; keyboard selection; comparison/dependency toggles; empty, partial and error states; date-only timezone edges; long labels; static exports and active filter disclosure. Read [accessibility, export and testing](references/gantt-accessibility-export-and-testing.md).
+10. **Explain the decision.** State what changed, compared with which layer, in the correct units; identify driving work, uncertainty, resource/calendar assumptions and the decision required. Record generated files, tested viewports and known limits. Preparing or changing a chart does not authorize a baseline, source write or external notification.
 
-Use [the task and chart template](template.md).
+### Deliverable contract
 
-### Visual artifact workflow
+Deliver the source mapping, normalized editable data, diagnostics, accessible task table, graphical view and short visual-review record together. Include:
 
-Before rendering, read [source mapping and model](references/source-and-model.md); for vendor files or screenshots also read [import routing](references/import-routing.md). Identify planned schedule, actual history, roadmap, resource calendar or visual reconstruction before mapping dates. Keep missing tasks and relationships visible as diagnostics.
-
-Use [design and interaction](references/design-and-interaction.md) to choose a task-grid timeline, executive milestone view, dependency graph or another clearer surface. Define read-only versus editing mode, selection, search/filter/reset, hierarchy, comparison layers and export scope before implementing controls. Preserve exact values outside hover and provide a readable portrait view as well as landscape/desktop inspection.
-
-Use [rendering, export and QA](references/render-export-qa.md) to choose a renderer against actual rows/links and to inspect generated files. A default report needs no hosted app or live integration. Large editable schedules need a scheduling engine and measured interaction behavior, not merely more SVG bars. Deliver only the export formats actually generated and verified.
-
-The final package includes the source mapping, normalized editable data, diagnostics, accessible table, graphical output and a short visual review record. If rendering is unavailable, provide source plus an explicitly unrendered draft; do not claim visual QA or a completed graphic.
-
-### Mermaid conventions used here
-
-Give tasks stable IDs. Use explicit ISO start dates or `after` references to predecessor IDs. Declare the working-calendar exclusions. Use zero-duration milestone entries. Mermaid can render the diagram, but this library does not treat it as a resource-leveling or approval engine. Check the [current syntax documentation](https://mermaid.js.org/syntax/gantt.html) for features supported by the renderer you use.
-
-### Included offline renderer
-
-Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_gantt.py) writes self-contained HTML, a full SVG, source JSON and CSV with Python 3.11+ and no external packages. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a full editing or scheduling application.
+- whether Gantt is the primary recommendation and why;
+- source classification, snapshot/filter coverage, trusted/mapped/inferred/missing fields and date policy;
+- canonical task, dependency, calendar, resource and comparison-layer model;
+- implemented interactions, renderer/stack choice and measured scale assumptions;
+- desktop, portrait and relevant landscape behavior, including keyboard/touch alternatives;
+- export scope and actual generated formats; and
+- unsupported scheduling, editing, synchronization or performance claims.
 
 ## Examples
 
 Optional worked applications:
 
-- [Software timeline](examples/software.md): four tasks, separate original and forecast rows, a two-working-day finish change, and the date arithmetic behind it.
+- [Software timeline](examples/software.md): four tasks, separate original and forecast rows, a two-working-day finish change, and the arithmetic behind it.
 - [Migration timeline](examples/migration.md): two tied branches, an acceptance checkpoint and the difference between unconstrained and resource-feasible work.
 
-These are instructional subcases with additional fictional calendar assumptions. They do not replace Relay's or Northstar's approved project dates.
+These fictional subcases add calendar assumptions for teaching. They do not replace Relay’s or Northstar’s approved project dates.
 
 ## Common Pitfalls
 
-- **Decorative dates:** bars are stretched to fit the desired finish without changing estimates. The diagram conceals an infeasible plan. Retain the real forecast and show the gap to target.
-- **Weekend cutover disappears:** global weekday exclusions move an approved Saturday event. Model its actual calendar or show it separately; check the rendered date.
-- **One day added at every milestone:** acceptance events are drawn as tasks by habit. Use zero duration for the event; model the review preparation and reviewer effort separately.
-- **Critical means important:** a manually red bar is presented as CPM output. Name the actual prioritization meaning or calculate criticality from the full network.
-- **Baseline overwritten:** a new forecast replaces the old bar and the project appears on time. Keep comparison rows and the original approval reference.
-- **Parallel bars imply spare people:** B and C share one specialist but overlap. Resolve the assignment or label the chart an unconstrained scenario; a warning without a decision is not a feasible baseline.
-- **Pretty chart without source:** dates cannot be traced or reproduced. Deliver the task table, calendar assumptions, version and editable chart source together.
+- **Decorative dates:** bars are stretched to meet the desired finish. Retain the evidence-based forecast and show the gap to target.
+- **Tracker history becomes a plan:** created/closed timestamps are mapped as scheduled dates. Classify them as lifecycle history or obtain planned fields.
+- **Baseline overwritten:** a current forecast replaces the authorized comparison. Preserve both layers and the baseline decision reference.
+- **Critical means important:** manually red work is presented as CPM output. Calculate from the complete model or label the color’s actual meaning.
+- **Filtered source looks complete:** hidden predecessors, children or custom fields disappear. Show source coverage and missing-context diagnostics.
+- **Weekend or timezone shift:** date-only milestones move during timestamp conversion. Preserve date-only values and the display calendar.
+- **Parallel bars imply capacity:** the same specialist is booked twice. Test demand, skill and timing or label the view unconstrained.
+- **Hover-only truth:** dates, blockers and warnings disappear for keyboard, touch and static exports. Keep essential facts in text and persistent details.
+- **Desktop squeezed onto mobile:** labels and touch targets become unusable. Provide a focused mobile state with the same claim and caveats.
+- **Editing without a schedule contract:** drag handles appear before permissions, calendars, validation, undo or sync behavior exist. Keep the view read-only until those rules are defined.
+- **Demo proves scale:** five tasks are used to promise 10,000-row performance. Measure realistic rows, links, instances and interactions first.
+- **Pretty chart without source:** the schedule cannot be reproduced or challenged. Deliver normalized data, mapping, diagnostics and exports with the visual.
 
 ## References
 
-- [Milestone Schedule](../milestone-schedule/SKILL.md): calculate and interpret schedule logic.
-- [Resource Capacity Plan](../resource-capacity-plan/SKILL.md): test assignments and resource constraints.
-- [Change Request](../change-request/SKILL.md): authorize changes to approved commitments.
-- [Mermaid Gantt documentation](https://mermaid.js.org/syntax/gantt.html): renderer syntax and calendar behavior.
+- [Gantt chart design and use cases](references/gantt-chart-design-and-use-cases.md): fit, reading tasks, encoding and alternatives.
+- [Gantt interaction patterns](references/gantt-interaction-patterns.md): navigation, inspection, editing and conflict behavior.
+- [API and export ingestion](references/gantt-api-and-export-format-ingestion.md): Project, Primavera, Jira, GitHub Projects, Smartsheet, monday.com, Asana, ClickUp, Azure DevOps and common file formats.
+- [Data contracts and integrations](references/gantt-data-contracts-and-integrations.md): normalized schema, adapters, scheduling engines, view state and sync boundaries.
+- [Performance and rendering](references/gantt-performance-and-rendering.md): SVG/Canvas/hybrid choices, virtualization, culling and scale limits.
+- [Accessibility, export and testing](references/gantt-accessibility-export-and-testing.md): keyboard, screen-reader fallbacks, fixtures and release gates.
+- [Mobile-first responsive visualization](references/mobile-first-responsive-visualization.md): portrait/landscape layouts, touch, keyboard, offline and constrained-device behavior.
+- [Offline renderer](references/renderer.md): package-local JSON contract and verified HTML/SVG/JSON/CSV output.
+- [Milestone Schedule](../milestone-schedule/SKILL.md), [Resource Capacity Plan](../resource-capacity-plan/SKILL.md) and [Change Request](../change-request/SKILL.md): optional network, resource and authority handoffs.
 
-Other skills are optional handoffs. Keep the source table and assumptions usable when a rendering tool is unavailable.
+Adjacent skills are optional. When unavailable, preserve the schedule model, evidence boundaries and decision explanation described here.
