@@ -1,0 +1,177 @@
+{
+  "title": "Northstar - cutover readiness",
+  "version": "1.0",
+  "as_of": "2026-11-25",
+  "source": "Fictional Northstar readiness review and supplied chronology",
+  "scope": "Release NORTHSTAR-W1 - production migration wave - approved phase population - 28 November window",
+  "state": "hold recommended; formal decision pending",
+  "release": {
+    "id": "NORTHSTAR-W1",
+    "version": "wave-1-final-candidate",
+    "environment": "Production migration",
+    "population": "Approved phased population from M-CR02",
+    "window": "2026-11-28",
+    "baseline": "M-CR02 - phased plan",
+    "go_authority": "Noel",
+    "decision_state": "pending",
+    "decision_source": ""
+  },
+  "gates": [
+    {
+      "id": "RR-01",
+      "label": "Restore capability demonstrated",
+      "domain": "recovery",
+      "classification": "mandatory",
+      "basis": "Restore success is required before cutover",
+      "applicable": true,
+      "status": "failed",
+      "evidence": "The 25 November restore demonstration failed",
+      "evidence_ref": "RESTORE-2026-11-25",
+      "observed_on": "2026-11-25",
+      "acceptor": "Saira",
+      "acceptance_state": "rejected",
+      "exception_authority": "",
+      "action": "Correct the failure, run an applicable retest and obtain Saira's actual acceptance",
+      "owner": "Migration technical lead",
+      "due": "2026-11-27",
+      "source": "migration.md - 25 November review",
+      "note": "An approved plan does not waive a failed demonstration."
+    },
+    {
+      "id": "RR-02",
+      "label": "Relationship reconciliation accepted",
+      "domain": "data",
+      "classification": "mandatory",
+      "basis": "Attachment correctness is required for the approved phase population",
+      "applicable": true,
+      "status": "unknown",
+      "evidence": "Detailed current reconciliation result and Saira's decision are not supplied at this cutoff",
+      "evidence_ref": "",
+      "observed_on": "",
+      "acceptor": "Saira",
+      "acceptance_state": "pending",
+      "exception_authority": "",
+      "action": "Retrieve the population-specific result and record actual acceptance",
+      "owner": "Data migration lead",
+      "due": "2026-11-27",
+      "source": "migration.md - detailed result absent",
+      "note": "Counts alone do not establish relationship correctness."
+    },
+    {
+      "id": "RR-03",
+      "label": "Phased plan authorized",
+      "domain": "governance",
+      "classification": "follow_up",
+      "basis": "Approved scope, date and funding define the comparison boundary",
+      "applicable": true,
+      "status": "passed",
+      "evidence": "Phased scope, 28 November date and B2 300k were approved",
+      "evidence_ref": "M-CR02",
+      "observed_on": "2026-11-09",
+      "acceptor": "Noel",
+      "acceptance_state": "accepted",
+      "exception_authority": "",
+      "action": "Retain the exact approved phase population with the decision record",
+      "owner": "Noel",
+      "due": "",
+      "source": "M-CR02 - 9 November",
+      "note": "Planning authority does not convert a failed restore into a pass."
+    },
+    {
+      "id": "RR-04",
+      "label": "Immediate service coverage",
+      "domain": "operations",
+      "classification": "mandatory",
+      "basis": "Named access, monitoring, escalation and recovery ownership are required before cutover",
+      "applicable": true,
+      "status": "unknown",
+      "evidence": "The named roster and access evidence are not supplied",
+      "evidence_ref": "",
+      "observed_on": "",
+      "acceptor": "Rosa",
+      "acceptance_state": "pending",
+      "exception_authority": "",
+      "action": "Confirm roster, access, monitoring, escalation and recovery decision ownership",
+      "owner": "Service transition lead",
+      "due": "2026-11-27",
+      "source": "migration.md - roster not supplied",
+      "note": "Full service transfer occurs later."
+    },
+    {
+      "id": "RR-05",
+      "label": "Full service transfer",
+      "domain": "operations",
+      "classification": "follow_up",
+      "basis": "Post-cutover stabilization evidence is required for final handover, not pre-cutover go",
+      "applicable": true,
+      "status": "not_run",
+      "evidence": "Stabilization evidence cannot exist before the cutover",
+      "evidence_ref": "",
+      "observed_on": "",
+      "acceptor": "Rosa",
+      "acceptance_state": "pending",
+      "exception_authority": "",
+      "action": "Set criteria and staffing now; collect stabilization evidence after execution",
+      "owner": "Rosa",
+      "due": "2026-12-02",
+      "source": "migration.md - later transition boundary",
+      "note": "Do not make a future handover report a pre-cutover gate."
+    }
+  ],
+  "events": [
+    {
+      "id": "EV-01",
+      "date": "2026-11-09",
+      "label": "M-CR02 authorized",
+      "state": "Phased plan, 28 November and B2 300k approved",
+      "scope": "Planning boundary",
+      "source": "M-CR02"
+    },
+    {
+      "id": "EV-02",
+      "date": "2026-11-25",
+      "label": "Readiness cutoff",
+      "state": "Restore demonstration failed",
+      "scope": "NORTHSTAR-W1",
+      "source": "RESTORE-2026-11-25"
+    },
+    {
+      "id": "EV-03",
+      "date": "2026-11-27",
+      "label": "Successful rehearsal",
+      "state": "Later restore and reconciliation evidence accepted by Saira",
+      "scope": "Later chronology; not evidence at cutoff",
+      "source": "Supplied later chronology"
+    },
+    {
+      "id": "EV-04",
+      "date": "2026-11-28",
+      "label": "Go and cutover",
+      "state": "Noel's later go supports execution",
+      "scope": "Approved phase population",
+      "source": "Supplied later chronology"
+    },
+    {
+      "id": "EV-05",
+      "date": "2026-12-02",
+      "label": "Operations handover",
+      "state": "Rosa accepts full service transfer",
+      "scope": "Post-cutover transition",
+      "source": "Supplied later chronology"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Cutover control",
+    "headline": "A failed restore controls the decision",
+    "lede": "The approved phased plan stays visible without being mistaken for current recovery evidence.",
+    "default_gate_id": "RR-01",
+    "decision": "Correct and retest restore, obtain the missing independent acceptances and return the exact wave to Noel for the actual decision."
+  },
+  "analysis": {
+    "method": "Assess each applicable gate independently at the 25 November cutoff; later success remains chronology until recorded in a new snapshot.",
+    "applicability_boundary": "Restore and reconciliation evidence must match the final candidate, production-migration environment and exact M-CR02 phase population.",
+    "authorization_boundary": "This workspace recommends hold; it does not issue Noel's decision or Saira's and Rosa's independent acceptances.",
+    "recheck_rule": "Reassess after correction and retest, reconciliation acceptance, confirmed immediate coverage, or any material configuration, population, environment or window change."
+  }
+}
+

@@ -19,3 +19,11 @@ Recommend a current evidence review after correction, with Noel's actual go auth
 Later evidence: successful rehearsal and Saira's acceptance occur 27 November; Noel's go supports 28 November cutover; Rosa accepts full operations handover on 2 December. Record each when it occurs. The known later outcome does not justify labeling the 25 November failed gate passed or asserting missing roster details.
 
 **Repair:** “The sponsor approved the date, restore is optional” expands the decision beyond its scope. The corrected matrix preserves the gate and separates planning, readiness, go and transfer.
+
+## Graphical companion
+
+Open the [interactive release-readiness workspace](assets/migration.html) to inspect the failed restore, independent acceptance, immediate coverage and later chronology or create a validated browser-local draft.
+
+![Static release-readiness matrix](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV gate register](assets/migration.csv).

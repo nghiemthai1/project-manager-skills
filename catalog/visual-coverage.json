@@ -181,8 +181,8 @@
   },
   {
     "skill": "release-readiness",
-    "route": "Independent gate evidence matrix",
-    "reference": "references/visual-artifact.md"
+    "route": "Dedicated gate matrix, decision path, recovery/coverage and chronology workspace with validated browser-local editing",
+    "reference": "references/renderer.md"
   },
   {
     "skill": "release-and-handover",

@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Readiness gates; exception authority; operational acceptance
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Release Readiness
@@ -69,7 +69,7 @@ Quality check: the headline agrees with every independent mandatory gate; claims
 
 ### When producing a visual
 
-Use the [independent gate evidence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [independent gate evidence matrix](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable review workspace, read the [renderer contract](references/renderer.md) and run the offline [readiness renderer](scripts/render_readiness.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV with gate, decision-path, recovery/coverage and chronology views plus validated browser-local gate editing, blocker recalculation, history, undo, source restore and separate source/draft exports.
 
 ## Examples
 

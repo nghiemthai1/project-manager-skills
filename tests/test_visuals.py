@@ -27,13 +27,14 @@ dependency = load('dependency-map', 'render_dependency_map.py')
 capacity = load('resource-capacity-plan', 'render_capacity.py')
 budget = load('project-budget', 'render_budget.py')
 milestone = load('milestone-schedule', 'render_milestone.py')
+readiness = load('release-readiness', 'render_readiness.py')
 
 
 class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
                              ('resource-capacity-plan', capacity), ('project-budget', budget),
-                             ('milestone-schedule', milestone)]:
+                             ('milestone-schedule', milestone), ('release-readiness', readiness)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -255,15 +256,31 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="milestone-schedule.'),3)
 
+    def test_release_readiness_keeps_gates_and_authority_independent(self):
+        data=readiness.demo();summary=readiness.readiness(data)
+        self.assertEqual(summary['recommendation'],'hold')
+        self.assertEqual(summary['blockers'],['G-REC'])
+        data['gates'][0]['status']='accepted_exception'
+        data['gates'][0]['evidence_ref']='EX-1';data['gates'][0]['observed_on']='2026-10-28';data['gates'][0]['exception_authority']='Sponsor'
+        with self.assertRaises(ValueError):readiness.validate(data)
+        html=readiness.render_html(readiness.demo())
+        for token in ('id="gatesTab"','id="decisionTab"','id="coverageTab"','id="chronologyTab"',
+                      'id="gateEditor"','id="editClassification"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'Accepted exception requires exceptionable classification.','function draftSnapshot()','changed_gates'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="release-readiness.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity,budget,milestone):
+        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
             elif module is dependency: data['dependencies'][0]['handoff']='=WEBSERVICE("example")'
             elif module is capacity: data['people'][0]['name']='=WEBSERVICE("example")'
             elif module is budget: data['categories'][0]['label']='=WEBSERVICE("example")'
-            else: data['tasks'][0]['label']='=WEBSERVICE("example")'
+            elif module is milestone: data['tasks'][0]['label']='=WEBSERVICE("example")'
+            else: data['gates'][0]['label']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -271,7 +288,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity,budget,milestone):
+            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

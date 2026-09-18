@@ -10,6 +10,7 @@
 - Rebuilt `resource-capacity-plan` as a responsive person-level capacity workspace with stacked allocation demand, availability markers, explicit unknown work, skill/timing checks, conditional decision options, validated browser-local person/allocation editing, recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 - Rebuilt `project-budget` as a responsive financial-control workspace with forecast comparisons, a reconciled cost register, EVM math, explicit unknown obligations, funding decisions, validated browser-local editing, recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 - Rebuilt `milestone-schedule` as a responsive logic-network workspace with forward/backward-pass timing, tied critical paths, milestone evidence, resource/calendar scenarios, validated browser-local task editing, cycle checks, recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
+- Rebuilt `release-readiness` as a responsive gate-control workspace with independent evidence states, a recommendation-to-authority decision path, recovery/coverage review, cutoff-safe chronology, validated browser-local gate editing, blocker recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 
 ## 2.0.0
 

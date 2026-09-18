@@ -40,7 +40,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [project-recovery-advisor](../skills/project-recovery-advisor/references/visual-artifact.md) | Recovery option scenarios |
 | [delivery-control-cycle](../skills/delivery-control-cycle/references/visual-artifact.md) | Control review artifact pack |
 | [organizational-change](../skills/organizational-change/references/visual-artifact.md) | Group readiness and adoption matrix |
-| [release-readiness](../skills/release-readiness/references/visual-artifact.md) | Independent gate evidence matrix |
+| [release-readiness](../skills/release-readiness/references/renderer.md) | Dedicated gate matrix, decision path, recovery/coverage and chronology workspace with validated browser-local editing |
 | [release-and-handover](../skills/release-and-handover/references/visual-artifact.md) | Cutover sequence and transfer gates |
 | [retrospective](../skills/retrospective/references/visual-artifact.md) | Evidence timeline or cause map |
 | [lessons-learned](../skills/lessons-learned/SKILL.md) | Conversation or text/table artifact by default |
