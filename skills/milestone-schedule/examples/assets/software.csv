@@ -1,0 +1,6 @@
+id,label,kind,duration,predecessors,owner,resource,state,exit_evidence,authority,es,ef,ls,lf,total_float,critical,source,note
+A,Agree contract,activity,2,,Mina,Product and integration,confirmed,Versioned contract reviewed,Mina,0,2,0,2,0,True,Fictional network input,
+B,Implement interface,activity,4,A,Omar,Integration engineer,proposed,Interface passes component checks,Technical lead,2,6,2,6,0,True,Fictional network input,
+C,Prepare receiver tests,activity,3,A,Lena,Security engineer,proposed,Representative tests are executable,Security lead,2,5,3,6,1,False,Fictional network input,One offset of total float in the supplied model.
+D,Integrate,activity,1,B; C,Omar,Integration environment,proposed,Integrated flow demonstrated,Technical lead,6,7,6,7,0,True,Fictional network input,
+E,Accept integration,milestone,0,D,Lena,Acceptance authority,proposed,Security acceptance evidence recorded,Lena,7,7,7,7,0,True,Instructional extension of the local network,Review effort and waiting must be modeled separately.

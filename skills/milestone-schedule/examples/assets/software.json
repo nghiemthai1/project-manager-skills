@@ -1,0 +1,128 @@
+{
+  "title": "Relay integration milestone logic",
+  "version": "1.0",
+  "as_of": "2026-10-16",
+  "source": "Fictional instructional network; examples/software.md",
+  "scope": "Local integration logic plus explicit acceptance event",
+  "state": "unconstrained offset model",
+  "duration_unit": "working-day offsets",
+  "calendar": "No working calendar applied; distinct resources assumed for B and C",
+  "comparison": "30 October target requires a separate dated model",
+  "tasks": [
+    {
+      "id": "A",
+      "label": "Agree contract",
+      "kind": "activity",
+      "duration": 2,
+      "predecessors": [],
+      "owner": "Mina",
+      "resource": "Product and integration",
+      "state": "confirmed",
+      "exit_evidence": "Versioned contract reviewed",
+      "authority": "Mina",
+      "source": "Fictional network input",
+      "note": ""
+    },
+    {
+      "id": "B",
+      "label": "Implement interface",
+      "kind": "activity",
+      "duration": 4,
+      "predecessors": [
+        "A"
+      ],
+      "owner": "Omar",
+      "resource": "Integration engineer",
+      "state": "proposed",
+      "exit_evidence": "Interface passes component checks",
+      "authority": "Technical lead",
+      "source": "Fictional network input",
+      "note": ""
+    },
+    {
+      "id": "C",
+      "label": "Prepare receiver tests",
+      "kind": "activity",
+      "duration": 3,
+      "predecessors": [
+        "A"
+      ],
+      "owner": "Lena",
+      "resource": "Security engineer",
+      "state": "proposed",
+      "exit_evidence": "Representative tests are executable",
+      "authority": "Security lead",
+      "source": "Fictional network input",
+      "note": "One offset of total float in the supplied model."
+    },
+    {
+      "id": "D",
+      "label": "Integrate",
+      "kind": "activity",
+      "duration": 1,
+      "predecessors": [
+        "B",
+        "C"
+      ],
+      "owner": "Omar",
+      "resource": "Integration environment",
+      "state": "proposed",
+      "exit_evidence": "Integrated flow demonstrated",
+      "authority": "Technical lead",
+      "source": "Fictional network input",
+      "note": ""
+    },
+    {
+      "id": "E",
+      "label": "Accept integration",
+      "kind": "milestone",
+      "duration": 0,
+      "predecessors": [
+        "D"
+      ],
+      "owner": "Lena",
+      "resource": "Acceptance authority",
+      "state": "proposed",
+      "exit_evidence": "Security acceptance evidence recorded",
+      "authority": "Lena",
+      "source": "Instructional extension of the local network",
+      "note": "Review effort and waiting must be modeled separately."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "S-DURATION",
+      "label": "Interface duration increases to six",
+      "change": "Change B duration from four to six offsets.",
+      "basis": "Updated estimate, not a vendor-date assumption.",
+      "modeled_finish": "9 working-day offsets",
+      "effect": "Adds two offsets locally; does not prove two calendar days of pilot delay.",
+      "status": "open",
+      "authority": "Schedule owner after evidence review",
+      "source": "examples/software.md"
+    },
+    {
+      "id": "S-RESOURCE",
+      "label": "Shared specialist sequence",
+      "change": "Add a planning-order link between B and C.",
+      "basis": "Only if the same named specialist must perform both full time.",
+      "modeled_finish": "Recompute after choosing the order",
+      "effect": "May extend finish; it is not an original technical dependency.",
+      "status": "open",
+      "authority": "Resource and schedule owners",
+      "source": "Resource feasibility challenge"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Milestone logic",
+    "headline": "Seven offsets are not a committed date",
+    "lede": "The network explains the driving path and evidence event while keeping calendars, resources and authority visible.",
+    "default_task_id": "D",
+    "decision": "Obtain the actual remaining network, calendar and resource assignments before changing the 30 October forecast."
+  },
+  "analysis": {
+    "method": "Forward/backward pass for acyclic finish-to-start zero-lag logic.",
+    "model_limit": "No calendar, fixed constraints, lag, other relationship types or resource leveling.",
+    "resource_boundary": "The base model assumes B and C have distinct available capacity."
+  }
+}

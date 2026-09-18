@@ -1,0 +1,128 @@
+{
+  "title": "Northstar rehearsal milestone logic",
+  "version": "1.0",
+  "as_of": "2026-10-23",
+  "source": "Fictional instructional network; examples/migration.md",
+  "scope": "Rehearsal preparation, execution and acceptance",
+  "state": "unconstrained offset model with resource scenario",
+  "duration_unit": "working-day offsets",
+  "calendar": "No cutover or reviewer calendar applied",
+  "comparison": "21 November B1 cutover is a separate approved date",
+  "tasks": [
+    {
+      "id": "A",
+      "label": "Extract sample",
+      "kind": "activity",
+      "duration": 2,
+      "predecessors": [],
+      "owner": "Jules",
+      "resource": "Migration team",
+      "state": "confirmed",
+      "exit_evidence": "Representative sample is available",
+      "authority": "Migration lead",
+      "source": "Fictional network input",
+      "note": ""
+    },
+    {
+      "id": "B",
+      "label": "Validate mapping",
+      "kind": "activity",
+      "duration": 3,
+      "predecessors": [
+        "A"
+      ],
+      "owner": "Chen",
+      "resource": "Migration engineer",
+      "state": "proposed",
+      "exit_evidence": "Mapping exceptions are resolved or bounded",
+      "authority": "Migration lead",
+      "source": "Fictional network input",
+      "note": "One of two tied controlling branches."
+    },
+    {
+      "id": "C",
+      "label": "Prepare restore environment",
+      "kind": "activity",
+      "duration": 3,
+      "predecessors": [
+        "A"
+      ],
+      "owner": "Chen",
+      "resource": "Restore engineer",
+      "state": "proposed",
+      "exit_evidence": "Restore environment is reachable and verified",
+      "authority": "Platform lead",
+      "source": "Fictional network input",
+      "note": "Parallel only if distinct capacity exists."
+    },
+    {
+      "id": "D",
+      "label": "Reconcile and restore",
+      "kind": "activity",
+      "duration": 2,
+      "predecessors": [
+        "B",
+        "C"
+      ],
+      "owner": "Chen",
+      "resource": "Migration and restore environment",
+      "state": "proposed",
+      "exit_evidence": "Reconciliation and restore evidence recorded",
+      "authority": "Migration lead",
+      "source": "Fictional network input",
+      "note": ""
+    },
+    {
+      "id": "E",
+      "label": "Accept rehearsal",
+      "kind": "milestone",
+      "duration": 0,
+      "predecessors": [
+        "D"
+      ],
+      "owner": "Saira",
+      "resource": "Acceptance authority",
+      "state": "proposed",
+      "exit_evidence": "Population reconciles and restore is demonstrated",
+      "authority": "Saira",
+      "source": "Fictional network input",
+      "note": "The event excludes review preparation or waiting."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "S-SEQUENCE",
+      "label": "Chen performs B before C",
+      "change": "Add B-before-C as an explicit resource-ordering link.",
+      "basis": "Chen is required full time on both parallel branches.",
+      "modeled_finish": "10 working-day offsets",
+      "effect": "Adds three offsets versus the technical network.",
+      "status": "proposed",
+      "authority": "Jules coordinates; resource and schedule authorities confirm",
+      "source": "examples/migration.md"
+    },
+    {
+      "id": "S-ACCELERATE",
+      "label": "Accelerate mapping only",
+      "change": "Reduce B duration by one offset.",
+      "basis": "Hypothetical improvement on one tied branch.",
+      "modeled_finish": "7 working-day offsets",
+      "effect": "No finish improvement while C remains controlling.",
+      "status": "open",
+      "authority": "Technical lead",
+      "source": "Tied-path challenge"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Rehearsal logic",
+    "headline": "Two branches govern the same milestone",
+    "lede": "Accelerating mapping alone does not move acceptance, and shared-specialist work needs an explicit feasible sequence.",
+    "default_task_id": "E",
+    "decision": "Confirm Chen's capacity, environment access and Saira's review window before translating the model to the cutover calendar."
+  },
+  "analysis": {
+    "method": "Forward/backward pass for acyclic finish-to-start zero-lag logic.",
+    "model_limit": "No calendar, fixed constraints, lag, other relationship types or resource leveling.",
+    "resource_boundary": "The seven-offset base model assumes B and C can run with separate capacity; the ten-offset scenario makes Chen's shared assignment explicit."
+  }
+}

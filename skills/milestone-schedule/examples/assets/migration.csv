@@ -1,0 +1,6 @@
+id,label,kind,duration,predecessors,owner,resource,state,exit_evidence,authority,es,ef,ls,lf,total_float,critical,source,note
+A,Extract sample,activity,2,,Jules,Migration team,confirmed,Representative sample is available,Migration lead,0,2,0,2,0,True,Fictional network input,
+B,Validate mapping,activity,3,A,Chen,Migration engineer,proposed,Mapping exceptions are resolved or bounded,Migration lead,2,5,2,5,0,True,Fictional network input,One of two tied controlling branches.
+C,Prepare restore environment,activity,3,A,Chen,Restore engineer,proposed,Restore environment is reachable and verified,Platform lead,2,5,2,5,0,True,Fictional network input,Parallel only if distinct capacity exists.
+D,Reconcile and restore,activity,2,B; C,Chen,Migration and restore environment,proposed,Reconciliation and restore evidence recorded,Migration lead,5,7,5,7,0,True,Fictional network input,
+E,Accept rehearsal,milestone,0,D,Saira,Acceptance authority,proposed,Population reconciles and restore is demonstrated,Saira,7,7,7,7,0,True,Fictional network input,The event excludes review preparation or waiting.

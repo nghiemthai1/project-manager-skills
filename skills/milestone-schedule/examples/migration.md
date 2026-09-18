@@ -27,3 +27,11 @@ Jules must still confirm Chen's actual availability, vendor mapping, environment
 The later M-CR02 approval changes the real baseline to 28 November; this toy calculation neither creates that decision nor rewrites the earlier 21 November comparison.
 
 **Repair:** “Accelerate mapping and finish earlier” ignores the tied restore branch and shared specialist. Inspect both controlling paths and the resource model before choosing a compression action.
+
+## Graphical companion
+
+Open the [interactive milestone workspace](assets/migration.html) to inspect both controlling branches, acceptance evidence and the shared-specialist sequence.
+
+![Static milestone network](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV register](assets/migration.csv).

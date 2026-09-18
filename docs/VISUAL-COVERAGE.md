@@ -20,7 +20,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [acceptance-and-traceability](../skills/acceptance-and-traceability/references/visual-artifact.md) | Evidence traceability matrix |
 | [prioritization-advisor](../skills/prioritization-advisor/references/visual-artifact.md) | Tradeoff plot or ranked options table |
 | [estimation-advisor](../skills/estimation-advisor/references/visual-artifact.md) | Estimate ranges or empirical forecast |
-| [milestone-schedule](../skills/milestone-schedule/references/visual-artifact.md) | Logic network plus milestone view |
+| [milestone-schedule](../skills/milestone-schedule/references/renderer.md) | Dedicated logic network, timing register, milestone-evidence and feasibility-scenario workspace with validated browser-local editing |
 | [gantt-chart](../skills/gantt-chart/SKILL.md) | Full Gantt design, source-ingestion, responsive/accessibility workflow and offline renderer with validated browser-local task editing, conflict diagnostics, history, undo, source restore and source/draft exports |
 | [integrated-project-planning](../skills/integrated-project-planning/references/visual-artifact.md) | Linked baseline review pack |
 | [dependency-map](../skills/dependency-map/references/visual-artifact.md) | Dedicated provider-to-receiver graph, DSM, evidence register and offline renderer with validated browser-local dependency editing, history, undo, source restore and separate source/draft exports |

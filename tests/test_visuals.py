@@ -26,12 +26,14 @@ raci = load('raci-matrix', 'render_raci.py')
 dependency = load('dependency-map', 'render_dependency_map.py')
 capacity = load('resource-capacity-plan', 'render_capacity.py')
 budget = load('project-budget', 'render_budget.py')
+milestone = load('milestone-schedule', 'render_milestone.py')
 
 
 class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
-                             ('resource-capacity-plan', capacity), ('project-budget', budget)]:
+                             ('resource-capacity-plan', capacity), ('project-budget', budget),
+                             ('milestone-schedule', milestone)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -239,14 +241,29 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="project-budget.'),3)
 
+    def test_milestone_network_and_editor(self):
+        data=milestone.demo();net=milestone.compute_network(data)
+        self.assertEqual(net['finish'],7)
+        self.assertEqual(net['tasks']['C']['float'],1)
+        data['tasks'][1]['predecessors']=['E']
+        with self.assertRaises(ValueError):milestone.validate(data)
+        html=milestone.render_html(milestone.demo())
+        for token in ('id="networkTab"','id="timingTab"','id="milestonesTab"','id="scenariosTab"',
+                      'id="taskEditor"','id="editPredecessors"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'The edited network contains a directed cycle.','function draftSnapshot()','changed_tasks'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="milestone-schedule.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity,budget):
+        for module in (gantt,raci,dependency,capacity,budget,milestone):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
             elif module is dependency: data['dependencies'][0]['handoff']='=WEBSERVICE("example")'
             elif module is capacity: data['people'][0]['name']='=WEBSERVICE("example")'
-            else: data['categories'][0]['label']='=WEBSERVICE("example")'
+            elif module is budget: data['categories'][0]['label']='=WEBSERVICE("example")'
+            else: data['tasks'][0]['label']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -254,7 +271,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity,budget):
+            for module in (gantt,raci,dependency,capacity,budget,milestone):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

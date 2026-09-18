@@ -26,3 +26,11 @@ If B increases from four to six working days, its EF becomes 8; D runs 8–9 and
 Mina should obtain the actual remaining network before altering the 30 October forecast. Lena's security acceptance needs its own evidence and review availability. If B and C use the same full-time specialist, even the original seven-day model is infeasible until the resource conflict is resolved. The Gantt skill's separate dated example illustrates calendar placement; it does not promote this toy network into Relay's baseline.
 
 **Repair:** “The vendor is two days late, so move the pilot two days” skips the remaining logic. Retain the local gap, compute the actual affected network and obtain an authorized baseline decision only if a commitment changes.
+
+## Graphical companion
+
+Open the [interactive milestone workspace](assets/software.html) to inspect logic, float, milestone evidence and scenarios or create a validated browser-local draft.
+
+![Static milestone network](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV register](assets/software.csv).

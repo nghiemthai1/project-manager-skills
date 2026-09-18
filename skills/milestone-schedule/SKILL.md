@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Critical Path Method; total float; rolling-wave scheduling
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Milestone Schedule
@@ -67,7 +67,7 @@ Use [the schedule template](template.md). Quality review checks complete logic, 
 
 ### When producing a visual
 
-Use the [logic network plus milestone view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [logic network plus milestone view](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable review workspace, read the [renderer contract](references/renderer.md) and run the offline [milestone renderer](scripts/render_milestone.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV with a logic network, timing register, milestone evidence, feasibility scenarios, and validated browser-local task editing with network recalculation, history, undo, source restore and separate source/draft exports.
 
 ## Examples
 
