@@ -13,6 +13,7 @@
 - Rebuilt `release-readiness` as a responsive gate-control workspace with independent evidence states, a recommendation-to-authority decision path, recovery/coverage review, cutoff-safe chronology, validated browser-local gate editing, blocker recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 - Rebuilt `risk-workshop` as a responsive risk-control workspace with optional declared-scale mapping, an explicit unknown lane, cause-to-contingency response chains, cutoff-safe chronology, validated browser-local risk editing, priority recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 - Rebuilt `raid-log` as a responsive four-type control workspace with exception lanes, a linked transition graph, timing and receiver-acceptance review, cutoff-safe chronology, validated browser-local item editing, attention/unknown/overdue recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
+- Rebuilt `scope-and-wbs` as a responsive scope-control workspace with a part-of hierarchy, WBS register, package dictionary, explicit requirement coverage, exclusion/change review, validated browser-local package editing, cycle and overlap checks, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 
 ## 2.0.0
 

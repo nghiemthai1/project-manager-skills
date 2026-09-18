@@ -16,7 +16,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [raci-matrix](../skills/raci-matrix/references/renderer.md) | Dedicated matrix, row-audit and role-profile workflow with evidence details, browser-local draft editing and offline renderer |
 | [communication-plan](../skills/communication-plan/references/visual-artifact.md) | Audience-channel cadence matrix |
 | [workshop-facilitation](../skills/workshop-facilitation/SKILL.md) | Conversation or text/table artifact by default |
-| [scope-and-wbs](../skills/scope-and-wbs/references/visual-artifact.md) | Deliverable hierarchy |
+| [scope-and-wbs](../skills/scope-and-wbs/references/renderer.md) | Dedicated hierarchy, register, dictionary, requirement-coverage and scope-boundary workspace with validated browser-local editing |
 | [acceptance-and-traceability](../skills/acceptance-and-traceability/references/visual-artifact.md) | Evidence traceability matrix |
 | [prioritization-advisor](../skills/prioritization-advisor/references/visual-artifact.md) | Tradeoff plot or ranked options table |
 | [estimation-advisor](../skills/estimation-advisor/references/visual-artifact.md) | Estimate ranges or empirical forecast |

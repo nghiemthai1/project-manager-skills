@@ -26,8 +26,10 @@ Deferring 1.5 may be a useful proposal, but on 16 October it is not yet an autho
 
 **Repair:** “WBS = SAML frontend, backend and meetings” cannot show who proves recovery or accepts service. The revised hierarchy exposes those deliverables and their distinct completion evidence.
 
-## Graphical companion
+## Interactive companion
 
-![Worked visual](assets/software-visual.svg)
+Open the [interactive scope and WBS workspace](assets/software.html) to inspect the deliverable hierarchy, WBS register, package dictionary, requirement coverage and dated scope boundaries or create a validated browser-local draft.
 
-[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+![Static scope and WBS hierarchy](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV WBS register](assets/software.csv). The preceding tables and explanation remain the full accessible record; the visual preserves their fictional scope and cutoff.

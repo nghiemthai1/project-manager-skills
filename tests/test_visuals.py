@@ -30,6 +30,7 @@ milestone = load('milestone-schedule', 'render_milestone.py')
 readiness = load('release-readiness', 'render_readiness.py')
 risk_workshop = load('risk-workshop', 'render_risk_workshop.py')
 raid = load('raid-log', 'render_raid_log.py')
+scope_wbs = load('scope-and-wbs', 'render_scope_wbs.py')
 
 
 class VisualTests(unittest.TestCase):
@@ -37,7 +38,8 @@ class VisualTests(unittest.TestCase):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
                              ('resource-capacity-plan', capacity), ('project-budget', budget),
                              ('milestone-schedule', milestone), ('release-readiness', readiness),
-                             ('risk-workshop', risk_workshop), ('raid-log', raid)]:
+                             ('risk-workshop', risk_workshop), ('raid-log', raid),
+                             ('scope-and-wbs', scope_wbs)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -304,8 +306,26 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="raid-log.'),3)
 
+    def test_scope_wbs_preserves_hierarchy_coverage_and_change_authority(self):
+        data=scope_wbs.demo();summary=scope_wbs.audit(data)
+        self.assertEqual(summary['coverage_gaps'],[])
+        self.assertEqual(summary['overlaps'],[])
+        self.assertEqual(summary['partial'],['1.2','1.3'])
+        data['nodes'][0]['parent']='1.2'
+        with self.assertRaises(ValueError):scope_wbs.validate(data)
+        data=scope_wbs.demo();data['coverage'].append({'requirement_id':'R-1','package_id':'1.2','role':'primary','boundary':'Duplicate','source':'Test'})
+        data['nodes'][2]['requirement_ids'].append('R-1')
+        self.assertEqual(scope_wbs.audit(scope_wbs.validate(data))['overlaps'],['R-1'])
+        html=scope_wbs.render_html(scope_wbs.demo())
+        for token in ('id="hierarchyTab"','id="registerTab"','id="dictionaryTab"','id="coverageTab"','id="boundariesTab"',
+                      'id="nodeEditor"','id="editParent"','id="saveNode"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'This parent change would create a hierarchy cycle.','function draftSnapshot()','changed_nodes'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="scope-wbs.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid):
+        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid,scope_wbs):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
@@ -315,7 +335,8 @@ class VisualTests(unittest.TestCase):
             elif module is milestone: data['tasks'][0]['label']='=WEBSERVICE("example")'
             elif module is readiness: data['gates'][0]['label']='=WEBSERVICE("example")'
             elif module is risk_workshop: data['risks'][0]['title']='=WEBSERVICE("example")'
-            else: data['items'][0]['title']='=WEBSERVICE("example")'
+            elif module is raid: data['items'][0]['title']='=WEBSERVICE("example")'
+            else: data['nodes'][0]['label']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -323,7 +344,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid):
+            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid,scope_wbs):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

@@ -14,7 +14,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Deliverable-oriented WBS; 100% rule; WBS dictionary
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Scope and Work Breakdown
@@ -71,7 +71,7 @@ Use [the WBS and dictionary template](template.md). The quality review should fi
 
 ### When producing a visual
 
-Use the [deliverable hierarchy](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [deliverable hierarchy](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable scope-control workspace, read the [renderer contract](references/renderer.md) and run the offline [scope and WBS renderer](scripts/render_scope_wbs.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV with hierarchy, register, dictionary, coverage-audit and boundary/change views plus validated browser-local package editing, cycle and overlap checks, history, undo, source restore and separate source/draft exports.
 
 ## Examples
 

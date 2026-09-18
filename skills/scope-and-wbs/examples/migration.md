@@ -25,3 +25,9 @@ Pass these stable package boundaries into the remaining-work estimate and rehear
 The coverage audit asks whether access, archive, support and project control are represented alongside data movement. The overlap audit asks where shared reconciliation, environment setup and supplier work are counted once. Both audits can expose gaps without claiming all uncertainty is resolved.
 
 **Repair:** “Migration complete when the data copy ends” omits correctness, recoverability and receiving-service acceptance. The package model makes each of those a visible result with its own evidence.
+
+Open the [interactive scope and WBS workspace](assets/migration.html) to inspect the nested population packages, package dictionaries, coverage audit, explicit exclusion and later change boundary.
+
+![Static scope and WBS hierarchy](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV WBS register](assets/migration.csv).
