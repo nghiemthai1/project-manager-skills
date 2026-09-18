@@ -1,0 +1,105 @@
+{
+  "title": "Relay cost and funding decision",
+  "version": "1.0",
+  "as_of": "2026-10-16",
+  "source": "Fictional Relay control evidence; examples/software.md",
+  "scope": "Relay B1 cumulative cost position before CR-001",
+  "state": "conditional forecast",
+  "currency": "USD",
+  "scale": "k",
+  "baseline": {
+    "id": "B1",
+    "approval": "D-001 approved 2 October 2026",
+    "bac": 100,
+    "management_reserve": 10,
+    "total_envelope": 110,
+    "reserve_control": "Sponsor-controlled outside the B1 performance baseline",
+    "source": "Decision D-001"
+  },
+  "performance": {
+    "pv": 50,
+    "ev": 40,
+    "ac": 48,
+    "earning_rule": "Discrete completed deliverables and evidenced weighted milestones",
+    "source": "Fictional cumulative performance report through 16 October"
+  },
+  "categories": [
+    {
+      "id": "LABOR",
+      "label": "Internal delivery labor",
+      "actual": 28,
+      "committed_unspent": 0,
+      "other_etc": 52,
+      "status": "proposed",
+      "source": "Ledger L-16 and bottom-up estimate E-9",
+      "note": "The remaining estimate includes correction and acceptance work."
+    },
+    {
+      "id": "VENDOR",
+      "label": "Vendor services",
+      "actual": 8,
+      "committed_unspent": 12,
+      "other_etc": 0,
+      "status": "confirmed",
+      "source": "PO-20 reconciliation",
+      "note": "The 8 incurred is not repeated in the 12 unspent."
+    },
+    {
+      "id": "PLATFORM",
+      "label": "Platform and tooling",
+      "actual": 12,
+      "committed_unspent": 4,
+      "other_etc": 4,
+      "status": "proposed",
+      "source": "Ledger L-16 and estimate E-9",
+      "note": "Taxes and the accounting boundary follow the supplied fictional case."
+    }
+  ],
+  "recommended_forecast_id": "cost_efficiency",
+  "funding_options": [
+    {
+      "id": "F-RESERVE",
+      "label": "Release original management reserve",
+      "amount": "10 k USD",
+      "basis": "Separately controlled reserve outside B1",
+      "effect": "Raises accessible funding only with the recorded release; does not erase cost variance.",
+      "authority": "Ada as fictional sponsor",
+      "status": "proposed",
+      "source": "D-001 control terms"
+    },
+    {
+      "id": "F-ADD",
+      "label": "Authorize additional funding",
+      "amount": "10 k USD beyond the original envelope",
+      "basis": "Needed if the 120 k USD scenario is accepted after ETC review",
+      "effect": "Would close the remaining funding gap without retroactively changing the 16 October B1 report.",
+      "authority": "Sponsor and funding authority",
+      "status": "open",
+      "source": "Fictional 16 October decision request"
+    },
+    {
+      "id": "F-SCOPE",
+      "label": "Defer optional dashboard polish",
+      "amount": "Cost effect to be confirmed",
+      "basis": "Optional scope only; security acceptance remains mandatory",
+      "effect": "May reduce remaining cost and affect the selected EAC.",
+      "authority": "Product owner and sponsor",
+      "status": "proposed",
+      "source": "CR-001 proposal; approval occurs later"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Cost control",
+    "headline": "A 120k forecast is still 10k beyond the envelope",
+    "lede": "Compare performance, current remaining work and funding authority without treating reserve as automatic permission.",
+    "insight_heading": "Forecast and authority are different controls",
+    "insight_points": ["The scenario is 20k above BAC.", "The original reserve closes only half of that gap."],
+    "decision": "Reconcile the current ETC and obligations, then obtain an explicit reserve release plus additional funding or a supported scope decision."
+  },
+  "analysis": {
+    "method": "Cumulative EVM scenarios plus actual-and-remaining cost reconciliation at one status date.",
+    "accounting_boundary": "Actuals, unspent commitments and other ETC are separate; category actuals reconcile to AC.",
+    "authorization_boundary": "The 120 k USD scenario does not release reserve or authorize spending. CR-001 occurs after this snapshot."
+  },
+  "notes": ["Fictional instructional data; amounts are thousands of USD."]
+}

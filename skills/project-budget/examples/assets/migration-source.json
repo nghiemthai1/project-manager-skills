@@ -1,0 +1,105 @@
+{
+  "title": "Northstar cost pressure",
+  "version": "1.0",
+  "as_of": "2026-10-23",
+  "source": "Fictional Northstar control evidence; examples/migration.md",
+  "scope": "Northstar B1 cumulative cost position before M-CR02",
+  "state": "conditional forecast with incomplete obligations",
+  "currency": "USD",
+  "scale": "k",
+  "baseline": {
+    "id": "B1",
+    "approval": "M-D001 approved 5 October 2026",
+    "bac": 240,
+    "management_reserve": 24,
+    "total_envelope": 264,
+    "reserve_control": "Sponsor-controlled outside the B1 performance baseline",
+    "source": "Decision M-D001"
+  },
+  "performance": {
+    "pv": 80,
+    "ev": 60,
+    "ac": 75,
+    "earning_rule": "Budgeted migration deliverables earned only when objective completion evidence exists",
+    "source": "Fictional cumulative performance report through 23 October"
+  },
+  "categories": [
+    {
+      "id": "MIGRATION",
+      "label": "Migration delivery labor",
+      "actual": 45,
+      "committed_unspent": 0,
+      "other_etc": 135,
+      "status": "proposed",
+      "source": "Ledger N-L23 and preliminary ETC N-E4",
+      "note": "Includes remediation, rehearsals and transition work."
+    },
+    {
+      "id": "VENDOR",
+      "label": "Vendor services",
+      "actual": 20,
+      "committed_unspent": null,
+      "other_etc": null,
+      "status": "unknown",
+      "source": "Vendor ledger requires obligation reconciliation",
+      "note": "Unknown remaining amounts make bottom-up EAC unavailable."
+    },
+    {
+      "id": "PLATFORM",
+      "label": "Platform and environment",
+      "actual": 10,
+      "committed_unspent": 12,
+      "other_etc": 8,
+      "status": "proposed",
+      "source": "Platform ledger N-P8",
+      "note": "Restore environments remain inside the project boundary."
+    }
+  ],
+  "recommended_forecast_id": "cost_efficiency",
+  "funding_options": [
+    {
+      "id": "N-RESERVE",
+      "label": "Release original management reserve",
+      "amount": "24 k USD",
+      "basis": "Separately controlled reserve outside B1",
+      "effect": "Would raise accessible funding to the original 264 k USD envelope only.",
+      "authority": "Noel as fictional sponsor",
+      "status": "proposed",
+      "source": "M-D001 control terms"
+    },
+    {
+      "id": "N-ADD",
+      "label": "Authorize additional funding",
+      "amount": "36 k USD beyond the original envelope",
+      "basis": "Required to reach 300 k USD if the cost-efficiency scenario is supported",
+      "effect": "Would close the modeled funding gap; does not waive readiness or acceptance.",
+      "authority": "Sponsor and funding authority",
+      "status": "open",
+      "source": "Fictional 23 October decision request"
+    },
+    {
+      "id": "N-SCOPE",
+      "label": "Phase migration scope",
+      "amount": "Cost and timing effect to be estimated",
+      "basis": "Move bounded populations while retaining reconciliation, restore and acceptance controls",
+      "effect": "May reduce near-term demand and move the integrated forecast.",
+      "authority": "Noel and migration governance",
+      "status": "open",
+      "source": "Pre-M-CR02 option"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Funding pressure",
+    "headline": "Low spend does not mean healthy delivery",
+    "lede": "Only 31.25% of BAC is spent, yet cost efficiency implies 300k and vendor obligations remain incomplete.",
+    "insight_heading": "Inspect the remaining work before selecting a scenario",
+    "insight_points": ["CPI is 0.8.", "Bottom-up EAC is unavailable until vendor obligations are reconciled."],
+    "decision": "Complete the vendor and remaining-work reconciliation, then present reserve, additional-funding and phased-scope choices to Noel."
+  },
+  "analysis": {
+    "method": "Cumulative EVM scenarios with an explicitly incomplete bottom-up remaining-cost view.",
+    "accounting_boundary": "Category actuals reconcile to AC; unknown vendor commitments and ETC remain null.",
+    "authorization_boundary": "No 23 October forecast changes B1. The later M-CR02 decision must remain prospective."
+  },
+  "notes": ["Fictional instructional data; amounts are thousands of USD."]
+}

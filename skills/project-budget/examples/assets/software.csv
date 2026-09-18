@@ -1,0 +1,4 @@
+category_id,category,actual,committed_unspent,other_etc,known_category_total,status,source,note,currency,scale,as_of,baseline_id,bac,management_reserve,total_envelope,pv,ev,ac,ledger_difference
+LABOR,Internal delivery labor,28,0,52,80,proposed,Ledger L-16 and bottom-up estimate E-9,The remaining estimate includes correction and acceptance work.,USD,k,2026-10-16,B1,100,10,110,50,40,48,0
+VENDOR,Vendor services,8,12,0,20,confirmed,PO-20 reconciliation,The 8 incurred is not repeated in the 12 unspent.,USD,k,2026-10-16,B1,100,10,110,50,40,48,0
+PLATFORM,Platform and tooling,12,4,4,20,proposed,Ledger L-16 and estimate E-9,Taxes and the accounting boundary follow the supplied fictional case.,USD,k,2026-10-16,B1,100,10,110,50,40,48,0

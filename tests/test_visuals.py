@@ -25,12 +25,13 @@ gantt = load('gantt-chart', 'render_gantt.py')
 raci = load('raci-matrix', 'render_raci.py')
 dependency = load('dependency-map', 'render_dependency_map.py')
 capacity = load('resource-capacity-plan', 'render_capacity.py')
+budget = load('project-budget', 'render_budget.py')
 
 
 class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
-                             ('resource-capacity-plan', capacity)]:
+                             ('resource-capacity-plan', capacity), ('project-budget', budget)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -215,13 +216,37 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="capacity-plan.'),3)
 
+    def test_budget_calculations_keep_forecast_and_authority_distinct(self):
+        data=budget.demo();calc=budget.calculations(data)
+        self.assertAlmostEqual(calc['cpi'],5/6)
+        self.assertEqual(calc['forecasts']['cost_efficiency'],120)
+        self.assertEqual(calc['ledger_difference'],0)
+        data['categories'][0]['other_etc']=None
+        self.assertIsNone(budget.calculations(data)['forecasts']['bottom_up'])
+        self.assertEqual(budget.calculations(data)['unknown_remaining_fields'],1)
+
+    def test_budget_validation_and_local_editor_are_present(self):
+        data=budget.demo();data['baseline']['total_envelope']=99
+        with self.assertRaises(ValueError):budget.validate(data)
+        data=budget.demo();data['categories'][0].update(status='unknown',committed_unspent=0,other_etc=1)
+        with self.assertRaises(ValueError):budget.validate(data)
+        html=budget.render_html(budget.demo())
+        for token in ('id="forecastTab"','id="ledgerTab"','id="performanceTab"','id="fundingTab"',
+                      'id="budgetEditor"','id="editToggle"','id="categoryEditor"',
+                      'id="undoEdit"','id="discardDraft"','id="draftJson"','id="draftCsv"',
+                      'id="visibleCsv"','Total funding envelope cannot be below BAC.',
+                      'function draftSnapshot()','Local financial draft saved. Arithmetic recalculated'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="project-budget.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity):
+        for module in (gantt,raci,dependency,capacity,budget):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
             elif module is dependency: data['dependencies'][0]['handoff']='=WEBSERVICE("example")'
-            else: data['people'][0]['name']='=WEBSERVICE("example")'
+            elif module is capacity: data['people'][0]['name']='=WEBSERVICE("example")'
+            else: data['categories'][0]['label']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -229,7 +254,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity):
+            for module in (gantt,raci,dependency,capacity,budget):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

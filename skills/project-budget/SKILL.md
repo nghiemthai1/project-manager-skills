@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Cost baseline; contingency versus management reserve; earned value management
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Project Budget
@@ -75,7 +75,7 @@ Use [the budget template](template.md). A decision-ready artifact reconciles the
 
 ### When producing a visual
 
-Use the [baseline, actual and forecast comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [baseline, actual and forecast comparison](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable review workspace, read the [renderer contract](references/renderer.md) and run the offline [budget renderer](scripts/render_budget.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV. The HTML compares overlapping cost/funding views, category actuals and remaining estimates, EVM math and funding options, with validated browser-local editing, recalculation, history, undo, source restore and separate source/draft exports.
 
 ## Examples
 

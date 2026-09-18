@@ -240,7 +240,46 @@ fs.mkdirSync(output, {recursive: true});
         else assert.equal(exported.body.replace(/\r\n/g,'\n'),expected.replace(/\r\n/g,'\n'));
       }
     }
-    for (const slug of ['project-budget','benefits-realization','scope-and-wbs','stakeholder-map','risk-workshop','release-readiness']) {
+    for (const scenario of ['software','migration']) {
+      const stem=path.join(root,'skills','project-budget','examples/assets',scenario);
+      for (const [view,width,height] of [['desktop',1440,1000],['portrait',390,844],['landscape',844,390]]) {
+        await page.setViewport({width,height});
+        await page.goto(pathToFileURL(stem+'.html').href);
+        assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`budget: page overflow at ${width}`);
+        await page.type('#search','NO-MATCH-LITERAL');
+        assert.match(await page.$eval('#scope',x=>x.textContent),/0 \/ 3 cost categories/);
+        await page.click('#reset');
+        for (const tab of ['ledger','performance','funding','forecast']) {
+          await page.click('#'+tab+'Tab');
+          assert.equal(await page.$eval('#'+tab+'View',x=>getComputedStyle(x).display),'block');
+        }
+        if (scenario==='software'&&view==='desktop') {
+          assert.equal(await page.$eval('#mEac',x=>x.textContent),'120 k USD');
+          await page.click('#editToggle');
+          await page.$eval('#editEnvelope',x=>x.value='90');
+          await page.click('#saveBudget');
+          assert.match(await page.$eval('#editError',x=>x.textContent),/cannot be below BAC/i);
+          await page.$eval('#editEnvelope',x=>x.value='110');
+          await page.$eval('#editAc',x=>x.value='40');
+          await page.click('#saveBudget');
+          assert.equal(await page.$eval('#mEac',x=>x.textContent),'100 k USD');
+          assert.equal(await page.evaluate(()=>draftSnapshot().performance.ac),40);
+          await page.reload({waitUntil:'load'});
+          assert.match(await page.$eval('#scope',x=>x.textContent),/local draft active/);
+          await page.click('#undoEdit');
+          assert.equal(await page.$eval('#mEac',x=>x.textContent),'120 k USD');
+        }
+        await page.screenshot({path:path.join(output,`project-budget-${scenario}-${view}.png`)});
+        reports.push({slug:'project-budget',scenario,view,viewport:[width,height],overflow:false,editingChecked:scenario==='software'&&view==='desktop'});
+      }
+      const exports=await page.$$eval('a[download]',async els=>Promise.all(els.map(async x=>({name:x.download,body:await (await fetch(x.href)).text()}))));
+      for (const exported of exports) {
+        const ext=path.extname(exported.name),expected=fs.readFileSync(stem+ext,'utf8');
+        if(ext==='.json') assert.deepEqual(JSON.parse(exported.body),JSON.parse(expected));
+        else assert.equal(exported.body.replace(/\r\n/g,'\n'),expected.replace(/\r\n/g,'\n'));
+      }
+    }
+    for (const slug of ['benefits-realization','scope-and-wbs','stakeholder-map','risk-workshop','release-readiness']) {
       await page.setViewport({width:1120,height:760});
       await page.goto(pathToFileURL(path.join(root,'skills',slug,'examples/assets/software-visual.svg')).href);
       const overflow=await page.evaluate(()=>[...document.querySelectorAll('text')].filter(t=>{const b=t.getBBox();return b.x<0||b.x+b.width>1120||b.y+b.height>760}).map(t=>t.textContent));

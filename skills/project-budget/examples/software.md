@@ -32,6 +32,8 @@ Additional fictional ledger illustration: a 20k purchase order includes 8k alrea
 
 ## Graphical companion
 
-![Worked visual](assets/software-visual.svg)
+Open the [interactive budget workspace](assets/software.html) to compare forecast assumptions, inspect the category register, review funding options or test a validated browser-local draft.
 
-[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+![Static budget snapshot](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV register](assets/software.csv). The narrative remains the accessible decision record; the rendered files preserve its fictional cutoff and authority boundary.

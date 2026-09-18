@@ -30,3 +30,11 @@ M-CR02 on 9 November later authorizes phased scope, 28 November cutover and B2 3
 A bottom-up forecast may differ from every ratio scenario if remaining work has different economics. Explain that evidence and reconcile unspent commitments once; do not call a statistical ratio the only correct answer.
 
 **Repair:** “Only 31.25% spent, so budget is healthy” becomes “current efficiency implies a material possible overrun; reconcile the remaining estimate and obtain funding/scope decisions while preserving B1 history.”
+
+## Graphical companion
+
+Open the [interactive budget workspace](assets/migration.html) to see why the bottom-up forecast stays unavailable while vendor obligations are unknown, compare EVM scenarios and review funding or phased-scope options.
+
+![Static budget snapshot](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV register](assets/migration.csv). The graphic does not convert a forecast into authority or rewrite the later M-CR02 decision.

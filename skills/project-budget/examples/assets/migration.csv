@@ -1,0 +1,4 @@
+category_id,category,actual,committed_unspent,other_etc,known_category_total,status,source,note,currency,scale,as_of,baseline_id,bac,management_reserve,total_envelope,pv,ev,ac,ledger_difference
+MIGRATION,Migration delivery labor,45,0,135,180,proposed,Ledger N-L23 and preliminary ETC N-E4,"Includes remediation, rehearsals and transition work.",USD,k,2026-10-23,B1,240,24,264,80,60,75,0
+VENDOR,Vendor services,20,,,20,unknown,Vendor ledger requires obligation reconciliation,Unknown remaining amounts make bottom-up EAC unavailable.,USD,k,2026-10-23,B1,240,24,264,80,60,75,0
+PLATFORM,Platform and environment,10,12,8,30,proposed,Platform ledger N-P8,Restore environments remain inside the project boundary.,USD,k,2026-10-23,B1,240,24,264,80,60,75,0
