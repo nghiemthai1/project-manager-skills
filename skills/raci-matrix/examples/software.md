@@ -1,6 +1,6 @@
 # Relay: proposed RACI before baseline approval
 
-Open the **[interactive artifact](assets/software.html)**, **[SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser and coordinates matrix, row-audit and role-profile views; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/software.html)**, **[SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser, coordinates matrix, row-audit and role-profile views, and includes a browser-local cell editor with validation, undo, source restore and draft exports; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional training artifact. As of 29 September 2026, before D-001. This matrix adds proposed working assignments for discussion; it does not claim that these assignments, funding, or the 30 October target are approved. Known roles come from the scenario; detailed RACI letters below remain proposed.
 

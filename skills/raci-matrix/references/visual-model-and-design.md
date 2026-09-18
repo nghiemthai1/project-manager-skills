@@ -42,7 +42,9 @@ On portrait screens, show deliverable cards with readable role/code/state lines 
 
 ## Editing and collaboration
 
-Default to a proposed read-only artifact. If editing is requested, separate local draft edits from confirmed agreements. Validate codes and bounded-row rules, retain before/after history, and show conflicts instead of last-write-wins assumptions. Changing a cell is not evidence that the named person accepted the duty. Sending invitations or updating a tracker follows the user's actual authorization.
+Default to a proposed read-only artifact. If editing is requested, separate local draft edits from confirmed agreements. A standalone editor must expose relationship, confirmation, bounded duty and evidence as separate fields; validate the supported codes and states; require evidence for a confirmed assignment; and reset a changed confirmed relationship to proposed. Retain an immutable source snapshot plus before/after history. Mark changed cells and recalculate row audits, role profiles, metrics and filters from the draft so the surrounding analysis never goes stale.
+
+Browser-local editing supports review and handoff, not multi-user coordination. Persisting a draft in local storage, undoing it and exporting it are useful, but they do not establish that a role accepted the duty. Preserve separate source and draft exports. A collaborative implementation also needs identity, concurrency/conflict handling and an authoritative save destination; do not imply those capabilities in a standalone artifact. Sending invitations or updating a tracker follows the user's actual authorization.
 
 ## Export and review
 

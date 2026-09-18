@@ -1,6 +1,6 @@
 # Northstar: vendor delivery versus internal acceptance
 
-Open the **[interactive artifact](assets/migration.html)**, **[SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser and coordinates matrix, row-audit and role-profile views; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/migration.html)**, **[SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser, coordinates matrix, row-audit and role-profile views, and includes a browser-local cell editor with validation, undo, source restore and draft exports; GitHub's file viewer may require downloading it first. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional training artifact. Draft after M-D001 on 5 October 2026. The approved mandate exists; the detailed letters below are proposed allocations requiring role confirmation. M-D001 does not by itself approve this matrix.
 

@@ -131,7 +131,10 @@ class VisualTests(unittest.TestCase):
     def test_raci_product_views_and_export_scope_are_present(self):
         data=raci.demo();html=raci.render_html(data)
         for token in ('id="matrixTab"','id="auditTab"','id="rolesTab"','id="authority"',
-                      'id="visibleCsv"','Role profiles','other columns are hidden'):
+                      'id="visibleCsv"','id="editToggle"','id="cellEditor"','id="undoEdit"',
+                      'id="discardDraft"','id="draftJson"','id="draftCsv"',
+                      'Confirmed assignments require an evidence or source reference.',
+                      'Role profiles','other columns are hidden'):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="raci-matrix.'),3)
 

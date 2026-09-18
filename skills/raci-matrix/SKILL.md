@@ -14,7 +14,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: RACI; responsibility assignment matrix; horizontal and vertical role analysis
 domain: software-it-project-management
-version: 2.2.0
+version: 2.3.0
 license: MIT
 ---
 # RACI Matrix
@@ -79,13 +79,13 @@ Use the [matrix template](template.md). The final package should include the rea
 
 When the user wants a graphical matrix, follow [the visual model and design contract](references/visual-model-and-design.md). Keep relationship letters, narrower work duties and confirmation state separate in the data and display. Use a stable row/role grid, restrained redundant color, a visible proposed/confirmed legend and an audit register. Pair the matrix with horizontal row audit and vertical role-profile views; neither may silently rewrite the matrix. A/R counts are not utilization.
 
-Choose the output for the audience: a readable static SVG/PDF for a report, a spreadsheet for cell-based collaboration, or self-contained HTML for search, workstream and confirmation filters, role focus, row audit, role profiles and persistent cell details. Preserve a full accessible table and editable source. A phone-width view should provide deliverable/role cards or a focused slice, not tiny text. Show active filters, hidden columns and a reset; keyboard users must be able to inspect the same duties as pointer users.
+Choose the output for the audience: a readable static SVG/PDF for a report, a spreadsheet for cell-based collaboration, or self-contained HTML for search, workstream and confirmation filters, role focus, row audit, role profiles and persistent cell details. When the user asks for editable HTML, provide a browser-local draft editor that validates each cell, preserves an immutable source snapshot, records before/after history, recalculates audits and lets the user export the edited draft. Do not present a browser edit as role acceptance or a live-system assignment. Preserve a full accessible table and editable source. A phone-width view should provide deliverable/role cards or a focused slice, not tiny text. Show active filters, hidden columns and a reset; keyboard users must be able to inspect and edit the same duties as pointer users.
 
 Use [the artifact acceptance checklist](references/artifact-review.md) on actual generated files. Compare every letter, work boundary and confirmation state against the source, inspect desktop/portrait/landscape, and verify export scope. If a renderer is unavailable, label the table/source a draft rather than claim that a graphic was produced.
 
 ### Included offline renderer
 
-Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and long-form CSV with Python 3.11+ and no external packages. The HTML provides matrix, row-audit and role-profile views plus full and visible-slice exports. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a live assignment or capacity-management application.
+Use [the renderer contract](references/renderer.md) when producing a standalone artifact from normalized JSON. The included [Python helper](scripts/render_raci.py) writes self-contained HTML, a full SVG, source JSON and long-form CSV with Python 3.11+ and no external packages. The HTML provides matrix, row-audit and role-profile views, a validated browser-local cell editor with undo/source restore, immutable source downloads and full-draft or visible-slice exports. Map the supplied project data to the input contract, then inspect the actual outputs. Its supported scope is deliberately smaller than a live assignment or capacity-management application.
 
 ### Quality check before delivery
 

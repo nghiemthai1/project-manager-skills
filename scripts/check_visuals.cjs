@@ -66,6 +66,32 @@ fs.mkdirSync(output, {recursive: true});
              await page.click('#authority');
              assert.equal(await page.$eval('#authority',x=>x.getAttribute('aria-pressed')),'true');
              await page.click('#matrixTab');
+             if (scenario === 'software' && view === 'desktop') {
+               await page.click('#reset');
+               await page.click('#editToggle');
+               await page.click('#matrixView .cell[data-row-id="R-5"][data-role-id="Ada"]');
+               await page.select('#editState','confirmed');
+               await page.$eval('#editSource',x=>x.value='');
+               await page.click('#saveCell');
+               assert.match(await page.$eval('#editError',x=>x.textContent),/require an evidence/i);
+               assert.equal(await page.$eval('#editState',x=>x.value),'confirmed');
+               await page.select('#editCode','A');
+               await page.select('#editState','confirmed');
+               await page.$eval('#editNote',x=>x.value='Sponsor supplies a second approval');
+               await page.$eval('#editSource',x=>x.value='D-EDITOR-QA');
+               await page.click('#saveCell');
+               assert.equal(await page.$eval('#matrixView .cell[data-row-id="R-5"][data-role-id="Ada"] b',x=>x.textContent),'A');
+               assert.equal(await page.$eval('#matrixView .cell[data-row-id="R-5"][data-role-id="Ada"]',x=>x.classList.contains('edited')),true);
+               assert.equal(await page.$eval('.metric[data-metric="confirmed cells"] b',x=>x.textContent),'1');
+               assert.match(await page.$eval('#auditView [data-audit-row="R-5"]',x=>x.textContent),/2 A assignments/);
+               assert.deepEqual(await page.evaluate(()=>({code:draftSnapshot().rows.find(row=>row.id==='R-5').cells.Ada.code,changed:draftSnapshot().local_draft.changed_cells})),{code:'A',changed:1});
+               await page.reload({waitUntil:'load'});
+               assert.equal(await page.$eval('#matrixView .cell[data-row-id="R-5"][data-role-id="Ada"] b',x=>x.textContent),'A');
+               await page.click('#undoEdit');
+               assert.equal(await page.$eval('#matrixView .cell[data-row-id="R-5"][data-role-id="Ada"] b',x=>x.textContent),'I');
+               assert.match(await page.$eval('#scope',x=>x.textContent),/No local draft changes/);
+               assert.equal(await page.$eval('.metric[data-metric="confirmed cells"] b',x=>x.textContent),'0');
+             }
            } else {
             const focused = await page.$eval('[data-detail]:focus',x=>x.dataset.taskId);
             await page.keyboard.press('ArrowDown');

@@ -17,5 +17,10 @@ Use this checklist on the generated files, not only the source template.
 - Static export repeats title/legend/confirmation caveats and does not include inactive UI controls.
 - Editable source and long-form cell data accompany graphics, allowing regeneration and evidence review.
 - Full SVG/JSON/CSV exports retain the complete snapshot; any visible-slice export reflects and labels the active row and role filters.
+- The editor exposes relationship, confirmation, bounded duty and evidence; invalid confirmation is rejected without erasing unsaved form values.
+- A saved edit marks the cell and immediately recalculates metrics, horizontal findings, vertical role profiles and active-filter metadata.
+- Reload persistence, sequential undo and complete source restore behave as labeled and never rewrite the embedded source snapshot.
+- Source, full-draft and visible-draft exports are visibly distinct and contain the promised scope; draft JSON records its base version and edit history.
+- Browser-local edits are not described as multi-user acceptance, notification, tracker writeback or live assignment.
 
 Record actual render dimensions, browser/tool, tested controls and known limits. A successful screenshot is evidence for the inspected viewport only, not proof of every client, spreadsheet importer or assistive technology.
