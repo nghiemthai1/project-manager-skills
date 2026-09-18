@@ -46,7 +46,7 @@
   },
   {
     "skill": "raci-matrix",
-    "route": "Dedicated matrix, row-audit and role-profile workflow with evidence details and offline renderer",
+    "route": "Dedicated matrix, row-audit and role-profile workflow with evidence details, browser-local cell editing and offline renderer",
     "reference": "references/renderer.md"
   },
   {
@@ -96,8 +96,8 @@
   },
   {
     "skill": "dependency-map",
-      "route": "Dedicated provider-to-receiver graph, DSM, evidence register and offline renderer",
-    "reference": "references/visual-artifact.md"
+    "route": "Dedicated provider-to-receiver graph, DSM, evidence register, validated browser-local dependency editing and offline renderer",
+    "reference": "references/renderer.md"
   },
   {
     "skill": "resource-capacity-plan",

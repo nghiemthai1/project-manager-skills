@@ -47,6 +47,35 @@ fs.mkdirSync(output, {recursive: true});
             await page.click('#graphTab');
             await page.click('#links');
             assert.ok(await page.$$eval('.dim',x=>x.length) > 0);
+            if (scenario === 'software' && view === 'desktop') {
+              await page.click('#reset');
+              await page.click('#editToggle');
+              await page.click('#register tr[data-dependency-id="DEP-AUDIT"]');
+              await page.select('#editReceiver','PLATFORM');
+              await page.click('#saveDependency');
+              assert.match(await page.$eval('#editError',x=>x.textContent),/different nodes/i);
+              assert.equal(await page.$eval('#editReceiver',x=>x.value),'PLATFORM');
+              await page.select('#editReceiver','INTEGRATION');
+              await page.$eval('#editCommitted',x=>x.value='2026-10-21');
+              await page.click('#saveDependency');
+              assert.match(await page.$eval('#editError',x=>x.textContent),/requires commitment evidence/i);
+              await page.$eval('#editCommitted',x=>x.value='');
+              await page.select('#editProvider','SECURITY');
+              await page.$eval('#editForecast',x=>x.value='2026-10-20');
+              await page.click('#saveDependency');
+              assert.match(await page.$eval('#detailSummary',x=>x.textContent),/directed cycle/i);
+              assert.equal(await page.$eval('#register tr[data-dependency-id="DEP-AUDIT"]',x=>x.classList.contains('edited-row')),true);
+              assert.match(await page.$eval('#register tr[data-dependency-id="DEP-AUDIT"]',x=>x.textContent),/Security → Integration team/);
+              assert.equal(await page.$eval('.metric[data-metric="known date gap"] b',x=>x.textContent),'none');
+              assert.deepEqual(await page.evaluate(()=>({provider:draftSnapshot().dependencies.find(d=>d.id==='DEP-AUDIT').provider,changed:draftSnapshot().local_draft.changed_dependencies})),{provider:'SECURITY',changed:1});
+              await page.reload({waitUntil:'load'});
+              assert.equal(await page.$eval('#register tr[data-dependency-id="DEP-AUDIT"]',x=>x.classList.contains('edited-row')),true);
+              assert.match(await page.$eval('#register tr[data-dependency-id="DEP-AUDIT"]',x=>x.textContent),/Security → Integration team/);
+              await page.click('#undoEdit');
+              assert.match(await page.$eval('#register tr[data-dependency-id="DEP-AUDIT"]',x=>x.textContent),/Platform team → Integration team/);
+              assert.match(await page.$eval('#count',x=>x.textContent),/no local draft changes/);
+              assert.equal(await page.$eval('.metric[data-metric="known date gap"] b',x=>x.textContent),'−2 days');
+            }
           } else {
             await page.type('#search','NO-MATCH-LITERAL');
             assert.match(await page.$eval('#scope',x=>x.textContent), /^0 \//);

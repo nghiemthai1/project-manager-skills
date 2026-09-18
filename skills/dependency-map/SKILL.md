@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Dependency network; interface agreements; local margin; dependency structure matrix; Conway's Law; CPM boundary
 domain: software-it-project-management
-version: 2.2.0
+version: 2.3.0
 license: MIT
 ---
 # Dependency Map
@@ -92,7 +92,7 @@ python scripts/render_dependency_map.py input.json --output dependency-network
 python scripts/render_dependency_map.py --demo --output dependency-network
 ```
 
-The command writes self-contained HTML, static SVG, normalized JSON and spreadsheet-safe CSV. Use the HTML for graph selection, filters, zoom, a DSM view, persistent evidence details, visible-row CSV and print/PDF. The permanent SVG/JSON/CSV files represent the full supplied snapshot.
+The command writes self-contained HTML, static SVG, normalized JSON and spreadsheet-safe CSV. Use the HTML for graph selection, filters, zoom, a DSM view, persistent evidence details, browser-local dependency editing, visible-row CSV and print/PDF. The editor validates endpoints, dates and commitment evidence; retains cycles for review; recalculates the graph, DSM, register and local metrics; and keeps undoable draft history in that browser. Source exports remain immutable, while separate draft exports disclose their source basis and analysis status.
 
 ## Examples
 

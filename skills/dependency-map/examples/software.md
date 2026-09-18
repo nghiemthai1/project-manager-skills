@@ -33,7 +33,7 @@ Keep the original forecast and any later revisions. Mark delivered when the defi
 
 ## Interactive dependency companion
 
-[Open the offline dependency explorer](assets/software.html) for the provider-to-receiver graph, DSM matrix, filters, selected handoff evidence, responsive register, visible-slice CSV and print/PDF view.
+[Open the offline dependency explorer](assets/software.html) for the provider-to-receiver graph, DSM matrix, filters, selected handoff evidence, responsive register, browser-local dependency editing, undoable draft history, source/draft exports, visible-slice CSV and print/PDF view. The editor rejects self-links and unsupported commitment claims, keeps directed cycles visible for review, and leaves the supplied source files unchanged.
 
 ![Relay dependency network](assets/software.svg)
 

@@ -158,6 +158,19 @@ class VisualTests(unittest.TestCase):
         data=raci.demo();del data['rows'][0]['cells']['OPS']
         with self.assertRaises(ValueError):raci.validate(data)
 
+    def test_dependency_product_views_and_local_editor_are_present(self):
+        data=dependency.demo();html=dependency.render_html(data)
+        for token in ('id="graphTab"','id="matrixTab"','id="dependencyEditor"',
+                      'id="editToggle"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="editProvider"',
+                      'id="editReceiver"','id="editForecast"',
+                      'Provider and receiver must be different nodes.',
+                      'A committed date requires commitment evidence.',
+                      'function draftSnapshot()','changed_dependencies',
+                      'directed cycle retained for review'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="dependency-network.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
         for module in (gantt,raci,dependency):
             data=module.demo();data['title']='</script><script>alert(1)</script>'

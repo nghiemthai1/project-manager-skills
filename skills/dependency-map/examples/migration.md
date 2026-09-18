@@ -32,7 +32,7 @@ M-CR02 on 9 November later authorizes a phased plan. Keep that approval separate
 
 ## Interactive dependency companion
 
-[Open the offline dependency explorer](assets/migration.html) to inspect the provider-to-receiver graph, repeated vendor seam in the DSM, evidence details, filters, responsive register, visible-slice CSV and print/PDF view.
+[Open the offline dependency explorer](assets/migration.html) to inspect the provider-to-receiver graph, repeated vendor seam in the DSM, evidence details, filters, responsive register, browser-local dependency editing, undoable draft history, separate source/draft exports, visible-slice CSV and print/PDF view. Saved local changes recalculate the graph, DSM, register and metrics without rewriting the supplied snapshot.
 
 ![Northstar dependency network](assets/migration.svg)
 
