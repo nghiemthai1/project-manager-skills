@@ -1,0 +1,146 @@
+{
+  "title": "Relay capacity decision",
+  "version": "1.0",
+  "as_of": "2026-10-16",
+  "source": "Fictional Relay capacity exercise; examples/software.md",
+  "scope": "19–30 October 2026; Omar and Lena; known Relay and support demand",
+  "state": "proposed planning case",
+  "period": "19–30 October 2026",
+  "unit": "hours",
+  "people": [
+    {
+      "id": "OMAR",
+      "name": "Omar",
+      "role": "Integration engineer",
+      "skills": ["integration engineering", "production support"],
+      "gross_hours": 80,
+      "leave_hours": 8,
+      "overhead_hours": 16,
+      "availability_state": "confirmed",
+      "availability_source": "Fictional team calendar snapshot C-14",
+      "timing_note": "The period total still requires a daily concurrency check for pilot and support windows.",
+      "source": "Fictional capacity record C-14",
+      "allocations": [
+        {
+          "id": "REL-OMAR",
+          "work": "Relay delivery",
+          "skill": "integration engineering",
+          "window": "19–30 Oct",
+          "hours": 48,
+          "status": "proposed",
+          "source": "Relay estimate E-8",
+          "note": "Includes integration and pilot preparation."
+        },
+        {
+          "id": "SUP-OMAR",
+          "work": "Support rotation",
+          "skill": "production support",
+          "window": "19–30 Oct",
+          "hours": 16,
+          "status": "confirmed",
+          "source": "Support rota S-4",
+          "note": "Counted as demand and excluded from overhead."
+        }
+      ]
+    },
+    {
+      "id": "LENA",
+      "name": "Lena",
+      "role": "Security engineer",
+      "skills": ["security assurance"],
+      "gross_hours": 40,
+      "leave_hours": 0,
+      "overhead_hours": 8,
+      "availability_state": "confirmed",
+      "availability_source": "Fictional team calendar snapshot C-14",
+      "timing_note": "No evidence establishes that security capacity can perform Omar's integration work.",
+      "source": "Fictional capacity record C-14",
+      "allocations": [
+        {
+          "id": "REL-LENA",
+          "work": "Relay security review",
+          "skill": "security assurance",
+          "window": "19–30 Oct",
+          "hours": 20,
+          "status": "proposed",
+          "source": "Relay estimate E-8",
+          "note": "The bounded exercise supplies no additional Lena demand."
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "id": "CON-OMAR",
+      "person_id": "OMAR",
+      "work": "Relay pilot and support rotation",
+      "skill": "integration engineering and production support",
+      "window": "19–30 Oct; daily overlap not yet resolved",
+      "conflict": "Omar has 64 known demand hours against 56 modeled available hours.",
+      "consequence": "The pilot is not staffed under the supplied case even though the team total has four spare hours.",
+      "status": "open",
+      "source": "C-14, E-8 and S-4"
+    },
+    {
+      "id": "CON-SKILL",
+      "person_id": "LENA",
+      "work": "Potential substitution for Omar",
+      "skill": "integration engineering",
+      "window": "19–30 Oct",
+      "conflict": "Lena's supplied skill is security assurance; no integration-engineering competence or handoff is evidenced.",
+      "consequence": "Her 12 spare hours cannot be assigned to the bottleneck by arithmetic.",
+      "status": "open",
+      "source": "Supplied fictional role and skill records"
+    }
+  ],
+  "options": [
+    {
+      "id": "OPT-COVER",
+      "label": "Transfer qualified support coverage",
+      "hours_timing_changed": "Move 8 support hours from Omar during the stated period.",
+      "skill_basis": "A named recipient must be competent and available in the support window.",
+      "effect": "Omar reaches 56 known demand hours; another person's load must be recalculated.",
+      "authority": "Support owner and relevant resource manager",
+      "status": "proposed",
+      "recalculated_result": "Omar remaining becomes 0 hours if the transfer is approved.",
+      "note": "No recipient or approval is assumed."
+    },
+    {
+      "id": "OPT-DEFER",
+      "label": "Defer eligible Relay work",
+      "hours_timing_changed": "Move 8 hours of non-mandatory Relay work beyond 30 October.",
+      "skill_basis": "No substitution required; acceptance work must remain intact.",
+      "effect": "May move the pilot finish or reduce period scope.",
+      "authority": "Product owner and delivery sponsor",
+      "status": "open",
+      "recalculated_result": "Omar remaining becomes 0 hours; schedule impact remains to be modeled.",
+      "note": "This is not approval to remove required acceptance."
+    },
+    {
+      "id": "OPT-HELP",
+      "label": "Add integration-capable help",
+      "hours_timing_changed": "Transfer a bounded part of Relay integration work.",
+      "skill_basis": "Named integration skill, access, start date and supervision effort required.",
+      "effect": "Can reduce Omar's demand only by the net productive contribution.",
+      "authority": "Resource manager and technical lead",
+      "status": "open",
+      "recalculated_result": "Not calculable until the person, hours and supervision cost are known.",
+      "note": "Headcount alone is not capacity."
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Capacity decision",
+    "headline": "Four spare hours still leave an eight-hour shortage",
+    "lede": "Compare capacity person by person. Team totals cannot transfer a skill or erase a timed bottleneck.",
+    "default_person_id": "OMAR",
+    "insight_heading": "Aggregate balance is not feasibility",
+    "insight_points": ["Omar is eight hours overloaded.", "Lena has 12 spare hours in a different skill."],
+    "decision": "Confirm a qualified coverage, scope or sequence decision for Omar's eight-hour shortage, then recalculate the affected people and schedule."
+  },
+  "analysis": {
+    "method": "Known person-level allocation demand compared with gross hours less leave and overhead; overloads are never netted across people.",
+    "support_treatment": "Support is an allocation and is not deducted again as overhead.",
+    "completeness": "Fictional bounded exercise; the stated zero additional Lena demand is supplied only for this case."
+  },
+  "notes": ["Fictional instructional data; no staffing commitment or authority is inferred."]
+}

@@ -24,11 +24,13 @@ def load(slug, filename):
 gantt = load('gantt-chart', 'render_gantt.py')
 raci = load('raci-matrix', 'render_raci.py')
 dependency = load('dependency-map', 'render_dependency_map.py')
+capacity = load('resource-capacity-plan', 'render_capacity.py')
 
 
 class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
-        for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency)]:
+        for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
+                             ('resource-capacity-plan', capacity)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -184,12 +186,42 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="dependency-network.'),3)
 
+    def test_capacity_preserves_individual_overload_and_unknown_demand(self):
+        data=capacity.demo();original=copy.deepcopy(data)
+        totals=capacity.summary(data)
+        self.assertEqual(totals['available_hours'],88)
+        self.assertEqual(totals['known_demand_hours'],84)
+        self.assertEqual(totals['person_overload_hours'],8)
+        self.assertEqual(capacity.person_result(data['people'][0])['overload_hours'],8)
+        data['people'][1]['allocations'].append({'id':'A-4','work':'Unbounded support','skill':'security assurance',
+            'window':'19–30 Oct','hours':None,'status':'unknown','source':'Demand exists; hours not bounded','note':''})
+        self.assertEqual(capacity.person_result(data['people'][1])['unknown_allocations'],1)
+        self.assertEqual(capacity.person_result(data['people'][1])['known_demand_hours'],20)
+        self.assertEqual(original['people'][0]['allocations'][0]['hours'],48)
+
+    def test_capacity_validation_and_local_editor_are_present(self):
+        data=capacity.demo();data['people'][0]['leave_hours']=81
+        with self.assertRaises(ValueError): capacity.validate(data)
+        data=capacity.demo();data['people'][0]['allocations'][0].update(status='unknown',hours=4)
+        with self.assertRaises(ValueError): capacity.validate(data)
+        data=capacity.demo();html=capacity.render_html(data)
+        for token in ('id="chartTab"','id="tableTab"','id="constraintsTab"','id="optionsTab"',
+                      'id="personEditor"','id="editToggle"','id="allocationEditor"',
+                      'id="addAllocation"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'Unknown allocations must leave hours blank.',
+                      'function draftSnapshot()','changed_people',
+                      'Arithmetic recalculated; source exports remain unchanged.'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="capacity-plan.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency):
+        for module in (gantt,raci,dependency,capacity):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
-            else: data['dependencies'][0]['handoff']='=WEBSERVICE("example")'
+            elif module is dependency: data['dependencies'][0]['handoff']='=WEBSERVICE("example")'
+            else: data['people'][0]['name']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -197,7 +229,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency):
+            for module in (gantt,raci,dependency,capacity):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

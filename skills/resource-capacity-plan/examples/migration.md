@@ -30,3 +30,11 @@ The separate instructional schedule has mapping validation and restore-environme
 Record the current case as resource-constrained and the support-transfer case as proposed. Recalculate after actual availability or scope changes; retain the earlier data rather than making the old plan appear feasible retrospectively.
 
 **Repair:** “Use the vendor for the remaining four hours” invents skill, capacity and permission. Obtain those facts or change demand/sequence through the appropriate decision.
+
+## Graphical companion
+
+Open the [interactive capacity workspace](assets/migration.html) to compare the known weekly load, inspect Ari's unknown incident demand, review timing/skill conflicts and test a browser-local draft without changing the source.
+
+![Static capacity snapshot](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV register](assets/migration.csv). The graphic is a decision aid; the example narrative retains the method and authority boundary.

@@ -31,6 +31,8 @@ These are what-if scenarios, not decisions. Mina must resolve the actual constra
 
 ## Graphical companion
 
-![Worked visual](assets/software-visual.svg)
+Open the [interactive capacity workspace](assets/software.html) to filter, inspect or create a validated browser-local draft. The source snapshot stays immutable and timing/skill evidence remains visibly separate from arithmetic.
 
-[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+![Static capacity snapshot](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV register](assets/software.csv). The preceding tables and explanation remain the accessible narrative; the rendered files preserve their fictional scope and cutoff.

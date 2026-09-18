@@ -7,6 +7,7 @@
 - Rebuilt both Gantt examples as responsive offline schedule explorers with phase-grouped rows, sticky date/task panes, dynamic dependency redraw, selected-chain highlighting, persistent evidence details, phase/owner/search filters, critical-only review, comparison/link toggles, zoom, validated browser-local task editing, conflict diagnostics, history/undo/source restore, separate source/full-draft/visible-draft exports, and print/PDF context.
 - Rebuilt `dependency-map` around provider-to-receiver interface agreements, transparent coordination ordering, DSM/Conway diagnosis and an explicit CPM boundary; added an offline graph/DSM/register renderer with responsive interaction, validated browser-local dependency editing, history/undo/source restore, distinct source/draft/filtered exports, and rebuilt Relay/Northstar examples.
 - Rebuilt `raci-matrix` as a responsive responsibility-control workspace with matrix, horizontal audit and vertical role-profile views, evidence-aware assignment detail, declared review thresholds, immutable source exports, editable local drafts with validation/history/undo, full and visible-slice draft exports, and redesigned Relay/Northstar examples.
+- Rebuilt `resource-capacity-plan` as a responsive person-level capacity workspace with stacked allocation demand, availability markers, explicit unknown work, skill/timing checks, conditional decision options, validated browser-local person/allocation editing, recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 
 ## 2.0.0
 

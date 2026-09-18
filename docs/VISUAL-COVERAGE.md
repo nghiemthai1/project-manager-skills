@@ -24,7 +24,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [gantt-chart](../skills/gantt-chart/SKILL.md) | Full Gantt design, source-ingestion, responsive/accessibility workflow and offline renderer with validated browser-local task editing, conflict diagnostics, history, undo, source restore and source/draft exports |
 | [integrated-project-planning](../skills/integrated-project-planning/references/visual-artifact.md) | Linked baseline review pack |
 | [dependency-map](../skills/dependency-map/references/visual-artifact.md) | Dedicated provider-to-receiver graph, DSM, evidence register and offline renderer with validated browser-local dependency editing, history, undo, source restore and separate source/draft exports |
-| [resource-capacity-plan](../skills/resource-capacity-plan/references/visual-artifact.md) | Per-person demand versus availability |
+| [resource-capacity-plan](../skills/resource-capacity-plan/references/renderer.md) | Dedicated per-person load chart, capacity register, timing/skill checks and decision-option workspace with validated browser-local person/allocation editing |
 | [project-budget](../skills/project-budget/references/visual-artifact.md) | Baseline, actual and forecast comparison |
 | [vendor-procurement](../skills/vendor-procurement/references/visual-artifact.md) | Deliverable and acceptance matrix |
 | [quality-management-plan](../skills/quality-management-plan/references/visual-artifact.md) | Assurance and evidence coverage matrix |

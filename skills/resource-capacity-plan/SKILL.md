@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Capacity-demand analysis; skill constraints; resource leveling options
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Resource Capacity Plan
@@ -72,7 +72,7 @@ Use [the capacity template](template.md). Quality means the reader can find the 
 
 ### When producing a visual
 
-Use the [per-person demand versus availability](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [per-person demand versus availability](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable review workspace, read the [renderer contract](references/renderer.md) and run the offline [capacity renderer](scripts/render_capacity.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV. The HTML supports filters, person/allocation inspection, timing and skill checks, decision options, and validated browser-local editing with history, undo, source restore and separate source/draft exports. Preserve the project source's evidence and uncertainty in every format.
 
 ## Examples
 
