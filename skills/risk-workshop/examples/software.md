@@ -23,6 +23,8 @@ Later chronology is separate: Lena's 28 October rejection concerns missing recov
 
 ## Graphical companion
 
-![Worked visual](assets/software-visual.svg)
+Open the [interactive risk workshop](assets/software.html) to inspect the unknown exposure lane, full register, response mechanisms and chronology or create a validated browser-local draft.
 
-[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+![Static risk and control register](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV risk register](assets/software.csv). The preceding tables and explanation remain the full accessible record; the visual preserves their fictional scope and cutoff.

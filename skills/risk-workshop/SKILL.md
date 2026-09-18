@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: Premortem; probability-impact matrix; response planning; residual risk
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # Risk Workshop
@@ -86,7 +86,7 @@ Use the [workshop template](template.md) to capture question/answer context, ris
 
 ### When producing a visual
 
-Use the [risk exposure and control map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [risk exposure and control map](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable workshop workspace, read the [renderer contract](references/renderer.md) and run the offline [risk renderer](scripts/render_risk_workshop.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV with exposure/unknown, register, response-chain and chronology views plus validated browser-local risk editing, priority recalculation, history, undo, source restore and separate source/draft exports.
 
 ## Examples
 

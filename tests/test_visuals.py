@@ -28,13 +28,15 @@ capacity = load('resource-capacity-plan', 'render_capacity.py')
 budget = load('project-budget', 'render_budget.py')
 milestone = load('milestone-schedule', 'render_milestone.py')
 readiness = load('release-readiness', 'render_readiness.py')
+risk_workshop = load('risk-workshop', 'render_risk_workshop.py')
 
 
 class VisualTests(unittest.TestCase):
     def test_generated_examples_match_source(self):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
                              ('resource-capacity-plan', capacity), ('project-budget', budget),
-                             ('milestone-schedule', milestone), ('release-readiness', readiness)]:
+                             ('milestone-schedule', milestone), ('release-readiness', readiness),
+                             ('risk-workshop', risk_workshop)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -271,8 +273,22 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="release-readiness.'),3)
 
+    def test_risk_workshop_preserves_unknowns_and_response_authority(self):
+        data=risk_workshop.demo();summary=risk_workshop.assessment(data)
+        self.assertEqual(summary['priority'],['R-1'])
+        self.assertEqual(summary['scores']['R-1']['inherent'],12)
+        data['scale']['enabled']=False
+        with self.assertRaises(ValueError):risk_workshop.validate(data)
+        html=risk_workshop.render_html(risk_workshop.demo())
+        for token in ('id="exposureTab"','id="registerTab"','id="responseTab"','id="evidenceTab"',
+                      'id="riskEditor"','id="editStrategy"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'Acceptance requires named residual-risk authority.','function draftSnapshot()','changed_risks'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="risk-workshop.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness):
+        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
@@ -280,7 +296,8 @@ class VisualTests(unittest.TestCase):
             elif module is capacity: data['people'][0]['name']='=WEBSERVICE("example")'
             elif module is budget: data['categories'][0]['label']='=WEBSERVICE("example")'
             elif module is milestone: data['tasks'][0]['label']='=WEBSERVICE("example")'
-            else: data['gates'][0]['label']='=WEBSERVICE("example")'
+            elif module is readiness: data['gates'][0]['label']='=WEBSERVICE("example")'
+            else: data['risks'][0]['title']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -288,7 +305,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness):
+            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

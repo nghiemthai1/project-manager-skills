@@ -1,0 +1,127 @@
+{
+  "title": "Northstar - migration risk workshop",
+  "version": "1.0",
+  "as_of": "2026-10-23",
+  "source": "Fictional Northstar workshop record and supplied chronology",
+  "scope": "B1 cutover commitment - relationship integrity and recoverability",
+  "state": "proposed response record; no numeric assessment or accepted ownership",
+  "decision_boundary": "Whether current evidence supports committing to the 21 November B1 cutover",
+  "scale": {
+    "enabled": false,
+    "id": "No agreed scale",
+    "max_rating": 4,
+    "likelihood_labels": [
+      "category 1",
+      "category 2",
+      "category 3",
+      "category 4"
+    ],
+    "impact_labels": [
+      "category 1",
+      "category 2",
+      "category 3",
+      "category 4"
+    ],
+    "likelihood_basis": "No assessed probabilities or agreed likelihood scale were supplied",
+    "impact_basis": "Objective consequences are described directly without an invented ordinal placement",
+    "score_warning": "No score is calculated; distinct evidence mechanisms remain separate",
+    "tolerance_source": "Northstar B1 decision boundary in migration.md"
+  },
+  "risks": [
+    {
+      "id": "M-R01",
+      "title": "Attachment relationships may be incorrect",
+      "type": "threat",
+      "status": "hypothesis",
+      "cause": "Inconsistent identifiers may break attachment-to-ticket mapping",
+      "event": "Migrated attachments link to the wrong ticket or lose their relationship",
+      "effect": "Accepted records are not usable despite apparently complete counts",
+      "likelihood": null,
+      "impact": null,
+      "proximity": "before B1 commitment and rehearsal",
+      "confidence": "unknown",
+      "mandatory_condition": false,
+      "existing_control": "Supplier mapping work and count reconciliation",
+      "evidence": "Population-wide linkage result and justified coverage strategy are not supplied",
+      "evidence_ref": "",
+      "response_strategy": "investigate",
+      "preventive_response": "Perform representative relationship checks with a justified coverage strategy and Saira review",
+      "owner": "Chen with Beck; capacity and acceptance to confirm",
+      "ownership_state": "proposed",
+      "trigger": "Reproduced relationship errors, missing test inputs or no viable review window",
+      "contingency": "Open a linked issue, correct the mapping and retest affected relationships before decision",
+      "residual_likelihood": null,
+      "residual_impact": null,
+      "residual_authority": "",
+      "next_review": "",
+      "source": "migration.md - guided workshop",
+      "note": "This is not an observed failure at the 23 October cutoff."
+    },
+    {
+      "id": "M-R02",
+      "title": "Restore may not produce a usable service",
+      "type": "threat",
+      "status": "hypothesis",
+      "cause": "The actual restore scenario and environment have not been demonstrated",
+      "event": "Cutover failure cannot be recovered within the usable-service boundary",
+      "effect": "Support lacks a usable service and business disruption continues",
+      "likelihood": null,
+      "impact": null,
+      "proximity": "before cutover go decision",
+      "confidence": "unknown",
+      "mandatory_condition": true,
+      "existing_control": "Recovery planning exists",
+      "evidence": "No applicable restore demonstration is supplied at the workshop cutoff",
+      "evidence_ref": "",
+      "response_strategy": "investigate",
+      "preventive_response": "Define the restore scenario and environment, execute it and obtain the required review",
+      "owner": "Technical performer to confirm; Rosa supplies service requirements",
+      "ownership_state": "proposed",
+      "trigger": "Restore fails, test inputs are unavailable or review capacity disappears",
+      "contingency": "Keep hold or replan available, correct and retest before requesting go",
+      "residual_likelihood": null,
+      "residual_impact": null,
+      "residual_authority": "",
+      "next_review": "",
+      "source": "migration.md - guided workshop",
+      "note": "Supplier obligation does not remove residual business exposure."
+    }
+  ],
+  "events": [
+    {
+      "id": "EV-01",
+      "date": "2026-10-23",
+      "label": "Workshop cutoff",
+      "state": "Both records are hypotheses; no later issue or failed restore is known",
+      "source": "migration.md"
+    },
+    {
+      "id": "EV-02",
+      "date": "2026-11-06",
+      "label": "M-I002 records lost links",
+      "state": "Later observed issue links to M-R01 without rewriting its earlier status",
+      "source": "Supplied later chronology"
+    },
+    {
+      "id": "EV-03",
+      "date": "2026-11-25",
+      "label": "Restore demonstration fails",
+      "state": "Later gate failure updates recovery evidence in a later snapshot",
+      "source": "Supplied later chronology"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Migration risk control",
+    "headline": "Separate relationship integrity from recovery",
+    "lede": "Two distinct failure mechanisms need distinct evidence, owners, triggers and decisions.",
+    "default_risk_id": "M-R01",
+    "decision": "Obtain relationship checks and a separate restore demonstration before commitment; keep hold or replan available if required proof is absent."
+  },
+  "analysis": {
+    "method": "Independent premortem input is consolidated into cause-event-effect records and challenged with present evidence before response selection.",
+    "scoring_boundary": "No agreed matrix or assessed values were supplied; both risks stay in the unknown lane and later incidents do not create backdated probabilities.",
+    "authority_boundary": "The workshop proposes Chen, Beck and Rosa roles but does not confirm capacity, transfer business exposure or issue Noel's cutover decision.",
+    "review_rule": "Revisit on relationship findings, restore results, accepted owners, material scope change or loss of a viable review window.",
+    "priority_threshold": 9
+  }
+}

@@ -29,7 +29,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [vendor-procurement](../skills/vendor-procurement/references/visual-artifact.md) | Deliverable and acceptance matrix |
 | [quality-management-plan](../skills/quality-management-plan/references/visual-artifact.md) | Assurance and evidence coverage matrix |
 | [raid-log](../skills/raid-log/references/visual-artifact.md) | Exception board with optional risk grid |
-| [risk-workshop](../skills/risk-workshop/references/visual-artifact.md) | Risk exposure and control map |
+| [risk-workshop](../skills/risk-workshop/references/renderer.md) | Dedicated exposure/unknown, register, response-chain and chronology workspace with validated browser-local editing |
 | [status-report](../skills/status-report/references/visual-artifact.md) | Evidence-based status dashboard |
 | [decision-log](../skills/decision-log/references/visual-artifact.md) | Decision chronology or option map |
 | [escalation-brief](../skills/escalation-brief/references/visual-artifact.md) | Decision options comparison |

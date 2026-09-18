@@ -19,3 +19,11 @@ The response record requests accepted owners, capacity, validation populations a
 Later evidence demonstrates why history matters: M-I002 on 6 November records actual lost links and links to M-R01; the 25 November restore failure is a different gate problem. Those later records update the control view without rewriting this earlier uncertainty.
 
 **Repair:** “Vendor owns everything; green” loses both acceptance and contingency. Keep the two response mechanisms, current evidence gaps and actual decision boundaries visible.
+
+## Graphical companion
+
+Open the [interactive risk workshop](assets/migration.html) to inspect relationship and recovery mechanisms, response chains and later evidence without backdating it.
+
+![Static risk and control register](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV risk register](assets/migration.csv).
