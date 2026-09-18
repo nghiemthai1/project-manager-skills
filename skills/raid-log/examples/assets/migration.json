@@ -1,0 +1,161 @@
+{
+  "title": "Northstar - RAID transition register",
+  "version": "1.0",
+  "as_of": "2026-11-06",
+  "source": "Fictional Northstar rehearsal record and supplied chronology",
+  "scope": "Attachment relationship migration at the 6 November rehearsal cutoff",
+  "state": "risk materialized; linked issue open; dependency acceptance unknown",
+  "decision_boundary": "Investigate and retest the observed failure while actual authorities decide disposition, escalation and any prospective baseline change.",
+  "risk_scale": {
+    "enabled": false,
+    "id": "No agreed scale",
+    "max_rating": 4,
+    "likelihood_basis": "No assessed probability or agreed ordinal likelihood scale was supplied.",
+    "impact_basis": "Relationship correctness and acceptance consequences are described directly.",
+    "score_warning": "No score is calculated; materialization, open issue state and dependency variance drive attention.",
+    "tolerance_source": "Northstar migration boundary in migration.md"
+  },
+  "items": [
+    {
+      "id": "M-R01",
+      "type": "risk",
+      "title": "Attachment identifiers may break relationships",
+      "status": "materialized",
+      "statement": "Inconsistent attachment identifiers may break ticket relationships.",
+      "objective": "Preserve correct attachment relationships through migration",
+      "owner": "Chen coordinates analysis",
+      "ownership_state": "confirmed",
+      "evidence": "The 6 November rehearsal reproduces missing links; exact population and configuration are not supplied.",
+      "evidence_ref": "",
+      "action": "Link the observed population to M-I002 and specify any remaining uncertain populations or conditions.",
+      "next_review": "",
+      "closure_test": "Observed failure remains in M-I002; remaining bounded uncertainty is retired only by applicable evidence or authorized disposition.",
+      "transition": "M-I002 records the observed failure while M-R01 preserves the earlier warning and any residual uncertainty.",
+      "linked_ids": [
+        "M-I002",
+        "M-DEP01"
+      ],
+      "mandatory_condition": true,
+      "details": {
+        "cause": "Attachment identifiers may be inconsistent across source and target.",
+        "event": "Ticket-to-attachment relationships do not survive migration.",
+        "effect": "Migrated records lose required links and cannot meet acceptance.",
+        "likelihood": null,
+        "impact": null,
+        "response": "Characterize the affected population and verify corrected mapping behavior.",
+        "trigger": "A rehearsal reproduces missing relationships.",
+        "contingency": "Correct the mapping, retest the agreed population and escalate if credible recovery cannot support the baseline.",
+        "residual_authority": ""
+      },
+      "source": "migration.md - M-R01 history",
+      "note": "Materialized does not mean all populations are known or the historical risk should be renamed."
+    },
+    {
+      "id": "M-I002",
+      "type": "issue",
+      "title": "Lost attachment links observed",
+      "status": "investigating",
+      "statement": "Lost attachment links were observed in the 6 November rehearsal.",
+      "objective": "Demonstrate correct relationships for the agreed migration population",
+      "owner": "Chen coordinates; Beck supplier commitment to confirm",
+      "ownership_state": "proposed",
+      "evidence": "Missing links are reproduced; expected versus observed links, exact count, configuration and evidence-file reference are absent.",
+      "evidence_ref": "",
+      "action": "Capture expected and observed links, affected population, mapping version and reproduction conditions, then correct and retest.",
+      "next_review": "",
+      "closure_test": "Corrected relationships are demonstrated for the agreed population with applicable evidence and business acceptance, or an authorized disposition is recorded.",
+      "transition": "A supplier patch remains proposed until applicable retest and acceptance evidence exist.",
+      "linked_ids": [
+        "M-R01",
+        "M-DEP01"
+      ],
+      "mandatory_condition": true,
+      "details": {
+        "observed_condition": "The rehearsal reproduces missing attachment links.",
+        "consequence": "Migrated tickets do not retain required relationships.",
+        "resolution": "Correct the mapping and demonstrate correct relationships for the agreed population.",
+        "escalation": "Escalate if credible correction, retest and accepted scope cannot support the current baseline."
+      },
+      "source": "migration.md - 6 November rehearsal",
+      "note": "Equal source and target counts do not prove relationship correctness."
+    },
+    {
+      "id": "M-DEP01",
+      "type": "dependency",
+      "title": "Attachment mapping handoff",
+      "status": "at_risk",
+      "statement": "The mapping was needed 2 November and forecast 4 November; actual accepted delivery is not supplied.",
+      "objective": "Provide an accepted mapping before relationship correction and retest",
+      "owner": "Provider and receiver commitments unknown",
+      "ownership_state": "unknown",
+      "evidence": "Earlier need and forecast dates are supplied; actual delivery and receiver acceptance are not.",
+      "evidence_ref": "",
+      "action": "Recover the actual provider and receiver state and confirm the usable accepted mapping.",
+      "next_review": "",
+      "closure_test": "The receiver accepts the specified mapping; delivery alone does not prove downstream relationship correctness.",
+      "transition": "Late or unusable mapping remains linked to the issue without duplicating the same repair ownership.",
+      "linked_ids": [
+        "M-R01",
+        "M-I002"
+      ],
+      "mandatory_condition": false,
+      "details": {
+        "provider": "Supplier role to confirm",
+        "receiver": "Migration technical lead to confirm",
+        "usable_condition": "Mapping is versioned, complete for the agreed population and usable for relationship correction.",
+        "needed_date": "2026-11-02",
+        "committed_date": "",
+        "forecast_date": "2026-11-04",
+        "actual_date": "",
+        "acceptance_state": "unknown"
+      },
+      "source": "migration.md - earlier dependency record",
+      "note": "Do not assume the earlier forecast became accepted delivery."
+    }
+  ],
+  "events": [
+    {
+      "id": "EV-01",
+      "date": "2026-11-02",
+      "label": "Mapping need date",
+      "state": "Receiver need recorded; actual accepted delivery absent.",
+      "source": "M-DEP01"
+    },
+    {
+      "id": "EV-02",
+      "date": "2026-11-04",
+      "label": "Earlier mapping forecast",
+      "state": "Forecast is not evidence of delivery or acceptance.",
+      "source": "M-DEP01"
+    },
+    {
+      "id": "EV-03",
+      "date": "2026-11-06",
+      "label": "Rehearsal failure observed",
+      "state": "Missing attachment links reproduce and M-I002 is linked to M-R01.",
+      "source": "migration.md"
+    },
+    {
+      "id": "EV-04",
+      "date": "2026-11-09",
+      "label": "Future change decision",
+      "state": "M-CR02 is later than this cutoff and cannot be inserted into the 6 November view.",
+      "source": "Supplied later chronology"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Migration controls",
+    "headline": "Materialization creates a link, not a rename",
+    "lede": "The prior risk, observed issue and required mapping retain separate evidence, owners and closure rules.",
+    "default_item_id": "M-I002",
+    "decision": "Characterize the observed failure, recover the mapping acceptance state, correct and retest before any disposition."
+  },
+  "analysis": {
+    "method": "Stable IDs preserve the earlier risk, current issue and dependency record while links explain their relationship.",
+    "classification_boundary": "M-I002 contains observed failure evidence; M-R01 preserves the earlier uncertain event and any remaining bounded uncertainty.",
+    "scoring_boundary": "No agreed scale or numeric assessment was supplied, so no probability-impact score is fabricated.",
+    "authority_boundary": "Chen may coordinate; Beck's commitment, business acceptance and any change approval remain separate actual decisions.",
+    "closure_rule": "A proposed patch or matching counts do not close the issue; applicable relationship evidence and required acceptance are needed.",
+    "priority_threshold": 9
+  }
+}

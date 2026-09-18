@@ -1,0 +1,176 @@
+{
+  "title": "Relay - RAID control register",
+  "version": "1.0",
+  "as_of": "2026-10-16",
+  "source": "Fictional Relay control register and supplied chronology",
+  "scope": "Pilot baseline B1 and its current verification boundary",
+  "state": "active register; ownership, timing and evidence gaps remain",
+  "decision_boundary": "Coordinate current actions while named authorities decide acceptance, closure and any baseline change.",
+  "risk_scale": {
+    "enabled": false,
+    "id": "No agreed scale",
+    "max_rating": 4,
+    "likelihood_basis": "No assessed probability or agreed ordinal likelihood scale was supplied.",
+    "impact_basis": "Material acceptance consequences are described directly without invented ratings.",
+    "score_warning": "No score is calculated; current issues, mandatory conditions and unconfirmed ownership still receive attention.",
+    "tolerance_source": "Relay pilot control boundary in software.md"
+  },
+  "items": [
+    {
+      "id": "R-001",
+      "type": "risk",
+      "title": "Interface incompatibility",
+      "status": "open",
+      "statement": "Interface incompatibility could prevent SSO integration and acceptance.",
+      "objective": "Pilot identity integration and acceptance",
+      "owner": "Omar as proposed technical assessor",
+      "ownership_state": "proposed",
+      "evidence": "A compatibility result for the applicable input and version is not supplied.",
+      "evidence_ref": "",
+      "action": "Confirm ownership and execute a versioned compatibility check when the environment and interface are usable.",
+      "next_review": "",
+      "closure_test": "Applicable evidence removes the specified uncertainty, an observed incompatibility links to an issue, or an authorized disposition records the bounded residual exposure.",
+      "transition": "Create a linked issue for an observed incompatibility without erasing this prior risk statement.",
+      "linked_ids": [
+        "I-001",
+        "DEP-001",
+        "A-001"
+      ],
+      "mandatory_condition": true,
+      "details": {
+        "cause": "The applicable interface behavior has not been verified.",
+        "event": "The interface is incompatible with the pilot identity path.",
+        "effect": "SSO integration and acceptance cannot complete.",
+        "likelihood": null,
+        "impact": null,
+        "response": "Run a versioned compatibility check.",
+        "trigger": "The applicable test shows incompatible behavior or cannot run in time.",
+        "contingency": "Route sequencing, scope or date choices through actual authority and retain any remaining uncertainty.",
+        "residual_authority": ""
+      },
+      "source": "software.md - 16 October register",
+      "note": "A restored environment permits testing but does not prove compatibility."
+    },
+    {
+      "id": "I-001",
+      "type": "issue",
+      "title": "Test environment unavailable",
+      "status": "open",
+      "statement": "The test environment is unavailable now and prevents planned verification.",
+      "objective": "Run applicable compatibility and acceptance checks",
+      "owner": "Omar for technical remediation; Mina coordinates delivery consequence",
+      "ownership_state": "confirmed",
+      "evidence": "Current unavailability is stated; a restoration date is not supplied.",
+      "evidence_ref": "",
+      "action": "Restore usable access and verify the environment before relying on it.",
+      "next_review": "",
+      "closure_test": "Usable environment is restored and independently verified; separate acceptance checks remain open.",
+      "transition": "Closure enables verification but does not close R-001 or validate A-001.",
+      "linked_ids": [
+        "R-001",
+        "A-001"
+      ],
+      "mandatory_condition": true,
+      "details": {
+        "observed_condition": "The test environment is unavailable.",
+        "consequence": "Planned verification cannot run.",
+        "resolution": "Restore applicable access and verify usability.",
+        "escalation": "Escalate if credible recovery and remaining work cannot support the approved baseline."
+      },
+      "source": "software.md - 16 October register",
+      "note": "This is a current issue, not a future risk."
+    },
+    {
+      "id": "DEP-001",
+      "type": "dependency",
+      "title": "Audit interface handoff",
+      "status": "at_risk",
+      "statement": "The audit interface is forecast for 22 October against a 20 October receiver need.",
+      "objective": "Complete consuming integration and acceptance work",
+      "owner": "Provider and receiver contacts unknown",
+      "ownership_state": "unknown",
+      "evidence": "Need 20 October and forecast 22 October are supplied; commitment, actual delivery and receiver acceptance are not.",
+      "evidence_ref": "",
+      "action": "Establish provider, receiver, usable condition and binding commitment, then assess consuming work.",
+      "next_review": "",
+      "closure_test": "The receiver accepts the specified usable input; upload alone is insufficient.",
+      "transition": "A missed or unusable input may create a linked current blocker issue while residual compatibility uncertainty stays separate.",
+      "linked_ids": [
+        "R-001"
+      ],
+      "mandatory_condition": false,
+      "details": {
+        "provider": "Unknown provider contact",
+        "receiver": "Unknown receiver contact",
+        "usable_condition": "Interface satisfies the agreed audit and integration condition.",
+        "needed_date": "2026-10-20",
+        "committed_date": "",
+        "forecast_date": "2026-10-22",
+        "actual_date": "",
+        "acceptance_state": "not_received"
+      },
+      "source": "software.md - 16 October register",
+      "note": "The raw two-day date difference is not CPM total float or an established pilot slip."
+    },
+    {
+      "id": "A-001",
+      "type": "assumption",
+      "title": "Test environment represents pilot behavior",
+      "status": "open",
+      "statement": "The plan relies on the test environment representing pilot identity-provider behavior.",
+      "objective": "Produce valid acceptance evidence",
+      "owner": "Validator unassigned",
+      "ownership_state": "unknown",
+      "evidence": "No applicable configuration or behavior comparison is supplied.",
+      "evidence_ref": "",
+      "action": "Assign a validator and compare relevant configuration and behavior before relying on results.",
+      "next_review": "",
+      "closure_test": "Evidence validates the bounded premise or invalidates it and triggers revised testing.",
+      "transition": "Invalidation revises the test plan and may create a linked issue or change request.",
+      "linked_ids": [
+        "I-001",
+        "R-001"
+      ],
+      "mandatory_condition": false,
+      "details": {
+        "premise": "The test environment represents pilot identity-provider behavior.",
+        "boundary": "Applicable identity-provider configuration, version and behavior.",
+        "validation_method": "Compare versioned configuration and representative behavior.",
+        "expiry": ""
+      },
+      "source": "software.md - 16 October register",
+      "note": "The premise remains explicit rather than silently supporting later decisions."
+    }
+  ],
+  "events": [
+    {
+      "id": "EV-01",
+      "date": "2026-10-02",
+      "label": "Baseline B1 established",
+      "state": "Pilot remains baselined for 30 October.",
+      "source": "D-001"
+    },
+    {
+      "id": "EV-02",
+      "date": "2026-10-16",
+      "label": "RAID review cutoff",
+      "state": "Current environment issue, late dependency forecast and two open uncertainties remain.",
+      "source": "software.md"
+    }
+  ],
+  "presentation": {
+    "eyebrow": "Delivery controls",
+    "headline": "Four records, four decisions",
+    "lede": "Current blockers, uncertain events, planning premises and usable handoffs stay separate while their links remain visible.",
+    "default_item_id": "I-001",
+    "decision": "Restore current verification, confirm the usable handoff and preserve the compatibility and representativeness uncertainties."
+  },
+  "analysis": {
+    "method": "Type-specific rules drive attention flags; stable IDs and links preserve lifecycle history.",
+    "classification_boundary": "Observed conditions are issues; possible events are risks; planning premises and provider inputs remain their own record types.",
+    "scoring_boundary": "No agreed risk scale or assessed ratings were supplied, so R-001 remains unknown and no numeric priority is fabricated.",
+    "authority_boundary": "Owners coordinate work; actual accepting authorities decide residual exposure, closure and baseline changes.",
+    "closure_rule": "Action completion is insufficient; the stated closure test and applicable evidence must pass.",
+    "priority_threshold": 9
+  }
+}

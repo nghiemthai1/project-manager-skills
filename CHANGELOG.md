@@ -12,6 +12,7 @@
 - Rebuilt `milestone-schedule` as a responsive logic-network workspace with forward/backward-pass timing, tied critical paths, milestone evidence, resource/calendar scenarios, validated browser-local task editing, cycle checks, recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 - Rebuilt `release-readiness` as a responsive gate-control workspace with independent evidence states, a recommendation-to-authority decision path, recovery/coverage review, cutoff-safe chronology, validated browser-local gate editing, blocker recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 - Rebuilt `risk-workshop` as a responsive risk-control workspace with optional declared-scale mapping, an explicit unknown lane, cause-to-contingency response chains, cutoff-safe chronology, validated browser-local risk editing, priority recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
+- Rebuilt `raid-log` as a responsive four-type control workspace with exception lanes, a linked transition graph, timing and receiver-acceptance review, cutoff-safe chronology, validated browser-local item editing, attention/unknown/overdue recalculation, history/undo/source restore, and distinct source/full-draft/visible-draft exports.
 
 ## 2.0.0
 

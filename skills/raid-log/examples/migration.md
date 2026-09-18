@@ -21,3 +21,9 @@ No probability or fix date is supplied. A meeting mention of “Monday” would 
 Escalation is needed if credible correction/retest and accepted scope cannot support the current baseline. Its exact decision window depends on remaining work and authority; do not claim a revised cutover or budget is already approved. M-CR02, if later evidenced, becomes a separate dated decision and prospective baseline update.
 
 **Repair:** Renaming M-R01 “migration complete” when a patch arrives erases both the warning and failed rehearsal. Keep M-R01, M-I002 and the dependency linked, each with its own resolution evidence.
+
+Open the [interactive RAID control workspace](assets/migration.html) to inspect the materialized-risk transition, current issue, dependency timing and later chronology without backdating it.
+
+![Static RAID exception register](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV RAID register](assets/migration.csv).

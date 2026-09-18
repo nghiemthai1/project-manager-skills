@@ -28,7 +28,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [project-budget](../skills/project-budget/references/renderer.md) | Dedicated forecast comparison, cost register, EVM math and funding-decision workspace with validated browser-local financial editing |
 | [vendor-procurement](../skills/vendor-procurement/references/visual-artifact.md) | Deliverable and acceptance matrix |
 | [quality-management-plan](../skills/quality-management-plan/references/visual-artifact.md) | Assurance and evidence coverage matrix |
-| [raid-log](../skills/raid-log/references/visual-artifact.md) | Exception board with optional risk grid |
+| [raid-log](../skills/raid-log/references/renderer.md) | Dedicated exception-board, register, transition-graph, timing/acceptance and chronology workspace with validated browser-local editing |
 | [risk-workshop](../skills/risk-workshop/references/renderer.md) | Dedicated exposure/unknown, register, response-chain and chronology workspace with validated browser-local editing |
 | [status-report](../skills/status-report/references/visual-artifact.md) | Evidence-based status dashboard |
 | [decision-log](../skills/decision-log/references/visual-artifact.md) | Decision chronology or option map |

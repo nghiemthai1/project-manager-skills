@@ -18,3 +18,9 @@ Review order focuses first on the present verification blocker and the input tim
 The change ledger retains the original R-001 statement and appends later evidence. It does not insert the subsequent CR-001 approval or later security acceptance into the 16 October view.
 
 **Repair:** “Risk: environment down; mitigation: hope it returns; green once restored” loses the current issue and unrelated uncertainty. The four-row register makes each closure test explicit.
+
+Open the [interactive RAID control workspace](assets/software.html) to inspect the four exception lanes, full register, linked transition graph, timing/acceptance controls and chronology or create a validated browser-local draft.
+
+![Static RAID exception register](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV RAID register](assets/software.csv). The preceding table and explanation remain the full accessible record; the visual preserves their fictional scope and cutoff.

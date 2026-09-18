@@ -121,8 +121,8 @@
   },
   {
     "skill": "raid-log",
-    "route": "Exception board with optional risk grid",
-    "reference": "references/visual-artifact.md"
+    "route": "Dedicated exception-board, register, transition-graph, timing/acceptance and chronology workspace with validated browser-local editing",
+    "reference": "references/renderer.md"
   },
   {
     "skill": "risk-workshop",

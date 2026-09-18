@@ -29,6 +29,7 @@ budget = load('project-budget', 'render_budget.py')
 milestone = load('milestone-schedule', 'render_milestone.py')
 readiness = load('release-readiness', 'render_readiness.py')
 risk_workshop = load('risk-workshop', 'render_risk_workshop.py')
+raid = load('raid-log', 'render_raid_log.py')
 
 
 class VisualTests(unittest.TestCase):
@@ -36,7 +37,7 @@ class VisualTests(unittest.TestCase):
         for slug, module in [('gantt-chart', gantt), ('raci-matrix', raci), ('dependency-map', dependency),
                              ('resource-capacity-plan', capacity), ('project-budget', budget),
                              ('milestone-schedule', milestone), ('release-readiness', readiness),
-                             ('risk-workshop', risk_workshop)]:
+                             ('risk-workshop', risk_workshop), ('raid-log', raid)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -287,8 +288,24 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="risk-workshop.'),3)
 
+    def test_raid_preserves_type_boundaries_links_and_acceptance(self):
+        data=raid.demo();summary=raid.assessment(data)
+        self.assertEqual(summary['attention'],['R-001','A-001','I-001','DEP-001'])
+        self.assertEqual(summary['overdue'],['DEP-001'])
+        data['items'][0]['status']='accepted'
+        with self.assertRaises(ValueError):raid.validate(data)
+        data=raid.demo();data['items'][3]['details']['acceptance_state']='accepted';data['items'][3]['status']='accepted'
+        self.assertNotIn('DEP-001',raid.assessment(data)['overdue'])
+        html=raid.render_html(raid.demo())
+        for token in ('id="boardTab"','id="registerTab"','id="linksTab"','id="timingTab"','id="chronologyTab"',
+                      'id="itemEditor"','id="editType"','id="saveItem"','id="undoEdit"','id="discardDraft"',
+                      'id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'Accepted risk requires named residual authority.','function draftSnapshot()','changed_items'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="raid-log.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop):
+        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
@@ -297,7 +314,8 @@ class VisualTests(unittest.TestCase):
             elif module is budget: data['categories'][0]['label']='=WEBSERVICE("example")'
             elif module is milestone: data['tasks'][0]['label']='=WEBSERVICE("example")'
             elif module is readiness: data['gates'][0]['label']='=WEBSERVICE("example")'
-            else: data['risks'][0]['title']='=WEBSERVICE("example")'
+            elif module is risk_workshop: data['risks'][0]['title']='=WEBSERVICE("example")'
+            else: data['items'][0]['title']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -305,7 +323,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop):
+            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem

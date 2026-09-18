@@ -15,7 +15,7 @@ scenarios:
 estimated_time: Depends on evidence and project scope
 frameworks: RAID; cause-event-effect; issue lifecycle; assumption validation
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: MIT
 ---
 # RAID Log
@@ -74,7 +74,7 @@ Quality check: a reader can explain why each item is classified, what changes ne
 
 ### When producing a visual
 
-Use the [exception board with optional risk grid](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [exception board with optional risk grid](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable control workspace, read the [renderer contract](references/renderer.md) and run the offline [RAID renderer](scripts/render_raid_log.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV with exception-board, register, transition-graph, timing/acceptance and chronology views plus validated browser-local editing, recalculated attention flags, history, undo, source restore and separate source/draft exports.
 
 ## Examples
 
