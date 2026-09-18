@@ -14,7 +14,7 @@ scenarios:
 estimated_time: Depends on evidence, source complexity and artifact scope
 frameworks: Gantt timeline; source normalization and provenance; working calendars; dependency and baseline comparison; responsive interaction
 domain: software-it-project-management
-version: 2.2.0
+version: 2.3.0
 license: MIT
 ---
 # Gantt Chart
@@ -75,7 +75,7 @@ Mobile portrait needs a usable summary or focused slice rather than a miniature 
 
 | Need | Suitable approach |
 |---|---|
-| Small read-only report or editorial schedule | Semantic HTML task grid plus SVG, or declarative SVG when the model is already computed |
+| Small review artifact with optional browser-local task edits | Semantic HTML task grid plus SVG, immutable source exports and validated local draft history |
 | Lightweight reporting | Highcharts Gantt, Frappe Gantt, Plotly timelines, Observable Plot or comparable read-only tooling |
 | Resource booking | FullCalendar resource timeline or another scheduler where resources and slots dominate |
 | Enterprise editable schedule | Bryntum, DHTMLX, Kendo UI, Syncfusion or a comparable scheduling component with calendars, validation, undo and import/export |
@@ -92,7 +92,7 @@ Avoid raw WebGL unless density, continuous pan/zoom or GPU picking makes Canvas 
 5. **Choose the reading path.** Use a detailed task-grid timeline for executable work, a workstream/milestone summary for executives, a resource timeline for allocation or another surface when clearer. Keep the complete normalized data even when the visible view is a summary. Read [design and use cases](references/gantt-chart-design-and-use-cases.md).
 6. **Define interaction before implementation.** Specify search, filtering, grouping, sorting, zoom/pan, hierarchy, task selection, dependency highlighting, comparison/critical-path toggles, reset, export and deep links. For editing, also define drag/resize validation, cycle prevention, downstream-change preview, permissions, undo, stale versions and sync failure. Read [interaction patterns](references/gantt-interaction-patterns.md).
 7. **Design large-screen and mobile states.** Preserve the same claim, source context and caveats while reducing density through prioritization and disclosure. Keep exact values outside hover, controls keyboard reachable and touch targets usable. Define what remains visible while the mobile keyboard or settings panel is open.
-8. **Generate the artifact and exports.** For a rich small schedule, prefer self-contained semantic HTML plus SVG, a persistent details view and editable normalized JSON. Use the [included renderer](references/renderer.md) when its date-only, read-only contract fits. Mermaid is suitable for a compact embedded diagram, not a scheduling engine. Define whether each export is current view, selected range or full data.
+8. **Generate the artifact and exports.** For a rich small schedule, prefer self-contained semantic HTML plus SVG, a persistent details view and editable normalized JSON. Use the [included renderer](references/renderer.md) when its date-only, browser-local draft contract fits. It validates task fields and date layers, previews conflicts, persists undoable local history and separates source from draft exports without scheduling successors or writing back. Mermaid is suitable for a compact embedded diagram, not a scheduling engine. Define whether each export is source, current full draft, selected range or visible slice.
 9. **Inspect behavior and output.** Compare every visible start, finish, milestone, label and relationship with normalized data. Test desktop, portrait and landscape; search/reset; keyboard selection; comparison/dependency toggles; empty, partial and error states; date-only timezone edges; long labels; static exports and active filter disclosure. Read [accessibility, export and testing](references/gantt-accessibility-export-and-testing.md).
 10. **Explain the decision.** State what changed, compared with which layer, in the correct units; identify driving work, uncertainty, resource/calendar assumptions and the decision required. Record generated files, tested viewports and known limits. Preparing or changing a chart does not authorize a baseline, source write or external notification.
 
@@ -106,7 +106,7 @@ Deliver the source mapping, normalized editable data, diagnostics, accessible ta
 - implemented interactions, renderer/stack choice and measured scale assumptions;
 - desktop, portrait and relevant landscape behavior, including keyboard/touch alternatives;
 - export scope and actual generated formats; and
-- unsupported scheduling, editing, synchronization or performance claims.
+- unsupported scheduling, governed multi-user editing, synchronization or performance claims.
 
 ## Examples
 
@@ -115,7 +115,7 @@ Optional worked applications:
 - [Software timeline](examples/software.md): original and forecast layers, a two-working-day finish change, an explicit critical path, a phase-grouped interactive review surface and the arithmetic behind it.
 - [Migration timeline](examples/migration.md): two tied branches, an acceptance checkpoint and the difference between unconstrained and resource-feasible work.
 
-These fictional subcases add calendar assumptions for teaching. They do not replace Relay’s or Northstar’s approved project dates.
+These fictional subcases add calendar assumptions for teaching. Their HTML artifacts support validated browser-local task editing, conflict diagnostics, history, undo, source restore and separate source/draft exports. They do not replace Relay’s or Northstar’s approved project dates.
 
 ## Common Pitfalls
 

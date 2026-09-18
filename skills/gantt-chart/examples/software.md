@@ -1,6 +1,6 @@
 # Software integration: Gantt with baseline comparison
 
-Open the **[interactive artifact](assets/software.html)**, **[full editorial SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses phase-grouped rows, a sticky date header and task pane, search/phase/owner filters, critical-only review, comparison and dependency toggles, selected-chain highlighting, zoom, visible-slice CSV, persistent evidence details, and a print/PDF layout. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/software.html)**, **[full editorial SVG](assets/software.svg)**, [editable JSON](assets/software-source.json), or [CSV](assets/software.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses phase-grouped rows, a sticky date header and task pane, search/phase/owner filters, critical-only review, comparison and dependency toggles, selected-chain highlighting, zoom, persistent evidence details, a validated browser-local task editor, conflict diagnostics, history/undo/source restore, distinct source/full-draft/visible-draft exports, and a print/PDF layout. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Relay's approved calendar baseline. Additional assumptions: start Monday 5 October 2026; Monday–Friday workweek; no holidays; full-time separate staff for parallel B and C. Dates are finish boundaries, not inclusive final work dates. The “baseline” below is only the original planning scenario for this exercise.
 
@@ -38,7 +38,7 @@ gantt
 
 ![Editorial software Gantt showing the original and forecast layers, dependencies, critical work, and source boundaries](assets/software.svg)
 
-The artifact leads with the schedule decision: the original 14 October finish boundary moves to 16 October because B gains two working days. The JSON carries the presentation copy and the supplied CPM result separately from task dates, so the headline, critical IDs, and C's three days of total float remain inspectable claims rather than renderer guesses. The permanent SVG, JSON, and CSV downloads retain every source row; the separately labeled toolbar export captures the visible filtered slice.
+The artifact leads with the schedule decision: the original 14 October finish boundary moves to 16 October because B gains two working days. The JSON carries the presentation copy and the supplied CPM result separately from task dates, so the headline, critical IDs, and C's three days of total float remain inspectable claims rather than renderer guesses. The permanent SVG, JSON, and CSV downloads retain every source row. Local edits recalculate the axis, task bars, current-draft table, supported timing diagnostics and finish metrics while labeling the supplied CPM result for revalidation.
 
 C uses an explicit Monday finish boundary so the rendered bar matches the table's next-working-boundary convention. Its three productive days remain Wednesday through Friday; the shaded weekend adds no effort. The table retains the dependency on A. Recalculate explicit dates when the underlying schedule changes.
 

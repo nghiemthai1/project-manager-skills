@@ -1,6 +1,6 @@
 # Migration rehearsal: two tied branches
 
-Open the **[interactive artifact](assets/migration.html)**, **[full editorial SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses phase-grouped rows, a sticky date header and task pane, search/phase/owner filters, critical-only review, dependency toggles, selected-chain highlighting, zoom, visible-slice CSV, persistent evidence details, and a print/PDF layout. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
+Open the **[interactive artifact](assets/migration.html)**, **[full editorial SVG](assets/migration.svg)**, [editable JSON](assets/migration-source.json), or [CSV](assets/migration.csv). The HTML runs offline in a browser; GitHub's file viewer may require downloading it first. It uses phase-grouped rows, a sticky date header and task pane, search/phase/owner filters, critical-only review, dependency toggles, selected-chain highlighting, zoom, persistent evidence details, a validated browser-local task editor, conflict diagnostics, history/undo/source restore, distinct source/full-draft/visible-draft exports, and a print/PDF layout. [Renderer instructions](../references/renderer.md) explain regeneration and supported behavior.
 
 Fictional instructional subcase, not Northstar's approved cutover schedule or its actual rehearsal history. Additional assumptions: start Monday 2 November 2026; Monday–Friday workweek with no holidays; separate available resources for B and C; no external input delays. Finish dates below are exclusive boundaries.
 
@@ -32,7 +32,7 @@ gantt
 
 ![Editorial migration Gantt showing the tied branches, join, checkpoint, and resource caveat](assets/migration.svg)
 
-The artifact separates the plotted seven-working-day parallel forecast from the conditional ten-working-day serialized scenario. The JSON records both critical paths and the resource assumption explicitly. The renderer displays that supplied analysis without promoting the 16 November boundary to an approved forecast or implying that the checkpoint proves acceptance.
+The artifact separates the plotted seven-working-day parallel forecast from the conditional ten-working-day serialized scenario. The JSON records both critical paths and the resource assumption explicitly. The renderer displays that supplied analysis without promoting the 16 November boundary to an approved forecast or implying that the checkpoint proves acceptance. Local task edits never recalculate or authorize that scenario; the draft labels source analysis for revalidation and keeps all source exports immutable.
 
 B and C use explicit Monday finish boundaries to match the source table. Their productive dates remain 4–6 November; the shaded weekend adds no effort. The table preserves their dependency on A. Explicit dates must be recalculated when the schedule changes.
 

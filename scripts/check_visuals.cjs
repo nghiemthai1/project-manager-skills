@@ -143,6 +143,38 @@ fs.mkdirSync(output, {recursive: true});
             const phase = await page.$eval('#phaseFilter',x=>x.options[1].value);
             await page.select('#phaseFilter',phase);
             assert.doesNotMatch(await page.$eval('#scope',x=>x.textContent),/^5 \/ 5/);
+            if (scenario === 'software' && view === 'desktop') {
+              await page.click('#reset');
+              await page.click('#editToggle');
+              assert.equal(await page.$eval('#editId',x=>x.value),'B');
+              await page.click('#saveTask');
+              assert.match(await page.$eval('#editError',x=>x.textContent),/No changes/);
+              await page.$eval('#editForecastStart',x=>x.value='2026-10-20');
+              await page.click('#saveTask');
+              assert.match(await page.$eval('#editError',x=>x.textContent),/finish on or after start/i);
+              await page.$eval('#editForecastStart',x=>x.value='2026-10-07');
+              await page.$eval('#editForecastFinish',x=>x.value='2026-10-16');
+              await page.click('#saveTask');
+              assert.equal(await page.$eval('.gantt-row[data-task-id="B"]',x=>x.classList.contains('is-edited')),true);
+              assert.match(await page.$eval('#draftDiagnostics',x=>x.textContent),/L-3: forecast violates/);
+              await page.click('.gantt-row[data-task-id="E"] .task-button');
+              await page.$eval('#editForecastFinish',x=>x.value='2026-10-18');
+              await page.click('#saveTask');
+              assert.match(await page.$eval('#editError',x=>x.textContent),/Milestone dates must coincide/);
+              await page.$eval('#editForecastStart',x=>x.value='2026-10-17');
+              await page.$eval('#editForecastFinish',x=>x.value='2026-10-17');
+              await page.click('#saveTask');
+              assert.equal(await page.$eval('.summary-card[data-metric="forecast finish"] .value',x=>x.textContent),'17 Oct');
+              assert.equal(await page.$eval('.summary-card[data-metric="finish change"] .value',x=>x.textContent),'+3 days');
+              assert.deepEqual(await page.evaluate(()=>({finish:draftSnapshot().tasks.find(task=>task.id==='E').forecast.finish,changed:draftSnapshot().local_draft.changed_tasks})),{finish:'2026-10-17',changed:2});
+              await page.reload({waitUntil:'load'});
+              assert.match(await page.$eval('#scope',x=>x.textContent),/2 locally edited/);
+              await page.click('#undoEdit');
+              assert.equal(await page.$eval('.summary-card[data-metric="forecast finish"] .value',x=>x.textContent),'16 Oct');
+              await page.click('#undoEdit');
+              assert.equal(await page.$eval('.gantt-row[data-task-id="B"]',x=>x.classList.contains('is-edited')),false);
+              assert.match(await page.$eval('#scope',x=>x.textContent),/no local draft changes/);
+            }
           }}
           await page.click('#reset');
           reports.push({slug,scenario,view,viewport:[width,height],overflow:false,searchResetKeyboard:true});

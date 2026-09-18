@@ -103,6 +103,19 @@ class VisualTests(unittest.TestCase):
         second_text=[float(t.attrib['y']) for t in groups[1].findall('s:text',ns)]
         self.assertLess(max(first_text),min(second_text))
 
+    def test_gantt_product_view_and_local_editor_are_present(self):
+        data=gantt.demo();html=gantt.render_html(data,gantt.render_svg(data),gantt.render_csv(data))
+        for token in ('id="editToggle"','id="taskEditor"','id="undoEdit"',
+                      'id="discardDraft"','id="draftJson"','id="draftCsv"',
+                      'id="draftTaskTable"','id="draftDiagnostics"',
+                      'id="editForecastStart"','id="editForecastFinish"',
+                      'Milestone dates must coincide',
+                      'This parent change would create a hierarchy cycle.',
+                      'function draftSnapshot()','changed_tasks',
+                      'Source exports and downstream dates remain unchanged.'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="gantt.'),3)
+
     def test_raci_audit_separates_confirmation_and_letter(self):
         data=raci.demo();row=data['rows'][0]
         self.assertTrue(any('Unresolved cells' in f['findings'] for f in raci.audit(data)))

@@ -86,7 +86,7 @@
   },
   {
     "skill": "gantt-chart",
-    "route": "Dedicated renderer and visual workflow",
+    "route": "Dedicated visual workflow and offline renderer with validated browser-local task editing, conflict diagnostics and source/draft exports",
     "reference": "references/renderer.md"
   },
   {
