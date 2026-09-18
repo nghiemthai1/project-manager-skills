@@ -22,3 +22,9 @@ Rosa's refusal to accept unproven restore is evidence about an unmet requirement
 Jules proposes that Saira validate agent representation, Rosa define service evidence needs, and Chen/Beck clarify the mapping handoff. Dates and accepted assignments remain pending. Success is named participation with issues either resolved or explicitly dispositioned, not attendance counts.
 
 Revisit after scope phasing, vendor personnel changes, or new evidence from rehearsals. Preserve old placements and explain changes. **Repair:** “Move agents from low power to high power by inviting them to a demo” confuses access with authority. Record the increased participation; change power only when actual influence or delegation changes.
+
+Open the [interactive stakeholder-map workspace](assets/migration.html) to compare both grids, inspect the support-agent voice gap, preserve domain-specific authority and review the engagement-action plan.
+
+![Static paired stakeholder grids](assets/migration.svg)
+
+[Source JSON](assets/migration-source.json) · [normalized JSON](assets/migration.json) · [CSV stakeholder register](assets/migration.csv).

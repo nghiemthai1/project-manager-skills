@@ -11,7 +11,7 @@ All 42 packages were reviewed for chart fit. Graphical guidance applies when use
 | [project-governance](../skills/project-governance/references/visual-artifact.md) | Decision-rights flow |
 | [project-kickoff](../skills/project-kickoff/SKILL.md) | Conversation or text/table artifact by default |
 | [stakeholder-identification](../skills/stakeholder-identification/references/visual-artifact.md) | Coverage map |
-| [stakeholder-map](../skills/stakeholder-map/references/visual-artifact.md) | Paired stakeholder grids |
+| [stakeholder-map](../skills/stakeholder-map/references/renderer.md) | Dedicated paired-grid, register, comparison/gap, migration-action and chronology workspace with validated browser-local editing |
 | [stakeholder-engagement-advisor](../skills/stakeholder-engagement-advisor/SKILL.md) | Conversation or text/table artifact by default |
 | [raci-matrix](../skills/raci-matrix/references/renderer.md) | Dedicated matrix, row-audit and role-profile workflow with evidence details, browser-local draft editing and offline renderer |
 | [communication-plan](../skills/communication-plan/references/visual-artifact.md) | Audience-channel cadence matrix |

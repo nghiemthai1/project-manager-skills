@@ -24,7 +24,7 @@ scenarios:
   - I need a stakeholder engagement strategy before our quarterly review
 estimated_time: 25-40 min
 domain: software-it-project-management
-version: 2.1.0
+version: 2.2.0
 license: CC-BY-NC-SA-4.0
 source: https://github.com/deanpeters/Product-Manager-Skills/blob/1b5a524ebb95e9497fa3f25002d8b8ec528d4444/skills/stakeholder-mapping/SKILL.md
 ---
@@ -126,7 +126,7 @@ For each stakeholder in "manage closely" and each Q1 stakeholder, create an enga
 
 ### When producing a visual
 
-Use the [paired stakeholder grids](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. It defines the source fields, chart limits, readable mobile view and export checks. Preserve the project source’s evidence and uncertainty in the graphic.
+Use the [paired stakeholder grids](references/visual-artifact.md) guidance when a diagram, chart or interactive view would help the decision. For a reusable mapping workspace, read the [renderer contract](references/renderer.md) and run the offline [stakeholder-map renderer](scripts/render_stakeholder_map.py). It produces matching HTML, SVG, normalized JSON and spreadsheet-safe CSV with paired grids, register, comparison/gap, migration-action and chronology views plus validated browser-local stakeholder editing, placement recalculation, history, undo, source restore and separate source/draft exports.
 
 Use the [artifact template](template.md).
 

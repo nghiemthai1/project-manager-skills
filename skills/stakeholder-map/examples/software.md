@@ -25,8 +25,10 @@ Propose that Priya identify representative administrators and arrange workflow/r
 
 **Repair:** “Administrators have no authority, so email them at launch” under-serves the group that lives with failure. Recruit their input early while preserving formal approval roles. Review the map after pilot scope, customer representation or organizational authority changes.
 
-## Graphical companion
+## Interactive companion
 
-![Worked visual](assets/software-visual.svg)
+Open the [interactive stakeholder-map workspace](assets/software.html) to compare both qualitative grids, inspect unknown placement and authority boundaries, review engagement gaps and create a validated browser-local draft.
 
-[Editable source data](assets/software-visual.json). The preceding tables and explanation remain the full accessible record; the graphic preserves their fictional scope and cutoff.
+![Static paired stakeholder grids](assets/software.svg)
+
+[Source JSON](assets/software-source.json) · [normalized JSON](assets/software.json) · [CSV stakeholder register](assets/software.csv). The preceding tables and explanation remain the full accessible record; the visual preserves their fictional scope and cutoff.

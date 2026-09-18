@@ -31,6 +31,7 @@ readiness = load('release-readiness', 'render_readiness.py')
 risk_workshop = load('risk-workshop', 'render_risk_workshop.py')
 raid = load('raid-log', 'render_raid_log.py')
 scope_wbs = load('scope-and-wbs', 'render_scope_wbs.py')
+stakeholder_map = load('stakeholder-map', 'render_stakeholder_map.py')
 
 
 class VisualTests(unittest.TestCase):
@@ -39,7 +40,7 @@ class VisualTests(unittest.TestCase):
                              ('resource-capacity-plan', capacity), ('project-budget', budget),
                              ('milestone-schedule', milestone), ('release-readiness', readiness),
                              ('risk-workshop', risk_workshop), ('raid-log', raid),
-                             ('scope-and-wbs', scope_wbs)]:
+                             ('scope-and-wbs', scope_wbs), ('stakeholder-map', stakeholder_map)]:
             for scene in ('software', 'migration'):
                 stem = ROOT/'skills'/slug/'examples'/'assets'/scene
                 data = module.validate(json.loads(Path(str(stem)+'-source.json').read_text(encoding='utf-8')))
@@ -324,8 +325,24 @@ class VisualTests(unittest.TestCase):
             self.assertIn(token,html)
         self.assertEqual(html.count('download="scope-wbs.'),3)
 
+    def test_stakeholder_map_keeps_unknowns_voice_and_authority_distinct(self):
+        data=stakeholder_map.demo();summary=stakeholder_map.assessment(data)
+        self.assertEqual(summary['q1'],['ST-ADMIN'])
+        self.assertEqual(summary['unknown'],['ST-ADMIN'])
+        self.assertEqual(summary['manage_closely'],['ST-ADA','ST-SEC'])
+        data['stakeholders'][2]['representation_state']='confirmed'
+        with self.assertRaises(ValueError):stakeholder_map.validate(data)
+        html=stakeholder_map.render_html(stakeholder_map.demo())
+        for token in ('id="gridsTab"','id="registerTab"','id="comparisonTab"','id="actionsTab"','id="evidenceTab"',
+                      'id="stakeholderEditor"','id="editRepresentation"','id="saveStakeholder"',
+                      'id="undoEdit"','id="discardDraft"','id="draftJson"','id="draftCsv"','id="visibleCsv"',
+                      'Confirmed representation requires an evidence reference and assessment date.',
+                      'function draftSnapshot()','changed_stakeholders'):
+            self.assertIn(token,html)
+        self.assertEqual(html.count('download="stakeholder-map.'),3)
+
     def test_untrusted_text_is_escaped_and_csv_guarded(self):
-        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid,scope_wbs):
+        for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid,scope_wbs,stakeholder_map):
             data=module.demo();data['title']='</script><script>alert(1)</script>'
             if module is gantt: item=data['tasks'][0];item['label']='=WEBSERVICE("example")'
             elif module is raci: item=data['rows'][0];item['label']='=WEBSERVICE("example")'
@@ -336,7 +353,8 @@ class VisualTests(unittest.TestCase):
             elif module is readiness: data['gates'][0]['label']='=WEBSERVICE("example")'
             elif module is risk_workshop: data['risks'][0]['title']='=WEBSERVICE("example")'
             elif module is raid: data['items'][0]['title']='=WEBSERVICE("example")'
-            else: data['nodes'][0]['label']='=WEBSERVICE("example")'
+            elif module is scope_wbs: data['nodes'][0]['label']='=WEBSERVICE("example")'
+            else: data['stakeholders'][0]['name']='=WEBSERVICE("example")'
             svg=module.render_svg(data);csv=module.render_csv(data);html=module.render_html(data,svg,csv)
             self.assertNotIn(data['title'],html)
             self.assertIn("'=WEBSERVICE",csv)
@@ -344,7 +362,7 @@ class VisualTests(unittest.TestCase):
 
     def test_isolated_cli_outputs_and_windows_csv_bytes(self):
         with tempfile.TemporaryDirectory() as temp:
-            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid,scope_wbs):
+            for module in (gantt,raci,dependency,capacity,budget,milestone,readiness,risk_workshop,raid,scope_wbs,stakeholder_map):
                 script=Path(temp)/Path(module.__file__).name
                 script.write_bytes(Path(module.__file__).read_bytes())
                 stem=Path(temp)/script.stem
