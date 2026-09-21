@@ -22,7 +22,7 @@ The parent inspected the generated desktop, portrait and landscape artifacts. An
 
 Ten visual regression tests join the existing 32 tests. They check source/output consistency, exact identifiers and partial dates, typed timing without mutation, cycles/missing endpoints, invalid calendars/dates/progress, long-owner geometry, RACI confirmation semantics, hostile text and CSV formula protection, and isolated CLI outputs including Windows line endings. Packaging runs all six extracted helpers and compares all payload bytes after documented text normalization. A Windows console-encoding failure found during packaging was fixed by explicitly emitting UTF-8.
 
-Run `python scripts/validate.py --build-catalog`, both authoring check scripts, and `python -m unittest discover -s tests -v`. Automated routing checks verify metadata and curated case availability; this revision does not claim another full model-routing run across all 43 packages.
+Run `python scripts/validate.py --build-catalog`, both authoring check scripts, and `python -m unittest discover -s tests -v`. Automated routing checks verify metadata and curated case availability; this revision does not claim another full model-routing run across all 44 packages.
 
 ## Remaining limits
 

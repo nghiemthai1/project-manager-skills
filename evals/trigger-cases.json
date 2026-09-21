@@ -49,6 +49,11 @@
     "negative": "Help me prepare a constructive conversation with one operations owner before our next review.",
     "negative_skill": "stakeholder-engagement-advisor"
   },
+  "project-team-leadership": {
+    "positive": "A matrixed workstream lead keeps surfacing risks after the review window. Prepare fair delegation, feedback, support, coaching and evidence checkpoints without acting as their line manager.",
+    "negative": "Create a responsibility grid for migration deliverables. Separate who performs each result from who owns it.",
+    "negative_skill": "raci-matrix"
+  },
   "raci-matrix": {
     "positive": "Create a responsibility grid for migration deliverables. Separate who does the work from who owns each result.",
     "negative": "Define who may approve scope, spending, release and exceptions, with tolerances and evidence gates.",

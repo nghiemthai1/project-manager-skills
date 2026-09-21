@@ -71,6 +71,13 @@
   },
   {
     "category": "Stakeholders and collaboration",
+    "name": "project-team-leadership",
+    "focus": "Lead delivery through delegation, feedback, coaching and support",
+    "frameworks": "Outcome-based delegation; evidence-based feedback; coaching loops; authority boundaries",
+    "type": "interactive"
+  },
+  {
+    "category": "Stakeholders and collaboration",
     "name": "raci-matrix",
     "focus": "Assign clear work accountability without inventing authority",
     "frameworks": "RACI responsibility assignment matrix; horizontal/vertical role analysis",

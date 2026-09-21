@@ -270,6 +270,16 @@
     "frameworks": "Root-cause hypotheses; recovery option appraisal; recovery checkpoints"
   },
   {
+    "name": "project-team-leadership",
+    "title": "Project Team Leadership",
+    "type": "interactive",
+    "description": "Lead a project team through delegation, feedback, coaching and recurring commitments. Use when delivery depends on sustained team behavior beyond RACI or capacity planning.",
+    "path": "skills/project-team-leadership/SKILL.md",
+    "category": "Stakeholders and collaboration",
+    "focus": "Lead delivery through delegation, feedback, coaching and support",
+    "frameworks": "Outcome-based delegation; evidence-based feedback; coaching loops; authority boundaries"
+  },
+  {
     "name": "quality-management-plan",
     "title": "Quality Management Plan",
     "type": "component",

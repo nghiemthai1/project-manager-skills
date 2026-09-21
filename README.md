@@ -4,7 +4,7 @@ Practical skills for software and IT project managers, written to improve both t
 
 Start with your decision: define scope, test a delivery forecast, expose a risk, recover a troubled project, or establish whether a release is ready. Each skill explains the framework, when to use it, how to apply it, and recognizable failure modes.
 
-The current library contains **43 skills**, reusable templates, **four calculation helpers**, and **eleven standalone visual renderers**. All 30 original skills have been expanded, with 13 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
+The current library contains **44 skills**, reusable templates, **four calculation helpers**, and **eleven standalone visual renderers**. All 30 original skills have been expanded, with 14 additions covering missing project-management jobs. It includes durable meeting memory in OKF v0.2 format. No application, hosted service, or tracker connection is required.
 
 ## Find the skill you need
 
@@ -16,6 +16,7 @@ The current library contains **43 skills**, reusable templates, **four calculati
 | The date is doubtful | [Estimation Advisor](skills/estimation-advisor/SKILL.md), [Milestone Schedule](skills/milestone-schedule/SKILL.md) |
 | Responsibilities are unclear | [RACI Matrix](skills/raci-matrix/SKILL.md) |
 | Project parties are deadlocked | [Conflict Resolution and Negotiation](skills/conflict-resolution-and-negotiation/SKILL.md) |
+| Project commitments keep slipping despite assigned roles | [Project Team Leadership](skills/project-team-leadership/SKILL.md) |
 | We need a timeline or baseline comparison | [Gantt Chart](skills/gantt-chart/SKILL.md) |
 | Other teams are blocking us | [Dependency Map](skills/dependency-map/SKILL.md) |
 | People are overallocated | [Resource Capacity Plan](skills/resource-capacity-plan/SKILL.md) |
@@ -51,7 +52,7 @@ Each skill has an optional Examples section with fictional worked applications a
 | [Project Governance](skills/project-governance/SKILL.md) | Define decision rights, tolerances, assurance, and escalation | Stage gates; management by exception; delegated authority |
 | [Project Kickoff](skills/project-kickoff/SKILL.md) | Turn the mandate into an operating agreement | Kickoff facilitation; RACI; decision/action separation |
 
-### Stakeholders and collaboration (7)
+### Stakeholders and collaboration (8)
 
 | Skill | Focus | Framework |
 |---|---|---|
@@ -59,6 +60,7 @@ Each skill has an optional Examples section with fictional worked applications a
 | [Stakeholder Map](skills/stakeholder-map/SKILL.md) | Set engagement priorities and expose missing voices | Power-interest matrix; impact-power matrix; quadrant migration |
 | [Stakeholder Engagement Advisor](skills/stakeholder-engagement-advisor/SKILL.md) | Prepare reciprocal engagement for a specific stakeholder | Adaptive Decision Ladder; MITRE engagement canvas; credible proxies |
 | [Conflict Resolution and Negotiation](skills/conflict-resolution-and-negotiation/SKILL.md) | Resolve project conflict and negotiate bounded agreements | Interest-based negotiation; BATNA and reservation boundaries; mediation |
+| [Project Team Leadership](skills/project-team-leadership/SKILL.md) | Lead delivery through delegation, feedback, coaching and support | Outcome-based delegation; evidence-based feedback; coaching loops; authority boundaries |
 | [RACI Matrix](skills/raci-matrix/SKILL.md) | Assign clear work accountability without inventing authority | RACI responsibility assignment matrix; horizontal/vertical role analysis |
 | [Communication Plan](skills/communication-plan/SKILL.md) | Choose audience-specific messages, channels, and feedback | Communication matrix; push/pull/interactive communication |
 | [Workshop Facilitation](skills/workshop-facilitation/SKILL.md) | Run purposeful guided sessions and handle interruptions | One-question facilitation; guided/context-dump/best-guess modes |

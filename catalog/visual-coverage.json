@@ -50,6 +50,11 @@
     "reference": null
   },
   {
+    "skill": "project-team-leadership",
+    "route": "Delegation, feedback, support, development and checkpoint tables; conversation-first by default",
+    "reference": null
+  },
+  {
     "skill": "raci-matrix",
     "route": "Dedicated matrix, row-audit and role-profile workflow with evidence details, browser-local cell editing and offline renderer",
     "reference": "references/renderer.md"
