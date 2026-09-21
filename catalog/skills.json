@@ -40,6 +40,16 @@
     "frameworks": "Communication matrix; push/pull/interactive communication"
   },
   {
+    "name": "conflict-resolution-and-negotiation",
+    "title": "Conflict Resolution and Negotiation",
+    "type": "interactive",
+    "description": "Resolve project conflicts and negotiate delivery tradeoffs. Use when parties have competing interests, dialogue has stalled, or mediation is needed.",
+    "path": "skills/conflict-resolution-and-negotiation/SKILL.md",
+    "category": "Stakeholders and collaboration",
+    "focus": "Resolve project conflict and negotiate bounded agreements",
+    "frameworks": "Interest-based negotiation; BATNA and reservation boundaries; mediation"
+  },
+  {
     "name": "decision-log",
     "title": "Decision Log",
     "type": "component",

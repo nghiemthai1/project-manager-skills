@@ -44,6 +44,11 @@
     "negative": "Build an audience/message/channel/cadence plan with feedback routes for the rollout.",
     "negative_skill": "communication-plan"
   },
+  "conflict-resolution-and-negotiation": {
+    "positive": "Engineering and security are deadlocked over release evidence. Map their interests and authority, prepare a structured negotiation, and record any actual agreement.",
+    "negative": "Help me prepare a constructive conversation with one operations owner before our next review.",
+    "negative_skill": "stakeholder-engagement-advisor"
+  },
   "raci-matrix": {
     "positive": "Create a responsibility grid for migration deliverables. Separate who does the work from who owns each result.",
     "negative": "Define who may approve scope, spending, release and exceptions, with tolerances and evidence gates.",

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added `conflict-resolution-and-negotiation` with project-specific conflict diagnosis, interest and alternative mapping, direct-dialogue/negotiation/mediation routing, authority boundaries, portable preparation records, and paired fictional examples.
 - Expanded `gantt-chart` to match the owner Gantt visualization workflow: source-system ingestion, normalized contracts, responsive interaction, renderer selection, accessibility, export and test gates are now packaged together.
 - Vendored the six recorded Gantt reference guides and mobile-first visualization foundation so the skill remains complete when copied independently.
 - Rebuilt both Gantt examples as responsive offline schedule explorers with phase-grouped rows, sticky date/task panes, dynamic dependency redraw, selected-chain highlighting, persistent evidence details, phase/owner/search filters, critical-only review, comparison/link toggles, zoom, validated browser-local task editing, conflict diagnostics, history/undo/source restore, separate source/full-draft/visible-draft exports, and print/PDF context.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conflict Resolution and Negotiation"
+  short_description: "Resolve project conflicts and negotiate bounded tradeoffs."
+  default_prompt: "Use $conflict-resolution-and-negotiation to diagnose this project conflict, separate interests from positions, choose the right resolution route, and prepare an evidence-based agreement and follow-up."

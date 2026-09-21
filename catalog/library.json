@@ -64,6 +64,13 @@
   },
   {
     "category": "Stakeholders and collaboration",
+    "name": "conflict-resolution-and-negotiation",
+    "focus": "Resolve project conflict and negotiate bounded agreements",
+    "frameworks": "Interest-based negotiation; BATNA and reservation boundaries; mediation",
+    "type": "interactive"
+  },
+  {
+    "category": "Stakeholders and collaboration",
     "name": "raci-matrix",
     "focus": "Assign clear work accountability without inventing authority",
     "frameworks": "RACI responsibility assignment matrix; horizontal/vertical role analysis",

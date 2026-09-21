@@ -8,6 +8,7 @@ A framework earns its place by improving a decision. Use the method that fits th
 | Three-point estimation | How should a bounded uncertain task be sized? | Consistent scope/unit and explained scenarios | PERT's spread convention is not a validated confidence interval |
 | Critical Path Method | Which modeled activities govern finish? | Durations and acyclic dependency logic | Simple CPM does not resolve calendars or scarce-resource conflicts |
 | Power/interest plus impact | Who needs which engagement? | Observed roles, authority, concerns, and affectedness | Low formal power does not imply low importance |
+| Interest-based negotiation and mediation | Can competing project interests reach a bounded agreement? | Stated positions, evidenced interests, executable alternatives, criteria and authority | A facilitator cannot manufacture consent, waive controls or grant decision authority |
 | RACI | Who performs and owns a defined deliverable? | Actual organizational authority | A matrix cannot grant authority or prove acceptance |
 | DACI | Who drives, decides, contributes to, and receives a decision? | A clear question and decision authority | Approval and implementation are separate events |
 | Probability/impact review | Which risks deserve attention first? | Defined scale and evidence confidence | Ordinal score products are not monetary exposure |
