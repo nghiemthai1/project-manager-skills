@@ -1,6 +1,6 @@
 # Visual artifact routing
 
-All 44 packages were reviewed for chart fit. Graphical guidance applies when useful or requested; text-first jobs are not forced into charts. Package-local references remain usable when copied independently.
+All 45 packages were reviewed for chart fit. Graphical guidance applies when useful or requested; text-first jobs are not forced into charts. Package-local references remain usable when copied independently.
 
 | Skill | Visual route |
 |---|---|
@@ -14,7 +14,8 @@ All 44 packages were reviewed for chart fit. Graphical guidance applies when use
 | [stakeholder-map](../skills/stakeholder-map/references/renderer.md) | Dedicated paired-grid, register, comparison/gap, migration-action and chronology workspace with validated browser-local editing |
 | [stakeholder-engagement-advisor](../skills/stakeholder-engagement-advisor/SKILL.md) | Conversation or text/table artifact by default |
 | [conflict-resolution-and-negotiation](../skills/conflict-resolution-and-negotiation/SKILL.md) | Conflict assessment, interests/options tables and agreement record; conversation-first by default |
-| [project-team-leadership](../skills/project-team-leadership/SKILL.md) | Delegation, feedback, support, development and checkpoint tables; conversation-first by default |
+| [project-delegation-and-follow-through](../skills/project-delegation-and-follow-through/SKILL.md) | Delegation, commitment diagnosis, support and checkpoint tables; conversation-first by default |
+| [project-feedback-and-coaching](../skills/project-feedback-and-coaching/SKILL.md) | Feedback conversation, coaching, support and review tables; conversation-first by default |
 | [raci-matrix](../skills/raci-matrix/references/renderer.md) | Dedicated matrix, row-audit and role-profile workflow with evidence details, browser-local draft editing and offline renderer |
 | [communication-plan](../skills/communication-plan/references/visual-artifact.md) | Audience-channel cadence matrix |
 | [workshop-facilitation](../skills/workshop-facilitation/SKILL.md) | Conversation or text/table artifact by default |

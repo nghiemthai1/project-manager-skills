@@ -220,6 +220,26 @@
     "frameworks": "Closure assurance; financial reconciliation; residual transfer; benefits handoff"
   },
   {
+    "name": "project-delegation-and-follow-through",
+    "title": "Project Delegation and Follow-Through",
+    "type": "interactive",
+    "description": "Create or repair an accepted project delegation with clear decision rights, support and checkpoints. Use when assigned work lacks a usable commitment or keeps slipping.",
+    "path": "skills/project-delegation-and-follow-through/SKILL.md",
+    "category": "Stakeholders and collaboration",
+    "focus": "Create accepted delegations and repair slipping commitments",
+    "frameworks": "Outcome-based delegation; commitment read-back; evidence-based follow-through"
+  },
+  {
+    "name": "project-feedback-and-coaching",
+    "title": "Project Feedback and Coaching",
+    "type": "interactive",
+    "description": "Prepare factual project feedback and a bounded coaching loop for delivery behavior or judgment. Use when a contributor needs a fair conversation, practice and review.",
+    "path": "skills/project-feedback-and-coaching/SKILL.md",
+    "category": "Stakeholders and collaboration",
+    "focus": "Improve project behavior and judgment through fair feedback and practice",
+    "frameworks": "Evidence-based feedback; project-skill coaching; deliberate practice and review"
+  },
+  {
     "name": "project-governance",
     "title": "Project Governance",
     "type": "component",
@@ -268,16 +288,6 @@
     "category": "Delivery and decisions",
     "focus": "Select a feasible response when the plan fails",
     "frameworks": "Root-cause hypotheses; recovery option appraisal; recovery checkpoints"
-  },
-  {
-    "name": "project-team-leadership",
-    "title": "Project Team Leadership",
-    "type": "interactive",
-    "description": "Lead a project team through delegation, feedback, coaching and recurring commitments. Use when delivery depends on sustained team behavior beyond RACI or capacity planning.",
-    "path": "skills/project-team-leadership/SKILL.md",
-    "category": "Stakeholders and collaboration",
-    "focus": "Lead delivery through delegation, feedback, coaching and support",
-    "frameworks": "Outcome-based delegation; evidence-based feedback; coaching loops; authority boundaries"
   },
   {
     "name": "quality-management-plan",

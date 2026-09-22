@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Delegation and Follow-Through"
+  short_description: "Create accepted delegations and repair slipping commitments."
+  default_prompt: "Use $project-delegation-and-follow-through to create or repair this project commitment with clear authority, support, acceptance and review checkpoints."

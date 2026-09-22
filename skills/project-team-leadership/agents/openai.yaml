@@ -1,4 +1,0 @@
-interface:
-  display_name: "Project Team Leadership"
-  short_description: "Delegate, coach and address recurring project commitments."
-  default_prompt: "Use $project-team-leadership to diagnose this team situation, preserve project-versus-line authority, and prepare delegation, feedback, support, development and review artifacts."

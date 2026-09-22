@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Feedback and Coaching"
+  short_description: "Prepare factual feedback and project-skill coaching loops."
+  default_prompt: "Use $project-feedback-and-coaching to prepare fair project feedback, a bounded coaching plan, support actions and evidence-based review."

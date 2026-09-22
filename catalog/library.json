@@ -71,9 +71,16 @@
   },
   {
     "category": "Stakeholders and collaboration",
-    "name": "project-team-leadership",
-    "focus": "Lead delivery through delegation, feedback, coaching and support",
-    "frameworks": "Outcome-based delegation; evidence-based feedback; coaching loops; authority boundaries",
+    "name": "project-delegation-and-follow-through",
+    "focus": "Create accepted delegations and repair slipping commitments",
+    "frameworks": "Outcome-based delegation; commitment read-back; evidence-based follow-through",
+    "type": "interactive"
+  },
+  {
+    "category": "Stakeholders and collaboration",
+    "name": "project-feedback-and-coaching",
+    "focus": "Improve project behavior and judgment through fair feedback and practice",
+    "frameworks": "Evidence-based feedback; project-skill coaching; deliberate practice and review",
     "type": "interactive"
   },
   {

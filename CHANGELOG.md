@@ -3,7 +3,7 @@
 ## Unreleased
 
 - Added `conflict-resolution-and-negotiation` with project-specific conflict diagnosis, interest and alternative mapping, direct-dialogue/negotiation/mediation routing, authority boundaries, portable preparation records, and paired fictional examples.
-- Added `project-team-leadership` with outcome-based delegation, evidence-grounded feedback, obstacle/support actions, project coaching loops, recurring-commitment checkpoints, and explicit project-manager versus line-manager authority.
+- Replaced the broad `project-team-leadership` package with `project-delegation-and-follow-through` and `project-feedback-and-coaching`, separating commitment design and recovery from behavioral feedback and project-skill development while preserving project-versus-line authority boundaries.
 - Expanded `gantt-chart` to match the owner Gantt visualization workflow: source-system ingestion, normalized contracts, responsive interaction, renderer selection, accessibility, export and test gates are now packaged together.
 - Vendored the six recorded Gantt reference guides and mobile-first visualization foundation so the skill remains complete when copied independently.
 - Rebuilt both Gantt examples as responsive offline schedule explorers with phase-grouped rows, sticky date/task panes, dynamic dependency redraw, selected-chain highlighting, persistent evidence details, phase/owner/search filters, critical-only review, comparison/link toggles, zoom, validated browser-local task editing, conflict diagnostics, history/undo/source restore, separate source/full-draft/visible-draft exports, and print/PDF context.

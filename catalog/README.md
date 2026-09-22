@@ -1,6 +1,6 @@
 # Skill catalog
 
-44 packages. Frameworks explain the methods used; they do not establish certification or field reliability. Read each skill for fit, limits, examples and failure analysis.
+45 packages. Frameworks explain the methods used; they do not establish certification or field reliability. Read each skill for fit, limits, examples and failure analysis.
 
 ### Initiation and governance (6)
 
@@ -13,7 +13,7 @@
 | [Project Governance](../skills/project-governance/SKILL.md) | Define decision rights, tolerances, assurance, and escalation | Stage gates; management by exception; delegated authority |
 | [Project Kickoff](../skills/project-kickoff/SKILL.md) | Turn the mandate into an operating agreement | Kickoff facilitation; RACI; decision/action separation |
 
-### Stakeholders and collaboration (8)
+### Stakeholders and collaboration (9)
 
 | Skill | Focus | Framework |
 |---|---|---|
@@ -21,7 +21,8 @@
 | [Stakeholder Map](../skills/stakeholder-map/SKILL.md) | Set engagement priorities and expose missing voices | Power-interest matrix; impact-power matrix; quadrant migration |
 | [Stakeholder Engagement Advisor](../skills/stakeholder-engagement-advisor/SKILL.md) | Prepare reciprocal engagement for a specific stakeholder | Adaptive Decision Ladder; MITRE engagement canvas; credible proxies |
 | [Conflict Resolution and Negotiation](../skills/conflict-resolution-and-negotiation/SKILL.md) | Resolve project conflict and negotiate bounded agreements | Interest-based negotiation; BATNA and reservation boundaries; mediation |
-| [Project Team Leadership](../skills/project-team-leadership/SKILL.md) | Lead delivery through delegation, feedback, coaching and support | Outcome-based delegation; evidence-based feedback; coaching loops; authority boundaries |
+| [Project Delegation and Follow-Through](../skills/project-delegation-and-follow-through/SKILL.md) | Create accepted delegations and repair slipping commitments | Outcome-based delegation; commitment read-back; evidence-based follow-through |
+| [Project Feedback and Coaching](../skills/project-feedback-and-coaching/SKILL.md) | Improve project behavior and judgment through fair feedback and practice | Evidence-based feedback; project-skill coaching; deliberate practice and review |
 | [RACI Matrix](../skills/raci-matrix/SKILL.md) | Assign clear work accountability without inventing authority | RACI responsibility assignment matrix; horizontal/vertical role analysis |
 | [Communication Plan](../skills/communication-plan/SKILL.md) | Choose audience-specific messages, channels, and feedback | Communication matrix; push/pull/interactive communication |
 | [Workshop Facilitation](../skills/workshop-facilitation/SKILL.md) | Run purposeful guided sessions and handle interruptions | One-question facilitation; guided/context-dump/best-guess modes |
